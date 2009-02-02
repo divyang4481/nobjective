@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1378AF4-6521-44F1-BAB1-5F280C5DCFCE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>PerformanceTests.Tiger</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <RootNamespace>NObjective</RootNamespace>
+    <PublishUrl>http://localhost/ObjcMapper/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <StartupObject>Native.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>WIN32</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>WIN32</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Monobjc, Version=2.0.282.0, Culture=neutral, PublicKeyToken=d5a8d181860c16be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>PerformanceTests\monobjc\Monobjc.dll</HintPath>
+    </Reference>
+    <Reference Include="Monobjc.Cocoa, Version=2.0.282.0, Culture=neutral, PublicKeyToken=d5a8d181860c16be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>PerformanceTests\monobjc\Monobjc.Cocoa.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\NUnit 2.4.8\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PerformanceTests\cocoa-sharp\src\**\*.cs" />
+    <Compile Include="PerformanceTests\cocoasharp.cs" />
+    <Compile Include="PerformanceTests\mobjc.cs" />
+    <Compile Include="PerformanceTests\mobjc\**\*.cs" />
+    <Compile Include="PerformanceTests\monobjc.cs" />
+    <Compile Include="PerformanceTests\native.cs" />
+    <Compile Include="PerformanceTests\nobjective.cs" />
+    <Compile Include="PerformanceTests\PeformanceTest.cs" />
+    <Compile Include="Properties\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NObjective.csproj">
+      <Project>{4AB62BFF-BD39-446D-96F5-9E3E0DDF0315}</Project>
+      <Name>NObjective</Name>
+    </ProjectReference>
+    <ProjectReference Include="NObjective.Proxies.Leopard.csproj">
+      <Project>{D3A0BDFD-734B-418E-A514-40BE34AF3078}</Project>
+      <Name>NObjective.Proxies.Leopard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="interop\functions.mm" />
+    <None Include="NObjective.build" />
+    <None Include="PerformanceTests\cocoa-sharp\src\Cocoa\ChangeLog" />
+    <None Include="PerformanceTests\cocoa-sharp\src\Cocoa\cocoa-sharp.pc.in" />
+    <None Include="PerformanceTests\cocoa-sharp\src\Cocoa\Makefile.am" />
+    <None Include="PerformanceTests\native\native.mm" />
+    <None Include="PerformanceTests\run_all_tiger.sh" />
+    <None Include="PerformanceTests\run_tiger_tests.sh" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

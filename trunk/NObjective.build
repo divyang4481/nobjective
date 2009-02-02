@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<!-- ===============================================================================
+	
+	Copyright (C) 2009 Eugeny Grishul
+	
+	See license in License.txt
+
+================================================================================ -->
+<project name="NObjective" default="all_leopard" basedir=".">
+  <description>NObjective build script.. waiting for normal xbuild version =(</description>
+
+  <property name="Configuration" value="release" overwrite="false"/>
+  <property name="OutDir" value="bin" overwrite="true"/>
+  <property name="RegenProxies" value="True" overwrite="false"/>
+
+  <if test="${Configuration == 'debug'}">
+    <property name="defines" value="DEBUG;TRACE" overwrite="true"/>
+    <property name="optimize" value="false" overwrite="true"/>
+  </if>
+
+  <if test="${Configuration == 'release'}">
+    <property name="defines" value="" overwrite="true"/>
+    <property name="optimize" value="true" overwrite="true"/>
+  </if>
+
+  <mkdir dir="${OutDir}" />
+  <mkdir dir="PerformanceTests/bin" />
+
+  <target name="native">
+    <uptodate property="IsNativeUpToDate">
+      <sourcefiles>
+        <include name="interop/functions.mm"/>
+      </sourcefiles>
+
+      <targetfiles>
+        <include name="${OutDir}/NObjective.dylib"/>
+      </targetfiles>
+    </uptodate>
+
+    <if test="${ IsNativeUpToDate == 'False' }">
+      <exec program="xcodebuild" workingdir="interop" commandline="-project NObjective.xcodeproj -target NObjective -configuration Release" />
+    </if>
+  </target>
+
+  <target name="core">
+    <uptodate property="IsVersionUpToDate">
+      <sourcefiles>
+        <include name="*.cs"/>
+        <include name="Tracing/*.cs"/>
+        <include name="Properties/*.cs"/>
+      </sourcefiles>
+
+      <targetfiles>
+        <include name="${OutDir}/NObjective.dll"/>
+      </targetfiles>
+    </uptodate>
+
+    <csc target="library" output="${OutDir}/NObjective.dll" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="NObjective.snk" doc="${OutDir}/NObjective.xml">
+      <sources>
+        <include name="*.cs"/>
+        <include name="Tracing/*.cs"/>
+        <include name="Properties/*.cs"/>
+      </sources>
+    </csc>
+  </target>
+
+  <target name="weaver">
+    <copy	file="External/Mono.Cecil.dll" todir="${OutDir}" />
+
+    <csc target="exe" output="${OutDir}/NObjective.ProxyWeaver.exe" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="NObjective.snk">
+      <sources>
+        <include name="ProxyWeaver/*.cs"/>
+      </sources>
+
+      <references basedir="${OutDir}">
+        <include name="Mono.Cecil.dll"/>
+      </references>
+    </csc>
+  </target>
+
+  <target name="NObjectiveAST">
+    <csc target="library" output="${OutDir}/NObjectiveAST.dll" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="NObjectiveAST/NObjectiveAST.snk">
+      <sources basedir="NObjectiveAST">
+        <include name="AST.cs"/>
+        <include name="EvaluatedRepresentation.cs"/>
+        <include name="Extensions.cs"/>
+        <include name="Lexer.cs"/>
+        <include name="Lexer.Keywords.cs"/>
+        <include name="Lexer.Generated.cs"/>
+        <include name="OutputVisitor.cs"/>
+        <include name="Parser.cs"/>
+        <include name="Visitors.cs"/>
+        <include name="Visitors.Generated.cs"/>
+      </sources>
+    </csc>
+  </target>
+
+  <target name="proxy_generator" depends="NObjectiveAST, native, core">
+    <copy	file="NObjectiveAST/External/ICSharpCode.NRefactory.dll" todir="${OutDir}" />
+
+    <csc target="exe" output="${OutDir}/NObjective.ProxyGenerator.exe" define="${defines}" unsafe="true" optimize="${optimize}" main="NObjective.ProxyGenerator.ProfileBuilder" keyfile="NObjective.snk">
+      <sources>
+        <include name="ProxyGenerator/*.cs"/>
+      </sources>
+      <references basedir="${OutDir}">
+        <include name="NObjectiveAST.dll"/>
+        <include name="NObjective.dll"/>
+        <include name="ICSharpCode.NRefactory.dll"/>
+      </references>
+    </csc>
+  </target>
+
+  <target name="proxies_leopard" depends="weaver, proxy_generator, core">
+    <!--uptodate property="IsProxiesUpToDate">
+      <sourcefiles>
+        <include name="ProxyGenerator/Profiles/10.5/dumper_settings.xml"/>
+        <include name="ProxyGenerator/Profiles/10.5/parsed_headers.xml"/>
+        <include name="ProxyGenerator/Profiles/10.5/runtime_dump.xml"/>
+        <include name="${OutDir}/NObjective.ProxyGenerator.exe" />
+      </sourcefiles>
+
+      <targetfiles>
+        <include name="Proxies/10.5/libobjc.A.dylib.cs"/>
+      </targetfiles>
+    </uptodate>
+
+    <if test="${ IsProxiesUpToDate == 'False' }">
+      <if test="${ RegenProxies == 'true' }">
+        <exec program="mono" workingdir="${OutDir}">
+          <arg value="NObjective.ProxyGenerator.exe" />
+          <arg value="10.5" />
+        </exec>
+      </if>
+
+      <csc target="library" output="${OutDir}/NObjective.Proxies.Leopard.Unweaved.dll" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="NObjective.snk">
+        <nowarn>
+          <warning number="0414" />
+          <warning number="0659" />
+          <warning number="0660" />
+          <warning number="0661" />
+        </nowarn>
+        <sources>
+          <include name="Proxies/10.5/*.cs"/>
+          <include name="Properties/*.cs"/>
+        </sources>
+        <references basedir="${OutDir}">
+          <include name="NObjective.dll"/>
+        </references>
+      </csc>
+
+      <uptodate property="IsWeavedUpToDate">
+        <sourcefiles>
+          <include name="${OutDir}/NObjective.Proxies.Leopard.Unweaved.dll"/>
+        </sourcefiles>
+
+        <targetfiles>
+          <include name="${OutDir}/NObjective.Proxies.Leopard.dll"/>
+        </targetfiles>
+      </uptodate>
+
+      <if test="${ IsWeavedUpToDate == 'False' }">
+        <exec program="mono" workingdir="${OutDir}">
+          <arg value="NObjective.ProxyWeaver.exe" />
+          <arg value="NObjective.Proxies.Leopard.Unweaved.dll" />
+          <arg value="NObjective.Proxies.Leopard.dll" />
+        </exec>
+
+        <delay-sign keyfile="NObjective.snk">
+          <targets>
+            <include name="${OutDir}/NObjective.Proxies.Leopard.dll" />
+          </targets>
+        </delay-sign>
+      </if>
+    </if-->
+  </target>
+
+  <target name="proxies_tiger" depends="weaver, proxy_generator, core">
+    <!--uptodate property="IsProxiesUpToDate">
+			<sourcefiles>
+				<include name="ProxyGenerator/Profiles/10.4/dumper_settings.xml"/>
+        <include name="ProxyGenerator/Profiles/10.4/parsed_headers.xml"/>
+        <include name="ProxyGenerator/Profiles/10.4/runtime_dump.xml"/>
+				<include name="${OutDir}/NObjective.ProxyGenerator.exe" />
+			</sourcefiles>
+
+			<targetfiles>
+				<include name="Proxies/10.4/libobjc.A.dylib.cs"/>
+			</targetfiles>
+		</uptodate>
+
+		<if test="${ IsProxiesUpToDate == 'False' }">
+      <if test="${ RegenProxies == 'true' }">
+        <exec program="mono" workingdir="${OutDir}">
+          <arg value="NObjective.ProxyGenerator.exe" />
+          <arg value="10.4" />
+        </exec>
+      </if>
+
+			<csc target="library" output="${OutDir}/NObjective.Proxies.Tiger.Unweaved.dll" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="NObjective.snk">
+				<nowarn>
+					<warning number="0414" />
+					<warning number="0659" />
+					<warning number="0660" />
+					<warning number="0661" />
+				</nowarn>
+				<sources>
+					<include name="Proxies/10.4/*.cs"/>
+					<include name="Properties/*.cs"/>
+				</sources>
+				<references basedir="${OutDir}">
+					<include name="NObjective.dll"/>
+				</references>
+			</csc>
+
+      <uptodate property="IsWeavedUpToDate">
+        <sourcefiles>
+          <include name="${OutDir}/NObjective.Proxies.Tiger.Unweaved.dll"/>
+        </sourcefiles>
+
+        <targetfiles>
+          <include name="${OutDir}/NObjective.Proxies.Tiger.dll"/>
+        </targetfiles>
+      </uptodate>
+
+      <if test="${ IsWeavedUpToDate == 'False' }">
+        <exec program="mono" workingdir="${OutDir}">
+          <arg value="NObjective.ProxyWeaver.exe" />
+          <arg value="NObjective.Proxies.Tiger.Unweaved.dll" />
+          <arg value="NObjective.Proxies.Tiger.dll" />
+        </exec>
+
+        <delay-sign keyfile="NObjective.snk">
+          <targets>
+            <include name="${OutDir}/NObjective.Proxies.Tiger.dll" />
+          </targets>
+        </delay-sign>
+      </if>
+		</if-->
+  </target>
+
+  <target name="distrib" depends="perftests_leopard, perftests_tiger">
+    <tar destfile="${OutDir}/NObjective_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.tgz" compression="GZip">
+      <fileset basedir="${OutDir}">
+        <include name="NObjective.dll" />
+        <include name="NObjective.xml" />
+        <include name="NObjective.Proxies.Leopard.dll" />
+        <include name="NObjective.Proxies.Tiger.dll" />
+        <include name="NObjective.dylib" />
+        <include name="../License.txt" />
+      </fileset>
+    </tar>
+
+    <tar destfile="${OutDir}/NObjectivePerformanceTest_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.tgz" compression="GZip">
+      <fileset basedir="PerformanceTests/bin">
+        <include name="*.*" />
+        <include name="../run_leopard_tests.sh" />
+        <include name="../run_tiger_tests.sh" />
+        <include name="../../License.txt" />
+      </fileset>
+    </tar>
+  </target>
+
+  <target name="tests_leopard" depends="native, proxies_leopard">
+    <csc target="library" output="${OutDir}/NObjective.Tests.Leopard.dll" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources>
+        <include name="Tests/*.cs"/>
+        <include name="Tests/Leopard/*.cs"/>
+      </sources>
+
+      <references basedir="${OutDir}">
+        <include name="NObjective.dll"/>
+        <include name="NObjective.Proxies.Leopard.dll"/>
+      </references>
+
+      <pkg-references>
+        <package name="mono-nunit"/>
+      </pkg-references>
+    </csc>
+  </target>
+
+  <target name="tests_tiger" depends="native, proxies_tiger">
+    <csc target="library" output="${OutDir}/NObjective.Tests.Tiger.dll" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources>
+        <include name="Tests/*.cs"/>
+        <include name="Tests/Tiger/*.cs"/>
+      </sources>
+
+      <references basedir="${OutDir}">
+        <include name="NObjective.dll"/>
+        <include name="NObjective.Proxies.Tiger.dll"/>
+      </references>
+
+      <pkg-references>
+        <package name="mono-nunit"/>
+      </pkg-references>
+    </csc>
+  </target>
+
+  <target name="perftest_nobjective_tiger" depends="proxies_tiger">
+    <copy todir="PerformanceTests/bin">
+      <fileset basedir="bin">
+        <include name="NObjective.dll" />
+        <include name="NObjective.dylib" />
+        <include name="NObjective.Proxies.Tiger.dll" />
+      </fileset>
+    </copy>
+
+    <csc target="exe" output="PerformanceTests/bin/NObjective.Performance.Tiger.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources>
+        <include name="PerformanceTests/nobjective.cs"/>
+        <include name="PerformanceTests/PeformanceTest.cs"/>
+      </sources>
+
+      <references basedir="${OutDir}">
+        <include name="NObjective.dll"/>
+        <include name="NObjective.Proxies.Tiger.dll"/>
+      </references>
+    </csc>
+  </target>
+  
+  <target name="perftest_nobjective_leopard" depends="proxies_leopard">
+    <copy todir="PerformanceTests/bin">
+      <fileset basedir="bin">
+        <include name="NObjective.dll" />
+        <include name="NObjective.dylib" />
+        <include name="NObjective.Proxies.Leopard.dll" />
+      </fileset>
+    </copy>
+
+    <csc target="exe" output="PerformanceTests/bin/NObjective.Performance.Leopard.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources>
+        <include name="PerformanceTests/nobjective.cs"/>
+        <include name="PerformanceTests/PeformanceTest.cs"/>
+      </sources>
+
+      <references basedir="${OutDir}">
+        <include name="NObjective.dll"/>
+        <include name="NObjective.Proxies.Leopard.dll"/>
+      </references>
+    </csc>
+  </target>
+
+  <target name="perftest_cocoasharp">
+    <csc target="exe" output="PerformanceTests/bin/CocoaSharp.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="PerformanceTests/cocoa-sharp/cocoa-sharp.snk">
+      <nowarn>
+        <warning number="0414" />
+      </nowarn>
+      <sources basedir="PerformanceTests">
+        <include name="cocoasharp.cs"/>
+        <include name="PeformanceTest.cs"/>
+        <include name="cocoa-sharp/src/Cocoa/**/*.cs"/>
+      </sources>
+    </csc>
+  </target>
+
+  <target name="perftest_monobjc_tiger">
+    <copy todir="PerformanceTests/bin">
+      <fileset basedir="PerformanceTests/monobjc">
+        <include name="*.dll" />
+      </fileset>
+    </copy>
+
+    <csc target="exe" output="PerformanceTests/bin/Monobjc.Performance.Tiger.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources basedir="PerformanceTests">
+        <include name="monobjc.cs"/>
+        <include name="PeformanceTest.cs"/>
+      </sources>
+      <references basedir="PerformanceTests/monobjc/Tiger">
+        <include name="Monobjc.dll"/>
+        <include name="Monobjc.Cocoa.dll"/>
+      </references>
+    </csc>
+  </target>
+  
+  <target name="perftest_monobjc_leopard">
+    <copy todir="PerformanceTests/bin">
+      <fileset basedir="PerformanceTests/monobjc">
+        <include name="*.dll" />
+      </fileset>
+    </copy>
+
+    <csc target="exe" output="PerformanceTests/bin/Monobjc.Performance.Leopard.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources basedir="PerformanceTests">
+        <include name="monobjc.cs"/>
+        <include name="PeformanceTest.cs"/>
+      </sources>
+      <references basedir="PerformanceTests/monobjc">
+        <include name="Monobjc.dll"/>
+        <include name="Monobjc.Cocoa.dll"/>
+      </references>
+    </csc>
+  </target>
+  
+  <target name="perftest_mobjc">
+    <uptodate property="IsMobjcTestUpToDate">
+      <sourcefiles>
+        <include name="PerformanceTests/mobjc/glue/DirectCalls.m"/>
+        <include name="PerformanceTests/mobjc/glue/Ffi.m"/>
+        <include name="PerformanceTests/mobjc/glue/Registrar.m"/>
+      </sourcefiles>
+
+      <targetfiles>
+        <include name="PerformanceTests/bin/mobjc-glue.dylib"/>
+      </targetfiles>
+    </uptodate>
+
+    <if test="${ IsMobjcTestUpToDate == 'False' }">
+      <exec program="gcc" workingdir="PerformanceTests" commandline="-o bin/mobjc-glue.dylib -Wall -O3 -arch i386 -arch ppc -framework Foundation -dynamiclib -lffi -I/usr/include mobjc/glue/DirectCalls.m mobjc/glue/Ffi.m mobjc/glue/Registrar.m" />
+    </if>
+    
+    <csc target="exe" output="PerformanceTests/bin/Mobjc.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources basedir="PerformanceTests">
+        <include name="mobjc.cs"/>
+        <include name="PeformanceTest.cs"/>
+        <include name="mobjc/source/*.cs"/>
+      </sources>
+    </csc>
+  </target>
+
+  <target name="perftest_native">
+    <uptodate property="IsNativeTestUpToDate">
+      <sourcefiles>
+        <include name="PerformanceTests/native/native.mm"/>
+      </sourcefiles>
+
+      <targetfiles>
+        <include name="PerformanceTests/bin/native.dylib"/>
+      </targetfiles>
+    </uptodate>
+
+    <if test="${ IsNativeTestUpToDate == 'False' }">
+      <exec program="xcodebuild" workingdir="PerformanceTests/native" commandline="-project native.xcodeproj -target native -configuration Release" />
+    </if>
+    
+    <csc target="exe" output="PerformanceTests/bin/native.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+      <sources basedir="PerformanceTests">
+        <include name="native.cs"/>
+      </sources>
+      <references basedir="${OutDir}">
+        <include name="NObjective.dll"/>
+      </references>
+    </csc>
+  </target>
+
+  <target name="perftests_tiger" depends="perftest_nobjective_tiger, perftest_cocoasharp, perftest_monobjc_tiger" />
+  <target name="perftests_leopard" depends="perftest_nobjective_leopard, perftest_cocoasharp, perftest_monobjc_leopard, perftest_mobjc, perftest_native" />
+
+  <target name="all_tiger" depends="tests_tiger, perftests_tiger" />
+  <target name="all_leopard" depends="tests_leopard, perftests_leopard" />
+</project>

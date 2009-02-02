@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DumpingSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClassIncludeFilters>
+    <string>.*</string>
+  </ClassIncludeFilters>
+  <ClassExcludeFilters />
+  <MethodExcludeFilters>
+    <string>^_</string>
+    <string>^CA_</string>
+    <string>^alloc$</string>
+    <string>^dealloc$</string>
+    <string>^finalize$</string>
+    <string>^allocWithZone:$</string>
+    <string>^copyWithZone:$</string>
+  </MethodExcludeFilters>
+  <Frameworks>
+    <framework name="Cocoa" />
+    <framework name="CoreData" />
+    <framework name="CoreVideo" />
+    <framework name="CoreAudio" />
+    <framework name="QuartzCore" />
+    <framework name="AppKit" />
+    <framework name="AddressBook" />
+    <framework name="WebKit" />
+    <framework name="DiscRecording" />
+  </Frameworks>
+</DumpingSettings>

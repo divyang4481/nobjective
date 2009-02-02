@@ -1,0 +1,26 @@
+2007-04-11 Todd Schavey <schaveyt@gmail.com>
+
+	* ViewSample.cs:
+	Because the Cocoa namespace has a Font class now, this
+        example must use the fully qualified name System.Drawing.Font.
+
+2006-01-01  Aaron Flynt  <aaron@aaronflynt.com>
+
+	* CocoaDoc.cs:
+	(FinishLoading): Removed the mainWindow.Center () call.
+	* CocoaDoc.nib: Added AutoSaveName to retain window settings between
+	launches. Changed menu references from Monodoc to CocoaDoc. Fixed Web 
+	Browser View placement in MainWindow.
+
+2005-12-15  Geoff Norton  <gnorton@customerdna.com>
+
+	* Makefile: Drop from svn
+	* CocoaDoc.cs: Reference MonoDoc.nib not CocoaDoc.nib
+
+2005-12-02  Geoff Norton  <gnorton@customerdna.com>
+
+	* CocoaDoc.cs: Add to the samples.
+
+2005-12-01  Geoff Norton  <gnorton@customerdna.com>
+
+	* Initial import     

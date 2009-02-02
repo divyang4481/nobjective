@@ -1,0 +1,102 @@
+# Ignore lists start with a rule name (R) followed by a list of assemblies (A),
+# types (T), and methods (M) to ignore.
+
+# We don't care about VB.NET consumer.
+R: Gendarme.Rules.Design.Linq.AvoidExtensionMethodOnSystemObjectRule
+A: mobjc
+
+# TODO: should fix this at some point
+R: Gendarme.Rules.Interoperability.DoNotAssumeIntPtrSizeRule
+A: mobjc
+
+# We have lots of cocoa style names.
+R: Gendarme.Rules.Naming.UseCorrectCasingRule
+A: mobjc
+
+R: Gendarme.Rules.Naming.AvoidNonAlphanumericIdentifierRule
+M: MObjc.Class MObjc.NSObject::class_()
+
+R: Gendarme.Rules.Naming.AvoidRedundancyInMethodNameRule
+M: System.Boolean MObjc.NSObject::respondsToSelector(MObjc.Selector)
+M: System.Void MObjc.NSObject::performSelectorOnMainThreadWithObjectWaitUntilDone(MObjc.Selector,MObjc.NSObject,System.Boolean)
+
+# These rules are just annoying.
+R: Gendarme.Rules.Correctness.MethodCanBeMadeStaticRule
+A: mobjc
+
+R: Gendarme.Rules.Design.ConsiderConvertingMethodToPropertyRule
+A: mobjc
+
+# This would be a nice rule if it didn't fire so much for private methods.
+R: Gendarme.Rules.Maintainability.AvoidUnnecessarySpecializationRule
+A: mobjc
+
+# We need to expose these for mcocoa's fast path.
+R: Gendarme.Rules.Interoperability.PInvokeShouldNotBeVisibleRule
+A: mobjc
+
+# Mono defaults to marshaling strings with utf-8 which is what we want to use for cocoa.
+R: Gendarme.Rules.Interoperability.MarshalStringsInPInvokeDeclarationsRule
+A: mobjc
+
+# We may want to enable this rule later.
+R: Gendarme.Rules.Naming.ParameterNamesShouldMatchOverriddenMethodRule
+A: mobjc
+
+# Don't think we want to use SafeHandle's.
+R: Gendarme.Rules.BadPractice.PreferSafeHandleRule
+A: mobjc
+
+# These types do not need to be disposable.
+R: Gendarme.Rules.Design.TypesWithNativeFieldsShouldBeDisposableRule
+T: MObjc.Selector
+T: MObjc.Native
+T: MObjc.NSObject
+T: MObjc.PtrArray
+
+# This is a casing issue.
+R: Gendarme.Rules.Design.AttributeArgumentsShouldHaveAccessorsRule
+T: MObjc.DisableRuleAttribute
+
+# This rule just seems to suck
+R: Gendarme.Rules.Maintainability.AvoidLackOfCohesionOfMethodsRule
+A: mobjc
+
+# False positive.
+R: Gendarme.Rules.Design.Generic.AvoidMethodWithUnusedGenericTypeRule
+M: T MObjc.ObjectExtensions::To(System.Object)
+
+R: Gendarme.Rules.Design.PreferEventsOverMethodsRule
+M: System.Void MObjc.CocoaException::Raise(System.IntPtr)
+
+# This exception is not constructed with strings.
+R: Gendarme.Rules.Exceptions.MissingExceptionConstructorsRule
+T: MObjc.CocoaException
+
+# Unused does not need a getter.
+R: Gendarme.Rules.Design.AvoidPropertiesWithoutGetAccessorRule
+T: MObjc.Unused
+
+# Unused::set_Value does not need to use the argument.
+R: Gendarme.Rules.Performance.AvoidUnusedParametersRule
+M: System.Void MObjc.Unused::set_Value(System.Object)
+
+# These methods all do something reasonable.
+R: Gendarme.Rules.Exceptions.DoNotSwallowErrorsCatchingNonSpecificExceptionsRule
+M: MObjc.NSObject MObjc.Managed::DoCreateNativeException(System.Exception)
+M: System.Void MObjc.NSObject::.cctor()
+M: System.IntPtr MObjc.Managed::Call(System.IntPtr,System.IntPtr,System.IntPtr)
+M: System.Void MObjc.Registrar::DoAddMethod(System.String,System.Reflection.MethodInfo,System.String,System.IntPtr,MObjc.Class)
+
+# This is a complex method, but it doesn't really lend itself to refactoring.
+R: Gendarme.Rules.Maintainability.AvoidComplexMethodsRule
+M: System.Void MObjc.Ffi::DoFillBuffer(System.IntPtr,System.Object,System.String)
+
+# This is struct is only 20 bytes and used in a cache which may get fairly large.
+R: Gendarme.Rules.Performance.AvoidLargeStructureRule
+T: MObjc.Native/StackFrame
+
+# The unboxing happens in case statements so it isn't a problem.
+R: Gendarme.Rules.Performance.AvoidUnneededUnboxingRule
+M: System.Void MObjc.Ffi::DoFillBuffer(System.IntPtr,System.Object,System.String)
+M: /Users/jessejones/Source/mobjc/source/Ffi.cs(?299)
