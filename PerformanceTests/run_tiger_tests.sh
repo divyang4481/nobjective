@@ -11,6 +11,8 @@ echo
 mono --version
 echo
 
-mono NObjective.Performance.Tiger.exe 
-mono Monobjc.Performance.Tiger.exe 
-mono CocoaSharp.Performance.exe 
+if [ "$SKIP_OTHER_BRIDGES" != "1" ]; then
+	mono NObjective.Performance.Tiger.exe 
+	mono Monobjc.Performance.Tiger.exe 
+	mono CocoaSharp.Performance.exe 
+fi;
