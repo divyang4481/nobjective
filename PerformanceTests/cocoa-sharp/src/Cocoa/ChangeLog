@@ -1,0 +1,130 @@
+
+2007-04-15 Todd Schavey <schaveyt@gmail.com>
+
+	* SpeechSynthesizer.cs: Inherits from Cocoa.Object rather than Cocoa.Window
+
+2007-04-15 Todd Schavey <schaveyt@gmail.com>
+
+	* SpeechSynthesizer.cs: Added to repository
+	* Range.cs:   Added to repository
+
+2007-04-13 Todd Schavey <schaveyt@gmail.com>
+
+	* View.cs: Added IsOpaque() event handler method
+
+2007-04-11 Todd Schavey <schaveyt@gmail.com>
+
+	* Cursor.cs: Added to repository
+	* Font.cs:   Added to repository
+	* Event.cs:  Added to repository
+	* Makefile.am: Updated to have make include the above files.
+	* Color.cs: 
+		Added Set, SetFill, SetStroke, and DrawSwatchInRect.
+	* BezierPath.cs:
+		Added enumerations for drawing. Added StrokeRect method
+		as well as some documentation.
+	* Point.cs:
+		Added Equals, ==, != operator overloads, and GetHashCode()
+	* Rect.cs:
+		Added Contains and ToString methods
+	* String.cs:
+		Updated ToString() to use UTF-8 encoding as it was the straight
+		c string was causing down stream problems. For what it is worth.
+       		This encoding is recommended by Apply post 10.3
+	* View.cs:
+		Added a bunch of event handlers for mouse and keyboard interaction.
+		Added OnDrawRect as virtual method for client to override as necessary.
+		Added AcceptsFirstReponder virtual method in order to get keyboard
+		interactivity working.
+	* Window.cs:
+		Added InvalidateCursorRectsForView, Display, and OrderFront methods
+
+2006-04-20  Geoff Norton  <gnorton@customerdna.com>
+
+	* Interop/ObjCInterop.cs (Dispatch): Make public so that the new
+	verifier doesn't complain about calling this.
+	* Interop/ObjCMethod.cs: Make the emitted delegate wrappers public so
+	the new verifier doesn't complain.
+
+2006-02-16  Geoff Norton <gnorton@customerdna.com>
+
+	* Refactored everything to the new Object and backend APIs.  There is no more
+	unsafe code.  We use the idea developed by Andreas Farber to dynamically
+	create delegates on a per-IMP basis.  This removes all the mono-specific hacks.
+
+2006-02-16  Geoff Norton  <gnorton@customerdna.com>
+
+	* Menu.cs: Added Menu support from David Mitchell
+	* SearchField.cs: Inherit from TextField; not control.  Thanks to Kevin Wojniak.
+	* StatusBar.cs:
+	  StatusItem.cs: Implementation from Kevin Wojniak.
+
+2006-01-26  Geoff Norton  <gnorton@customerdna.com>
+
+	* Application.cs:
+		Added setting the process type to a foreground process
+		to support running from the command line without the need
+		to macpack.
+
+2006-01-02  Aaron Flynt  <aaron@aaronflynt.com>
+	* Alert.cs:
+		(.ctor): Added default calling Cocoa.Object for alloc. Added init.
+		(BeginSheet): Added method.
+		(AddButtonWithTitle): Added method.
+		(InformativeText): Added property.
+		(MessageTitle): Added property.
+	* AlertHandler.cs: Added.
+	* Application.cs:
+		(Icon): Added property.
+		(BeginSheet): Added method.
+		(EndSheet): Added methods.
+	* MutableArray.cs: Added .ctor public MutableArray (string [] stringArray).
+	* Native.cs:
+		(ToSelector): Added method.
+		(sel_getUid): Added overload taking string argument.
+	* OpenPanel.cs: Added.
+	* OpenPanelHandler.cs: Added.
+	* Panel.cs: Added.
+	* SavePanel.cs: Added.
+	* SavePanelHandler.cs: Added.
+	* SheetHandler.cs: Added.
+	* Window.cs: Addeded default .ctor for alloc and init of itself and 
+	derived classes.
+
+2005-12-30  Andreas Faerber  <andreas.faerber@web.de>
+
+	* BezelStyle.cs: Added
+	* Button.cs: Added property BezelStyle
+	* Control.cs: Added events Action and DoubleAction
+	              Changed Target property to private
+	              Added private ActionSelector and DoubleActionSelector properties
+	              Added private child class ActionReceiver to dispatch action and doubleAction events
+	              Enclosed action related code in a region
+	* Point.cs: Added constructor Point(float,float)
+	* Rect.cs: Added constructors Rect(Point,Size) and Rect(float,float,float,float)
+	* ScrollView.cs: Added
+	* Size.cs: Added constructor Size(float,float)
+	* TableColumn.cs: Added constructor TableColumn(Cocoa.Object) for initWithIdentifier:
+	* TableView.cs: Added
+	* Window.cs: Changed constructor to Window(Rect,WindowStyle,BackingStoreType,bool)
+	* WindowStyle.cs: Added
+
+2005-12-05  Aaron Flynt  <aaron@aaronflynt.com>
+
+	* Alert.cs: Added
+	* AlertStyle.cs: Added
+	* Button.cs: Added
+	* CellStateValue.cs: Added
+	* Control.cs: Added property Enabled
+	* MenuItem.cs: Added property State
+	* PopUpButton.cs: Added
+	* Text.cs: Added
+	* TextView.cs: Added
+
+2005-12-01  Geoff Norton  <gnorton@customerdna.com>
+
+	* Makefile.am: Disable warnings for 0169
+                                        
+2005-12-01  Geoff Norton  <gnorton@customerdna.com>
+
+	* Initial import     

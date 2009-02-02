@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NObjectiveAST", "NObjectiveAST.csproj", "{8496FF01-EBCA-4DF0-B661-3C80E820C061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegenLexer", "RegenLexer.csproj", "{BA9F9EC2-DAA5-4EF7-A254-209EE7AAB3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegenAST", "RegenAST.csproj", "{565A1819-E803-4B31-98FC-2F6209C14259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAST", "TestAST.csproj", "{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8496FF01-EBCA-4DF0-B661-3C80E820C061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8496FF01-EBCA-4DF0-B661-3C80E820C061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8496FF01-EBCA-4DF0-B661-3C80E820C061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8496FF01-EBCA-4DF0-B661-3C80E820C061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9F9EC2-DAA5-4EF7-A254-209EE7AAB3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9F9EC2-DAA5-4EF7-A254-209EE7AAB3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9F9EC2-DAA5-4EF7-A254-209EE7AAB3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9F9EC2-DAA5-4EF7-A254-209EE7AAB3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565A1819-E803-4B31-98FC-2F6209C14259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565A1819-E803-4B31-98FC-2F6209C14259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565A1819-E803-4B31-98FC-2F6209C14259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565A1819-E803-4B31-98FC-2F6209C14259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

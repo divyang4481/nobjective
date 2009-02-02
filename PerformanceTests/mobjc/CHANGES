@@ -1,0 +1,67 @@
+-- Version 0.4.0.0 (r40) ----
+
+* Renamed IVar IBOutlet.
+* DirectCall p/invokes are now externally visible so mcocoa can use them for
+  its fast path.
+* Optimized object creation and a few other commonly used methods.
+* Fixed the registration of types so that we look at the attributes on the
+  type alone, not the type and its bases.
+* Type registration was not sorting the types quite right so it failed with
+  complex exported hierarchies.
+* Replaced DBC asserts with Trace.Assert. Unfortunately these default to doing
+  nothing. To get asserts to throw you can call the new AssertListener.Install
+  method.
+
+-- Version 0.3.0.0 (r16) ----
+
+* Simplified the library:
+	- removed support for formatted calls (Call("[[NSFoo alloc] initWithInt:{0}]", 100).
+	- removed the Untyped class
+	- typing is now stricter: in particular promotions will generally not be
+	  done automatically, if native code expects an int you can no longer pass
+	  in a short for example
+	- replaced NewMethodAttribute and OverrideMethodAttribute with RegisterAttribute
+	- public nullary and unary methods that start with a lower case letter are
+	  now automatically registered
+* Methods that call directly into Objective-C now start with a lower case letter
+  (like retain() and mutableCopy()).
+* A number of minor bugs have been fixed.
+
+-- Version 0.2.0.0 (r35) ----
+
+* Changed namespace casing.
+* Completely changed memory management. NSObject no longer fiddles with 
+  reference counts and is not IDisposeable. A one-to-one mapping between
+  managed and native instances is now maintained only for exported classes.
+  This means that clients can use the same rules in managed code as they
+  would in native code.
+* The memory unit tests now all pass and the memory stress test in the
+  sample no longer exhibits slow growth in the heap size.
+* Does a better job marshaling exceptions to native code when they aren't
+  serializeable.
+* Does a better job marhsaling null to native code.
+* Can now use RegisterAttribute on classes to allow them to be used as 
+  managed method argument types.  
+* NSObject, MethodSignature, and Untyped override Equals and GetHashCode.
+* Makefile targets are now rebuilt if gmcs or gcc flags change.
+* pkg-config pc file now supports the "Libraries with Unstable APIs" 
+  paradigm.
+* Renamed NativeValue Untyped.
+* Added an IVar class to provide type safe access to instance vars.
+* Added Snapshot which returns all NSObject's which are still around (in
+  debug).
+* Added a cocoa-pack script to build app bundles. This is like mono's
+  macpack except:
+  - it's not neccesary to delete the bundle before running the script.
+  - you can specify flags to use with mono (e.g. --debug).
+  - flags passed to the launcher script are forwarded to the assembly.
+  - instead of creating a lame Info.plist it copies (and seds) an existing one.
+  - mdb files are automatically copied if --debug is in the mono flags.
+  - localized resources are supported.
+  - .svn directories inside nibs are not copied into the bundle.
+  - the script doesn't export any environment variables so it may not 
+    work with winforms or other cocoa bridges.
+
+
+
+

@@ -1,0 +1,77 @@
+<Type Name="TableColumn" FullName="Cocoa.TableColumn">
+  <TypeSignature Language="C#" Value="public class TableColumn : Cocoa.Object" />
+  <AssemblyInfo>
+    <AssemblyName>cocoa-sharp</AssemblyName>
+    <AssemblyVersion>1.9.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Cocoa.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableColumn (IntPtr native_object);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="native_object" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="native_object">A pointer to an NSTableColumn.</param>
+        <summary>Creates a managed wrapper for an NSTableColumn.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identifier">
+      <MemberSignature Language="C#" Value="public Cocoa.Object Identifier { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Cocoa.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier.</summary>
+        <value>The identifer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableColumn (Cocoa.Object identifier);" />
+      <MemberType>Constructor</MemberType>
+      <Parameters>
+        <Parameter Name="identifier" Type="Cocoa.Object" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">An identifier.</param>
+        <summary>Creates a new instance with the specified identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the width.</summary>
+        <value>The width.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderCell">
+      <MemberSignature Language="C#" Value="public Cocoa.Cell HeaderCell { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Cocoa.Cell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the header cell.</summary>
+        <value>The header cell.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+  <Docs>
+    <summary>A managed representation for an NSTableColumn.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AB62BFF-BD39-446D-96F5-9E3E0DDF0315}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NObjective</RootNamespace>
+    <AssemblyName>NObjective</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>NObjective.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>659;660;661</NoWarn>
+    <DocumentationFile>bin\NObjective.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\NObjective.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="AutoreleaseScope.cs" />
+    <Compile Include="ExceptionBarrierManager.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="Properties\*.cs" />
+    <Compile Include="Runtime.cs" />
+    <Compile Include="Runtime.Exporting.cs" />
+    <Compile Include="Runtime.Proxies.cs" />
+    <Compile Include="RuntimeClass.cs" />
+    <Compile Include="RuntimeClasses.cs" />
+    <Compile Include="RuntimeEncoding.cs" />
+    <Compile Include="RuntimeExportBase.cs" />
+    <Compile Include="RuntimeImplementation.cs" />
+    <Compile Include="RuntimeMethod.cs" />
+    <Compile Include="RuntimeObject.cs" />
+    <Compile Include="RuntimeObjectProxy.cs" />
+    <Compile Include="RuntimeProperty.cs" />
+    <Compile Include="RuntimeProtocol.cs" />
+    <Compile Include="RuntimeVariable.cs" />
+    <Compile Include="ScopedMemoryCustodian.cs" />
+    <Compile Include="Selector.cs" />
+    <Compile Include="Selectors.cs" />
+    <Compile Include="Tracing\TextWriterTraceListener.cs" />
+    <Compile Include="Tracing\TraceContext.cs" />
+    <Compile Include="Tracing\TraceListener.cs" />
+    <Compile Include="Tracing\TraceMessageType.cs" />
+    <Compile Include="Tracing\TraceSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_debug.sh" />
+    <None Include="build_release.sh" />
+    <None Include="interop\functions.mm" />
+    <None Include="NObjective.build" />
+    <None Include="NObjective.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

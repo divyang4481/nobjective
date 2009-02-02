@@ -1,0 +1,22 @@
+BUILDING
+
+Navigate to the mobjc directory with a terminal and type
+`make` to make the libraries and the application. Type `make check`
+to run the unit tests and `make run-app` to run the sample Cocoa app.
+
+INSTALLING
+
+To install type `sudo make install`, to uninstall type `sudo make uninstall`.
+
+By default the libraries are installed into /usr/local/lib and
+the cocoa-pack script is installed into /usr/local/bin. You can 
+change this with a command like this: `make INSTALL_DIR=/tmp install`.
+
+USING
+
+For usage see the wiki: <http://code.google.com/p/mobjc/w/list>.
+Also look at the sample app (but note that this is not how applications
+should typically be written, see mcocoa's animating-views example for
+that).
+
+jesjones@mindspring.com

@@ -1,0 +1,102 @@
+set args /Library/Frameworks/Mono.framework/Versions/1.9/lib/mono/2.0/nunit-console.exe -fixture=BaseClassTests -nologo bin/tests.dll
+
+mono ../mono-tools/gendarme/bin/gendarme.exe --config ../mono-tools/gendarme/rules/rules.xml --html tmp.html bin/mobjc.dll
+
+* Release checklist:
+	- make sure everything is checked in
+	- use svn log -r 1:HEAD > CHANGE_LOG	 dd
+	- update CHANGES file
+	- update version number
+	- remove build_num file 
+	- install
+	- update README and wiki (discussion on Native usage should mention fast path)
+	- upload a new version to googlecode
+	- send an announcement
+	- make sure everything is checked in
+* Should be able to call arbitrary .net code from native code.
+* Experiment with using the native GC:
+	- mono doesn't seem to be able to p/invoke dll's compiled with -fobjc-gc-only...
+	  need to try this again when mono stops using boehm
+	- compile the native glue with -fobjc-gc-only
+	- provide Register and Unregister methods that take an id and stick it in a collection
+	- will need a mutex on native side
+	- get rid of auto pools
+	- get rid of NSObject::Create
+	- get rid of the doRetain ctors
+	- get rid of retaincount
+	- nsobject should probably not be disposable	IDisposable
+	- look at memory unit tests
+	- look at app memory test
+
+	static NSCountedSet* s_objects = nil;
+	static NSLock* s_lock = nil;
+	
+	void InitGC()
+	{
+		s_objects = [[NSCountedSet alloc] initWithCapacity:100];
+		s_lock = [[NSLock alloc] init];
+	}
+	
+	void RegisterObject(id object)
+	{
+		[s_lock lock];
+		[s_objects addObject:object];
+		[s_lock unlock];
+	}
+	
+	void UnregisterObject(id object)
+	{
+		[s_lock lock];
+		[s_objects removeObject:object];
+		[s_lock unlock];
+	}
+* Might be nice to have some Smokey rules:
+	- if managed class inherits from a managed class, attr and c# classes have to have 
+	  the same base
+	- subclasses need ExportClassAttribute if a base class has it
+* Need to do something with glue packaging. Ideally a universal binary with ppc, intel,
+  and 64-bit targets. If not that, then cross compile libs and have instal.sh install the
+  right one.
+* Think about adding a retain mode.
+	public enum RetainMode 
+	{
+		Normal, 		// NSObject doesn't do any implicit retains
+		Exports, 		// if the NSObject's actual type is decorated with ExportClassAttribute then the NSObject ctor does a retain
+		All				// the NSObject always does a retain
+	}	
+* Build a universal glue lib?
+* Release checklist:
+	- search for TODO (everywhere)
+	- run smoke
+	- run gendarme
+	- make sure tests work in debug
+	- make sure app works in debug
+	- make RELEASE=1 test
+	- make RELEASE=1 app
+	- make sure app memory test is OK
+	- review tar target
+	- make sure everything is checked in
+	- use svn log -r 1:HEAD > CHANGE_LOG
+	- update CHANGES file
+	- update version number
+	- remove build_num file 
+	- install
+	- update README and wiki (discussion on Native usage should mention fast path)
+	- upload a new version to googlecode
+	- send an announcement
+	- make sure everything is checked in
+* Limitations:
+	- 64-bit is doable but not there yet
+	- can't export static methods
+	- can't add methods to an instance (as opposed to a class)
+	- thread safety needs to be tested
+	- native subclass of a managed class isn't tested
+	
+
+
+Marshal.StringToHGlobalAuto(str);
+GCHandle.Alloc(array, GCHandleType.Pinned);
+Marshal.StructureToPtr(struct, buffer, false);
+
+Marshal.PtrToStringAuto((IntPtr) p)
+
