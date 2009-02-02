@@ -60,7 +60,7 @@ There are two scripts for build it:
  * build_release - without it
 
 ===Which frameworks are available through the NObjective bridge? ===
-See [http://code.google.com/p/objcmapper/source/browse/trunk/ProxyGenerator/Profiles/10.5/dumper_settings.xml proxy generator settings]. You can edit it and recreate all proxies to add specific frameworks.
+See [http://code.google.com/p/nobjective/source/browse/trunk/ProxyGenerator/Profiles/10.5/dumper_settings.xml proxy generator settings]. You can edit it and recreate all proxies to add specific frameworks.
 
 === Can I use NObjective bridge in VB.NET/MC++/F#/My Language ? ===
 Yes, you can. As long as the language is supported by the .NET runtime (i.e. can be transformed into IL), there is no limitations other than those of the language.
