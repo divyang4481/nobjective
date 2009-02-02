@@ -12,6 +12,9 @@ mono --version
 echo
 
 mono NObjective.Performance.Leopard.exe 
-#mono Monobjc.Performance.Leopard.exe 
-#mono Mobjc.Performance.exe
-#mono CocoaSharp.Performance.exe 
+
+if [ "$SKIP_OTHER_BRIDGES" != "1" ]; then
+	mono Monobjc.Performance.Leopard.exe 
+	mono Mobjc.Performance.exe
+	mono CocoaSharp.Performance.exe
+fi;

@@ -111,7 +111,7 @@
   </target>
 
   <target name="proxies_leopard" depends="weaver, proxy_generator, core">
-    <!--uptodate property="IsProxiesUpToDate">
+    <uptodate property="IsProxiesUpToDate">
       <sourcefiles>
         <include name="ProxyGenerator/Profiles/10.5/dumper_settings.xml"/>
         <include name="ProxyGenerator/Profiles/10.5/parsed_headers.xml"/>
@@ -171,11 +171,11 @@
           </targets>
         </delay-sign>
       </if>
-    </if-->
+    </if>
   </target>
 
   <target name="proxies_tiger" depends="weaver, proxy_generator, core">
-    <!--uptodate property="IsProxiesUpToDate">
+    <uptodate property="IsProxiesUpToDate">
 			<sourcefiles>
 				<include name="ProxyGenerator/Profiles/10.4/dumper_settings.xml"/>
         <include name="ProxyGenerator/Profiles/10.4/parsed_headers.xml"/>
@@ -235,7 +235,7 @@
           </targets>
         </delay-sign>
       </if>
-		</if-->
+		</if>
   </target>
 
   <target name="distrib" depends="perftests_leopard, perftests_tiger">
