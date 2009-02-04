@@ -20,35 +20,35 @@ namespace Monobjc.Cocoa
 		{
 			test_regression();
 		}
-		
+
 		/// <summary>
 		/// Used for regression tests.
 		/// </summary>
 		public static void test_regression()
 		{
 			ObjectiveCRuntime.LoadFramework( "Cocoa" );
-			ObjectiveCRuntime.Initialize(); 
-			
+			ObjectiveCRuntime.Initialize();
+
 			var test = new MonobjcTest();
 
 			test.OnBeginTest += () => { _pool = new NSAutoreleasePool(); };
-			test.OnEndTest += () => { _pool.Dispose(); };
+			test.OnEndTest += () => { _pool.Release(); _pool = null; };
 
 			test.TestAll( typeof( ObjectiveCRuntime ).Assembly );
 		}
 
 		public override void TestVarargMarshaling( int iterations )
 		{
-			var instance = new NSString( "some string to test" );
+			var instance = new NSString( "some string to test" ).Autorelease<NSString>();
 
 			for( int i = 0; i < iterations; i++ )
-				instance.StringByAppendingFormat( " %@ %@ %f %d %d", new NSString( "some" ), new NSString( "text" ), System.Math.PI, true, 10 ).ToString();
+				instance.StringByAppendingFormat( " %@ %@ %f %d %d", ( NSString ) "some", ( NSString ) "text", System.Math.PI, true, 10 ).ToString();
 		}
 
 		public override void TestInvocation( int iterations )
 		{
 			uint hash = 0;
-			var instance = new NSNumber( 10 );
+			var instance = new NSNumber( 10 ).Autorelease<NSNumber>();
 
 			for( int i = 0; i < iterations; i++ )
 				hash += instance.Hash;
@@ -57,7 +57,7 @@ namespace Monobjc.Cocoa
 		public override void TestAllocation( int iterations )
 		{
 			for( int i = 0; i < iterations; i++ )
-				new NSNumber( 10 );
+				new NSNumber( 10 ).Autorelease<NSNumber>();
 		}
 	}
 }
