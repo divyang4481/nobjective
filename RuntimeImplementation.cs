@@ -47,12 +47,12 @@ namespace NObjective
 		bool class_addProtocol( RuntimeClass @class, RuntimeProtocol protocol );
 	}
 
-	internal sealed class RuntimeV0Implementation : IRuntimeImplementation
+	internal sealed class RuntimeTracingImplementation : IRuntimeImplementation
 	{
 		private IRuntimeImplementation _delegate;
 		private StreamWriter _writer;
 
-		public RuntimeV0Implementation( IRuntimeImplementation @delegate, string filename )
+		public RuntimeTracingImplementation( IRuntimeImplementation @delegate, string filename )
 		{
 			_delegate = @delegate;
 
@@ -1022,6 +1022,378 @@ namespace NObjective
 
 	internal unsafe sealed class RuntimeV2Implementation : IRuntimeImplementation
 	{
+		/// <summary>
+		/// Represents list of pointers to protocol which internally used by Objective-C runtime.
+		/// Can be chained with other lists.
+		/// </summary>
+		public struct objc_protocol_list
+		{
+			/// <summary>
+			/// Next chained protocol list.
+			/// </summary>
+			public objc_protocol_list* next;
+
+			/// <summary>
+			/// Number of protocols in list.
+			/// </summary>
+			public int count;
+
+			/// <summary>
+			/// First pointer to protocol object.
+			/// </summary>
+			public objc_protocol* First;
+		}
+
+		/// <summary>
+		/// Represents protocol which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_protocol
+		{
+			/// <summary>
+			/// Usually all protocol is instances of Protocol class and isa == RuntimeClass( "Protocol" )
+			/// </summary>
+			public RuntimeClass isa;
+
+			/// <summary>
+			/// Name of protocol.
+			/// </summary>
+			public IntPtr protocol_name;
+
+			/// <summary>
+			/// List of adopted protocols.
+			/// </summary>
+			public objc_protocol_list* protocol_list;
+
+			/// <summary>
+			/// List of instance methods.
+			/// </summary>
+			public objc_method_description_list* instance_methods;
+
+			/// <summary>
+			/// List of class methods.
+			/// </summary>
+			public objc_method_description_list* class_methods;
+		}
+
+		/// <summary>
+		/// Represents additional information about protocol.
+		/// </summary>
+		public struct old_protocol_ext
+		{
+			/// <summary>
+			/// Size of that extension.
+			/// </summary>
+			uint size;
+
+			/// <summary>
+			/// List of optional instance methods.
+			/// </summary>
+			public objc_method_description_list* optional_instance_methods;
+
+			/// <summary>
+			/// List of optional class methods.
+			/// </summary>
+			public objc_method_description_list* optional_class_methods;
+
+			/// <summary>
+			/// List of properties.
+			/// </summary>
+			public objc_property_list* instance_properties;
+		}
+
+		/// <summary>
+		/// Represents list of method descriptions which used by <see cref="objc_protocol"/>.
+		/// </summary>
+		public struct objc_method_description_list
+		{
+			/// <summary>
+			/// Number of methods in list.
+			/// </summary>
+			public int count;
+
+			/// <summary>
+			/// First method description in list.
+			/// </summary>
+			public objc_method_description First;
+		}
+
+		/// <summary>
+		/// Represents method description which used by <see cref="objc_protocol"/>.
+		/// </summary>
+		public struct objc_method_description
+		{
+			/// <summary>
+			/// Name of method.
+			/// </summary>
+			public Selector name;
+
+			/// <summary>
+			/// Method encoding.
+			/// </summary>
+			public IntPtr types;
+		}
+
+		/// <summary>
+		/// Represents method list which internally used by Objective-C runtime.
+		/// It can be chained with other method lists.
+		/// </summary>
+		public struct objc_method_list
+		{
+			/// <summary>
+			/// Next chained method list.
+			/// </summary>
+			public objc_method_list* nextList;
+
+			/// <summary>
+			/// Number of methods in list.
+			/// </summary>
+			public int method_count;
+
+			/// <summary>
+			/// First method in list.
+			/// </summary>
+			public objc_method First;
+		}
+
+		/// <summary>
+		/// Represents Objective-C method which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_method
+		{
+			/// <summary>
+			/// Name of method.
+			/// </summary>
+			public Selector method_name;
+
+			/// <summary>
+			/// Encoding of method.
+			/// </summary>
+			public IntPtr method_types;
+
+			/// <summary>
+			/// Implementation of method.
+			/// </summary>
+			public IntPtr method_imp;
+		}
+
+		/// <summary>
+		/// Represents ivar list which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_ivar_list
+		{
+			/// <summary>
+			/// Number of ivars in list.
+			/// </summary>
+			public int ivar_count;
+
+			/// <summary>
+			/// First ivar in list.
+			/// </summary>
+			public objc_ivar First;
+		}
+
+		/// <summary>
+		/// Represents ivar which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_ivar
+		{
+			/// <summary>
+			/// Name of instance variable.
+			/// </summary>
+			public IntPtr ivar_name;
+
+			/// <summary>
+			/// Encoding of instance variable.
+			/// </summary>
+			public IntPtr ivar_type;
+
+			/// <summary>
+			/// Offset of instance variable.
+			/// </summary>
+			public int ivar_offset;
+		}
+
+		/// <summary>
+		/// Represents a list of properties which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_property_list
+		{
+			public uint entsize;
+			public uint count;
+
+			/// <summary>
+			/// First property in list.
+			/// </summary>
+			public objc_property First;
+		}
+
+		/// <summary>
+		/// Represents property objects which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_property
+		{
+			/// <summary>
+			/// Name of property.
+			/// </summary>
+			public byte* name;
+
+			/// <summary>
+			/// Holds information about synthezation options, getters and setters.
+			/// </summary>
+			public byte* attributes;
+		}
+
+		/// <summary>
+		/// Represents category objects which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_category
+		{
+			/// <summary>
+			/// Name of category.
+			/// </summary>
+			public IntPtr category_name;
+
+			/// <summary>
+			/// Name of class to extend.
+			/// </summary>
+			public IntPtr class_name;
+
+			/// <summary>
+			/// List of instance methods to extend target class.
+			/// </summary>
+			public objc_method_list* instance_methods;
+
+			/// <summary>
+			/// List of class methods to extend target class.
+			/// </summary>
+			public objc_method_list* class_methods;
+
+			/// <summary>
+			/// List of protocols to adopt by target class.
+			/// </summary>
+			public objc_protocol_list* protocols;
+
+			public uint size;
+
+			/// <summary>
+			/// List of properties to extend target class.
+			/// </summary>
+			public objc_property_list* instance_properties;
+		}
+
+		/// <summary>
+		/// Represents class and metaclass objects which internally used by Objective-C runtime.
+		/// </summary>
+		public struct objc_class
+		{
+			/// <summary>
+			/// Pointer to metaclass for class objects or pointer to root class for metaclass objects.
+			/// Or null for root classes.
+			/// </summary>
+			public objc_class* isa;
+
+			/// <summary>
+			/// Pointer to root class.
+			/// </summary>
+			public objc_class* super_class;
+
+			/// <summary>
+			/// Name of class.
+			/// </summary>
+			public IntPtr name;
+
+			/// <summary>
+			/// Class version.
+			/// Version of metaclass internally used by Objective-C runtime.
+			/// </summary>
+			public int version;
+
+			/// <summary>
+			/// Indicates status and features of class/metaclass objects.
+			/// </summary>
+			public ClassInfo info;
+
+			/// <summary>
+			/// Size of particular class instance.
+			/// </summary>
+			public int instance_size;
+
+			/// <summary>
+			/// List of instance variables.
+			/// </summary>
+			public objc_ivar_list* ivars;
+
+			/// <summary>
+			/// List of methods.
+			/// In class object here listed instance methods.
+			/// In metaclass object here listed class methods.
+			/// </summary>
+			public objc_method_list** methodLists;
+
+			/// <summary>
+			/// Internally used by Objective-C runtime to provide fast fetching of IMP by SEL.
+			/// </summary>
+			public IntPtr cache;
+
+			/// <summary>
+			/// List of adopted protocols.
+			/// </summary>
+			public objc_protocol_list* protocols;
+
+			/// <summary>
+			/// Ansi string that represents ivar layout.
+			/// Available if CLS_EXT is set.
+			/// </summary>
+			public IntPtr ivar_layout;
+
+			/// <summary>
+			/// 
+			/// Available if CLS_EXT is set.
+			/// </summary>
+			public objc_class_ext* ext;
+		}
+
+		public struct objc_class_ext
+		{
+			public uint size;
+			public byte* weak_ivar_layout;
+			public objc_property_list** propertyLists;
+		}
+
+		[Flags]
+		public enum ClassInfo
+		{
+			CLS_NONE = 0x0,
+			CLS_CLASS = 0x1,
+			CLS_META = 0x2,
+			CLS_INITIALIZED = 0x4,
+			CLS_POSING = 0x8,
+			CLS_MAPPED = 0x10,
+			CLS_FLUSH_CACHE = 0x20,
+			CLS_GROW_CACHE = 0x40,
+			CLS_NEED_BIND = 0x80,
+			CLS_METHOD_ARRAY = 0x100,
+			CLS_JAVA_HYBRID = 0x200,
+			CLS_JAVA_CLASS = 0x400,
+			CLS_INITIALIZING = 0x800,
+			CLS_FROM_BUNDLE = 0x1000,
+			CLS_HAS_CXX_STRUCTORS = 0x2000,
+			CLS_NO_METHOD_ARRAY = 0x4000,
+			CLS_HAS_LOAD_METHOD = 0x8000,
+			CLS_CONSTRUCTING = 0x10000,
+			CLS_EXT = 0x20000,
+			CLS_FINALIZE_ON_MAIN_THREAD = 0x40000,
+			CLS_NO_PROPERTY_ARRAY = 0x80000,
+			CLS_CONNECTED = 0x100000,
+			CLS_LOADED = 0x200000,
+			CLS_CONSTRUCTED = 0x400000,
+			CLS_LEAF = 0x800000,
+			CLS_UNKNOWN1 = 0x1000000,
+			CLS_UNKNOWN2 = 0x2000000,
+			CLS_UNKNOWN3 = 0x4000000,
+			CLS_UNKNOWN4 = 0x8000000,
+		}
+
 		#region IRuntimeImplementation Members
 
 		public unsafe string class_getName( RuntimeClass classHandle )
