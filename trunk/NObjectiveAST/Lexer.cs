@@ -171,7 +171,7 @@ namespace NObjectiveAST
 			/// L"unicode text"
 			/// </summary>
 			UnicodeString = 1 << 5,
-			
+
 			/// <summary>
 			/// @"NSString"
 			/// </summary>
@@ -793,24 +793,29 @@ namespace NObjectiveAST
 				}
 			}
 
-			long integerPart = 0;
-			ulong decimalPart = 0;
-			long exponentPart = 0;
+			var mainDoublePart = 0UL;
+			var mainPartDigits = 0;
+
+			var auxillaryDoublePart = 0UL;
+			var auxillaryPartDigits = 0;
+
+			var exponentPart = 0;
+			var initialExponent = 0;
 
 			if( isHex )
 			{
 				for( var value = HexValue[( byte ) CurrentCharacter]; value != -1; _readIndex++, value = HexValue[( byte ) CurrentCharacter] )
 				{
-					integerPart <<= 4;
-					integerPart += value;
+					mainDoublePart <<= 4;
+					mainDoublePart += ( uint ) value;
 				}
 			}
 			else if( isOctal )
 			{
 				while( char.IsDigit( CurrentCharacter ) )
 				{
-					integerPart <<= 3;
-					integerPart += ( long ) ( CurrentCharacter - '0' );
+					mainDoublePart <<= 3;
+					mainDoublePart += ( uint ) ( CurrentCharacter - '0' );
 					_readIndex++;
 				}
 			}
@@ -818,8 +823,19 @@ namespace NObjectiveAST
 			{
 				while( char.IsDigit( CurrentCharacter ) )
 				{
-					integerPart *= 10;
-					integerPart += ( long ) ( CurrentCharacter - '0' );
+					if( mainPartDigits < 9 )
+					{
+						mainDoublePart *= 10;
+						mainDoublePart += ( uint ) ( CurrentCharacter - '0' );
+						mainPartDigits++;
+					}
+					else if( auxillaryPartDigits < 9 )
+					{
+						auxillaryDoublePart *= 10;
+						auxillaryDoublePart += ( uint ) ( CurrentCharacter - '0' );
+						auxillaryPartDigits++;
+					}
+
 					_readIndex++;
 				}
 
@@ -830,8 +846,20 @@ namespace NObjectiveAST
 
 					while( char.IsDigit( CurrentCharacter ) )
 					{
-						decimalPart *= 10;
-						decimalPart += ( ulong ) ( CurrentCharacter - '0' );
+						if( mainPartDigits < 9 )
+						{
+							mainDoublePart *= 10;
+							mainDoublePart += ( uint ) ( CurrentCharacter - '0' );
+							mainPartDigits++;
+						}
+						else if( auxillaryPartDigits < 9 )
+						{
+							auxillaryDoublePart *= 10;
+							auxillaryDoublePart += ( uint ) ( CurrentCharacter - '0' );
+							auxillaryPartDigits++;
+						}
+
+						initialExponent--;
 						_readIndex++;
 					}
 				}
@@ -857,7 +885,7 @@ namespace NObjectiveAST
 					while( char.IsDigit( CurrentCharacter ) )
 					{
 						exponentPart *= 10;
-						exponentPart += ( long ) ( CurrentCharacter - '0' );
+						exponentPart += CurrentCharacter - '0';
 						_readIndex++;
 					}
 				}
@@ -909,20 +937,99 @@ namespace NObjectiveAST
 
 			object literalValue;
 
-			if( isDouble )
+			if( isDouble || isFloat )
 			{
-				_quotedStringBuilder.Length = 0;
-				_quotedStringBuilder.AppendFormat( "{0}.{1}e{2}", integerPart, decimalPart, exponentPart );
-				literalValue = double.Parse( _quotedStringBuilder.ToString(), System.Globalization.CultureInfo.InvariantCulture );
-			}
-			else if( isFloat )
-			{
-				_quotedStringBuilder.Length = 0;
-				_quotedStringBuilder.AppendFormat( "{0}.{1}e{2}", integerPart, decimalPart, exponentPart );
-				literalValue = float.Parse( _quotedStringBuilder.ToString(), System.Globalization.CultureInfo.InvariantCulture );
+				var doubleValue = 0.0;
+
+				var biasedExponent = 64;
+				var mantissa = mainDoublePart;
+
+				if( auxillaryPartDigits > 0 )
+					mantissa = mantissa * ( uint ) ( _mantissaPower10[auxillaryPartDigits - 1] >> 64 - _exponentBias[auxillaryPartDigits - 1] ) + auxillaryDoublePart;
+
+				var power10 = exponentPart + initialExponent;
+				var absolutePower10 = Math.Abs( power10 );
+				bool isPowerNegative = power10 < 0;
+
+				if( absolutePower10 > ( _exponentBias.Length + 1 ) * ( _exponentBias16.Length + 1 ) )
+				{
+					if( power10 > 0 )
+						doubleValue = double.PositiveInfinity;
+
+					goto doubleValueComputed;
+				}
+
+				var mantissaShift = mantissa;
+
+				mantissaShift |= mantissaShift >> 1;
+				mantissaShift |= mantissaShift >> 2;
+				mantissaShift |= mantissaShift >> 4;
+				mantissaShift |= mantissaShift >> 8;
+				mantissaShift |= mantissaShift >> 16;
+				mantissaShift |= mantissaShift >> 32;
+				mantissaShift -= ( mantissaShift >> 1 ) & 0x5555555555555555UL;
+				mantissaShift = ( ( mantissaShift >> 2 ) & 0x3333333333333333UL ) + ( mantissaShift & 0x3333333333333333UL );
+				mantissaShift = ( ( mantissaShift >> 4 ) + mantissaShift ) & 0x0f0f0f0f0f0f0f0fUL;
+				mantissaShift += mantissaShift >> 8;
+				mantissaShift += mantissaShift >> 16;
+				mantissaShift += mantissaShift >> 32;
+				mantissaShift = mantissaShift & 0x7f;
+
+				mantissa <<= 64 - ( int ) mantissaShift;
+				biasedExponent -= 64 - ( int ) mantissaShift;
+
+				var mantissaValues = isPowerNegative ? _mantissaPower01 : _mantissaPower10;
+				var mantissa16Values = isPowerNegative ? _mantissaPower01By16 : _mantissaPower10By16;
+
+				var mantissaElementIndex = absolutePower10 & 0xF;
+				if( mantissaElementIndex != 0 )
+				{
+					biasedExponent += isPowerNegative ? -_exponentBias[mantissaElementIndex - 1] + 1 : _exponentBias[mantissaElementIndex - 1];
+					MultiplyMantissa( ref mantissa, mantissaValues[mantissaElementIndex - 1], ref biasedExponent );
+				}
+
+				mantissaElementIndex = absolutePower10 >> 4;
+				if( mantissaElementIndex != 0 )
+				{
+					biasedExponent += isPowerNegative ? -_exponentBias16[mantissaElementIndex - 1] + 1 : _exponentBias16[mantissaElementIndex - 1];
+					MultiplyMantissa( ref mantissa, mantissa16Values[mantissaElementIndex - 1], ref biasedExponent );
+				}
+
+				if( ( ( uint ) mantissa & ( 1 << 10 ) ) != 0 )
+				{
+					var roundedMantissa = mantissa + 0x3FF + ( ( mantissa >> 11 ) & 1 );
+
+					if( roundedMantissa < mantissa )
+					{
+						roundedMantissa = ( roundedMantissa >> 1 ) | 0x8000000000000000;
+						biasedExponent += 1;
+					}
+
+					mantissa = roundedMantissa;
+				}
+
+				mantissa >>= 11;
+				biasedExponent += 0x3FE;
+
+				if( biasedExponent <= -52 )
+					mantissa = 0;
+				else if( biasedExponent <= 0 )
+					mantissa >>= -biasedExponent + 1;
+				else if( biasedExponent >= 0x7FF )
+					mantissa = 0x7FF0000000000000UL;
+				else
+					mantissa = ( ( ulong ) biasedExponent << 52 ) + ( mantissa & 0x000FFFFFFFFFFFFF );
+
+				*( ulong* ) &doubleValue = mantissa;
+
+			doubleValueComputed:
+				if( isFloat )
+					literalValue = ( float ) doubleValue;
+				else
+					literalValue = doubleValue;
 			}
 			else
-				literalValue = integerPart;
+				literalValue = mainDoublePart;
 
 			var literalType = LiteralValueFormat.Decimal;
 
@@ -946,6 +1053,24 @@ namespace NObjectiveAST
 			_tokens[_writeIndex].Row = CurrentRow;
 			_tokens[_writeIndex].Column = CurrentColumn;
 			_writeIndex++;
+		}
+
+		private static readonly int[] _exponentBias = new int[] { 4, 7, 10, 14, 17, 20, 24, 27, 30, 34, 37, 40, 44, 47, 50 };
+		private static readonly int[] _exponentBias16 = new int[] { 54, 107, 160, 213, 266, 319, 373, 426, 479, 532, 585, 638, 691, 745, 798, 851, 904, 957, 1010, 1064, 1117 };
+		private static readonly ulong[] _mantissaPower10 = new ulong[] { 0xA000000000000000, 0xC800000000000000, 0xFA00000000000000, 0x9C40000000000000, 0xC350000000000000, 0xF424000000000000, 0x9896800000000000, 0xBEBC200000000000, 0xEE6B280000000000, 0x9502F90000000000, 0xBA43B74000000000, 0xE8D4A51000000000, 0x9184E72A00000000, 0xB5E620F480000000, 0xE35FA931A0000000 };
+		private static readonly ulong[] _mantissaPower01 = new ulong[] { 0xCCCCCCCCCCCCCCCD, 0xA3D70A3D70A3D70B, 0x83126E978D4FDF3C, 0xD1B71758E219652E, 0xA7C5AC471B478425, 0x8637BD05AF6C69B7, 0xD6BF94D5E57A42BE, 0xABCC77118461CEFF, 0x89705F4136B4A599, 0xDBE6FECEBDEDD5C2, 0xAFEBFF0BCB24AB02, 0x8CBCCC096F5088CF, 0xE12E13424BB40E18, 0xB424DC35095CD813, 0x901D7CF73AB0ACDC };
+		private static readonly ulong[] _mantissaPower10By16 = new ulong[] { 0x8E1BC9BF04000000, 0x9DC5ADA82B70B59E, 0xAF298D050E4395D6, 0xC2781F49FFCFA6D4, 0xD7E77A8F87DAF7FA, 0xEFB3AB16C59B14A0, 0x850FADC09923329C, 0x93BA47C980E98CDE, 0xA402B9C5A8D3A6E6, 0xB616A12B7FE617A8, 0xCA28A291859BBF90, 0xE070F78D39275566, 0xF92E0C3537826140, 0x8A5296FFE33CC92C, 0x9991A6F3D6BF1762, 0xAA7EEBFB9DF9DE8A, 0xBD49D14AA79DBC7E, 0xD226FC195C6A2F88, 0xE950DF20247C83F8, 0x81842F29F2CCE373, 0x8FCAC257558EE4E2 };
+		private static readonly ulong[] _mantissaPower01By16 = new ulong[] { 0xE69594BEC44DE160, 0xCFB11EAD453994C3, 0xBB127C53B17EC165, 0xA87FEA27A539E9B3, 0x97C560BA6B0919B5, 0x88B402F7FD7553AB, 0xF64335BCF065D3A0, 0xDDD0467C64BCE4C4, 0xC7CABA6E7C5382ED, 0xB3F4E093DB73A0B7, 0xA21727DB38CB0053, 0x91FF83775423CC29, 0x8380DEA93DA4BC82, 0xECE53CEC4A314F00, 0xD5605FCDCF32E217, 0xC0314325637A1978, 0xAD1C8EAB5EE43BA2, 0x9BECCE62836AC5B0, 0x8C71DCD9BA0B495C, 0xFD00B89747823938, 0xE3E27A444D8D991A };
+
+		private static void MultiplyMantissa( ref ulong mantissa, ulong value, ref int biasedExponent )
+		{
+			mantissa = ( ( mantissa >> 32 ) * ( value >> 32 ) ) + ( ( mantissa >> 32 ) * ( uint ) value >> 32 ) + ( ( uint ) mantissa * ( value >> 32 ) >> 32 );
+
+			if( ( mantissa & 0x8000000000000000 ) == 0 )
+			{
+				mantissa <<= 1;
+				biasedExponent -= 1;
+			}
 		}
 
 		private void NewToken( Tokens type )
