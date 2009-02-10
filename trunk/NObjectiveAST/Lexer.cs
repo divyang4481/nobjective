@@ -16,7 +16,7 @@ namespace NObjectiveAST
 	/// <summary>
 	/// Lexer uses preprocessed output from GCC
 	/// </summary>
-	public unsafe partial class Lexer
+	public unsafe sealed partial class Lexer
 	{
 		/// <summary>
 		/// Represents single token.
@@ -205,11 +205,6 @@ namespace NObjectiveAST
 		{
 			public char* Text;
 			public int Length;
-			public int Hash;
-
-#pragma warning disable 649
-			public int Padding;
-#pragma warning restore 649
 
 			internal sealed class EqualityComparer : IEqualityComparer<IdentifierPoolEntry>
 			{
@@ -217,7 +212,7 @@ namespace NObjectiveAST
 
 				public bool Equals( IdentifierPoolEntry left, IdentifierPoolEntry right )
 				{
-					if( left.Length != right.Length || left.Hash != right.Hash )
+					if( left.Length != right.Length )
 						return false;
 
 					var ptr1 = left.Text;
@@ -235,7 +230,15 @@ namespace NObjectiveAST
 
 				public int GetHashCode( IdentifierPoolEntry obj )
 				{
-					return obj.Hash;
+					var hash = 0xCE0CE0CEU;
+
+					for( var ptr = obj.Text; ptr < obj.Text + obj.Length; ptr++ )
+					{
+						hash *= 41;
+						hash += *ptr;
+					}
+
+					return ( int ) hash;
 				}
 			}
 		}
@@ -738,7 +741,7 @@ namespace NObjectiveAST
 			Output = _tokens;
 
 #if DEBUG
-			var duplicatedHashes = _identifierPool.Count - _identifierPool.Keys.Select( x => x.Hash & 0x7FFFFFFF ).Distinct().Count();
+			var duplicatedHashes = _identifierPool.Count - _identifierPool.Keys.Select( x => IdentifierPoolEntry.EqualityComparer.Default.GetHashCode( x ) & 0x7FFFFFFF ).Distinct().Count();
 			if( duplicatedHashes != 0 )
 				Console.WriteLine( "Lexer: Found duplicated hash - {1} per {0} identifiers", _identifierPool.Count, duplicatedHashes );
 #endif
@@ -1134,14 +1137,8 @@ namespace NObjectiveAST
 		private string ReadIdentifier()
 		{
 			var startIndex = _readIndex;
-			var hash = 0xCE0CE0CEU;
-
 			for( ; ; )
 			{
-				// this hash provides better distribution of identifier hash codes
-				hash = hash << 7 | hash >> 25;
-				hash ^= _text[_readIndex];
-
 				_readIndex++;
 
 				if( IsEOF || !IsIdentifierCharacter[( byte ) CurrentCharacter] )
@@ -1153,7 +1150,6 @@ namespace NObjectiveAST
 			{
 				Text = _textPointer + startIndex,
 				Length = _readIndex - startIndex,
-				Hash = ( int ) hash
 			};
 
 			if( _identifierPool.TryGetValue( key, out result ) )
@@ -1449,7 +1445,7 @@ namespace NObjectiveAST
 		}
 	}
 
-	public class LexerException : Exception
+	public sealed class LexerException : Exception
 	{
 		public LexerException( string message, int row, int column )
 			: base( message )

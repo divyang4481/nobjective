@@ -115,9 +115,21 @@ namespace NObjectiveASTRegen
 					var setBlock = new BlockStatement();
 
 					getBlock.AddChild( new ReturnStatement( new IdentifierExpression( item.Name ) ) );
-					setBlock.AddChild( new ExpressionStatement( new AssignmentExpression( new IdentifierExpression( item.Name ), AssignmentOperatorType.Assign, new InvocationExpression( new IdentifierExpression( "SetParent" ), new List<Expression> { new IdentifierExpression( "value" ) } ) ) ) );
 
-					var property = new PropertyDeclaration( Modifiers.Public, null, GetPropertyName( item.Name ), null );
+					Expression assignment = new IdentifierExpression( "value" );
+					if( item.FieldType.GetClassHierarchy().Contains( typeof( NObjectiveAST.Node ) ) || ( item.FieldType.IsGenericType && item.FieldType.GetGenericTypeDefinition() == typeof( List<> ) && item.FieldType.GetGenericArguments()[0].GetClassHierarchy().Contains( typeof( NObjectiveAST.Node ) ) ) )
+						assignment = new InvocationExpression( new IdentifierExpression( "SetParent" ), new List<Expression> { assignment } );
+
+					setBlock.AddChild( new ExpressionStatement( new AssignmentExpression( new IdentifierExpression( item.Name ), AssignmentOperatorType.Assign, assignment ) ) );
+
+					List<AttributeSection> attributes = null;
+					if( item.FieldType.IsEnum || item.FieldType == typeof( string ) || item.FieldType == typeof( int ) || item.FieldType == typeof( uint ) || item.FieldType == typeof( long ) || item.FieldType == typeof( ulong ) || item.FieldType == typeof( short ) || item.FieldType == typeof( ushort ) || item.FieldType == typeof( byte ) || item.FieldType == typeof( sbyte ) || item.FieldType == typeof( bool ) )
+					{
+						attributes = new List<AttributeSection>();
+						attributes.Add( new AttributeSection { Attributes = new List<ICSharpCode.NRefactory.Ast.Attribute> { new ICSharpCode.NRefactory.Ast.Attribute() { Name = "XmlAttribute" } } } );
+					}
+
+					var property = new PropertyDeclaration( Modifiers.Public, attributes, GetPropertyName( item.Name ), null );
 					property.TypeReference = GetTypeReference( item.FieldType );
 					property.GetRegion = new PropertyGetRegion( getBlock, null );
 					property.SetRegion = new PropertySetRegion( setBlock, null );

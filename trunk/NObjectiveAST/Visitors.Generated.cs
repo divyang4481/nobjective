@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2008 Eugeny Grishul
+// Copyright (C) 2009 Eugeny Grishul
 //
 // See license in License.txt
 //
@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using System.Xml.Serialization;
 
 namespace NObjectiveAST
 {
@@ -53,8 +54,8 @@ namespace NObjectiveAST
 		object Visit( ParameterDeclaration node );
 		object Visit( ParenthesizedExpression node );
 		object Visit( PrimitiveExpression node );
-		object Visit( QualifiedName node );
 		object Visit( QualifiedIdentifierExpression node );
+		object Visit( QualifiedName node );
 		object Visit( QualifiedNestedName node );
 		object Visit( ReturnStatement node );
 		object Visit( ScopeStatement node );
@@ -83,12 +84,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( AssignmentExpression node )
 		{
-			if (node.Left != null) {
+			if ( node.Left != null ) {
 				BeginVisit( "Left", node.Left );
 				node.Left.AcceptVisitor( this );
 				EndVisit( "Left", node.Left );
 			}
-			if (node.Right != null) {
+			if ( node.Right != null ) {
 				BeginVisit( "Right", node.Right );
 				node.Right.AcceptVisitor( this );
 				EndVisit( "Right", node.Right );
@@ -97,12 +98,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( BinaryOperatorExpression node )
 		{
-			if (node.Left != null) {
+			if ( node.Left != null ) {
 				BeginVisit( "Left", node.Left );
 				node.Left.AcceptVisitor( this );
 				EndVisit( "Left", node.Left );
 			}
-			if (node.Right != null) {
+			if ( node.Right != null ) {
 				BeginVisit( "Right", node.Right );
 				node.Right.AcceptVisitor( this );
 				EndVisit( "Right", node.Right );
@@ -115,7 +116,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( CaseLabel node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -124,12 +125,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( CastExpression node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
 			}
-			if (node.TypeReference != null) {
+			if ( node.TypeReference != null ) {
 				BeginVisit( "TypeReference", node.TypeReference );
 				node.TypeReference.AcceptVisitor( this );
 				EndVisit( "TypeReference", node.TypeReference );
@@ -138,12 +139,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( CatchBlock node )
 		{
-			if (node.ExceptionParameter != null) {
+			if ( node.ExceptionParameter != null ) {
 				BeginVisit( "ExceptionParameter", node.ExceptionParameter );
 				node.ExceptionParameter.AcceptVisitor( this );
 				EndVisit( "ExceptionParameter", node.ExceptionParameter );
 			}
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -156,12 +157,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( CommaExpression node )
 		{
-			if (node.Left != null) {
+			if ( node.Left != null ) {
 				BeginVisit( "Left", node.Left );
 				node.Left.AcceptVisitor( this );
 				EndVisit( "Left", node.Left );
 			}
-			if (node.Right != null) {
+			if ( node.Right != null ) {
 				BeginVisit( "Right", node.Right );
 				node.Right.AcceptVisitor( this );
 				EndVisit( "Right", node.Right );
@@ -170,17 +171,17 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ConditionalExpression node )
 		{
-			if (node.ConditionExpression != null) {
+			if ( node.ConditionExpression != null ) {
 				BeginVisit( "ConditionExpression", node.ConditionExpression );
 				node.ConditionExpression.AcceptVisitor( this );
 				EndVisit( "ConditionExpression", node.ConditionExpression );
 			}
-			if (node.FalseExpression != null) {
+			if ( node.FalseExpression != null ) {
 				BeginVisit( "FalseExpression", node.FalseExpression );
 				node.FalseExpression.AcceptVisitor( this );
 				EndVisit( "FalseExpression", node.FalseExpression );
 			}
-			if (node.TrueExpression != null) {
+			if ( node.TrueExpression != null ) {
 				BeginVisit( "TrueExpression", node.TrueExpression );
 				node.TrueExpression.AcceptVisitor( this );
 				EndVisit( "TrueExpression", node.TrueExpression );
@@ -189,12 +190,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ConstructorDeclaration node )
 		{
-			if (node.ParameterDeclaration != null) {
+			if ( node.ParameterDeclaration != null ) {
 				BeginVisit( "ParameterDeclaration", node.ParameterDeclaration );
 				node.ParameterDeclaration.AcceptVisitor( this );
 				EndVisit( "ParameterDeclaration", node.ParameterDeclaration );
 			}
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -211,17 +212,17 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( DeclarationExpression node )
 		{
-			if (node.TypeDeclarationExpression != null) {
+			if ( node.TypeDeclarationExpression != null ) {
 				BeginVisit( "TypeDeclarationExpression", node.TypeDeclarationExpression );
 				node.TypeDeclarationExpression.AcceptVisitor( this );
 				EndVisit( "TypeDeclarationExpression", node.TypeDeclarationExpression );
 			}
-			if (node.TypeReference != null) {
+			if ( node.TypeReference != null ) {
 				BeginVisit( "TypeReference", node.TypeReference );
 				node.TypeReference.AcceptVisitor( this );
 				EndVisit( "TypeReference", node.TypeReference );
 			}
-			if (node.Declarations != null) {
+			if ( node.Declarations != null ) {
 				BeginVisitChildren( "Declarations", node.Declarations );
 				foreach (var item in node.Declarations) {
 					BeginVisit( "Declarations", item );
@@ -234,12 +235,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( DeclarationNode node )
 		{
-			if (node.InitializerExpression != null) {
+			if ( node.InitializerExpression != null ) {
 				BeginVisit( "InitializerExpression", node.InitializerExpression );
 				node.InitializerExpression.AcceptVisitor( this );
 				EndVisit( "InitializerExpression", node.InitializerExpression );
 			}
-			if (node.TypeReference != null) {
+			if ( node.TypeReference != null ) {
 				BeginVisit( "TypeReference", node.TypeReference );
 				node.TypeReference.AcceptVisitor( this );
 				EndVisit( "TypeReference", node.TypeReference );
@@ -248,7 +249,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( DestructorDeclaration node )
 		{
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -261,7 +262,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( DoWhileStatement node )
 		{
-			if (node.ConditionExpression != null) {
+			if ( node.ConditionExpression != null ) {
 				BeginVisit( "ConditionExpression", node.ConditionExpression );
 				node.ConditionExpression.AcceptVisitor( this );
 				EndVisit( "ConditionExpression", node.ConditionExpression );
@@ -274,7 +275,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( EnumElementDeclaration node )
 		{
-			if (node.InitializerExpression != null) {
+			if ( node.InitializerExpression != null ) {
 				BeginVisit( "InitializerExpression", node.InitializerExpression );
 				node.InitializerExpression.AcceptVisitor( this );
 				EndVisit( "InitializerExpression", node.InitializerExpression );
@@ -283,7 +284,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ExpressionStatement node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -292,17 +293,17 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ForStatement node )
 		{
-			if (node.ConditionExpression != null) {
+			if ( node.ConditionExpression != null ) {
 				BeginVisit( "ConditionExpression", node.ConditionExpression );
 				node.ConditionExpression.AcceptVisitor( this );
 				EndVisit( "ConditionExpression", node.ConditionExpression );
 			}
-			if (node.InitializationExpression != null) {
+			if ( node.InitializationExpression != null ) {
 				BeginVisit( "InitializationExpression", node.InitializationExpression );
 				node.InitializationExpression.AcceptVisitor( this );
 				EndVisit( "InitializationExpression", node.InitializationExpression );
 			}
-			if (node.LoopExpression != null) {
+			if ( node.LoopExpression != null ) {
 				BeginVisit( "LoopExpression", node.LoopExpression );
 				node.LoopExpression.AcceptVisitor( this );
 				EndVisit( "LoopExpression", node.LoopExpression );
@@ -311,7 +312,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( FunctionDefinitionStatement node )
 		{
-			if (node.DeclarationNode != null) {
+			if ( node.DeclarationNode != null ) {
 				BeginVisit( "DeclarationNode", node.DeclarationNode );
 				node.DeclarationNode.AcceptVisitor( this );
 				EndVisit( "DeclarationNode", node.DeclarationNode );
@@ -324,12 +325,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( IfStatement node )
 		{
-			if (node.ConditionExpression != null) {
+			if ( node.ConditionExpression != null ) {
 				BeginVisit( "ConditionExpression", node.ConditionExpression );
 				node.ConditionExpression.AcceptVisitor( this );
 				EndVisit( "ConditionExpression", node.ConditionExpression );
 			}
-			if (node.ElseStatement != null) {
+			if ( node.ElseStatement != null ) {
 				BeginVisit( "ElseStatement", node.ElseStatement );
 				node.ElseStatement.AcceptVisitor( this );
 				EndVisit( "ElseStatement", node.ElseStatement );
@@ -338,12 +339,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( InvocationExpression node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
 			}
-			if (node.Arguments != null) {
+			if ( node.Arguments != null ) {
 				BeginVisitChildren( "Arguments", node.Arguments );
 				foreach (var item in node.Arguments) {
 					BeginVisit( "Arguments", item );
@@ -364,7 +365,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( MemberReferenceExpression node )
 		{
-			if (node.Node != null) {
+			if ( node.Node != null ) {
 				BeginVisit( "Node", node.Node );
 				node.Node.AcceptVisitor( this );
 				EndVisit( "Node", node.Node );
@@ -373,7 +374,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( NamespaceDeclaration node )
 		{
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -386,6 +387,20 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( NewExpression node )
 		{
+			if ( node.TypeExpression != null ) {
+				BeginVisit( "TypeExpression", node.TypeExpression );
+				node.TypeExpression.AcceptVisitor( this );
+				EndVisit( "TypeExpression", node.TypeExpression );
+			}
+			if ( node.OperatorParameters != null ) {
+				BeginVisitChildren( "OperatorParameters", node.OperatorParameters );
+				foreach (var item in node.OperatorParameters) {
+					BeginVisit( "OperatorParameters", item );
+					item.AcceptVisitor( this );
+					EndVisit( "OperatorParameters", item );
+				}
+				EndVisitChildren( "OperatorParameters", node.OperatorParameters );
+			}
 			return null;
 		}
 		public virtual object Visit( NullStatement node )
@@ -394,12 +409,12 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ObjectiveMethodDeclarationStatement node )
 		{
-			if (node.ReturnType != null) {
+			if ( node.ReturnType != null ) {
 				BeginVisit( "ReturnType", node.ReturnType );
 				node.ReturnType.AcceptVisitor( this );
 				EndVisit( "ReturnType", node.ReturnType );
 			}
-			if (node.Parameters != null) {
+			if ( node.Parameters != null ) {
 				BeginVisitChildren( "Parameters", node.Parameters );
 				foreach (var item in node.Parameters) {
 					BeginVisit( "Parameters", item );
@@ -412,7 +427,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ObjectiveParameterDeclaration node )
 		{
-			if (node.TypeReference != null) {
+			if ( node.TypeReference != null ) {
 				BeginVisit( "TypeReference", node.TypeReference );
 				node.TypeReference.AcceptVisitor( this );
 				EndVisit( "TypeReference", node.TypeReference );
@@ -421,7 +436,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ObjectivePropertyDeclarationStatement node )
 		{
-			if (node.DeclarationExpression != null) {
+			if ( node.DeclarationExpression != null ) {
 				BeginVisit( "DeclarationExpression", node.DeclarationExpression );
 				node.DeclarationExpression.AcceptVisitor( this );
 				EndVisit( "DeclarationExpression", node.DeclarationExpression );
@@ -430,7 +445,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ObjectiveTypeDeclarationStatement node )
 		{
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -439,7 +454,7 @@ namespace NObjectiveAST
 				}
 				EndVisitChildren( "Body", node.Body );
 			}
-			if (node.InstanceVariableStatements != null) {
+			if ( node.InstanceVariableStatements != null ) {
 				BeginVisitChildren( "InstanceVariableStatements", node.InstanceVariableStatements );
 				foreach (var item in node.InstanceVariableStatements) {
 					BeginVisit( "InstanceVariableStatements", item );
@@ -460,7 +475,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ParameterDeclaration node )
 		{
-			if (node.Parameters != null) {
+			if ( node.Parameters != null ) {
 				BeginVisitChildren( "Parameters", node.Parameters );
 				foreach (var item in node.Parameters) {
 					BeginVisit( "Parameters", item );
@@ -473,7 +488,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ParenthesizedExpression node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -484,9 +499,18 @@ namespace NObjectiveAST
 		{
 			return null;
 		}
+		public virtual object Visit( QualifiedIdentifierExpression node )
+		{
+			if ( node.QualifiedName != null ) {
+				BeginVisit( "QualifiedName", node.QualifiedName );
+				node.QualifiedName.AcceptVisitor( this );
+				EndVisit( "QualifiedName", node.QualifiedName );
+			}
+			return null;
+		}
 		public virtual object Visit( QualifiedName node )
 		{
-			if (node.NestedNames != null) {
+			if ( node.NestedNames != null ) {
 				BeginVisitChildren( "NestedNames", node.NestedNames );
 				foreach (var item in node.NestedNames) {
 					BeginVisit( "NestedNames", item );
@@ -497,18 +521,9 @@ namespace NObjectiveAST
 			}
 			return null;
 		}
-		public virtual object Visit( QualifiedIdentifierExpression node )
-		{
-			if (node.Name != null) {
-				BeginVisit( "Name", node.Name );
-				node.Name.AcceptVisitor( this );
-				EndVisit( "Name", node.Name );
-			}
-			return null;
-		}
 		public virtual object Visit( QualifiedNestedName node )
 		{
-			if (node.GenericArguments != null) {
+			if ( node.GenericArguments != null ) {
 				BeginVisitChildren( "GenericArguments", node.GenericArguments );
 				foreach (var item in node.GenericArguments) {
 					BeginVisit( "GenericArguments", item );
@@ -521,7 +536,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ReturnStatement node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -534,7 +549,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( SizeofExpression node )
 		{
-			if (node.Node != null) {
+			if ( node.Node != null ) {
 				BeginVisit( "Node", node.Node );
 				node.Node.AcceptVisitor( this );
 				EndVisit( "Node", node.Node );
@@ -543,7 +558,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( SwitchStatement node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -552,17 +567,17 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TemplateParameterDeclaration node )
 		{
-			if (node.Initializer != null) {
+			if ( node.Initializer != null ) {
 				BeginVisit( "Initializer", node.Initializer );
 				node.Initializer.AcceptVisitor( this );
 				EndVisit( "Initializer", node.Initializer );
 			}
-			if (node.TemplateParametersDeclaration != null) {
+			if ( node.TemplateParametersDeclaration != null ) {
 				BeginVisit( "TemplateParametersDeclaration", node.TemplateParametersDeclaration );
 				node.TemplateParametersDeclaration.AcceptVisitor( this );
 				EndVisit( "TemplateParametersDeclaration", node.TemplateParametersDeclaration );
 			}
-			if (node.TypeReference != null) {
+			if ( node.TypeReference != null ) {
 				BeginVisit( "TypeReference", node.TypeReference );
 				node.TypeReference.AcceptVisitor( this );
 				EndVisit( "TypeReference", node.TypeReference );
@@ -571,7 +586,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TemplateParametersDeclaration node )
 		{
-			if (node.Parameters != null) {
+			if ( node.Parameters != null ) {
 				BeginVisitChildren( "Parameters", node.Parameters );
 				foreach (var item in node.Parameters) {
 					BeginVisit( "Parameters", item );
@@ -588,7 +603,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( ThrowStatement node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -597,7 +612,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TranslationUnit node )
 		{
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -610,7 +625,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TryCatchStatement node )
 		{
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -619,7 +634,7 @@ namespace NObjectiveAST
 				}
 				EndVisitChildren( "Body", node.Body );
 			}
-			if (node.CatchBlocks != null) {
+			if ( node.CatchBlocks != null ) {
 				BeginVisitChildren( "CatchBlocks", node.CatchBlocks );
 				foreach (var item in node.CatchBlocks) {
 					BeginVisit( "CatchBlocks", item );
@@ -632,17 +647,17 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TypeDeclarationExpression node )
 		{
-			if (node.Name != null) {
+			if ( node.Name != null ) {
 				BeginVisit( "Name", node.Name );
 				node.Name.AcceptVisitor( this );
 				EndVisit( "Name", node.Name );
 			}
-			if (node.TemplateParametersDeclaration != null) {
+			if ( node.TemplateParametersDeclaration != null ) {
 				BeginVisit( "TemplateParametersDeclaration", node.TemplateParametersDeclaration );
 				node.TemplateParametersDeclaration.AcceptVisitor( this );
 				EndVisit( "TemplateParametersDeclaration", node.TemplateParametersDeclaration );
 			}
-			if (node.Body != null) {
+			if ( node.Body != null ) {
 				BeginVisitChildren( "Body", node.Body );
 				foreach (var item in node.Body) {
 					BeginVisit( "Body", item );
@@ -655,7 +670,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TypedefStatement node )
 		{
-			if (node.DeclarationExpression != null) {
+			if ( node.DeclarationExpression != null ) {
 				BeginVisit( "DeclarationExpression", node.DeclarationExpression );
 				node.DeclarationExpression.AcceptVisitor( this );
 				EndVisit( "DeclarationExpression", node.DeclarationExpression );
@@ -664,7 +679,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TypeidExpression node )
 		{
-			if (node.Node != null) {
+			if ( node.Node != null ) {
 				BeginVisit( "Node", node.Node );
 				node.Node.AcceptVisitor( this );
 				EndVisit( "Node", node.Node );
@@ -673,32 +688,32 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( TypeReference node )
 		{
-			if (node.ElementType != null) {
+			if ( node.ElementType != null ) {
 				BeginVisit( "ElementType", node.ElementType );
 				node.ElementType.AcceptVisitor( this );
 				EndVisit( "ElementType", node.ElementType );
 			}
-			if (node.MemberOf != null) {
+			if ( node.MemberOf != null ) {
 				BeginVisit( "MemberOf", node.MemberOf );
 				node.MemberOf.AcceptVisitor( this );
 				EndVisit( "MemberOf", node.MemberOf );
 			}
-			if (node.ParameterDeclaration != null) {
+			if ( node.ParameterDeclaration != null ) {
 				BeginVisit( "ParameterDeclaration", node.ParameterDeclaration );
 				node.ParameterDeclaration.AcceptVisitor( this );
 				EndVisit( "ParameterDeclaration", node.ParameterDeclaration );
 			}
-			if (node.ReturnType != null) {
+			if ( node.ReturnType != null ) {
 				BeginVisit( "ReturnType", node.ReturnType );
 				node.ReturnType.AcceptVisitor( this );
 				EndVisit( "ReturnType", node.ReturnType );
 			}
-			if (node.Size != null) {
+			if ( node.Size != null ) {
 				BeginVisit( "Size", node.Size );
 				node.Size.AcceptVisitor( this );
 				EndVisit( "Size", node.Size );
 			}
-			if (node.GenericArguments != null) {
+			if ( node.GenericArguments != null ) {
 				BeginVisitChildren( "GenericArguments", node.GenericArguments );
 				foreach (var item in node.GenericArguments) {
 					BeginVisit( "GenericArguments", item );
@@ -711,7 +726,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( UnaryOperatorExpression node )
 		{
-			if (node.Expression != null) {
+			if ( node.Expression != null ) {
 				BeginVisit( "Expression", node.Expression );
 				node.Expression.AcceptVisitor( this );
 				EndVisit( "Expression", node.Expression );
@@ -720,7 +735,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( UsingDeclarationStatement node )
 		{
-			if (node.TypeReference != null) {
+			if ( node.TypeReference != null ) {
 				BeginVisit( "TypeReference", node.TypeReference );
 				node.TypeReference.AcceptVisitor( this );
 				EndVisit( "TypeReference", node.TypeReference );
@@ -733,7 +748,7 @@ namespace NObjectiveAST
 		}
 		public virtual object Visit( WhileStatement node )
 		{
-			if (node.ConditionExpression != null) {
+			if ( node.ConditionExpression != null ) {
 				BeginVisit( "ConditionExpression", node.ConditionExpression );
 				node.ConditionExpression.AcceptVisitor( this );
 				EndVisit( "ConditionExpression", node.ConditionExpression );
@@ -746,6 +761,11 @@ namespace NObjectiveAST
 		public Expression Left {
 			get { return _left; }
 			set { _left = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public Operators Operator {
+			get { return _operator; }
+			set { _operator = value; }
 		}
 		public Expression Right {
 			get { return _right; }
@@ -762,6 +782,11 @@ namespace NObjectiveAST
 		public Expression Left {
 			get { return _left; }
 			set { _left = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public Operators Operator {
+			get { return _operator; }
+			set { _operator = value; }
 		}
 		public Expression Right {
 			get { return _right; }
@@ -795,6 +820,11 @@ namespace NObjectiveAST
 	}
 	public partial class CastExpression
 	{
+		[XmlAttribute()]
+		public CastTypes CastType {
+			get { return _castType; }
+			set { _castType = value; }
+		}
 		public TypeReference TypeReference {
 			get { return _typeReference; }
 			set { _typeReference = SetParent( value ); }
@@ -863,6 +893,11 @@ namespace NObjectiveAST
 	}
 	public partial class ConstructorDeclaration
 	{
+		[XmlAttribute()]
+		public ConstructorModifiers Modifiers {
+			get { return _modifiers; }
+			set { _modifiers = value; }
+		}
 		public ParameterDeclaration ParameterDeclaration {
 			get { return _parameterDeclaration; }
 			set { _parameterDeclaration = SetParent( value ); }
@@ -887,6 +922,11 @@ namespace NObjectiveAST
 	}
 	public partial class DeclarationExpression
 	{
+		[XmlAttribute()]
+		public DeclarationModifiers Modifiers {
+			get { return _modifiers; }
+			set { _modifiers = value; }
+		}
 		public TypeReference TypeReference {
 			get { return _typeReference; }
 			set { _typeReference = SetParent( value ); }
@@ -907,6 +947,11 @@ namespace NObjectiveAST
 	}
 	public partial class DeclarationNode
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
 		public TypeReference TypeReference {
 			get { return _typeReference; }
 			set { _typeReference = SetParent( value ); }
@@ -923,6 +968,11 @@ namespace NObjectiveAST
 	}
 	public partial class DestructorDeclaration
 	{
+		[XmlAttribute()]
+		public bool IsVirtual {
+			get { return _isVirtual; }
+			set { _isVirtual = value; }
+		}
 		public List<Statement> Body {
 			get { return _body; }
 			set { _body = SetParent( value ); }
@@ -955,6 +1005,11 @@ namespace NObjectiveAST
 	}
 	public partial class EnumElementDeclaration
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
 		public Expression InitializerExpression {
 			get { return _initializerExpression; }
 			set { _initializerExpression = SetParent( value ); }
@@ -999,6 +1054,11 @@ namespace NObjectiveAST
 	}
 	public partial class FunctionDefinitionStatement
 	{
+		[XmlAttribute()]
+		public FunctionModifiers Modifiers {
+			get { return _modifiers; }
+			set { _modifiers = value; }
+		}
 		public DeclarationNode DeclarationNode {
 			get { return _declarationNode; }
 			set { _declarationNode = SetParent( value ); }
@@ -1011,6 +1071,11 @@ namespace NObjectiveAST
 	}
 	public partial class GotoStatement
 	{
+		[XmlAttribute()]
+		public string Label {
+			get { return _label; }
+			set { _label = value; }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1051,6 +1116,11 @@ namespace NObjectiveAST
 	}
 	public partial class LabeledStatement
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1059,6 +1129,11 @@ namespace NObjectiveAST
 	}
 	public partial class MemberAccessSpecifier
 	{
+		[XmlAttribute()]
+		public MemberAccessKind AccessKind {
+			get { return _accessKind; }
+			set { _accessKind = value; }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1071,6 +1146,16 @@ namespace NObjectiveAST
 			get { return _node; }
 			set { _node = SetParent( value ); }
 		}
+		[XmlAttribute()]
+		public MemberAccessStyle MemberAccess {
+			get { return _memberAccess; }
+			set { _memberAccess = value; }
+		}
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1079,6 +1164,11 @@ namespace NObjectiveAST
 	}
 	public partial class NamespaceDeclaration
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
 		public List<Statement> Body {
 			get { return _body; }
 			set { _body = SetParent( value ); }
@@ -1091,6 +1181,14 @@ namespace NObjectiveAST
 	}
 	public partial class NewExpression
 	{
+		public List<Expression> OperatorParameters {
+			get { return _operatorParameters; }
+			set { _operatorParameters = SetParent( value ); }
+		}
+		public Expression TypeExpression {
+			get { return _typeExpression; }
+			set { _typeExpression = SetParent( value ); }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1107,9 +1205,24 @@ namespace NObjectiveAST
 	}
 	public partial class ObjectiveMethodDeclarationStatement
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
+		[XmlAttribute()]
+		public MethodModifiers Modifiers {
+			get { return _modifiers; }
+			set { _modifiers = value; }
+		}
 		public TypeReference ReturnType {
 			get { return _returnType; }
 			set { _returnType = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public ObjectiveParameterModifier ReturnValueModifier {
+			get { return _returnValueModifier; }
+			set { _returnValueModifier = value; }
 		}
 		public List<ObjectiveParameterDeclaration> Parameters {
 			get { return _parameters; }
@@ -1123,9 +1236,19 @@ namespace NObjectiveAST
 	}
 	public partial class ObjectiveParameterDeclaration
 	{
+		[XmlAttribute()]
+		public ObjectiveParameterModifier Modifer {
+			get { return _modifer; }
+			set { _modifer = value; }
+		}
 		public TypeReference TypeReference {
 			get { return _typeReference; }
 			set { _typeReference = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public string SelectorPart {
+			get { return _selectorPart; }
+			set { _selectorPart = value; }
 		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
@@ -1135,6 +1258,21 @@ namespace NObjectiveAST
 	}
 	public partial class ObjectivePropertyDeclarationStatement
 	{
+		[XmlAttribute()]
+		public PropertyModifiers Modifiers {
+			get { return _modifiers; }
+			set { _modifiers = value; }
+		}
+		[XmlAttribute()]
+		public string GetterName {
+			get { return _getterName; }
+			set { _getterName = value; }
+		}
+		[XmlAttribute()]
+		public string SetterName {
+			get { return _setterName; }
+			set { _setterName = value; }
+		}
 		public DeclarationExpression DeclarationExpression {
 			get { return _declarationExpression; }
 			set { _declarationExpression = SetParent( value ); }
@@ -1147,6 +1285,26 @@ namespace NObjectiveAST
 	}
 	public partial class ObjectiveTypeDeclarationStatement
 	{
+		[XmlAttribute()]
+		public ObjectiveTypes Type {
+			get { return _type; }
+			set { _type = value; }
+		}
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
+		[XmlAttribute()]
+		public string Category {
+			get { return _category; }
+			set { _category = value; }
+		}
+		[XmlAttribute()]
+		public string BaseClass {
+			get { return _baseClass; }
+			set { _baseClass = value; }
+		}
 		public List<Statement> InstanceVariableStatements {
 			get { return _instanceVariableStatements; }
 			set { _instanceVariableStatements = SetParent( value ); }
@@ -1163,6 +1321,11 @@ namespace NObjectiveAST
 	}
 	public partial class ObjectiveTypeForwardDeclarationStatement
 	{
+		[XmlAttribute()]
+		public ObjectiveTypes Type {
+			get { return _type; }
+			set { _type = value; }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1171,6 +1334,11 @@ namespace NObjectiveAST
 	}
 	public partial class ObjectiveTypeModifierStatement
 	{
+		[XmlAttribute()]
+		public Modifiers Modifier {
+			get { return _modifier; }
+			set { _modifier = value; }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1182,6 +1350,11 @@ namespace NObjectiveAST
 		public List<DeclarationNode> Parameters {
 			get { return _parameters; }
 			set { _parameters = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public bool IsVararg {
+			get { return _isVararg; }
+			set { _isVararg = value; }
 		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
@@ -1203,6 +1376,22 @@ namespace NObjectiveAST
 	}
 	public partial class PrimitiveExpression
 	{
+		public LiteralValue Value {
+			get { return _value; }
+			set { _value = value; }
+		}
+		[DebuggerStepThroughAttribute()]
+		public override object AcceptVisitor( IAstVisitor visitor )
+		{
+			return visitor.Visit( this );
+		}
+	}
+	public partial class QualifiedIdentifierExpression
+	{
+		public QualifiedName QualifiedName {
+			get { return _qualifiedName; }
+			set { _qualifiedName = SetParent( value ); }
+		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
 		{
@@ -1221,20 +1410,13 @@ namespace NObjectiveAST
 			return visitor.Visit( this );
 		}
 	}
-	public partial class QualifiedIdentifierExpression
-	{
-		public QualifiedName Name {
-			get { return _qualifiedName; }
-			set { _qualifiedName = SetParent( value ); }
-		}
-		[DebuggerStepThroughAttribute()]
-		public override object AcceptVisitor( IAstVisitor visitor )
-		{
-			return visitor.Visit( this );
-		}
-	}
 	public partial class QualifiedNestedName
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
 		public List<Node> GenericArguments {
 			get { return _genericArguments; }
 			set { _genericArguments = SetParent( value ); }
@@ -1291,6 +1473,16 @@ namespace NObjectiveAST
 	}
 	public partial class TemplateParameterDeclaration
 	{
+		[XmlAttribute()]
+		public string Name {
+			get { return _name; }
+			set { _name = value; }
+		}
+		[XmlAttribute()]
+		public TemplateParameterType ParameterType {
+			get { return _parameterType; }
+			set { _parameterType = value; }
+		}
 		public Node Initializer {
 			get { return _initializer; }
 			set { _initializer = SetParent( value ); }
@@ -1375,9 +1567,19 @@ namespace NObjectiveAST
 			get { return _templateParametersDeclaration; }
 			set { _templateParametersDeclaration = SetParent( value ); }
 		}
+		[XmlAttribute()]
+		public TypeKind Type {
+			get { return _type; }
+			set { _type = value; }
+		}
 		public QualifiedName Name {
 			get { return _name; }
 			set { _name = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public bool IsForwardDeclaration {
+			get { return _isForwardDeclaration; }
+			set { _isForwardDeclaration = value; }
 		}
 		public List<Statement> Body {
 			get { return _body; }
@@ -1415,9 +1617,19 @@ namespace NObjectiveAST
 	}
 	public partial class TypeReference
 	{
+		[XmlAttribute()]
+		public string TypeName {
+			get { return _typeName; }
+			set { _typeName = value; }
+		}
 		public List<Node> GenericArguments {
 			get { return _genericArguments; }
 			set { _genericArguments = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public TypeKind TypeKind {
+			get { return _typeKind; }
+			set { _typeKind = value; }
 		}
 		public TypeReference ElementType {
 			get { return _elementType; }
@@ -1431,6 +1643,11 @@ namespace NObjectiveAST
 			get { return _memberOf; }
 			set { _memberOf = SetParent( value ); }
 		}
+		[XmlAttribute()]
+		public RedefinableOperators Operator {
+			get { return _operator; }
+			set { _operator = value; }
+		}
 		public TypeReference ReturnType {
 			get { return _returnType; }
 			set { _returnType = SetParent( value ); }
@@ -1438,6 +1655,11 @@ namespace NObjectiveAST
 		public ParameterDeclaration ParameterDeclaration {
 			get { return _parameterDeclaration; }
 			set { _parameterDeclaration = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public TypeModifiers Modifiers {
+			get { return _modifiers; }
+			set { _modifiers = value; }
 		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )
@@ -1450,6 +1672,11 @@ namespace NObjectiveAST
 		public Expression Expression {
 			get { return _expression; }
 			set { _expression = SetParent( value ); }
+		}
+		[XmlAttribute()]
+		public Operators Operator {
+			get { return _operator; }
+			set { _operator = value; }
 		}
 		[DebuggerStepThroughAttribute()]
 		public override object AcceptVisitor( IAstVisitor visitor )

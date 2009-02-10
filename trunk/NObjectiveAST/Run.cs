@@ -14,14 +14,14 @@ using System;
 
 namespace NHeader
 {
-	internal class Run
+	internal static class Run
 	{
 #if GCCFILE
-		const string InputFile = "..\\..\\objc_gcc_preprocessed.mm";
+		const string InputFile = "objc_gcc_preprocessed.mm";
 #else
-		const string InputFile = "..\\..\\test.cpp";
+		const string InputFile = "test.cpp";
 #endif
-		const string LexerOutputFile = "..\\..\\lexer_output.cpp";
+		const string LexerOutputFile = "lexer_output.cpp";
 
 		[STAThread]
 		static unsafe void Main( string[] args )
@@ -33,33 +33,34 @@ namespace NHeader
 			TranslationUnit translationUnit = null;
 			NObjectiveAST.EvaluatedRepresentation.TranslationUnit evaluatedTranslationUnit = null;
 
-			var sw = new Stopwatch();
+			var stopwatch = new Stopwatch();
 			for( int i = 0; i < 1; i++ )
 			{
-				sw.Start();
+				stopwatch.Start();
 				lexer = new Lexer( File.ReadAllText( InputFile ) );
 				translationUnit = new Parser( lexer ).TranslationUnit;
 				evaluatedTranslationUnit = NObjectiveAST.EvaluatedRepresentation.EvaluationVisitor.GetTranslationUnit( translationUnit );
-				sw.Stop();
+				stopwatch.Stop();
 
 				GC.Collect();
 				Console.WriteLine( "Memory: {0}KiB", GC.GetTotalMemory( false ) / 1024 );
-				Console.WriteLine( "Elapsed: {0}ms", sw.ElapsedMilliseconds );
+				Console.WriteLine( "Elapsed: {0}ms", stopwatch.ElapsedMilliseconds );
 				Console.WriteLine();
 				
-				sw.Reset();
+				stopwatch.Reset();
 			}
 
-			lexer.PrintTokenStatistics( "..\\..\\tokens_stats.txt" );
-			lexer.PrintIdentifierStatistics( "..\\..\\identifier_stats.txt" );
+			lexer.PrintTokenStatistics( "tokens_stats.txt" );
+			lexer.PrintIdentifierStatistics( "identifier_stats.txt" );
 
-			TraversalVisitor.PrintTree( "..\\..\\ast_tree.txt", translationUnit );
-			TraversalVisitor.PrintStatistics( "..\\..\\ast_stats.txt", translationUnit );
+			StatisticsVisitor.SaveAST( "ast_tree.xml", translationUnit );
+			StatisticsVisitor.LoadAST( "ast_tree.xml" );
+			StatisticsVisitor.PrintStatistics( "ast_stats.txt", translationUnit );
 
 			lexer.SaveTokens( LexerOutputFile );
-			OutputVisitor.Write( "..\\..\\ast_formatted.cpp", translationUnit );
+			OutputVisitor.Write( "ast_formatted.cpp", translationUnit );
 
-			//Process.Start( "winmerge", "..\\..\\lexer_output.cpp ..\\..\\lexer_output_orig.cpp /e" );
+			//Process.Start( "winmerge", "lexer_output.cpp lexer_output_orig.cpp /e" );
 		}
 	}
 }

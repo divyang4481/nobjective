@@ -535,7 +535,7 @@ namespace NObjectiveAST.EvaluatedRepresentation
 				objectiveMethod.ReturnType = Convert( node.ReturnType );
 
 				foreach( var parameter in node.Parameters )
-					objectiveMethod.Parameters.Add( new Variable( parameter.Name, Convert( parameter.TypeReference ) ) );
+					objectiveMethod.Parameters.Add( new Variable( parameter.SelectorPart, Convert( parameter.TypeReference ) ) );
 
 				objectiveClass.Methods.Add( objectiveMethod );
 				return base.Visit( node );
@@ -757,8 +757,8 @@ namespace NObjectiveAST.EvaluatedRepresentation
 				var enumScope = item as Enum;
 				if( enumScope != null )
 				{
-					if( enumScope.Items.ContainsKey( node.Name.ToString() ) )
-						return enumScope.Items[node.Name.ToString()];
+					if( enumScope.Items.ContainsKey( node.QualifiedName.ToString() ) )
+						return enumScope.Items[node.QualifiedName.ToString()];
 
 					continue;
 				}
@@ -768,8 +768,8 @@ namespace NObjectiveAST.EvaluatedRepresentation
 				{
 					foreach( var @enum in translationUnitScope.Enums )
 					{
-						if( @enum.Items.ContainsKey( node.Name.ToString() ) )
-							return @enum.Items[node.Name.ToString()];
+						if( @enum.Items.ContainsKey( node.QualifiedName.ToString() ) )
+							return @enum.Items[node.QualifiedName.ToString()];
 					}
 
 					continue;
