@@ -201,7 +201,7 @@ namespace NObjectiveAST
 		/// <summary>
 		/// .NET's string pool not applicable due to its persistance
 		/// </summary>
-		private unsafe struct IdentifierPoolEntry : IEquatable<IdentifierPoolEntry>, IComparable<IdentifierPoolEntry>
+		private unsafe struct IdentifierPoolEntry
 		{
 			public char* Text;
 			public int Length;
@@ -211,66 +211,33 @@ namespace NObjectiveAST
 			public int Padding;
 #pragma warning restore 649
 
-			public override int GetHashCode()
+			internal sealed class EqualityComparer : IEqualityComparer<IdentifierPoolEntry>
 			{
-				return Hash;
-			}
+				public static readonly EqualityComparer Default = new EqualityComparer();
 
-			#region IEquatable<IdentifierPoolEntry> Members
-
-			public bool Equals( IdentifierPoolEntry other )
-			{
-				if( Length != other.Length || Hash != other.Hash )
-					return false;
-
-				var ptr1 = Text;
-				var ptr2 = other.Text;
-				var counter = Length;
-
-				while( counter-- > 0 )
+				public bool Equals( IdentifierPoolEntry left, IdentifierPoolEntry right )
 				{
-					if( *ptr1++ != *ptr2++ )
+					if( left.Length != right.Length || left.Hash != right.Hash )
 						return false;
+
+					var ptr1 = left.Text;
+					var ptr2 = right.Text;
+					var counter = left.Length;
+
+					while( counter-- > 0 )
+					{
+						if( *ptr1++ != *ptr2++ )
+							return false;
+					}
+
+					return true;
 				}
 
-				return true;
-			}
-
-			#endregion
-
-			#region IComparable<IdentifierPoolEntry> Members
-
-			public int CompareTo( IdentifierPoolEntry other )
-			{
-				if( Length < other.Length )
-					return -1;
-
-				if( Length > other.Length )
-					return 1;
-
-				if( Hash < other.Hash )
-					return -1;
-
-				if( Hash > other.Hash )
-					return 1;
-
-				var text = Text;
-				var otherText = other.Text;
-
-				var counter = Length;
-				while( counter-- > 0 )
+				public int GetHashCode( IdentifierPoolEntry obj )
 				{
-					if( *text < *otherText )
-						return -1;
-
-					if( *text++ > *otherText++ )
-						return 1;
+					return obj.Hash;
 				}
-
-				return 0;
 			}
-
-			#endregion
 		}
 
 		/// <summary>
@@ -316,7 +283,7 @@ namespace NObjectiveAST
 		{
 			_text = text;
 			_tokens = new Token[text.Length];
-			_identifierPool = new Dictionary<IdentifierPoolEntry, string>( text.Length / 77 );
+			_identifierPool = new Dictionary<IdentifierPoolEntry, string>( text.Length / 77, IdentifierPoolEntry.EqualityComparer.Default );
 
 			fixed( char* textPointer = text )
 			{
@@ -770,6 +737,12 @@ namespace NObjectiveAST
 
 			Output = _tokens;
 
+#if DEBUG
+			var duplicatedHashes = _identifierPool.Count - _identifierPool.Keys.Select( x => x.Hash & 0x7FFFFFFF ).Distinct().Count();
+			if( duplicatedHashes != 0 )
+				Console.WriteLine( "Lexer: Found duplicated hash - {1} per {0} identifiers", _identifierPool.Count, duplicatedHashes );
+#endif
+
 			_identifierPool = null;
 			_quotedStringBuilder = null;
 		}
@@ -1029,7 +1002,7 @@ namespace NObjectiveAST
 					literalValue = doubleValue;
 			}
 			else
-				literalValue = mainDoublePart;
+				literalValue = ( long ) mainDoublePart;
 
 			var literalType = LiteralValueFormat.Decimal;
 
@@ -1160,12 +1133,13 @@ namespace NObjectiveAST
 
 		private string ReadIdentifier()
 		{
-			int startIndex = _readIndex;
-			uint hash = 0xCE0CE0CE;
+			var startIndex = _readIndex;
+			var hash = 0xCE0CE0CEU;
 
 			for( ; ; )
 			{
-				hash = ( hash << 4 ) | ( hash >> 28 );
+				// this hash provides better distribution of identifier hash codes
+				hash = hash << 7 | hash >> 25;
 				hash ^= _text[_readIndex];
 
 				_readIndex++;
