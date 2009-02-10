@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using System.Xml.Serialization;
 
 namespace NObjectiveAST
 {
@@ -17,6 +18,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public abstract class Node
 	{
+		[XmlIgnore]
 		public Node Parent { get; set; }
 
 		protected T SetParent<T>( T node ) where T : Node
@@ -62,7 +64,7 @@ namespace NObjectiveAST
 
 	public partial class QualifiedNestedName : Node
 	{
-		public string Name { get; set; }
+		private string _name;
 
 		/// <summary>
 		/// Can be expression or QualifiedName
@@ -75,7 +77,7 @@ namespace NObjectiveAST
 
 		public QualifiedNestedName( string name )
 		{
-			Name = name;
+			_name = name;
 		}
 	}
 
@@ -133,7 +135,7 @@ namespace NObjectiveAST
 		/// <summary>
 		/// Name of astField/variable/function
 		/// </summary>
-		public string Name { get; set; }
+		private string _name;
 
 		private TypeReference _typeReference;
 		private Expression _initializerExpression;
@@ -168,7 +170,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class ObjectiveTypeForwardDeclarationStatement : Statement
 	{
-		public ObjectiveTypes Type { get; set; }
+		private ObjectiveTypes _type;
 
 		public List<string> Names = new List<string>();
 	}
@@ -184,11 +186,12 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class ObjectiveTypeDeclarationStatement : Statement
 	{
-		public ObjectiveTypes Type { get; set; }
+		private ObjectiveTypes _type;
 
-		public string Name { get; set; }
-		public string Category { get; set; }
-		public string BaseClass { get; set; }
+		private string _name;
+		private string _category;
+		private string _baseClass;
+
 		public List<string> AdoptedProtocols { get; set; }
 
 		public void AddAdoptedProtocol( string protocol )
@@ -233,22 +236,22 @@ namespace NObjectiveAST
 			/// By default properies are readwrite.
 			/// </summary>
 			ReadWrite = 1 << 0,
-			
+
 			/// <summary>
 			/// Specifies that retain should be invoked on the object upon assignment and previous value recieve release message after assignment performed.
 			/// </summary>
 			Retain = 1 << 1,
-			
+
 			/// <summary>
 			/// Indicates that the property is read-only. Only a getter method is required in the @implementation. If you use @synthesize in the implementation block, only the getter method is synthesized. 
 			/// </summary>
 			ReadOnly = 1 << 2,
-			
+
 			/// <summary>
 			/// Specifies that a copy of the object should be used for assignment. The previous value is sent a release message. The copy is made by invoking the copy method.
 			/// </summary>
 			Copy = 1 << 3,
-			
+
 			/// <summary>
 			/// Specifies that the setter uses simple assignment. This is the default.
 			/// </summary>
@@ -263,17 +266,17 @@ namespace NObjectiveAST
 		/// <summary>
 		/// Additional modifiers used in property declaration.
 		/// </summary>
-		public PropertyModifiers Modifiers { get; set; }
+		private PropertyModifiers _modifiers;
 
 		/// <summary>
 		/// Name of getter method.
 		/// </summary>
-		public string GetterName { get; set; }
-		
+		private string _getterName;
+
 		/// <summary>
 		/// Name of setter method.
 		/// </summary>
-		public string SetterName { get; set; }
+		private string _setterName;
 
 		private DeclarationExpression _declarationExpression;
 	}
@@ -283,23 +286,23 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class ObjectiveParameterDeclaration : Node
 	{
-		public ObjectiveParameterModifier Modifer { get; set; }
+		private ObjectiveParameterModifier _modifer;
 
 		private TypeReference _typeReference;
 
 		/// <summary>
 		/// Name that used to build selector name.
 		/// </summary>
-		public string SelectorPart { get; set; }
+		private string _selectorPart;
 
 		/// <summary>
 		/// Name of parameter.
 		/// </summary>
-		public string Name { get; set; }
+		private string _name { get; set; }
 
 		public override string ToString()
 		{
-			return string.Format( "{0}:({1}){2}", SelectorPart, _typeReference, Name );
+			return string.Format( "{0}:({1}){2}", _selectorPart, _typeReference, _name );
 		}
 	}
 
@@ -330,11 +333,11 @@ namespace NObjectiveAST
 			Vararg = 4
 		}
 
-		public string Name { get; set; }
-		public MethodModifiers Modifiers { get; set; }
+		private string _name;
+		private MethodModifiers _modifiers;
 
 		private TypeReference _returnType;
-		public ObjectiveParameterModifier ReturnValueModifier { get; set; }
+		private ObjectiveParameterModifier _returnValueModifier;
 
 		private List<ObjectiveParameterDeclaration> _parameters = new List<ObjectiveParameterDeclaration>();
 		public void AddParameter( ObjectiveParameterDeclaration parameter )
@@ -362,7 +365,7 @@ namespace NObjectiveAST
 			Inline = 1 << 4,
 		}
 
-		public DeclarationModifiers Modifiers { get; set; }
+		private DeclarationModifiers _modifiers;
 
 		private TypeReference _typeReference;
 		private List<DeclarationNode> _declarations = new List<DeclarationNode>();
@@ -394,8 +397,7 @@ namespace NObjectiveAST
 			ForceInline = 1 << 2,
 		}
 
-		public FunctionModifiers Modifiers { get; set; }
-
+		private FunctionModifiers _modifiers;
 		private DeclarationNode _declarationNode;
 
 		public override string ToString()
@@ -498,10 +500,9 @@ namespace NObjectiveAST
 		}
 
 		private Node _node;
+		private MemberAccessStyle _memberAccess;
 
-		public MemberAccessStyle MemberAccess { get; set; }
-
-		public string Name { get; set; }
+		private string _name;
 	}
 
 	/// <summary>
@@ -513,9 +514,9 @@ namespace NObjectiveAST
 
 	public partial class NewExpression : Expression
 	{
-		public List<Expression> OperatorParameters;
+		private List<Expression> _operatorParameters;
 
-		public Expression _typeExpression;
+		private Expression _typeExpression;
 	}
 
 	/// <summary>
@@ -526,6 +527,10 @@ namespace NObjectiveAST
 		private Expression _conditionExpression;
 		private Expression _trueExpression;
 		private Expression _falseExpression;
+
+		public ConditionalExpression()
+		{
+		}
 
 		public ConditionalExpression( Expression testExpression, Expression trueExpression, Expression falseExpression )
 		{
@@ -549,6 +554,7 @@ namespace NObjectiveAST
 		/// All available C++ assignment operators according by it's precedence.
 		/// ms-help://MS.VSCC.v90/MS.MSDNQTR.v90.en/dv_vclang/html/95c1f0ba-dad8-4034-b039-f79a904f112f.htm
 		/// </summary>
+		[XmlType( "AssignmentOperator" )]
 		public enum Operators
 		{
 			Invalid,
@@ -617,18 +623,20 @@ namespace NObjectiveAST
 		/// <summary>
 		/// Kind of assignment.
 		/// </summary>
-		public Operators Operator { get; set; }
+		private Operators _operator;
 
 		/// <summary>
 		/// Right operand.
 		/// </summary>
 		private Expression _right;
 
+		public AssignmentExpression() { }
+
 		public AssignmentExpression( Expression left, Operators @operator, Expression right )
 		{
 			_left = SetParent( left );
 			_right = SetParent( right );
-			Operator = @operator;
+			_operator = @operator;
 		}
 
 		public static string GetOperatorString( Operators @operator )
@@ -653,7 +661,7 @@ namespace NObjectiveAST
 
 		public override string ToString()
 		{
-			return _left + " " + GetOperatorString( Operator ) + " " + _right;
+			return _left + " " + GetOperatorString( _operator ) + " " + _right;
 		}
 	}
 
@@ -666,6 +674,7 @@ namespace NObjectiveAST
 		/// All available C++ binary operators according by it's precedence.
 		/// ms-help://MS.VSCC.v90/MS.MSDNQTR.v90.en/dv_vclang/html/95c1f0ba-dad8-4034-b039-f79a904f112f.htm
 		/// </summary>
+		[XmlType( "BinaryOperator" )]
 		public enum Operators
 		{
 			Invalid,
@@ -770,18 +779,20 @@ namespace NObjectiveAST
 		/// <summary>
 		/// Kind of binary relation.
 		/// </summary>
-		public Operators Operator { get; set; }
+		private Operators _operator;
 
 		/// <summary>
 		/// Right operand.
 		/// </summary>
 		private Expression _right;
 
+		public BinaryOperatorExpression() { }
+
 		public BinaryOperatorExpression( Expression left, Operators @operator, Expression right )
 		{
 			_left = SetParent( left );
 			_right = SetParent( right );
-			Operator = @operator;
+			_operator = @operator;
 		}
 
 		public static string GetOperatorString( Operators @operator )
@@ -813,7 +824,7 @@ namespace NObjectiveAST
 
 		public override string ToString()
 		{
-			return _left + " " + GetOperatorString( Operator ) + " " + _right;
+			return _left + " " + GetOperatorString( _operator ) + " " + _right;
 		}
 	}
 
@@ -848,7 +859,7 @@ namespace NObjectiveAST
 
 		private Expression _expression;
 
-		public Operators Operator { get; set; }
+		private Operators _operator;
 
 		public static string GetOperatorString( Operators @operator )
 		{
@@ -873,7 +884,7 @@ namespace NObjectiveAST
 
 		public bool IsPostfix
 		{
-			get { return Operator == Operators.PostfixDecrement || Operator == Operators.PostfixIncrement; }
+			get { return _operator == Operators.PostfixDecrement || _operator == Operators.PostfixIncrement; }
 		}
 
 		public bool IsPrefix
@@ -884,9 +895,9 @@ namespace NObjectiveAST
 		public override string ToString()
 		{
 			if( IsPostfix )
-				return string.Format( "{0}{1}", _expression, GetOperatorString( Operator ) );
+				return string.Format( "{0}{1}", _expression, GetOperatorString( _operator ) );
 
-			return string.Format( "{0}{1}", GetOperatorString( Operator ), _expression );
+			return string.Format( "{0}{1}", GetOperatorString( _operator ), _expression );
 		}
 	}
 
@@ -902,7 +913,7 @@ namespace NObjectiveAST
 		/// <summary>
 		/// void foo( int x, ... )
 		/// </summary>
-		public bool IsVararg { get; set; }
+		private bool _isVararg;
 
 		public override string ToString()
 		{
@@ -920,8 +931,7 @@ namespace NObjectiveAST
 			Explicit = 1
 		}
 
-		public ConstructorModifiers Modifiers { get; set; }
-
+		private ConstructorModifiers _modifiers;
 		private ParameterDeclaration _parameterDeclaration;
 
 		private List<Statement> _body;
@@ -937,7 +947,7 @@ namespace NObjectiveAST
 
 	public partial class DestructorDeclaration : Statement
 	{
-		public bool IsVirtual { get; set; }
+		private bool _isVirtual;
 
 		private List<Statement> _body;
 
@@ -1019,7 +1029,7 @@ namespace NObjectiveAST
 			Explicit
 		}
 
-		public CastTypes CastType { get; set; }
+		private CastTypes _castType;
 
 		private TypeReference _typeReference;
 		private Expression _expression;
@@ -1030,7 +1040,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class GotoStatement : Statement
 	{
-		public string Label { get; set; }
+		private string _label;
 	}
 
 	/// <summary>
@@ -1040,7 +1050,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class LabeledStatement : Statement
 	{
-		public string Name { get; set; }
+		private string _name;
 	}
 
 	/// <summary>
@@ -1232,7 +1242,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class MemberAccessSpecifier : Statement
 	{
-		public MemberAccessKind AccessKind { get; set; }
+		private MemberAccessKind _accessKind;
 	}
 
 	public enum MemberAccessKind
@@ -1266,13 +1276,13 @@ namespace NObjectiveAST
 			Required
 		}
 
-		public Modifiers Modifier { get; set; }
+		private Modifiers _modifier;
 	}
 
 	public partial class TemplateParameterDeclaration : Node
 	{
-		public string Name { get; set; }
-		public TemplateParameterType ParameterType { get; set; }
+		private string _name;
+		private TemplateParameterType _parameterType;
 
 		/// <summary>
 		/// template&lt;class T = std::vector&gt;
@@ -1320,6 +1330,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class TypeDeclarationExpression : Expression
 	{
+		[XmlType( "TypeDeclarationKind" )]
 		public enum TypeKind
 		{
 			Invalid,
@@ -1336,10 +1347,10 @@ namespace NObjectiveAST
 
 		private TemplateParametersDeclaration _templateParametersDeclaration;
 
+		private TypeKind _type;
 		private QualifiedName _name;
-		public TypeKind Type { get; set; }
 
-		public bool IsForwardDeclaration { get; set; }
+		private bool _isForwardDeclaration;
 
 		private List<Statement> _body = new List<Statement>();
 
@@ -1350,7 +1361,7 @@ namespace NObjectiveAST
 
 		public override string ToString()
 		{
-			return string.Format( "{0} {1} {{ ... }}", Type.ToString().ToLower(), _name );
+			return string.Format( "{0} {1} {{ ... }}", _type.ToString().ToLower(), _name );
 		}
 	}
 
@@ -1359,7 +1370,7 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class EnumElementDeclaration : Statement
 	{
-		public string Name { get; set; }
+		private string _name;
 
 		private Expression _initializerExpression;
 	}
@@ -1376,6 +1387,8 @@ namespace NObjectiveAST
 	{
 		private Expression _expression;
 
+		public ExpressionStatement() { }
+
 		public ExpressionStatement( Expression expression )
 		{
 			_expression = SetParent( expression );
@@ -1389,9 +1402,9 @@ namespace NObjectiveAST
 	/// </summary>
 	public partial class NamespaceDeclaration : Statement
 	{
-		public string Name { get; set; }
+		private string _name;
 
-		public bool IsAnonymous { get { return Name == null; } }
+		public bool IsAnonymous { get { return _name == null; } }
 
 		private List<Statement> _body;
 		public void AddStatement( Statement node )
@@ -1403,7 +1416,7 @@ namespace NObjectiveAST
 
 		public override string ToString()
 		{
-			return string.Format( "namespace {0} {{ ... }}", Name );
+			return string.Format( "namespace {0} {{ ... }}", _name );
 		}
 	}
 
@@ -1442,6 +1455,7 @@ namespace NObjectiveAST
 	{
 		public struct LiteralValue
 		{
+			[XmlAttribute]
 			public LiteralValueFormat Type;
 
 			public object Value;
@@ -1597,7 +1611,7 @@ namespace NObjectiveAST
 			Boolean = 1 << 11
 		}
 
-		public LiteralValue Value { get; set; }
+		private LiteralValue _value;
 
 		public PrimitiveExpression()
 		{
@@ -1605,12 +1619,12 @@ namespace NObjectiveAST
 
 		public PrimitiveExpression( bool value )
 		{
-			Value = new LiteralValue( LiteralValueFormat.Boolean, value );
+			_value = new LiteralValue( LiteralValueFormat.Boolean, value );
 		}
 
 		public PrimitiveExpression( LiteralValueFormat type, object value )
 		{
-			Value = new LiteralValue( type, value );
+			_value = new LiteralValue( type, value );
 		}
 	}
 
@@ -1909,7 +1923,7 @@ namespace NObjectiveAST
 
 	public partial class TypeReference : Node, ICloneable
 	{
-		public string TypeName { get; set; }
+		private string _typeName;
 
 		/// <summary>
 		/// std::vector&lt;GenericArgument&gt;
@@ -1923,7 +1937,7 @@ namespace NObjectiveAST
 			_genericArguments.Add( SetParent( expression ) );
 		}
 
-		public TypeKind TypeKind { get; set; }
+		private TypeKind _typeKind;
 		private TypeReference _elementType;
 		private Expression _size;
 
@@ -1932,12 +1946,12 @@ namespace NObjectiveAST
 		/// </summary>
 		private QualifiedName _memberOf;
 
-		public RedefinableOperators Operator { get; set; }
+		private RedefinableOperators _operator;
 
 		private TypeReference _returnType;
 		private ParameterDeclaration _parameterDeclaration;
 
-		public TypeModifiers Modifiers { get; set; }
+		private TypeModifiers _modifiers;
 
 		/// <summary>
 		/// Is type generic?
@@ -1950,7 +1964,7 @@ namespace NObjectiveAST
 
 		public TypeReference( string name )
 		{
-			TypeName = name;
+			_typeName = name;
 		}
 
 		public override string ToString()
@@ -1959,25 +1973,25 @@ namespace NObjectiveAST
 			//if( new StackTrace().FrameCount > 100 )
 			//	return "@you have dependency loop@";
 
-			if( TypeKind == TypeKind.Array )
+			if( _typeKind == TypeKind.Array )
 				return string.Format( "{0}[{1}]", _elementType, _size == null ? "" : _size.ToString() );
 
-			if( TypeKind == TypeKind.Pointer )
+			if( _typeKind == TypeKind.Pointer )
 				return string.Format( "{0}*", _elementType );
 
-			if( TypeKind == TypeKind.Reference )
+			if( _typeKind == TypeKind.Reference )
 				return string.Format( "{0}&", _elementType );
 
-			if( TypeKind == TypeKind.Function )
+			if( _typeKind == TypeKind.Function )
 				return string.Format( "{0}{1}", _returnType, _parameterDeclaration );
 
 			if( IsGeneric )
-				return string.Format( "{0}<{1}>", TypeName, string.Join( ", ", _genericArguments.Select( x => x.ToString() ).ToArray() ) );
+				return string.Format( "{0}<{1}>", _typeName, string.Join( ", ", _genericArguments.Select( x => x.ToString() ).ToArray() ) );
 
-			if( TypeKind == TypeKind.Bitset )
+			if( _typeKind == TypeKind.Bitset )
 				return string.Format( "{0} : {1}", _elementType, _size );
 
-			var result = TypeName;
+			var result = _typeName;
 
 			return result;
 		}

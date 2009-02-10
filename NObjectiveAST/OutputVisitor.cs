@@ -727,7 +727,7 @@ namespace NObjectiveAST
 
 		public override object Visit( QualifiedIdentifierExpression node )
 		{
-			AcceptNode( node.Name );
+			AcceptNode( node.QualifiedName );
 
 			return null;
 		}
@@ -1115,7 +1115,7 @@ namespace NObjectiveAST
 					Print( Tokens.CloseParenthesis );
 				}
 
-				Print( node.Parameters[0].Name );
+				Print( node.Parameters[0].SelectorPart );
 
 				for( int i = 1; i < node.Parameters.Count; i++ )
 				{
@@ -1133,7 +1133,7 @@ namespace NObjectiveAST
 					PrintSpace();
 					Print( Tokens.CloseParenthesis );
 
-					Print( currentParameter.Name );
+					Print( currentParameter.SelectorPart );
 				}
 
 				if( ( node.Modifiers & ObjectiveMethodDeclarationStatement.MethodModifiers.Vararg ) != 0 )

@@ -15,7 +15,7 @@ using System.Diagnostics;
 
 namespace NObjectiveAST
 {
-	public class Parser
+	public sealed class Parser
 	{
 		internal static readonly HashSet<Tokens> Primitives = new HashSet<Tokens>
 		{
@@ -308,7 +308,7 @@ namespace NObjectiveAST
 
 				case Tokens.ScopeResolution:
 				case Tokens.Identifier:
-					result = new QualifiedIdentifierExpression { Name = GetQualifiedName( ref localIndex ) };
+					result = new QualifiedIdentifierExpression { QualifiedName = GetQualifiedName( ref localIndex ) };
 					break;
 			}
 
@@ -2043,7 +2043,7 @@ namespace NObjectiveAST
 						return null;
 				}
 
-				parameter.Name = GetIdentifier( ref localIndex );
+				parameter.SelectorPart = GetIdentifier( ref localIndex );
 				result.AddParameter( parameter );
 
 				SkipGCCAttribute( ref localIndex );
@@ -2082,7 +2082,7 @@ namespace NObjectiveAST
 							return null;
 					}
 
-					parameter.Name = GetIdentifier( ref localIndex );
+					parameter.SelectorPart = GetIdentifier( ref localIndex );
 
 					result.AddParameter( parameter );
 				}

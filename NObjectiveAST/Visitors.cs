@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace NObjectiveAST
 {
@@ -38,7 +40,7 @@ namespace NObjectiveAST
 			return node.AcceptVisitor( this );
 		}
 
-		public object AcceptChildren<T>( IEnumerable<T> node ) where T:Node
+		public object AcceptChildren<T>( IEnumerable<T> node ) where T : Node
 		{
 			if( node == null )
 				return null;
@@ -49,41 +51,41 @@ namespace NObjectiveAST
 			return null;
 		}
 
-		public static void PrintTree( string filename, Node node )
+		protected void OnBeginVisit( string name, Node node )
 		{
-			using( var writer = new StreamWriter( filename ) )
-				PrintTree( writer, node );
+			BeginVisit( name, node );
 		}
 
-		public static void PrintTree( TextWriter writer, Node node )
+		protected void OnEndVisit( string name, Node node )
 		{
-			var visitor = new TraversalVisitor();
+			EndVisit( name, node );
+		}
 
-			int indent = 0;
+		protected void OnBeginVisitChildren( string name, Node node )
+		{
+			BeginVisitChildren( name, node );
+		}
 
-			visitor.BeginVisit += ( name, child ) =>
-			{
-				writer.WriteLine( "{0}{1} ({2})", new string( '\t', indent++ ), child.GetType().Name, name );
-			};
+		protected void OnEndVisitChildren( string name, Node node )
+		{
+			EndVisitChildren( name, node );
+		}
+	}
 
-			visitor.EndVisit += ( name, child ) =>
-			{
-				indent--;
-			};
+	public sealed class StatisticsVisitor : TraversalVisitor
+	{
+		private static readonly XmlSerializer _serializer = new XmlSerializer( typeof( TranslationUnit ), System.Reflection.Assembly.GetExecutingAssembly().GetExportedTypes().Where( x => typeof( Node ).IsAssignableFrom( x ) ).ToArray() );
 
-			visitor.BeginVisitChildren += ( name, child ) =>
-			{
-				writer.WriteLine( "{0}Children:", new string( '\t', indent++ ), child.GetType().Name );
-			};
+		public static void SaveAST( string filename, Node node )
+		{
+			using( var writer = new StreamWriter( filename, false, Encoding.UTF8 ) )
+				_serializer.Serialize( writer, node );
+		}
 
-			visitor.EndVisitChildren += ( name, child ) =>
-			{
-				indent--;
-			};
-
-			visitor.BeginVisit( node.GetType().Name, node );
-			visitor.EndVisit( node.GetType().Name, node );
-			node.AcceptVisitor( visitor );
+		public static Node LoadAST( string filename )
+		{
+			using( var reader = new StreamReader( filename ) )
+				return ( Node ) _serializer.Deserialize( reader );
 		}
 
 		public static void PrintStatistics( string filename, Node node )
@@ -94,8 +96,8 @@ namespace NObjectiveAST
 
 		public static void PrintStatistics( TextWriter writer, Node node )
 		{
-			var visitor = new TraversalVisitor();
-			Dictionary<Type, int> astStatistics = new Dictionary<Type, int>();
+			var visitor = new StatisticsVisitor();
+			var astStatistics = new Dictionary<Type, int>();
 
 			visitor.BeginVisit += ( name, child ) =>
 			{
@@ -107,8 +109,8 @@ namespace NObjectiveAST
 					astStatistics.Add( type, 1 );
 			};
 
-			visitor.BeginVisit( node.GetType().Name, node );
-			visitor.EndVisit( node.GetType().Name, node );
+			visitor.OnBeginVisit( node.GetType().Name, node );
+			visitor.OnEndVisit( node.GetType().Name, node );
 			node.AcceptVisitor( visitor );
 
 			foreach( var item in astStatistics.OrderByDescending( x => x.Value ) )
