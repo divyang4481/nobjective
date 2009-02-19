@@ -26,7 +26,7 @@ Another way is to implement some useful logic and send me patches.
 
 == Licensing ==
 === Which license does NObjective bridge uses? ===
-NObjective project is licensed under the [http://www.gnu.org/licenses/lgpl-2.1.html GNU Lesser General Public License v2.1 or later].
+NObjective project is licensed under the [http://www.gnu.org/licenses/lgpl-3.0.html GNU Lesser General Public License v3.0 or later].
 
 === Why NObjective bridge is using the LGPL license ? ===
 NObjective bridge is using the LGPL license to ensure a widespread adoption of the technology. The LGPL has all of the restrictions of the GPL except that you may use the code at compile time without the derivative work becoming a GPL work. This allows the use of the code in proprietary works. 
@@ -66,7 +66,7 @@ See [http://code.google.com/p/nobjective/source/browse/trunk/ProxyGenerator/Prof
 Yes, you can. As long as the language is supported by the .NET runtime (i.e. can be transformed into IL), there is no limitations other than those of the language.
 
 === How do I develop my own application? ===
-* VS2008 + telnet/ssh to Mac OS machine
+* [http://msdn.microsoft.com/en-us/vstudio/default.aspx VS2008] + telnet/ssh to Mac OS machine
 * Monodevelop
 * NAnt + terminal
 
@@ -78,7 +78,7 @@ Some projects were around for many years and was not maintained. Some projects a
 
 == Usage == 
 === If I want additional frameworks should I modify analyze.mm? ===
-See !ProxyGenerator/Profiles/xxx/dumper_settings.xml, add appropriate entry to it and recreate all proxies ( "-D:!RegenProxies=True" option for nant ).
+See [http://code.google.com/p/nobjective/source/browse/trunk/ProxyGenerator/Profiles/10.5/dumper_settings.xml dumper_settings.xml], add appropriate entry to it and recreate all proxies ( "-D:!RegenProxies=True" option for nant ).
 
 === I tried to port some of my code to use your library and ran into this issue ===
 {{{
@@ -98,7 +98,7 @@ As you see, declaration doesn't contain any appropriate info about of return typ
 var def = new NSNotificationCenter( NSNotificationCenter.defaultCenter() );
 }}}
 === What happens if an exception is thrown in C#? Can it be caught in ObjC? Vice-versa? Will it be of a sensible type? === 
-Currenly exception propagation works in both directions for PPC/x86 processor architectures. Libraries like LIBFFI don't meet my performance requirements ( see mobjc test result - it's slower ). Also you can catch wrapped managed exceptions in native code using "NOExceptionProxy" class.
+Currenly exception propagation works in both directions for PPC/x86 processor architectures. Libraries like [http://sourceware.org/libffi/ LIBFFI] don't meet mine performance requirements ( see mobjc test result - it's slower ). Also you can catch wrapped managed exceptions in native code using "NOExceptionProxy" class.
 
 === If a string is passed from one runtime to the other and back, is the identity preserved? ===
 When string passes from .NET runtime - yes.
