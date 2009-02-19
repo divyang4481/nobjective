@@ -32,10 +32,10 @@ NObjective project is licensed under the [http://www.gnu.org/licenses/lgpl-3.0.h
 NObjective bridge is using the LGPL license to ensure a widespread adoption of the technology. The LGPL has all of the restrictions of the GPL except that you may use the code at compile time without the derivative work becoming a GPL work. This allows the use of the code in proprietary works. 
 
 === Can I use NObjective bridge in an other Open Source project or product? ===
-You can freely modify, extend, and improve NObjective project source code in an other Open Source project. The LGPL requires that all changes must be made available if the combined work is distributed. For more information on the LGPL, you can visit the Free Software Foundation's FAQ: http://www.gnu.org/licenses/gpl-faq.html.
+You can freely modify, extend, and improve NObjective project source code in an other Open Source project. The LGPL requires that all changes must be made available if the combined work is distributed. For more information on the LGPL, you can visit the [http://www.gnu.org/licenses/gpl-faq.html Free Software Foundation's FAQ]
 
 === Can I use NObjective bridge in a commercial product? ===
-You can freely modify, extend, and improve the NObjective project source code in a commercial product. The LGPL requires that all changes must be made available if the product is distributed. For more information on the LGPL, you can visit the Free Software Foundation's FAQ: http://www.gnu.org/licenses/gpl-faq.html.
+You can freely modify, extend, and improve the NObjective project source code in a commercial product. The LGPL requires that all changes must be made available if the product is distributed. For more information on the LGPL, you can visit the [http://www.gnu.org/licenses/gpl-faq.html Free Software Foundation's FAQ]
 
 == Runtime ==
 === What is the minimum version of Mac OS X to run NObjective bridge? ===
