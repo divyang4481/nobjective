@@ -4,8 +4,8 @@ You need OS X 10.5 or newer, and Xcode 3.1.1 or newer.
 
 === build scripts ===
 
-Checkout code from https://objcmapper.googlecode.com/svn/trunk/ and you'll see to scripts
- * build_debug.sh - builds library with debug information and tracing 
- * build_release - build with comiler optimizations and withot tracing
+Checkout code from http://objcmapper.googlecode.com/svn/trunk/ and you'll see to scripts
+ * [http://code.google.com/p/nobjective/source/browse/trunk/build_debug.sh build_debug.sh] - builds library with debug information and tracing 
+ * [http://code.google.com/p/nobjective/source/browse/trunk/build_release.sh build_release.sh] - build with comiler optimizations and withot tracing
 
-use them to build library
+and use them or nant directly to build library
