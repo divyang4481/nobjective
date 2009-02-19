@@ -33,7 +33,7 @@ NSNumber.numberWithBool_( true ).boolValue();
  It's most efficient and easy way to use objective-c.
  Note that method name is transformed selector name by replacing ':' with "`_`"
 
- See also http://code.google.com/p/nobjective/source/browse/trunk/tests/ProxiesTest.cs
+ See also [http://code.google.com/p/nobjective/source/browse/trunk/tests/ProxiesTest.cs ProxiesTest.cs]
 ===Exception handling===
 Mono runtime don't like setjmp/longjmp behavior of objective-c exceptions so they catched in NObjective.dylib. Test it:
 {{{
@@ -176,7 +176,7 @@ Also you can create objc object and attach to it's managed transparent proxy:
 var proxy = Runtime.CreateInstance<AutoRegisteredClass>( "init:", 888 );
 proxy.MarshalSBytes( 1, 2, 3 );
 }}}
-See also http://code.google.com/p/nobjective/source/browse/trunk/tests/RegistrationTest.cs and http://code.google.com/p/nobjective/source/browse/trunk/example/GUI.cs
+See also [http://code.google.com/p/nobjective/source/browse/trunk/tests/RegistrationTest.cs RegistrationTest.cs] and [http://code.google.com/p/nobjective/source/browse/trunk/example/GUI.cs GUI.cs]
 ===Customizing exporting===
 Good enought? No? 
 If you don't like naming scheme used by class exporter you can override it for method:
