@@ -1,10 +1,10 @@
-===Prerequisites===
+=== Prerequisites ===
 
-You need OS X 10.5 or newer, and Xcode 3.1.1 or newer.
+You need OS X 10.5 or newer, and Xcode 3.0 or newer.
 
-=== build scripts ===
+=== Build scripts ===
 
-Checkout code from http://objcmapper.googlecode.com/svn/trunk/ and you'll see to scripts
+Checkout code from http://nobjective.googlecode.com/svn/trunk/ and you'll see to scripts
  * [http://code.google.com/p/nobjective/source/browse/trunk/build_debug.sh build_debug.sh] - builds library with debug information and tracing 
  * [http://code.google.com/p/nobjective/source/browse/trunk/build_release.sh build_release.sh] - build with comiler optimizations and withot tracing
 
