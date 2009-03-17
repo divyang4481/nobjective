@@ -113,7 +113,7 @@ namespace NObjective
 				var proxy = Runtime.CreateInstance<GUITest>( "init" );
 
 				Console.WriteLine( "pwd {0}", Environment.CurrentDirectory );
-				Console.WriteLine( "Load NIB: {0}", NSBundle.loadNibNamed_owner_( "GUI", proxy.Handle ) );
+				Console.WriteLine( "Load NIB: {0}", AppKitExtensionsOfNSBundle.loadNibNamed_owner_( "GUI", proxy.Handle ) );
 				Console.WriteLine( "Application runned.." );
 
 				NSApplication.sharedApplication().run();
