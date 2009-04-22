@@ -142,4 +142,48 @@ namespace NObjective
 		/// </summary>
 		public Type Base { get; private set; }
 	}
+
+	/// <summary>
+	/// Property creation options.
+	/// </summary>
+	public enum PropertySynthesisOptions
+	{
+		/// <summary>
+		/// Specifies that the setter uses simple assignment.
+		/// </summary>
+		Assign,
+
+		/// <summary>
+		/// Specifies that a copy of the object should be used for assignment.
+		/// The previous value is sent a release message.
+		/// The copy is made by invoking the copy method.
+		/// </summary>
+		Copy,
+
+		/// <summary>
+		/// Specifies that retain should be invoked on the object upon assignment and previous value recieve release message after assignment performed.
+		/// </summary>
+		Retain
+	}
+
+	/// <summary>
+	/// Used to specify how to create property.
+	/// </summary>
+	[AttributeUsage( AttributeTargets.Property, AllowMultiple = false )]
+	public sealed class PropertySynthesisAttribute : Attribute
+	{
+		/// <summary>
+		/// Initializes new instance of PropertySynthesisAttribute with specified options.
+		/// </summary>
+		/// <param name="options"></param>
+		public PropertySynthesisAttribute( PropertySynthesisOptions options )
+		{
+			Options = options;
+		}
+
+		/// <summary>
+		/// Specifies options used in property creation.
+		/// </summary>
+		public PropertySynthesisOptions Options { get; private set; }
+	}
 }
