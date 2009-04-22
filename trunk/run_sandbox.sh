@@ -8,8 +8,10 @@
 cd `dirname "$0"`
 killall mono
 
-gmcs -target:exe -unsafe -out:bin/Sandbox.dll Platform.cs Sandbox.cs
+gmcs -target:exe -unsafe -out:bin/Sandbox.exe Platform.cs Sandbox.cs
+if [ "$?" -ne "0" ]; then exit 1; fi; 
 
-mono bin/Sandbox.dll
+echo ==start==
+mono bin/Sandbox.exe
 echo ==end==
 read

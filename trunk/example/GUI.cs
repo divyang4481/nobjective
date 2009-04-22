@@ -7,6 +7,7 @@
 using System;
 using NObjective.Proxies;
 using System.Diagnostics;
+using System.Threading;
 
 namespace NObjective
 {
@@ -116,7 +117,16 @@ namespace NObjective
 				Console.WriteLine( "Load NIB: {0}", AppKitExtensionsOfNSBundle.loadNibNamed_owner_( "GUI", proxy.Handle ) );
 				Console.WriteLine( "Application runned.." );
 
+				var consoleReaderThread = new Thread( () =>
+				{
+					while( Console.Read() != 'q' ) { }
+
+					NSApplication.sharedApplication().terminate_( NSApplication.sharedApplication() );
+				} );
+				consoleReaderThread.Start();
+
 				NSApplication.sharedApplication().run();
+				consoleReaderThread.Interrupt();
 			}
 			catch( Exception excpt )
 			{
