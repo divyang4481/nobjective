@@ -212,6 +212,8 @@ namespace NObjective.Tests
 				@base = Runtime.CreateInstance<HierarchyBase>( "init" );
 				derived = Runtime.CreateInstance<HierarchyDerived>( "init" );
 
+				HierarchyBase derivedCastedToBase = derived;
+
 				var test = new
 				{
 					_int = 7,
@@ -233,8 +235,12 @@ namespace NObjective.Tests
 				Assert.AreEqual( @base.IntReturn(), derived.IntReturn() );
 				Assert.AreEqual( @base.ShortReturn(), derived.ShortReturn() );
 
+				// override by name
 				Assert.AreEqual( @base.Supercall(), derived.Handle.SuperInvokeInt32( "Supercall" ) );
 				Assert.AreEqual( @base.Supercall(), Runtime.SendMessageToBase( derived.Handle, derived.Handle.Class.BaseClass, "Supercall" ).ToInt32() );
+
+				// C#-like override
+				Assert.IsTrue( derivedCastedToBase.VirtualMethod() == derived.Handle.InvokeUInt32( "VirtualMethod" ) );
 			}
 
 			Assert.AreEqual( true, @base.IsDeallocCalledForBase );
@@ -514,6 +520,11 @@ namespace NObjective.Tests
 			return 7;
 		}
 
+		public virtual uint VirtualMethod()
+		{
+			return 0xDEADBEEF;
+		}
+
 		public void dealloc()
 		{
 			IsDeallocCalledForBase = true;
@@ -551,6 +562,11 @@ namespace NObjective.Tests
 		public new int Supercall()
 		{
 			return 8;
+		}
+
+		public override uint VirtualMethod()
+		{
+			return 0xBEEFDEAD;
 		}
 
 		public new void dealloc()
