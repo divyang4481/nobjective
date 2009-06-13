@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is AB_AFCard ) ) return false; 
-			return Handle == ( ( AB_AFCard )value ).Handle;
+			var compareTo = value as AB_AFCard?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( AB_AFCard value ) {
 			return Handle == value.Handle;
@@ -205,8 +205,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is AB_AFDataFile ) ) return false; 
-			return Handle == ( ( AB_AFDataFile )value ).Handle;
+			var compareTo = value as AB_AFDataFile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( AB_AFDataFile value ) {
 			return Handle == value.Handle;
@@ -362,8 +362,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABAccessibilityMockUIElement ) ) return false; 
-			return Handle == ( ( ABAccessibilityMockUIElement )value ).Handle;
+			var compareTo = value as ABAccessibilityMockUIElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABAccessibilityMockUIElement value ) {
 			return Handle == value.Handle;
@@ -654,8 +654,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABACE ) ) return false; 
-			return Handle == ( ( ABACE )value ).Handle;
+			var compareTo = value as ABACE?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABACE value ) {
 			return Handle == value.Handle;
@@ -801,8 +801,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABACL ) ) return false; 
-			return Handle == ( ( ABACL )value ).Handle;
+			var compareTo = value as ABACL?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABACL value ) {
 			return Handle == value.Handle;
@@ -894,8 +894,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABAddressAttributedString ) ) return false; 
-			return Handle == ( ( ABAddressAttributedString )value ).Handle;
+			var compareTo = value as ABAddressAttributedString?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABAddressAttributedString value ) {
 			return Handle == value.Handle;
@@ -970,8 +970,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABAddressBook ) ) return false; 
-			return Handle == ( ( ABAddressBook )value ).Handle;
+			var compareTo = value as ABAddressBook?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABAddressBook value ) {
 			return Handle == value.Handle;
@@ -2027,8 +2027,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABAddToGroupCommand ) ) return false; 
-			return Handle == ( ( ABAddToGroupCommand )value ).Handle;
+			var compareTo = value as ABAddToGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABAddToGroupCommand value ) {
 			return Handle == value.Handle;
@@ -2070,8 +2070,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABAllGroup ) ) return false; 
-			return Handle == ( ( ABAllGroup )value ).Handle;
+			var compareTo = value as ABAllGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABAllGroup value ) {
 			return Handle == value.Handle;
@@ -2157,8 +2157,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABAuthenticationInfo ) ) return false; 
-			return Handle == ( ( ABAuthenticationInfo )value ).Handle;
+			var compareTo = value as ABAuthenticationInfo?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABAuthenticationInfo value ) {
 			return Handle == value.Handle;
@@ -2187,8 +2187,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABBackgroundImageButtonCell ) ) return false; 
-			return Handle == ( ( ABBackgroundImageButtonCell )value ).Handle;
+			var compareTo = value as ABBackgroundImageButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABBackgroundImageButtonCell value ) {
 			return Handle == value.Handle;
@@ -2239,8 +2239,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABBackupManager ) ) return false; 
-			return Handle == ( ( ABBackupManager )value ).Handle;
+			var compareTo = value as ABBackupManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABBackupManager value ) {
 			return Handle == value.Handle;
@@ -2381,8 +2381,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABBackupScheduler ) ) return false; 
-			return Handle == ( ( ABBackupScheduler )value ).Handle;
+			var compareTo = value as ABBackupScheduler?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABBackupScheduler value ) {
 			return Handle == value.Handle;
@@ -2551,8 +2551,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABBevellerView ) ) return false; 
-			return Handle == ( ( ABBevellerView )value ).Handle;
+			var compareTo = value as ABBevellerView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABBevellerView value ) {
 			return Handle == value.Handle;
@@ -2581,8 +2581,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABBuddyStatus ) ) return false; 
-			return Handle == ( ( ABBuddyStatus )value ).Handle;
+			var compareTo = value as ABBuddyStatus?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABBuddyStatus value ) {
 			return Handle == value.Handle;
@@ -2642,8 +2642,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABButtonCell ) ) return false; 
-			return Handle == ( ( ABButtonCell )value ).Handle;
+			var compareTo = value as ABButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABButtonCell value ) {
 			return Handle == value.Handle;
@@ -2744,8 +2744,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCardBackgroundView ) ) return false; 
-			return Handle == ( ( ABCardBackgroundView )value ).Handle;
+			var compareTo = value as ABCardBackgroundView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCardBackgroundView value ) {
 			return Handle == value.Handle;
@@ -2774,8 +2774,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCardItemRuler ) ) return false; 
-			return Handle == ( ( ABCardItemRuler )value ).Handle;
+			var compareTo = value as ABCardItemRuler?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCardItemRuler value ) {
 			return Handle == value.Handle;
@@ -2841,8 +2841,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCardItemRulerAccessibilityElement ) ) return false; 
-			return Handle == ( ( ABCardItemRulerAccessibilityElement )value ).Handle;
+			var compareTo = value as ABCardItemRulerAccessibilityElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCardItemRulerAccessibilityElement value ) {
 			return Handle == value.Handle;
@@ -2893,8 +2893,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCardViewerController ) ) return false; 
-			return Handle == ( ( ABCardViewerController )value ).Handle;
+			var compareTo = value as ABCardViewerController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCardViewerController value ) {
 			return Handle == value.Handle;
@@ -3010,8 +3010,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCardWindowController ) ) return false; 
-			return Handle == ( ( ABCardWindowController )value ).Handle;
+			var compareTo = value as ABCardWindowController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCardWindowController value ) {
 			return Handle == value.Handle;
@@ -3276,8 +3276,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCertController ) ) return false; 
-			return Handle == ( ( ABCertController )value ).Handle;
+			var compareTo = value as ABCertController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCertController value ) {
 			return Handle == value.Handle;
@@ -3377,8 +3377,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCertificateButtonCell ) ) return false; 
-			return Handle == ( ( ABCertificateButtonCell )value ).Handle;
+			var compareTo = value as ABCertificateButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCertificateButtonCell value ) {
 			return Handle == value.Handle;
@@ -3463,8 +3463,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABChangePropertiesCommand ) ) return false; 
-			return Handle == ( ( ABChangePropertiesCommand )value ).Handle;
+			var compareTo = value as ABChangePropertiesCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABChangePropertiesCommand value ) {
 			return Handle == value.Handle;
@@ -3506,8 +3506,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABChangePropertyCommand ) ) return false; 
-			return Handle == ( ( ABChangePropertyCommand )value ).Handle;
+			var compareTo = value as ABChangePropertyCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABChangePropertyCommand value ) {
 			return Handle == value.Handle;
@@ -3566,8 +3566,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCommand ) ) return false; 
-			return Handle == ( ( ABCommand )value ).Handle;
+			var compareTo = value as ABCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCommand value ) {
 			return Handle == value.Handle;
@@ -3669,8 +3669,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCompanyButtonCell ) ) return false; 
-			return Handle == ( ( ABCompanyButtonCell )value ).Handle;
+			var compareTo = value as ABCompanyButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCompanyButtonCell value ) {
 			return Handle == value.Handle;
@@ -3738,8 +3738,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABConverter ) ) return false; 
-			return Handle == ( ( ABConverter )value ).Handle;
+			var compareTo = value as ABConverter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABConverter value ) {
 			return Handle == value.Handle;
@@ -3883,8 +3883,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABCustomLabelEditor ) ) return false; 
-			return Handle == ( ( ABCustomLabelEditor )value ).Handle;
+			var compareTo = value as ABCustomLabelEditor?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABCustomLabelEditor value ) {
 			return Handle == value.Handle;
@@ -3974,8 +3974,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDataType ) ) return false; 
-			return Handle == ( ( ABDataType )value ).Handle;
+			var compareTo = value as ABDataType?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDataType value ) {
 			return Handle == value.Handle;
@@ -4004,8 +4004,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDAVManager ) ) return false; 
-			return Handle == ( ( ABDAVManager )value ).Handle;
+			var compareTo = value as ABDAVManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDAVManager value ) {
 			return Handle == value.Handle;
@@ -4342,8 +4342,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDAVQuery ) ) return false; 
-			return Handle == ( ( ABDAVQuery )value ).Handle;
+			var compareTo = value as ABDAVQuery?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDAVQuery value ) {
 			return Handle == value.Handle;
@@ -4638,8 +4638,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDBCache ) ) return false; 
-			return Handle == ( ( ABDBCache )value ).Handle;
+			var compareTo = value as ABDBCache?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDBCache value ) {
 			return Handle == value.Handle;
@@ -4990,8 +4990,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDeleteGroupsCommand ) ) return false; 
-			return Handle == ( ( ABDeleteGroupsCommand )value ).Handle;
+			var compareTo = value as ABDeleteGroupsCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDeleteGroupsCommand value ) {
 			return Handle == value.Handle;
@@ -5033,8 +5033,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDeleteRecordsCommand ) ) return false; 
-			return Handle == ( ( ABDeleteRecordsCommand )value ).Handle;
+			var compareTo = value as ABDeleteRecordsCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDeleteRecordsCommand value ) {
 			return Handle == value.Handle;
@@ -5094,8 +5094,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDirectoriesController ) ) return false; 
-			return Handle == ( ( ABDirectoriesController )value ).Handle;
+			var compareTo = value as ABDirectoriesController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDirectoriesController value ) {
 			return Handle == value.Handle;
@@ -5186,8 +5186,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDirectoriesGroup ) ) return false; 
-			return Handle == ( ( ABDirectoriesGroup )value ).Handle;
+			var compareTo = value as ABDirectoriesGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDirectoriesGroup value ) {
 			return Handle == value.Handle;
@@ -5255,8 +5255,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDirectoryResultsController ) ) return false; 
-			return Handle == ( ( ABDirectoryResultsController )value ).Handle;
+			var compareTo = value as ABDirectoryResultsController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDirectoryResultsController value ) {
 			return Handle == value.Handle;
@@ -5380,8 +5380,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDragAnimationView ) ) return false; 
-			return Handle == ( ( ABDragAnimationView )value ).Handle;
+			var compareTo = value as ABDragAnimationView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDragAnimationView value ) {
 			return Handle == value.Handle;
@@ -5430,8 +5430,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABDragAnimationWindow ) ) return false; 
-			return Handle == ( ( ABDragAnimationWindow )value ).Handle;
+			var compareTo = value as ABDragAnimationWindow?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABDragAnimationWindow value ) {
 			return Handle == value.Handle;
@@ -5490,8 +5490,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABEditSmartGroupCommand ) ) return false; 
-			return Handle == ( ( ABEditSmartGroupCommand )value ).Handle;
+			var compareTo = value as ABEditSmartGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABEditSmartGroupCommand value ) {
 			return Handle == value.Handle;
@@ -5533,8 +5533,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABEditSwitch ) ) return false; 
-			return Handle == ( ( ABEditSwitch )value ).Handle;
+			var compareTo = value as ABEditSwitch?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABEditSwitch value ) {
 			return Handle == value.Handle;
@@ -5601,8 +5601,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABEmbossedText ) ) return false; 
-			return Handle == ( ( ABEmbossedText )value ).Handle;
+			var compareTo = value as ABEmbossedText?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABEmbossedText value ) {
 			return Handle == value.Handle;
@@ -5677,8 +5677,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABExampleTextField ) ) return false; 
-			return Handle == ( ( ABExampleTextField )value ).Handle;
+			var compareTo = value as ABExampleTextField?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABExampleTextField value ) {
 			return Handle == value.Handle;
@@ -5727,8 +5727,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABExchangeSetup ) ) return false; 
-			return Handle == ( ( ABExchangeSetup )value ).Handle;
+			var compareTo = value as ABExchangeSetup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABExchangeSetup value ) {
 			return Handle == value.Handle;
@@ -5917,8 +5917,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABFancyImagePickerController ) ) return false; 
-			return Handle == ( ( ABFancyImagePickerController )value ).Handle;
+			var compareTo = value as ABFancyImagePickerController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABFancyImagePickerController value ) {
 			return Handle == value.Handle;
@@ -6106,8 +6106,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABFancyImagePickerView ) ) return false; 
-			return Handle == ( ( ABFancyImagePickerView )value ).Handle;
+			var compareTo = value as ABFancyImagePickerView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABFancyImagePickerView value ) {
 			return Handle == value.Handle;
@@ -6136,8 +6136,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABFileManager ) ) return false; 
-			return Handle == ( ( ABFileManager )value ).Handle;
+			var compareTo = value as ABFileManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABFileManager value ) {
 			return Handle == value.Handle;
@@ -6304,8 +6304,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABFlareScrollView ) ) return false; 
-			return Handle == ( ( ABFlareScrollView )value ).Handle;
+			var compareTo = value as ABFlareScrollView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABFlareScrollView value ) {
 			return Handle == value.Handle;
@@ -6420,8 +6420,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABFZServiceClient ) ) return false; 
-			return Handle == ( ( ABFZServiceClient )value ).Handle;
+			var compareTo = value as ABFZServiceClient?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABFZServiceClient value ) {
 			return Handle == value.Handle;
@@ -6781,8 +6781,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABGroup ) ) return false; 
-			return Handle == ( ( ABGroup )value ).Handle;
+			var compareTo = value as ABGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABGroup value ) {
 			return Handle == value.Handle;
@@ -7204,8 +7204,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABGroupCommand ) ) return false; 
-			return Handle == ( ( ABGroupCommand )value ).Handle;
+			var compareTo = value as ABGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABGroupCommand value ) {
 			return Handle == value.Handle;
@@ -7265,8 +7265,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABGroupContents ) ) return false; 
-			return Handle == ( ( ABGroupContents )value ).Handle;
+			var compareTo = value as ABGroupContents?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABGroupContents value ) {
 			return Handle == value.Handle;
@@ -7370,8 +7370,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABGroupsController ) ) return false; 
-			return Handle == ( ( ABGroupsController )value ).Handle;
+			var compareTo = value as ABGroupsController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABGroupsController value ) {
 			return Handle == value.Handle;
@@ -7933,8 +7933,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABImageCell ) ) return false; 
-			return Handle == ( ( ABImageCell )value ).Handle;
+			var compareTo = value as ABImageCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABImageCell value ) {
 			return Handle == value.Handle;
@@ -7963,8 +7963,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABImportCommand ) ) return false; 
-			return Handle == ( ( ABImportCommand )value ).Handle;
+			var compareTo = value as ABImportCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABImportCommand value ) {
 			return Handle == value.Handle;
@@ -8026,8 +8026,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABImportPanelController ) ) return false; 
-			return Handle == ( ( ABImportPanelController )value ).Handle;
+			var compareTo = value as ABImportPanelController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABImportPanelController value ) {
 			return Handle == value.Handle;
@@ -8207,8 +8207,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABIndexer ) ) return false; 
-			return Handle == ( ( ABIndexer )value ).Handle;
+			var compareTo = value as ABIndexer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABIndexer value ) {
 			return Handle == value.Handle;
@@ -8359,8 +8359,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABInfo ) ) return false; 
-			return Handle == ( ( ABInfo )value ).Handle;
+			var compareTo = value as ABInfo?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABInfo value ) {
 			return Handle == value.Handle;
@@ -8411,8 +8411,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABInputController ) ) return false; 
-			return Handle == ( ( ABInputController )value ).Handle;
+			var compareTo = value as ABInputController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABInputController value ) {
 			return Handle == value.Handle;
@@ -9349,8 +9349,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABInputModel ) ) return false; 
-			return Handle == ( ( ABInputModel )value ).Handle;
+			var compareTo = value as ABInputModel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABInputModel value ) {
 			return Handle == value.Handle;
@@ -9434,8 +9434,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABInstantPopUpButtonCell ) ) return false; 
-			return Handle == ( ( ABInstantPopUpButtonCell )value ).Handle;
+			var compareTo = value as ABInstantPopUpButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABInstantPopUpButtonCell value ) {
 			return Handle == value.Handle;
@@ -9477,8 +9477,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABKeyValueCell ) ) return false; 
-			return Handle == ( ( ABKeyValueCell )value ).Handle;
+			var compareTo = value as ABKeyValueCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABKeyValueCell value ) {
 			return Handle == value.Handle;
@@ -9519,8 +9519,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLabelPopUpButtonCell ) ) return false; 
-			return Handle == ( ( ABLabelPopUpButtonCell )value ).Handle;
+			var compareTo = value as ABLabelPopUpButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLabelPopUpButtonCell value ) {
 			return Handle == value.Handle;
@@ -9612,8 +9612,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLastImportGroup ) ) return false; 
-			return Handle == ( ( ABLastImportGroup )value ).Handle;
+			var compareTo = value as ABLastImportGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLastImportGroup value ) {
 			return Handle == value.Handle;
@@ -9704,8 +9704,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLayoutManager ) ) return false; 
-			return Handle == ( ( ABLayoutManager )value ).Handle;
+			var compareTo = value as ABLayoutManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLayoutManager value ) {
 			return Handle == value.Handle;
@@ -9734,8 +9734,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLDAP_ConfigController ) ) return false; 
-			return Handle == ( ( ABLDAP_ConfigController )value ).Handle;
+			var compareTo = value as ABLDAP_ConfigController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLDAP_ConfigController value ) {
 			return Handle == value.Handle;
@@ -9924,8 +9924,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLDAP_Manager ) ) return false; 
-			return Handle == ( ( ABLDAP_Manager )value ).Handle;
+			var compareTo = value as ABLDAP_Manager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLDAP_Manager value ) {
 			return Handle == value.Handle;
@@ -10385,8 +10385,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLDAP_Query ) ) return false; 
-			return Handle == ( ( ABLDAP_Query )value ).Handle;
+			var compareTo = value as ABLDAP_Query?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLDAP_Query value ) {
 			return Handle == value.Handle;
@@ -10497,8 +10497,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLDAP_Query_DS ) ) return false; 
-			return Handle == ( ( ABLDAP_Query_DS )value ).Handle;
+			var compareTo = value as ABLDAP_Query_DS?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLDAP_Query_DS value ) {
 			return Handle == value.Handle;
@@ -10583,8 +10583,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLDAP_ResultElement ) ) return false; 
-			return Handle == ( ( ABLDAP_ResultElement )value ).Handle;
+			var compareTo = value as ABLDAP_ResultElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLDAP_ResultElement value ) {
 			return Handle == value.Handle;
@@ -10722,8 +10722,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLDAP_Server ) ) return false; 
-			return Handle == ( ( ABLDAP_Server )value ).Handle;
+			var compareTo = value as ABLDAP_Server?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLDAP_Server value ) {
 			return Handle == value.Handle;
@@ -11066,8 +11066,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLocalImageDataCache ) ) return false; 
-			return Handle == ( ( ABLocalImageDataCache )value ).Handle;
+			var compareTo = value as ABLocalImageDataCache?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLocalImageDataCache value ) {
 			return Handle == value.Handle;
@@ -11109,8 +11109,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABLog ) ) return false; 
-			return Handle == ( ( ABLog )value ).Handle;
+			var compareTo = value as ABLog?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABLog value ) {
 			return Handle == value.Handle;
@@ -11170,8 +11170,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMailRecent ) ) return false; 
-			return Handle == ( ( ABMailRecent )value ).Handle;
+			var compareTo = value as ABMailRecent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMailRecent value ) {
 			return Handle == value.Handle;
@@ -11213,8 +11213,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMatrix ) ) return false; 
-			return Handle == ( ( ABMatrix )value ).Handle;
+			var compareTo = value as ABMatrix?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMatrix value ) {
 			return Handle == value.Handle;
@@ -11243,8 +11243,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMeCommand ) ) return false; 
-			return Handle == ( ( ABMeCommand )value ).Handle;
+			var compareTo = value as ABMeCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMeCommand value ) {
 			return Handle == value.Handle;
@@ -11286,8 +11286,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMembersController ) ) return false; 
-			return Handle == ( ( ABMembersController )value ).Handle;
+			var compareTo = value as ABMembersController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMembersController value ) {
 			return Handle == value.Handle;
@@ -11492,8 +11492,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMergePeopleCommand ) ) return false; 
-			return Handle == ( ( ABMergePeopleCommand )value ).Handle;
+			var compareTo = value as ABMergePeopleCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMergePeopleCommand value ) {
 			return Handle == value.Handle;
@@ -11535,8 +11535,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMerger ) ) return false; 
-			return Handle == ( ( ABMerger )value ).Handle;
+			var compareTo = value as ABMerger?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMerger value ) {
 			return Handle == value.Handle;
@@ -11718,8 +11718,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMessage ) ) return false; 
-			return Handle == ( ( ABMessage )value ).Handle;
+			var compareTo = value as ABMessage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMessage value ) {
 			return Handle == value.Handle;
@@ -11769,8 +11769,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMessageView ) ) return false; 
-			return Handle == ( ( ABMessageView )value ).Handle;
+			var compareTo = value as ABMessageView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMessageView value ) {
 			return Handle == value.Handle;
@@ -11820,8 +11820,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMetaDataController ) ) return false; 
-			return Handle == ( ( ABMetaDataController )value ).Handle;
+			var compareTo = value as ABMetaDataController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMetaDataController value ) {
 			return Handle == value.Handle;
@@ -12122,8 +12122,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABModel ) ) return false; 
-			return Handle == ( ( ABModel )value ).Handle;
+			var compareTo = value as ABModel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABModel value ) {
 			return Handle == value.Handle;
@@ -12910,8 +12910,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMultiValue ) ) return false; 
-			return Handle == ( ( ABMultiValue )value ).Handle;
+			var compareTo = value as ABMultiValue?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMultiValue value ) {
 			return Handle == value.Handle;
@@ -13018,8 +13018,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMutableMultiValue ) ) return false; 
-			return Handle == ( ( ABMutableMultiValue )value ).Handle;
+			var compareTo = value as ABMutableMultiValue?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMutableMultiValue value ) {
 			return Handle == value.Handle;
@@ -13114,8 +13114,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABMutablePackedImage ) ) return false; 
-			return Handle == ( ( ABMutablePackedImage )value ).Handle;
+			var compareTo = value as ABMutablePackedImage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABMutablePackedImage value ) {
 			return Handle == value.Handle;
@@ -13164,8 +13164,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABNetworkController ) ) return false; 
-			return Handle == ( ( ABNetworkController )value ).Handle;
+			var compareTo = value as ABNetworkController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABNetworkController value ) {
 			return Handle == value.Handle;
@@ -13234,8 +13234,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABNewGroupCommand ) ) return false; 
-			return Handle == ( ( ABNewGroupCommand )value ).Handle;
+			var compareTo = value as ABNewGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABNewGroupCommand value ) {
 			return Handle == value.Handle;
@@ -13286,8 +13286,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABNewPersonCommand ) ) return false; 
-			return Handle == ( ( ABNewPersonCommand )value ).Handle;
+			var compareTo = value as ABNewPersonCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABNewPersonCommand value ) {
 			return Handle == value.Handle;
@@ -13329,8 +13329,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABNewSmartGroupCommand ) ) return false; 
-			return Handle == ( ( ABNewSmartGroupCommand )value ).Handle;
+			var compareTo = value as ABNewSmartGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABNewSmartGroupCommand value ) {
 			return Handle == value.Handle;
@@ -13381,8 +13381,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABOnMyMacGroup ) ) return false; 
-			return Handle == ( ( ABOnMyMacGroup )value ).Handle;
+			var compareTo = value as ABOnMyMacGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABOnMyMacGroup value ) {
 			return Handle == value.Handle;
@@ -13441,8 +13441,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABOutlineView ) ) return false; 
-			return Handle == ( ( ABOutlineView )value ).Handle;
+			var compareTo = value as ABOutlineView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABOutlineView value ) {
 			return Handle == value.Handle;
@@ -13534,8 +13534,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPackedImage ) ) return false; 
-			return Handle == ( ( ABPackedImage )value ).Handle;
+			var compareTo = value as ABPackedImage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPackedImage value ) {
 			return Handle == value.Handle;
@@ -13613,8 +13613,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPasteGroupsCommand ) ) return false; 
-			return Handle == ( ( ABPasteGroupsCommand )value ).Handle;
+			var compareTo = value as ABPasteGroupsCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPasteGroupsCommand value ) {
 			return Handle == value.Handle;
@@ -13656,8 +13656,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPastePeopleCommand ) ) return false; 
-			return Handle == ( ( ABPastePeopleCommand )value ).Handle;
+			var compareTo = value as ABPastePeopleCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPastePeopleCommand value ) {
 			return Handle == value.Handle;
@@ -13699,8 +13699,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPeopleController ) ) return false; 
-			return Handle == ( ( ABPeopleController )value ).Handle;
+			var compareTo = value as ABPeopleController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPeopleController value ) {
 			return Handle == value.Handle;
@@ -14016,8 +14016,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPeoplePickerController ) ) return false; 
-			return Handle == ( ( ABPeoplePickerController )value ).Handle;
+			var compareTo = value as ABPeoplePickerController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPeoplePickerController value ) {
 			return Handle == value.Handle;
@@ -14226,8 +14226,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPeoplePickerNibLoader ) ) return false; 
-			return Handle == ( ( ABPeoplePickerNibLoader )value ).Handle;
+			var compareTo = value as ABPeoplePickerNibLoader?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPeoplePickerNibLoader value ) {
 			return Handle == value.Handle;
@@ -14322,8 +14322,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPeoplePickerView ) ) return false; 
-			return Handle == ( ( ABPeoplePickerView )value ).Handle;
+			var compareTo = value as ABPeoplePickerView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPeoplePickerView value ) {
 			return Handle == value.Handle;
@@ -14859,8 +14859,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPeopleTableTextFieldCell ) ) return false; 
-			return Handle == ( ( ABPeopleTableTextFieldCell )value ).Handle;
+			var compareTo = value as ABPeopleTableTextFieldCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPeopleTableTextFieldCell value ) {
 			return Handle == value.Handle;
@@ -14917,8 +14917,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPerson ) ) return false; 
-			return Handle == ( ( ABPerson )value ).Handle;
+			var compareTo = value as ABPerson?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPerson value ) {
 			return Handle == value.Handle;
@@ -15524,8 +15524,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPersonImageView ) ) return false; 
-			return Handle == ( ( ABPersonImageView )value ).Handle;
+			var compareTo = value as ABPersonImageView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPersonImageView value ) {
 			return Handle == value.Handle;
@@ -15699,8 +15699,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPhoneFormatter ) ) return false; 
-			return Handle == ( ( ABPhoneFormatter )value ).Handle;
+			var compareTo = value as ABPhoneFormatter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPhoneFormatter value ) {
 			return Handle == value.Handle;
@@ -15868,8 +15868,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPopUpButtonCell ) ) return false; 
-			return Handle == ( ( ABPopUpButtonCell )value ).Handle;
+			var compareTo = value as ABPopUpButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPopUpButtonCell value ) {
 			return Handle == value.Handle;
@@ -15962,8 +15962,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABProgressWedgeCell ) ) return false; 
-			return Handle == ( ( ABProgressWedgeCell )value ).Handle;
+			var compareTo = value as ABProgressWedgeCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABProgressWedgeCell value ) {
 			return Handle == value.Handle;
@@ -16123,8 +16123,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPropertyHeaderCell ) ) return false; 
-			return Handle == ( ( ABPropertyHeaderCell )value ).Handle;
+			var compareTo = value as ABPropertyHeaderCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPropertyHeaderCell value ) {
 			return Handle == value.Handle;
@@ -16215,8 +16215,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPropertyHeaderView ) ) return false; 
-			return Handle == ( ( ABPropertyHeaderView )value ).Handle;
+			var compareTo = value as ABPropertyHeaderView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPropertyHeaderView value ) {
 			return Handle == value.Handle;
@@ -16245,8 +16245,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABPropertyTableColumn ) ) return false; 
-			return Handle == ( ( ABPropertyTableColumn )value ).Handle;
+			var compareTo = value as ABPropertyTableColumn?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABPropertyTableColumn value ) {
 			return Handle == value.Handle;
@@ -16275,8 +16275,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRadioButtonCell ) ) return false; 
-			return Handle == ( ( ABRadioButtonCell )value ).Handle;
+			var compareTo = value as ABRadioButtonCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRadioButtonCell value ) {
 			return Handle == value.Handle;
@@ -16394,8 +16394,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRecord ) ) return false; 
-			return Handle == ( ( ABRecord )value ).Handle;
+			var compareTo = value as ABRecord?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRecord value ) {
 			return Handle == value.Handle;
@@ -17005,8 +17005,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRectObject ) ) return false; 
-			return Handle == ( ( ABRectObject )value ).Handle;
+			var compareTo = value as ABRectObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRectObject value ) {
 			return Handle == value.Handle;
@@ -17056,8 +17056,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRemoteImageLoader ) ) return false; 
-			return Handle == ( ( ABRemoteImageLoader )value ).Handle;
+			var compareTo = value as ABRemoteImageLoader?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRemoteImageLoader value ) {
 			return Handle == value.Handle;
@@ -17212,8 +17212,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRemoveFromGroupCommand ) ) return false; 
-			return Handle == ( ( ABRemoveFromGroupCommand )value ).Handle;
+			var compareTo = value as ABRemoveFromGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRemoveFromGroupCommand value ) {
 			return Handle == value.Handle;
@@ -17242,8 +17242,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRenameGroupCommand ) ) return false; 
-			return Handle == ( ( ABRenameGroupCommand )value ).Handle;
+			var compareTo = value as ABRenameGroupCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRenameGroupCommand value ) {
 			return Handle == value.Handle;
@@ -17285,8 +17285,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABRollOver ) ) return false; 
-			return Handle == ( ( ABRollOver )value ).Handle;
+			var compareTo = value as ABRollOver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABRollOver value ) {
 			return Handle == value.Handle;
@@ -17433,8 +17433,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABScrollView ) ) return false; 
-			return Handle == ( ( ABScrollView )value ).Handle;
+			var compareTo = value as ABScrollView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABScrollView value ) {
 			return Handle == value.Handle;
@@ -17493,8 +17493,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchController ) ) return false; 
-			return Handle == ( ( ABSearchController )value ).Handle;
+			var compareTo = value as ABSearchController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchController value ) {
 			return Handle == value.Handle;
@@ -17745,8 +17745,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElement ) ) return false; 
-			return Handle == ( ( ABSearchElement )value ).Handle;
+			var compareTo = value as ABSearchElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElement value ) {
 			return Handle == value.Handle;
@@ -17883,8 +17883,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementConjunction ) ) return false; 
-			return Handle == ( ( ABSearchElementConjunction )value ).Handle;
+			var compareTo = value as ABSearchElementConjunction?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementConjunction value ) {
 			return Handle == value.Handle;
@@ -17978,8 +17978,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementHelper ) ) return false; 
-			return Handle == ( ( ABSearchElementHelper )value ).Handle;
+			var compareTo = value as ABSearchElementHelper?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementHelper value ) {
 			return Handle == value.Handle;
@@ -18090,8 +18090,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementMatch ) ) return false; 
-			return Handle == ( ( ABSearchElementMatch )value ).Handle;
+			var compareTo = value as ABSearchElementMatch?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementMatch value ) {
 			return Handle == value.Handle;
@@ -18181,8 +18181,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementOrderManager ) ) return false; 
-			return Handle == ( ( ABSearchElementOrderManager )value ).Handle;
+			var compareTo = value as ABSearchElementOrderManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementOrderManager value ) {
 			return Handle == value.Handle;
@@ -18367,8 +18367,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementSetView ) ) return false; 
-			return Handle == ( ( ABSearchElementSetView )value ).Handle;
+			var compareTo = value as ABSearchElementSetView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementSetView value ) {
 			return Handle == value.Handle;
@@ -18397,8 +18397,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementUIController ) ) return false; 
-			return Handle == ( ( ABSearchElementUIController )value ).Handle;
+			var compareTo = value as ABSearchElementUIController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementUIController value ) {
 			return Handle == value.Handle;
@@ -18655,8 +18655,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchElementView ) ) return false; 
-			return Handle == ( ( ABSearchElementView )value ).Handle;
+			var compareTo = value as ABSearchElementView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchElementView value ) {
 			return Handle == value.Handle;
@@ -18911,8 +18911,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchField ) ) return false; 
-			return Handle == ( ( ABSearchField )value ).Handle;
+			var compareTo = value as ABSearchField?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchField value ) {
 			return Handle == value.Handle;
@@ -18977,8 +18977,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSearchFieldCell ) ) return false; 
-			return Handle == ( ( ABSearchFieldCell )value ).Handle;
+			var compareTo = value as ABSearchFieldCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSearchFieldCell value ) {
 			return Handle == value.Handle;
@@ -19007,8 +19007,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSeparatedButtons ) ) return false; 
-			return Handle == ( ( ABSeparatedButtons )value ).Handle;
+			var compareTo = value as ABSeparatedButtons?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSeparatedButtons value ) {
 			return Handle == value.Handle;
@@ -19101,8 +19101,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSeparatedButtonsAccessibilityElement ) ) return false; 
-			return Handle == ( ( ABSeparatedButtonsAccessibilityElement )value ).Handle;
+			var compareTo = value as ABSeparatedButtonsAccessibilityElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSeparatedButtonsAccessibilityElement value ) {
 			return Handle == value.Handle;
@@ -19171,8 +19171,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSeparatedButtonsCell ) ) return false; 
-			return Handle == ( ( ABSeparatedButtonsCell )value ).Handle;
+			var compareTo = value as ABSeparatedButtonsCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSeparatedButtonsCell value ) {
 			return Handle == value.Handle;
@@ -19291,8 +19291,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSeparatorLineCell ) ) return false; 
-			return Handle == ( ( ABSeparatorLineCell )value ).Handle;
+			var compareTo = value as ABSeparatorLineCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSeparatorLineCell value ) {
 			return Handle == value.Handle;
@@ -19321,8 +19321,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSetImageCommand ) ) return false; 
-			return Handle == ( ( ABSetImageCommand )value ).Handle;
+			var compareTo = value as ABSetImageCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSetImageCommand value ) {
 			return Handle == value.Handle;
@@ -19364,8 +19364,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABShowAsCommand ) ) return false; 
-			return Handle == ( ( ABShowAsCommand )value ).Handle;
+			var compareTo = value as ABShowAsCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABShowAsCommand value ) {
 			return Handle == value.Handle;
@@ -19407,8 +19407,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSimpleImportController ) ) return false; 
-			return Handle == ( ( ABSimpleImportController )value ).Handle;
+			var compareTo = value as ABSimpleImportController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSimpleImportController value ) {
 			return Handle == value.Handle;
@@ -19458,8 +19458,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSingleColorView ) ) return false; 
-			return Handle == ( ( ABSingleColorView )value ).Handle;
+			var compareTo = value as ABSingleColorView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSingleColorView value ) {
 			return Handle == value.Handle;
@@ -19488,8 +19488,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSmartGroup ) ) return false; 
-			return Handle == ( ( ABSmartGroup )value ).Handle;
+			var compareTo = value as ABSmartGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSmartGroup value ) {
 			return Handle == value.Handle;
@@ -19642,8 +19642,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSpaceFormatter ) ) return false; 
-			return Handle == ( ( ABSpaceFormatter )value ).Handle;
+			var compareTo = value as ABSpaceFormatter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSpaceFormatter value ) {
 			return Handle == value.Handle;
@@ -19672,8 +19672,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSplitView ) ) return false; 
-			return Handle == ( ( ABSplitView )value ).Handle;
+			var compareTo = value as ABSplitView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSplitView value ) {
 			return Handle == value.Handle;
@@ -19722,8 +19722,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSubrowGroupElement ) ) return false; 
-			return Handle == ( ( ABSubrowGroupElement )value ).Handle;
+			var compareTo = value as ABSubrowGroupElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSubrowGroupElement value ) {
 			return Handle == value.Handle;
@@ -19809,8 +19809,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSubrowObject ) ) return false; 
-			return Handle == ( ( ABSubrowObject )value ).Handle;
+			var compareTo = value as ABSubrowObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSubrowObject value ) {
 			return Handle == value.Handle;
@@ -20027,8 +20027,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSubscribedGroup ) ) return false; 
-			return Handle == ( ( ABSubscribedGroup )value ).Handle;
+			var compareTo = value as ABSubscribedGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSubscribedGroup value ) {
 			return Handle == value.Handle;
@@ -20078,8 +20078,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSubscribedPerson ) ) return false; 
-			return Handle == ( ( ABSubscribedPerson )value ).Handle;
+			var compareTo = value as ABSubscribedPerson?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSubscribedPerson value ) {
 			return Handle == value.Handle;
@@ -20121,8 +20121,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSubscription ) ) return false; 
-			return Handle == ( ( ABSubscription )value ).Handle;
+			var compareTo = value as ABSubscription?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSubscription value ) {
 			return Handle == value.Handle;
@@ -20218,8 +20218,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSwapLastFirstCommand ) ) return false; 
-			return Handle == ( ( ABSwapLastFirstCommand )value ).Handle;
+			var compareTo = value as ABSwapLastFirstCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSwapLastFirstCommand value ) {
 			return Handle == value.Handle;
@@ -20261,8 +20261,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABSyncManager ) ) return false; 
-			return Handle == ( ( ABSyncManager )value ).Handle;
+			var compareTo = value as ABSyncManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABSyncManager value ) {
 			return Handle == value.Handle;
@@ -20364,8 +20364,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTableController ) ) return false; 
-			return Handle == ( ( ABTableController )value ).Handle;
+			var compareTo = value as ABTableController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTableController value ) {
 			return Handle == value.Handle;
@@ -20833,8 +20833,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTableRow ) ) return false; 
-			return Handle == ( ( ABTableRow )value ).Handle;
+			var compareTo = value as ABTableRow?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTableRow value ) {
 			return Handle == value.Handle;
@@ -20903,8 +20903,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTableView ) ) return false; 
-			return Handle == ( ( ABTableView )value ).Handle;
+			var compareTo = value as ABTableView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTableView value ) {
 			return Handle == value.Handle;
@@ -21138,8 +21138,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTextContainer ) ) return false; 
-			return Handle == ( ( ABTextContainer )value ).Handle;
+			var compareTo = value as ABTextContainer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTextContainer value ) {
 			return Handle == value.Handle;
@@ -21181,8 +21181,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTextFieldCell ) ) return false; 
-			return Handle == ( ( ABTextFieldCell )value ).Handle;
+			var compareTo = value as ABTextFieldCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTextFieldCell value ) {
 			return Handle == value.Handle;
@@ -21256,8 +21256,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTextLabelAccessibilityElement ) ) return false; 
-			return Handle == ( ( ABTextLabelAccessibilityElement )value ).Handle;
+			var compareTo = value as ABTextLabelAccessibilityElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTextLabelAccessibilityElement value ) {
 			return Handle == value.Handle;
@@ -21335,8 +21335,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTextStorage ) ) return false; 
-			return Handle == ( ( ABTextStorage )value ).Handle;
+			var compareTo = value as ABTextStorage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTextStorage value ) {
 			return Handle == value.Handle;
@@ -21430,8 +21430,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTextValueAccessibilityElement ) ) return false; 
-			return Handle == ( ( ABTextValueAccessibilityElement )value ).Handle;
+			var compareTo = value as ABTextValueAccessibilityElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTextValueAccessibilityElement value ) {
 			return Handle == value.Handle;
@@ -21460,8 +21460,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTextView ) ) return false; 
-			return Handle == ( ( ABTextView )value ).Handle;
+			var compareTo = value as ABTextView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTextView value ) {
 			return Handle == value.Handle;
@@ -21899,8 +21899,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABTypesetter ) ) return false; 
-			return Handle == ( ( ABTypesetter )value ).Handle;
+			var compareTo = value as ABTypesetter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABTypesetter value ) {
 			return Handle == value.Handle;
@@ -21929,8 +21929,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABUIController ) ) return false; 
-			return Handle == ( ( ABUIController )value ).Handle;
+			var compareTo = value as ABUIController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABUIController value ) {
 			return Handle == value.Handle;
@@ -23078,8 +23078,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABUndoer ) ) return false; 
-			return Handle == ( ( ABUndoer )value ).Handle;
+			var compareTo = value as ABUndoer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABUndoer value ) {
 			return Handle == value.Handle;
@@ -23121,8 +23121,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABUndoManager ) ) return false; 
-			return Handle == ( ( ABUndoManager )value ).Handle;
+			var compareTo = value as ABUndoManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABUndoManager value ) {
 			return Handle == value.Handle;
@@ -23164,8 +23164,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABvCardController ) ) return false; 
-			return Handle == ( ( ABvCardController )value ).Handle;
+			var compareTo = value as ABvCardController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABvCardController value ) {
 			return Handle == value.Handle;
@@ -23344,8 +23344,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABVCardDictionaryValueSetter ) ) return false; 
-			return Handle == ( ( ABVCardDictionaryValueSetter )value ).Handle;
+			var compareTo = value as ABVCardDictionaryValueSetter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABVCardDictionaryValueSetter value ) {
 			return Handle == value.Handle;
@@ -23387,8 +23387,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABVCardLexer ) ) return false; 
-			return Handle == ( ( ABVCardLexer )value ).Handle;
+			var compareTo = value as ABVCardLexer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABVCardLexer value ) {
 			return Handle == value.Handle;
@@ -23699,8 +23699,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABVCardParameter ) ) return false; 
-			return Handle == ( ( ABVCardParameter )value ).Handle;
+			var compareTo = value as ABVCardParameter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABVCardParameter value ) {
 			return Handle == value.Handle;
@@ -23827,8 +23827,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABVCardParser ) ) return false; 
-			return Handle == ( ( ABVCardParser )value ).Handle;
+			var compareTo = value as ABVCardParser?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABVCardParser value ) {
 			return Handle == value.Handle;
@@ -24169,8 +24169,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABVCardPersonValueSetter ) ) return false; 
-			return Handle == ( ( ABVCardPersonValueSetter )value ).Handle;
+			var compareTo = value as ABVCardPersonValueSetter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABVCardPersonValueSetter value ) {
 			return Handle == value.Handle;
@@ -24212,8 +24212,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABVCardValueSetter ) ) return false; 
-			return Handle == ( ( ABVCardValueSetter )value ).Handle;
+			var compareTo = value as ABVCardValueSetter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABVCardValueSetter value ) {
 			return Handle == value.Handle;
@@ -24290,8 +24290,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABWebDAVLock ) ) return false; 
-			return Handle == ( ( ABWebDAVLock )value ).Handle;
+			var compareTo = value as ABWebDAVLock?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABWebDAVLock value ) {
 			return Handle == value.Handle;
@@ -24413,8 +24413,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABWindow ) ) return false; 
-			return Handle == ( ( ABWindow )value ).Handle;
+			var compareTo = value as ABWindow?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABWindow value ) {
 			return Handle == value.Handle;
@@ -24463,8 +24463,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ABXMLParseNode ) ) return false; 
-			return Handle == ( ( ABXMLParseNode )value ).Handle;
+			var compareTo = value as ABXMLParseNode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ABXMLParseNode value ) {
 			return Handle == value.Handle;
@@ -24603,8 +24603,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is FZDaemonListenerStub ) ) return false; 
-			return Handle == ( ( FZDaemonListenerStub )value ).Handle;
+			var compareTo = value as FZDaemonListenerStub?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( FZDaemonListenerStub value ) {
 			return Handle == value.Handle;
@@ -24653,8 +24653,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSImagePickerController ) ) return false; 
-			return Handle == ( ( NSImagePickerController )value ).Handle;
+			var compareTo = value as NSImagePickerController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSImagePickerController value ) {
 			return Handle == value.Handle;
@@ -24789,8 +24789,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSIPIconPopUp ) ) return false; 
-			return Handle == ( ( NSIPIconPopUp )value ).Handle;
+			var compareTo = value as NSIPIconPopUp?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSIPIconPopUp value ) {
 			return Handle == value.Handle;
@@ -25000,8 +25000,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSIPPopUpItemMatrix ) ) return false; 
-			return Handle == ( ( NSIPPopUpItemMatrix )value ).Handle;
+			var compareTo = value as NSIPPopUpItemMatrix?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSIPPopUpItemMatrix value ) {
 			return Handle == value.Handle;
@@ -25030,8 +25030,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSIPPopUpMatrixButton ) ) return false; 
-			return Handle == ( ( NSIPPopUpMatrixButton )value ).Handle;
+			var compareTo = value as NSIPPopUpMatrixButton?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSIPPopUpMatrixButton value ) {
 			return Handle == value.Handle;
@@ -25173,8 +25173,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSIPPopUpMatrixItemCell ) ) return false; 
-			return Handle == ( ( NSIPPopUpMatrixItemCell )value ).Handle;
+			var compareTo = value as NSIPPopUpMatrixItemCell?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSIPPopUpMatrixItemCell value ) {
 			return Handle == value.Handle;
@@ -25203,8 +25203,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSIPRecentPicture ) ) return false; 
-			return Handle == ( ( NSIPRecentPicture )value ).Handle;
+			var compareTo = value as NSIPRecentPicture?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSIPRecentPicture value ) {
 			return Handle == value.Handle;
@@ -25369,8 +25369,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSIPRecentPicturesPopUpButton ) ) return false; 
-			return Handle == ( ( NSIPRecentPicturesPopUpButton )value ).Handle;
+			var compareTo = value as NSIPRecentPicturesPopUpButton?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSIPRecentPicturesPopUpButton value ) {
 			return Handle == value.Handle;

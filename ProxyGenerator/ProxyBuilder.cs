@@ -325,19 +325,28 @@ namespace NObjective.ProxyGenerator
 				objectHandle.Body.AddChild( new ReturnStatement( new MemberReferenceExpression( new IdentifierExpression( "value" ), "Handle" ) ) );
 
 				// override System.Object.Equals( object obj )
-				var equals = result.AddMethod( "Equals" );
-				equals.TypeReference = new TypeReference( "bool" );
-				equals.Modifier = Modifiers.Public | Modifiers.Override;
-				equals.AddParameter( "value", "object" );
-				equals.Body.AddChild( new IfElseStatement( new UnaryOperatorExpression( new ParenthesizedExpression( new TypeOfIsExpression( new IdentifierExpression( "value" ), new TypeReference( nonAmbiguousClassName ) ) ), UnaryOperatorType.Not ), new ReturnStatement( new PrimitiveExpression( false, "false" ) ) ) );
-				equals.Body.AddChild( new ReturnStatement( new BinaryOperatorExpression( new IdentifierExpression( "Handle" ), BinaryOperatorType.Equality, new MemberReferenceExpression( new ParenthesizedExpression( new CastExpression( new TypeReference( nonAmbiguousClassName ), new IdentifierExpression( "value" ), CastType.Cast ) ), "Handle" ) ) ) );
+				{
+					var equals = result.AddMethod( "Equals" );
+					equals.TypeReference = new TypeReference( "bool" );
+					equals.Modifier = Modifiers.Public | Modifiers.Override;
+					equals.AddParameter( "value", "object" );
+
+					var localVariableStatement = new LocalVariableDeclaration( new TypeReference( "var" ) );
+					var compareToVariable = new VariableDeclaration( "compareTo", new CastExpression( new TypeReference( nonAmbiguousClassName + "?" ), new IdentifierExpression( "value" ), CastType.TryCast ) );
+					localVariableStatement.Variables.Add( compareToVariable );
+					equals.Body.AddChild( localVariableStatement );
+
+					equals.Body.AddChild( new ReturnStatement( new BinaryOperatorExpression( new BinaryOperatorExpression( new IdentifierExpression( compareToVariable.Name ), BinaryOperatorType.InEquality, new PrimitiveExpression( null, null ) ), BinaryOperatorType.LogicalAnd, new BinaryOperatorExpression( new IdentifierExpression( "Handle" ), BinaryOperatorType.Equality, new MemberReferenceExpression( new MemberReferenceExpression( new IdentifierExpression( compareToVariable.Name ), "Value" ), "Handle" ) ) ) ) );
+				}
 
 				// imlement IEquatable<T>.Equals( T obj )
-				equals = result.AddMethod( "Equals" );
-				equals.TypeReference = new TypeReference( "bool" );
-				equals.Modifier = Modifiers.Public;
-				equals.AddParameter( "value", nonAmbiguousClassName );
-				equals.Body.AddChild( new ReturnStatement( new BinaryOperatorExpression( new IdentifierExpression( "Handle" ), BinaryOperatorType.Equality, new MemberReferenceExpression( new IdentifierExpression( "value" ), "Handle" ) ) ) );
+				{
+					var equals = result.AddMethod( "Equals" );
+					equals.TypeReference = new TypeReference( "bool" );
+					equals.Modifier = Modifiers.Public;
+					equals.AddParameter( "value", nonAmbiguousClassName );
+					equals.Body.AddChild( new ReturnStatement( new BinaryOperatorExpression( new IdentifierExpression( "Handle" ), BinaryOperatorType.Equality, new MemberReferenceExpression( new IdentifierExpression( "value" ), "Handle" ) ) ) );
+				}
 
 				// implement bool operator ==( T value1, T value2 )
 				var equalityOperator = result.AddOperator( OverloadableOperatorType.Equality );

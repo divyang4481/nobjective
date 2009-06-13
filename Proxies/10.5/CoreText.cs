@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CTGlyphStorageInterface ) ) return false; 
-			return Handle == ( ( CTGlyphStorageInterface )value ).Handle;
+			var compareTo = value as CTGlyphStorageInterface?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CTGlyphStorageInterface value ) {
 			return Handle == value.Handle;

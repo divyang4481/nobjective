@@ -110,10 +110,8 @@ namespace NObjective
 		/// <returns>True if the current object reference is equal to the <paramref name="other"/> parameter; otherwise, false.</returns>
 		public override bool Equals( object other )
 		{
-			if( other is Selector )
-				return this == ( Selector ) other;
-
-			return false;
+			var compareTo = other as Selector?;
+			return compareTo != null && _handle == compareTo.Value._handle;
 		}
 
 		/// <summary>

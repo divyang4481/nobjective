@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRAudioGenerator ) ) return false; 
-			return Handle == ( ( DRAudioGenerator )value ).Handle;
+			var compareTo = value as DRAudioGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRAudioGenerator value ) {
 			return Handle == value.Handle;
@@ -79,8 +79,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRAudioTrack ) ) return false; 
-			return Handle == ( ( DRAudioTrack )value ).Handle;
+			var compareTo = value as DRAudioTrack?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRAudioTrack value ) {
 			return Handle == value.Handle;
@@ -122,8 +122,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRBINFileProducer ) ) return false; 
-			return Handle == ( ( DRBINFileProducer )value ).Handle;
+			var compareTo = value as DRBINFileProducer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRBINFileProducer value ) {
 			return Handle == value.Handle;
@@ -213,8 +213,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRCueFileParser ) ) return false; 
-			return Handle == ( ( DRCueFileParser )value ).Handle;
+			var compareTo = value as DRCueFileParser?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRCueFileParser value ) {
 			return Handle == value.Handle;
@@ -361,8 +361,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRDataGenerator ) ) return false; 
-			return Handle == ( ( DRDataGenerator )value ).Handle;
+			var compareTo = value as DRDataGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRDataGenerator value ) {
 			return Handle == value.Handle;
@@ -422,8 +422,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRFile ) ) return false; 
-			return Handle == ( ( DRFile )value ).Handle;
+			var compareTo = value as DRFile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRFile value ) {
 			return Handle == value.Handle;
@@ -577,8 +577,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRFilesystemTrack ) ) return false; 
-			return Handle == ( ( DRFilesystemTrack )value ).Handle;
+			var compareTo = value as DRFilesystemTrack?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRFilesystemTrack value ) {
 			return Handle == value.Handle;
@@ -620,8 +620,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRFolder ) ) return false; 
-			return Handle == ( ( DRFolder )value ).Handle;
+			var compareTo = value as DRFolder?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRFolder value ) {
 			return Handle == value.Handle;
@@ -740,8 +740,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRFSObject ) ) return false; 
-			return Handle == ( ( DRFSObject )value ).Handle;
+			var compareTo = value as DRFSObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRFSObject value ) {
 			return Handle == value.Handle;
@@ -961,8 +961,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRPartialFileAudioProducer ) ) return false; 
-			return Handle == ( ( DRPartialFileAudioProducer )value ).Handle;
+			var compareTo = value as DRPartialFileAudioProducer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRPartialFileAudioProducer value ) {
 			return Handle == value.Handle;
@@ -1061,8 +1061,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRSilenceGenerator ) ) return false; 
-			return Handle == ( ( DRSilenceGenerator )value ).Handle;
+			var compareTo = value as DRSilenceGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRSilenceGenerator value ) {
 			return Handle == value.Handle;
@@ -1122,8 +1122,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRTOCFileParser ) ) return false; 
-			return Handle == ( ( DRTOCFileParser )value ).Handle;
+			var compareTo = value as DRTOCFileParser?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRTOCFileParser value ) {
 			return Handle == value.Handle;
@@ -1262,8 +1262,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DRTOCProducer ) ) return false; 
-			return Handle == ( ( DRTOCProducer )value ).Handle;
+			var compareTo = value as DRTOCProducer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DRTOCProducer value ) {
 			return Handle == value.Handle;

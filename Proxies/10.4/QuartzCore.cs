@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAddBlendMode ) ) return false; 
-			return Handle == ( ( CIAddBlendMode )value ).Handle;
+			var compareTo = value as CIAddBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAddBlendMode value ) {
 			return Handle == value.Handle;
@@ -61,8 +61,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAdditionCompositing ) ) return false; 
-			return Handle == ( ( CIAdditionCompositing )value ).Handle;
+			var compareTo = value as CIAdditionCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAdditionCompositing value ) {
 			return Handle == value.Handle;
@@ -104,8 +104,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAffineClamp ) ) return false; 
-			return Handle == ( ( CIAffineClamp )value ).Handle;
+			var compareTo = value as CIAffineClamp?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAffineClamp value ) {
 			return Handle == value.Handle;
@@ -147,8 +147,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAffineTile ) ) return false; 
-			return Handle == ( ( CIAffineTile )value ).Handle;
+			var compareTo = value as CIAffineTile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAffineTile value ) {
 			return Handle == value.Handle;
@@ -190,8 +190,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAffineTransform ) ) return false; 
-			return Handle == ( ( CIAffineTransform )value ).Handle;
+			var compareTo = value as CIAffineTransform?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAffineTransform value ) {
 			return Handle == value.Handle;
@@ -233,8 +233,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAlphaAddBlendMode ) ) return false; 
-			return Handle == ( ( CIAlphaAddBlendMode )value ).Handle;
+			var compareTo = value as CIAlphaAddBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAlphaAddBlendMode value ) {
 			return Handle == value.Handle;
@@ -276,8 +276,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIAutoBlackPointWhitePoint ) ) return false; 
-			return Handle == ( ( CIAutoBlackPointWhitePoint )value ).Handle;
+			var compareTo = value as CIAutoBlackPointWhitePoint?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIAutoBlackPointWhitePoint value ) {
 			return Handle == value.Handle;
@@ -328,8 +328,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBackground ) ) return false; 
-			return Handle == ( ( CIBackground )value ).Handle;
+			var compareTo = value as CIBackground?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBackground value ) {
 			return Handle == value.Handle;
@@ -371,8 +371,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBayerReconstruction ) ) return false; 
-			return Handle == ( ( CIBayerReconstruction )value ).Handle;
+			var compareTo = value as CIBayerReconstruction?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBayerReconstruction value ) {
 			return Handle == value.Handle;
@@ -547,8 +547,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBayerReconstructionFuji ) ) return false; 
-			return Handle == ( ( CIBayerReconstructionFuji )value ).Handle;
+			var compareTo = value as CIBayerReconstructionFuji?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBayerReconstructionFuji value ) {
 			return Handle == value.Handle;
@@ -693,8 +693,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBayerReconstructionV0 ) ) return false; 
-			return Handle == ( ( CIBayerReconstructionV0 )value ).Handle;
+			var compareTo = value as CIBayerReconstructionV0?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBayerReconstructionV0 value ) {
 			return Handle == value.Handle;
@@ -851,8 +851,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBehindBlendMode ) ) return false; 
-			return Handle == ( ( CIBehindBlendMode )value ).Handle;
+			var compareTo = value as CIBehindBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBehindBlendMode value ) {
 			return Handle == value.Handle;
@@ -894,8 +894,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBilateralConvolution ) ) return false; 
-			return Handle == ( ( CIBilateralConvolution )value ).Handle;
+			var compareTo = value as CIBilateralConvolution?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBilateralConvolution value ) {
 			return Handle == value.Handle;
@@ -937,8 +937,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBilateralFilter ) ) return false; 
-			return Handle == ( ( CIBilateralFilter )value ).Handle;
+			var compareTo = value as CIBilateralFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBilateralFilter value ) {
 			return Handle == value.Handle;
@@ -980,8 +980,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBitmapContext ) ) return false; 
-			return Handle == ( ( CIBitmapContext )value ).Handle;
+			var compareTo = value as CIBitmapContext?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBitmapContext value ) {
 			return Handle == value.Handle;
@@ -1023,8 +1023,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBitmapContextImpl ) ) return false; 
-			return Handle == ( ( CIBitmapContextImpl )value ).Handle;
+			var compareTo = value as CIBitmapContextImpl?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBitmapContextImpl value ) {
 			return Handle == value.Handle;
@@ -1053,8 +1053,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBlendWithMask ) ) return false; 
-			return Handle == ( ( CIBlendWithMask )value ).Handle;
+			var compareTo = value as CIBlendWithMask?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBlendWithMask value ) {
 			return Handle == value.Handle;
@@ -1096,8 +1096,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBloom ) ) return false; 
-			return Handle == ( ( CIBloom )value ).Handle;
+			var compareTo = value as CIBloom?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBloom value ) {
 			return Handle == value.Handle;
@@ -1139,8 +1139,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIBumpDistortion ) ) return false; 
-			return Handle == ( ( CIBumpDistortion )value ).Handle;
+			var compareTo = value as CIBumpDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIBumpDistortion value ) {
 			return Handle == value.Handle;
@@ -1182,8 +1182,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICGContext ) ) return false; 
-			return Handle == ( ( CICGContext )value ).Handle;
+			var compareTo = value as CICGContext?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICGContext value ) {
 			return Handle == value.Handle;
@@ -1225,8 +1225,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICGContextImpl ) ) return false; 
-			return Handle == ( ( CICGContextImpl )value ).Handle;
+			var compareTo = value as CICGContextImpl?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICGContextImpl value ) {
 			return Handle == value.Handle;
@@ -1255,8 +1255,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICGSFilter ) ) return false; 
-			return Handle == ( ( CICGSFilter )value ).Handle;
+			var compareTo = value as CICGSFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICGSFilter value ) {
 			return Handle == value.Handle;
@@ -1325,8 +1325,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICheapBlur ) ) return false; 
-			return Handle == ( ( CICheapBlur )value ).Handle;
+			var compareTo = value as CICheapBlur?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICheapBlur value ) {
 			return Handle == value.Handle;
@@ -1368,8 +1368,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICheckerboardGenerator ) ) return false; 
-			return Handle == ( ( CICheckerboardGenerator )value ).Handle;
+			var compareTo = value as CICheckerboardGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICheckerboardGenerator value ) {
 			return Handle == value.Handle;
@@ -1411,8 +1411,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIChopLines ) ) return false; 
-			return Handle == ( ( CIChopLines )value ).Handle;
+			var compareTo = value as CIChopLines?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIChopLines value ) {
 			return Handle == value.Handle;
@@ -1454,8 +1454,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICircleSplashDistortion ) ) return false; 
-			return Handle == ( ( CICircleSplashDistortion )value ).Handle;
+			var compareTo = value as CICircleSplashDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICircleSplashDistortion value ) {
 			return Handle == value.Handle;
@@ -1497,8 +1497,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICircularScreen ) ) return false; 
-			return Handle == ( ( CICircularScreen )value ).Handle;
+			var compareTo = value as CICircularScreen?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICircularScreen value ) {
 			return Handle == value.Handle;
@@ -1540,8 +1540,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICircularWrap ) ) return false; 
-			return Handle == ( ( CICircularWrap )value ).Handle;
+			var compareTo = value as CICircularWrap?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICircularWrap value ) {
 			return Handle == value.Handle;
@@ -1583,8 +1583,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICMYKHalftone ) ) return false; 
-			return Handle == ( ( CICMYKHalftone )value ).Handle;
+			var compareTo = value as CICMYKHalftone?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICMYKHalftone value ) {
 			return Handle == value.Handle;
@@ -1626,8 +1626,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColor ) ) return false; 
-			return Handle == ( ( CIColor )value ).Handle;
+			var compareTo = value as CIColor?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColor value ) {
 			return Handle == value.Handle;
@@ -1813,8 +1813,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorBlendMode ) ) return false; 
-			return Handle == ( ( CIColorBlendMode )value ).Handle;
+			var compareTo = value as CIColorBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorBlendMode value ) {
 			return Handle == value.Handle;
@@ -1856,8 +1856,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorBurnBlendMode ) ) return false; 
-			return Handle == ( ( CIColorBurnBlendMode )value ).Handle;
+			var compareTo = value as CIColorBurnBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorBurnBlendMode value ) {
 			return Handle == value.Handle;
@@ -1899,8 +1899,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorControls ) ) return false; 
-			return Handle == ( ( CIColorControls )value ).Handle;
+			var compareTo = value as CIColorControls?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorControls value ) {
 			return Handle == value.Handle;
@@ -1942,8 +1942,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorCube ) ) return false; 
-			return Handle == ( ( CIColorCube )value ).Handle;
+			var compareTo = value as CIColorCube?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorCube value ) {
 			return Handle == value.Handle;
@@ -1994,8 +1994,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorDodgeBlendMode ) ) return false; 
-			return Handle == ( ( CIColorDodgeBlendMode )value ).Handle;
+			var compareTo = value as CIColorDodgeBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorDodgeBlendMode value ) {
 			return Handle == value.Handle;
@@ -2037,8 +2037,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorInvert ) ) return false; 
-			return Handle == ( ( CIColorInvert )value ).Handle;
+			var compareTo = value as CIColorInvert?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorInvert value ) {
 			return Handle == value.Handle;
@@ -2080,8 +2080,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorMap ) ) return false; 
-			return Handle == ( ( CIColorMap )value ).Handle;
+			var compareTo = value as CIColorMap?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorMap value ) {
 			return Handle == value.Handle;
@@ -2123,8 +2123,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorMatrix ) ) return false; 
-			return Handle == ( ( CIColorMatrix )value ).Handle;
+			var compareTo = value as CIColorMatrix?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorMatrix value ) {
 			return Handle == value.Handle;
@@ -2166,8 +2166,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorMonochrome ) ) return false; 
-			return Handle == ( ( CIColorMonochrome )value ).Handle;
+			var compareTo = value as CIColorMonochrome?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorMonochrome value ) {
 			return Handle == value.Handle;
@@ -2209,8 +2209,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorPosterize ) ) return false; 
-			return Handle == ( ( CIColorPosterize )value ).Handle;
+			var compareTo = value as CIColorPosterize?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorPosterize value ) {
 			return Handle == value.Handle;
@@ -2252,8 +2252,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIColorWheelGenerator ) ) return false; 
-			return Handle == ( ( CIColorWheelGenerator )value ).Handle;
+			var compareTo = value as CIColorWheelGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIColorWheelGenerator value ) {
 			return Handle == value.Handle;
@@ -2295,8 +2295,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIConcreteImage ) ) return false; 
-			return Handle == ( ( CIConcreteImage )value ).Handle;
+			var compareTo = value as CIConcreteImage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIConcreteImage value ) {
 			return Handle == value.Handle;
@@ -2325,8 +2325,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIConcreteKernel ) ) return false; 
-			return Handle == ( ( CIConcreteKernel )value ).Handle;
+			var compareTo = value as CIConcreteKernel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIConcreteKernel value ) {
 			return Handle == value.Handle;
@@ -2355,8 +2355,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIConcretePromise ) ) return false; 
-			return Handle == ( ( CIConcretePromise )value ).Handle;
+			var compareTo = value as CIConcretePromise?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIConcretePromise value ) {
 			return Handle == value.Handle;
@@ -2385,8 +2385,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIConcreteSampler ) ) return false; 
-			return Handle == ( ( CIConcreteSampler )value ).Handle;
+			var compareTo = value as CIConcreteSampler?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIConcreteSampler value ) {
 			return Handle == value.Handle;
@@ -2415,8 +2415,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIConstantColorGenerator ) ) return false; 
-			return Handle == ( ( CIConstantColorGenerator )value ).Handle;
+			var compareTo = value as CIConstantColorGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIConstantColorGenerator value ) {
 			return Handle == value.Handle;
@@ -2458,8 +2458,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIContext ) ) return false; 
-			return Handle == ( ( CIContext )value ).Handle;
+			var compareTo = value as CIContext?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIContext value ) {
 			return Handle == value.Handle;
@@ -2670,8 +2670,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIContextImpl ) ) return false; 
-			return Handle == ( ( CIContextImpl )value ).Handle;
+			var compareTo = value as CIContextImpl?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIContextImpl value ) {
 			return Handle == value.Handle;
@@ -2815,8 +2815,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICopyMachineTransition ) ) return false; 
-			return Handle == ( ( CICopyMachineTransition )value ).Handle;
+			var compareTo = value as CICopyMachineTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICopyMachineTransition value ) {
 			return Handle == value.Handle;
@@ -2858,8 +2858,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICrop ) ) return false; 
-			return Handle == ( ( CICrop )value ).Handle;
+			var compareTo = value as CICrop?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICrop value ) {
 			return Handle == value.Handle;
@@ -2901,8 +2901,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICrystallize ) ) return false; 
-			return Handle == ( ( CICrystallize )value ).Handle;
+			var compareTo = value as CICrystallize?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICrystallize value ) {
 			return Handle == value.Handle;
@@ -2944,8 +2944,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CICVImageProviderDelegate ) ) return false; 
-			return Handle == ( ( CICVImageProviderDelegate )value ).Handle;
+			var compareTo = value as CICVImageProviderDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CICVImageProviderDelegate value ) {
 			return Handle == value.Handle;
@@ -2988,8 +2988,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDarkenBlendMode ) ) return false; 
-			return Handle == ( ( CIDarkenBlendMode )value ).Handle;
+			var compareTo = value as CIDarkenBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDarkenBlendMode value ) {
 			return Handle == value.Handle;
@@ -3031,8 +3031,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDeBayer ) ) return false; 
-			return Handle == ( ( CIDeBayer )value ).Handle;
+			var compareTo = value as CIDeBayer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDeBayer value ) {
 			return Handle == value.Handle;
@@ -3074,8 +3074,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDesaturateGamutMapping ) ) return false; 
-			return Handle == ( ( CIDesaturateGamutMapping )value ).Handle;
+			var compareTo = value as CIDesaturateGamutMapping?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDesaturateGamutMapping value ) {
 			return Handle == value.Handle;
@@ -3117,8 +3117,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDifferenceBlendMode ) ) return false; 
-			return Handle == ( ( CIDifferenceBlendMode )value ).Handle;
+			var compareTo = value as CIDifferenceBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDifferenceBlendMode value ) {
 			return Handle == value.Handle;
@@ -3160,8 +3160,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDisintegrateWithMaskTransition ) ) return false; 
-			return Handle == ( ( CIDisintegrateWithMaskTransition )value ).Handle;
+			var compareTo = value as CIDisintegrateWithMaskTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDisintegrateWithMaskTransition value ) {
 			return Handle == value.Handle;
@@ -3203,8 +3203,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDisplacementDistortion ) ) return false; 
-			return Handle == ( ( CIDisplacementDistortion )value ).Handle;
+			var compareTo = value as CIDisplacementDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDisplacementDistortion value ) {
 			return Handle == value.Handle;
@@ -3246,8 +3246,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDisplaceWithNoise ) ) return false; 
-			return Handle == ( ( CIDisplaceWithNoise )value ).Handle;
+			var compareTo = value as CIDisplaceWithNoise?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDisplaceWithNoise value ) {
 			return Handle == value.Handle;
@@ -3289,8 +3289,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDissolveTransition ) ) return false; 
-			return Handle == ( ( CIDissolveTransition )value ).Handle;
+			var compareTo = value as CIDissolveTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDissolveTransition value ) {
 			return Handle == value.Handle;
@@ -3332,8 +3332,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDistanceFieldFromMask ) ) return false; 
-			return Handle == ( ( CIDistanceFieldFromMask )value ).Handle;
+			var compareTo = value as CIDistanceFieldFromMask?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDistanceFieldFromMask value ) {
 			return Handle == value.Handle;
@@ -3375,8 +3375,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIDotScreen ) ) return false; 
-			return Handle == ( ( CIDotScreen )value ).Handle;
+			var compareTo = value as CIDotScreen?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIDotScreen value ) {
 			return Handle == value.Handle;
@@ -3418,8 +3418,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIEdge ) ) return false; 
-			return Handle == ( ( CIEdge )value ).Handle;
+			var compareTo = value as CIEdge?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIEdge value ) {
 			return Handle == value.Handle;
@@ -3523,8 +3523,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIEdges ) ) return false; 
-			return Handle == ( ( CIEdges )value ).Handle;
+			var compareTo = value as CIEdges?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIEdges value ) {
 			return Handle == value.Handle;
@@ -3566,8 +3566,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIEdgeWork ) ) return false; 
-			return Handle == ( ( CIEdgeWork )value ).Handle;
+			var compareTo = value as CIEdgeWork?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIEdgeWork value ) {
 			return Handle == value.Handle;
@@ -3609,8 +3609,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIEmboss ) ) return false; 
-			return Handle == ( ( CIEmboss )value ).Handle;
+			var compareTo = value as CIEmboss?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIEmboss value ) {
 			return Handle == value.Handle;
@@ -3652,8 +3652,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIExclusionBlendMode ) ) return false; 
-			return Handle == ( ( CIExclusionBlendMode )value ).Handle;
+			var compareTo = value as CIExclusionBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIExclusionBlendMode value ) {
 			return Handle == value.Handle;
@@ -3695,8 +3695,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIExposureAdjust ) ) return false; 
-			return Handle == ( ( CIExposureAdjust )value ).Handle;
+			var compareTo = value as CIExposureAdjust?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIExposureAdjust value ) {
 			return Handle == value.Handle;
@@ -3738,8 +3738,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFalseColor ) ) return false; 
-			return Handle == ( ( CIFalseColor )value ).Handle;
+			var compareTo = value as CIFalseColor?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFalseColor value ) {
 			return Handle == value.Handle;
@@ -3781,8 +3781,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFilter ) ) return false; 
-			return Handle == ( ( CIFilter )value ).Handle;
+			var compareTo = value as CIFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFilter value ) {
 			return Handle == value.Handle;
@@ -4065,8 +4065,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFilterClassDescription ) ) return false; 
-			return Handle == ( ( CIFilterClassDescription )value ).Handle;
+			var compareTo = value as CIFilterClassDescription?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFilterClassDescription value ) {
 			return Handle == value.Handle;
@@ -4144,8 +4144,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFilterGraph ) ) return false; 
-			return Handle == ( ( CIFilterGraph )value ).Handle;
+			var compareTo = value as CIFilterGraph?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFilterGraph value ) {
 			return Handle == value.Handle;
@@ -4187,8 +4187,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFilterPlugIn ) ) return false; 
-			return Handle == ( ( CIFilterPlugIn )value ).Handle;
+			var compareTo = value as CIFilterPlugIn?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFilterPlugIn value ) {
 			return Handle == value.Handle;
@@ -4265,8 +4265,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFilterShape ) ) return false; 
-			return Handle == ( ( CIFilterShape )value ).Handle;
+			var compareTo = value as CIFilterShape?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFilterShape value ) {
 			return Handle == value.Handle;
@@ -4398,8 +4398,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFlashTransition ) ) return false; 
-			return Handle == ( ( CIFlashTransition )value ).Handle;
+			var compareTo = value as CIFlashTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFlashTransition value ) {
 			return Handle == value.Handle;
@@ -4441,8 +4441,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIFullButton ) ) return false; 
-			return Handle == ( ( CIFullButton )value ).Handle;
+			var compareTo = value as CIFullButton?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIFullButton value ) {
 			return Handle == value.Handle;
@@ -4538,8 +4538,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGammaAdjust ) ) return false; 
-			return Handle == ( ( CIGammaAdjust )value ).Handle;
+			var compareTo = value as CIGammaAdjust?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGammaAdjust value ) {
 			return Handle == value.Handle;
@@ -4581,8 +4581,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGamutAlarm ) ) return false; 
-			return Handle == ( ( CIGamutAlarm )value ).Handle;
+			var compareTo = value as CIGamutAlarm?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGamutAlarm value ) {
 			return Handle == value.Handle;
@@ -4624,8 +4624,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGamutClamp ) ) return false; 
-			return Handle == ( ( CIGamutClamp )value ).Handle;
+			var compareTo = value as CIGamutClamp?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGamutClamp value ) {
 			return Handle == value.Handle;
@@ -4667,8 +4667,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGamutRollOff ) ) return false; 
-			return Handle == ( ( CIGamutRollOff )value ).Handle;
+			var compareTo = value as CIGamutRollOff?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGamutRollOff value ) {
 			return Handle == value.Handle;
@@ -4710,8 +4710,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGaussianBlur ) ) return false; 
-			return Handle == ( ( CIGaussianBlur )value ).Handle;
+			var compareTo = value as CIGaussianBlur?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGaussianBlur value ) {
 			return Handle == value.Handle;
@@ -4780,8 +4780,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGaussianGradient ) ) return false; 
-			return Handle == ( ( CIGaussianGradient )value ).Handle;
+			var compareTo = value as CIGaussianGradient?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGaussianGradient value ) {
 			return Handle == value.Handle;
@@ -4823,8 +4823,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGaussianPyramid ) ) return false; 
-			return Handle == ( ( CIGaussianPyramid )value ).Handle;
+			var compareTo = value as CIGaussianPyramid?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGaussianPyramid value ) {
 			return Handle == value.Handle;
@@ -4866,8 +4866,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGlassDistortion ) ) return false; 
-			return Handle == ( ( CIGlassDistortion )value ).Handle;
+			var compareTo = value as CIGlassDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGlassDistortion value ) {
 			return Handle == value.Handle;
@@ -4909,8 +4909,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGlassLozenge ) ) return false; 
-			return Handle == ( ( CIGlassLozenge )value ).Handle;
+			var compareTo = value as CIGlassLozenge?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGlassLozenge value ) {
 			return Handle == value.Handle;
@@ -4952,8 +4952,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGloom ) ) return false; 
-			return Handle == ( ( CIGloom )value ).Handle;
+			var compareTo = value as CIGloom?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGloom value ) {
 			return Handle == value.Handle;
@@ -4995,8 +4995,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIGraph ) ) return false; 
-			return Handle == ( ( CIGraph )value ).Handle;
+			var compareTo = value as CIGraph?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIGraph value ) {
 			return Handle == value.Handle;
@@ -5186,8 +5186,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHardLightBlendMode ) ) return false; 
-			return Handle == ( ( CIHardLightBlendMode )value ).Handle;
+			var compareTo = value as CIHardLightBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHardLightBlendMode value ) {
 			return Handle == value.Handle;
@@ -5229,8 +5229,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHardMixBlendMode ) ) return false; 
-			return Handle == ( ( CIHardMixBlendMode )value ).Handle;
+			var compareTo = value as CIHardMixBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHardMixBlendMode value ) {
 			return Handle == value.Handle;
@@ -5272,8 +5272,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHatchedScreen ) ) return false; 
-			return Handle == ( ( CIHatchedScreen )value ).Handle;
+			var compareTo = value as CIHatchedScreen?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHatchedScreen value ) {
 			return Handle == value.Handle;
@@ -5315,8 +5315,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHeightFieldFromConstraints ) ) return false; 
-			return Handle == ( ( CIHeightFieldFromConstraints )value ).Handle;
+			var compareTo = value as CIHeightFieldFromConstraints?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHeightFieldFromConstraints value ) {
 			return Handle == value.Handle;
@@ -5358,8 +5358,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHeightFieldFromMask ) ) return false; 
-			return Handle == ( ( CIHeightFieldFromMask )value ).Handle;
+			var compareTo = value as CIHeightFieldFromMask?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHeightFieldFromMask value ) {
 			return Handle == value.Handle;
@@ -5401,8 +5401,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHistogram ) ) return false; 
-			return Handle == ( ( CIHistogram )value ).Handle;
+			var compareTo = value as CIHistogram?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHistogram value ) {
 			return Handle == value.Handle;
@@ -5453,8 +5453,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHoleDistortion ) ) return false; 
-			return Handle == ( ( CIHoleDistortion )value ).Handle;
+			var compareTo = value as CIHoleDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHoleDistortion value ) {
 			return Handle == value.Handle;
@@ -5496,8 +5496,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHueAdjust ) ) return false; 
-			return Handle == ( ( CIHueAdjust )value ).Handle;
+			var compareTo = value as CIHueAdjust?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHueAdjust value ) {
 			return Handle == value.Handle;
@@ -5539,8 +5539,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIHueBlendMode ) ) return false; 
-			return Handle == ( ( CIHueBlendMode )value ).Handle;
+			var compareTo = value as CIHueBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIHueBlendMode value ) {
 			return Handle == value.Handle;
@@ -5582,8 +5582,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIImage ) ) return false; 
-			return Handle == ( ( CIImage )value ).Handle;
+			var compareTo = value as CIImage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIImage value ) {
 			return Handle == value.Handle;
@@ -6086,8 +6086,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIImageAccumulator ) ) return false; 
-			return Handle == ( ( CIImageAccumulator )value ).Handle;
+			var compareTo = value as CIImageAccumulator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIImageAccumulator value ) {
 			return Handle == value.Handle;
@@ -6190,8 +6190,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIKaleidoscope ) ) return false; 
-			return Handle == ( ( CIKaleidoscope )value ).Handle;
+			var compareTo = value as CIKaleidoscope?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIKaleidoscope value ) {
 			return Handle == value.Handle;
@@ -6250,8 +6250,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIKernel ) ) return false; 
-			return Handle == ( ( CIKernel )value ).Handle;
+			var compareTo = value as CIKernel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIKernel value ) {
 			return Handle == value.Handle;
@@ -6384,8 +6384,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILanczosBayerReconstruction ) ) return false; 
-			return Handle == ( ( CILanczosBayerReconstruction )value ).Handle;
+			var compareTo = value as CILanczosBayerReconstruction?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILanczosBayerReconstruction value ) {
 			return Handle == value.Handle;
@@ -6427,8 +6427,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILanczosResize ) ) return false; 
-			return Handle == ( ( CILanczosResize )value ).Handle;
+			var compareTo = value as CILanczosResize?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILanczosResize value ) {
 			return Handle == value.Handle;
@@ -6479,8 +6479,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILanczosScaleTransform ) ) return false; 
-			return Handle == ( ( CILanczosScaleTransform )value ).Handle;
+			var compareTo = value as CILanczosScaleTransform?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILanczosScaleTransform value ) {
 			return Handle == value.Handle;
@@ -6531,8 +6531,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILenticularHaloGenerator ) ) return false; 
-			return Handle == ( ( CILenticularHaloGenerator )value ).Handle;
+			var compareTo = value as CILenticularHaloGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILenticularHaloGenerator value ) {
 			return Handle == value.Handle;
@@ -6574,8 +6574,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILightenBlendMode ) ) return false; 
-			return Handle == ( ( CILightenBlendMode )value ).Handle;
+			var compareTo = value as CILightenBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILightenBlendMode value ) {
 			return Handle == value.Handle;
@@ -6617,8 +6617,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILinearBurnBlendMode ) ) return false; 
-			return Handle == ( ( CILinearBurnBlendMode )value ).Handle;
+			var compareTo = value as CILinearBurnBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILinearBurnBlendMode value ) {
 			return Handle == value.Handle;
@@ -6660,8 +6660,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILinearDodgeBlendMode ) ) return false; 
-			return Handle == ( ( CILinearDodgeBlendMode )value ).Handle;
+			var compareTo = value as CILinearDodgeBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILinearDodgeBlendMode value ) {
 			return Handle == value.Handle;
@@ -6703,8 +6703,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILinearGradient ) ) return false; 
-			return Handle == ( ( CILinearGradient )value ).Handle;
+			var compareTo = value as CILinearGradient?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILinearGradient value ) {
 			return Handle == value.Handle;
@@ -6746,8 +6746,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILinearLightBlendMode ) ) return false; 
-			return Handle == ( ( CILinearLightBlendMode )value ).Handle;
+			var compareTo = value as CILinearLightBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILinearLightBlendMode value ) {
 			return Handle == value.Handle;
@@ -6789,8 +6789,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILineScreen ) ) return false; 
-			return Handle == ( ( CILineScreen )value ).Handle;
+			var compareTo = value as CILineScreen?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILineScreen value ) {
 			return Handle == value.Handle;
@@ -6832,8 +6832,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILuminanceGamutMapping ) ) return false; 
-			return Handle == ( ( CILuminanceGamutMapping )value ).Handle;
+			var compareTo = value as CILuminanceGamutMapping?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILuminanceGamutMapping value ) {
 			return Handle == value.Handle;
@@ -6875,8 +6875,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILuminescentPremultiplyBlendMode ) ) return false; 
-			return Handle == ( ( CILuminescentPremultiplyBlendMode )value ).Handle;
+			var compareTo = value as CILuminescentPremultiplyBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILuminescentPremultiplyBlendMode value ) {
 			return Handle == value.Handle;
@@ -6918,8 +6918,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CILuminosityBlendMode ) ) return false; 
-			return Handle == ( ( CILuminosityBlendMode )value ).Handle;
+			var compareTo = value as CILuminosityBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CILuminosityBlendMode value ) {
 			return Handle == value.Handle;
@@ -6961,8 +6961,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMaskToAlpha ) ) return false; 
-			return Handle == ( ( CIMaskToAlpha )value ).Handle;
+			var compareTo = value as CIMaskToAlpha?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMaskToAlpha value ) {
 			return Handle == value.Handle;
@@ -7004,8 +7004,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMaterialMap ) ) return false; 
-			return Handle == ( ( CIMaterialMap )value ).Handle;
+			var compareTo = value as CIMaterialMap?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMaterialMap value ) {
 			return Handle == value.Handle;
@@ -7047,8 +7047,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMaximumCompositing ) ) return false; 
-			return Handle == ( ( CIMaximumCompositing )value ).Handle;
+			var compareTo = value as CIMaximumCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMaximumCompositing value ) {
 			return Handle == value.Handle;
@@ -7090,8 +7090,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMedianFilter ) ) return false; 
-			return Handle == ( ( CIMedianFilter )value ).Handle;
+			var compareTo = value as CIMedianFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMedianFilter value ) {
 			return Handle == value.Handle;
@@ -7133,8 +7133,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMinimumCompositing ) ) return false; 
-			return Handle == ( ( CIMinimumCompositing )value ).Handle;
+			var compareTo = value as CIMinimumCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMinimumCompositing value ) {
 			return Handle == value.Handle;
@@ -7176,8 +7176,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMixOver ) ) return false; 
-			return Handle == ( ( CIMixOver )value ).Handle;
+			var compareTo = value as CIMixOver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMixOver value ) {
 			return Handle == value.Handle;
@@ -7219,8 +7219,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIModTransition ) ) return false; 
-			return Handle == ( ( CIModTransition )value ).Handle;
+			var compareTo = value as CIModTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIModTransition value ) {
 			return Handle == value.Handle;
@@ -7262,8 +7262,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMotionBlur ) ) return false; 
-			return Handle == ( ( CIMotionBlur )value ).Handle;
+			var compareTo = value as CIMotionBlur?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMotionBlur value ) {
 			return Handle == value.Handle;
@@ -7314,8 +7314,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMultiplyBlendMode ) ) return false; 
-			return Handle == ( ( CIMultiplyBlendMode )value ).Handle;
+			var compareTo = value as CIMultiplyBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMultiplyBlendMode value ) {
 			return Handle == value.Handle;
@@ -7357,8 +7357,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMultiplyCompositing ) ) return false; 
-			return Handle == ( ( CIMultiplyCompositing )value ).Handle;
+			var compareTo = value as CIMultiplyCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMultiplyCompositing value ) {
 			return Handle == value.Handle;
@@ -7400,8 +7400,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMutableFilterShape ) ) return false; 
-			return Handle == ( ( CIMutableFilterShape )value ).Handle;
+			var compareTo = value as CIMutableFilterShape?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMutableFilterShape value ) {
 			return Handle == value.Handle;
@@ -7466,8 +7466,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIMutableUIBundle ) ) return false; 
-			return Handle == ( ( CIMutableUIBundle )value ).Handle;
+			var compareTo = value as CIMutableUIBundle?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIMutableUIBundle value ) {
 			return Handle == value.Handle;
@@ -7742,8 +7742,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CINoiseReduction ) ) return false; 
-			return Handle == ( ( CINoiseReduction )value ).Handle;
+			var compareTo = value as CINoiseReduction?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CINoiseReduction value ) {
 			return Handle == value.Handle;
@@ -7785,8 +7785,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIOpacity ) ) return false; 
-			return Handle == ( ( CIOpacity )value ).Handle;
+			var compareTo = value as CIOpacity?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIOpacity value ) {
 			return Handle == value.Handle;
@@ -7828,8 +7828,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIOpenGLContext ) ) return false; 
-			return Handle == ( ( CIOpenGLContext )value ).Handle;
+			var compareTo = value as CIOpenGLContext?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIOpenGLContext value ) {
 			return Handle == value.Handle;
@@ -7907,8 +7907,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIOpenGLContextImpl ) ) return false; 
-			return Handle == ( ( CIOpenGLContextImpl )value ).Handle;
+			var compareTo = value as CIOpenGLContextImpl?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIOpenGLContextImpl value ) {
 			return Handle == value.Handle;
@@ -7975,8 +7975,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIOpTile ) ) return false; 
-			return Handle == ( ( CIOpTile )value ).Handle;
+			var compareTo = value as CIOpTile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIOpTile value ) {
 			return Handle == value.Handle;
@@ -8018,8 +8018,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIOverlayBlendMode ) ) return false; 
-			return Handle == ( ( CIOverlayBlendMode )value ).Handle;
+			var compareTo = value as CIOverlayBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIOverlayBlendMode value ) {
 			return Handle == value.Handle;
@@ -8061,8 +8061,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPageCurlTransition ) ) return false; 
-			return Handle == ( ( CIPageCurlTransition )value ).Handle;
+			var compareTo = value as CIPageCurlTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPageCurlTransition value ) {
 			return Handle == value.Handle;
@@ -8104,8 +8104,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIParallelogramTile ) ) return false; 
-			return Handle == ( ( CIParallelogramTile )value ).Handle;
+			var compareTo = value as CIParallelogramTile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIParallelogramTile value ) {
 			return Handle == value.Handle;
@@ -8147,8 +8147,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPerspectiveTile ) ) return false; 
-			return Handle == ( ( CIPerspectiveTile )value ).Handle;
+			var compareTo = value as CIPerspectiveTile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPerspectiveTile value ) {
 			return Handle == value.Handle;
@@ -8190,8 +8190,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPerspectiveTransform ) ) return false; 
-			return Handle == ( ( CIPerspectiveTransform )value ).Handle;
+			var compareTo = value as CIPerspectiveTransform?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPerspectiveTransform value ) {
 			return Handle == value.Handle;
@@ -8233,8 +8233,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPinchDistortion ) ) return false; 
-			return Handle == ( ( CIPinchDistortion )value ).Handle;
+			var compareTo = value as CIPinchDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPinchDistortion value ) {
 			return Handle == value.Handle;
@@ -8276,8 +8276,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPinLightBlendMode ) ) return false; 
-			return Handle == ( ( CIPinLightBlendMode )value ).Handle;
+			var compareTo = value as CIPinLightBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPinLightBlendMode value ) {
 			return Handle == value.Handle;
@@ -8319,8 +8319,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPixellate ) ) return false; 
-			return Handle == ( ( CIPixellate )value ).Handle;
+			var compareTo = value as CIPixellate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPixellate value ) {
 			return Handle == value.Handle;
@@ -8362,8 +8362,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPixelZoom ) ) return false; 
-			return Handle == ( ( CIPixelZoom )value ).Handle;
+			var compareTo = value as CIPixelZoom?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPixelZoom value ) {
 			return Handle == value.Handle;
@@ -8405,8 +8405,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPlugIn ) ) return false; 
-			return Handle == ( ( CIPlugIn )value ).Handle;
+			var compareTo = value as CIPlugIn?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPlugIn value ) {
 			return Handle == value.Handle;
@@ -8481,8 +8481,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPlugInStandardFilter ) ) return false; 
-			return Handle == ( ( CIPlugInStandardFilter )value ).Handle;
+			var compareTo = value as CIPlugInStandardFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPlugInStandardFilter value ) {
 			return Handle == value.Handle;
@@ -8541,8 +8541,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPointillize ) ) return false; 
-			return Handle == ( ( CIPointillize )value ).Handle;
+			var compareTo = value as CIPointillize?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPointillize value ) {
 			return Handle == value.Handle;
@@ -8584,8 +8584,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPromise ) ) return false; 
-			return Handle == ( ( CIPromise )value ).Handle;
+			var compareTo = value as CIPromise?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPromise value ) {
 			return Handle == value.Handle;
@@ -8644,8 +8644,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIPromiseInvocation ) ) return false; 
-			return Handle == ( ( CIPromiseInvocation )value ).Handle;
+			var compareTo = value as CIPromiseInvocation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIPromiseInvocation value ) {
 			return Handle == value.Handle;
@@ -8696,8 +8696,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRadialGradient ) ) return false; 
-			return Handle == ( ( CIRadialGradient )value ).Handle;
+			var compareTo = value as CIRadialGradient?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRadialGradient value ) {
 			return Handle == value.Handle;
@@ -8739,8 +8739,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRandomGenerator ) ) return false; 
-			return Handle == ( ( CIRandomGenerator )value ).Handle;
+			var compareTo = value as CIRandomGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRandomGenerator value ) {
 			return Handle == value.Handle;
@@ -8782,8 +8782,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRAWGamutMapping ) ) return false; 
-			return Handle == ( ( CIRAWGamutMapping )value ).Handle;
+			var compareTo = value as CIRAWGamutMapping?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRAWGamutMapping value ) {
 			return Handle == value.Handle;
@@ -8825,8 +8825,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRAWSharpen ) ) return false; 
-			return Handle == ( ( CIRAWSharpen )value ).Handle;
+			var compareTo = value as CIRAWSharpen?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRAWSharpen value ) {
 			return Handle == value.Handle;
@@ -8868,8 +8868,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRAWTemperatureAdjust ) ) return false; 
-			return Handle == ( ( CIRAWTemperatureAdjust )value ).Handle;
+			var compareTo = value as CIRAWTemperatureAdjust?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRAWTemperatureAdjust value ) {
 			return Handle == value.Handle;
@@ -8911,8 +8911,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRecordingContext ) ) return false; 
-			return Handle == ( ( CIRecordingContext )value ).Handle;
+			var compareTo = value as CIRecordingContext?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRecordingContext value ) {
 			return Handle == value.Handle;
@@ -8954,8 +8954,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRecordingContextImpl ) ) return false; 
-			return Handle == ( ( CIRecordingContextImpl )value ).Handle;
+			var compareTo = value as CIRecordingContextImpl?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRecordingContextImpl value ) {
 			return Handle == value.Handle;
@@ -8984,8 +8984,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRectangleGenerator ) ) return false; 
-			return Handle == ( ( CIRectangleGenerator )value ).Handle;
+			var compareTo = value as CIRectangleGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRectangleGenerator value ) {
 			return Handle == value.Handle;
@@ -9027,8 +9027,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRefractedMaterial ) ) return false; 
-			return Handle == ( ( CIRefractedMaterial )value ).Handle;
+			var compareTo = value as CIRefractedMaterial?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRefractedMaterial value ) {
 			return Handle == value.Handle;
@@ -9070,8 +9070,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRenderProviderDelegate ) ) return false; 
-			return Handle == ( ( CIRenderProviderDelegate )value ).Handle;
+			var compareTo = value as CIRenderProviderDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRenderProviderDelegate value ) {
 			return Handle == value.Handle;
@@ -9114,8 +9114,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRippleTransition ) ) return false; 
-			return Handle == ( ( CIRippleTransition )value ).Handle;
+			var compareTo = value as CIRippleTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRippleTransition value ) {
 			return Handle == value.Handle;
@@ -9157,8 +9157,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIRotatingCubeTransition ) ) return false; 
-			return Handle == ( ( CIRotatingCubeTransition )value ).Handle;
+			var compareTo = value as CIRotatingCubeTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIRotatingCubeTransition value ) {
 			return Handle == value.Handle;
@@ -9200,8 +9200,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISampleAreaOperation ) ) return false; 
-			return Handle == ( ( CISampleAreaOperation )value ).Handle;
+			var compareTo = value as CISampleAreaOperation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISampleAreaOperation value ) {
 			return Handle == value.Handle;
@@ -9261,8 +9261,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISampler ) ) return false; 
-			return Handle == ( ( CISampler )value ).Handle;
+			var compareTo = value as CISampler?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISampler value ) {
 			return Handle == value.Handle;
@@ -9397,8 +9397,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISaturationBlendMode ) ) return false; 
-			return Handle == ( ( CISaturationBlendMode )value ).Handle;
+			var compareTo = value as CISaturationBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISaturationBlendMode value ) {
 			return Handle == value.Handle;
@@ -9440,8 +9440,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIScreenBlendMode ) ) return false; 
-			return Handle == ( ( CIScreenBlendMode )value ).Handle;
+			var compareTo = value as CIScreenBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIScreenBlendMode value ) {
 			return Handle == value.Handle;
@@ -9483,8 +9483,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISepiaTone ) ) return false; 
-			return Handle == ( ( CISepiaTone )value ).Handle;
+			var compareTo = value as CISepiaTone?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISepiaTone value ) {
 			return Handle == value.Handle;
@@ -9526,8 +9526,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIShadedMaterial ) ) return false; 
-			return Handle == ( ( CIShadedMaterial )value ).Handle;
+			var compareTo = value as CIShadedMaterial?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIShadedMaterial value ) {
 			return Handle == value.Handle;
@@ -9569,8 +9569,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIShapedWaterRipple ) ) return false; 
-			return Handle == ( ( CIShapedWaterRipple )value ).Handle;
+			var compareTo = value as CIShapedWaterRipple?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIShapedWaterRipple value ) {
 			return Handle == value.Handle;
@@ -9621,8 +9621,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISharpenLuminance ) ) return false; 
-			return Handle == ( ( CISharpenLuminance )value ).Handle;
+			var compareTo = value as CISharpenLuminance?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISharpenLuminance value ) {
 			return Handle == value.Handle;
@@ -9664,8 +9664,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISilhouetteAlphaBlendMode ) ) return false; 
-			return Handle == ( ( CISilhouetteAlphaBlendMode )value ).Handle;
+			var compareTo = value as CISilhouetteAlphaBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISilhouetteAlphaBlendMode value ) {
 			return Handle == value.Handle;
@@ -9707,8 +9707,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISilhouetteLumaBlendMode ) ) return false; 
-			return Handle == ( ( CISilhouetteLumaBlendMode )value ).Handle;
+			var compareTo = value as CISilhouetteLumaBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISilhouetteLumaBlendMode value ) {
 			return Handle == value.Handle;
@@ -9750,8 +9750,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISoftLightBlendMode ) ) return false; 
-			return Handle == ( ( CISoftLightBlendMode )value ).Handle;
+			var compareTo = value as CISoftLightBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISoftLightBlendMode value ) {
 			return Handle == value.Handle;
@@ -9793,8 +9793,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISourceAtopCompositing ) ) return false; 
-			return Handle == ( ( CISourceAtopCompositing )value ).Handle;
+			var compareTo = value as CISourceAtopCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISourceAtopCompositing value ) {
 			return Handle == value.Handle;
@@ -9836,8 +9836,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISourceInCompositing ) ) return false; 
-			return Handle == ( ( CISourceInCompositing )value ).Handle;
+			var compareTo = value as CISourceInCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISourceInCompositing value ) {
 			return Handle == value.Handle;
@@ -9879,8 +9879,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISourceOutCompositing ) ) return false; 
-			return Handle == ( ( CISourceOutCompositing )value ).Handle;
+			var compareTo = value as CISourceOutCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISourceOutCompositing value ) {
 			return Handle == value.Handle;
@@ -9922,8 +9922,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISourceOverCompositing ) ) return false; 
-			return Handle == ( ( CISourceOverCompositing )value ).Handle;
+			var compareTo = value as CISourceOverCompositing?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISourceOverCompositing value ) {
 			return Handle == value.Handle;
@@ -9965,8 +9965,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISpotLight ) ) return false; 
-			return Handle == ( ( CISpotLight )value ).Handle;
+			var compareTo = value as CISpotLight?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISpotLight value ) {
 			return Handle == value.Handle;
@@ -10008,8 +10008,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIStarShineGenerator ) ) return false; 
-			return Handle == ( ( CIStarShineGenerator )value ).Handle;
+			var compareTo = value as CIStarShineGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIStarShineGenerator value ) {
 			return Handle == value.Handle;
@@ -10051,8 +10051,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIStencilAlphaBlendMode ) ) return false; 
-			return Handle == ( ( CIStencilAlphaBlendMode )value ).Handle;
+			var compareTo = value as CIStencilAlphaBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIStencilAlphaBlendMode value ) {
 			return Handle == value.Handle;
@@ -10094,8 +10094,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIStencilLumaBlendMode ) ) return false; 
-			return Handle == ( ( CIStencilLumaBlendMode )value ).Handle;
+			var compareTo = value as CIStencilLumaBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIStencilLumaBlendMode value ) {
 			return Handle == value.Handle;
@@ -10137,8 +10137,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIStripesGenerator ) ) return false; 
-			return Handle == ( ( CIStripesGenerator )value ).Handle;
+			var compareTo = value as CIStripesGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIStripesGenerator value ) {
 			return Handle == value.Handle;
@@ -10180,8 +10180,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISubtractBlendMode ) ) return false; 
-			return Handle == ( ( CISubtractBlendMode )value ).Handle;
+			var compareTo = value as CISubtractBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISubtractBlendMode value ) {
 			return Handle == value.Handle;
@@ -10223,8 +10223,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISumOf8Conics ) ) return false; 
-			return Handle == ( ( CISumOf8Conics )value ).Handle;
+			var compareTo = value as CISumOf8Conics?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISumOf8Conics value ) {
 			return Handle == value.Handle;
@@ -10266,8 +10266,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISunbeamsGenerator ) ) return false; 
-			return Handle == ( ( CISunbeamsGenerator )value ).Handle;
+			var compareTo = value as CISunbeamsGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISunbeamsGenerator value ) {
 			return Handle == value.Handle;
@@ -10309,8 +10309,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CISwipeTransition ) ) return false; 
-			return Handle == ( ( CISwipeTransition )value ).Handle;
+			var compareTo = value as CISwipeTransition?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CISwipeTransition value ) {
 			return Handle == value.Handle;
@@ -10352,8 +10352,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CITagWithColorSpace ) ) return false; 
-			return Handle == ( ( CITagWithColorSpace )value ).Handle;
+			var compareTo = value as CITagWithColorSpace?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CITagWithColorSpace value ) {
 			return Handle == value.Handle;
@@ -10395,8 +10395,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CITorusLensDistortion ) ) return false; 
-			return Handle == ( ( CITorusLensDistortion )value ).Handle;
+			var compareTo = value as CITorusLensDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CITorusLensDistortion value ) {
 			return Handle == value.Handle;
@@ -10438,8 +10438,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CITriangleTile ) ) return false; 
-			return Handle == ( ( CITriangleTile )value ).Handle;
+			var compareTo = value as CITriangleTile?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CITriangleTile value ) {
 			return Handle == value.Handle;
@@ -10481,8 +10481,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CITwirlDistortion ) ) return false; 
-			return Handle == ( ( CITwirlDistortion )value ).Handle;
+			var compareTo = value as CITwirlDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CITwirlDistortion value ) {
 			return Handle == value.Handle;
@@ -10524,8 +10524,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIUIBundle ) ) return false; 
-			return Handle == ( ( CIUIBundle )value ).Handle;
+			var compareTo = value as CIUIBundle?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIUIBundle value ) {
 			return Handle == value.Handle;
@@ -10985,8 +10985,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIUnsharpMask ) ) return false; 
-			return Handle == ( ( CIUnsharpMask )value ).Handle;
+			var compareTo = value as CIUnsharpMask?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIUnsharpMask value ) {
 			return Handle == value.Handle;
@@ -11028,8 +11028,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIVector ) ) return false; 
-			return Handle == ( ( CIVector )value ).Handle;
+			var compareTo = value as CIVector?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIVector value ) {
 			return Handle == value.Handle;
@@ -11252,8 +11252,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIVideoNoiseFilter ) ) return false; 
-			return Handle == ( ( CIVideoNoiseFilter )value ).Handle;
+			var compareTo = value as CIVideoNoiseFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIVideoNoiseFilter value ) {
 			return Handle == value.Handle;
@@ -11295,8 +11295,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIVividLightBlendMode ) ) return false; 
-			return Handle == ( ( CIVividLightBlendMode )value ).Handle;
+			var compareTo = value as CIVividLightBlendMode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIVividLightBlendMode value ) {
 			return Handle == value.Handle;
@@ -11338,8 +11338,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIVortexDistortion ) ) return false; 
-			return Handle == ( ( CIVortexDistortion )value ).Handle;
+			var compareTo = value as CIVortexDistortion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIVortexDistortion value ) {
 			return Handle == value.Handle;
@@ -11381,8 +11381,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIWhitePoint ) ) return false; 
-			return Handle == ( ( CIWhitePoint )value ).Handle;
+			var compareTo = value as CIWhitePoint?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIWhitePoint value ) {
 			return Handle == value.Handle;
@@ -11424,8 +11424,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIWhitePointAdjust ) ) return false; 
-			return Handle == ( ( CIWhitePointAdjust )value ).Handle;
+			var compareTo = value as CIWhitePointAdjust?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIWhitePointAdjust value ) {
 			return Handle == value.Handle;
@@ -11467,8 +11467,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIYCbCrSubsampledReconstruction ) ) return false; 
-			return Handle == ( ( CIYCbCrSubsampledReconstruction )value ).Handle;
+			var compareTo = value as CIYCbCrSubsampledReconstruction?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIYCbCrSubsampledReconstruction value ) {
 			return Handle == value.Handle;
@@ -11510,8 +11510,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CIZoomBlur ) ) return false; 
-			return Handle == ( ( CIZoomBlur )value ).Handle;
+			var compareTo = value as CIZoomBlur?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CIZoomBlur value ) {
 			return Handle == value.Handle;

@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSCFString ) ) return false; 
-			return Handle == ( ( NSCFString )value ).Handle;
+			var compareTo = value as NSCFString?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSCFString value ) {
 			return Handle == value.Handle;
@@ -48,8 +48,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSCFType ) ) return false; 
-			return Handle == ( ( NSCFType )value ).Handle;
+			var compareTo = value as NSCFType?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSCFType value ) {
 			return Handle == value.Handle;

@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is _WebCoreHistoryProvider ) ) return false; 
-			return Handle == ( ( _WebCoreHistoryProvider )value ).Handle;
+			var compareTo = value as _WebCoreHistoryProvider?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( _WebCoreHistoryProvider value ) {
 			return Handle == value.Handle;
@@ -70,8 +70,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is _WebSafeForwarder ) ) return false; 
-			return Handle == ( ( _WebSafeForwarder )value ).Handle;
+			var compareTo = value as _WebSafeForwarder?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( _WebSafeForwarder value ) {
 			return Handle == value.Handle;
@@ -113,8 +113,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CarbonWindowAdapter ) ) return false; 
-			return Handle == ( ( CarbonWindowAdapter )value ).Handle;
+			var compareTo = value as CarbonWindowAdapter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CarbonWindowAdapter value ) {
 			return Handle == value.Handle;
@@ -189,8 +189,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CarbonWindowContentView ) ) return false; 
-			return Handle == ( ( CarbonWindowContentView )value ).Handle;
+			var compareTo = value as CarbonWindowContentView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CarbonWindowContentView value ) {
 			return Handle == value.Handle;
@@ -219,8 +219,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CarbonWindowFrame ) ) return false; 
-			return Handle == ( ( CarbonWindowFrame )value ).Handle;
+			var compareTo = value as CarbonWindowFrame?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CarbonWindowFrame value ) {
 			return Handle == value.Handle;
@@ -297,8 +297,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is HIViewAdapter ) ) return false; 
-			return Handle == ( ( HIViewAdapter )value ).Handle;
+			var compareTo = value as HIViewAdapter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( HIViewAdapter value ) {
 			return Handle == value.Handle;
@@ -339,8 +339,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is MenuItemProxy ) ) return false; 
-			return Handle == ( ( MenuItemProxy )value ).Handle;
+			var compareTo = value as MenuItemProxy?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( MenuItemProxy value ) {
 			return Handle == value.Handle;
@@ -400,8 +400,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NonBlockingPanel ) ) return false; 
-			return Handle == ( ( NonBlockingPanel )value ).Handle;
+			var compareTo = value as NonBlockingPanel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NonBlockingPanel value ) {
 			return Handle == value.Handle;
@@ -430,8 +430,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is PDFPrefUpdatingProxy ) ) return false; 
-			return Handle == ( ( PDFPrefUpdatingProxy )value ).Handle;
+			var compareTo = value as PDFPrefUpdatingProxy?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( PDFPrefUpdatingProxy value ) {
 			return Handle == value.Handle;
@@ -473,8 +473,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is ThreadEnabler ) ) return false; 
-			return Handle == ( ( ThreadEnabler )value ).Handle;
+			var compareTo = value as ThreadEnabler?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( ThreadEnabler value ) {
 			return Handle == value.Handle;
@@ -523,8 +523,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebArchive ) ) return false; 
-			return Handle == ( ( WebArchive )value ).Handle;
+			var compareTo = value as WebArchive?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebArchive value ) {
 			return Handle == value.Handle;
@@ -628,8 +628,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebArchivePrivate ) ) return false; 
-			return Handle == ( ( WebArchivePrivate )value ).Handle;
+			var compareTo = value as WebArchivePrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebArchivePrivate value ) {
 			return Handle == value.Handle;
@@ -658,8 +658,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebArchiver ) ) return false; 
-			return Handle == ( ( WebArchiver )value ).Handle;
+			var compareTo = value as WebArchiver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebArchiver value ) {
 			return Handle == value.Handle;
@@ -737,8 +737,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebAuthenticationPanel ) ) return false; 
-			return Handle == ( ( WebAuthenticationPanel )value ).Handle;
+			var compareTo = value as WebAuthenticationPanel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebAuthenticationPanel value ) {
 			return Handle == value.Handle;
@@ -837,8 +837,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebBackForwardList ) ) return false; 
-			return Handle == ( ( WebBackForwardList )value ).Handle;
+			var compareTo = value as WebBackForwardList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebBackForwardList value ) {
 			return Handle == value.Handle;
@@ -1034,8 +1034,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebBaseNetscapePluginStream ) ) return false; 
-			return Handle == ( ( WebBaseNetscapePluginStream )value ).Handle;
+			var compareTo = value as WebBaseNetscapePluginStream?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebBaseNetscapePluginStream value ) {
 			return Handle == value.Handle;
@@ -1183,8 +1183,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebBaseNetscapePluginView ) ) return false; 
-			return Handle == ( ( WebBaseNetscapePluginView )value ).Handle;
+			var compareTo = value as WebBaseNetscapePluginView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebBaseNetscapePluginView value ) {
 			return Handle == value.Handle;
@@ -1859,8 +1859,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebBasePluginPackage ) ) return false; 
-			return Handle == ( ( WebBasePluginPackage )value ).Handle;
+			var compareTo = value as WebBasePluginPackage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebBasePluginPackage value ) {
 			return Handle == value.Handle;
@@ -2155,8 +2155,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCache ) ) return false; 
-			return Handle == ( ( WebCache )value ).Handle;
+			var compareTo = value as WebCache?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCache value ) {
 			return Handle == value.Handle;
@@ -2223,8 +2223,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebClipView ) ) return false; 
-			return Handle == ( ( WebClipView )value ).Handle;
+			var compareTo = value as WebClipView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebClipView value ) {
 			return Handle == value.Handle;
@@ -2274,8 +2274,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreScrollView ) ) return false; 
-			return Handle == ( ( WebCoreScrollView )value ).Handle;
+			var compareTo = value as WebCoreScrollView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreScrollView value ) {
 			return Handle == value.Handle;
@@ -2304,8 +2304,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreStatistics ) ) return false; 
-			return Handle == ( ( WebCoreStatistics )value ).Handle;
+			var compareTo = value as WebCoreStatistics?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreStatistics value ) {
 			return Handle == value.Handle;
@@ -2538,8 +2538,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDatabaseManager ) ) return false; 
-			return Handle == ( ( WebDatabaseManager )value ).Handle;
+			var compareTo = value as WebDatabaseManager?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDatabaseManager value ) {
 			return Handle == value.Handle;
@@ -2632,8 +2632,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDataSource ) ) return false; 
-			return Handle == ( ( WebDataSource )value ).Handle;
+			var compareTo = value as WebDataSource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDataSource value ) {
 			return Handle == value.Handle;
@@ -2809,8 +2809,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDataSourcePrivate ) ) return false; 
-			return Handle == ( ( WebDataSourcePrivate )value ).Handle;
+			var compareTo = value as WebDataSourcePrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDataSourcePrivate value ) {
 			return Handle == value.Handle;
@@ -2851,8 +2851,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDefaultEditingDelegate ) ) return false; 
-			return Handle == ( ( WebDefaultEditingDelegate )value ).Handle;
+			var compareTo = value as WebDefaultEditingDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDefaultEditingDelegate value ) {
 			return Handle == value.Handle;
@@ -3058,8 +3058,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDefaultPolicyDelegate ) ) return false; 
-			return Handle == ( ( WebDefaultPolicyDelegate )value ).Handle;
+			var compareTo = value as WebDefaultPolicyDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDefaultPolicyDelegate value ) {
 			return Handle == value.Handle;
@@ -3142,8 +3142,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDefaultScriptDebugDelegate ) ) return false; 
-			return Handle == ( ( WebDefaultScriptDebugDelegate )value ).Handle;
+			var compareTo = value as WebDefaultScriptDebugDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDefaultScriptDebugDelegate value ) {
 			return Handle == value.Handle;
@@ -3245,8 +3245,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDefaultUIDelegate ) ) return false; 
-			return Handle == ( ( WebDefaultUIDelegate )value ).Handle;
+			var compareTo = value as WebDefaultUIDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDefaultUIDelegate value ) {
 			return Handle == value.Handle;
@@ -3540,8 +3540,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDownload ) ) return false; 
-			return Handle == ( ( WebDownload )value ).Handle;
+			var compareTo = value as WebDownload?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDownload value ) {
 			return Handle == value.Handle;
@@ -3582,8 +3582,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDownloadInternal ) ) return false; 
-			return Handle == ( ( WebDownloadInternal )value ).Handle;
+			var compareTo = value as WebDownloadInternal?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDownloadInternal value ) {
 			return Handle == value.Handle;
@@ -3731,8 +3731,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDynamicScrollBarsView ) ) return false; 
-			return Handle == ( ( WebDynamicScrollBarsView )value ).Handle;
+			var compareTo = value as WebDynamicScrollBarsView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDynamicScrollBarsView value ) {
 			return Handle == value.Handle;
@@ -3948,8 +3948,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebEditCommand ) ) return false; 
-			return Handle == ( ( WebEditCommand )value ).Handle;
+			var compareTo = value as WebEditCommand?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebEditCommand value ) {
 			return Handle == value.Handle;
@@ -3990,8 +3990,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebEditorUndoTarget ) ) return false; 
-			return Handle == ( ( WebEditorUndoTarget )value ).Handle;
+			var compareTo = value as WebEditorUndoTarget?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebEditorUndoTarget value ) {
 			return Handle == value.Handle;
@@ -4040,8 +4040,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebElementDictionary ) ) return false; 
-			return Handle == ( ( WebElementDictionary )value ).Handle;
+			var compareTo = value as WebElementDictionary?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebElementDictionary value ) {
 			return Handle == value.Handle;
@@ -4090,8 +4090,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFormDelegate ) ) return false; 
-			return Handle == ( ( WebFormDelegate )value ).Handle;
+			var compareTo = value as WebFormDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFormDelegate value ) {
 			return Handle == value.Handle;
@@ -4182,8 +4182,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFrame ) ) return false; 
-			return Handle == ( ( WebFrame )value ).Handle;
+			var compareTo = value as WebFrame?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFrame value ) {
 			return Handle == value.Handle;
@@ -4401,8 +4401,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFrameBridge ) ) return false; 
-			return Handle == ( ( WebFrameBridge )value ).Handle;
+			var compareTo = value as WebFrameBridge?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFrameBridge value ) {
 			return Handle == value.Handle;
@@ -4624,8 +4624,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFramePolicyListener ) ) return false; 
-			return Handle == ( ( WebFramePolicyListener )value ).Handle;
+			var compareTo = value as WebFramePolicyListener?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFramePolicyListener value ) {
 			return Handle == value.Handle;
@@ -4714,8 +4714,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFramePrivate ) ) return false; 
-			return Handle == ( ( WebFramePrivate )value ).Handle;
+			var compareTo = value as WebFramePrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFramePrivate value ) {
 			return Handle == value.Handle;
@@ -4756,8 +4756,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFrameView ) ) return false; 
-			return Handle == ( ( WebFrameView )value ).Handle;
+			var compareTo = value as WebFrameView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFrameView value ) {
 			return Handle == value.Handle;
@@ -4917,8 +4917,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFrameViewPrivate ) ) return false; 
-			return Handle == ( ( WebFrameViewPrivate )value ).Handle;
+			var compareTo = value as WebFrameViewPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFrameViewPrivate value ) {
 			return Handle == value.Handle;
@@ -4947,8 +4947,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHistory ) ) return false; 
-			return Handle == ( ( WebHistory )value ).Handle;
+			var compareTo = value as WebHistory?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHistory value ) {
 			return Handle == value.Handle;
@@ -5161,8 +5161,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHistoryItem ) ) return false; 
-			return Handle == ( ( WebHistoryItem )value ).Handle;
+			var compareTo = value as WebHistoryItem?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHistoryItem value ) {
 			return Handle == value.Handle;
@@ -5445,8 +5445,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHistoryPrivate ) ) return false; 
-			return Handle == ( ( WebHistoryPrivate )value ).Handle;
+			var compareTo = value as WebHistoryPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHistoryPrivate value ) {
 			return Handle == value.Handle;
@@ -5679,8 +5679,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHTMLRepresentation ) ) return false; 
-			return Handle == ( ( WebHTMLRepresentation )value ).Handle;
+			var compareTo = value as WebHTMLRepresentation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHTMLRepresentation value ) {
 			return Handle == value.Handle;
@@ -5907,8 +5907,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHTMLRepresentationPrivate ) ) return false; 
-			return Handle == ( ( WebHTMLRepresentationPrivate )value ).Handle;
+			var compareTo = value as WebHTMLRepresentationPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHTMLRepresentationPrivate value ) {
 			return Handle == value.Handle;
@@ -5937,8 +5937,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHTMLView ) ) return false; 
-			return Handle == ( ( WebHTMLView )value ).Handle;
+			var compareTo = value as WebHTMLView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHTMLView value ) {
 			return Handle == value.Handle;
@@ -7436,8 +7436,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebHTMLViewPrivate ) ) return false; 
-			return Handle == ( ( WebHTMLViewPrivate )value ).Handle;
+			var compareTo = value as WebHTMLViewPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebHTMLViewPrivate value ) {
 			return Handle == value.Handle;
@@ -7486,8 +7486,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebIconDatabase ) ) return false; 
-			return Handle == ( ( WebIconDatabase )value ).Handle;
+			var compareTo = value as WebIconDatabase?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebIconDatabase value ) {
 			return Handle == value.Handle;
@@ -7595,8 +7595,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebIconDatabasePrivate ) ) return false; 
-			return Handle == ( ( WebIconDatabasePrivate )value ).Handle;
+			var compareTo = value as WebIconDatabasePrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebIconDatabasePrivate value ) {
 			return Handle == value.Handle;
@@ -7625,8 +7625,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebImageRendererFactory ) ) return false; 
-			return Handle == ( ( WebImageRendererFactory )value ).Handle;
+			var compareTo = value as WebImageRendererFactory?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebImageRendererFactory value ) {
 			return Handle == value.Handle;
@@ -7676,8 +7676,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebInspector ) ) return false; 
-			return Handle == ( ( WebInspector )value ).Handle;
+			var compareTo = value as WebInspector?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebInspector value ) {
 			return Handle == value.Handle;
@@ -7818,8 +7818,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebInspectorWindowController ) ) return false; 
-			return Handle == ( ( WebInspectorWindowController )value ).Handle;
+			var compareTo = value as WebInspectorWindowController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebInspectorWindowController value ) {
 			return Handle == value.Handle;
@@ -7960,8 +7960,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebJavaScriptTextInputPanel ) ) return false; 
-			return Handle == ( ( WebJavaScriptTextInputPanel )value ).Handle;
+			var compareTo = value as WebJavaScriptTextInputPanel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebJavaScriptTextInputPanel value ) {
 			return Handle == value.Handle;
@@ -8028,8 +8028,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebKeyGenerator ) ) return false; 
-			return Handle == ( ( WebKeyGenerator )value ).Handle;
+			var compareTo = value as WebKeyGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebKeyGenerator value ) {
 			return Handle == value.Handle;
@@ -8079,8 +8079,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebKitPluginContainerView ) ) return false; 
-			return Handle == ( ( WebKitPluginContainerView )value ).Handle;
+			var compareTo = value as WebKitPluginContainerView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebKitPluginContainerView value ) {
 			return Handle == value.Handle;
@@ -8122,8 +8122,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebKitRenderTreeCopier ) ) return false; 
-			return Handle == ( ( WebKitRenderTreeCopier )value ).Handle;
+			var compareTo = value as WebKitRenderTreeCopier?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebKitRenderTreeCopier value ) {
 			return Handle == value.Handle;
@@ -8152,8 +8152,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebKitStatistics ) ) return false; 
-			return Handle == ( ( WebKitStatistics )value ).Handle;
+			var compareTo = value as WebKitStatistics?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebKitStatistics value ) {
 			return Handle == value.Handle;
@@ -8240,8 +8240,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNetscapePluginDocumentView ) ) return false; 
-			return Handle == ( ( WebNetscapePluginDocumentView )value ).Handle;
+			var compareTo = value as WebNetscapePluginDocumentView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNetscapePluginDocumentView value ) {
 			return Handle == value.Handle;
@@ -8270,8 +8270,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNetscapePluginPackage ) ) return false; 
-			return Handle == ( ( WebNetscapePluginPackage )value ).Handle;
+			var compareTo = value as WebNetscapePluginPackage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNetscapePluginPackage value ) {
 			return Handle == value.Handle;
@@ -8372,8 +8372,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNetscapePluginStream ) ) return false; 
-			return Handle == ( ( WebNetscapePluginStream )value ).Handle;
+			var compareTo = value as WebNetscapePluginStream?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNetscapePluginStream value ) {
 			return Handle == value.Handle;
@@ -8422,8 +8422,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNodeHighlight ) ) return false; 
-			return Handle == ( ( WebNodeHighlight )value ).Handle;
+			var compareTo = value as WebNodeHighlight?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNodeHighlight value ) {
 			return Handle == value.Handle;
@@ -8574,8 +8574,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNodeHighlightFadeInAnimation ) ) return false; 
-			return Handle == ( ( WebNodeHighlightFadeInAnimation )value ).Handle;
+			var compareTo = value as WebNodeHighlightFadeInAnimation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNodeHighlightFadeInAnimation value ) {
 			return Handle == value.Handle;
@@ -8604,8 +8604,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNodeHighlightView ) ) return false; 
-			return Handle == ( ( WebNodeHighlightView )value ).Handle;
+			var compareTo = value as WebNodeHighlightView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNodeHighlightView value ) {
 			return Handle == value.Handle;
@@ -8681,8 +8681,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebNullPluginView ) ) return false; 
-			return Handle == ( ( WebNullPluginView )value ).Handle;
+			var compareTo = value as WebNullPluginView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebNullPluginView value ) {
 			return Handle == value.Handle;
@@ -8723,8 +8723,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPanelAuthenticationHandler ) ) return false; 
-			return Handle == ( ( WebPanelAuthenticationHandler )value ).Handle;
+			var compareTo = value as WebPanelAuthenticationHandler?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPanelAuthenticationHandler value ) {
 			return Handle == value.Handle;
@@ -8798,8 +8798,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPDFRepresentation ) ) return false; 
-			return Handle == ( ( WebPDFRepresentation )value ).Handle;
+			var compareTo = value as WebPDFRepresentation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPDFRepresentation value ) {
 			return Handle == value.Handle;
@@ -8927,8 +8927,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPDFView ) ) return false; 
-			return Handle == ( ( WebPDFView )value ).Handle;
+			var compareTo = value as WebPDFView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPDFView value ) {
 			return Handle == value.Handle;
@@ -9367,8 +9367,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPluginContainerCheck ) ) return false; 
-			return Handle == ( ( WebPluginContainerCheck )value ).Handle;
+			var compareTo = value as WebPluginContainerCheck?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPluginContainerCheck value ) {
 			return Handle == value.Handle;
@@ -9435,8 +9435,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPluginController ) ) return false; 
-			return Handle == ( ( WebPluginController )value ).Handle;
+			var compareTo = value as WebPluginController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPluginController value ) {
 			return Handle == value.Handle;
@@ -9662,8 +9662,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPluginDatabase ) ) return false; 
-			return Handle == ( ( WebPluginDatabase )value ).Handle;
+			var compareTo = value as WebPluginDatabase?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPluginDatabase value ) {
 			return Handle == value.Handle;
@@ -9790,8 +9790,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPluginPackage ) ) return false; 
-			return Handle == ( ( WebPluginPackage )value ).Handle;
+			var compareTo = value as WebPluginPackage?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPluginPackage value ) {
 			return Handle == value.Handle;
@@ -9833,8 +9833,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPluginRequest ) ) return false; 
-			return Handle == ( ( WebPluginRequest )value ).Handle;
+			var compareTo = value as WebPluginRequest?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPluginRequest value ) {
 			return Handle == value.Handle;
@@ -9921,8 +9921,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPolicyDecisionListener ) ) return false; 
-			return Handle == ( ( WebPolicyDecisionListener )value ).Handle;
+			var compareTo = value as WebPolicyDecisionListener?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPolicyDecisionListener value ) {
 			return Handle == value.Handle;
@@ -9979,8 +9979,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPolicyDecisionListenerPrivate ) ) return false; 
-			return Handle == ( ( WebPolicyDecisionListenerPrivate )value ).Handle;
+			var compareTo = value as WebPolicyDecisionListenerPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPolicyDecisionListenerPrivate value ) {
 			return Handle == value.Handle;
@@ -10022,8 +10022,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPreferences ) ) return false; 
-			return Handle == ( ( WebPreferences )value ).Handle;
+			var compareTo = value as WebPreferences?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPreferences value ) {
 			return Handle == value.Handle;
@@ -10769,8 +10769,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebPreferencesPrivate ) ) return false; 
-			return Handle == ( ( WebPreferencesPrivate )value ).Handle;
+			var compareTo = value as WebPreferencesPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebPreferencesPrivate value ) {
 			return Handle == value.Handle;
@@ -10799,8 +10799,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebProgressItem ) ) return false; 
-			return Handle == ( ( WebProgressItem )value ).Handle;
+			var compareTo = value as WebProgressItem?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebProgressItem value ) {
 			return Handle == value.Handle;
@@ -10829,8 +10829,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebRenderNode ) ) return false; 
-			return Handle == ( ( WebRenderNode )value ).Handle;
+			var compareTo = value as WebRenderNode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebRenderNode value ) {
 			return Handle == value.Handle;
@@ -10926,8 +10926,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebResource ) ) return false; 
-			return Handle == ( ( WebResource )value ).Handle;
+			var compareTo = value as WebResource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebResource value ) {
 			return Handle == value.Handle;
@@ -11037,8 +11037,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebResourcePrivate ) ) return false; 
-			return Handle == ( ( WebResourcePrivate )value ).Handle;
+			var compareTo = value as WebResourcePrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebResourcePrivate value ) {
 			return Handle == value.Handle;
@@ -11067,8 +11067,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebScriptCallFrame ) ) return false; 
-			return Handle == ( ( WebScriptCallFrame )value ).Handle;
+			var compareTo = value as WebScriptCallFrame?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebScriptCallFrame value ) {
 			return Handle == value.Handle;
@@ -11163,8 +11163,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebScriptDebugger ) ) return false; 
-			return Handle == ( ( WebScriptDebugger )value ).Handle;
+			var compareTo = value as WebScriptDebugger?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebScriptDebugger value ) {
 			return Handle == value.Handle;
@@ -11266,8 +11266,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebScriptDebugServer ) ) return false; 
-			return Handle == ( ( WebScriptDebugServer )value ).Handle;
+			var compareTo = value as WebScriptDebugServer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebScriptDebugServer value ) {
 			return Handle == value.Handle;
@@ -11475,8 +11475,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebSearchableTextView ) ) return false; 
-			return Handle == ( ( WebSearchableTextView )value ).Handle;
+			var compareTo = value as WebSearchableTextView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebSearchableTextView value ) {
 			return Handle == value.Handle;
@@ -11614,8 +11614,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebSecurityOrigin ) ) return false; 
-			return Handle == ( ( WebSecurityOrigin )value ).Handle;
+			var compareTo = value as WebSecurityOrigin?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebSecurityOrigin value ) {
 			return Handle == value.Handle;
@@ -11719,8 +11719,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebStringTruncator ) ) return false; 
-			return Handle == ( ( WebStringTruncator )value ).Handle;
+			var compareTo = value as WebStringTruncator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebStringTruncator value ) {
 			return Handle == value.Handle;
@@ -11797,8 +11797,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebTextCompleteController ) ) return false; 
-			return Handle == ( ( WebTextCompleteController )value ).Handle;
+			var compareTo = value as WebTextCompleteController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebTextCompleteController value ) {
 			return Handle == value.Handle;
@@ -11908,8 +11908,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebUnarchivingState ) ) return false; 
-			return Handle == ( ( WebUnarchivingState )value ).Handle;
+			var compareTo = value as WebUnarchivingState?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebUnarchivingState value ) {
 			return Handle == value.Handle;
@@ -11976,8 +11976,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebURLsWithTitles ) ) return false; 
-			return Handle == ( ( WebURLsWithTitles )value ).Handle;
+			var compareTo = value as WebURLsWithTitles?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebURLsWithTitles value ) {
 			return Handle == value.Handle;
@@ -12045,8 +12045,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebView ) ) return false; 
-			return Handle == ( ( WebView )value ).Handle;
+			var compareTo = value as WebView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebView value ) {
 			return Handle == value.Handle;
@@ -14319,8 +14319,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebViewFactory ) ) return false; 
-			return Handle == ( ( WebViewFactory )value ).Handle;
+			var compareTo = value as WebViewFactory?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebViewFactory value ) {
 			return Handle == value.Handle;
@@ -15024,8 +15024,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebViewPrivate ) ) return false; 
-			return Handle == ( ( WebViewPrivate )value ).Handle;
+			var compareTo = value as WebViewPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebViewPrivate value ) {
 			return Handle == value.Handle;
@@ -15066,8 +15066,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebWindowWatcher ) ) return false; 
-			return Handle == ( ( WebWindowWatcher )value ).Handle;
+			var compareTo = value as WebWindowWatcher?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebWindowWatcher value ) {
 			return Handle == value.Handle;

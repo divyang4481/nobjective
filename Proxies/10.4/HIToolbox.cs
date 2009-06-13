@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSHIObject ) ) return false; 
-			return Handle == ( ( NSHIObject )value ).Handle;
+			var compareTo = value as NSHIObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSHIObject value ) {
 			return Handle == value.Handle;
@@ -77,8 +77,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSHIObjectSubclass ) ) return false; 
-			return Handle == ( ( NSHIObjectSubclass )value ).Handle;
+			var compareTo = value as NSHIObjectSubclass?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSHIObjectSubclass value ) {
 			return Handle == value.Handle;
@@ -107,8 +107,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSKeyedArchiverWrapper ) ) return false; 
-			return Handle == ( ( NSKeyedArchiverWrapper )value ).Handle;
+			var compareTo = value as NSKeyedArchiverWrapper?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSKeyedArchiverWrapper value ) {
 			return Handle == value.Handle;
@@ -137,8 +137,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSKeyedUnarchiverWrapper ) ) return false; 
-			return Handle == ( ( NSKeyedUnarchiverWrapper )value ).Handle;
+			var compareTo = value as NSKeyedUnarchiverWrapper?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSKeyedUnarchiverWrapper value ) {
 			return Handle == value.Handle;

@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is List ) ) return false; 
-			return Handle == ( ( List )value ).Handle;
+			var compareTo = value as List?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( List value ) {
 			return Handle == value.Handle;
@@ -243,8 +243,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSDeallocatedObject ) ) return false; 
-			return Handle == ( ( NSDeallocatedObject )value ).Handle;
+			var compareTo = value as NSDeallocatedObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSDeallocatedObject value ) {
 			return Handle == value.Handle;
@@ -327,8 +327,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSResurrectedObject ) ) return false; 
-			return Handle == ( ( NSResurrectedObject )value ).Handle;
+			var compareTo = value as NSResurrectedObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSResurrectedObject value ) {
 			return Handle == value.Handle;
@@ -402,8 +402,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NObjective.Proxies.Object ) ) return false; 
-			return Handle == ( ( NObjective.Proxies.Object )value ).Handle;
+			var compareTo = value as NObjective.Proxies.Object?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NObjective.Proxies.Object value ) {
 			return Handle == value.Handle;
@@ -879,8 +879,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is Protocol ) ) return false; 
-			return Handle == ( ( Protocol )value ).Handle;
+			var compareTo = value as Protocol?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( Protocol value ) {
 			return Handle == value.Handle;

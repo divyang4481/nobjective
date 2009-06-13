@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is IMKClient ) ) return false; 
-			return Handle == ( ( IMKClient )value ).Handle;
+			var compareTo = value as IMKClient?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( IMKClient value ) {
 			return Handle == value.Handle;
@@ -123,8 +123,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is IMKEvent ) ) return false; 
-			return Handle == ( ( IMKEvent )value ).Handle;
+			var compareTo = value as IMKEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( IMKEvent value ) {
 			return Handle == value.Handle;
@@ -286,8 +286,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is IMKInputSession ) ) return false; 
-			return Handle == ( ( IMKInputSession )value ).Handle;
+			var compareTo = value as IMKInputSession?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( IMKInputSession value ) {
 			return Handle == value.Handle;
@@ -499,8 +499,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is IPMDEventParameter ) ) return false; 
-			return Handle == ( ( IPMDEventParameter )value ).Handle;
+			var compareTo = value as IPMDEventParameter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( IPMDEventParameter value ) {
 			return Handle == value.Handle;
@@ -656,8 +656,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is IPMDFontRange ) ) return false; 
-			return Handle == ( ( IPMDFontRange )value ).Handle;
+			var compareTo = value as IPMDFontRange?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( IPMDFontRange value ) {
 			return Handle == value.Handle;
@@ -686,8 +686,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSHIObject ) ) return false; 
-			return Handle == ( ( NSHIObject )value ).Handle;
+			var compareTo = value as NSHIObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSHIObject value ) {
 			return Handle == value.Handle;
@@ -745,8 +745,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSHIUndoObject ) ) return false; 
-			return Handle == ( ( NSHIUndoObject )value ).Handle;
+			var compareTo = value as NSHIUndoObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSHIUndoObject value ) {
 			return Handle == value.Handle;
@@ -775,8 +775,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSKeyedArchiverWrapper ) ) return false; 
-			return Handle == ( ( NSKeyedArchiverWrapper )value ).Handle;
+			var compareTo = value as NSKeyedArchiverWrapper?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSKeyedArchiverWrapper value ) {
 			return Handle == value.Handle;
@@ -805,8 +805,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSKeyedUnarchiverWrapper ) ) return false; 
-			return Handle == ( ( NSKeyedUnarchiverWrapper )value ).Handle;
+			var compareTo = value as NSKeyedUnarchiverWrapper?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSKeyedUnarchiverWrapper value ) {
 			return Handle == value.Handle;
@@ -835,8 +835,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is PluginParser ) ) return false; 
-			return Handle == ( ( PluginParser )value ).Handle;
+			var compareTo = value as PluginParser?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( PluginParser value ) {
 			return Handle == value.Handle;
@@ -974,8 +974,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is PluginReaderDATFileModule ) ) return false; 
-			return Handle == ( ( PluginReaderDATFileModule )value ).Handle;
+			var compareTo = value as PluginReaderDATFileModule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( PluginReaderDATFileModule value ) {
 			return Handle == value.Handle;
@@ -1034,8 +1034,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is PluginReaderGenericModule ) ) return false; 
-			return Handle == ( ( PluginReaderGenericModule )value ).Handle;
+			var compareTo = value as PluginReaderGenericModule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( PluginReaderGenericModule value ) {
 			return Handle == value.Handle;
@@ -1145,8 +1145,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is PluginReaderNativeFileModule ) ) return false; 
-			return Handle == ( ( PluginReaderNativeFileModule )value ).Handle;
+			var compareTo = value as PluginReaderNativeFileModule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( PluginReaderNativeFileModule value ) {
 			return Handle == value.Handle;
@@ -1288,8 +1288,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is PluginReaderOpenVanillaFileModule ) ) return false; 
-			return Handle == ( ( PluginReaderOpenVanillaFileModule )value ).Handle;
+			var compareTo = value as PluginReaderOpenVanillaFileModule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( PluginReaderOpenVanillaFileModule value ) {
 			return Handle == value.Handle;
@@ -1405,8 +1405,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is TISInputMethodDataFileLoader ) ) return false; 
-			return Handle == ( ( TISInputMethodDataFileLoader )value ).Handle;
+			var compareTo = value as TISInputMethodDataFileLoader?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( TISInputMethodDataFileLoader value ) {
 			return Handle == value.Handle;
