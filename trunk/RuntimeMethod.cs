@@ -160,12 +160,8 @@ namespace NObjective
 		/// <returns>True if <paramref name="value"/> is a RuntimeMethod and it points to the same raw Objective-C object as this instance; False otherwise.</returns>
 		public override bool Equals( object value )
 		{
-			var comapareTo = value as RuntimeMethod?;
-
-			if( comapareTo == null )
-				return false;
-
-			return _handle == comapareTo.Value._handle;
+			var compareTo = value as RuntimeMethod?;
+			return compareTo != null && _handle == compareTo.Value._handle;
 		}
 
 		/// <summary>

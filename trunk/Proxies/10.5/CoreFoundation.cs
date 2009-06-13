@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSArrayReverseEnumerator ) ) return false; 
-			return Handle == ( ( __NSArrayReverseEnumerator )value ).Handle;
+			var compareTo = value as __NSArrayReverseEnumerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSArrayReverseEnumerator value ) {
 			return Handle == value.Handle;
@@ -61,8 +61,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSCFArray ) ) return false; 
-			return Handle == ( ( __NSCFArray )value ).Handle;
+			var compareTo = value as __NSCFArray?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSCFArray value ) {
 			return Handle == value.Handle;
@@ -91,8 +91,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSCFDate ) ) return false; 
-			return Handle == ( ( __NSCFDate )value ).Handle;
+			var compareTo = value as __NSCFDate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSCFDate value ) {
 			return Handle == value.Handle;
@@ -134,8 +134,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSCFDictionary ) ) return false; 
-			return Handle == ( ( __NSCFDictionary )value ).Handle;
+			var compareTo = value as __NSCFDictionary?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSCFDictionary value ) {
 			return Handle == value.Handle;
@@ -164,8 +164,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSCFOrderedSet ) ) return false; 
-			return Handle == ( ( __NSCFOrderedSet )value ).Handle;
+			var compareTo = value as __NSCFOrderedSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSCFOrderedSet value ) {
 			return Handle == value.Handle;
@@ -194,8 +194,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSCFSet ) ) return false; 
-			return Handle == ( ( __NSCFSet )value ).Handle;
+			var compareTo = value as __NSCFSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSCFSet value ) {
 			return Handle == value.Handle;
@@ -224,8 +224,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSDictionaryObjectEnumerator ) ) return false; 
-			return Handle == ( ( __NSDictionaryObjectEnumerator )value ).Handle;
+			var compareTo = value as __NSDictionaryObjectEnumerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSDictionaryObjectEnumerator value ) {
 			return Handle == value.Handle;
@@ -254,8 +254,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSFastEnumerationEnumerator ) ) return false; 
-			return Handle == ( ( __NSFastEnumerationEnumerator )value ).Handle;
+			var compareTo = value as __NSFastEnumerationEnumerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSFastEnumerationEnumerator value ) {
 			return Handle == value.Handle;
@@ -297,8 +297,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSOrderedSetReverseEnumerator ) ) return false; 
-			return Handle == ( ( __NSOrderedSetReverseEnumerator )value ).Handle;
+			var compareTo = value as __NSOrderedSetReverseEnumerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSOrderedSetReverseEnumerator value ) {
 			return Handle == value.Handle;
@@ -340,8 +340,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSPlaceholderArray ) ) return false; 
-			return Handle == ( ( __NSPlaceholderArray )value ).Handle;
+			var compareTo = value as __NSPlaceholderArray?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSPlaceholderArray value ) {
 			return Handle == value.Handle;
@@ -426,8 +426,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSPlaceholderDate ) ) return false; 
-			return Handle == ( ( __NSPlaceholderDate )value ).Handle;
+			var compareTo = value as __NSPlaceholderDate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSPlaceholderDate value ) {
 			return Handle == value.Handle;
@@ -485,8 +485,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSPlaceholderDictionary ) ) return false; 
-			return Handle == ( ( __NSPlaceholderDictionary )value ).Handle;
+			var compareTo = value as __NSPlaceholderDictionary?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSPlaceholderDictionary value ) {
 			return Handle == value.Handle;
@@ -571,8 +571,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSPlaceholderOrderedSet ) ) return false; 
-			return Handle == ( ( __NSPlaceholderOrderedSet )value ).Handle;
+			var compareTo = value as __NSPlaceholderOrderedSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSPlaceholderOrderedSet value ) {
 			return Handle == value.Handle;
@@ -639,8 +639,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is __NSPlaceholderSet ) ) return false; 
-			return Handle == ( ( __NSPlaceholderSet )value ).Handle;
+			var compareTo = value as __NSPlaceholderSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( __NSPlaceholderSet value ) {
 			return Handle == value.Handle;
@@ -709,8 +709,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is _NSZombie_ ) ) return false; 
-			return Handle == ( ( _NSZombie_ )value ).Handle;
+			var compareTo = value as _NSZombie_?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( _NSZombie_ value ) {
 			return Handle == value.Handle;
@@ -754,8 +754,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CFXPreferencesCompatibilitySource ) ) return false; 
-			return Handle == ( ( CFXPreferencesCompatibilitySource )value ).Handle;
+			var compareTo = value as CFXPreferencesCompatibilitySource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CFXPreferencesCompatibilitySource value ) {
 			return Handle == value.Handle;
@@ -784,8 +784,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CFXPreferencesManagedSource ) ) return false; 
-			return Handle == ( ( CFXPreferencesManagedSource )value ).Handle;
+			var compareTo = value as CFXPreferencesManagedSource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CFXPreferencesManagedSource value ) {
 			return Handle == value.Handle;
@@ -814,8 +814,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CFXPreferencesPropertyListSource ) ) return false; 
-			return Handle == ( ( CFXPreferencesPropertyListSource )value ).Handle;
+			var compareTo = value as CFXPreferencesPropertyListSource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CFXPreferencesPropertyListSource value ) {
 			return Handle == value.Handle;
@@ -844,8 +844,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CFXPreferencesSearchListSource ) ) return false; 
-			return Handle == ( ( CFXPreferencesSearchListSource )value ).Handle;
+			var compareTo = value as CFXPreferencesSearchListSource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CFXPreferencesSearchListSource value ) {
 			return Handle == value.Handle;
@@ -894,8 +894,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CFXPreferencesSource ) ) return false; 
-			return Handle == ( ( CFXPreferencesSource )value ).Handle;
+			var compareTo = value as CFXPreferencesSource?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CFXPreferencesSource value ) {
 			return Handle == value.Handle;
@@ -946,8 +946,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSArray ) ) return false; 
-			return Handle == ( ( NSArray )value ).Handle;
+			var compareTo = value as NSArray?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSArray value ) {
 			return Handle == value.Handle;
@@ -1340,8 +1340,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSCalendar ) ) return false; 
-			return Handle == ( ( NSCalendar )value ).Handle;
+			var compareTo = value as NSCalendar?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSCalendar value ) {
 			return Handle == value.Handle;
@@ -1370,8 +1370,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSCFString ) ) return false; 
-			return Handle == ( ( NSCFString )value ).Handle;
+			var compareTo = value as NSCFString?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSCFString value ) {
 			return Handle == value.Handle;
@@ -1400,8 +1400,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSData ) ) return false; 
-			return Handle == ( ( NSData )value ).Handle;
+			var compareTo = value as NSData?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSData value ) {
 			return Handle == value.Handle;
@@ -1430,8 +1430,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSDate ) ) return false; 
-			return Handle == ( ( NSDate )value ).Handle;
+			var compareTo = value as NSDate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSDate value ) {
 			return Handle == value.Handle;
@@ -1689,8 +1689,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSDateComponents ) ) return false; 
-			return Handle == ( ( NSDateComponents )value ).Handle;
+			var compareTo = value as NSDateComponents?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSDateComponents value ) {
 			return Handle == value.Handle;
@@ -1719,8 +1719,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSDictionary ) ) return false; 
-			return Handle == ( ( NSDictionary )value ).Handle;
+			var compareTo = value as NSDictionary?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSDictionary value ) {
 			return Handle == value.Handle;
@@ -2031,8 +2031,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSEnumerator ) ) return false; 
-			return Handle == ( ( NSEnumerator )value ).Handle;
+			var compareTo = value as NSEnumerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSEnumerator value ) {
 			return Handle == value.Handle;
@@ -2083,8 +2083,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSException ) ) return false; 
-			return Handle == ( ( NSException )value ).Handle;
+			var compareTo = value as NSException?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSException value ) {
 			return Handle == value.Handle;
@@ -2206,8 +2206,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSInputStream ) ) return false; 
-			return Handle == ( ( NSInputStream )value ).Handle;
+			var compareTo = value as NSInputStream?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSInputStream value ) {
 			return Handle == value.Handle;
@@ -2236,8 +2236,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSInvocation ) ) return false; 
-			return Handle == ( ( NSInvocation )value ).Handle;
+			var compareTo = value as NSInvocation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSInvocation value ) {
 			return Handle == value.Handle;
@@ -2387,8 +2387,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSLocale ) ) return false; 
-			return Handle == ( ( NSLocale )value ).Handle;
+			var compareTo = value as NSLocale?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSLocale value ) {
 			return Handle == value.Handle;
@@ -2419,8 +2419,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMessageBuilder ) ) return false; 
-			return Handle == ( ( NSMessageBuilder )value ).Handle;
+			var compareTo = value as NSMessageBuilder?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMessageBuilder value ) {
 			return Handle == value.Handle;
@@ -2464,8 +2464,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMethodSignature ) ) return false; 
-			return Handle == ( ( NSMethodSignature )value ).Handle;
+			var compareTo = value as NSMethodSignature?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMethodSignature value ) {
 			return Handle == value.Handle;
@@ -2561,8 +2561,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMutableArray ) ) return false; 
-			return Handle == ( ( NSMutableArray )value ).Handle;
+			var compareTo = value as NSMutableArray?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMutableArray value ) {
 			return Handle == value.Handle;
@@ -2765,8 +2765,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMutableData ) ) return false; 
-			return Handle == ( ( NSMutableData )value ).Handle;
+			var compareTo = value as NSMutableData?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMutableData value ) {
 			return Handle == value.Handle;
@@ -2795,8 +2795,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMutableDictionary ) ) return false; 
-			return Handle == ( ( NSMutableDictionary )value ).Handle;
+			var compareTo = value as NSMutableDictionary?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMutableDictionary value ) {
 			return Handle == value.Handle;
@@ -2911,8 +2911,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMutableOrderedSet ) ) return false; 
-			return Handle == ( ( NSMutableOrderedSet )value ).Handle;
+			var compareTo = value as NSMutableOrderedSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMutableOrderedSet value ) {
 			return Handle == value.Handle;
@@ -3091,8 +3091,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSMutableSet ) ) return false; 
-			return Handle == ( ( NSMutableSet )value ).Handle;
+			var compareTo = value as NSMutableSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSMutableSet value ) {
 			return Handle == value.Handle;
@@ -3207,8 +3207,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSNull ) ) return false; 
-			return Handle == ( ( NSNull )value ).Handle;
+			var compareTo = value as NSNull?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSNull value ) {
 			return Handle == value.Handle;
@@ -3260,8 +3260,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSObject ) ) return false; 
-			return Handle == ( ( NSObject )value ).Handle;
+			var compareTo = value as NSObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSObject value ) {
 			return Handle == value.Handle;
@@ -3831,8 +3831,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSOrderedSet ) ) return false; 
-			return Handle == ( ( NSOrderedSet )value ).Handle;
+			var compareTo = value as NSOrderedSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSOrderedSet value ) {
 			return Handle == value.Handle;
@@ -4214,8 +4214,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSOutputStream ) ) return false; 
-			return Handle == ( ( NSOutputStream )value ).Handle;
+			var compareTo = value as NSOutputStream?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSOutputStream value ) {
 			return Handle == value.Handle;
@@ -4244,8 +4244,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSRunLoop ) ) return false; 
-			return Handle == ( ( NSRunLoop )value ).Handle;
+			var compareTo = value as NSRunLoop?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSRunLoop value ) {
 			return Handle == value.Handle;
@@ -4274,8 +4274,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSSet ) ) return false; 
-			return Handle == ( ( NSSet )value ).Handle;
+			var compareTo = value as NSSet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSSet value ) {
 			return Handle == value.Handle;
@@ -4568,8 +4568,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSStream ) ) return false; 
-			return Handle == ( ( NSStream )value ).Handle;
+			var compareTo = value as NSStream?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSStream value ) {
 			return Handle == value.Handle;
@@ -4598,8 +4598,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSTimer ) ) return false; 
-			return Handle == ( ( NSTimer )value ).Handle;
+			var compareTo = value as NSTimer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSTimer value ) {
 			return Handle == value.Handle;
@@ -4628,8 +4628,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSTimeZone ) ) return false; 
-			return Handle == ( ( NSTimeZone )value ).Handle;
+			var compareTo = value as NSTimeZone?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSTimeZone value ) {
 			return Handle == value.Handle;
@@ -4658,8 +4658,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is NSUserDefaults ) ) return false; 
-			return Handle == ( ( NSUserDefaults )value ).Handle;
+			var compareTo = value as NSUserDefaults?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( NSUserDefaults value ) {
 			return Handle == value.Handle;

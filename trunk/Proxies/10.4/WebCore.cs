@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMAbstractView ) ) return false; 
-			return Handle == ( ( DOMAbstractView )value ).Handle;
+			var compareTo = value as DOMAbstractView?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMAbstractView value ) {
 			return Handle == value.Handle;
@@ -61,8 +61,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMAttr ) ) return false; 
-			return Handle == ( ( DOMAttr )value ).Handle;
+			var compareTo = value as DOMAttr?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMAttr value ) {
 			return Handle == value.Handle;
@@ -150,8 +150,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCDATASection ) ) return false; 
-			return Handle == ( ( DOMCDATASection )value ).Handle;
+			var compareTo = value as DOMCDATASection?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCDATASection value ) {
 			return Handle == value.Handle;
@@ -180,8 +180,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCharacterData ) ) return false; 
-			return Handle == ( ( DOMCharacterData )value ).Handle;
+			var compareTo = value as DOMCharacterData?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCharacterData value ) {
 			return Handle == value.Handle;
@@ -322,8 +322,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMComment ) ) return false; 
-			return Handle == ( ( DOMComment )value ).Handle;
+			var compareTo = value as DOMComment?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMComment value ) {
 			return Handle == value.Handle;
@@ -352,8 +352,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCounter ) ) return false; 
-			return Handle == ( ( DOMCounter )value ).Handle;
+			var compareTo = value as DOMCounter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCounter value ) {
 			return Handle == value.Handle;
@@ -413,8 +413,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSCharsetRule ) ) return false; 
-			return Handle == ( ( DOMCSSCharsetRule )value ).Handle;
+			var compareTo = value as DOMCSSCharsetRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSCharsetRule value ) {
 			return Handle == value.Handle;
@@ -456,8 +456,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSFontFaceRule ) ) return false; 
-			return Handle == ( ( DOMCSSFontFaceRule )value ).Handle;
+			var compareTo = value as DOMCSSFontFaceRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSFontFaceRule value ) {
 			return Handle == value.Handle;
@@ -499,8 +499,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSImportRule ) ) return false; 
-			return Handle == ( ( DOMCSSImportRule )value ).Handle;
+			var compareTo = value as DOMCSSImportRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSImportRule value ) {
 			return Handle == value.Handle;
@@ -560,8 +560,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSMediaRule ) ) return false; 
-			return Handle == ( ( DOMCSSMediaRule )value ).Handle;
+			var compareTo = value as DOMCSSMediaRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSMediaRule value ) {
 			return Handle == value.Handle;
@@ -640,8 +640,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSPageRule ) ) return false; 
-			return Handle == ( ( DOMCSSPageRule )value ).Handle;
+			var compareTo = value as DOMCSSPageRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSPageRule value ) {
 			return Handle == value.Handle;
@@ -702,8 +702,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSPrimitiveValue ) ) return false; 
-			return Handle == ( ( DOMCSSPrimitiveValue )value ).Handle;
+			var compareTo = value as DOMCSSPrimitiveValue?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSPrimitiveValue value ) {
 			return Handle == value.Handle;
@@ -824,8 +824,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSRule ) ) return false; 
-			return Handle == ( ( DOMCSSRule )value ).Handle;
+			var compareTo = value as DOMCSSRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSRule value ) {
 			return Handle == value.Handle;
@@ -904,8 +904,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSRuleList ) ) return false; 
-			return Handle == ( ( DOMCSSRuleList )value ).Handle;
+			var compareTo = value as DOMCSSRuleList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSRuleList value ) {
 			return Handle == value.Handle;
@@ -956,8 +956,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSStyleDeclaration ) ) return false; 
-			return Handle == ( ( DOMCSSStyleDeclaration )value ).Handle;
+			var compareTo = value as DOMCSSStyleDeclaration?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSStyleDeclaration value ) {
 			return Handle == value.Handle;
@@ -3438,8 +3438,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSStyleRule ) ) return false; 
-			return Handle == ( ( DOMCSSStyleRule )value ).Handle;
+			var compareTo = value as DOMCSSStyleRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSStyleRule value ) {
 			return Handle == value.Handle;
@@ -3500,8 +3500,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSStyleSheet ) ) return false; 
-			return Handle == ( ( DOMCSSStyleSheet )value ).Handle;
+			var compareTo = value as DOMCSSStyleSheet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSStyleSheet value ) {
 			return Handle == value.Handle;
@@ -3606,8 +3606,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSUnknownRule ) ) return false; 
-			return Handle == ( ( DOMCSSUnknownRule )value ).Handle;
+			var compareTo = value as DOMCSSUnknownRule?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSUnknownRule value ) {
 			return Handle == value.Handle;
@@ -3636,8 +3636,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSValue ) ) return false; 
-			return Handle == ( ( DOMCSSValue )value ).Handle;
+			var compareTo = value as DOMCSSValue?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSValue value ) {
 			return Handle == value.Handle;
@@ -3698,8 +3698,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMCSSValueList ) ) return false; 
-			return Handle == ( ( DOMCSSValueList )value ).Handle;
+			var compareTo = value as DOMCSSValueList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMCSSValueList value ) {
 			return Handle == value.Handle;
@@ -3750,8 +3750,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMDocument ) ) return false; 
-			return Handle == ( ( DOMDocument )value ).Handle;
+			var compareTo = value as DOMDocument?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMDocument value ) {
 			return Handle == value.Handle;
@@ -4597,8 +4597,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMDocumentFragment ) ) return false; 
-			return Handle == ( ( DOMDocumentFragment )value ).Handle;
+			var compareTo = value as DOMDocumentFragment?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMDocumentFragment value ) {
 			return Handle == value.Handle;
@@ -4627,8 +4627,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMDocumentType ) ) return false; 
-			return Handle == ( ( DOMDocumentType )value ).Handle;
+			var compareTo = value as DOMDocumentType?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMDocumentType value ) {
 			return Handle == value.Handle;
@@ -4715,8 +4715,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMElement ) ) return false; 
-			return Handle == ( ( DOMElement )value ).Handle;
+			var compareTo = value as DOMElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMElement value ) {
 			return Handle == value.Handle;
@@ -5251,8 +5251,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMEntity ) ) return false; 
-			return Handle == ( ( DOMEntity )value ).Handle;
+			var compareTo = value as DOMEntity?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMEntity value ) {
 			return Handle == value.Handle;
@@ -5312,8 +5312,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMEntityReference ) ) return false; 
-			return Handle == ( ( DOMEntityReference )value ).Handle;
+			var compareTo = value as DOMEntityReference?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMEntityReference value ) {
 			return Handle == value.Handle;
@@ -5342,8 +5342,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMEvent ) ) return false; 
-			return Handle == ( ( DOMEvent )value ).Handle;
+			var compareTo = value as DOMEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMEvent value ) {
 			return Handle == value.Handle;
@@ -5516,8 +5516,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLAnchorElement ) ) return false; 
-			return Handle == ( ( DOMHTMLAnchorElement )value ).Handle;
+			var compareTo = value as DOMHTMLAnchorElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLAnchorElement value ) {
 			return Handle == value.Handle;
@@ -5857,8 +5857,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLAppletElement ) ) return false; 
-			return Handle == ( ( DOMHTMLAppletElement )value ).Handle;
+			var compareTo = value as DOMHTMLAppletElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLAppletElement value ) {
 			return Handle == value.Handle;
@@ -6096,8 +6096,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLAreaElement ) ) return false; 
-			return Handle == ( ( DOMHTMLAreaElement )value ).Handle;
+			var compareTo = value as DOMHTMLAreaElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLAreaElement value ) {
 			return Handle == value.Handle;
@@ -6350,8 +6350,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLBaseElement ) ) return false; 
-			return Handle == ( ( DOMHTMLBaseElement )value ).Handle;
+			var compareTo = value as DOMHTMLBaseElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLBaseElement value ) {
 			return Handle == value.Handle;
@@ -6422,8 +6422,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLBaseFontElement ) ) return false; 
-			return Handle == ( ( DOMHTMLBaseFontElement )value ).Handle;
+			var compareTo = value as DOMHTMLBaseFontElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLBaseFontElement value ) {
 			return Handle == value.Handle;
@@ -6513,8 +6513,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLBodyElement ) ) return false; 
-			return Handle == ( ( DOMHTMLBodyElement )value ).Handle;
+			var compareTo = value as DOMHTMLBodyElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLBodyElement value ) {
 			return Handle == value.Handle;
@@ -6661,8 +6661,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLBRElement ) ) return false; 
-			return Handle == ( ( DOMHTMLBRElement )value ).Handle;
+			var compareTo = value as DOMHTMLBRElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLBRElement value ) {
 			return Handle == value.Handle;
@@ -6714,8 +6714,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLButtonElement ) ) return false; 
-			return Handle == ( ( DOMHTMLButtonElement )value ).Handle;
+			var compareTo = value as DOMHTMLButtonElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLButtonElement value ) {
 			return Handle == value.Handle;
@@ -6865,8 +6865,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLCanvasElement ) ) return false; 
-			return Handle == ( ( DOMHTMLCanvasElement )value ).Handle;
+			var compareTo = value as DOMHTMLCanvasElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLCanvasElement value ) {
 			return Handle == value.Handle;
@@ -6933,8 +6933,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLCollection ) ) return false; 
-			return Handle == ( ( DOMHTMLCollection )value ).Handle;
+			var compareTo = value as DOMHTMLCollection?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLCollection value ) {
 			return Handle == value.Handle;
@@ -7005,8 +7005,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLDirectoryElement ) ) return false; 
-			return Handle == ( ( DOMHTMLDirectoryElement )value ).Handle;
+			var compareTo = value as DOMHTMLDirectoryElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLDirectoryElement value ) {
 			return Handle == value.Handle;
@@ -7056,8 +7056,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLDivElement ) ) return false; 
-			return Handle == ( ( DOMHTMLDivElement )value ).Handle;
+			var compareTo = value as DOMHTMLDivElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLDivElement value ) {
 			return Handle == value.Handle;
@@ -7109,8 +7109,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLDListElement ) ) return false; 
-			return Handle == ( ( DOMHTMLDListElement )value ).Handle;
+			var compareTo = value as DOMHTMLDListElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLDListElement value ) {
 			return Handle == value.Handle;
@@ -7160,8 +7160,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLDocument ) ) return false; 
-			return Handle == ( ( DOMHTMLDocument )value ).Handle;
+			var compareTo = value as DOMHTMLDocument?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLDocument value ) {
 			return Handle == value.Handle;
@@ -7437,8 +7437,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLElement ) ) return false; 
-			return Handle == ( ( DOMHTMLElement )value ).Handle;
+			var compareTo = value as DOMHTMLElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLElement value ) {
 			return Handle == value.Handle;
@@ -7661,8 +7661,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLEmbedElement ) ) return false; 
-			return Handle == ( ( DOMHTMLEmbedElement )value ).Handle;
+			var compareTo = value as DOMHTMLEmbedElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLEmbedElement value ) {
 			return Handle == value.Handle;
@@ -7814,8 +7814,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLFieldSetElement ) ) return false; 
-			return Handle == ( ( DOMHTMLFieldSetElement )value ).Handle;
+			var compareTo = value as DOMHTMLFieldSetElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLFieldSetElement value ) {
 			return Handle == value.Handle;
@@ -7857,8 +7857,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLFontElement ) ) return false; 
-			return Handle == ( ( DOMHTMLFontElement )value ).Handle;
+			var compareTo = value as DOMHTMLFontElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLFontElement value ) {
 			return Handle == value.Handle;
@@ -7948,8 +7948,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLFormElement ) ) return false; 
-			return Handle == ( ( DOMHTMLFormElement )value ).Handle;
+			var compareTo = value as DOMHTMLFormElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLFormElement value ) {
 			return Handle == value.Handle;
@@ -8147,8 +8147,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLFrameElement ) ) return false; 
-			return Handle == ( ( DOMHTMLFrameElement )value ).Handle;
+			var compareTo = value as DOMHTMLFrameElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLFrameElement value ) {
 			return Handle == value.Handle;
@@ -8393,8 +8393,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLFrameSetElement ) ) return false; 
-			return Handle == ( ( DOMHTMLFrameSetElement )value ).Handle;
+			var compareTo = value as DOMHTMLFrameSetElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLFrameSetElement value ) {
 			return Handle == value.Handle;
@@ -8465,8 +8465,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLHeadElement ) ) return false; 
-			return Handle == ( ( DOMHTMLHeadElement )value ).Handle;
+			var compareTo = value as DOMHTMLHeadElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLHeadElement value ) {
 			return Handle == value.Handle;
@@ -8518,8 +8518,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLHeadingElement ) ) return false; 
-			return Handle == ( ( DOMHTMLHeadingElement )value ).Handle;
+			var compareTo = value as DOMHTMLHeadingElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLHeadingElement value ) {
 			return Handle == value.Handle;
@@ -8571,8 +8571,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLHRElement ) ) return false; 
-			return Handle == ( ( DOMHTMLHRElement )value ).Handle;
+			var compareTo = value as DOMHTMLHRElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLHRElement value ) {
 			return Handle == value.Handle;
@@ -8679,8 +8679,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLHtmlElement ) ) return false; 
-			return Handle == ( ( DOMHTMLHtmlElement )value ).Handle;
+			var compareTo = value as DOMHTMLHtmlElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLHtmlElement value ) {
 			return Handle == value.Handle;
@@ -8732,8 +8732,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLIFrameElement ) ) return false; 
-			return Handle == ( ( DOMHTMLIFrameElement )value ).Handle;
+			var compareTo = value as DOMHTMLIFrameElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLIFrameElement value ) {
 			return Handle == value.Handle;
@@ -8983,8 +8983,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLImageElement ) ) return false; 
-			return Handle == ( ( DOMHTMLImageElement )value ).Handle;
+			var compareTo = value as DOMHTMLImageElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLImageElement value ) {
 			return Handle == value.Handle;
@@ -9315,8 +9315,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLInputElement ) ) return false; 
-			return Handle == ( ( DOMHTMLInputElement )value ).Handle;
+			var compareTo = value as DOMHTMLInputElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLInputElement value ) {
 			return Handle == value.Handle;
@@ -9762,8 +9762,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLIsIndexElement ) ) return false; 
-			return Handle == ( ( DOMHTMLIsIndexElement )value ).Handle;
+			var compareTo = value as DOMHTMLIsIndexElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLIsIndexElement value ) {
 			return Handle == value.Handle;
@@ -9815,8 +9815,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLLabelElement ) ) return false; 
-			return Handle == ( ( DOMHTMLLabelElement )value ).Handle;
+			var compareTo = value as DOMHTMLLabelElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLLabelElement value ) {
 			return Handle == value.Handle;
@@ -9896,8 +9896,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLLegendElement ) ) return false; 
-			return Handle == ( ( DOMHTMLLegendElement )value ).Handle;
+			var compareTo = value as DOMHTMLLegendElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLLegendElement value ) {
 			return Handle == value.Handle;
@@ -9977,8 +9977,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLLIElement ) ) return false; 
-			return Handle == ( ( DOMHTMLLIElement )value ).Handle;
+			var compareTo = value as DOMHTMLLIElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLLIElement value ) {
 			return Handle == value.Handle;
@@ -10047,8 +10047,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLLinkElement ) ) return false; 
-			return Handle == ( ( DOMHTMLLinkElement )value ).Handle;
+			var compareTo = value as DOMHTMLLinkElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLLinkElement value ) {
 			return Handle == value.Handle;
@@ -10259,8 +10259,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLMapElement ) ) return false; 
-			return Handle == ( ( DOMHTMLMapElement )value ).Handle;
+			var compareTo = value as DOMHTMLMapElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLMapElement value ) {
 			return Handle == value.Handle;
@@ -10321,8 +10321,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLMarqueeElement ) ) return false; 
-			return Handle == ( ( DOMHTMLMarqueeElement )value ).Handle;
+			var compareTo = value as DOMHTMLMarqueeElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLMarqueeElement value ) {
 			return Handle == value.Handle;
@@ -10371,8 +10371,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLMenuElement ) ) return false; 
-			return Handle == ( ( DOMHTMLMenuElement )value ).Handle;
+			var compareTo = value as DOMHTMLMenuElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLMenuElement value ) {
 			return Handle == value.Handle;
@@ -10422,8 +10422,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLMetaElement ) ) return false; 
-			return Handle == ( ( DOMHTMLMetaElement )value ).Handle;
+			var compareTo = value as DOMHTMLMetaElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLMetaElement value ) {
 			return Handle == value.Handle;
@@ -10532,8 +10532,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLModElement ) ) return false; 
-			return Handle == ( ( DOMHTMLModElement )value ).Handle;
+			var compareTo = value as DOMHTMLModElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLModElement value ) {
 			return Handle == value.Handle;
@@ -10604,8 +10604,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLObjectElement ) ) return false; 
-			return Handle == ( ( DOMHTMLObjectElement )value ).Handle;
+			var compareTo = value as DOMHTMLObjectElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLObjectElement value ) {
 			return Handle == value.Handle;
@@ -10989,8 +10989,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLOListElement ) ) return false; 
-			return Handle == ( ( DOMHTMLOListElement )value ).Handle;
+			var compareTo = value as DOMHTMLOListElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLOListElement value ) {
 			return Handle == value.Handle;
@@ -11076,8 +11076,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLOptGroupElement ) ) return false; 
-			return Handle == ( ( DOMHTMLOptGroupElement )value ).Handle;
+			var compareTo = value as DOMHTMLOptGroupElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLOptGroupElement value ) {
 			return Handle == value.Handle;
@@ -11146,8 +11146,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLOptionElement ) ) return false; 
-			return Handle == ( ( DOMHTMLOptionElement )value ).Handle;
+			var compareTo = value as DOMHTMLOptionElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLOptionElement value ) {
 			return Handle == value.Handle;
@@ -11296,8 +11296,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLOptionsCollection ) ) return false; 
-			return Handle == ( ( DOMHTMLOptionsCollection )value ).Handle;
+			var compareTo = value as DOMHTMLOptionsCollection?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLOptionsCollection value ) {
 			return Handle == value.Handle;
@@ -11400,8 +11400,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLParagraphElement ) ) return false; 
-			return Handle == ( ( DOMHTMLParagraphElement )value ).Handle;
+			var compareTo = value as DOMHTMLParagraphElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLParagraphElement value ) {
 			return Handle == value.Handle;
@@ -11453,8 +11453,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLParamElement ) ) return false; 
-			return Handle == ( ( DOMHTMLParamElement )value ).Handle;
+			var compareTo = value as DOMHTMLParamElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLParamElement value ) {
 			return Handle == value.Handle;
@@ -11563,8 +11563,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLPreElement ) ) return false; 
-			return Handle == ( ( DOMHTMLPreElement )value ).Handle;
+			var compareTo = value as DOMHTMLPreElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLPreElement value ) {
 			return Handle == value.Handle;
@@ -11631,8 +11631,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLQuoteElement ) ) return false; 
-			return Handle == ( ( DOMHTMLQuoteElement )value ).Handle;
+			var compareTo = value as DOMHTMLQuoteElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLQuoteElement value ) {
 			return Handle == value.Handle;
@@ -11684,8 +11684,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLScriptElement ) ) return false; 
-			return Handle == ( ( DOMHTMLScriptElement )value ).Handle;
+			var compareTo = value as DOMHTMLScriptElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLScriptElement value ) {
 			return Handle == value.Handle;
@@ -11849,8 +11849,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLSelectElement ) ) return false; 
-			return Handle == ( ( DOMHTMLSelectElement )value ).Handle;
+			var compareTo = value as DOMHTMLSelectElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLSelectElement value ) {
 			return Handle == value.Handle;
@@ -12084,8 +12084,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLStyleElement ) ) return false; 
-			return Handle == ( ( DOMHTMLStyleElement )value ).Handle;
+			var compareTo = value as DOMHTMLStyleElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLStyleElement value ) {
 			return Handle == value.Handle;
@@ -12173,8 +12173,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTableCaptionElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTableCaptionElement )value ).Handle;
+			var compareTo = value as DOMHTMLTableCaptionElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTableCaptionElement value ) {
 			return Handle == value.Handle;
@@ -12226,8 +12226,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTableCellElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTableCellElement )value ).Handle;
+			var compareTo = value as DOMHTMLTableCellElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTableCellElement value ) {
 			return Handle == value.Handle;
@@ -12529,8 +12529,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTableColElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTableColElement )value ).Handle;
+			var compareTo = value as DOMHTMLTableColElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTableColElement value ) {
 			return Handle == value.Handle;
@@ -12675,8 +12675,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTableElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTableElement )value ).Handle;
+			var compareTo = value as DOMHTMLTableElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTableElement value ) {
 			return Handle == value.Handle;
@@ -13017,8 +13017,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTableRowElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTableRowElement )value ).Handle;
+			var compareTo = value as DOMHTMLTableRowElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTableRowElement value ) {
 			return Handle == value.Handle;
@@ -13190,8 +13190,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTableSectionElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTableSectionElement )value ).Handle;
+			var compareTo = value as DOMHTMLTableSectionElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTableSectionElement value ) {
 			return Handle == value.Handle;
@@ -13326,8 +13326,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTextAreaElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTextAreaElement )value ).Handle;
+			var compareTo = value as DOMHTMLTextAreaElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTextAreaElement value ) {
 			return Handle == value.Handle;
@@ -13589,8 +13589,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLTitleElement ) ) return false; 
-			return Handle == ( ( DOMHTMLTitleElement )value ).Handle;
+			var compareTo = value as DOMHTMLTitleElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLTitleElement value ) {
 			return Handle == value.Handle;
@@ -13642,8 +13642,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMHTMLUListElement ) ) return false; 
-			return Handle == ( ( DOMHTMLUListElement )value ).Handle;
+			var compareTo = value as DOMHTMLUListElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMHTMLUListElement value ) {
 			return Handle == value.Handle;
@@ -13712,8 +13712,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMImplementation ) ) return false; 
-			return Handle == ( ( DOMImplementation )value ).Handle;
+			var compareTo = value as DOMImplementation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMImplementation value ) {
 			return Handle == value.Handle;
@@ -13845,8 +13845,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMKeyboardEvent ) ) return false; 
-			return Handle == ( ( DOMKeyboardEvent )value ).Handle;
+			var compareTo = value as DOMKeyboardEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMKeyboardEvent value ) {
 			return Handle == value.Handle;
@@ -13973,8 +13973,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMMediaList ) ) return false; 
-			return Handle == ( ( DOMMediaList )value ).Handle;
+			var compareTo = value as DOMMediaList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMMediaList value ) {
 			return Handle == value.Handle;
@@ -14064,8 +14064,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMMouseEvent ) ) return false; 
-			return Handle == ( ( DOMMouseEvent )value ).Handle;
+			var compareTo = value as DOMMouseEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMMouseEvent value ) {
 			return Handle == value.Handle;
@@ -14266,8 +14266,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMMutationEvent ) ) return false; 
-			return Handle == ( ( DOMMutationEvent )value ).Handle;
+			var compareTo = value as DOMMutationEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMMutationEvent value ) {
 			return Handle == value.Handle;
@@ -14373,8 +14373,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNamedNodeMap ) ) return false; 
-			return Handle == ( ( DOMNamedNodeMap )value ).Handle;
+			var compareTo = value as DOMNamedNodeMap?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNamedNodeMap value ) {
 			return Handle == value.Handle;
@@ -14509,8 +14509,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNativeXPathNSResolver ) ) return false; 
-			return Handle == ( ( DOMNativeXPathNSResolver )value ).Handle;
+			var compareTo = value as DOMNativeXPathNSResolver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNativeXPathNSResolver value ) {
 			return Handle == value.Handle;
@@ -14552,8 +14552,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNode ) ) return false; 
-			return Handle == ( ( DOMNode )value ).Handle;
+			var compareTo = value as DOMNode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNode value ) {
 			return Handle == value.Handle;
@@ -14982,8 +14982,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNodeFilter ) ) return false; 
-			return Handle == ( ( DOMNodeFilter )value ).Handle;
+			var compareTo = value as DOMNodeFilter?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNodeFilter value ) {
 			return Handle == value.Handle;
@@ -15025,8 +15025,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNodeIterator ) ) return false; 
-			return Handle == ( ( DOMNodeIterator )value ).Handle;
+			var compareTo = value as DOMNodeIterator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNodeIterator value ) {
 			return Handle == value.Handle;
@@ -15139,8 +15139,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNodeList ) ) return false; 
-			return Handle == ( ( DOMNodeList )value ).Handle;
+			var compareTo = value as DOMNodeList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNodeList value ) {
 			return Handle == value.Handle;
@@ -15191,8 +15191,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMNotation ) ) return false; 
-			return Handle == ( ( DOMNotation )value ).Handle;
+			var compareTo = value as DOMNotation?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMNotation value ) {
 			return Handle == value.Handle;
@@ -15243,8 +15243,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMObject ) ) return false; 
-			return Handle == ( ( DOMObject )value ).Handle;
+			var compareTo = value as DOMObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMObject value ) {
 			return Handle == value.Handle;
@@ -15286,8 +15286,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMOverflowEvent ) ) return false; 
-			return Handle == ( ( DOMOverflowEvent )value ).Handle;
+			var compareTo = value as DOMOverflowEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMOverflowEvent value ) {
 			return Handle == value.Handle;
@@ -15355,8 +15355,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMProcessingInstruction ) ) return false; 
-			return Handle == ( ( DOMProcessingInstruction )value ).Handle;
+			var compareTo = value as DOMProcessingInstruction?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMProcessingInstruction value ) {
 			return Handle == value.Handle;
@@ -15417,8 +15417,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMRange ) ) return false; 
-			return Handle == ( ( DOMRange )value ).Handle;
+			var compareTo = value as DOMRange?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMRange value ) {
 			return Handle == value.Handle;
@@ -15742,8 +15742,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMRect ) ) return false; 
-			return Handle == ( ( DOMRect )value ).Handle;
+			var compareTo = value as DOMRect?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMRect value ) {
 			return Handle == value.Handle;
@@ -15812,8 +15812,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMRGBColor ) ) return false; 
-			return Handle == ( ( DOMRGBColor )value ).Handle;
+			var compareTo = value as DOMRGBColor?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMRGBColor value ) {
 			return Handle == value.Handle;
@@ -15891,8 +15891,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMStyleSheet ) ) return false; 
-			return Handle == ( ( DOMStyleSheet )value ).Handle;
+			var compareTo = value as DOMStyleSheet?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMStyleSheet value ) {
 			return Handle == value.Handle;
@@ -15996,8 +15996,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMStyleSheetList ) ) return false; 
-			return Handle == ( ( DOMStyleSheetList )value ).Handle;
+			var compareTo = value as DOMStyleSheetList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMStyleSheetList value ) {
 			return Handle == value.Handle;
@@ -16048,8 +16048,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAElement ) ) return false; 
-			return Handle == ( ( DOMSVGAElement )value ).Handle;
+			var compareTo = value as DOMSVGAElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAElement value ) {
 			return Handle == value.Handle;
@@ -16251,8 +16251,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAngle ) ) return false; 
-			return Handle == ( ( DOMSVGAngle )value ).Handle;
+			var compareTo = value as DOMSVGAngle?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAngle value ) {
 			return Handle == value.Handle;
@@ -16361,8 +16361,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimateColorElement ) ) return false; 
-			return Handle == ( ( DOMSVGAnimateColorElement )value ).Handle;
+			var compareTo = value as DOMSVGAnimateColorElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimateColorElement value ) {
 			return Handle == value.Handle;
@@ -16391,8 +16391,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedAngle ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedAngle )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedAngle?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedAngle value ) {
 			return Handle == value.Handle;
@@ -16443,8 +16443,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedBoolean ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedBoolean )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedBoolean?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedBoolean value ) {
 			return Handle == value.Handle;
@@ -16503,8 +16503,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedEnumeration ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedEnumeration )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedEnumeration?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedEnumeration value ) {
 			return Handle == value.Handle;
@@ -16563,8 +16563,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedInteger ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedInteger )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedInteger?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedInteger value ) {
 			return Handle == value.Handle;
@@ -16623,8 +16623,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedLength ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedLength )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedLength?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedLength value ) {
 			return Handle == value.Handle;
@@ -16675,8 +16675,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedLengthList ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedLengthList )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedLengthList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedLengthList value ) {
 			return Handle == value.Handle;
@@ -16727,8 +16727,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedNumber ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedNumber )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedNumber?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedNumber value ) {
 			return Handle == value.Handle;
@@ -16787,8 +16787,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedNumberList ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedNumberList )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedNumberList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedNumberList value ) {
 			return Handle == value.Handle;
@@ -16839,8 +16839,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedPreserveAspectRatio ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedPreserveAspectRatio )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedPreserveAspectRatio?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedPreserveAspectRatio value ) {
 			return Handle == value.Handle;
@@ -16891,8 +16891,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedRect ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedRect )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedRect?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedRect value ) {
 			return Handle == value.Handle;
@@ -16943,8 +16943,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedString ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedString )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedString?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedString value ) {
 			return Handle == value.Handle;
@@ -17003,8 +17003,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimatedTransformList ) ) return false; 
-			return Handle == ( ( DOMSVGAnimatedTransformList )value ).Handle;
+			var compareTo = value as DOMSVGAnimatedTransformList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimatedTransformList value ) {
 			return Handle == value.Handle;
@@ -17055,8 +17055,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGAnimationElement ) ) return false; 
-			return Handle == ( ( DOMSVGAnimationElement )value ).Handle;
+			var compareTo = value as DOMSVGAnimationElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGAnimationElement value ) {
 			return Handle == value.Handle;
@@ -17170,8 +17170,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGCircleElement ) ) return false; 
-			return Handle == ( ( DOMSVGCircleElement )value ).Handle;
+			var compareTo = value as DOMSVGCircleElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGCircleElement value ) {
 			return Handle == value.Handle;
@@ -17382,8 +17382,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGClipPathElement ) ) return false; 
-			return Handle == ( ( DOMSVGClipPathElement )value ).Handle;
+			var compareTo = value as DOMSVGClipPathElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGClipPathElement value ) {
 			return Handle == value.Handle;
@@ -17576,8 +17576,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGColor ) ) return false; 
-			return Handle == ( ( DOMSVGColor )value ).Handle;
+			var compareTo = value as DOMSVGColor?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGColor value ) {
 			return Handle == value.Handle;
@@ -17652,8 +17652,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGCursorElement ) ) return false; 
-			return Handle == ( ( DOMSVGCursorElement )value ).Handle;
+			var compareTo = value as DOMSVGCursorElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGCursorElement value ) {
 			return Handle == value.Handle;
@@ -17758,8 +17758,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGDefinitionSrcElement ) ) return false; 
-			return Handle == ( ( DOMSVGDefinitionSrcElement )value ).Handle;
+			var compareTo = value as DOMSVGDefinitionSrcElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGDefinitionSrcElement value ) {
 			return Handle == value.Handle;
@@ -17788,8 +17788,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGDefsElement ) ) return false; 
-			return Handle == ( ( DOMSVGDefsElement )value ).Handle;
+			var compareTo = value as DOMSVGDefsElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGDefsElement value ) {
 			return Handle == value.Handle;
@@ -17973,8 +17973,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGDescElement ) ) return false; 
-			return Handle == ( ( DOMSVGDescElement )value ).Handle;
+			var compareTo = value as DOMSVGDescElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGDescElement value ) {
 			return Handle == value.Handle;
@@ -18050,8 +18050,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGDocument ) ) return false; 
-			return Handle == ( ( DOMSVGDocument )value ).Handle;
+			var compareTo = value as DOMSVGDocument?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGDocument value ) {
 			return Handle == value.Handle;
@@ -18093,8 +18093,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGElement ) ) return false; 
-			return Handle == ( ( DOMSVGElement )value ).Handle;
+			var compareTo = value as DOMSVGElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGElement value ) {
 			return Handle == value.Handle;
@@ -18179,8 +18179,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGElementInstance ) ) return false; 
-			return Handle == ( ( DOMSVGElementInstance )value ).Handle;
+			var compareTo = value as DOMSVGElementInstance?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGElementInstance value ) {
 			return Handle == value.Handle;
@@ -18285,8 +18285,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGElementInstanceList ) ) return false; 
-			return Handle == ( ( DOMSVGElementInstanceList )value ).Handle;
+			var compareTo = value as DOMSVGElementInstanceList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGElementInstanceList value ) {
 			return Handle == value.Handle;
@@ -18337,8 +18337,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGEllipseElement ) ) return false; 
-			return Handle == ( ( DOMSVGEllipseElement )value ).Handle;
+			var compareTo = value as DOMSVGEllipseElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGEllipseElement value ) {
 			return Handle == value.Handle;
@@ -18558,8 +18558,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGFontElement ) ) return false; 
-			return Handle == ( ( DOMSVGFontElement )value ).Handle;
+			var compareTo = value as DOMSVGFontElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGFontElement value ) {
 			return Handle == value.Handle;
@@ -18588,8 +18588,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGFontFaceElement ) ) return false; 
-			return Handle == ( ( DOMSVGFontFaceElement )value ).Handle;
+			var compareTo = value as DOMSVGFontFaceElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGFontFaceElement value ) {
 			return Handle == value.Handle;
@@ -18618,8 +18618,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGFontFaceFormatElement ) ) return false; 
-			return Handle == ( ( DOMSVGFontFaceFormatElement )value ).Handle;
+			var compareTo = value as DOMSVGFontFaceFormatElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGFontFaceFormatElement value ) {
 			return Handle == value.Handle;
@@ -18648,8 +18648,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGFontFaceNameElement ) ) return false; 
-			return Handle == ( ( DOMSVGFontFaceNameElement )value ).Handle;
+			var compareTo = value as DOMSVGFontFaceNameElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGFontFaceNameElement value ) {
 			return Handle == value.Handle;
@@ -18678,8 +18678,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGFontFaceSrcElement ) ) return false; 
-			return Handle == ( ( DOMSVGFontFaceSrcElement )value ).Handle;
+			var compareTo = value as DOMSVGFontFaceSrcElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGFontFaceSrcElement value ) {
 			return Handle == value.Handle;
@@ -18708,8 +18708,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGFontFaceUriElement ) ) return false; 
-			return Handle == ( ( DOMSVGFontFaceUriElement )value ).Handle;
+			var compareTo = value as DOMSVGFontFaceUriElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGFontFaceUriElement value ) {
 			return Handle == value.Handle;
@@ -18738,8 +18738,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGForeignObjectElement ) ) return false; 
-			return Handle == ( ( DOMSVGForeignObjectElement )value ).Handle;
+			var compareTo = value as DOMSVGForeignObjectElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGForeignObjectElement value ) {
 			return Handle == value.Handle;
@@ -18959,8 +18959,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGGElement ) ) return false; 
-			return Handle == ( ( DOMSVGGElement )value ).Handle;
+			var compareTo = value as DOMSVGGElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGGElement value ) {
 			return Handle == value.Handle;
@@ -19144,8 +19144,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGGlyphElement ) ) return false; 
-			return Handle == ( ( DOMSVGGlyphElement )value ).Handle;
+			var compareTo = value as DOMSVGGlyphElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGGlyphElement value ) {
 			return Handle == value.Handle;
@@ -19174,8 +19174,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGGradientElement ) ) return false; 
-			return Handle == ( ( DOMSVGGradientElement )value ).Handle;
+			var compareTo = value as DOMSVGGradientElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGGradientElement value ) {
 			return Handle == value.Handle;
@@ -19262,8 +19262,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGImageElement ) ) return false; 
-			return Handle == ( ( DOMSVGImageElement )value ).Handle;
+			var compareTo = value as DOMSVGImageElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGImageElement value ) {
 			return Handle == value.Handle;
@@ -19501,8 +19501,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGLength ) ) return false; 
-			return Handle == ( ( DOMSVGLength )value ).Handle;
+			var compareTo = value as DOMSVGLength?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGLength value ) {
 			return Handle == value.Handle;
@@ -19611,8 +19611,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGLengthList ) ) return false; 
-			return Handle == ( ( DOMSVGLengthList )value ).Handle;
+			var compareTo = value as DOMSVGLengthList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGLengthList value ) {
 			return Handle == value.Handle;
@@ -19716,8 +19716,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGLinearGradientElement ) ) return false; 
-			return Handle == ( ( DOMSVGLinearGradientElement )value ).Handle;
+			var compareTo = value as DOMSVGLinearGradientElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGLinearGradientElement value ) {
 			return Handle == value.Handle;
@@ -19786,8 +19786,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGLineElement ) ) return false; 
-			return Handle == ( ( DOMSVGLineElement )value ).Handle;
+			var compareTo = value as DOMSVGLineElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGLineElement value ) {
 			return Handle == value.Handle;
@@ -20007,8 +20007,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGMarkerElement ) ) return false; 
-			return Handle == ( ( DOMSVGMarkerElement )value ).Handle;
+			var compareTo = value as DOMSVGMarkerElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGMarkerElement value ) {
 			return Handle == value.Handle;
@@ -20190,8 +20190,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGMaskElement ) ) return false; 
-			return Handle == ( ( DOMSVGMaskElement )value ).Handle;
+			var compareTo = value as DOMSVGMaskElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGMaskElement value ) {
 			return Handle == value.Handle;
@@ -20366,8 +20366,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGMatrix ) ) return false; 
-			return Handle == ( ( DOMSVGMatrix )value ).Handle;
+			var compareTo = value as DOMSVGMatrix?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGMatrix value ) {
 			return Handle == value.Handle;
@@ -20601,8 +20601,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGMetadataElement ) ) return false; 
-			return Handle == ( ( DOMSVGMetadataElement )value ).Handle;
+			var compareTo = value as DOMSVGMetadataElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGMetadataElement value ) {
 			return Handle == value.Handle;
@@ -20631,8 +20631,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGMissingGlyphElement ) ) return false; 
-			return Handle == ( ( DOMSVGMissingGlyphElement )value ).Handle;
+			var compareTo = value as DOMSVGMissingGlyphElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGMissingGlyphElement value ) {
 			return Handle == value.Handle;
@@ -20661,8 +20661,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGNumber ) ) return false; 
-			return Handle == ( ( DOMSVGNumber )value ).Handle;
+			var compareTo = value as DOMSVGNumber?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGNumber value ) {
 			return Handle == value.Handle;
@@ -20712,8 +20712,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGNumberList ) ) return false; 
-			return Handle == ( ( DOMSVGNumberList )value ).Handle;
+			var compareTo = value as DOMSVGNumberList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGNumberList value ) {
 			return Handle == value.Handle;
@@ -20817,8 +20817,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPaint ) ) return false; 
-			return Handle == ( ( DOMSVGPaint )value ).Handle;
+			var compareTo = value as DOMSVGPaint?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPaint value ) {
 			return Handle == value.Handle;
@@ -20885,8 +20885,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathElement ) ) return false; 
-			return Handle == ( ( DOMSVGPathElement )value ).Handle;
+			var compareTo = value as DOMSVGPathElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathElement value ) {
 			return Handle == value.Handle;
@@ -21321,8 +21321,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSeg ) ) return false; 
-			return Handle == ( ( DOMSVGPathSeg )value ).Handle;
+			var compareTo = value as DOMSVGPathSeg?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSeg value ) {
 			return Handle == value.Handle;
@@ -21373,8 +21373,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegArcAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegArcAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegArcAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegArcAbs value ) {
 			return Handle == value.Handle;
@@ -21526,8 +21526,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegArcRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegArcRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegArcRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegArcRel value ) {
 			return Handle == value.Handle;
@@ -21679,8 +21679,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegClosePath ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegClosePath )value ).Handle;
+			var compareTo = value as DOMSVGPathSegClosePath?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegClosePath value ) {
 			return Handle == value.Handle;
@@ -21709,8 +21709,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoCubicAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoCubicAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoCubicAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoCubicAbs value ) {
 			return Handle == value.Handle;
@@ -21845,8 +21845,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoCubicRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoCubicRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoCubicRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoCubicRel value ) {
 			return Handle == value.Handle;
@@ -21981,8 +21981,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoCubicSmoothAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoCubicSmoothAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoCubicSmoothAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoCubicSmoothAbs value ) {
 			return Handle == value.Handle;
@@ -22083,8 +22083,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoCubicSmoothRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoCubicSmoothRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoCubicSmoothRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoCubicSmoothRel value ) {
 			return Handle == value.Handle;
@@ -22185,8 +22185,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoQuadraticAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoQuadraticAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoQuadraticAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoQuadraticAbs value ) {
 			return Handle == value.Handle;
@@ -22287,8 +22287,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoQuadraticRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoQuadraticRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoQuadraticRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoQuadraticRel value ) {
 			return Handle == value.Handle;
@@ -22389,8 +22389,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoQuadraticSmoothAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoQuadraticSmoothAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoQuadraticSmoothAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoQuadraticSmoothAbs value ) {
 			return Handle == value.Handle;
@@ -22457,8 +22457,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegCurvetoQuadraticSmoothRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegCurvetoQuadraticSmoothRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegCurvetoQuadraticSmoothRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegCurvetoQuadraticSmoothRel value ) {
 			return Handle == value.Handle;
@@ -22525,8 +22525,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegLinetoAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegLinetoAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegLinetoAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegLinetoAbs value ) {
 			return Handle == value.Handle;
@@ -22593,8 +22593,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegLinetoHorizontalAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegLinetoHorizontalAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegLinetoHorizontalAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegLinetoHorizontalAbs value ) {
 			return Handle == value.Handle;
@@ -22644,8 +22644,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegLinetoHorizontalRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegLinetoHorizontalRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegLinetoHorizontalRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegLinetoHorizontalRel value ) {
 			return Handle == value.Handle;
@@ -22695,8 +22695,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegLinetoRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegLinetoRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegLinetoRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegLinetoRel value ) {
 			return Handle == value.Handle;
@@ -22763,8 +22763,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegLinetoVerticalAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegLinetoVerticalAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegLinetoVerticalAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegLinetoVerticalAbs value ) {
 			return Handle == value.Handle;
@@ -22814,8 +22814,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegLinetoVerticalRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegLinetoVerticalRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegLinetoVerticalRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegLinetoVerticalRel value ) {
 			return Handle == value.Handle;
@@ -22865,8 +22865,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegList ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegList )value ).Handle;
+			var compareTo = value as DOMSVGPathSegList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegList value ) {
 			return Handle == value.Handle;
@@ -22970,8 +22970,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegMovetoAbs ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegMovetoAbs )value ).Handle;
+			var compareTo = value as DOMSVGPathSegMovetoAbs?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegMovetoAbs value ) {
 			return Handle == value.Handle;
@@ -23038,8 +23038,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPathSegMovetoRel ) ) return false; 
-			return Handle == ( ( DOMSVGPathSegMovetoRel )value ).Handle;
+			var compareTo = value as DOMSVGPathSegMovetoRel?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPathSegMovetoRel value ) {
 			return Handle == value.Handle;
@@ -23106,8 +23106,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPatternElement ) ) return false; 
-			return Handle == ( ( DOMSVGPatternElement )value ).Handle;
+			var compareTo = value as DOMSVGPatternElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPatternElement value ) {
 			return Handle == value.Handle;
@@ -23318,8 +23318,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPoint ) ) return false; 
-			return Handle == ( ( DOMSVGPoint )value ).Handle;
+			var compareTo = value as DOMSVGPoint?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPoint value ) {
 			return Handle == value.Handle;
@@ -23395,8 +23395,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPointList ) ) return false; 
-			return Handle == ( ( DOMSVGPointList )value ).Handle;
+			var compareTo = value as DOMSVGPointList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPointList value ) {
 			return Handle == value.Handle;
@@ -23500,8 +23500,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPolygonElement ) ) return false; 
-			return Handle == ( ( DOMSVGPolygonElement )value ).Handle;
+			var compareTo = value as DOMSVGPolygonElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPolygonElement value ) {
 			return Handle == value.Handle;
@@ -23703,8 +23703,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPolylineElement ) ) return false; 
-			return Handle == ( ( DOMSVGPolylineElement )value ).Handle;
+			var compareTo = value as DOMSVGPolylineElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPolylineElement value ) {
 			return Handle == value.Handle;
@@ -23906,8 +23906,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGPreserveAspectRatio ) ) return false; 
-			return Handle == ( ( DOMSVGPreserveAspectRatio )value ).Handle;
+			var compareTo = value as DOMSVGPreserveAspectRatio?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGPreserveAspectRatio value ) {
 			return Handle == value.Handle;
@@ -23974,8 +23974,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGRadialGradientElement ) ) return false; 
-			return Handle == ( ( DOMSVGRadialGradientElement )value ).Handle;
+			var compareTo = value as DOMSVGRadialGradientElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGRadialGradientElement value ) {
 			return Handle == value.Handle;
@@ -24053,8 +24053,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGRect ) ) return false; 
-			return Handle == ( ( DOMSVGRect )value ).Handle;
+			var compareTo = value as DOMSVGRect?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGRect value ) {
 			return Handle == value.Handle;
@@ -24155,8 +24155,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGRectElement ) ) return false; 
-			return Handle == ( ( DOMSVGRectElement )value ).Handle;
+			var compareTo = value as DOMSVGRectElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGRectElement value ) {
 			return Handle == value.Handle;
@@ -24394,8 +24394,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGRenderingIntent ) ) return false; 
-			return Handle == ( ( DOMSVGRenderingIntent )value ).Handle;
+			var compareTo = value as DOMSVGRenderingIntent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGRenderingIntent value ) {
 			return Handle == value.Handle;
@@ -24424,8 +24424,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGScriptElement ) ) return false; 
-			return Handle == ( ( DOMSVGScriptElement )value ).Handle;
+			var compareTo = value as DOMSVGScriptElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGScriptElement value ) {
 			return Handle == value.Handle;
@@ -24493,8 +24493,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGSetElement ) ) return false; 
-			return Handle == ( ( DOMSVGSetElement )value ).Handle;
+			var compareTo = value as DOMSVGSetElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGSetElement value ) {
 			return Handle == value.Handle;
@@ -24523,8 +24523,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGStopElement ) ) return false; 
-			return Handle == ( ( DOMSVGStopElement )value ).Handle;
+			var compareTo = value as DOMSVGStopElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGStopElement value ) {
 			return Handle == value.Handle;
@@ -24575,8 +24575,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGStringList ) ) return false; 
-			return Handle == ( ( DOMSVGStringList )value ).Handle;
+			var compareTo = value as DOMSVGStringList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGStringList value ) {
 			return Handle == value.Handle;
@@ -24680,8 +24680,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGStyleElement ) ) return false; 
-			return Handle == ( ( DOMSVGStyleElement )value ).Handle;
+			var compareTo = value as DOMSVGStyleElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGStyleElement value ) {
 			return Handle == value.Handle;
@@ -24782,8 +24782,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGSVGElement ) ) return false; 
-			return Handle == ( ( DOMSVGSVGElement )value ).Handle;
+			var compareTo = value as DOMSVGSVGElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGSVGElement value ) {
 			return Handle == value.Handle;
@@ -25342,8 +25342,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGSwitchElement ) ) return false; 
-			return Handle == ( ( DOMSVGSwitchElement )value ).Handle;
+			var compareTo = value as DOMSVGSwitchElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGSwitchElement value ) {
 			return Handle == value.Handle;
@@ -25527,8 +25527,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGSymbolElement ) ) return false; 
-			return Handle == ( ( DOMSVGSymbolElement )value ).Handle;
+			var compareTo = value as DOMSVGSymbolElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGSymbolElement value ) {
 			return Handle == value.Handle;
@@ -25631,8 +25631,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTextContentElement ) ) return false; 
-			return Handle == ( ( DOMSVGTextContentElement )value ).Handle;
+			var compareTo = value as DOMSVGTextContentElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTextContentElement value ) {
 			return Handle == value.Handle;
@@ -25851,8 +25851,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTextElement ) ) return false; 
-			return Handle == ( ( DOMSVGTextElement )value ).Handle;
+			var compareTo = value as DOMSVGTextElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTextElement value ) {
 			return Handle == value.Handle;
@@ -25948,8 +25948,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTextPathElement ) ) return false; 
-			return Handle == ( ( DOMSVGTextPathElement )value ).Handle;
+			var compareTo = value as DOMSVGTextPathElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTextPathElement value ) {
 			return Handle == value.Handle;
@@ -26018,8 +26018,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTextPositioningElement ) ) return false; 
-			return Handle == ( ( DOMSVGTextPositioningElement )value ).Handle;
+			var compareTo = value as DOMSVGTextPositioningElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTextPositioningElement value ) {
 			return Handle == value.Handle;
@@ -26097,8 +26097,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTitleElement ) ) return false; 
-			return Handle == ( ( DOMSVGTitleElement )value ).Handle;
+			var compareTo = value as DOMSVGTitleElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTitleElement value ) {
 			return Handle == value.Handle;
@@ -26174,8 +26174,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTransform ) ) return false; 
-			return Handle == ( ( DOMSVGTransform )value ).Handle;
+			var compareTo = value as DOMSVGTransform?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTransform value ) {
 			return Handle == value.Handle;
@@ -26283,8 +26283,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTransformList ) ) return false; 
-			return Handle == ( ( DOMSVGTransformList )value ).Handle;
+			var compareTo = value as DOMSVGTransformList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTransformList value ) {
 			return Handle == value.Handle;
@@ -26406,8 +26406,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTRefElement ) ) return false; 
-			return Handle == ( ( DOMSVGTRefElement )value ).Handle;
+			var compareTo = value as DOMSVGTRefElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTRefElement value ) {
 			return Handle == value.Handle;
@@ -26449,8 +26449,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGTSpanElement ) ) return false; 
-			return Handle == ( ( DOMSVGTSpanElement )value ).Handle;
+			var compareTo = value as DOMSVGTSpanElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGTSpanElement value ) {
 			return Handle == value.Handle;
@@ -26479,8 +26479,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGUnitTypes ) ) return false; 
-			return Handle == ( ( DOMSVGUnitTypes )value ).Handle;
+			var compareTo = value as DOMSVGUnitTypes?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGUnitTypes value ) {
 			return Handle == value.Handle;
@@ -26509,8 +26509,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGUseElement ) ) return false; 
-			return Handle == ( ( DOMSVGUseElement )value ).Handle;
+			var compareTo = value as DOMSVGUseElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGUseElement value ) {
 			return Handle == value.Handle;
@@ -26757,8 +26757,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGViewElement ) ) return false; 
-			return Handle == ( ( DOMSVGViewElement )value ).Handle;
+			var compareTo = value as DOMSVGViewElement?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGViewElement value ) {
 			return Handle == value.Handle;
@@ -26844,8 +26844,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMSVGZoomEvent ) ) return false; 
-			return Handle == ( ( DOMSVGZoomEvent )value ).Handle;
+			var compareTo = value as DOMSVGZoomEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMSVGZoomEvent value ) {
 			return Handle == value.Handle;
@@ -26923,8 +26923,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMText ) ) return false; 
-			return Handle == ( ( DOMText )value ).Handle;
+			var compareTo = value as DOMText?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMText value ) {
 			return Handle == value.Handle;
@@ -26966,8 +26966,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMTextEvent ) ) return false; 
-			return Handle == ( ( DOMTextEvent )value ).Handle;
+			var compareTo = value as DOMTextEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMTextEvent value ) {
 			return Handle == value.Handle;
@@ -27017,8 +27017,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMTreeWalker ) ) return false; 
-			return Handle == ( ( DOMTreeWalker )value ).Handle;
+			var compareTo = value as DOMTreeWalker?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMTreeWalker value ) {
 			return Handle == value.Handle;
@@ -27167,8 +27167,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMUIEvent ) ) return false; 
-			return Handle == ( ( DOMUIEvent )value ).Handle;
+			var compareTo = value as DOMUIEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMUIEvent value ) {
 			return Handle == value.Handle;
@@ -27300,8 +27300,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMWheelEvent ) ) return false; 
-			return Handle == ( ( DOMWheelEvent )value ).Handle;
+			var compareTo = value as DOMWheelEvent?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMWheelEvent value ) {
 			return Handle == value.Handle;
@@ -27489,8 +27489,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMXPathExpression ) ) return false; 
-			return Handle == ( ( DOMXPathExpression )value ).Handle;
+			var compareTo = value as DOMXPathExpression?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMXPathExpression value ) {
 			return Handle == value.Handle;
@@ -27541,8 +27541,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DOMXPathResult ) ) return false; 
-			return Handle == ( ( DOMXPathResult )value ).Handle;
+			var compareTo = value as DOMXPathResult?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DOMXPathResult value ) {
 			return Handle == value.Handle;
@@ -27656,8 +27656,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreAXObject ) ) return false; 
-			return Handle == ( ( WebCoreAXObject )value ).Handle;
+			var compareTo = value as WebCoreAXObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreAXObject value ) {
 			return Handle == value.Handle;
@@ -28463,8 +28463,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreControlTintObserver ) ) return false; 
-			return Handle == ( ( WebCoreControlTintObserver )value ).Handle;
+			var compareTo = value as WebCoreControlTintObserver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreControlTintObserver value ) {
 			return Handle == value.Handle;
@@ -28505,8 +28505,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreCursorBundle ) ) return false; 
-			return Handle == ( ( WebCoreCursorBundle )value ).Handle;
+			var compareTo = value as WebCoreCursorBundle?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreCursorBundle value ) {
 			return Handle == value.Handle;
@@ -28535,8 +28535,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreFrameBridge ) ) return false; 
-			return Handle == ( ( WebCoreFrameBridge )value ).Handle;
+			var compareTo = value as WebCoreFrameBridge?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreFrameBridge value ) {
 			return Handle == value.Handle;
@@ -29164,8 +29164,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreFunctionWrapper ) ) return false; 
-			return Handle == ( ( WebCoreFunctionWrapper )value ).Handle;
+			var compareTo = value as WebCoreFunctionWrapper?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreFunctionWrapper value ) {
 			return Handle == value.Handle;
@@ -29206,8 +29206,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreHistory ) ) return false; 
-			return Handle == ( ( WebCoreHistory )value ).Handle;
+			var compareTo = value as WebCoreHistory?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreHistory value ) {
 			return Handle == value.Handle;
@@ -29257,8 +29257,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreKeyGenerator ) ) return false; 
-			return Handle == ( ( WebCoreKeyGenerator )value ).Handle;
+			var compareTo = value as WebCoreKeyGenerator?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreKeyGenerator value ) {
 			return Handle == value.Handle;
@@ -29318,8 +29318,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreMenuTarget ) ) return false; 
-			return Handle == ( ( WebCoreMenuTarget )value ).Handle;
+			var compareTo = value as WebCoreMenuTarget?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreMenuTarget value ) {
 			return Handle == value.Handle;
@@ -29378,8 +29378,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreMovieObserver ) ) return false; 
-			return Handle == ( ( WebCoreMovieObserver )value ).Handle;
+			var compareTo = value as WebCoreMovieObserver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreMovieObserver value ) {
 			return Handle == value.Handle;
@@ -29476,8 +29476,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreOpenPanelController ) ) return false; 
-			return Handle == ( ( WebCoreOpenPanelController )value ).Handle;
+			var compareTo = value as WebCoreOpenPanelController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreOpenPanelController value ) {
 			return Handle == value.Handle;
@@ -29534,8 +29534,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCorePowerNotifier ) ) return false; 
-			return Handle == ( ( WebCorePowerNotifier )value ).Handle;
+			var compareTo = value as WebCorePowerNotifier?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCorePowerNotifier value ) {
 			return Handle == value.Handle;
@@ -29576,8 +29576,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreRenderThemeNotificationObserver ) ) return false; 
-			return Handle == ( ( WebCoreRenderThemeNotificationObserver )value ).Handle;
+			var compareTo = value as WebCoreRenderThemeNotificationObserver?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreRenderThemeNotificationObserver value ) {
 			return Handle == value.Handle;
@@ -29618,8 +29618,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreResourceHandleAsDelegate ) ) return false; 
-			return Handle == ( ( WebCoreResourceHandleAsDelegate )value ).Handle;
+			var compareTo = value as WebCoreResourceHandleAsDelegate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreResourceHandleAsDelegate value ) {
 			return Handle == value.Handle;
@@ -29758,8 +29758,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreScriptCallFrame ) ) return false; 
-			return Handle == ( ( WebCoreScriptCallFrame )value ).Handle;
+			var compareTo = value as WebCoreScriptCallFrame?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreScriptCallFrame value ) {
 			return Handle == value.Handle;
@@ -29846,8 +29846,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreScriptDebugger ) ) return false; 
-			return Handle == ( ( WebCoreScriptDebugger )value ).Handle;
+			var compareTo = value as WebCoreScriptDebugger?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreScriptDebugger value ) {
 			return Handle == value.Handle;
@@ -29898,8 +29898,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreScrollBar ) ) return false; 
-			return Handle == ( ( WebCoreScrollBar )value ).Handle;
+			var compareTo = value as WebCoreScrollBar?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreScrollBar value ) {
 			return Handle == value.Handle;
@@ -29948,8 +29948,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreSharedBufferData ) ) return false; 
-			return Handle == ( ( WebCoreSharedBufferData )value ).Handle;
+			var compareTo = value as WebCoreSharedBufferData?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreSharedBufferData value ) {
 			return Handle == value.Handle;
@@ -29978,8 +29978,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebCoreViewFactory ) ) return false; 
-			return Handle == ( ( WebCoreViewFactory )value ).Handle;
+			var compareTo = value as WebCoreViewFactory?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebCoreViewFactory value ) {
 			return Handle == value.Handle;
@@ -30021,8 +30021,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebDashboardRegion ) ) return false; 
-			return Handle == ( ( WebDashboardRegion )value ).Handle;
+			var compareTo = value as WebDashboardRegion?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebDashboardRegion value ) {
 			return Handle == value.Handle;
@@ -30064,8 +30064,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebFontCache ) ) return false; 
-			return Handle == ( ( WebFontCache )value ).Handle;
+			var compareTo = value as WebFontCache?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebFontCache value ) {
 			return Handle == value.Handle;
@@ -30116,8 +30116,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebScriptObject ) ) return false; 
-			return Handle == ( ( WebScriptObject )value ).Handle;
+			var compareTo = value as WebScriptObject?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebScriptObject value ) {
 			return Handle == value.Handle;
@@ -30238,8 +30238,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebScriptObjectPrivate ) ) return false; 
-			return Handle == ( ( WebScriptObjectPrivate )value ).Handle;
+			var compareTo = value as WebScriptObjectPrivate?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebScriptObjectPrivate value ) {
 			return Handle == value.Handle;
@@ -30268,8 +30268,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is WebUndefined ) ) return false; 
-			return Handle == ( ( WebUndefined )value ).Handle;
+			var compareTo = value as WebUndefined?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( WebUndefined value ) {
 			return Handle == value.Handle;

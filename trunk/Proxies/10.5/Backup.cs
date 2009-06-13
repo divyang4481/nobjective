@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is CocoaWindowController ) ) return false; 
-			return Handle == ( ( CocoaWindowController )value ).Handle;
+			var compareTo = value as CocoaWindowController?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( CocoaWindowController value ) {
 			return Handle == value.Handle;

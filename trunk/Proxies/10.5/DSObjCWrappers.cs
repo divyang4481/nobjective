@@ -18,8 +18,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoAttributeUtils ) ) return false; 
-			return Handle == ( ( DSoAttributeUtils )value ).Handle;
+			var compareTo = value as DSoAttributeUtils?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoAttributeUtils value ) {
 			return Handle == value.Handle;
@@ -88,8 +88,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoBuffer ) ) return false; 
-			return Handle == ( ( DSoBuffer )value ).Handle;
+			var compareTo = value as DSoBuffer?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoBuffer value ) {
 			return Handle == value.Handle;
@@ -182,8 +182,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoDataList ) ) return false; 
-			return Handle == ( ( DSoDataList )value ).Handle;
+			var compareTo = value as DSoDataList?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoDataList value ) {
 			return Handle == value.Handle;
@@ -323,8 +323,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoDataNode ) ) return false; 
-			return Handle == ( ( DSoDataNode )value ).Handle;
+			var compareTo = value as DSoDataNode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoDataNode value ) {
 			return Handle == value.Handle;
@@ -419,8 +419,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoDirectory ) ) return false; 
-			return Handle == ( ( DSoDirectory )value ).Handle;
+			var compareTo = value as DSoDirectory?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoDirectory value ) {
 			return Handle == value.Handle;
@@ -655,8 +655,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoException ) ) return false; 
-			return Handle == ( ( DSoException )value ).Handle;
+			var compareTo = value as DSoException?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoException value ) {
 			return Handle == value.Handle;
@@ -733,8 +733,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoGroup ) ) return false; 
-			return Handle == ( ( DSoGroup )value ).Handle;
+			var compareTo = value as DSoGroup?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoGroup value ) {
 			return Handle == value.Handle;
@@ -794,8 +794,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoNode ) ) return false; 
-			return Handle == ( ( DSoNode )value ).Handle;
+			var compareTo = value as DSoNode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoNode value ) {
 			return Handle == value.Handle;
@@ -1196,8 +1196,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoNodeBrowserItem ) ) return false; 
-			return Handle == ( ( DSoNodeBrowserItem )value ).Handle;
+			var compareTo = value as DSoNodeBrowserItem?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoNodeBrowserItem value ) {
 			return Handle == value.Handle;
@@ -1329,8 +1329,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoNodeConfig ) ) return false; 
-			return Handle == ( ( DSoNodeConfig )value ).Handle;
+			var compareTo = value as DSoNodeConfig?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoNodeConfig value ) {
 			return Handle == value.Handle;
@@ -1415,8 +1415,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoRecord ) ) return false; 
-			return Handle == ( ( DSoRecord )value ).Handle;
+			var compareTo = value as DSoRecord?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoRecord value ) {
 			return Handle == value.Handle;
@@ -1699,8 +1699,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoSearchNode ) ) return false; 
-			return Handle == ( ( DSoSearchNode )value ).Handle;
+			var compareTo = value as DSoSearchNode?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoSearchNode value ) {
 			return Handle == value.Handle;
@@ -1729,8 +1729,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoStatus ) ) return false; 
-			return Handle == ( ( DSoStatus )value ).Handle;
+			var compareTo = value as DSoStatus?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoStatus value ) {
 			return Handle == value.Handle;
@@ -1790,8 +1790,8 @@ namespace NObjective.Proxies {
 			return value.Handle;
 		}
 		public override bool Equals( object value ) {
-			if( !( value is DSoUser ) ) return false; 
-			return Handle == ( ( DSoUser )value ).Handle;
+			var compareTo = value as DSoUser?;
+			return compareTo != null && Handle == compareTo.Value.Handle;
 		}
 		public bool Equals( DSoUser value ) {
 			return Handle == value.Handle;

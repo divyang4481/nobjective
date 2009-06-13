@@ -175,7 +175,7 @@ namespace NObjective
 			Func<MethodInfo, bool> methodFilter = x => x.GetBaseDefinition() != toStringBase && x.GetBaseDefinition() != getHashcodeBase && x != declaredDealloc;
 			Func<ParameterInfo, bool> parameterFilter = x => x.ParameterType.IsValueType || x.ParameterType == typeof( string ) || x.ParameterType.IsPointer;
 
-			var exportedMethods = type.GetMethods( BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( methodFilter ).Where( x => x.GetParameters().All( parameterFilter ) ).Where( x => !type.GetProperties( BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.DeclaredOnly ).SelectMany( y => y.GetAccessors() ).Contains( x ) ).ToArray();
+			var exportedMethods = type.GetMethods( BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( methodFilter ).Where( x => x.GetParameters().All( parameterFilter ) ).Where( x => !type.GetProperties( BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( y => !y.IsDefined( typeof( PropertySynthesisAttribute ), false ) ).SelectMany( y => y.GetAccessors() ).Contains( x ) ).ToArray();
 			var exportedConstructors = type.GetConstructors( BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.DeclaredOnly | BindingFlags.NonPublic ).Where( x => ( x.Attributes & ( MethodAttributes.Family | MethodAttributes.Public ) ) != 0 ).Where( x => x.GetParameters().All( parameterFilter ) ).ToArray();
 
 			Tracer.Information( "Following methods will be exported:" );
@@ -260,7 +260,7 @@ namespace NObjective
 					CompatibilityLayer.class_addProtocol( result, protocol );
 				}
 
-				Tracer.Information( "Registering objective-c class {0} ..", classNameToExport );
+				Tracer.Information( "Registering Objective-C class {0} ..", classNameToExport );
 				Tracer.IncreaseLevel();
 
 				// unmanaged --> transition class --> managed class
@@ -985,7 +985,7 @@ namespace NObjective
 			// add ivars, accessible by properties
 			Func<ParameterInfo, bool> parameterFilter = x => x.ParameterType.IsValueType || x.ParameterType == typeof( string ) || x.ParameterType.IsPointer;
 
-			var exportedMethods = type.GetMethods( BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( x => x.GetParameters().All( parameterFilter ) ).Where( x => !type.GetProperties( BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.DeclaredOnly ).SelectMany( y => y.GetAccessors() ).Contains( x ) ).ToArray();
+			var exportedMethods = type.GetMethods( BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( x => x.GetParameters().All( parameterFilter ) ).Where( x => !type.GetProperties( BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( y => !y.IsDefined( typeof( PropertySynthesisAttribute ), false ) ).SelectMany( y => y.GetAccessors() ).Contains( x ) ).ToArray();
 			var exportedConstructors = type.GetConstructors( BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.DeclaredOnly | BindingFlags.NonPublic ).Where( x => ( x.Attributes & ( MethodAttributes.Family | MethodAttributes.Public ) ) != 0 ).Where( x => x.GetParameters().All( parameterFilter ) ).ToArray();
 
 			Tracer.Information( "Following methods will be exported:" );

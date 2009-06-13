@@ -96,12 +96,8 @@ namespace NObjective
 		/// <returns>True if <paramref name="value"/> is a RuntimeProtocol and it points to the same raw Objective-C protocol object as this instance; False otherwise.</returns>
 		public override bool Equals( object value )
 		{
-			var comapareTo = value as RuntimeProtocol?;
-
-			if( comapareTo == null )
-				return false;
-
-			return _handle == comapareTo.Value._handle;
+			var compareTo = value as RuntimeProtocol?;
+			return compareTo != null && _handle == compareTo.Value._handle;
 		}
 
 		/// <summary>
