@@ -13,6 +13,7 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Diagnostics;
 using System.Reflection;
+using System.Globalization;
 
 namespace NObjective
 {
@@ -35,14 +36,14 @@ namespace NObjective
 				htmlWriter.WriteLine( "<html><body>" );
 				foreach( var category in categories )
 				{
-					var entries = results.Select( x => new { Entry = x[category], Name = x.AssemblyName } ).OrderByDescending( x => x.Entry != null ? x.Entry.Score : 0 ).ToArray();
+					var entries = results.Select( x => new { Entry = x[category], Name = x.AssemblyName } ).OrderByDescending( x => x.Name ).ToArray();
 
 					var performanceValues = entries.Select( x => x.Entry == null ? 0 : ( double ) x.Entry.Score ).ToArray();
 					var maximumValue = performanceValues.Max();
-					var normalizedValues = performanceValues.Select( x => ( int ) ( x * 100.0 / maximumValue ) + "" ).ToArray();
+					var normalizedValues = performanceValues.Select( x => ( x * 100.0 / maximumValue ).ToString( CultureInfo.InvariantCulture ) ).ToArray();
 
 					var url = string.Format( @"http://chart.apis.google.com/chart?chtt={5}&chts=000000,12&chs=1000x120&chf=bg,s,ffffff|c,s,ffffff&chxt=x,y&chxl=1:||0:|0|{1}|{2}|{3}&cht=bhg&chd=t:{4}&chdl={0}&chco=cc0000,003399,ff00cc,cc6600&chbh=10&nonsense=something_that_ends_with.png", string.Join( "|", entries.Select( x => x.Name ).ToArray() ), ( long ) ( maximumValue / 3 ), ( long ) ( maximumValue * 2 / 3 ), maximumValue, string.Join( "|", normalizedValues ), Escape( category ) );
-					
+
 					htmlWriter.WriteLine( @"<img src=""{0}""/>", url );
 					wikiWriter.WriteLine( "{0}", url );
 				}

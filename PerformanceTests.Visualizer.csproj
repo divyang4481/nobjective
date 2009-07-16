@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B3AD7726-BA13-4898-B308-691EC8CD2103}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AssemblyName>PerformanceTests.Tiger</AssemblyName>
+    <AssemblyName>PerformanceTests.Visualizer</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
