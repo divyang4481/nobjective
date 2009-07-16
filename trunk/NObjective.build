@@ -341,16 +341,24 @@
   </target>
 
   <target name="perftest_cocoasharp">
-    <csc target="exe" output="PerformanceTests/bin/CocoaSharp.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}" keyfile="PerformanceTests/cocoa-sharp/cocoa-sharp.snk">
+    <copy todir="PerformanceTests/bin">
+      <fileset basedir="PerformanceTests/cocoa-sharp">
+        <include name="*.dll" />
+      </fileset>
+    </copy>
+    
+    <csc target="exe" output="PerformanceTests/bin/CocoaSharp.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
       <nowarn>
         <warning number="0414" />
       </nowarn>
       <sources basedir="PerformanceTests">
         <include name="cocoasharp.cs"/>
         <include name="PeformanceTest.cs"/>
-        <include name="cocoa-sharp/src/Cocoa/**/*.cs"/>
       </sources>
-    </csc>
+      <references basedir="PerformanceTests/cocoa-sharp">
+        <include name="cocoa-sharp.dll"/>
+      </references>
+	</csc>
   </target>
 
   <target name="perftest_monobjc_tiger">
@@ -392,28 +400,21 @@
   </target>
   
   <target name="perftest_mobjc">
-    <uptodate property="IsMobjcTestUpToDate">
-      <sourcefiles>
-        <include name="PerformanceTests/mobjc/glue/DirectCalls.m"/>
-        <include name="PerformanceTests/mobjc/glue/Ffi.m"/>
-        <include name="PerformanceTests/mobjc/glue/Registrar.m"/>
-      </sourcefiles>
+    <copy todir="PerformanceTests/bin">
+      <fileset basedir="PerformanceTests/mobjc">
+        <include name="*.dll" />
+        <include name="*.dylib" />
+      </fileset>
+    </copy>
 
-      <targetfiles>
-        <include name="PerformanceTests/bin/mobjc-glue.dylib"/>
-      </targetfiles>
-    </uptodate>
-
-    <if test="${ IsMobjcTestUpToDate == 'False' }">
-      <exec program="gcc" workingdir="PerformanceTests" commandline="-o bin/mobjc-glue.dylib -Wall -O3 -arch i386 -arch ppc -framework Foundation -dynamiclib -lffi -I/usr/include mobjc/glue/DirectCalls.m mobjc/glue/Ffi.m mobjc/glue/Registrar.m" />
-    </if>
-    
     <csc target="exe" output="PerformanceTests/bin/Mobjc.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
       <sources basedir="PerformanceTests">
         <include name="mobjc.cs"/>
         <include name="PeformanceTest.cs"/>
-        <include name="mobjc/source/*.cs"/>
       </sources>
+      <references basedir="PerformanceTests/mobjc">
+        <include name="mobjc.dll"/>
+      </references>
     </csc>
   </target>
 
