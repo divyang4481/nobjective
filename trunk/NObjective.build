@@ -239,7 +239,7 @@
   </target>
 
   <target name="distrib" depends="perftests_leopard, perftests_tiger">
-    <tar destfile="${OutDir}/NObjective_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.tgz" compression="GZip">
+    <zip zipfile="${OutDir}/NObjective_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.zip" ziplevel="9">
       <fileset basedir="${OutDir}">
         <include name="NObjective.dll" />
         <include name="NObjective.xml" />
@@ -248,16 +248,16 @@
         <include name="NObjective.dylib" />
         <include name="../License.txt" />
       </fileset>
-    </tar>
+    </zip>
 
-    <tar destfile="${OutDir}/NObjectivePerformanceTest_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.tgz" compression="GZip">
+    <zip zipfile="${OutDir}/NObjectivePerformanceTest_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.zip" ziplevel="9">
       <fileset basedir="PerformanceTests/bin">
         <include name="*.*" />
         <include name="../run_leopard_tests.sh" />
         <include name="../run_tiger_tests.sh" />
         <include name="../../License.txt" />
       </fileset>
-    </tar>
+    </zip>
   </target>
 
   <target name="tests_leopard" depends="native, proxies_leopard">
