@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 namespace NObjective
 {
 	/// <summary>
-	/// Opaque handle for objective-c protocols.
+	/// Represents Objective-C protocol.
 	/// </summary>
 	public struct RuntimeProtocol : IEquatable<RuntimeProtocol>
 	{

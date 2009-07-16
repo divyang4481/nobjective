@@ -1,6 +1,0 @@
-<Namespace Name="Cocoa">
-  <Docs>
-    <summary>Contains classes representing Apple's Cocoa Foundation and App Kit classes.</summary>
-    <remarks>Requires Mac OS 10.3 or higher.</remarks>
-  </Docs>
-</Namespace>

@@ -12,4 +12,4 @@ SET SMBUSER=NObjectiveUser
 SET SMBPASS=yoyoyo
 SET SMBHOST=192.168.1.3
 
-%SSHTERM%"killall sh; killall mono; umount NObjective; mkdir NObjective; mount -t smbfs //%SMBUSER%:%SMBPASS%@%SMBHOST%/NObjective NObjective"
+%SSHTERM%"mkdir NObjective; mount -t smbfs //%SMBUSER%:%SMBPASS%@%SMBHOST%/NObjective NObjective"
