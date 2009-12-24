@@ -7,9 +7,11 @@
 namespace NObjective.Proxies {
 	using System;
 	using System.Runtime.InteropServices;
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CTGlyphStorageInterface : IEquatable<CTGlyphStorageInterface> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreTextCachedClasses.CTGlyphStorageInterface;
 		public static implicit operator IntPtr( CTGlyphStorageInterface value ) {
 			return value.Handle;
@@ -82,23 +84,23 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void disposeGlyphStack( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void initGlyphStack_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int stack );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void popGlyph_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int glyph );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void pushGlyph_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int glyph );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAbsorbedCount_forIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int count, int forIndex );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setGlyphID_forIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ushort id, int forIndex );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setProps_forIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint props, int forIndex );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setStringIndex_forIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int index, int forIndex );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void swapGlyph_withIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int glyph, int withIndex );
 		}
 		static internal class CachedSelectors {

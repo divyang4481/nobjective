@@ -7,9 +7,11 @@
 namespace NObjective.Proxies {
 	using System;
 	using System.Runtime.InteropServices;
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct _NS128bitWrapper : IEquatable<_NS128bitWrapper> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NS128bitWrapper;
 		public static implicit operator IntPtr( _NS128bitWrapper value ) {
 			return value.Handle;
@@ -43,16 +45,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithBytes_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr bytes );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithBytes_ = "initWithBytes:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSException ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSException ) )]
 	public struct _NSCoreDataException : IEquatable<_NSCoreDataException> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSCoreDataException;
 		public static implicit operator IntPtr( _NSCoreDataException value ) {
 			return value.Handle;
@@ -98,11 +102,11 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int code( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr exceptionWithName_code_reason_userInfo_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int code, NObjective.RuntimeObject reason, NObjective.RuntimeObject userInfo );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithName_code_reason_userInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int code, NObjective.RuntimeObject reason, NObjective.RuntimeObject userInfo );
 		}
 		static internal class CachedSelectors {
@@ -111,9 +115,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector initWithName_code_reason_userInfo_ = "initWithName:code:reason:userInfo:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSException ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSException ) )]
 	public struct _NSCoreDataOptimisticLockingException : IEquatable<_NSCoreDataOptimisticLockingException> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSCoreDataOptimisticLockingException;
 		public static implicit operator IntPtr( _NSCoreDataOptimisticLockingException value ) {
 			return value.Handle;
@@ -141,9 +147,11 @@ namespace NObjective.Proxies {
 			return new _NSCoreDataOptimisticLockingException( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSMutableArray ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMutableArray ) )]
 	public struct _NSFaultingMutableArray : IEquatable<_NSFaultingMutableArray> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSFaultingMutableArray;
 		public static implicit operator IntPtr( _NSFaultingMutableArray value ) {
 			return value.Handle;
@@ -199,15 +207,15 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSource_forRelationship_asFault_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject source, NObjective.RuntimeObject forRelationship, char asFault );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr source( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void turnIntoFault( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willRead( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -218,9 +226,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector willRead = "willRead";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMutableSet ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMutableSet ) )]
 	public struct _NSFaultingMutableSet : IEquatable<_NSFaultingMutableSet> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSFaultingMutableSet;
 		public static implicit operator IntPtr( _NSFaultingMutableSet value ) {
 			return value.Handle;
@@ -276,15 +286,15 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSource_forRelationship_asFault_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject source, NObjective.RuntimeObject forRelationship, char asFault );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr source( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void turnIntoFault( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willRead( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -295,9 +305,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector willRead = "willRead";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct _NSFaultingMutableSetMutationMethods : IEquatable<_NSFaultingMutableSetMutationMethods> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSFaultingMutableSetMutationMethods;
 		public static implicit operator IntPtr( _NSFaultingMutableSetMutationMethods value ) {
 			return value.Handle;
@@ -325,9 +337,11 @@ namespace NObjective.Proxies {
 			return new _NSFaultingMutableSetMutationMethods( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSFaultHandler ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSFaultHandler ) )]
 	public struct _NSInvalidationFaultHandler : IEquatable<_NSInvalidationFaultHandler> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSInvalidationFaultHandler;
 		public static implicit operator IntPtr( _NSInvalidationFaultHandler value ) {
 			return value.Handle;
@@ -367,9 +381,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr defaultHandler( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fulfillAggregateFaultForObject_andRelationship_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject andRelationship, NObjective.RuntimeObject withContext );
 		}
 		static internal class CachedSelectors {
@@ -377,9 +391,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector fulfillAggregateFaultForObject_andRelationship_withContext_ = "fulfillAggregateFaultForObject:andRelationship:withContext:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMutableDictionary ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMutableDictionary ) )]
 	public struct _NSKnownKeysDictionary : IEquatable<_NSKnownKeysDictionary> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSKnownKeysDictionary;
 		public static implicit operator IntPtr( _NSKnownKeysDictionary value ) {
 			return value.Handle;
@@ -431,13 +447,13 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initForKeys_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject keys );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSearchStrategy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject strategy );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mapping( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr values( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -447,9 +463,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector values = "values";
 		}
 	}
-	[ProxyBaseClass(typeof( NSEnumerator ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSEnumerator ) )]
 	public struct _NSKnownKeysEnumerator : IEquatable<_NSKnownKeysEnumerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSKnownKeysEnumerator;
 		public static implicit operator IntPtr( _NSKnownKeysEnumerator value ) {
 			return value.Handle;
@@ -477,9 +495,11 @@ namespace NObjective.Proxies {
 			return new _NSKnownKeysEnumerator( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct _NSKnownKeysMappingStrategy : IEquatable<_NSKnownKeysMappingStrategy> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSKnownKeysMappingStrategy;
 		public static implicit operator IntPtr( _NSKnownKeysMappingStrategy value ) {
 			return value.Handle;
@@ -515,13 +535,13 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.fastIndexForKnownKey_( Handle, CachedSelectors.fastIndexForKnownKey_, out ___occuredException, sizeof( NObjective.RuntimeObject ), key );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint indexForKey_( NObjective.RuntimeObject key ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.indexForKey_( Handle, CachedSelectors.indexForKey_, out ___occuredException, sizeof( NObjective.RuntimeObject ), key );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject initForKeys_( NObjective.RuntimeObject keys ) {
 			RuntimeObject ___occuredException;
@@ -551,24 +571,24 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.length( Handle, CachedSelectors.length, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint fastIndexForKnownKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint indexForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initForKeys_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject keys );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initForKeys_count_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr keys, uint count );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr keys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint length( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -582,9 +602,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector length = "length";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct _NSMemoryStorePredicateRemapper : IEquatable<_NSMemoryStorePredicateRemapper> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSMemoryStorePredicateRemapper;
 		public static implicit operator IntPtr( _NSMemoryStorePredicateRemapper value ) {
 			return value.Handle;
@@ -634,13 +656,13 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr createPredicateForFetchFromPredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr defaultInstance( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void visitPredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void visitPredicateExpression_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject expression );
 		}
 		static internal class CachedSelectors {
@@ -650,9 +672,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector visitPredicateExpression_ = "visitPredicateExpression:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMutableSet ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMutableSet ) )]
 	public struct _NSNotifyingWrapperMutableSet : IEquatable<_NSNotifyingWrapperMutableSet> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSNotifyingWrapperMutableSet;
 		public static implicit operator IntPtr( _NSNotifyingWrapperMutableSet value ) {
 			return value.Handle;
@@ -686,16 +710,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithContainer_key_mutableSet_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject container, NObjective.RuntimeObject key, NObjective.RuntimeObject mutableSet );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithContainer_key_mutableSet_ = "initWithContainer:key:mutableSet:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct _NSPersistenceUtilities : IEquatable<_NSPersistenceUtilities> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSPersistenceUtilities;
 		public static implicit operator IntPtr( _NSPersistenceUtilities value ) {
 			return value.Handle;
@@ -735,9 +761,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int attributeTypeForXMLInfo_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr reverseEngineerModelFromXMLDataAt_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject at );
 		}
 		static internal class CachedSelectors {
@@ -745,9 +771,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector reverseEngineerModelFromXMLDataAt_ = "reverseEngineerModelFromXMLDataAt:";
 		}
 	}
-	[ProxyBaseClass(typeof( _NSNotifyingWrapperMutableSet ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( _NSNotifyingWrapperMutableSet ) )]
 	public struct _NSProxyWrapperMutableSet : IEquatable<_NSProxyWrapperMutableSet> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._NSProxyWrapperMutableSet;
 		public static implicit operator IntPtr( _NSProxyWrapperMutableSet value ) {
 			return value.Handle;
@@ -781,16 +809,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithContainer_key_mutableSet_mutationMethods_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject container, NObjective.RuntimeObject key, NObjective.RuntimeObject mutableSet, NObjective.RuntimeObject mutationMethods );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithContainer_key_mutableSet_mutationMethods_ = "initWithContainer:key:mutableSet:mutationMethods:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct _PFRoutines : IEquatable<_PFRoutines> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses._PFRoutines;
 		public static implicit operator IntPtr( _PFRoutines value ) {
 			return value.Handle;
@@ -859,19 +889,19 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr allocateVirtualMemory_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint memory );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char convertCString_toUnsignedInt64_withBase_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr @string, System.IntPtr toUnsignedInt64, int withBase );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr escapeInvalidXMLCharactersInString_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void freeVirtualMemory_forSize_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr memory, uint forSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr invalidXMLCharacterSet( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isInvalidXMLCharacter_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ushort character );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr revertInvalidXMLEscapedString_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
 		}
 		static internal class CachedSelectors {
@@ -884,9 +914,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector revertInvalidXMLEscapedString_ = "revertInvalidXMLEscapedString:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSPropertyDescription ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSPropertyDescription ) )]
 	public struct NSAttributeDescription : IEquatable<NSAttributeDescription> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSAttributeDescription;
 		public static implicit operator IntPtr( NSAttributeDescription value ) {
 			return value.Handle;
@@ -917,7 +949,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.attributeType( Handle, CachedSelectors.attributeType, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( NSAttributeType )___result;
+			return ( NSAttributeType ) ___result;
 		}
 		unsafe public string attributeValueClassName() {
 			RuntimeObject ___occuredException;
@@ -942,15 +974,15 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int attributeType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeValueClassName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr defaultValue( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAttributeType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSAttributeType type );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDefaultValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value );
 		}
 		static internal class CachedSelectors {
@@ -961,9 +993,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setDefaultValue_ = "setDefaultValue:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSPropertyMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSPropertyMapping ) )]
 	public struct NSAttributeMapping : IEquatable<NSAttributeMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSAttributeMapping;
 		public static implicit operator IntPtr( NSAttributeMapping value ) {
 			return value.Handle;
@@ -1006,7 +1040,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.externalPrecision( Handle, CachedSelectors.externalPrecision, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public int externalScale() {
 			RuntimeObject ___occuredException;
@@ -1042,23 +1076,23 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attribute( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr columnDefinition( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint externalPrecision( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int externalScale( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int externalType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setExternalPrecision_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint precision );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setExternalScale_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int scale );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setExternalType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int type );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1073,9 +1107,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sqlType = "sqlType";
 		}
 	}
-	[ProxyBaseClass(typeof( NSManagedObjectID ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSManagedObjectID ) )]
 	public struct NSBasicObjectID : IEquatable<NSBasicObjectID> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSBasicObjectID;
 		public static implicit operator IntPtr( NSBasicObjectID value ) {
 			return value.Handle;
@@ -1109,16 +1145,18 @@ namespace NObjective.Proxies {
 			return new NSBasicObjectID( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithFactory_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject factory );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithFactory_ = "initWithFactory:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMappedObjectStore ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMappedObjectStore ) )]
 	public struct NSBinaryObjectStore : IEquatable<NSBinaryObjectStore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSBinaryObjectStore;
 		public static implicit operator IntPtr( NSBinaryObjectStore value ) {
 			return value.Handle;
@@ -1146,9 +1184,11 @@ namespace NObjective.Proxies {
 			return new NSBinaryObjectStore( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSBinaryObjectStoreFile : IEquatable<NSBinaryObjectStoreFile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSBinaryObjectStoreFile;
 		public static implicit operator IntPtr( NSBinaryObjectStoreFile value ) {
 			return value.Handle;
@@ -1249,31 +1289,31 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void clearCurrentValues( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int databaseVersion( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fullMetadata( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mapData( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern ulong primaryKeyGeneration( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char readBinaryStoreFromData_originalPath_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data, NObjective.RuntimeObject originalPath, System.IntPtr error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char readFromFile_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file, System.IntPtr error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char readMetadataFromFile_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file, System.IntPtr error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDatabaseVersion_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int version );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFullMetadata_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject metadata );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setMapData_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPrimaryKeyGeneration_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ulong generation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char writeToFile_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file, System.IntPtr error );
 		}
 		static internal class CachedSelectors {
@@ -1292,9 +1332,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector writeToFile_error_ = "writeToFile:error:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStoreRequest ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStoreRequest ) )]
 	public struct NSCountRequest : IEquatable<NSCountRequest> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSCountRequest;
 		public static implicit operator IntPtr( NSCountRequest value ) {
 			return value.Handle;
@@ -1334,9 +1376,9 @@ namespace NObjective.Proxies {
 			return new NSCountRequest( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchRequest( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
 		}
 		static internal class CachedSelectors {
@@ -1344,9 +1386,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector initWithFetchRequest_ = "initWithFetchRequest:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSStoreMapNode ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSStoreMapNode ) )]
 	public struct NSDictionaryMapNode : IEquatable<NSDictionaryMapNode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSDictionaryMapNode;
 		public static implicit operator IntPtr( NSDictionaryMapNode value ) {
 			return value.Handle;
@@ -1386,9 +1430,9 @@ namespace NObjective.Proxies {
 			return new NSDictionaryMapNode( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr attributeValues( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithValues_objectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr values, NObjective.RuntimeObject objectID );
 		}
 		static internal class CachedSelectors {
@@ -1396,9 +1440,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector initWithValues_objectID_ = "initWithValues:objectID:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStoreMap ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStoreMap ) )]
 	public struct NSDictionaryStoreMap : IEquatable<NSDictionaryStoreMap> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSDictionaryStoreMap;
 		public static implicit operator IntPtr( NSDictionaryStoreMap value ) {
 			return value.Handle;
@@ -1443,11 +1489,11 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithStore_fromArchivedData_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject fromArchivedData );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithStore_fromPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject fromPath );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveToPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
 		}
 		static internal class CachedSelectors {
@@ -1456,9 +1502,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector saveToPath_ = "saveToPath:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSEntityDescription : IEquatable<NSEntityDescription> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSEntityDescription;
 		public static implicit operator IntPtr( NSEntityDescription value ) {
 			return value.Handle;
@@ -1625,51 +1673,51 @@ namespace NObjective.Proxies {
 			return new NSDictionary( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributesByName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityForName_inManagedObjectContext_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NSManagedObjectContext inManagedObjectContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr insertNewObjectForEntityForName_inManagedObjectContext_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NSManagedObjectContext inManagedObjectContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isAbstract( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectClassName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectModel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr name( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr properties( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertiesByName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationshipsByName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationshipsWithDestinationEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSEntityDescription entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAbstract_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, bool @abstract );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setManagedObjectClassName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setProperties_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray properties );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSubentities_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray subentities );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDictionary info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr subentities( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr subentitiesByName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr superentity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1698,9 +1746,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector userInfo = "userInfo";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMapping ) )]
 	public struct NSEntityMapping : IEquatable<NSEntityMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSEntityMapping;
 		public static implicit operator IntPtr( NSEntityMapping value ) {
 			return value.Handle;
@@ -1839,48 +1889,48 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.subentityID( Handle, CachedSelectors.subentityID, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeColumnDefinitions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeMappings( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr createTableStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignKeyColumnDefinitions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignKeyConstraintDefinitions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isSingleTableEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr primaryKeyColumnDefinitions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr primaryKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertyMappings( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationshipMappings( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPrimaryKeys_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject keys );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPropertyMappings_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject mappings );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSingleTableEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSubentityColumn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject column );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSubentityID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr subentityColumn( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint subentityID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1906,9 +1956,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector subentityID = "subentityID";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSEntityObjectIDFactory : IEquatable<NSEntityObjectIDFactory> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSEntityObjectIDFactory;
 		public static implicit operator IntPtr( NSEntityObjectIDFactory value ) {
 			return value.Handle;
@@ -1956,7 +2008,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.hashForID_( Handle, CachedSelectors.hashForID_, out ___occuredException, sizeof( NObjective.RuntimeObject ), id );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NSEntityObjectIDFactory initWithObjectStore_andClass_forEntity_withType_( NObjective.RuntimeObject store, NObjective.RuntimeClass andClass, NObjective.RuntimeObject forEntity, int withType ) {
 			RuntimeObject ___occuredException;
@@ -1986,7 +2038,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.objectIDDataSize( Handle, CachedSelectors.objectIDDataSize, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject objectIDWithInteger32_( uint integer32 ) {
 			RuntimeObject ___occuredException;
@@ -2025,35 +2077,35 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr allocateObjectIDForPayload_withType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint payload, int withType );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void deallocatePayloadForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint hashForID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithObjectStore_andClass_forEntity_withType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeClass andClass, NObjective.RuntimeObject forEntity, int withType );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isObjectID_equalTo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject equalTo );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectIDFromURIRepresentation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject representation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern NObjective.RuntimeClass objectIDClass( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint objectIDDataSize( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectIDWithInteger32_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint integer32 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectIDWithInteger64_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ulong integer64 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectIDWithObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectIDWithPtr_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr ptr );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr URIRepresentationForID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
 		}
 		static internal class CachedSelectors {
@@ -2074,9 +2126,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector URIRepresentationForID_ = "URIRepresentationForID:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSExternalData : IEquatable<NSExternalData> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSExternalData;
 		public static implicit operator IntPtr( NSExternalData value ) {
 			return value.Handle;
@@ -2113,7 +2167,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.options( Handle, CachedSelectors.options, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject rawData() {
 			RuntimeObject ___occuredException;
@@ -2145,19 +2199,19 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWith_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject with, uint options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint options( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rawData( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRawData_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool shouldPersist( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool shouldRefresh( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern double timestamp( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -2170,9 +2224,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector timestamp = "timestamp";
 		}
 	}
-	[ProxyBaseClass(typeof( NSExternalData ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSExternalData ) )]
 	public struct NSExternalRefCountedData : IEquatable<NSExternalRefCountedData> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSExternalRefCountedData;
 		public static implicit operator IntPtr( NSExternalRefCountedData value ) {
 			return value.Handle;
@@ -2219,7 +2275,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.optionsForKey_( Handle, CachedSelectors.optionsForKey_, out ___occuredException, sizeof( NObjective.RuntimeObject ), key );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public int refCount() {
 			RuntimeObject ___occuredException;
@@ -2245,21 +2301,21 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void decrementRefCount( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void incrementRefCount( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initFromData_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint optionsForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int refCount( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relatedIDsForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRelatedIDs_forKey_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject ds, NObjective.RuntimeObject forKey, uint options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern double timestampForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
 		}
 		static internal class CachedSelectors {
@@ -2273,9 +2329,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector timestampForKey_ = "timestampForKey:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSFaultHandler : IEquatable<NSFaultHandler> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSFaultHandler;
 		public static implicit operator IntPtr( NSFaultHandler value ) {
 			return value.Handle;
@@ -2331,15 +2389,15 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void fulfillFault_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject fault, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPersistenceStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr persistenceStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedFulfillAggregateFaultForObject_andRelationship_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject andRelationship, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void turnObject_intoFaultWithContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject intoFaultWithContext );
 		}
 		static internal class CachedSelectors {
@@ -2350,9 +2408,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector turnObject_intoFaultWithContext_ = "turnObject:intoFaultWithContext:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSPropertyDescription ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSPropertyDescription ) )]
 	public struct NSFetchedPropertyDescription : IEquatable<NSFetchedPropertyDescription> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSFetchedPropertyDescription;
 		public static implicit operator IntPtr( NSFetchedPropertyDescription value ) {
 			return value.Handle;
@@ -2391,9 +2451,9 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchRequest( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSFetchRequest request );
 		}
 		static internal class CachedSelectors {
@@ -2401,9 +2461,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setFetchRequest_ = "setFetchRequest:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSFetchRequest : IEquatable<NSFetchRequest> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSFetchRequest;
 		public static implicit operator IntPtr( NSFetchRequest value ) {
 			return value.Handle;
@@ -2457,7 +2519,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.fetchLimit( Handle, CachedSelectors.fetchLimit, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public char includeRowData() {
 			RuntimeObject ___occuredException;
@@ -2564,53 +2626,53 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr affectedStores( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char autoDistinct( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint fetchLimit( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char includeRowData( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr predicate( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr prefetchRelationshipKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int requestType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char resultsAsObjectIDs( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAffectedStores_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray stores );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAutoDistinct_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char distinct );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSEntityDescription entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFetchLimit_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint limit );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setIncludeRowData_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSPredicate predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPrefetchRelationshipKeys_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject keys );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setResultsAsObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char ds );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setShallowInheritance_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char inheritance );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSortDescriptors_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray descriptors );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char shallowInheritance( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sortDescriptors( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stores( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -2640,9 +2702,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector stores = "stores";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSJoin : IEquatable<NSJoin> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSJoin;
 		public static implicit operator IntPtr( NSJoin value ) {
 			return value.Handle;
@@ -2705,17 +2769,17 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destinationAttributeName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSourceAttributeName_destinationAttributeName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, NObjective.RuntimeObject destinationAttributeName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr joinWithSourceAttributeName_destinationAttributeName_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, NObjective.RuntimeObject destinationAttributeName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sourceAttributeName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -2727,9 +2791,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sourceAttributeName = "sourceAttributeName";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSManagedObject : IEquatable<NSManagedObject> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSManagedObject;
 		public static implicit operator IntPtr( NSManagedObject value ) {
 			return value.Handle;
@@ -2894,51 +2960,51 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void awakeFromFetch( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void awakeFromInsert( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr changedValues( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr committedValuesForKeys_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray keys );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void didAccessValueForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void didSave( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void didTurnIntoFault( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_insertIntoManagedObjectContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSEntityDescription entity, NSManagedObjectContext insertIntoManagedObjectContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isDeleted( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isInserted( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isRelationshipForKeyFault_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject fault );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isUpdated( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectContext( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr primitiveValueForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPrimitiveValue_forKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, IntPtr forKey );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool validateForDelete_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ref NSError delete );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool validateForInsert_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ref NSError insert );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool validateForUpdate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ref NSError update );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willAccessValueForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willSave( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willTurnIntoFault( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -2967,9 +3033,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector willTurnIntoFault = "willTurnIntoFault";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSManagedObjectContext : IEquatable<NSManagedObjectContext> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSManagedObjectContext;
 		public static implicit operator IntPtr( NSManagedObjectContext value ) {
 			return value.Handle;
@@ -3016,7 +3084,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.countForFetchRequest_error_( Handle, CachedSelectors.countForFetchRequest_error_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ), request, error );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NSSet deletedObjects() {
 			RuntimeObject ___occuredException;
@@ -3242,95 +3310,95 @@ namespace NObjective.Proxies {
 			return new NSSet( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void assignObject_toPersistentStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject toPersistentStore );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char commitEditing( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void commitEditingWithDelegate_didCommitSelector_contextInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @delegate, NObjective.Selector didCommitSelector, System.IntPtr contextInfo );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint countForFetchRequest_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, System.IntPtr error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr deletedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void deleteObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void detectConflictsForObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void discardEditing( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr executeFetchRequest_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSFetchRequest request, ref NSError error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool hasChanges( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr insertedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void insertObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isEditing( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void @lock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void lockObjectStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mergePolicy( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void objectDidBeginEditing_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject editing );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void objectDidEndEditing_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject editing );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectRegisteredForID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObjectID id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectWithID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObjectID id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr persistentStoreCoordinator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void processPendingChanges( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool propagatesDeletesAtEndOfEvent( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void redo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void refreshObject_mergeChanges_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObject @object, bool mergeChanges );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr registeredObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void reset( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool retainsRegisteredObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void rollback( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool save_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, ref NSError save );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setMergePolicy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject policy );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPersistentStoreCoordinator_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSPersistentStoreCoordinator coordinator );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPropagatesDeletesAtEndOfEvent_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, bool @event );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRetainsRegisteredObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, bool objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setStalenessInterval_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, double interval );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUndoManager_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSUndoManager manager );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern double stalenessInterval( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool tryLock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void undo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr undoManager( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unlock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unlockObjectStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr updatedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -3381,9 +3449,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector updatedObjects = "updatedObjects";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSManagedObjectID : IEquatable<NSManagedObjectID> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSManagedObjectID;
 		public static implicit operator IntPtr( NSManagedObjectID value ) {
 			return value.Handle;
@@ -3435,13 +3505,13 @@ namespace NObjective.Proxies {
 			return new NSURL( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isTemporaryID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr persistentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr URIRepresentation( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -3451,9 +3521,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector URIRepresentation = "URIRepresentation";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSManagedObjectModel : IEquatable<NSManagedObjectModel> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSManagedObjectModel;
 		public static implicit operator IntPtr( NSManagedObjectModel value ) {
 			return value.Handle;
@@ -3588,39 +3660,39 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr configurations( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entities( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entitiesByName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entitiesForConfiguration_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr configuration );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchRequestFromTemplateWithName_substitutionVariables_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NSDictionary substitutionVariables );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchRequestTemplateForName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithContentsOfURL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isEditable( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizationDictionary( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mergedModelFromBundles_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray bundles );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr modelByMergingModels_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray models );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setEntities_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray entities );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setEntities_forConfiguration_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray entities, IntPtr forConfiguration );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFetchRequestTemplate_forName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSFetchRequest template, IntPtr forName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setLocalizationDictionary_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDictionary dictionary );
 		}
 		static internal class CachedSelectors {
@@ -3643,9 +3715,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setLocalizationDictionary_ = "setLocalizationDictionary:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStore ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStore ) )]
 	public struct NSMappedObjectStore : IEquatable<NSMappedObjectStore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMappedObjectStore;
 		public static implicit operator IntPtr( NSMappedObjectStore value ) {
 			return value.Handle;
@@ -3713,19 +3787,19 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr dataForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr executeCountRequest_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr executeFetchRequest_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr executeSaveChangesRequest_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr getNewIDForObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void save( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveDocumentToPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
 		}
 		static internal class CachedSelectors {
@@ -3738,9 +3812,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector saveDocumentToPath_ = "saveDocumentToPath:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSMapping : IEquatable<NSMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMapping;
 		public static implicit operator IntPtr( NSMapping value ) {
 			return value.Handle;
@@ -3785,11 +3861,11 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr externalName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithExternalName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setExternalName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
 		}
 		static internal class CachedSelectors {
@@ -3798,9 +3874,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setExternalName_ = "setExternalName:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSMappingGenerator : IEquatable<NSMappingGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMappingGenerator;
 		public static implicit operator IntPtr( NSMappingGenerator value ) {
 			return value.Handle;
@@ -3894,27 +3972,27 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr defaultMappingGenerator( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr externalNameForEntityName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr externalNameForPropertyName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr internalNameForEntityName_version_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int version );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr internalNameForPropertyName_version_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int version );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr joinsForRelationship_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mappingForAttribute_forConfigurationWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject attribute, NObjective.RuntimeObject forConfigurationWithName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mappingForEntity_forConfigurationWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject forConfigurationWithName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mappingForRelationship_forConfigurationWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship, NObjective.RuntimeObject forConfigurationWithName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mappingsForConfigurationWithName_inModel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, NObjective.RuntimeObject inModel );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr primaryKeyForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
 		}
 		static internal class CachedSelectors {
@@ -3931,9 +4009,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector primaryKeyForEntity_ = "primaryKeyForEntity:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMappedObjectStore ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMappedObjectStore ) )]
 	public struct NSMemoryObjectStore : IEquatable<NSMemoryObjectStore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMemoryObjectStore;
 		public static implicit operator IntPtr( NSMemoryObjectStore value ) {
 			return value.Handle;
@@ -3961,9 +4041,11 @@ namespace NObjective.Proxies {
 			return new NSMemoryObjectStore( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSEqualityPredicateOperator ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSEqualityPredicateOperator ) )]
 	public struct NSMemoryStoreEqualityPredicateOperator : IEquatable<NSMemoryStoreEqualityPredicateOperator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMemoryStoreEqualityPredicateOperator;
 		public static implicit operator IntPtr( NSMemoryStoreEqualityPredicateOperator value ) {
 			return value.Handle;
@@ -3991,9 +4073,11 @@ namespace NObjective.Proxies {
 			return new NSMemoryStoreEqualityPredicateOperator( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSInPredicateOperator ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSInPredicateOperator ) )]
 	public struct NSMemoryStoreInPredicateOperator : IEquatable<NSMemoryStoreInPredicateOperator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMemoryStoreInPredicateOperator;
 		public static implicit operator IntPtr( NSMemoryStoreInPredicateOperator value ) {
 			return value.Handle;
@@ -4021,9 +4105,11 @@ namespace NObjective.Proxies {
 			return new NSMemoryStoreInPredicateOperator( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSValidationErrorLocalizationPolicy ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSValidationErrorLocalizationPolicy ) )]
 	public struct NSMergedPolicyLocalizationPolicy : IEquatable<NSMergedPolicyLocalizationPolicy> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMergedPolicyLocalizationPolicy;
 		public static implicit operator IntPtr( NSMergedPolicyLocalizationPolicy value ) {
 			return value.Handle;
@@ -4056,16 +4142,18 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addPolicy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject policy );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector addPolicy_ = "addPolicy:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSMergePolicy : IEquatable<NSMergePolicy> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSMergePolicy;
 		public static implicit operator IntPtr( NSMergePolicy value ) {
 			return value.Handle;
@@ -4122,15 +4210,15 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithTypeCode_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int code );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char resolveConflict_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject conflict );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char resolveConflicts_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject conflicts );
 		}
 		static internal class CachedSelectors {
@@ -4141,9 +4229,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector resolveConflicts_ = "resolveConflicts:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSObjectStore : IEquatable<NSObjectStore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSObjectStore;
 		public static implicit operator IntPtr( NSObjectStore value ) {
 			return value.Handle;
@@ -4391,83 +4481,83 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void childStore_didForgetObjectsWithObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject didForgetObjectsWithObjectIDs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void childStore_didRememberObjectsWithObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject didRememberObjectsWithObjectIDs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr childStores( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr configurationName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void doFilesystemCleanupOnDealloc_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char dealloc );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr executeRequest_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr faultHandler( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern NObjective.RuntimeClass faultHandlerClass( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char handlesObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char handlesRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr identifier( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithRootStore_configurationName_options_url_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject configurationName, NObjective.RuntimeObject options, NObjective.RuntimeObject url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isReadOnly( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr knownKeyValuesForObjectID_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void @lock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void lockParentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr metadataForPersistentStoreWithURL_error_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject url, System.IntPtr error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern NObjective.RuntimeClass objectIDClassForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int objectIDDataType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectIDFactoryForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr parentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedDataForObjectID_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedRelationshipDataWithSourceID_forRelationship_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject forRelationship, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rootObjectStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setConfiguratioName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setParentStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setReadOnly_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char only );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRootObjectStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setStoreMetadata_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject metadata );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setURL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool shouldRemoveFromParentObjectStore_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, System.IntPtr error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr storeMetadata( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr storeOptions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr storeType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char tryLock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unlock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unlockParentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr url( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willRemoveFromParentObjectStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
 		}
 		static internal class CachedSelectors {
@@ -4512,9 +4602,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector willRemoveFromParentObjectStore_ = "willRemoveFromParentObjectStore:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSObjectStoreCache : IEquatable<NSObjectStoreCache> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSObjectStoreCache;
 		public static implicit operator IntPtr( NSObjectStoreCache value ) {
 			return value.Handle;
@@ -4577,7 +4669,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.optionsForObjectID_( Handle, CachedSelectors.optionsForObjectID_, out ___occuredException, sizeof( NObjective.RuntimeObject ), id );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public int refCountForObjectID_( NObjective.RuntimeObject id ) {
 			RuntimeObject ___occuredException;
@@ -4608,29 +4700,29 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void decrementRefCountForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr externalDataForObjectID_timestamp_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, double timestamp );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr externalDataForSourceObjectID_key_timestamp_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject key, double timestamp );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void forgetAllExternalData( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void forgetExternalDataForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void incrementRefCountForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint optionsForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int refCountForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerExternalData_forObjectID_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data, NObjective.RuntimeObject forObjectID, uint options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerExternalData_forSourceObjectID_key_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data, NObjective.RuntimeObject forSourceObjectID, NObjective.RuntimeObject key, uint options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool shouldPersistObjectForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool shouldRefreshObjectForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
 		}
 		static internal class CachedSelectors {
@@ -4648,9 +4740,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector shouldRefreshObjectForObjectID_ = "shouldRefreshObjectForObjectID:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSObjectStoreMap : IEquatable<NSObjectStoreMap> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSObjectStoreMap;
 		public static implicit operator IntPtr( NSObjectStoreMap value ) {
 			return value.Handle;
@@ -4763,35 +4857,35 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addObject_objectIDMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject objectIDMap );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr configurationName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char containsObjectWithID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr databaseUUID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr dataForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr handleFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern ulong nextPK64( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void removeObject_objectIDMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject objectIDMap );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedObjectIDsForRelationship_forObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship, NObjective.RuntimeObject forObjectID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDatabaseUUID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject uuid );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setStoreMetadata_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject metadata );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr store( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr storeMetadata( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void updateObject_objectIDMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject objectIDMap );
 		}
 		static internal class CachedSelectors {
@@ -4812,9 +4906,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector updateObject_objectIDMap_ = "updateObject:objectIDMap:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSObjectStoreRequest : IEquatable<NSObjectStoreRequest> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSObjectStoreRequest;
 		public static implicit operator IntPtr( NSObjectStoreRequest value ) {
 			return value.Handle;
@@ -4888,21 +4984,21 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initForManagedObjectContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject context );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectContext( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr requestError( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char requestSuccessful( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int requestType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRequestError_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRequestSuccessful_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char successful );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stores( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -4916,9 +5012,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector stores = "stores";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSPersistentStoreCoordinator : IEquatable<NSPersistentStoreCoordinator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSPersistentStoreCoordinator;
 		public static implicit operator IntPtr( NSPersistentStoreCoordinator value ) {
 			return value.Handle;
@@ -5113,61 +5211,61 @@ namespace NObjective.Proxies {
 			return new NSURL( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr addPersistentStoreWithType_configuration_URL_options_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr type, IntPtr configuration, NSURL URL, NSDictionary options, ref NSError error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void childStore_didForgetObjectsWithObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject didForgetObjectsWithObjectIDs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void childStore_didRememberObjectsWithObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NObjective.RuntimeObject didRememberObjectsWithObjectIDs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr childStores( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr executeRequest_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char handlesObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char handlesRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithManagedObjectModel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSManagedObjectModel model );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr knownKeyValuesForObjectID_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void @lock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void lockParentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectIDForURIRepresentation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL representation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectModel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr metadataForPersistentStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr metadataForPersistentStoreWithURL_error_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url, ref NSError error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr migratePersistentStore_toURL_options_withType_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, NSURL toURL, NSDictionary options, IntPtr withType, ref NSError error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr parentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr persistentStoreForURL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr persistentStores( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool removePersistentStore_error_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store, ref NSError error );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedDataForObjectID_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedRelationshipDataWithSourceID_forRelationship_withContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject forRelationship, NObjective.RuntimeObject withContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rootObjectStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setMetadata_forPersistentStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDictionary metadata, NObjective.RuntimeObject forPersistentStore );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool tryLock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unlock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unlockParentStore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr URLForPersistentStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject store );
 		}
 		static internal class CachedSelectors {
@@ -5201,9 +5299,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector URLForPersistentStore_ = "URLForPersistentStore:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSPrivateCoreDataClassForFindingBundle : IEquatable<NSPrivateCoreDataClassForFindingBundle> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSPrivateCoreDataClassForFindingBundle;
 		public static implicit operator IntPtr( NSPrivateCoreDataClassForFindingBundle value ) {
 			return value.Handle;
@@ -5231,9 +5331,11 @@ namespace NObjective.Proxies {
 			return new NSPrivateCoreDataClassForFindingBundle( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSPropertyDescription : IEquatable<NSPropertyDescription> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSPropertyDescription;
 		public static implicit operator IntPtr( NSPropertyDescription value ) {
 			return value.Handle;
@@ -5352,37 +5454,37 @@ namespace NObjective.Proxies {
 			return new NSArray( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isOptional( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isReadOnly( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isTransient( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr name( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setOptional_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, bool optional );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setReadOnly_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char only );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setTransient_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, bool transient );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDictionary info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setValidationPredicates_withValidationWarnings_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray predicates, NSArray withValidationWarnings );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr validationPredicates( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr validationWarnings( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -5404,9 +5506,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector validationWarnings = "validationWarnings";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMapping ) )]
 	public struct NSPropertyMapping : IEquatable<NSPropertyMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSPropertyMapping;
 		public static implicit operator IntPtr( NSPropertyMapping value ) {
 			return value.Handle;
@@ -5451,11 +5555,11 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithProperty_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject property );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr property( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setProperty_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject property );
 		}
 		static internal class CachedSelectors {
@@ -5464,9 +5568,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setProperty_ = "setProperty:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStoreRequest ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStoreRequest ) )]
 	public struct NSRefreshRequest : IEquatable<NSRefreshRequest> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSRefreshRequest;
 		public static implicit operator IntPtr( NSRefreshRequest value ) {
 			return value.Handle;
@@ -5516,13 +5622,13 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr refreshObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int refreshType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRefreshObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRefreshType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int type );
 		}
 		static internal class CachedSelectors {
@@ -5532,9 +5638,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setRefreshType_ = "setRefreshType:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSPropertyDescription ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSPropertyDescription ) )]
 	public struct NSRelationshipDescription : IEquatable<NSRelationshipDescription> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSRelationshipDescription;
 		public static implicit operator IntPtr( NSRelationshipDescription value ) {
 			return value.Handle;
@@ -5565,7 +5673,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.deleteRule( Handle, CachedSelectors.deleteRule, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( NSDeleteRule )___result;
+			return ( NSDeleteRule ) ___result;
 		}
 		unsafe public NSEntityDescription destinationEntity() {
 			RuntimeObject ___occuredException;
@@ -5589,13 +5697,13 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.maxCount( Handle, CachedSelectors.maxCount, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint minCount() {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.minCount( Handle, CachedSelectors.minCount, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public void setDeleteRule_( NSDeleteRule rule ) {
 			RuntimeObject ___occuredException;
@@ -5623,27 +5731,27 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int deleteRule( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destinationEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inverseRelationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isToMany( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint maxCount( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint minCount( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDeleteRule_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDeleteRule rule );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDestinationEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSEntityDescription entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setInverseRelationship_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSRelationshipDescription relationship );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setMaxCount_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint count );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setMinCount_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint count );
 		}
 		static internal class CachedSelectors {
@@ -5660,9 +5768,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setMinCount_ = "setMinCount:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSPropertyMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSPropertyMapping ) )]
 	public struct NSRelationshipMapping : IEquatable<NSRelationshipMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSRelationshipMapping;
 		public static implicit operator IntPtr( NSRelationshipMapping value ) {
 			return value.Handle;
@@ -5752,27 +5862,27 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr columnDefinitions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr constraintDefinitions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destinationEntityExternalName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr joins( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int joinSemantic( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDestinationEntityExternalName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setForeignKeys_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject keys );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setJoins_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject joins );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setJoinSemantic_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int semantic );
 		}
 		static internal class CachedSelectors {
@@ -5789,9 +5899,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setJoinSemantic_ = "setJoinSemantic:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStoreRequest ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStoreRequest ) )]
 	public struct NSSaveChangesRequest : IEquatable<NSSaveChangesRequest> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSaveChangesRequest;
 		public static implicit operator IntPtr( NSSaveChangesRequest value ) {
 			return value.Handle;
@@ -5863,21 +5975,21 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr deletedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr insertedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr lockedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDeletedObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setInsertedObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setLockedObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUpdatedObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr updatedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -5891,9 +6003,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector updatedObjects = "updatedObjects";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLAdapter : IEquatable<NSSQLAdapter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLAdapter;
 		public static implicit operator IntPtr( NSSQLAdapter value ) {
 			return value.Handle;
@@ -6141,79 +6255,79 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr connections( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr createConnection( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchedValueForDataValue_attribute_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, NObjective.RuntimeObject attribute );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchedValueForDateValue_attribute_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, NObjective.RuntimeObject attribute );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchedValueForNumberValue_attribute_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, NObjective.RuntimeObject attribute );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchedValueForStringValue_attribute_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, NObjective.RuntimeObject attribute );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchedValueForValue_attribute_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, NObjective.RuntimeObject attribute );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern NObjective.RuntimeClass generatorClass( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasOpenConnections( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSQLCore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject core );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCountStatementWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCreateIndexStatementForColumn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject column );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCreateIndexStatementForColumnWithName_inTableWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, NObjective.RuntimeObject inTableWithName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCreateIndexStatementsForManyToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject many );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCreatePrimaryKeyTableStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCreateTableStatementForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newCreateTableStatementForManyToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject many );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newDeleteStatementWithCorrelation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newDeleteStatementWithRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newGeneratorWithStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newInsertStatementWithCorrelation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newInsertStatementWithRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newPrimaryKeyInitializeStatementForEntity_withInitialMaxPK_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, long withInitialMaxPK );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newSelectStatementWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newStatementWithEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newStatementWithoutEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newStatementWithSQLString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newUpdateStatementWithRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerConnection_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject connection );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlCore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern NObjective.RuntimeClass statementClass( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr statementWithSQLString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr storeType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char supportsCorrelatedSubqueries( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr typeStringForColumn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject column );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unregisterConnection_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject connection );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr url( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6256,9 +6370,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector url = "url";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLAdapterOperation : IEquatable<NSSQLAdapterOperation> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLAdapterOperation;
 		public static implicit operator IntPtr( NSSQLAdapterOperation value ) {
 			return value.Handle;
@@ -6344,25 +6460,25 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int adapterOperator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int compareAdapterOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr correlation( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr exception( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithAdapterOperator_correlation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int @operator, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithAdapterOperator_row_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int @operator, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr row( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAdapterOperator_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int @operator );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setException_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject exception );
 		}
 		static internal class CachedSelectors {
@@ -6378,9 +6494,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setException_ = "setException:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLColumn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLColumn ) )]
 	public struct NSSQLAttribute : IEquatable<NSSQLAttribute> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLAttribute;
 		public static implicit operator IntPtr( NSSQLAttribute value ) {
 			return value.Handle;
@@ -6420,9 +6538,9 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeDescription( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool shouldIndex( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6430,9 +6548,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector shouldIndex = "shouldIndex";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLBindVariable : IEquatable<NSSQLBindVariable> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLBindVariable;
 		public static implicit operator IntPtr( NSSQLBindVariable value ) {
 			return value.Handle;
@@ -6469,7 +6589,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.index( Handle, CachedSelectors.index, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NSSQLBindVariable initWithInt64_sqlType_( long int64, int sqlType ) {
 			RuntimeObject ___occuredException;
@@ -6525,7 +6645,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.unsignedInt( Handle, CachedSelectors.unsignedInt, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject value() {
 			RuntimeObject ___occuredException;
@@ -6534,31 +6654,31 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasObjectValue( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint index( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithInt64_sqlType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, long int64, int sqlType );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithUnsignedInt_sqlType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint @int, int sqlType );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithValue_sqlType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value, int sqlType );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long int64( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint index );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setInt64_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, long int64 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUnsignedInt_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint @int );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int sqlType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint unsignedInt( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr value( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6577,9 +6697,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector value = "value";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLChannel : IEquatable<NSSQLChannel> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLChannel;
 		public static implicit operator IntPtr( NSSQLChannel value ) {
 			return value.Handle;
@@ -6673,29 +6795,29 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr connection( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr currentContext( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void endFetch( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSQLCore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject core );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isFetchInProgress( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newFetchedRowObjectIDsOnly_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char only );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void selectCountWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void selectRowsWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void selectRowsWithStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setCurrentContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject context );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setCurrentEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlCore( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6713,9 +6835,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sqlCore = "sqlCore";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLProperty ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLProperty ) )]
 	public struct NSSQLColumn : IEquatable<NSSQLColumn> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLColumn;
 		public static implicit operator IntPtr( NSSQLColumn value ) {
 			return value.Handle;
@@ -6752,7 +6876,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.fetchIndex( Handle, CachedSelectors.fetchIndex, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NSSQLColumn initWithColumnName_sqlType_( NObjective.RuntimeObject name, int sqlType ) {
 			RuntimeObject ___occuredException;
@@ -6764,7 +6888,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.precision( Handle, CachedSelectors.precision, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public int scale() {
 			RuntimeObject ___occuredException;
@@ -6794,23 +6918,23 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char allowAliasing( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint fetchIndex( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithColumnName_sqlType_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int sqlType );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint precision( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int scale( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAllowsAliasing_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char aliasing );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPrecision_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint precision );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setScale_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int scale );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int sqlType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6825,9 +6949,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sqlType = "sqlType";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLConnection : IEquatable<NSSQLConnection> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLConnection;
 		public static implicit operator IntPtr( NSSQLConnection value ) {
 			return value.Handle;
@@ -7169,123 +7295,123 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr adapter( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void awake( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void beginTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char canConnect( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr columnsToFetch( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void commitTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void connect( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createIndexesForAttributesOfEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createIndexesForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createIndexesForForeignKeysOfEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createManyToManyTablesForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createMetadata( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createPrimaryKeyTableForModel_knownEmpty_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject model, char knownEmpty );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createSchema( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createTableForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createTablesForEntities_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entities );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char databaseIsEmpty( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void deleteCorrelation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void deleteRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr describeResults( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void didCreateSchema( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void disconnect( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void endFetch( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void endPrimaryKeyGeneration( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void execute( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long fetchMaxPrimaryKeyForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchMetadata( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchTableNames( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void forceTransactionClosed( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long generatePrimaryKeysForEntity_batch_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, uint batch );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasMetadataTable( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasOpenTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasPrimaryKeyTable( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithAdapter_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject adapter );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void insertCorrelation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void insertRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isFetchInProgress( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isOpen( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr metadataColumns( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newFetchedArray( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newFetchedRowObjectIDOnly_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char only );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void performAdapterOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void performAdapterOperations_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operations );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareAndExecuteSQLStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareForPrimaryKeyGeneration( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareSQLStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void releaseSQLStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void resetSQLStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void rollbackTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveMetadata_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject metadata );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void selectAttributes_fetchRequest_lock_entity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject attributes, NObjective.RuntimeObject fetchRequest, char @lock, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setColumnsToFetch_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject fetch );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void sleep( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void transactionDidBegin( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void transactionDidCommit( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void transactionDidRollback( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void updateRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void willCreateSchema( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -7350,9 +7476,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector willCreateSchema = "willCreateSchema";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStore ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStore ) )]
 	public struct NSSQLCore : IEquatable<NSSQLCore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLCore;
 		public static implicit operator IntPtr( NSSQLCore value ) {
 			return value.Handle;
@@ -7810,159 +7938,159 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr adapter( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr availableChannel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void beginTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr channels( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char coloredLoggingDefault( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void commitChanges_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject changes );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void commitTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr connection( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr coordinator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr countForFetchRequest_inContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject inContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void createAdapterOperationsForDatabaseOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr createChannel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr currentContext( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr databaseOperationForGlobalID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr databaseOperationForObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr databaseUUID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int debugDefault( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int debugLevel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityForEntityDescription_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject description );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityForFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityForGlobalID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityForObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityNameOrderingArrayForEntities_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entities );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fetchRowForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void forgetSnapshotForGlobalID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void forgetSnapshotsForGlobalIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject ds );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void generatePrimaryKeysForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr hackQueryForManyToManyPrefetching_andSourceObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject prefetching, NObjective.RuntimeObject andSourceObjectIDs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char handlesFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void insertEntity_intoOrderingArray_withDependencies_processingSet_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject intoOrderingArray, NObjective.RuntimeObject withDependencies, NObjective.RuntimeObject processingSet );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void invalidateObjectsWithGlobalIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject ds );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localSnapshotForGlobalID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr missingObjectGlobalIDs( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr model( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newAdapterForModel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject model );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newFetchedPKsForObjectID_forManyToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject forManyToMany );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newFetchedPKsForObjectID_forToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject forToMany );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newForeignKeyID_entity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, long id, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newObjectIDForEntity_pk_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, long pk );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newObjectIDSetsForToManyPrefetchingRequest_andSourceObjectIDs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject andSourceObjectIDs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newObjectIDsForToManyFaultRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newRowsForFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newRowsForStatment_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statment );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectIDFactoryForSQLEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectsForFetchRequest_inContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request, NObjective.RuntimeObject inContext );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr orderAdapterOperations( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char ownsGlobalID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char ownsObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void performChanges( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareForSave_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject save );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void processSnapshotForDatabaseOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rawSQLTextForToManyFaultStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordChangesInContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject context );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordDatabaseOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordDeleteForObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordPrimaryKey_forInsertedObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, long key, NObjective.RuntimeObject forInsertedObject );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordSnapshot_forObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject snapshot, NObjective.RuntimeObject forObjectID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordSnapshots_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject snapshots );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordToMany_forSourceObjectID_relationshipName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject many, NObjective.RuntimeObject forSourceObjectID, NObjective.RuntimeObject relationshipName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordToManyInsertsForObject_withOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject withOperation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordToManyUpdatesForObject_withOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject withOperation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordUpdateForObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recordValuesForInsertedObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr refreshObjects_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject objects );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerChannel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject channel );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void rollbackChanges( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void rollbackTransaction( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rowCache( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rowForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rowForObjectID_after_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, double after );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr saveChanges_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject changes );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setColoredLoggingDefault_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char @default );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setCurrentContext_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject context );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDatabaseUUID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject uuid );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDebugDefault_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int @default );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDebugLevel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int level );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void unregisterChannel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject channel );
 		}
 		static internal class CachedSelectors {
@@ -8045,9 +8173,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector unregisterChannel_ = "unregisterChannel:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLCorrelation : IEquatable<NSSQLCorrelation> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLCorrelation;
 		public static implicit operator IntPtr( NSSQLCorrelation value ) {
 			return value.Handle;
@@ -8099,13 +8229,13 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long fk( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithManyToMany_fk_invfk_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject many, long fk, long invfk );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long invfk( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr manyToMany( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -8115,9 +8245,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector manyToMany = "manyToMany";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMapping ) )]
 	public struct NSSQLEntity : IEquatable<NSSQLEntity> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLEntity;
 		public static implicit operator IntPtr( NSSQLEntity value ) {
 			return value.Handle;
@@ -8209,13 +8341,13 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.entityID( Handle, CachedSelectors.entityID, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint fetchIndexForKey_( NObjective.RuntimeObject key ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.fetchIndexForKey_( Handle, CachedSelectors.fetchIndexForKey_, out ___occuredException, sizeof( NObjective.RuntimeObject ), key );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject foreignEntityKeyColumns() {
 			RuntimeObject ___occuredException;
@@ -8368,7 +8500,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.subentityMaxID( Handle, CachedSelectors.subentityMaxID, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject superentity() {
 			RuntimeObject ___occuredException;
@@ -8389,89 +8521,89 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addInsertedObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeColumns( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeNamed_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject named );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void cacheDeletionStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void cacheInsertStatement_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void clearCachedStatements( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void clearInsertedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr columnsToFetch( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr deletionStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityDescription( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint entityID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint fetchIndexForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignEntityKeyColumns( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignKeyColumns( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasInheritance( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char hasSubentities( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithModel_entityDescription_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject model, NObjective.RuntimeObject entityDescription );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr insertedObjects( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr insertStatement( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isRootEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr manyToManyRelationships( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mappingGenerator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr model( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr name( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long nextPrimaryKey64( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr optLockKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr primaryKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr properties( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertiesByName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertyNamed_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject named );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationshipNamed_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject named );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rootEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void seedPrimaryKey64_batch_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, long key64, uint batch );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSubentities_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject subentities );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSuperentity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject superentity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr subentities( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr subentityKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint subentityMaxID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr superentity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr tableName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr toManyRelationships( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -8519,9 +8651,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector toManyRelationships = "toManyRelationships";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLColumn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLColumn ) )]
 	public struct NSSQLEntityKey : IEquatable<NSSQLEntityKey> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLEntityKey;
 		public static implicit operator IntPtr( NSSQLEntityKey value ) {
 			return value.Handle;
@@ -8549,9 +8683,11 @@ namespace NObjective.Proxies {
 			return new NSSQLEntityKey( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLColumn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLColumn ) )]
 	public struct NSSQLForeignEntityKey : IEquatable<NSSQLForeignEntityKey> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLForeignEntityKey;
 		public static implicit operator IntPtr( NSSQLForeignEntityKey value ) {
 			return value.Handle;
@@ -8597,11 +8733,11 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_foreignKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject foreignKey );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr toOneRelationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -8610,9 +8746,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector toOneRelationship = "toOneRelationship";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLColumn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLColumn ) )]
 	public struct NSSQLForeignKey : IEquatable<NSSQLForeignKey> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLForeignKey;
 		public static implicit operator IntPtr( NSSQLForeignKey value ) {
 			return value.Handle;
@@ -8652,9 +8790,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_toOneRelationship_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject toOneRelationship );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr toOneRelationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -8662,9 +8800,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector toOneRelationship = "toOneRelationship";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLGenerator : IEquatable<NSSQLGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLGenerator;
 		public static implicit operator IntPtr( NSSQLGenerator value ) {
 			return value.Handle;
@@ -8899,85 +9039,85 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addJoinForDirectToManyToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject many );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addJoinForManyToManyRelationship_sourcePath_destinationPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship, NObjective.RuntimeObject sourcePath, NObjective.RuntimeObject destinationPath );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addJoinForToManyRelationship_sourcePath_destinationPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship, NObjective.RuntimeObject sourcePath, NObjective.RuntimeObject destinationPath );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addJoinForToOneRelationship_sourcePath_destinationPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship, NObjective.RuntimeObject sourcePath, NObjective.RuntimeObject destinationPath );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendClause_forKeyPath_allowToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject clause, NObjective.RuntimeObject forKeyPath, char allowToMany );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendClause_forKeyPathExpression_allowToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject clause, NObjective.RuntimeObject forKeyPathExpression, char allowToMany );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendClause_forProperty_keypath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject clause, NObjective.RuntimeObject forProperty, NObjective.RuntimeObject keypath );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendCountClause_forToManyKeyPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject clause, NObjective.RuntimeObject forToManyKeyPath );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendJoinClauseToSQL( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendLimitClauseToSQL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint sql );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendOrderByClauseToSQL( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendSelectListToSQLForRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendSQL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject sql );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendWhereClause_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject clause );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void appendWhereClauseToSQL( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char autoDistinct( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void buildOrderByClauseWithSortDescriptors_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject descriptors );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void buildWhereClauseForRow_optLock_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row, long optLock );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void buildWhereClauseWithSelectPredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void buildWhereClauseWithSimplePredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char foldComparisonPredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithStatement_forAdapter_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject statement, NObjective.RuntimeObject forAdapter );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isToManyCountKeyPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareBeginsWith_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject with );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareComparisonPredicate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject predicate );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareCountStatementWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareDeleteStatementWithCorrelation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareDeleteStatementWithRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareEndsWith_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject with );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareIn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @in );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareInsertStatementWithCorrelation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject correlation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareInsertStatementWithRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareLike_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject like );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareMatches_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject matches );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareSelectStatementWithFetchRequest_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject request );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareUpdateStatementWithRow_originalRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row, NObjective.RuntimeObject originalRow );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAutoDistinct_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char distinct );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int sqlTypeForExpressionConstantValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr whereClause( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9023,9 +9163,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector whereClause = "whereClause";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLAdapter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLAdapter ) )]
 	public struct NSSQLiteAdapter : IEquatable<NSSQLiteAdapter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLiteAdapter;
 		public static implicit operator IntPtr( NSSQLiteAdapter value ) {
 			return value.Handle;
@@ -9065,9 +9207,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr pathnameForDatabase( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqliteVersion( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9075,9 +9217,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sqliteVersion = "sqliteVersion";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLConnection ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLConnection ) )]
 	public struct NSSQLiteConnection : IEquatable<NSSQLiteConnection> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLiteConnection;
 		public static implicit operator IntPtr( NSSQLiteConnection value ) {
 			return value.Handle;
@@ -9105,9 +9249,11 @@ namespace NObjective.Proxies {
 			return new NSSQLiteConnection( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLStatement ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLStatement ) )]
 	public struct NSSQLiteStatement : IEquatable<NSSQLiteStatement> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLiteStatement;
 		public static implicit operator IntPtr( NSSQLiteStatement value ) {
 			return value.Handle;
@@ -9135,9 +9281,11 @@ namespace NObjective.Proxies {
 			return new NSSQLiteStatement( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLRelationship ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLRelationship ) )]
 	public struct NSSQLManyToMany : IEquatable<NSSQLManyToMany> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLManyToMany;
 		public static implicit operator IntPtr( NSSQLManyToMany value ) {
 			return value.Handle;
@@ -9189,13 +9337,13 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inverseColumnName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inverseManyToMany( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isMaster( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isReflexive( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9205,9 +9353,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector isReflexive = "isReflexive";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLMappingGenerator : IEquatable<NSSQLMappingGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLMappingGenerator;
 		public static implicit operator IntPtr( NSSQLMappingGenerator value ) {
 			return value.Handle;
@@ -9259,13 +9409,13 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr defaultMappingGenerator( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr generatePropertyName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr generateTableName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr uniqueNameWithBase_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @base );
 		}
 		static internal class CachedSelectors {
@@ -9275,9 +9425,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector uniqueNameWithBase_ = "uniqueNameWithBase:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMapping ) )]
 	public struct NSSQLModel : IEquatable<NSSQLModel> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLModel;
 		public static implicit operator IntPtr( NSSQLModel value ) {
 			return value.Handle;
@@ -9326,7 +9478,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.entityIDForName_( Handle, CachedSelectors.entityIDForName_, out ___occuredException, sizeof( NObjective.RuntimeObject ), name );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject entityNamed_( NObjective.RuntimeObject named ) {
 			RuntimeObject ___occuredException;
@@ -9347,19 +9499,19 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr configurationName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entities( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityForID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint entityIDForName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entityNamed_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject named );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithManagedObjectModel_configurationName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject model, NObjective.RuntimeObject configurationName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr managedObjectModel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9372,9 +9524,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector managedObjectModel = "managedObjectModel";
 		}
 	}
-	[ProxyBaseClass(typeof( NSBasicObjectID ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSBasicObjectID ) )]
 	public struct NSSQLObjectID : IEquatable<NSSQLObjectID> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLObjectID;
 		public static implicit operator IntPtr( NSSQLObjectID value ) {
 			return value.Handle;
@@ -9402,9 +9556,11 @@ namespace NObjective.Proxies {
 			return new NSSQLObjectID( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLCore ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLCore ) )]
 	public struct NSSQLObjectStore : IEquatable<NSSQLObjectStore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLObjectStore;
 		public static implicit operator IntPtr( NSSQLObjectStore value ) {
 			return value.Handle;
@@ -9438,16 +9594,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mappingGenerator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector mappingGenerator = "mappingGenerator";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLOperation : IEquatable<NSSQLOperation> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLOperation;
 		public static implicit operator IntPtr( NSSQLOperation value ) {
 			return value.Handle;
@@ -9559,35 +9717,35 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr adapterOperations( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addAdapterOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addDelta_forManyToManyKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject delta, NObjective.RuntimeObject forManyToManyKey );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int databaseOperator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr dbSnapshot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithObject_entity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr manyToManyDeltas( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr @object( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void removeAdapterOperation_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject operation );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rowForUpdate( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDatabaseOperator_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int @operator );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDBSnapshot_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject snapshot );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setRowForUpdate_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject update );
 		}
 		static internal class CachedSelectors {
@@ -9608,9 +9766,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setRowForUpdate_ = "setRowForUpdate:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLColumn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLColumn ) )]
 	public struct NSSQLOptLockKey : IEquatable<NSSQLOptLockKey> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLOptLockKey;
 		public static implicit operator IntPtr( NSSQLOptLockKey value ) {
 			return value.Handle;
@@ -9638,9 +9798,11 @@ namespace NObjective.Proxies {
 			return new NSSQLOptLockKey( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLColumn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLColumn ) )]
 	public struct NSSQLPrimaryKey : IEquatable<NSSQLPrimaryKey> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLPrimaryKey;
 		public static implicit operator IntPtr( NSSQLPrimaryKey value ) {
 			return value.Handle;
@@ -9674,16 +9836,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlTypeString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector sqlTypeString = "sqlTypeString";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMapping ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMapping ) )]
 	public struct NSSQLProperty : IEquatable<NSSQLProperty> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLProperty;
 		public static implicit operator IntPtr( NSSQLProperty value ) {
 			return value.Handle;
@@ -9816,44 +9980,44 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.slot( Handle, CachedSelectors.slot, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr columnName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_propertyDescription_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject propertyDescription );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isAttribute( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isColumn( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isEntityKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isForeignEntityKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isForeignKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isManyToMany( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isOptLockKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isPrimaryKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isRelationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isToMany( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isToOne( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr name( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertyDescription( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int propertyType( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint slot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9877,9 +10041,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector slot = "slot";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLProperty ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLProperty ) )]
 	public struct NSSQLRelationship : IEquatable<NSSQLRelationship> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLRelationship;
 		public static implicit operator IntPtr( NSSQLRelationship value ) {
 			return value.Handle;
@@ -9943,17 +10109,17 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr correlationTableName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destinationEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inverseRelationship( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr relationshipDescription( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sourceEntity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9965,9 +10131,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sourceEntity = "sourceEntity";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLRow : IEquatable<NSSQLRow> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLRow;
 		public static implicit operator IntPtr( NSSQLRow value ) {
 			return value.Handle;
@@ -10010,13 +10178,13 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.entityID( Handle, CachedSelectors.entityID, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint foreignEntityKeyForSlot_( uint slot ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.foreignEntityKeyForSlot_( Handle, CachedSelectors.foreignEntityKeyForSlot_, out ___occuredException, sizeof( uint ), slot );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public long foreignKeyForSlot_( uint slot ) {
 			RuntimeObject ___occuredException;
@@ -10106,48 +10274,48 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.versionNumber( Handle, CachedSelectors.versionNumber, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributeValueForSlot_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint slot );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint entityID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint foreignEntityKeyForSlot_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint slot );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long foreignKeyForSlot_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint slot );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSQLEntity_objectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject objectID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr knownKeyValuesPointer( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool matchesFetchedRow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr newObjectIDForToOne_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject one );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long optLock( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern long pk64( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAttributeSlotNoRetain_withObject_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint retain, NObjective.RuntimeObject withObject );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setForeignEntityKeySlot_unsigned_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint slot, uint unsigned );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setForeignKeySlot_int64_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint slot, long int64 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setOptLock_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, long @lock );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setTemporaryID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr temporaryID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint versionNumber( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -10173,9 +10341,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector versionNumber = "versionNumber";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStoreCache ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStoreCache ) )]
 	public struct NSSQLRowCache : IEquatable<NSSQLRowCache> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLRowCache;
 		public static implicit operator IntPtr( NSSQLRowCache value ) {
 			return value.Handle;
@@ -10270,29 +10440,29 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr adapter( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int debugLevel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void forgetRowForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSQLCore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject core );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerRow_forObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject row, NObjective.RuntimeObject forObjectID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerSnapshots_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject snapshots );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerToMany_forSourceObjectID_relationshipName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject many, NObjective.RuntimeObject forSourceObjectID, NObjective.RuntimeObject relationshipName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rowForObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr rowForObjectID_after_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, double after );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDebugLevel_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int level );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr toManyForSourceObjectID_relationshipName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject relationshipName );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr toManyForSourceObjectID_relationshipName_after_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id, NObjective.RuntimeObject relationshipName, double after );
 		}
 		static internal class CachedSelectors {
@@ -10310,9 +10480,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector toManyForSourceObjectID_relationshipName_after_ = "toManyForSourceObjectID:relationshipName:after:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSSQLStatement : IEquatable<NSSQLStatement> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLStatement;
 		public static implicit operator IntPtr( NSSQLStatement value ) {
 			return value.Handle;
@@ -10343,7 +10515,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.addBindVariable_( Handle, CachedSelectors.addBindVariable_, out ___occuredException, sizeof( NObjective.RuntimeObject ), variable );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject bindVariables() {
 			RuntimeObject ___occuredException;
@@ -10391,23 +10563,23 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint addBindVariable_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject variable );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr bindVariables( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void clearCaches( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_sqlString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject sqlString );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void removeAllBindVariables( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSQLString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -10422,9 +10594,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sqlString = "sqlString";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLRelationship ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLRelationship ) )]
 	public struct NSSQLToMany : IEquatable<NSSQLToMany> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLToMany;
 		public static implicit operator IntPtr( NSSQLToMany value ) {
 			return value.Handle;
@@ -10458,16 +10632,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inverseToOne( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector inverseToOne = "inverseToOne";
 		}
 	}
-	[ProxyBaseClass(typeof( NSSQLRelationship ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSSQLRelationship ) )]
 	public struct NSSQLToOne : IEquatable<NSSQLToOne> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSSQLToOne;
 		public static implicit operator IntPtr( NSSQLToOne value ) {
 			return value.Handle;
@@ -10525,15 +10701,15 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr foreignEntityKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_inverseToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject inverseToMany );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_propertyDescription_virtualForToMany_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject propertyDescription, NObjective.RuntimeObject virtualForToMany );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isOptional( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isVirtual( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -10544,9 +10720,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector isVirtual = "isVirtual";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSStoreMapNode : IEquatable<NSStoreMapNode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSStoreMapNode;
 		public static implicit operator IntPtr( NSStoreMapNode value ) {
 			return value.Handle;
@@ -10640,32 +10818,32 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.versionNumber( Handle, CachedSelectors.versionNumber, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr configurationName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destinationsForRelationship_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr entity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithObjectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject id );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr key( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr knownKeyValuesPointer( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectID( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDestinations_forRelationship_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject destinations, NObjective.RuntimeObject forRelationship );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setVersionNumber_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint number );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint versionNumber( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -10683,9 +10861,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector versionNumber = "versionNumber";
 		}
 	}
-	[ProxyBaseClass(typeof( NSManagedObjectID ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSManagedObjectID ) )]
 	public struct NSTemporaryObjectID : IEquatable<NSTemporaryObjectID> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSTemporaryObjectID;
 		public static implicit operator IntPtr( NSTemporaryObjectID value ) {
 			return value.Handle;
@@ -10731,11 +10911,11 @@ namespace NObjective.Proxies {
 			return new NSTemporaryObjectID( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithEntity_andUUIDString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity, NObjective.RuntimeObject andUUIDString );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr temporaryObjectIDWithEntity_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
 		}
 		static internal class CachedSelectors {
@@ -10744,9 +10924,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector temporaryObjectIDWithEntity_ = "temporaryObjectIDWithEntity:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct NSValidationErrorLocalizationPolicy : IEquatable<NSValidationErrorLocalizationPolicy> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSValidationErrorLocalizationPolicy;
 		public static implicit operator IntPtr( NSValidationErrorLocalizationPolicy value ) {
 			return value.Handle;
@@ -10809,17 +10991,17 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithURL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizationDictionary( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizedEntityNameForEntity_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject entity );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizedModelStringForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizedPropertyNameForProperty_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject property );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setLocalizationDictionary_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject dictionary );
 		}
 		static internal class CachedSelectors {
@@ -10831,9 +11013,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setLocalizationDictionary_ = "setLocalizationDictionary:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObjectStoreMap ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObjectStoreMap ) )]
 	public struct NSXMLDocumentMap : IEquatable<NSXMLDocumentMap> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSXMLDocumentMap;
 		public static implicit operator IntPtr( NSXMLDocumentMap value ) {
 			return value.Handle;
@@ -10896,17 +11080,17 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr document( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithDocument_forStore_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject document, NObjective.RuntimeObject forStore );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr nodeFromManagedObject_objectIDMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject objectIDMap );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void prepareForSave( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr retainedXmlInfoForRelationship_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject relationship );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr xmlInfoForAttribute_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject attribute );
 		}
 		static internal class CachedSelectors {
@@ -10918,9 +11102,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector xmlInfoForAttribute_ = "xmlInfoForAttribute:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSStoreMapNode ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSStoreMapNode ) )]
 	public struct NSXMLDocumentMapNode : IEquatable<NSXMLDocumentMapNode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSXMLDocumentMapNode;
 		public static implicit operator IntPtr( NSXMLDocumentMapNode value ) {
 			return value.Handle;
@@ -10965,11 +11151,11 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithXMLNode_objectID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject node, NObjective.RuntimeObject objectID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setAllDestinations_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject destinations );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr xmlNode( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -10978,9 +11164,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector xmlNode = "xmlNode";
 		}
 	}
-	[ProxyBaseClass(typeof( NSMappedObjectStore ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSMappedObjectStore ) )]
 	public struct NSXMLObjectStore : IEquatable<NSXMLObjectStore> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreDataCachedClasses.NSXMLObjectStore;
 		public static implicit operator IntPtr( NSXMLObjectStore value ) {
 			return value.Handle;
@@ -11008,6 +11196,7 @@ namespace NObjective.Proxies {
 			return new NSXMLObjectStore( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class CoreDataExtensionsOfNSString {
 		private static int ___lazyLoad = CoreDataCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject sqlString( this NSString ___this ) {
@@ -11017,13 +11206,14 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector sqlString = "sqlString";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class CoreDataExtensionsOfNSNumber {
 		private static int ___lazyLoad = CoreDataCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject sqlString( this NSNumber ___this ) {
@@ -11033,13 +11223,14 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector sqlString = "sqlString";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class CoreDataExtensionsOfNSData {
 		private static int ___lazyLoad = CoreDataCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject hexString( this NSData ___this ) {
@@ -11055,9 +11246,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr hexString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sqlString( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {

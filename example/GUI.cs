@@ -72,6 +72,8 @@ namespace NObjective
 		/// </summary>
 		public void awakeFromNib()
 		{
+			Console.WriteLine( "Awake from nib called.." );
+			
 			foreach( TypeCode element in Enum.GetValues( typeof( TypeCode ) ) )
 				Combobox.addItemWithObjectValue_( element.ToString() );
 
@@ -116,6 +118,10 @@ namespace NObjective
 				Console.WriteLine( "pwd {0}", Environment.CurrentDirectory );
 				Console.WriteLine( "Load NIB: {0}", AppKitExtensionsOfNSBundle.loadNibNamed_owner_( "GUI", proxy.Handle ) );
 				Console.WriteLine( "Application runned.." );
+				
+				Console.WriteLine( "Fields count: {0}", typeof( NSNumber ).GetFields( System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance ).Length );
+				Console.WriteLine( "sizeof( NSNumber ) == {0}", System.Runtime.InteropServices.Marshal.SizeOf( typeof( NSNumber ) ) );
+				Console.WriteLine( "typeof( NSNumber ).IsValueType == {0}", typeof( NSNumber ).IsValueType );
 
 				var consoleReaderThread = new Thread( () =>
 				{

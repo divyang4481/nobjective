@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Leopard", "Tests.Leopard.csproj", "{F8531C94-62EF-40E2-8A2E-1B0F9DA49BFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyWeaver", "ProxyWeaver.csproj", "{08C1D8D4-A5E3-4417-9C0E-601BEB9E0B29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3A0BDFD-734B-418E-A514-40BE34AF3078} = {D3A0BDFD-734B-418E-A514-40BE34AF3078}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NObjectiveAST", "NObjectiveAST\NObjectiveAST.csproj", "{8496FF01-EBCA-4DF0-B661-3C80E820C061}"
 EndProject
@@ -74,6 +77,7 @@ Global
 		{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EC354D8-D7FF-4F9B-A11A-3B10974D64E7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3A0BDFD-734B-418E-A514-40BE34AF3078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A0BDFD-734B-418E-A514-40BE34AF3078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3A0BDFD-734B-418E-A514-40BE34AF3078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4373239-D2F8-4D9C-8E51-3AA47CF48A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4373239-D2F8-4D9C-8E51-3AA47CF48A26}.Release|Any CPU.ActiveCfg = Release|Any CPU

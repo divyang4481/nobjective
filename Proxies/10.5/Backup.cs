@@ -7,9 +7,11 @@
 namespace NObjective.Proxies {
 	using System;
 	using System.Runtime.InteropServices;
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CocoaWindowController : IEquatable<CocoaWindowController> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = BackupCachedClasses.CocoaWindowController;
 		public static implicit operator IntPtr( CocoaWindowController value ) {
 			return value.Handle;
@@ -47,9 +49,9 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void windowDidEndLiveResize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject resize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void windowWillStartLiveResize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject resize );
 		}
 		static internal class CachedSelectors {

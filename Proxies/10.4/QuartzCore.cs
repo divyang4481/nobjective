@@ -7,9 +7,11 @@
 namespace NObjective.Proxies {
 	using System;
 	using System.Runtime.InteropServices;
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAddBlendMode : IEquatable<CIAddBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAddBlendMode;
 		public static implicit operator IntPtr( CIAddBlendMode value ) {
 			return value.Handle;
@@ -43,16 +45,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAdditionCompositing : IEquatable<CIAdditionCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAdditionCompositing;
 		public static implicit operator IntPtr( CIAdditionCompositing value ) {
 			return value.Handle;
@@ -86,16 +90,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAffineClamp : IEquatable<CIAffineClamp> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAffineClamp;
 		public static implicit operator IntPtr( CIAffineClamp value ) {
 			return value.Handle;
@@ -129,16 +135,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAffineTile : IEquatable<CIAffineTile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAffineTile;
 		public static implicit operator IntPtr( CIAffineTile value ) {
 			return value.Handle;
@@ -172,16 +180,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAffineTransform : IEquatable<CIAffineTransform> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAffineTransform;
 		public static implicit operator IntPtr( CIAffineTransform value ) {
 			return value.Handle;
@@ -215,16 +225,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAlphaAddBlendMode : IEquatable<CIAlphaAddBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAlphaAddBlendMode;
 		public static implicit operator IntPtr( CIAlphaAddBlendMode value ) {
 			return value.Handle;
@@ -258,16 +270,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIAutoBlackPointWhitePoint : IEquatable<CIAutoBlackPointWhitePoint> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAutoBlackPointWhitePoint;
 		public static implicit operator IntPtr( CIAutoBlackPointWhitePoint value ) {
 			return value.Handle;
@@ -307,9 +321,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr forcePromise_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject promise );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -317,9 +331,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBackground : IEquatable<CIBackground> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBackground;
 		public static implicit operator IntPtr( CIBackground value ) {
 			return value.Handle;
@@ -353,16 +369,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBayerReconstruction : IEquatable<CIBayerReconstruction> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBayerReconstruction;
 		public static implicit operator IntPtr( CIBayerReconstruction value ) {
 			return value.Handle;
@@ -484,38 +502,38 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr antiAliasingFilter_phase_greenAmount_redBlueAmount_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject filter, NObjective.RuntimeObject phase, NObjective.RuntimeObject greenAmount, NObjective.RuntimeObject redBlueAmount );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blackSubtractAndPremultiply_pattern_factors_blackLevels_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject premultiply, uint pattern, System.IntPtr factors, NObjective.RuntimeObject blackLevels, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blueReconstruction_green_phase_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reconstruction, NObjective.RuntimeObject green, NObjective.RuntimeObject phase, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blurHalfSizeImage_sampler_radius_image_kind_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject image, NObjective.RuntimeObject sampler, NObjective.RuntimeObject radius, System.IntPtr image2, int kind );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fullNoiseReduction_pattern_radius_slope_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reduction, uint pattern, NObjective.RuntimeObject radius, NObjective.RuntimeObject slope );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr greenReconstruction_edges_phase_scale1_scale2_decisions_votedDecisions_image_decisionImage_votingImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reconstruction, NObjective.RuntimeObject edges, NObjective.RuntimeObject phase, NObjective.RuntimeObject scale1, NObjective.RuntimeObject scale2, System.IntPtr decisions, 
 			System.IntPtr votedDecisions, System.IntPtr image, System.IntPtr decisionImage, System.IntPtr votingImage );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr halfSizePicture_pattern_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject picture, uint pattern, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr halfSizePictureEdges_scale_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edges, NObjective.RuntimeObject scale, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr highlightRecovery_pattern_clipLevels_redPhase_greenPhase_bluePhase_redBlueSwap_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject recovery, uint pattern, System.IntPtr clipLevels, NObjective.RuntimeObject redPhase, NObjective.RuntimeObject greenPhase, NObjective.RuntimeObject bluePhase, 
 			char redBlueSwap, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr redNoiseReduction_pattern_radius_slope_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reduction, uint pattern, NObjective.RuntimeObject radius, NObjective.RuntimeObject slope );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr redReconstruction_green_phase_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reconstruction, NObjective.RuntimeObject green, NObjective.RuntimeObject phase, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sharpenReconstructedGreenEdges_radius_intensity_edgeIntensity_edgeThreshold_edgeMaskRadius_edgeMask_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edges, NObjective.RuntimeObject radius, NObjective.RuntimeObject intensity, NObjective.RuntimeObject edgeIntensity, NObjective.RuntimeObject edgeThreshold, NObjective.RuntimeObject edgeMaskRadius, 
 			System.IntPtr edgeMask, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr standardCrop_original_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject crop, NObjective.RuntimeObject original );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stuckPixelElimination_threshold_phase_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject elimination, NObjective.RuntimeObject threshold, NObjective.RuntimeObject phase );
 		}
 		static internal class CachedSelectors {
@@ -536,9 +554,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector stuckPixelElimination_threshold_phase_ = "stuckPixelElimination:threshold:phase:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBayerReconstructionFuji : IEquatable<CIBayerReconstructionFuji> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBayerReconstructionFuji;
 		public static implicit operator IntPtr( CIBayerReconstructionFuji value ) {
 			return value.Handle;
@@ -640,31 +660,31 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blackSubtract_pattern_factors_blackLevels_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject subtract, uint pattern, System.IntPtr factors, NObjective.RuntimeObject blackLevels, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blueRecon_green_pattern_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject recon, NObjective.RuntimeObject green, uint pattern );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blurHalf_radius_image_kind_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject half, NObjective.RuntimeObject radius, System.IntPtr image, int kind );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr edges_scale_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edges, NObjective.RuntimeObject scale, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr greenRecon_edges_pattern_scale1_scale2_decisions_votedDecisions_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject recon, NObjective.RuntimeObject edges, uint pattern, NObjective.RuntimeObject scale1, NObjective.RuntimeObject scale2, System.IntPtr decisions, 
 			System.IntPtr votedDecisions );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr greenSharpen_radius_intensity_edgeIntensity_edgeThreshold_edgeMaskRadius_edgeMask_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject sharpen, NObjective.RuntimeObject radius, NObjective.RuntimeObject intensity, NObjective.RuntimeObject edgeIntensity, NObjective.RuntimeObject edgeThreshold, NObjective.RuntimeObject edgeMaskRadius, 
 			System.IntPtr edgeMask );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr halfSize_pattern_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject size, uint pattern, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr highlight_pattern_clipLevels_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject highlight, uint pattern, System.IntPtr clipLevels, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr redRecon_green_pattern_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject recon, NObjective.RuntimeObject green, uint pattern );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr standardCrop_original_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject crop, NObjective.RuntimeObject original );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stuckPixel_threshold_pattern_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject pixel, NObjective.RuntimeObject threshold, uint pattern );
 		}
 		static internal class CachedSelectors {
@@ -682,9 +702,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector stuckPixel_threshold_pattern_ = "stuckPixel:threshold:pattern:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBayerReconstructionV0 : IEquatable<CIBayerReconstructionV0> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBayerReconstructionV0;
 		public static implicit operator IntPtr( CIBayerReconstructionV0 value ) {
 			return value.Handle;
@@ -794,34 +816,34 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blackSubtractAndPremultiply_pattern_factors_blackLevels_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject premultiply, uint pattern, System.IntPtr factors, NObjective.RuntimeObject blackLevels, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blueReconstruction_green_phase_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reconstruction, NObjective.RuntimeObject green, NObjective.RuntimeObject phase, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blurHalfSizeImage_radius_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject image, NObjective.RuntimeObject radius, System.IntPtr image2 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr greenReconstruction_edges_phase_scale1_scale2_decisions_votedDecisions_image_decisionImage_votingImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reconstruction, NObjective.RuntimeObject edges, NObjective.RuntimeObject phase, NObjective.RuntimeObject scale1, NObjective.RuntimeObject scale2, System.IntPtr decisions, 
 			System.IntPtr votedDecisions, System.IntPtr image, System.IntPtr decisionImage, System.IntPtr votingImage );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr halfSizePicture_pattern_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject picture, uint pattern, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr halfSizePictureEdges_scale_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edges, NObjective.RuntimeObject scale, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr highlightRecovery_pattern_clipLevels_redPhase_greenPhase_bluePhase_redBlueSwap_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject recovery, uint pattern, System.IntPtr clipLevels, NObjective.RuntimeObject redPhase, NObjective.RuntimeObject greenPhase, NObjective.RuntimeObject bluePhase, 
 			char redBlueSwap, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr redNoiseReduction_pattern_radius_slope_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reduction, uint pattern, NObjective.RuntimeObject radius, NObjective.RuntimeObject slope );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr redReconstruction_green_phase_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject reconstruction, NObjective.RuntimeObject green, NObjective.RuntimeObject phase, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sharpenReconstructedGreenEdges_radius_intensity_edgeIntensity_edgeThreshold_perceptual_blurred_image_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edges, NObjective.RuntimeObject radius, NObjective.RuntimeObject intensity, NObjective.RuntimeObject edgeIntensity, NObjective.RuntimeObject edgeThreshold, System.IntPtr perceptual, 
 			System.IntPtr blurred, System.IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr standardCrop_original_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject crop, NObjective.RuntimeObject original );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stuckPixelElimination_threshold_phase_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject elimination, NObjective.RuntimeObject threshold, NObjective.RuntimeObject phase );
 		}
 		static internal class CachedSelectors {
@@ -840,9 +862,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector stuckPixelElimination_threshold_phase_ = "stuckPixelElimination:threshold:phase:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBehindBlendMode : IEquatable<CIBehindBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBehindBlendMode;
 		public static implicit operator IntPtr( CIBehindBlendMode value ) {
 			return value.Handle;
@@ -876,16 +900,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CISampleAreaOperation ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CISampleAreaOperation ) )]
 	public struct CIBilateralConvolution : IEquatable<CIBilateralConvolution> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBilateralConvolution;
 		public static implicit operator IntPtr( CIBilateralConvolution value ) {
 			return value.Handle;
@@ -919,16 +945,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr doBilateralPass_points_weights_sums_slope_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject pass, NObjective.RuntimeObject points, NObjective.RuntimeObject weights, NObjective.RuntimeObject sums, NObjective.RuntimeObject slope );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector doBilateralPass_points_weights_sums_slope_ = "doBilateralPass:points:weights:sums:slope:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBilateralFilter : IEquatable<CIBilateralFilter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBilateralFilter;
 		public static implicit operator IntPtr( CIBilateralFilter value ) {
 			return value.Handle;
@@ -962,16 +990,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContext ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContext ) )]
 	public struct CIBitmapContext : IEquatable<CIBitmapContext> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBitmapContext;
 		public static implicit operator IntPtr( CIBitmapContext value ) {
 			return value.Handle;
@@ -1005,16 +1035,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithOptions_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject options );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithOptions_ = "initWithOptions:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContextImpl ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContextImpl ) )]
 	public struct CIBitmapContextImpl : IEquatable<CIBitmapContextImpl> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBitmapContextImpl;
 		public static implicit operator IntPtr( CIBitmapContextImpl value ) {
 			return value.Handle;
@@ -1042,9 +1074,11 @@ namespace NObjective.Proxies {
 			return new CIBitmapContextImpl( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBlendWithMask : IEquatable<CIBlendWithMask> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBlendWithMask;
 		public static implicit operator IntPtr( CIBlendWithMask value ) {
 			return value.Handle;
@@ -1078,16 +1112,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBloom : IEquatable<CIBloom> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBloom;
 		public static implicit operator IntPtr( CIBloom value ) {
 			return value.Handle;
@@ -1121,16 +1157,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIBumpDistortion : IEquatable<CIBumpDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBumpDistortion;
 		public static implicit operator IntPtr( CIBumpDistortion value ) {
 			return value.Handle;
@@ -1164,16 +1202,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContext ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContext ) )]
 	public struct CICGContext : IEquatable<CICGContext> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICGContext;
 		public static implicit operator IntPtr( CICGContext value ) {
 			return value.Handle;
@@ -1207,16 +1247,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithOptions_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject options );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithOptions_ = "initWithOptions:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContextImpl ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContextImpl ) )]
 	public struct CICGContextImpl : IEquatable<CICGContextImpl> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICGContextImpl;
 		public static implicit operator IntPtr( CICGContextImpl value ) {
 			return value.Handle;
@@ -1244,9 +1286,11 @@ namespace NObjective.Proxies {
 			return new CICGContextImpl( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CICGSFilter : IEquatable<CICGSFilter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICGSFilter;
 		public static implicit operator IntPtr( CICGSFilter value ) {
 			return value.Handle;
@@ -1298,13 +1342,13 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int addToWindow_flags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr window, uint flags );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithFilter_connectionID_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject filter, System.IntPtr connectionID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithFilter_connectionID_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject filter, System.IntPtr connectionID );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int removeFromWindow_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr window );
 		}
 		static internal class CachedSelectors {
@@ -1314,9 +1358,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector removeFromWindow_ = "removeFromWindow:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICheapBlur : IEquatable<CICheapBlur> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICheapBlur;
 		public static implicit operator IntPtr( CICheapBlur value ) {
 			return value.Handle;
@@ -1350,16 +1396,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICheckerboardGenerator : IEquatable<CICheckerboardGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICheckerboardGenerator;
 		public static implicit operator IntPtr( CICheckerboardGenerator value ) {
 			return value.Handle;
@@ -1393,16 +1441,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIChopLines : IEquatable<CIChopLines> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIChopLines;
 		public static implicit operator IntPtr( CIChopLines value ) {
 			return value.Handle;
@@ -1436,16 +1486,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICircleSplashDistortion : IEquatable<CICircleSplashDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircleSplashDistortion;
 		public static implicit operator IntPtr( CICircleSplashDistortion value ) {
 			return value.Handle;
@@ -1479,16 +1531,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICircularScreen : IEquatable<CICircularScreen> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircularScreen;
 		public static implicit operator IntPtr( CICircularScreen value ) {
 			return value.Handle;
@@ -1522,16 +1576,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICircularWrap : IEquatable<CICircularWrap> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircularWrap;
 		public static implicit operator IntPtr( CICircularWrap value ) {
 			return value.Handle;
@@ -1565,16 +1621,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICMYKHalftone : IEquatable<CICMYKHalftone> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICMYKHalftone;
 		public static implicit operator IntPtr( CICMYKHalftone value ) {
 			return value.Handle;
@@ -1608,16 +1666,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIColor : IEquatable<CIColor> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColor;
 		public static implicit operator IntPtr( CIColor value ) {
 			return value.Handle;
@@ -1732,7 +1792,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.numberOfComponents( Handle, CachedSelectors.numberOfComponents, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public float red() {
 			RuntimeObject ___occuredException;
@@ -1747,39 +1807,39 @@ namespace NObjective.Proxies {
 			return Runtime.UnwrapNSString( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float alpha( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float blue( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr colorWithCGColor_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr color );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr colorWithRed_green_blue_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float red, float green, float blue );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr colorWithRed_green_blue_alpha_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float red, float green, float blue, float alpha );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr colorWithString_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr components( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void convertToRGBA_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr rgba );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float green( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGColor_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr color );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithRed_green_blue_alpha_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float red, float green, float blue, float alpha );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint numberOfComponents( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float red( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stringRepresentation( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1802,9 +1862,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector stringRepresentation = "stringRepresentation";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorBlendMode : IEquatable<CIColorBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorBlendMode;
 		public static implicit operator IntPtr( CIColorBlendMode value ) {
 			return value.Handle;
@@ -1838,16 +1900,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorBurnBlendMode : IEquatable<CIColorBurnBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorBurnBlendMode;
 		public static implicit operator IntPtr( CIColorBurnBlendMode value ) {
 			return value.Handle;
@@ -1881,16 +1945,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorControls : IEquatable<CIColorControls> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorControls;
 		public static implicit operator IntPtr( CIColorControls value ) {
 			return value.Handle;
@@ -1924,16 +1990,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorCube : IEquatable<CIColorCube> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorCube;
 		public static implicit operator IntPtr( CIColorCube value ) {
 			return value.Handle;
@@ -1973,9 +2041,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr cubeImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1983,9 +2051,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorDodgeBlendMode : IEquatable<CIColorDodgeBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorDodgeBlendMode;
 		public static implicit operator IntPtr( CIColorDodgeBlendMode value ) {
 			return value.Handle;
@@ -2019,16 +2089,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorInvert : IEquatable<CIColorInvert> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorInvert;
 		public static implicit operator IntPtr( CIColorInvert value ) {
 			return value.Handle;
@@ -2062,16 +2134,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorMap : IEquatable<CIColorMap> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorMap;
 		public static implicit operator IntPtr( CIColorMap value ) {
 			return value.Handle;
@@ -2105,16 +2179,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorMatrix : IEquatable<CIColorMatrix> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorMatrix;
 		public static implicit operator IntPtr( CIColorMatrix value ) {
 			return value.Handle;
@@ -2148,16 +2224,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorMonochrome : IEquatable<CIColorMonochrome> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorMonochrome;
 		public static implicit operator IntPtr( CIColorMonochrome value ) {
 			return value.Handle;
@@ -2191,16 +2269,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorPosterize : IEquatable<CIColorPosterize> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorPosterize;
 		public static implicit operator IntPtr( CIColorPosterize value ) {
 			return value.Handle;
@@ -2234,16 +2314,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIColorWheelGenerator : IEquatable<CIColorWheelGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorWheelGenerator;
 		public static implicit operator IntPtr( CIColorWheelGenerator value ) {
 			return value.Handle;
@@ -2277,16 +2359,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIImage ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIImage ) )]
 	public struct CIConcreteImage : IEquatable<CIConcreteImage> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcreteImage;
 		public static implicit operator IntPtr( CIConcreteImage value ) {
 			return value.Handle;
@@ -2314,9 +2398,11 @@ namespace NObjective.Proxies {
 			return new CIConcreteImage( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( CIKernel ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIKernel ) )]
 	public struct CIConcreteKernel : IEquatable<CIConcreteKernel> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcreteKernel;
 		public static implicit operator IntPtr( CIConcreteKernel value ) {
 			return value.Handle;
@@ -2344,9 +2430,11 @@ namespace NObjective.Proxies {
 			return new CIConcreteKernel( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( CIPromise ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIPromise ) )]
 	public struct CIConcretePromise : IEquatable<CIConcretePromise> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcretePromise;
 		public static implicit operator IntPtr( CIConcretePromise value ) {
 			return value.Handle;
@@ -2374,9 +2462,11 @@ namespace NObjective.Proxies {
 			return new CIConcretePromise( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( CISampler ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CISampler ) )]
 	public struct CIConcreteSampler : IEquatable<CIConcreteSampler> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcreteSampler;
 		public static implicit operator IntPtr( CIConcreteSampler value ) {
 			return value.Handle;
@@ -2404,9 +2494,11 @@ namespace NObjective.Proxies {
 			return new CIConcreteSampler( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIConstantColorGenerator : IEquatable<CIConstantColorGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConstantColorGenerator;
 		public static implicit operator IntPtr( CIConstantColorGenerator value ) {
 			return value.Handle;
@@ -2440,16 +2532,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIContext : IEquatable<CIContext> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIContext;
 		public static implicit operator IntPtr( CIContext value ) {
 			return value.Handle;
@@ -2504,7 +2598,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.currentVersion( ClassHandle, CachedSelectors.currentVersion, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public void abort() {
 			RuntimeObject ___occuredException;
@@ -2541,7 +2635,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.passes( Handle, CachedSelectors.passes, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public float progress() {
 			RuntimeObject ___occuredException;
@@ -2592,47 +2686,47 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void abort( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void clearCaches( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr context( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr contextWithCGContext_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr context, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr contextWithCGLContext_pixelFormat_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr context, IntPtr pixelFormat, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr contextWithOptions_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint currentVersion( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void drawImage_atPoint_fromRect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image, CGPoint atPoint, CGRect fromRect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void drawImage_inRect_fromRect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image, CGRect inRect, CGRect fromRect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void invalidate( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint passes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float progress( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void reclaimResources( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void releaseAllResources( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void render_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject render );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setObject_forKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject forKey );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool testImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void waitImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject image );
 		}
 		static internal class CachedSelectors {
@@ -2659,9 +2753,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector waitImage_ = "waitImage:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIContextImpl : IEquatable<CIContextImpl> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIContextImpl;
 		public static implicit operator IntPtr( CIContextImpl value ) {
 			return value.Handle;
@@ -2726,7 +2822,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.passes( Handle, CachedSelectors.passes, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public float progress() {
 			RuntimeObject ___occuredException;
@@ -2761,31 +2857,31 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void abort( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void collect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char collect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithOptions_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr objectForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr optionsDictionary( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr owner( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint passes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float progress( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void render_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject render );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setObject_forKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @object, NObjective.RuntimeObject forKey );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setOwner_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject owner );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -2804,9 +2900,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector userInfo = "userInfo";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICopyMachineTransition : IEquatable<CICopyMachineTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICopyMachineTransition;
 		public static implicit operator IntPtr( CICopyMachineTransition value ) {
 			return value.Handle;
@@ -2840,16 +2938,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICrop : IEquatable<CICrop> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICrop;
 		public static implicit operator IntPtr( CICrop value ) {
 			return value.Handle;
@@ -2883,16 +2983,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CICrystallize : IEquatable<CICrystallize> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICrystallize;
 		public static implicit operator IntPtr( CICrystallize value ) {
 			return value.Handle;
@@ -2926,16 +3028,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CICVImageProviderDelegate : IEquatable<CICVImageProviderDelegate> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICVImageProviderDelegate;
 		public static implicit operator IntPtr( CICVImageProviderDelegate value ) {
 			return value.Handle;
@@ -2969,7 +3073,7 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void provideImageData_bytesPerRow_origin__size__userInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr data, uint bytesPerRow, uint origin, uint unnamedParameter, uint size, uint unnamedParameter2, 
 			NObjective.RuntimeObject userInfo );
 		}
@@ -2977,9 +3081,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector provideImageData_bytesPerRow_origin__size__userInfo_ = "provideImageData:bytesPerRow:origin::size::userInfo:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDarkenBlendMode : IEquatable<CIDarkenBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDarkenBlendMode;
 		public static implicit operator IntPtr( CIDarkenBlendMode value ) {
 			return value.Handle;
@@ -3013,16 +3119,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDeBayer : IEquatable<CIDeBayer> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDeBayer;
 		public static implicit operator IntPtr( CIDeBayer value ) {
 			return value.Handle;
@@ -3056,16 +3164,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDesaturateGamutMapping : IEquatable<CIDesaturateGamutMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDesaturateGamutMapping;
 		public static implicit operator IntPtr( CIDesaturateGamutMapping value ) {
 			return value.Handle;
@@ -3099,16 +3209,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDifferenceBlendMode : IEquatable<CIDifferenceBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDifferenceBlendMode;
 		public static implicit operator IntPtr( CIDifferenceBlendMode value ) {
 			return value.Handle;
@@ -3142,16 +3254,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDisintegrateWithMaskTransition : IEquatable<CIDisintegrateWithMaskTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDisintegrateWithMaskTransition;
 		public static implicit operator IntPtr( CIDisintegrateWithMaskTransition value ) {
 			return value.Handle;
@@ -3185,16 +3299,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDisplacementDistortion : IEquatable<CIDisplacementDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDisplacementDistortion;
 		public static implicit operator IntPtr( CIDisplacementDistortion value ) {
 			return value.Handle;
@@ -3228,16 +3344,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDisplaceWithNoise : IEquatable<CIDisplaceWithNoise> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDisplaceWithNoise;
 		public static implicit operator IntPtr( CIDisplaceWithNoise value ) {
 			return value.Handle;
@@ -3271,16 +3389,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDissolveTransition : IEquatable<CIDissolveTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDissolveTransition;
 		public static implicit operator IntPtr( CIDissolveTransition value ) {
 			return value.Handle;
@@ -3314,16 +3434,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDistanceFieldFromMask : IEquatable<CIDistanceFieldFromMask> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDistanceFieldFromMask;
 		public static implicit operator IntPtr( CIDistanceFieldFromMask value ) {
 			return value.Handle;
@@ -3357,16 +3479,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIDotScreen : IEquatable<CIDotScreen> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDotScreen;
 		public static implicit operator IntPtr( CIDotScreen value ) {
 			return value.Handle;
@@ -3400,16 +3524,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIEdge : IEquatable<CIEdge> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEdge;
 		public static implicit operator IntPtr( CIEdge value ) {
 			return value.Handle;
@@ -3484,21 +3610,21 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr destNode( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr edgeWithSource__dest__( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject source, NObjective.RuntimeObject unnamedParameter, NObjective.RuntimeObject dest, NObjective.RuntimeObject unnamedParameter2 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithSource__dest__( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject source, NObjective.RuntimeObject unnamedParameter, NObjective.RuntimeObject dest, NObjective.RuntimeObject unnamedParameter2 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sourceKey( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sourceNode( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -3512,9 +3638,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector sourceNode = "sourceNode";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIEdges : IEquatable<CIEdges> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEdges;
 		public static implicit operator IntPtr( CIEdges value ) {
 			return value.Handle;
@@ -3548,16 +3676,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIEdgeWork : IEquatable<CIEdgeWork> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEdgeWork;
 		public static implicit operator IntPtr( CIEdgeWork value ) {
 			return value.Handle;
@@ -3591,16 +3721,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIEmboss : IEquatable<CIEmboss> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEmboss;
 		public static implicit operator IntPtr( CIEmboss value ) {
 			return value.Handle;
@@ -3634,16 +3766,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIExclusionBlendMode : IEquatable<CIExclusionBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIExclusionBlendMode;
 		public static implicit operator IntPtr( CIExclusionBlendMode value ) {
 			return value.Handle;
@@ -3677,16 +3811,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIExposureAdjust : IEquatable<CIExposureAdjust> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIExposureAdjust;
 		public static implicit operator IntPtr( CIExposureAdjust value ) {
 			return value.Handle;
@@ -3720,16 +3856,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIFalseColor : IEquatable<CIFalseColor> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFalseColor;
 		public static implicit operator IntPtr( CIFalseColor value ) {
 			return value.Handle;
@@ -3763,16 +3901,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIFilter : IEquatable<CIFilter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilter;
 		public static implicit operator IntPtr( CIFilter value ) {
 			return value.Handle;
@@ -3966,57 +4106,57 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr apply_arguments_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIKernel apply, NSArray arguments, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int compatibilityVersion( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr customAttributes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr exposedBindings( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filter( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterClassDescription( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterNamesInCategories_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSArray categories );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterNamesInCategory_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr category );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_compatibilityVersion_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int compatibilityVersion );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_compatibilityVersion_keysAndValues_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int compatibilityVersion, NObjective.RuntimeObject keysAndValues );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCompatibilityVersion_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int version );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inputKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizedNameForCategory_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr category );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizedNameForFilterName_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr localizedNameForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerFilterName_constructor_classAttributes_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NObjective.RuntimeObject constructor, NSDictionary classAttributes );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setDefaults( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setIdentity( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setOption_forKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject option, NObjective.RuntimeObject forKey );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedEncodings {
@@ -4054,9 +4194,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector userInfo = "userInfo";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIFilterClassDescription : IEquatable<CIFilterClassDescription> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterClassDescription;
 		public static implicit operator IntPtr( CIFilterClassDescription value ) {
 			return value.Handle;
@@ -4114,15 +4256,15 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr classDescriptionForClass_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeClass @class );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithClass_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeClass @class );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inputKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -4133,9 +4275,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputKeys = "outputKeys";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIFilterGraph : IEquatable<CIFilterGraph> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterGraph;
 		public static implicit operator IntPtr( CIFilterGraph value ) {
 			return value.Handle;
@@ -4169,16 +4313,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithGraph_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject graph );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithGraph_ = "initWithGraph:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIPlugIn ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIPlugIn ) )]
 	public struct CIFilterPlugIn : IEquatable<CIFilterPlugIn> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterPlugIn;
 		public static implicit operator IntPtr( CIFilterPlugIn value ) {
 			return value.Handle;
@@ -4235,15 +4381,15 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_compatibilityVersion_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int compatibilityVersion );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_compatibilityVersion_keysAndValues_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, int compatibilityVersion, NObjective.RuntimeObject keysAndValues );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_keysAndValues_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, NObjective.RuntimeObject keysAndValues );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerFilters( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -4254,9 +4400,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector registerFilters = "registerFilters";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIFilterShape : IEquatable<CIFilterShape> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterShape;
 		public static implicit operator IntPtr( CIFilterShape value ) {
 			return value.Handle;
@@ -4350,27 +4498,27 @@ namespace NObjective.Proxies {
 			return new CIFilterShape( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr CGSRegion( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGSRegion_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr region );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithRect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGRect rect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr insetByX_Y_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int x, int Y );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr intersectWith_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIFilterShape with );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr intersectWithRect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGRect rect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr shapeWithCGSRegion_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr region );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr shapeWithRect_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGRect rect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr transformBy_interior_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGAffineTransform @by, bool interior );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr unionWith_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIFilterShape with );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr unionWithRect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGRect rect );
 		}
 		static internal class CachedSelectors {
@@ -4387,9 +4535,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector unionWithRect_ = "unionWithRect:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIFlashTransition : IEquatable<CIFlashTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFlashTransition;
 		public static implicit operator IntPtr( CIFlashTransition value ) {
 			return value.Handle;
@@ -4423,16 +4573,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIFullButton : IEquatable<CIFullButton> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFullButton;
 		public static implicit operator IntPtr( CIFullButton value ) {
 			return value.Handle;
@@ -4502,19 +4654,19 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr computeButton( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr computeHighlight( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr computeInlay( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr computeInsideShadow( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr computeOutline( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr computeOutsideShadow( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -4527,9 +4679,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGammaAdjust : IEquatable<CIGammaAdjust> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGammaAdjust;
 		public static implicit operator IntPtr( CIGammaAdjust value ) {
 			return value.Handle;
@@ -4563,16 +4717,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGamutAlarm : IEquatable<CIGamutAlarm> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGamutAlarm;
 		public static implicit operator IntPtr( CIGamutAlarm value ) {
 			return value.Handle;
@@ -4606,16 +4762,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGamutClamp : IEquatable<CIGamutClamp> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGamutClamp;
 		public static implicit operator IntPtr( CIGamutClamp value ) {
 			return value.Handle;
@@ -4649,16 +4807,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGamutRollOff : IEquatable<CIGamutRollOff> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGamutRollOff;
 		public static implicit operator IntPtr( CIGamutRollOff value ) {
 			return value.Handle;
@@ -4692,16 +4852,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGaussianBlur : IEquatable<CIGaussianBlur> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianBlur;
 		public static implicit operator IntPtr( CIGaussianBlur value ) {
 			return value.Handle;
@@ -4753,13 +4915,13 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr cheapBlur( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr forcePromise_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject promise );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr gaussianBlur( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -4769,9 +4931,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGaussianGradient : IEquatable<CIGaussianGradient> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianGradient;
 		public static implicit operator IntPtr( CIGaussianGradient value ) {
 			return value.Handle;
@@ -4805,16 +4969,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGaussianPyramid : IEquatable<CIGaussianPyramid> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianPyramid;
 		public static implicit operator IntPtr( CIGaussianPyramid value ) {
 			return value.Handle;
@@ -4848,16 +5014,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGlassDistortion : IEquatable<CIGlassDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGlassDistortion;
 		public static implicit operator IntPtr( CIGlassDistortion value ) {
 			return value.Handle;
@@ -4891,16 +5059,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGlassLozenge : IEquatable<CIGlassLozenge> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGlassLozenge;
 		public static implicit operator IntPtr( CIGlassLozenge value ) {
 			return value.Handle;
@@ -4934,16 +5104,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIGloom : IEquatable<CIGloom> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGloom;
 		public static implicit operator IntPtr( CIGloom value ) {
 			return value.Handle;
@@ -4977,16 +5149,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIGraph : IEquatable<CIGraph> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGraph;
 		public static implicit operator IntPtr( CIGraph value ) {
 			return value.Handle;
@@ -5117,41 +5291,41 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addEdge_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edge );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr attributes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr edgeEnumerator( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr edgeEnumeratorForNode_direction_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject node, int direction );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filter( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filterWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr graph( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr immutableCopy( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inputKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputKeys( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void registerFilterName_classAttributes_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, NObjective.RuntimeObject classAttributes );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void removeEdge_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject edge );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr valueForKey_withInputs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key, NObjective.RuntimeObject withInputs );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr valuesForKeys_withInputs_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject keys, NObjective.RuntimeObject withInputs );
 		}
 		static internal class CachedSelectors {
@@ -5175,9 +5349,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector valuesForKeys_withInputs_ = "valuesForKeys:withInputs:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHardLightBlendMode : IEquatable<CIHardLightBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHardLightBlendMode;
 		public static implicit operator IntPtr( CIHardLightBlendMode value ) {
 			return value.Handle;
@@ -5211,16 +5387,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHardMixBlendMode : IEquatable<CIHardMixBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHardMixBlendMode;
 		public static implicit operator IntPtr( CIHardMixBlendMode value ) {
 			return value.Handle;
@@ -5254,16 +5432,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHatchedScreen : IEquatable<CIHatchedScreen> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHatchedScreen;
 		public static implicit operator IntPtr( CIHatchedScreen value ) {
 			return value.Handle;
@@ -5297,16 +5477,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHeightFieldFromConstraints : IEquatable<CIHeightFieldFromConstraints> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHeightFieldFromConstraints;
 		public static implicit operator IntPtr( CIHeightFieldFromConstraints value ) {
 			return value.Handle;
@@ -5340,16 +5522,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHeightFieldFromMask : IEquatable<CIHeightFieldFromMask> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHeightFieldFromMask;
 		public static implicit operator IntPtr( CIHeightFieldFromMask value ) {
 			return value.Handle;
@@ -5383,16 +5567,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHistogram : IEquatable<CIHistogram> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHistogram;
 		public static implicit operator IntPtr( CIHistogram value ) {
 			return value.Handle;
@@ -5432,9 +5618,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr forcePromise_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject promise );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -5442,9 +5628,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHoleDistortion : IEquatable<CIHoleDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHoleDistortion;
 		public static implicit operator IntPtr( CIHoleDistortion value ) {
 			return value.Handle;
@@ -5478,16 +5666,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHueAdjust : IEquatable<CIHueAdjust> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHueAdjust;
 		public static implicit operator IntPtr( CIHueAdjust value ) {
 			return value.Handle;
@@ -5521,16 +5711,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIHueBlendMode : IEquatable<CIHueBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHueBlendMode;
 		public static implicit operator IntPtr( CIHueBlendMode value ) {
 			return value.Handle;
@@ -5564,16 +5756,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIImage : IEquatable<CIImage> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIImage;
 		public static implicit operator IntPtr( CIImage value ) {
 			return value.Handle;
@@ -5913,111 +6107,111 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char cacheHint( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr definition( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_stret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_stret_eh2" )]
 			public static extern void extent( out CGRect ___structAddress, int ___structSize, RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr filteredImage_keysAndValues_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject image, NObjective.RuntimeObject keysAndValues );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageByApplyingTransform_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGAffineTransform transform );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageByCompositingOverImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageByCroppingToShape_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject shape );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithBitmapData_bytesPerRow_size_format_colorSpace_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSData data, uint bytesPerRow, CGSize size, int format, IntPtr colorSpace );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithCGImage_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithCGImage_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr image, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithCGLayer_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr layer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithCGLayer_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr layer, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithColor_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject color );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithContentsOfURL_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithContentsOfURL_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithCVImageBuffer_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr buffer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithCVImageBuffer_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr buffer, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithData_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSData data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithData_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSData data, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithImageProvider_size__format_colorSpace_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject provider, uint size, uint unnamedParameter, int format, IntPtr colorSpace, NSDictionary options
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithJPEGFile_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithPNGFile_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithTexture_size_flipped_colorSpace_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint texture, CGSize size, bool flipped, IntPtr colorSpace );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithURL_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithBitmapData_bytesPerRow_size_format_colorSpace_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSData data, uint bytesPerRow, CGSize size, int format, IntPtr colorSpace );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGImage_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr image, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGLayer_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr layer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGLayer_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr layer, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithColor_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject color );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithContentsOfURL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithContentsOfURL_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL url, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCVImageBuffer_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr buffer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCVImageBuffer_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr buffer, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithData_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSData data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithData_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSData data, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithImageProvider_size__format_colorSpace_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject provider, uint size, uint unnamedParameter, int format, IntPtr colorSpace, NSDictionary options
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithJPEGFile_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithJPEGFile_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPNGFile_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPNGFile_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithTexture_size_flipped_colorSpace_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint texture, CGSize size, bool flipped, IntPtr colorSpace );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithURL_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject url );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr noiseImage( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr nullImage( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr opaqueShape( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr promotedImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setCacheHint_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, char hint );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setUserInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr userInfo( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6075,9 +6269,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector userInfo = "userInfo";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIImageAccumulator : IEquatable<CIImageAccumulator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIImageAccumulator;
 		public static implicit operator IntPtr( CIImageAccumulator value ) {
 			return value.Handle;
@@ -6151,21 +6347,21 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void commitUpdates_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject updates );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_stret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_stret_eh2" )]
 			public static extern void extent( out CGRect ___structAddress, int ___structSize, RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int format( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr image( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageAccumulatorWithExtent_format_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGRect extent, int format );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithExtent_format_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CGRect extent, int format );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setImage_dirtyRect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image, CGRect dirtyRect );
 		}
 		static internal class CachedSelectors {
@@ -6179,9 +6375,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setImage_dirtyRect_ = "setImage:dirtyRect:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIKaleidoscope : IEquatable<CIKaleidoscope> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIKaleidoscope;
 		public static implicit operator IntPtr( CIKaleidoscope value ) {
 			return value.Handle;
@@ -6226,11 +6424,11 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void foldPolys_aboutCenterX_Y_atAngle_up_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject polys, float aboutCenterX, float Y, float atAngle, char up );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr genFold_aboutAngle_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject fold, float aboutAngle );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6239,9 +6437,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIKernel : IEquatable<CIKernel> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIKernel;
 		public static implicit operator IntPtr( CIKernel value ) {
 			return value.Handle;
@@ -6336,27 +6536,27 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr apply_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject apply, System.IntPtr to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr apply_to_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject apply, System.IntPtr to, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr apply_to_options1_options2_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject apply, NObjective.RuntimeObject to, NObjective.RuntimeObject options1, NObjective.RuntimeObject options2 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr colorMatrixBiasKernel( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCString_noCopy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr @string, char noCopy );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr internCString_pointer_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr @string, System.IntPtr pointer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr kernelsWithString_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr kernelsWithString_messageLog_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string, NObjective.RuntimeObject messageLog );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr name( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr parameters( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setROISelector_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.Selector selector );
 		}
 		static internal class CachedSelectors {
@@ -6373,9 +6573,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setROISelector_ = "setROISelector:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILanczosBayerReconstruction : IEquatable<CILanczosBayerReconstruction> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILanczosBayerReconstruction;
 		public static implicit operator IntPtr( CILanczosBayerReconstruction value ) {
 			return value.Handle;
@@ -6409,16 +6611,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILanczosResize : IEquatable<CILanczosResize> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILanczosResize;
 		public static implicit operator IntPtr( CILanczosResize value ) {
 			return value.Handle;
@@ -6458,9 +6662,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr lanczosTable( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6468,9 +6672,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILanczosScaleTransform : IEquatable<CILanczosScaleTransform> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILanczosScaleTransform;
 		public static implicit operator IntPtr( CILanczosScaleTransform value ) {
 			return value.Handle;
@@ -6510,9 +6716,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr lanczosTable( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -6520,9 +6726,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILenticularHaloGenerator : IEquatable<CILenticularHaloGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILenticularHaloGenerator;
 		public static implicit operator IntPtr( CILenticularHaloGenerator value ) {
 			return value.Handle;
@@ -6556,16 +6764,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILightenBlendMode : IEquatable<CILightenBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILightenBlendMode;
 		public static implicit operator IntPtr( CILightenBlendMode value ) {
 			return value.Handle;
@@ -6599,16 +6809,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILinearBurnBlendMode : IEquatable<CILinearBurnBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearBurnBlendMode;
 		public static implicit operator IntPtr( CILinearBurnBlendMode value ) {
 			return value.Handle;
@@ -6642,16 +6854,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILinearDodgeBlendMode : IEquatable<CILinearDodgeBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearDodgeBlendMode;
 		public static implicit operator IntPtr( CILinearDodgeBlendMode value ) {
 			return value.Handle;
@@ -6685,16 +6899,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILinearGradient : IEquatable<CILinearGradient> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearGradient;
 		public static implicit operator IntPtr( CILinearGradient value ) {
 			return value.Handle;
@@ -6728,16 +6944,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILinearLightBlendMode : IEquatable<CILinearLightBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearLightBlendMode;
 		public static implicit operator IntPtr( CILinearLightBlendMode value ) {
 			return value.Handle;
@@ -6771,16 +6989,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILineScreen : IEquatable<CILineScreen> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILineScreen;
 		public static implicit operator IntPtr( CILineScreen value ) {
 			return value.Handle;
@@ -6814,16 +7034,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILuminanceGamutMapping : IEquatable<CILuminanceGamutMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILuminanceGamutMapping;
 		public static implicit operator IntPtr( CILuminanceGamutMapping value ) {
 			return value.Handle;
@@ -6857,16 +7079,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILuminescentPremultiplyBlendMode : IEquatable<CILuminescentPremultiplyBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILuminescentPremultiplyBlendMode;
 		public static implicit operator IntPtr( CILuminescentPremultiplyBlendMode value ) {
 			return value.Handle;
@@ -6900,16 +7124,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CILuminosityBlendMode : IEquatable<CILuminosityBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILuminosityBlendMode;
 		public static implicit operator IntPtr( CILuminosityBlendMode value ) {
 			return value.Handle;
@@ -6943,16 +7169,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMaskToAlpha : IEquatable<CIMaskToAlpha> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaskToAlpha;
 		public static implicit operator IntPtr( CIMaskToAlpha value ) {
 			return value.Handle;
@@ -6986,16 +7214,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMaterialMap : IEquatable<CIMaterialMap> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaterialMap;
 		public static implicit operator IntPtr( CIMaterialMap value ) {
 			return value.Handle;
@@ -7029,16 +7259,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMaximumCompositing : IEquatable<CIMaximumCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaximumCompositing;
 		public static implicit operator IntPtr( CIMaximumCompositing value ) {
 			return value.Handle;
@@ -7072,16 +7304,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMedianFilter : IEquatable<CIMedianFilter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMedianFilter;
 		public static implicit operator IntPtr( CIMedianFilter value ) {
 			return value.Handle;
@@ -7115,16 +7349,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMinimumCompositing : IEquatable<CIMinimumCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMinimumCompositing;
 		public static implicit operator IntPtr( CIMinimumCompositing value ) {
 			return value.Handle;
@@ -7158,16 +7394,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMixOver : IEquatable<CIMixOver> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMixOver;
 		public static implicit operator IntPtr( CIMixOver value ) {
 			return value.Handle;
@@ -7201,16 +7439,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIModTransition : IEquatable<CIModTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIModTransition;
 		public static implicit operator IntPtr( CIModTransition value ) {
 			return value.Handle;
@@ -7244,16 +7484,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMotionBlur : IEquatable<CIMotionBlur> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMotionBlur;
 		public static implicit operator IntPtr( CIMotionBlur value ) {
 			return value.Handle;
@@ -7293,9 +7535,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blur_pass_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject blur, int pass );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -7303,9 +7545,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMultiplyBlendMode : IEquatable<CIMultiplyBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMultiplyBlendMode;
 		public static implicit operator IntPtr( CIMultiplyBlendMode value ) {
 			return value.Handle;
@@ -7339,16 +7583,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIMultiplyCompositing : IEquatable<CIMultiplyCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMultiplyCompositing;
 		public static implicit operator IntPtr( CIMultiplyCompositing value ) {
 			return value.Handle;
@@ -7382,16 +7628,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilterShape ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilterShape ) )]
 	public struct CIMutableFilterShape : IEquatable<CIMutableFilterShape> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMutableFilterShape;
 		public static implicit operator IntPtr( CIMutableFilterShape value ) {
 			return value.Handle;
@@ -7439,13 +7687,13 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void insetByX_Y_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int x, int Y );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void intersect_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject intersect );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void subtract_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject subtract );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void union_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject union );
 		}
 		static internal class CachedSelectors {
@@ -7455,9 +7703,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector union_ = "union:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIUIBundle ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIUIBundle ) )]
 	public struct CIMutableUIBundle : IEquatable<CIMutableUIBundle> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMutableUIBundle;
 		public static implicit operator IntPtr( CIMutableUIBundle value ) {
 			return value.Handle;
@@ -7640,63 +7890,63 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addSubnode_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject subnode );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char changes( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void closeRoot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr copySubtreePattern( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr deepNodeCopy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject copy );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr deepPropertiesCopy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject copy );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr deepSubnodeCopy_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject copy );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void deleteNode( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void differenceParameter_new_old_into_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int parameter, NObjective.RuntimeObject @new, NObjective.RuntimeObject old, NObjective.RuntimeObject @into );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void initializeButtonStructureAtX_y_forResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float y, int forResolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isSubtree( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char parameter_differs_from_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int parameter, NObjective.RuntimeObject differs, NObjective.RuntimeObject @from );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void pasteSubtreePattern_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject pattern );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void popSubnode( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr recipe( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr recipeDifference_with_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject difference, NObjective.RuntimeObject with );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char recipeDiffers_from_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject differs, NObjective.RuntimeObject @from );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void renameNode_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject node );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void restorePreviousParameterValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject value );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveParameter_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int parameter, NObjective.RuntimeObject to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveRecipeChanges( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveRoot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setButtonEMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject map );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFigure_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject figure );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setHighlightEMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject map );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setInlayEMap_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject map );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setStripeGradient_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject gradient );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void simplifyFloatString_to_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr @string, System.IntPtr to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void updateRoot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -7731,9 +7981,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector updateRoot = "updateRoot";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CINoiseReduction : IEquatable<CINoiseReduction> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CINoiseReduction;
 		public static implicit operator IntPtr( CINoiseReduction value ) {
 			return value.Handle;
@@ -7767,16 +8019,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIOpacity : IEquatable<CIOpacity> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpacity;
 		public static implicit operator IntPtr( CIOpacity value ) {
 			return value.Handle;
@@ -7810,16 +8064,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContext ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContext ) )]
 	public struct CIOpenGLContext : IEquatable<CIOpenGLContext> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpenGLContext;
 		public static implicit operator IntPtr( CIOpenGLContext value ) {
 			return value.Handle;
@@ -7877,15 +8133,15 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr contextWithCGLSContext_pixelFormat_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr context, System.IntPtr pixelFormat );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr contextWithCGLSContext_pixelFormat_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr context, System.IntPtr pixelFormat, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGLSContext_pixelFormat_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr context, System.IntPtr pixelFormat );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGLSContext_pixelFormat_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr context, System.IntPtr pixelFormat, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithOptions_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject options );
 		}
 		static internal class CachedSelectors {
@@ -7896,9 +8152,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector initWithOptions_ = "initWithOptions:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContextImpl ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContextImpl ) )]
 	public struct CIOpenGLContextImpl : IEquatable<CIOpenGLContextImpl> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpenGLContextImpl;
 		public static implicit operator IntPtr( CIOpenGLContextImpl value ) {
 			return value.Handle;
@@ -7948,13 +8206,13 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCGLSContext_pixelFormat_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr context, System.IntPtr pixelFormat, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithGLContext_pixelFormat_vtable_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr context, System.IntPtr pixelFormat, System.IntPtr vtable, NObjective.RuntimeObject options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void invalidate( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void updateContext( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -7964,9 +8222,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector updateContext = "updateContext";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIOpTile : IEquatable<CIOpTile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpTile;
 		public static implicit operator IntPtr( CIOpTile value ) {
 			return value.Handle;
@@ -8000,16 +8260,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIOverlayBlendMode : IEquatable<CIOverlayBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOverlayBlendMode;
 		public static implicit operator IntPtr( CIOverlayBlendMode value ) {
 			return value.Handle;
@@ -8043,16 +8305,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPageCurlTransition : IEquatable<CIPageCurlTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPageCurlTransition;
 		public static implicit operator IntPtr( CIPageCurlTransition value ) {
 			return value.Handle;
@@ -8086,16 +8350,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIParallelogramTile : IEquatable<CIParallelogramTile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIParallelogramTile;
 		public static implicit operator IntPtr( CIParallelogramTile value ) {
 			return value.Handle;
@@ -8129,16 +8395,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPerspectiveTile : IEquatable<CIPerspectiveTile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPerspectiveTile;
 		public static implicit operator IntPtr( CIPerspectiveTile value ) {
 			return value.Handle;
@@ -8172,16 +8440,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPerspectiveTransform : IEquatable<CIPerspectiveTransform> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPerspectiveTransform;
 		public static implicit operator IntPtr( CIPerspectiveTransform value ) {
 			return value.Handle;
@@ -8215,16 +8485,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPinchDistortion : IEquatable<CIPinchDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPinchDistortion;
 		public static implicit operator IntPtr( CIPinchDistortion value ) {
 			return value.Handle;
@@ -8258,16 +8530,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPinLightBlendMode : IEquatable<CIPinLightBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPinLightBlendMode;
 		public static implicit operator IntPtr( CIPinLightBlendMode value ) {
 			return value.Handle;
@@ -8301,16 +8575,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPixellate : IEquatable<CIPixellate> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPixellate;
 		public static implicit operator IntPtr( CIPixellate value ) {
 			return value.Handle;
@@ -8344,16 +8620,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPixelZoom : IEquatable<CIPixelZoom> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPixelZoom;
 		public static implicit operator IntPtr( CIPixelZoom value ) {
 			return value.Handle;
@@ -8387,16 +8665,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIPlugIn : IEquatable<CIPlugIn> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPlugIn;
 		public static implicit operator IntPtr( CIPlugIn value ) {
 			return value.Handle;
@@ -8451,15 +8731,15 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithURL_allowNonExecutable_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject url, char allowNonExecutable );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void loadAllPlugIns( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void loadNonExecutablePlugIns( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int loadPlugIn( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void loadPlugIn_allowNonExecutable_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSURL @in, bool allowNonExecutable );
 		}
 		static internal class CachedSelectors {
@@ -8470,9 +8750,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector loadPlugIn_allowNonExecutable_ = "loadPlugIn:allowNonExecutable:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPlugInStandardFilter : IEquatable<CIPlugInStandardFilter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPlugInStandardFilter;
 		public static implicit operator IntPtr( CIPlugInStandardFilter value ) {
 			return value.Handle;
@@ -8517,11 +8799,11 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithDescription_kernelFile_filterBundle_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject description, NObjective.RuntimeObject kernelFile, NObjective.RuntimeObject filterBundle );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void loadKernel( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -8530,9 +8812,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIPointillize : IEquatable<CIPointillize> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPointillize;
 		public static implicit operator IntPtr( CIPointillize value ) {
 			return value.Handle;
@@ -8566,16 +8850,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIImage ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIImage ) )]
 	public struct CIPromise : IEquatable<CIPromise> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPromise;
 		public static implicit operator IntPtr( CIPromise value ) {
 			return value.Handle;
@@ -8620,11 +8906,11 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithFilter_options__( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject filter, NObjective.RuntimeObject options, System.IntPtr unnamedParameter );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr promise_keysAndValues_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject promise, NObjective.RuntimeObject keysAndValues );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSelector_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.Selector selector );
 		}
 		static internal class CachedSelectors {
@@ -8633,9 +8919,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector setSelector_ = "setSelector:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIPromiseInvocation : IEquatable<CIPromiseInvocation> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPromiseInvocation;
 		public static implicit operator IntPtr( CIPromiseInvocation value ) {
 			return value.Handle;
@@ -8675,9 +8963,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr context( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr contextObjectForKey_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject key );
 		}
 		static internal class CachedSelectors {
@@ -8685,9 +8973,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector contextObjectForKey_ = "contextObjectForKey:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRadialGradient : IEquatable<CIRadialGradient> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRadialGradient;
 		public static implicit operator IntPtr( CIRadialGradient value ) {
 			return value.Handle;
@@ -8721,16 +9011,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRandomGenerator : IEquatable<CIRandomGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRandomGenerator;
 		public static implicit operator IntPtr( CIRandomGenerator value ) {
 			return value.Handle;
@@ -8764,16 +9056,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRAWGamutMapping : IEquatable<CIRAWGamutMapping> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWGamutMapping;
 		public static implicit operator IntPtr( CIRAWGamutMapping value ) {
 			return value.Handle;
@@ -8807,16 +9101,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRAWSharpen : IEquatable<CIRAWSharpen> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWSharpen;
 		public static implicit operator IntPtr( CIRAWSharpen value ) {
 			return value.Handle;
@@ -8850,16 +9146,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRAWTemperatureAdjust : IEquatable<CIRAWTemperatureAdjust> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWTemperatureAdjust;
 		public static implicit operator IntPtr( CIRAWTemperatureAdjust value ) {
 			return value.Handle;
@@ -8893,16 +9191,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContext ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContext ) )]
 	public struct CIRecordingContext : IEquatable<CIRecordingContext> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRecordingContext;
 		public static implicit operator IntPtr( CIRecordingContext value ) {
 			return value.Handle;
@@ -8936,16 +9236,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithOptions_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject options );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithOptions_ = "initWithOptions:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIContextImpl ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIContextImpl ) )]
 	public struct CIRecordingContextImpl : IEquatable<CIRecordingContextImpl> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRecordingContextImpl;
 		public static implicit operator IntPtr( CIRecordingContextImpl value ) {
 			return value.Handle;
@@ -8973,9 +9275,11 @@ namespace NObjective.Proxies {
 			return new CIRecordingContextImpl( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRectangleGenerator : IEquatable<CIRectangleGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRectangleGenerator;
 		public static implicit operator IntPtr( CIRectangleGenerator value ) {
 			return value.Handle;
@@ -9009,16 +9313,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRefractedMaterial : IEquatable<CIRefractedMaterial> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRefractedMaterial;
 		public static implicit operator IntPtr( CIRefractedMaterial value ) {
 			return value.Handle;
@@ -9052,16 +9358,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIRenderProviderDelegate : IEquatable<CIRenderProviderDelegate> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRenderProviderDelegate;
 		public static implicit operator IntPtr( CIRenderProviderDelegate value ) {
 			return value.Handle;
@@ -9095,7 +9403,7 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void provideImageData_bytesPerRow_origin__size__userInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr data, uint bytesPerRow, uint origin, uint unnamedParameter, uint size, uint unnamedParameter2, 
 			NObjective.RuntimeObject userInfo );
 		}
@@ -9103,9 +9411,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector provideImageData_bytesPerRow_origin__size__userInfo_ = "provideImageData:bytesPerRow:origin::size::userInfo:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRippleTransition : IEquatable<CIRippleTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRippleTransition;
 		public static implicit operator IntPtr( CIRippleTransition value ) {
 			return value.Handle;
@@ -9139,16 +9449,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIRotatingCubeTransition : IEquatable<CIRotatingCubeTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRotatingCubeTransition;
 		public static implicit operator IntPtr( CIRotatingCubeTransition value ) {
 			return value.Handle;
@@ -9182,16 +9494,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISampleAreaOperation : IEquatable<CISampleAreaOperation> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISampleAreaOperation;
 		public static implicit operator IntPtr( CISampleAreaOperation value ) {
 			return value.Handle;
@@ -9237,11 +9551,11 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr doPass_sums_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject pass, NObjective.RuntimeObject sums );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int samplesPerPass( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9250,9 +9564,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector samplesPerPass = "samplesPerPass";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CISampler : IEquatable<CISampler> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISampler;
 		public static implicit operator IntPtr( CISampler value ) {
 			return value.Handle;
@@ -9347,25 +9663,25 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr apply_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject apply );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern System.IntPtr colorSpace( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr definition( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_stret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_stret_eh2" )]
 			public static extern void extent( out CGRect ___structAddress, int ___structSize, RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithImage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithImage_options_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr opaqueShape( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr samplerWithImage_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr samplerWithImage_options_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, CIImage image, NSDictionary options );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr wrapMode( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedEncodings {
@@ -9386,9 +9702,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector wrapMode = "wrapMode";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISaturationBlendMode : IEquatable<CISaturationBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISaturationBlendMode;
 		public static implicit operator IntPtr( CISaturationBlendMode value ) {
 			return value.Handle;
@@ -9422,16 +9740,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIScreenBlendMode : IEquatable<CIScreenBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIScreenBlendMode;
 		public static implicit operator IntPtr( CIScreenBlendMode value ) {
 			return value.Handle;
@@ -9465,16 +9785,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISepiaTone : IEquatable<CISepiaTone> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISepiaTone;
 		public static implicit operator IntPtr( CISepiaTone value ) {
 			return value.Handle;
@@ -9508,16 +9830,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIShadedMaterial : IEquatable<CIShadedMaterial> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIShadedMaterial;
 		public static implicit operator IntPtr( CIShadedMaterial value ) {
 			return value.Handle;
@@ -9551,16 +9875,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIShapedWaterRipple : IEquatable<CIShapedWaterRipple> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIShapedWaterRipple;
 		public static implicit operator IntPtr( CIShapedWaterRipple value ) {
 			return value.Handle;
@@ -9600,9 +9926,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr wavePattern( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -9610,9 +9936,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector wavePattern = "wavePattern";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISharpenLuminance : IEquatable<CISharpenLuminance> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISharpenLuminance;
 		public static implicit operator IntPtr( CISharpenLuminance value ) {
 			return value.Handle;
@@ -9646,16 +9974,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISilhouetteAlphaBlendMode : IEquatable<CISilhouetteAlphaBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISilhouetteAlphaBlendMode;
 		public static implicit operator IntPtr( CISilhouetteAlphaBlendMode value ) {
 			return value.Handle;
@@ -9689,16 +10019,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISilhouetteLumaBlendMode : IEquatable<CISilhouetteLumaBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISilhouetteLumaBlendMode;
 		public static implicit operator IntPtr( CISilhouetteLumaBlendMode value ) {
 			return value.Handle;
@@ -9732,16 +10064,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISoftLightBlendMode : IEquatable<CISoftLightBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISoftLightBlendMode;
 		public static implicit operator IntPtr( CISoftLightBlendMode value ) {
 			return value.Handle;
@@ -9775,16 +10109,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISourceAtopCompositing : IEquatable<CISourceAtopCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceAtopCompositing;
 		public static implicit operator IntPtr( CISourceAtopCompositing value ) {
 			return value.Handle;
@@ -9818,16 +10154,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISourceInCompositing : IEquatable<CISourceInCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceInCompositing;
 		public static implicit operator IntPtr( CISourceInCompositing value ) {
 			return value.Handle;
@@ -9861,16 +10199,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISourceOutCompositing : IEquatable<CISourceOutCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceOutCompositing;
 		public static implicit operator IntPtr( CISourceOutCompositing value ) {
 			return value.Handle;
@@ -9904,16 +10244,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISourceOverCompositing : IEquatable<CISourceOverCompositing> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceOverCompositing;
 		public static implicit operator IntPtr( CISourceOverCompositing value ) {
 			return value.Handle;
@@ -9947,16 +10289,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISpotLight : IEquatable<CISpotLight> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISpotLight;
 		public static implicit operator IntPtr( CISpotLight value ) {
 			return value.Handle;
@@ -9990,16 +10334,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIStarShineGenerator : IEquatable<CIStarShineGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStarShineGenerator;
 		public static implicit operator IntPtr( CIStarShineGenerator value ) {
 			return value.Handle;
@@ -10033,16 +10379,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIStencilAlphaBlendMode : IEquatable<CIStencilAlphaBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStencilAlphaBlendMode;
 		public static implicit operator IntPtr( CIStencilAlphaBlendMode value ) {
 			return value.Handle;
@@ -10076,16 +10424,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIStencilLumaBlendMode : IEquatable<CIStencilLumaBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStencilLumaBlendMode;
 		public static implicit operator IntPtr( CIStencilLumaBlendMode value ) {
 			return value.Handle;
@@ -10119,16 +10469,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIStripesGenerator : IEquatable<CIStripesGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStripesGenerator;
 		public static implicit operator IntPtr( CIStripesGenerator value ) {
 			return value.Handle;
@@ -10162,16 +10514,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISubtractBlendMode : IEquatable<CISubtractBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISubtractBlendMode;
 		public static implicit operator IntPtr( CISubtractBlendMode value ) {
 			return value.Handle;
@@ -10205,16 +10559,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISumOf8Conics : IEquatable<CISumOf8Conics> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISumOf8Conics;
 		public static implicit operator IntPtr( CISumOf8Conics value ) {
 			return value.Handle;
@@ -10248,16 +10604,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISunbeamsGenerator : IEquatable<CISunbeamsGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISunbeamsGenerator;
 		public static implicit operator IntPtr( CISunbeamsGenerator value ) {
 			return value.Handle;
@@ -10291,16 +10649,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CISwipeTransition : IEquatable<CISwipeTransition> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISwipeTransition;
 		public static implicit operator IntPtr( CISwipeTransition value ) {
 			return value.Handle;
@@ -10334,16 +10694,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CITagWithColorSpace : IEquatable<CITagWithColorSpace> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITagWithColorSpace;
 		public static implicit operator IntPtr( CITagWithColorSpace value ) {
 			return value.Handle;
@@ -10377,16 +10739,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CITorusLensDistortion : IEquatable<CITorusLensDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITorusLensDistortion;
 		public static implicit operator IntPtr( CITorusLensDistortion value ) {
 			return value.Handle;
@@ -10420,16 +10784,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CITriangleTile : IEquatable<CITriangleTile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITriangleTile;
 		public static implicit operator IntPtr( CITriangleTile value ) {
 			return value.Handle;
@@ -10463,16 +10829,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CITwirlDistortion : IEquatable<CITwirlDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITwirlDistortion;
 		public static implicit operator IntPtr( CITwirlDistortion value ) {
 			return value.Handle;
@@ -10506,16 +10874,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIUIBundle : IEquatable<CIUIBundle> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUIBundle;
 		public static implicit operator IntPtr( CIUIBundle value ) {
 			return value.Handle;
@@ -10821,105 +11191,105 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr arrayOrNumberFromResolutions_andValues_withCount_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr resolutions, System.IntPtr andValues, int withCount );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool atRoot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool boolParameterValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr bundle( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr bundlePath( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr buttonEMapResultForResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int resolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr buttonResultForPPI_centerX_Y_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float ppi, float centerX, float Y );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr buttonResultForResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int resolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void computeLinearA_andB_fromX0_y0_x1_y1_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr a, System.IntPtr andB, float fromX0, float y0, float x1, float y1
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void copyResolution_into_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int resolution, int @into );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr dataForPPI_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float ppi );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr dropFirstComponent_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject component );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr dropLastComponent_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject component );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float evaluateFromResolutionArray_valueArray_arrayCount_atResolution_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr array, System.IntPtr valueArray, int arrayCount, float atResolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr firstComponent_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject component );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float floatParameterValue_forResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value, int forResolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr highlightEMapResultForResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int resolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr imageWithPathInner_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject inner );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void initialize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr initialize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr inlayEMapResultForResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int resolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int intParameterValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isLinearX0_y0_x1_y1_x2_y2_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x0, float y0, float x1, float y1, float x2, float y2
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr keyForParameter_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int parameter );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr lastComponent_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject component );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void loadRecipeOverrides_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject overrides );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void openCategoryFile_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void openRoot( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr path( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr properties( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void pushSubnode_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject subnode );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void recalcFigureForResolution_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int resolution );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void restoreParameter_from_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int parameter, NObjective.RuntimeObject @from );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void restoreResolutions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool rootIsNil( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool rootIsOpen( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void saveResolutions( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setBoolParameterValue_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value, bool to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setBundlePath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFloatParameterValue_forResolution_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value, int forResolution, float to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setFloatParameterValue_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value, float to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setIntParameterValue_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value, int to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool setPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setPhase_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float phase );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int setStringParameterValue_to_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value, NObjective.RuntimeObject to );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stringParameterValue_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int value );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr subnodesDictionaryForPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int typeForParameter_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int parameter );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void values_forResolutions_withCount_fromArrayOrNumber_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr values, System.IntPtr forResolutions, int withCount, NObjective.RuntimeObject fromArrayOrNumber );
 		}
 		static internal class CachedSelectors {
@@ -10974,9 +11344,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector values_forResolutions_withCount_fromArrayOrNumber_ = "values:forResolutions:withCount:fromArrayOrNumber:";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIUnsharpMask : IEquatable<CIUnsharpMask> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUnsharpMask;
 		public static implicit operator IntPtr( CIUnsharpMask value ) {
 			return value.Handle;
@@ -11010,16 +11382,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct CIVector : IEquatable<CIVector> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVector;
 		public static implicit operator IntPtr( CIVector value ) {
 			return value.Handle;
@@ -11088,7 +11462,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.count( Handle, CachedSelectors.count, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public void encodeWithCoder_( NSCoder coder ) {
 			RuntimeObject ___occuredException;
@@ -11174,47 +11548,47 @@ namespace NObjective.Proxies {
 			return ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint count( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void encodeWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSCoder coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithCoder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject coder );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithValues_count_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr values, uint count );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithX_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithX_Y_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float Y );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithX_Y_Z_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float Y, float Z );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithX_Y_Z_W_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float Y, float Z, float W );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr stringRepresentation( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float valueAtIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint index );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr vectorWithString_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr vectorWithValues_count_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr values, uint count );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr vectorWithX_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr vectorWithX_Y_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float Y );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr vectorWithX_Y_Z_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float Y, float Z );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr vectorWithX_Y_Z_W_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, float x, float Y, float Z, float W );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float W( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float X( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float Y( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_fpret_eh2" )]
 			public static extern float Z( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -11241,9 +11615,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector Z = "Z";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIVideoNoiseFilter : IEquatable<CIVideoNoiseFilter> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVideoNoiseFilter;
 		public static implicit operator IntPtr( CIVideoNoiseFilter value ) {
 			return value.Handle;
@@ -11277,16 +11653,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIVividLightBlendMode : IEquatable<CIVividLightBlendMode> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVividLightBlendMode;
 		public static implicit operator IntPtr( CIVividLightBlendMode value ) {
 			return value.Handle;
@@ -11320,16 +11698,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIVortexDistortion : IEquatable<CIVortexDistortion> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVortexDistortion;
 		public static implicit operator IntPtr( CIVortexDistortion value ) {
 			return value.Handle;
@@ -11363,16 +11743,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIWhitePoint : IEquatable<CIWhitePoint> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIWhitePoint;
 		public static implicit operator IntPtr( CIWhitePoint value ) {
 			return value.Handle;
@@ -11406,16 +11788,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIWhitePointAdjust : IEquatable<CIWhitePointAdjust> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIWhitePointAdjust;
 		public static implicit operator IntPtr( CIWhitePointAdjust value ) {
 			return value.Handle;
@@ -11449,16 +11833,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIYCbCrSubsampledReconstruction : IEquatable<CIYCbCrSubsampledReconstruction> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIYCbCrSubsampledReconstruction;
 		public static implicit operator IntPtr( CIYCbCrSubsampledReconstruction value ) {
 			return value.Handle;
@@ -11492,16 +11878,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
-	[ProxyBaseClass(typeof( CIFilter ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( CIFilter ) )]
 	public struct CIZoomBlur : IEquatable<CIZoomBlur> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIZoomBlur;
 		public static implicit operator IntPtr( CIZoomBlur value ) {
 			return value.Handle;
@@ -11541,9 +11929,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blur_pass_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject blur, int pass );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr outputImage( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -11551,9 +11939,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector outputImage = "outputImage";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class QuartzCoreExtensionsOfNSObject {
 		private static int ___lazyLoad = QuartzCoreCachedClasses.___lazyLoad;
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class QuartzCoreExtensionsOfNSArray {
 		private static int ___lazyLoad = QuartzCoreCachedClasses.___lazyLoad;
 	}

@@ -7,9 +7,11 @@
 namespace NObjective.Proxies {
 	using System;
 	using System.Runtime.InteropServices;
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRAudioGenerator : IEquatable<DRAudioGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRAudioGenerator;
 		public static implicit operator IntPtr( DRAudioGenerator value ) {
 			return value.Handle;
@@ -52,14 +54,14 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.produceIntoBuffer_length_blockSize_( Handle, CachedSelectors.produceIntoBuffer_length_blockSize_, out ___occuredException, sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( uint ), buffer, length, blockSize );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char completed( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithGeneratorInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceIntoBuffer_length_blockSize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr buffer, uint length, uint blockSize );
 		}
 		static internal class CachedSelectors {
@@ -68,9 +70,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector produceIntoBuffer_length_blockSize_ = "produceIntoBuffer:length:blockSize:";
 		}
 	}
-	[ProxyBaseClass(typeof( DRTrack ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( DRTrack ) )]
 	public struct DRAudioTrack : IEquatable<DRAudioTrack> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRAudioTrack;
 		public static implicit operator IntPtr( DRAudioTrack value ) {
 			return value.Handle;
@@ -104,16 +108,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithPath_ = "initWithPath:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRBINFileProducer : IEquatable<DRBINFileProducer> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRBINFileProducer;
 		public static implicit operator IntPtr( DRBINFileProducer value ) {
 			return value.Handle;
@@ -162,35 +168,35 @@ namespace NObjective.Proxies {
 			var ___result = NativeMethods.produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( Handle, CachedSelectors.produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( ulong ) + sizeof( uint ) + sizeof( System.IntPtr ), track, intoBuffer, length, atAddress, blockSize, ioFlags
 			 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint produceDataIntoBuffer_length_blockSize_( System.IntPtr buffer, uint length, uint blockSize ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.produceDataIntoBuffer_length_blockSize_( Handle, CachedSelectors.produceDataIntoBuffer_length_blockSize_, out ___occuredException, sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( uint ), buffer, length, blockSize );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( Handle, CachedSelectors.producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( ulong ) + sizeof( uint ) + sizeof( System.IntPtr ), track, intoBuffer, length, atAddress, blockSize, ioFlags
 			 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void cleanupTrackAfterBurn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject burn );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char prepareTrack_forBurn_toMedia_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, NObjective.RuntimeObject forBurn, NObjective.RuntimeObject toMedia );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceDataIntoBuffer_length_blockSize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr buffer, uint length, uint blockSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr producer( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -202,9 +208,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector producer = "producer";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRCueFileParser : IEquatable<DRCueFileParser> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRCueFileParser;
 		public static implicit operator IntPtr( DRCueFileParser value ) {
 			return value.Handle;
@@ -307,31 +315,31 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr burnProperties( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr cdText( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr decodeDatatype_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject datatype );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr extractString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fullPathForAuxFile_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char parse( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void parseFlags_trackInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject flags, NObjective.RuntimeObject trackInfo );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void parseIndexData_trackInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data, NObjective.RuntimeObject trackInfo );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void parsePropertiesData_trackInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject data, NObjective.RuntimeObject trackInfo );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern int parseSourceFile_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr trackInfoForIndex_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, int index );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr trackLayout( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -350,9 +358,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector trackLayout = "trackLayout";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRDataGenerator : IEquatable<DRDataGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRDataGenerator;
 		public static implicit operator IntPtr( DRDataGenerator value ) {
 			return value.Handle;
@@ -395,14 +405,14 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.produceIntoBuffer_length_blockSize_( Handle, CachedSelectors.produceIntoBuffer_length_blockSize_, out ___occuredException, sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( uint ), buffer, length, blockSize );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char completed( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithGeneratorInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceIntoBuffer_length_blockSize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr buffer, uint length, uint blockSize );
 		}
 		static internal class CachedSelectors {
@@ -411,9 +421,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector produceIntoBuffer_length_blockSize_ = "produceIntoBuffer:length:blockSize:";
 		}
 	}
-	[ProxyBaseClass(typeof( DRFSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( DRFSObject ) )]
 	public struct DRFile : IEquatable<DRFile> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRFile;
 		public static implicit operator IntPtr( DRFile value ) {
 			return value.Handle;
@@ -529,27 +541,27 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fileWithPath_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr finderAliasPointingTo_inFilesystem_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRFSObject to, IntPtr inFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr hardLinkPointingTo_inFilesystem_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRFile to, IntPtr inFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithLinkType_pointingTo_inFilesystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr type, DRFSObject pointingTo, IntPtr inFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithName_bytes_length_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject name, System.IntPtr bytes, uint length );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithName_data_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NSData data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithName_dataProducer_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NObjective.RuntimeObject dataProducer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr symLinkPointingTo_inFilesystem_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRFSObject to, IntPtr inFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr virtualFileWithName_data_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NSData data );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr virtualFileWithName_dataProducer_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, NObjective.RuntimeObject dataProducer );
 		}
 		static internal class CachedSelectors {
@@ -566,9 +578,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector virtualFileWithName_dataProducer_ = "virtualFileWithName:dataProducer:";
 		}
 	}
-	[ProxyBaseClass(typeof( DRTrack ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( DRTrack ) )]
 	public struct DRFilesystemTrack : IEquatable<DRFilesystemTrack> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRFilesystemTrack;
 		public static implicit operator IntPtr( DRFilesystemTrack value ) {
 			return value.Handle;
@@ -602,16 +616,18 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithRootFolder_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject folder );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector initWithRootFolder_ = "initWithRootFolder:";
 		}
 	}
-	[ProxyBaseClass(typeof( DRFSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( DRFSObject ) )]
 	public struct DRFolder : IEquatable<DRFolder> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRFolder;
 		public static implicit operator IntPtr( DRFolder value ) {
 			return value.Handle;
@@ -669,7 +685,7 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.count( Handle, CachedSelectors.count, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public NObjective.RuntimeObject initWithName_( string name ) {
 			RuntimeObject ___occuredException;
@@ -698,23 +714,23 @@ namespace NObjective.Proxies {
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void addChild_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRFSObject child );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr children( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint count( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr folderWithPath_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void makeVirtual( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void removeChild_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRFSObject child );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr virtualFolderWithName_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
 		}
 		static internal class CachedSelectors {
@@ -729,9 +745,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector virtualFolderWithName_ = "virtualFolderWithName:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRFSObject : IEquatable<DRFSObject> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRFSObject;
 		public static implicit operator IntPtr( DRFSObject value ) {
 			return value.Handle;
@@ -768,13 +786,13 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.effectiveFilesystemMask( Handle, CachedSelectors.effectiveFilesystemMask, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint explicitFilesystemMask() {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.explicitFilesystemMask( Handle, CachedSelectors.explicitFilesystemMask, out ___occuredException, 0 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public bool isVirtual() {
 			RuntimeObject ___occuredException;
@@ -889,43 +907,43 @@ namespace NObjective.Proxies {
 			return new NSDictionary( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr baseName( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint effectiveFilesystemMask( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint explicitFilesystemMask( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern bool isVirtual( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mangledNameForFilesystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr filesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mangledNameForFileSystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject system );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr mangledNames( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr parent( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertiesForFilesystem_mergeWithOtherFilesystems_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr filesystem, bool mergeWithOtherFilesystems );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr propertyForKey_inFilesystem_mergeWithOtherFilesystems_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr key, IntPtr inFilesystem, bool mergeWithOtherFilesystems );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setBaseName_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setExplicitFilesystemMask_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, uint mask );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setProperties_inFilesystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDictionary properties, IntPtr inFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setProperty_forKey_inFilesystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject property, IntPtr forKey, IntPtr inFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSpecificName_forFilesystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr name, IntPtr forFilesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setSpecificNames_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NSDictionary names );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr sourcePath( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr specificNameForFilesystem_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr filesystem );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr specificNames( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -950,9 +968,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector specificNames = "specificNames";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRPartialFileAudioProducer : IEquatable<DRPartialFileAudioProducer> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRPartialFileAudioProducer;
 		public static implicit operator IntPtr( DRPartialFileAudioProducer value ) {
 			return value.Handle;
@@ -1007,37 +1027,37 @@ namespace NObjective.Proxies {
 			var ___result = NativeMethods.produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( Handle, CachedSelectors.produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( ulong ) + sizeof( uint ) + sizeof( System.IntPtr ), track, intoBuffer, length, atAddress, blockSize, ioFlags
 			 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint produceDataIntoBuffer_length_blockSize_( System.IntPtr buffer, uint length, uint blockSize ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.produceDataIntoBuffer_length_blockSize_( Handle, CachedSelectors.produceDataIntoBuffer_length_blockSize_, out ___occuredException, sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( uint ), buffer, length, blockSize );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( Handle, CachedSelectors.producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( ulong ) + sizeof( uint ) + sizeof( System.IntPtr ), track, intoBuffer, length, atAddress, blockSize, ioFlags
 			 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr blockLengthOfFile_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void cleanupTrackAfterBurn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject burn );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char prepareTrack_forBurn_toMedia_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, NObjective.RuntimeObject forBurn, NObjective.RuntimeObject toMedia );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceDataIntoBuffer_length_blockSize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr buffer, uint length, uint blockSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr producer( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1050,9 +1070,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector producer = "producer";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRSilenceGenerator : IEquatable<DRSilenceGenerator> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRSilenceGenerator;
 		public static implicit operator IntPtr( DRSilenceGenerator value ) {
 			return value.Handle;
@@ -1095,14 +1117,14 @@ namespace NObjective.Proxies {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.produceIntoBuffer_length_blockSize_( Handle, CachedSelectors.produceIntoBuffer_length_blockSize_, out ___occuredException, sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( uint ), buffer, length, blockSize );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char completed( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithGeneratorInfo_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject info );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceIntoBuffer_length_blockSize_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, System.IntPtr buffer, uint length, uint blockSize );
 		}
 		static internal class CachedSelectors {
@@ -1111,9 +1133,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector produceIntoBuffer_length_blockSize_ = "produceIntoBuffer:length:blockSize:";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRTOCFileParser : IEquatable<DRTOCFileParser> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRTOCFileParser;
 		public static implicit operator IntPtr( DRTOCFileParser value ) {
 			return value.Handle;
@@ -1211,29 +1235,29 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr burnProperties( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr cdText( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr extractOptionalString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr extractRequiredString_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr fullPathForAuxFile_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr initWithPath_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject path );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char parse( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void parseCDText_forDisc_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject text, char forDisc );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr parseTrack_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr parseTrackModes_isAudioTrack_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject modes, System.IntPtr isAudioTrack );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void setCDTextString_forKey_ofTrack_inLanguage_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string, NObjective.RuntimeObject forKey, int ofTrack, int inLanguage );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr trackLayout( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1251,9 +1275,11 @@ namespace NObjective.Proxies {
 			public static readonly Selector trackLayout = "trackLayout";
 		}
 	}
-	[ProxyBaseClass(typeof( NSObject ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( NSObject ) )]
 	public struct DRTOCProducer : IEquatable<DRTOCProducer> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingContentCachedClasses.DRTOCProducer;
 		public static implicit operator IntPtr( DRTOCProducer value ) {
 			return value.Handle;
@@ -1302,27 +1328,27 @@ namespace NObjective.Proxies {
 			var ___result = NativeMethods.produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( Handle, CachedSelectors.produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( ulong ) + sizeof( uint ) + sizeof( System.IntPtr ), track, intoBuffer, length, atAddress, blockSize, ioFlags
 			 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		unsafe public uint producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags ) {
 			RuntimeObject ___occuredException;
 			var ___result = NativeMethods.producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( Handle, CachedSelectors.producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_, out ___occuredException, sizeof( NObjective.RuntimeObject ) + sizeof( System.IntPtr ) + sizeof( uint ) + sizeof( ulong ) + sizeof( uint ) + sizeof( System.IntPtr ), track, intoBuffer, length, atAddress, blockSize, ioFlags
 			 );
 			if( ___occuredException != RuntimeObject.Null ) throw RuntimeException.Create( ___occuredException ); 
-			return ( uint )___result;
+			return ( uint ) ___result;
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern void cleanupTrackAfterBurn_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject burn );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern char prepareTrack_forBurn_toMedia_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, NObjective.RuntimeObject forBurn, NObjective.RuntimeObject toMedia );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint produceDataForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern uint producePreGapForTrack_intoBuffer_length_atAddress_blockSize_ioFlags_( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject track, System.IntPtr intoBuffer, uint length, ulong atAddress, uint blockSize, System.IntPtr ioFlags
 			 );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr producer( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1333,6 +1359,7 @@ namespace NObjective.Proxies {
 			public static readonly Selector producer = "producer";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class DiscRecordingContentExtensionsOfNSCharacterSet {
 		private static int ___lazyLoad = DiscRecordingContentCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject countryCodeEndingSet() {
@@ -1348,9 +1375,9 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr countryCodeEndingSet( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr eolSet( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {
@@ -1358,6 +1385,7 @@ namespace NObjective.Proxies {
 			public static readonly Selector eolSet = "eolSet";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class DiscRecordingContentExtensionsOfDRBurn {
 		private static int ___lazyLoad = DiscRecordingContentCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject layoutForImageFile_( string file ) {
@@ -1369,13 +1397,14 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr layoutForImageFile_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr file );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector layoutForImageFile_ = "layoutForImageFile:";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class DiscRecordingContentExtensionsOfDRTrack {
 		private static int ___lazyLoad = DiscRecordingContentCachedClasses.___lazyLoad;
 		unsafe public static DRTrack trackForAudioFile_( string file ) {
@@ -1399,11 +1428,11 @@ namespace NObjective.Proxies {
 			return new DRTrack( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr trackForAudioFile_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, IntPtr file );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr trackForAudioOfLength_producer_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRMSF length, NObjective.RuntimeObject producer );
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr trackForRootFolder_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, DRFolder folder );
 		}
 		static internal class CachedSelectors {
@@ -1412,6 +1441,7 @@ namespace NObjective.Proxies {
 			public static readonly Selector trackForRootFolder_ = "trackForRootFolder:";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class DiscRecordingContentExtensionsOfDRMSF {
 		private static int ___lazyLoad = DiscRecordingContentCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject msfFromString_couldBeByteLength_( NObjective.RuntimeObject @string, char couldBeByteLength ) {
@@ -1421,13 +1451,14 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr msfFromString_couldBeByteLength_( RuntimeClass ___class, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize, NObjective.RuntimeObject @string, char couldBeByteLength );
 		}
 		static internal class CachedSelectors {
 			public static readonly Selector msfFromString_couldBeByteLength_ = "msfFromString:couldBeByteLength:";
 		}
 	}
+	[StructLayoutAttribute( LayoutKind.Explicit )]
 	public static class DiscRecordingContentExtensionsOfNSMutableDictionary {
 		private static int ___lazyLoad = DiscRecordingContentCachedClasses.___lazyLoad;
 		unsafe public static NObjective.RuntimeObject cueFileCDTextItems( this NSMutableDictionary ___this ) {
@@ -1437,7 +1468,7 @@ namespace NObjective.Proxies {
 			return new NObjective.RuntimeObject( ___result );
 		}
 		private static class NativeMethods {
-			[DllImport(Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2")]
+			[DllImport( Runtime.InteropLibrary, EntryPoint = "objc_msgSend_eh2" )]
 			public static extern IntPtr cueFileCDTextItems( RuntimeObject ___object, Selector ___selector, out RuntimeObject ___occuredException, int ___stackSize );
 		}
 		static internal class CachedSelectors {

@@ -271,6 +271,8 @@ namespace NObjective.ProxyGenerator
 				lazyLibraryLoad.Fields[0].Initializer = new MemberReferenceExpression( new IdentifierExpression( cachedClassesType.Name ), "___lazyLoad" );
 			}
 
+			result.Attributes = new List<AttributeSection> { new AttributeSection() { Attributes = new List<ICSharpCode.NRefactory.Ast.Attribute> { new ICSharpCode.NRefactory.Ast.Attribute( typeof( StructLayoutAttribute ).Name, new List<Expression> { new IdentifierExpression( "LayoutKind.Explicit" ) }, null ) } } };
+
 			_generatedProxiesCount++;
 
 			// non-vararg methods implemented through P/Invoke
@@ -298,7 +300,9 @@ namespace NObjective.ProxyGenerator
 				result.BaseTypes.Add( new TypeReference( "IEquatable", new List<TypeReference> { new TypeReference( runtimeClassInfo.Identifier ) } ) );
 
 				// internal handle for Objective-C object.
-				result.AddField( typeof( RuntimeObject ).FullName, "Handle" ).Modifier = Modifiers.Internal;
+				var handleField = result.AddField( typeof( RuntimeObject ).FullName, "Handle" );
+				handleField.Modifier = Modifiers.Private;
+				handleField.Attributes = new List<AttributeSection> { new AttributeSection { Attributes = new List<ICSharpCode.NRefactory.Ast.Attribute> { new ICSharpCode.NRefactory.Ast.Attribute( typeof( FieldOffsetAttribute ).Name, new List<Expression> { new PrimitiveExpression( 0, "0" ) }, null ) } } };
 
 				// internal handle for Objective-C class object.
 				var classHandleField = result.AddField( typeof( RuntimeClass ).Name, "ClassHandle" );
