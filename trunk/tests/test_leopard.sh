@@ -9,12 +9,11 @@ cd `dirname "$0"`
 killall mono
 
 cd ..
-/Library/Frameworks/Mono.framework/Versions/2.2/bin/nant -D:Configuration=debug tests_leopard
+/Library/Frameworks/Mono.framework/Versions/Current/bin/nant -D:Configuration=debug tests_leopard
 if [ "$?" -ne "0" ]; then exit 1; fi;
 
 #nunit_image=`which nunit-console2`
-#nunit_image=/Library/Frameworks/Mono.framework/Versions/2.0.1/bin/nunit-console2
-nunit_image=/Library/Frameworks/Mono.framework/Versions/2.2/bin/nunit-console2
+nunit_image=/Library/Frameworks/Mono.framework/Versions/Current/bin/nunit-console2
 
 
 cd bin

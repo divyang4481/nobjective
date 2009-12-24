@@ -6,8 +6,7 @@
 
 using System;
 namespace NObjective.Proxies {
-	public enum ABPropertyType
-	{
+	public enum ABPropertyType {
 		kABArrayProperty = 5,
 		kABDataProperty = 7,
 		kABDateProperty = 4,
@@ -24,8 +23,7 @@ namespace NObjective.Proxies {
 		kABRealProperty = 3,
 		kABStringProperty = 1
 	}
-	public enum ABSearchComparison
-	{
+	public enum ABSearchComparison {
 		kABBitsInBitFieldMatch = 11,
 		kABContainsSubString = 7,
 		kABContainsSubStringCaseInsensitive = 8,
@@ -52,51 +50,43 @@ namespace NObjective.Proxies {
 		kABWithinIntervalFromToday = 21,
 		kABWithinIntervalFromTodayYearless = 22
 	}
-	public enum ABSearchConjunction
-	{
+	public enum ABSearchConjunction {
 		kABSearchAnd = 0,
 		kABSearchOr = 1
 	}
-	public enum NSAlertStyle
-	{
+	public enum NSAlertStyle {
 		NSCriticalAlertStyle = 2,
 		NSInformationalAlertStyle = 1,
 		NSWarningAlertStyle = 0
 	}
-	public enum NSAnimationBlockingMode
-	{
+	public enum NSAnimationBlockingMode {
 		NSAnimationBlocking = 0,
 		NSAnimationNonblocking = 1,
 		NSAnimationNonblockingThreaded = 2
 	}
-	public enum NSAnimationCurve
-	{
+	public enum NSAnimationCurve {
 		NSAnimationEaseIn = 1,
 		NSAnimationEaseInOut = 0,
 		NSAnimationEaseOut = 2,
 		NSAnimationLinear = 3
 	}
-	public enum NSApplicationDelegateReply
-	{
+	public enum NSApplicationDelegateReply {
 		NSApplicationDelegateReplyCancel = 1,
 		NSApplicationDelegateReplyFailure = 2,
 		NSApplicationDelegateReplySuccess = 0
 	}
-	public enum NSApplicationPrintReply
-	{
+	public enum NSApplicationPrintReply {
 		NSPrintingCancelled = 0,
 		NSPrintingFailure = 3,
 		NSPrintingReplyLater = 2,
 		NSPrintingSuccess = 1
 	}
-	public enum NSApplicationTerminateReply
-	{
+	public enum NSApplicationTerminateReply {
 		NSTerminateCancel = 0,
 		NSTerminateLater = 2,
 		NSTerminateNow = 1
 	}
-	public enum NSAttributeType
-	{
+	public enum NSAttributeType {
 		NSBinaryDataAttributeType = 1000,
 		NSBooleanAttributeType = 800,
 		NSDateAttributeType = 900,
@@ -109,14 +99,12 @@ namespace NObjective.Proxies {
 		NSStringAttributeType = 700,
 		NSUndefinedAttributeType = 0
 	}
-	public enum NSBackingStoreType
-	{
+	public enum NSBackingStoreType {
 		NSBackingStoreBuffered = 2,
 		NSBackingStoreNonretained = 1,
 		NSBackingStoreRetained = 0
 	}
-	public enum NSBezelStyle
-	{
+	public enum NSBezelStyle {
 		NSCircularBezelStyle = 7,
 		NSDisclosureBezelStyle = 5,
 		NSHelpButtonBezelStyle = 9,
@@ -133,21 +121,18 @@ namespace NObjective.Proxies {
 		NSThickerSquareBezelStyle = 4,
 		NSThickSquareBezelStyle = 3
 	}
-	public enum NSBezierPathElement
-	{
+	public enum NSBezierPathElement {
 		NSClosePathBezierPathElement = 3,
 		NSCurveToBezierPathElement = 2,
 		NSLineToBezierPathElement = 1,
 		NSMoveToBezierPathElement = 0
 	}
-	public enum NSBitmapFormat
-	{
+	public enum NSBitmapFormat {
 		NSAlphaFirstBitmapFormat = 1,
 		NSAlphaNonpremultipliedBitmapFormat = 2,
 		NSFloatingPointSamplesBitmapFormat = 4
 	}
-	public enum NSBitmapImageFileType
-	{
+	public enum NSBitmapImageFileType {
 		NSBMPFileType = 1,
 		NSGIFFileType = 2,
 		NSJPEG2000FileType = 5,
@@ -155,28 +140,24 @@ namespace NObjective.Proxies {
 		NSPNGFileType = 4,
 		NSTIFFFileType = 0
 	}
-	public enum NSBorderType
-	{
+	public enum NSBorderType {
 		NSBezelBorder = 2,
 		NSGrooveBorder = 3,
 		NSLineBorder = 1,
 		NSNoBorder = 0
 	}
-	public enum NSBoxType
-	{
+	public enum NSBoxType {
 		NSBoxOldStyle = 3,
 		NSBoxPrimary = 0,
 		NSBoxSecondary = 1,
 		NSBoxSeparator = 2
 	}
-	public enum NSBrowserColumnResizingType
-	{
+	public enum NSBrowserColumnResizingType {
 		NSBrowserAutoColumnResizing = 1,
 		NSBrowserNoColumnResizing = 0,
 		NSBrowserUserColumnResizing = 2
 	}
-	public enum NSButtonType
-	{
+	public enum NSButtonType {
 		NSMomentaryChangeButton = 5,
 		NSMomentaryLight = 7,
 		NSMomentaryLightButton = 0,
@@ -188,16 +169,14 @@ namespace NObjective.Proxies {
 		NSSwitchButton = 3,
 		NSToggleButton = 2
 	}
-	public enum NSCalculationError
-	{
+	public enum NSCalculationError {
 		NSCalculationDivideByZero = 4,
 		NSCalculationLossOfPrecision = 1,
 		NSCalculationNoError = 0,
 		NSCalculationOverflow = 3,
 		NSCalculationUnderflow = 2
 	}
-	public enum NSCalendarUnit
-	{
+	public enum NSCalendarUnit {
 		NSDayCalendarUnit = 16,
 		NSEraCalendarUnit = 2,
 		NSHourCalendarUnit = 32,
@@ -209,8 +188,7 @@ namespace NObjective.Proxies {
 		NSWeekdayOrdinalCalendarUnit = 1024,
 		NSYearCalendarUnit = 4
 	}
-	public enum NSCellAttribute
-	{
+	public enum NSCellAttribute {
 		NSCellAllowsMixedState = 16,
 		NSCellChangesContents = 14,
 		NSCellDisabled = 0,
@@ -229,8 +207,7 @@ namespace NObjective.Proxies {
 		NSChangeGrayCell = 4,
 		NSPushInCell = 2
 	}
-	public enum NSCellImagePosition
-	{
+	public enum NSCellImagePosition {
 		NSImageAbove = 5,
 		NSImageBelow = 4,
 		NSImageLeft = 2,
@@ -239,14 +216,12 @@ namespace NObjective.Proxies {
 		NSImageRight = 3,
 		NSNoImage = 0
 	}
-	public enum NSCellType
-	{
+	public enum NSCellType {
 		NSImageCellType = 2,
 		NSNullCellType = 0,
 		NSTextCellType = 1
 	}
-	public enum NSCharacterCollection
-	{
+	public enum NSCharacterCollection {
 		NSAdobeCNS1CharacterCollection = 1,
 		NSAdobeGB1CharacterCollection = 2,
 		NSAdobeJapan1CharacterCollection = 3,
@@ -254,8 +229,7 @@ namespace NObjective.Proxies {
 		NSAdobeKorea1CharacterCollection = 5,
 		NSIdentityMappingCharacterCollection = 0
 	}
-	public enum NSColorSpaceModel
-	{
+	public enum NSColorSpaceModel {
 		NSCMYKColorSpaceModel = 2,
 		NSDeviceNColorSpaceModel = 4,
 		NSGrayColorSpaceModel = 0,
@@ -263,20 +237,17 @@ namespace NObjective.Proxies {
 		NSRGBColorSpaceModel = 1,
 		NSUnknownColorSpaceModel = -1
 	}
-	public enum NSComparisonPredicateModifier
-	{
+	public enum NSComparisonPredicateModifier {
 		NSAllPredicateModifier = 1,
 		NSAnyPredicateModifier = 2,
 		NSDirectPredicateModifier = 0
 	}
-	public enum NSComparisonResult
-	{
+	public enum NSComparisonResult {
 		NSOrderedAscending = -1,
 		NSOrderedDescending = 1,
 		NSOrderedSame = 0
 	}
-	public enum NSCompositingOperation
-	{
+	public enum NSCompositingOperation {
 		NSCompositeClear = 0,
 		NSCompositeCopy = 1,
 		NSCompositeDestinationAtop = 9,
@@ -292,66 +263,56 @@ namespace NObjective.Proxies {
 		NSCompositeSourceOver = 2,
 		NSCompositeXOR = 10
 	}
-	public enum NSCompoundPredicateType
-	{
+	public enum NSCompoundPredicateType {
 		NSAndPredicateType = 1,
 		NSNotPredicateType = 0,
 		NSOrPredicateType = 2
 	}
-	public enum NSControlSize
-	{
+	public enum NSControlSize {
 		NSMiniControlSize = 2,
 		NSRegularControlSize = 0,
 		NSSmallControlSize = 1
 	}
-	public enum NSControlTint
-	{
+	public enum NSControlTint {
 		NSBlueControlTint = 1,
 		NSClearControlTint = 7,
 		NSDefaultControlTint = 0,
 		NSGraphiteControlTint = 6
 	}
-	public enum NSDateFormatterBehavior
-	{
+	public enum NSDateFormatterBehavior {
 		NSDateFormatterBehavior10_0 = 1000,
 		NSDateFormatterBehavior10_4 = 1040,
 		NSDateFormatterBehaviorDefault = 0
 	}
-	public enum NSDateFormatterStyle
-	{
+	public enum NSDateFormatterStyle {
 		NSDateFormatterFullStyle = 4,
 		NSDateFormatterLongStyle = 3,
 		NSDateFormatterMediumStyle = 2,
 		NSDateFormatterNoStyle = 0,
 		NSDateFormatterShortStyle = 1
 	}
-	public enum NSDatePickerMode
-	{
+	public enum NSDatePickerMode {
 		NSRangeDateMode = 1,
 		NSSingleDateMode = 0
 	}
-	public enum NSDatePickerStyle
-	{
+	public enum NSDatePickerStyle {
 		NSClockAndCalendarDatePickerStyle = 1,
 		NSTextFieldAndStepperDatePickerStyle = 0
 	}
-	public enum NSDeleteRule
-	{
+	public enum NSDeleteRule {
 		NSCascadeDeleteRule = 2,
 		NSDenyDeleteRule = 3,
 		NSNoActionDeleteRule = 0,
 		NSNullifyDeleteRule = 1
 	}
-	public enum NSDocumentChangeType
-	{
+	public enum NSDocumentChangeType {
 		NSChangeAutosaved = 4,
 		NSChangeCleared = 2,
 		NSChangeDone = 0,
 		NSChangeReadOtherContents = 3,
 		NSChangeUndone = 1
 	}
-	public enum NSEventType
-	{
+	public enum NSEventType {
 		NSAppKitDefined = 13,
 		NSApplicationDefined = 15,
 		NSCursorUpdate = 17,
@@ -376,48 +337,41 @@ namespace NObjective.Proxies {
 		NSTabletPoint = 23,
 		NSTabletProximity = 24
 	}
-	public enum NSExpressionType
-	{
+	public enum NSExpressionType {
 		NSConstantValueExpressionType = 0,
 		NSEvaluatedObjectExpressionType = 1,
 		NSFunctionExpressionType = 4,
 		NSKeyPathExpressionType = 3,
 		NSVariableExpressionType = 2
 	}
-	public enum NSFocusRingType
-	{
+	public enum NSFocusRingType {
 		NSFocusRingTypeDefault = 0,
 		NSFocusRingTypeExterior = 2,
 		NSFocusRingTypeNone = 1
 	}
-	public enum NSFontRenderingMode
-	{
+	public enum NSFontRenderingMode {
 		NSFontAntialiasedIntegerAdvancementsRenderingMode = 3,
 		NSFontAntialiasedRenderingMode = 1,
 		NSFontDefaultRenderingMode = 0,
 		NSFontIntegerAdvancementsRenderingMode = 2
 	}
-	public enum NSGlyphRelation
-	{
+	public enum NSGlyphRelation {
 		NSGlyphAbove = 2,
 		NSGlyphBelow = 1
 	}
-	public enum NSGradientType
-	{
+	public enum NSGradientType {
 		NSGradientConcaveStrong = 2,
 		NSGradientConcaveWeak = 1,
 		NSGradientConvexStrong = 4,
 		NSGradientConvexWeak = 3,
 		NSGradientNone = 0
 	}
-	public enum NSHTTPCookieAcceptPolicy
-	{
+	public enum NSHTTPCookieAcceptPolicy {
 		NSHTTPCookieAcceptPolicyAlways = 0,
 		NSHTTPCookieAcceptPolicyNever = 1,
 		NSHTTPCookieAcceptPolicyOnlyFromMainDocumentDomain = 2
 	}
-	public enum NSImageAlignment
-	{
+	public enum NSImageAlignment {
 		NSImageAlignBottom = 5,
 		NSImageAlignBottomLeft = 6,
 		NSImageAlignBottomRight = 7,
@@ -428,87 +382,75 @@ namespace NObjective.Proxies {
 		NSImageAlignTopLeft = 2,
 		NSImageAlignTopRight = 3
 	}
-	public enum NSImageCacheMode
-	{
+	public enum NSImageCacheMode {
 		NSImageCacheAlways = 1,
 		NSImageCacheBySize = 2,
 		NSImageCacheDefault = 0,
 		NSImageCacheNever = 3
 	}
-	public enum NSImageFrameStyle
-	{
+	public enum NSImageFrameStyle {
 		NSImageFrameButton = 4,
 		NSImageFrameGrayBezel = 2,
 		NSImageFrameGroove = 3,
 		NSImageFrameNone = 0,
 		NSImageFramePhoto = 1
 	}
-	public enum NSImageInterpolation
-	{
+	public enum NSImageInterpolation {
 		NSImageInterpolationDefault = 0,
 		NSImageInterpolationHigh = 3,
 		NSImageInterpolationLow = 2,
 		NSImageInterpolationNone = 1
 	}
-	public enum NSImageLoadStatus
-	{
+	public enum NSImageLoadStatus {
 		NSImageLoadStatusCancelled = 1,
 		NSImageLoadStatusCompleted = 0,
 		NSImageLoadStatusInvalidData = 2,
 		NSImageLoadStatusReadError = 4,
 		NSImageLoadStatusUnexpectedEOF = 3
 	}
-	public enum NSImageScaling
-	{
+	public enum NSImageScaling {
 		NSScaleNone = 2,
 		NSScaleProportionally = 0,
 		NSScaleToFit = 1
 	}
-	public enum NSInsertionPosition
-	{
+	public enum NSInsertionPosition {
 		NSPositionAfter = 0,
 		NSPositionBefore = 1,
 		NSPositionBeginning = 2,
 		NSPositionEnd = 3,
 		NSPositionReplace = 4
 	}
-	public enum NSInterfaceStyle
-	{
+	public enum NSInterfaceStyle {
 		NSMacintoshInterfaceStyle = 3,
 		NSNextStepInterfaceStyle = 1,
 		NSNoInterfaceStyle = 0,
 		NSWindows95InterfaceStyle = 2
 	}
-	public enum NSKeyValueChange
-	{
+	public enum NSKeyValueChange {
 		NSKeyValueChangeInsertion = 2,
 		NSKeyValueChangeRemoval = 3,
 		NSKeyValueChangeReplacement = 4,
 		NSKeyValueChangeSetting = 1
 	}
-	public enum NSKeyValueSetMutationKind
-	{
+	public enum NSKeyValueSetMutationKind {
 		NSKeyValueIntersectSetMutation = 3,
 		NSKeyValueMinusSetMutation = 2,
 		NSKeyValueSetSetMutation = 4,
 		NSKeyValueUnionSetMutation = 1
 	}
-	public enum NSLayoutStatus
-	{
+	public enum NSLayoutStatus {
 		NSLayoutCantFit = 2,
 		NSLayoutDone = 1,
 		NSLayoutNotDone = 0,
 		NSLayoutOutOfGlyphs = 3
 	}
-	public enum NSLevelIndicatorStyle
-	{
+	public enum NSLevelIndicatorStyle {
 		NSContinuousCapacityLevelIndicatorStyle = 1,
 		NSDiscreteCapacityLevelIndicatorStyle = 2,
 		NSRatingLevelIndicatorStyle = 3,
 		NSRelevancyLevelIndicatorStyle = 0
 	}
-	public enum NSLineBreakMode
-	{
+	public enum NSLineBreakMode {
 		NSLineBreakByCharWrapping = 1,
 		NSLineBreakByClipping = 2,
 		NSLineBreakByTruncatingHead = 3,
@@ -516,66 +458,56 @@ namespace NObjective.Proxies {
 		NSLineBreakByTruncatingTail = 4,
 		NSLineBreakByWordWrapping = 0
 	}
-	public enum NSLineCapStyle
-	{
+	public enum NSLineCapStyle {
 		NSButtLineCapStyle = 0,
 		NSRoundLineCapStyle = 1,
 		NSSquareLineCapStyle = 2
 	}
-	public enum NSLineJoinStyle
-	{
+	public enum NSLineJoinStyle {
 		NSBevelLineJoinStyle = 2,
 		NSMiterLineJoinStyle = 0,
 		NSRoundLineJoinStyle = 1
 	}
-	public enum NSLineMovementDirection
-	{
+	public enum NSLineMovementDirection {
 		NSLineDoesntMove = 0,
 		NSLineMovesDown = 3,
 		NSLineMovesLeft = 1,
 		NSLineMovesRight = 2,
 		NSLineMovesUp = 4
 	}
-	public enum NSLineSweepDirection
-	{
+	public enum NSLineSweepDirection {
 		NSLineSweepDown = 2,
 		NSLineSweepLeft = 0,
 		NSLineSweepRight = 1,
 		NSLineSweepUp = 3
 	}
-	public enum NSMatrixMode
-	{
+	public enum NSMatrixMode {
 		NSHighlightModeMatrix = 1,
 		NSListModeMatrix = 2,
 		NSRadioModeMatrix = 0,
 		NSTrackModeMatrix = 3
 	}
-	public enum NSMultibyteGlyphPacking
-	{
+	public enum NSMultibyteGlyphPacking {
 		NSNativeShortGlyphPacking = 5
 	}
-	public enum NSNotificationSuspensionBehavior
-	{
+	public enum NSNotificationSuspensionBehavior {
 		NSNotificationSuspensionBehaviorCoalesce = 2,
 		NSNotificationSuspensionBehaviorDeliverImmediately = 4,
 		NSNotificationSuspensionBehaviorDrop = 1,
 		NSNotificationSuspensionBehaviorHold = 3
 	}
-	public enum NSNumberFormatterBehavior
-	{
+	public enum NSNumberFormatterBehavior {
 		NSNumberFormatterBehavior10_0 = 1000,
 		NSNumberFormatterBehavior10_4 = 1040,
 		NSNumberFormatterBehaviorDefault = 0
 	}
-	public enum NSNumberFormatterPadPosition
-	{
+	public enum NSNumberFormatterPadPosition {
 		NSNumberFormatterPadAfterPrefix = 1,
 		NSNumberFormatterPadAfterSuffix = 3,
 		NSNumberFormatterPadBeforePrefix = 0,
 		NSNumberFormatterPadBeforeSuffix = 2
 	}
-	public enum NSNumberFormatterRoundingMode
-	{
+	public enum NSNumberFormatterRoundingMode {
 		NSNumberFormatterRoundCeiling = 0,
 		NSNumberFormatterRoundDown = 2,
 		NSNumberFormatterRoundFloor = 1,
@@ -584,8 +516,7 @@ namespace NObjective.Proxies {
 		NSNumberFormatterRoundHalfUp = 6,
 		NSNumberFormatterRoundUp = 3
 	}
-	public enum NSNumberFormatterStyle
-	{
+	public enum NSNumberFormatterStyle {
 		NSNumberFormatterCurrencyStyle = 2,
 		NSNumberFormatterDecimalStyle = 1,
 		NSNumberFormatterNoStyle = 0,
@@ -593,8 +524,7 @@ namespace NObjective.Proxies {
 		NSNumberFormatterScientificStyle = 4,
 		NSNumberFormatterSpellOutStyle = 5
 	}
-	public enum NSOpenGLContextParameter
-	{
+	public enum NSOpenGLContextParameter {
 		NSOpenGLCPRasterizationEnable = 221,
 		NSOpenGLCPStateValidation = 301,
 		NSOpenGLCPSurfaceOpacity = 236,
@@ -603,8 +533,7 @@ namespace NObjective.Proxies {
 		NSOpenGLCPSwapRectangle = 200,
 		NSOpenGLCPSwapRectangleEnable = 201
 	}
-	public enum NSOpenGLPixelFormatAttribute
-	{
+	public enum NSOpenGLPixelFormatAttribute {
 		NSOpenGLPFAAccelerated = 73,
 		NSOpenGLPFAAccumSize = 14,
 		NSOpenGLPFAAllRenderers = 1,
@@ -640,27 +569,23 @@ namespace NObjective.Proxies {
 		NSOpenGLPFAVirtualScreenCount = 128,
 		NSOpenGLPFAWindow = 80
 	}
-	public enum NSPointingDeviceType
-	{
+	public enum NSPointingDeviceType {
 		NSCursorPointingDevice = 2,
 		NSEraserPointingDevice = 3,
 		NSPenPointingDevice = 1,
 		NSUnknownPointingDevice = 0
 	}
-	public enum NSPopUpArrowPosition
-	{
+	public enum NSPopUpArrowPosition {
 		NSPopUpArrowAtBottom = 2,
 		NSPopUpArrowAtCenter = 1,
 		NSPopUpNoArrow = 0
 	}
-	public enum NSPostingStyle
-	{
+	public enum NSPostingStyle {
 		NSPostASAP = 2,
 		NSPostNow = 3,
 		NSPostWhenIdle = 1
 	}
-	public enum NSPredicateOperatorType
-	{
+	public enum NSPredicateOperatorType {
 		NSBeginsWithPredicateOperatorType = 8,
 		NSCustomSelectorPredicateOperatorType = 11,
 		NSEndsWithPredicateOperatorType = 9,
@@ -674,109 +599,91 @@ namespace NObjective.Proxies {
 		NSMatchesPredicateOperatorType = 6,
 		NSNotEqualToPredicateOperatorType = 5
 	}
-	public enum NSPrinterTableStatus
-	{
+	public enum NSPrinterTableStatus {
 		NSPrinterTableError = 2,
 		NSPrinterTableNotFound = 1,
 		NSPrinterTableOK = 0
 	}
-	public enum NSPrintingOrientation
-	{
+	public enum NSPrintingOrientation {
 		NSLandscapeOrientation = 1,
 		NSPortraitOrientation = 0
 	}
-	public enum NSPrintingPageOrder
-	{
+	public enum NSPrintingPageOrder {
 		NSAscendingPageOrder = 1,
 		NSDescendingPageOrder = -1,
 		NSSpecialPageOrder = 0,
 		NSUnknownPageOrder = 2
 	}
-	public enum NSPrintingPaginationMode
-	{
+	public enum NSPrintingPaginationMode {
 		NSAutoPagination = 0,
 		NSClipPagination = 2,
 		NSFitPagination = 1
 	}
-	public enum NSProgressIndicatorStyle
-	{
+	public enum NSProgressIndicatorStyle {
 		NSProgressIndicatorBarStyle = 0,
 		NSProgressIndicatorSpinningStyle = 1
 	}
-	public enum NSPropertyListFormat
-	{
+	public enum NSPropertyListFormat {
 		NSPropertyListBinaryFormat_v1_0 = 200,
 		NSPropertyListOpenStepFormat = 1,
 		NSPropertyListXMLFormat_v1_0 = 100
 	}
-	public enum NSPropertyListMutabilityOptions
-	{
+	public enum NSPropertyListMutabilityOptions {
 		NSPropertyListImmutable = 0,
 		NSPropertyListMutableContainers = 1,
 		NSPropertyListMutableContainersAndLeaves = 2
 	}
-	public enum NSQTMovieLoopMode
-	{
+	public enum NSQTMovieLoopMode {
 		NSQTMovieLoopingBackAndForthPlayback = 2,
 		NSQTMovieLoopingPlayback = 1,
 		NSQTMovieNormalPlayback = 0
 	}
-	public enum NSRectEdge
-	{
+	public enum NSRectEdge {
 		NSMaxXEdge = 2,
 		NSMaxYEdge = 3,
 		NSMinXEdge = 0,
 		NSMinYEdge = 1
 	}
-	public enum NSRelativePosition
-	{
+	public enum NSRelativePosition {
 		NSRelativeAfter = 0,
 		NSRelativeBefore = 1
 	}
-	public enum NSRequestUserAttentionType
-	{
+	public enum NSRequestUserAttentionType {
 		NSCriticalRequest = 0,
 		NSInformationalRequest = 10
 	}
-	public enum NSRoundingMode
-	{
+	public enum NSRoundingMode {
 		NSRoundBankers = 3,
 		NSRoundDown = 1,
 		NSRoundPlain = 0,
 		NSRoundUp = 2
 	}
-	public enum NSRulerOrientation
-	{
+	public enum NSRulerOrientation {
 		NSHorizontalRuler = 0,
 		NSVerticalRuler = 1
 	}
-	public enum NSSaveOperationType
-	{
+	public enum NSSaveOperationType {
 		NSAutosaveOperation = 3,
 		NSSaveAsOperation = 1,
 		NSSaveOperation = 0,
 		NSSaveToOperation = 2
 	}
-	public enum NSSaveOptions
-	{
+	public enum NSSaveOptions {
 		NSSaveOptionsAsk = 2,
 		NSSaveOptionsNo = 1,
 		NSSaveOptionsYes = 0
 	}
-	public enum NSScrollArrowPosition
-	{
+	public enum NSScrollArrowPosition {
 		NSScrollerArrowsDefaultSetting = 0,
 		NSScrollerArrowsMaxEnd = 0,
 		NSScrollerArrowsMinEnd = 1,
 		NSScrollerArrowsNone = 2
 	}
-	public enum NSScrollerArrow
-	{
+	public enum NSScrollerArrow {
 		NSScrollerDecrementArrow = 1,
 		NSScrollerIncrementArrow = 0
 	}
-	public enum NSScrollerPart
-	{
+	public enum NSScrollerPart {
 		NSScrollerDecrementLine = 4,
 		NSScrollerDecrementPage = 1,
 		NSScrollerIncrementLine = 5,
@@ -785,36 +692,30 @@ namespace NObjective.Proxies {
 		NSScrollerKnobSlot = 6,
 		NSScrollerNoPart = 0
 	}
-	public enum NSSegmentSwitchTracking
-	{
+	public enum NSSegmentSwitchTracking {
 		NSSegmentSwitchTrackingMomentary = 2,
 		NSSegmentSwitchTrackingSelectAny = 1,
 		NSSegmentSwitchTrackingSelectOne = 0
 	}
-	public enum NSSelectionAffinity
-	{
+	public enum NSSelectionAffinity {
 		NSSelectionAffinityDownstream = 1,
 		NSSelectionAffinityUpstream = 0
 	}
-	public enum NSSelectionDirection
-	{
+	public enum NSSelectionDirection {
 		NSDirectSelection = 0,
 		NSSelectingNext = 1,
 		NSSelectingPrevious = 2
 	}
-	public enum NSSelectionGranularity
-	{
+	public enum NSSelectionGranularity {
 		NSSelectByCharacter = 0,
 		NSSelectByParagraph = 2,
 		NSSelectByWord = 1
 	}
-	public enum NSSliderType
-	{
+	public enum NSSliderType {
 		NSCircularSlider = 1,
 		NSLinearSlider = 0
 	}
-	public enum NSStreamEvent
-	{
+	public enum NSStreamEvent {
 		NSStreamEventEndEncountered = 16,
 		NSStreamEventErrorOccurred = 8,
 		NSStreamEventHasBytesAvailable = 2,
@@ -822,8 +723,7 @@ namespace NObjective.Proxies {
 		NSStreamEventNone = 0,
 		NSStreamEventOpenCompleted = 1
 	}
-	public enum NSStreamStatus
-	{
+	public enum NSStreamStatus {
 		NSStreamStatusAtEnd = 5,
 		NSStreamStatusClosed = 6,
 		NSStreamStatusError = 7,
@@ -833,16 +733,14 @@ namespace NObjective.Proxies {
 		NSStreamStatusReading = 3,
 		NSStreamStatusWriting = 4
 	}
-	public enum NSStringDrawingOptions
-	{
+	public enum NSStringDrawingOptions {
 		NSStringDrawingDisableScreenFontSubstitution = 4,
 		NSStringDrawingOneShot = 16,
 		NSStringDrawingUsesDeviceMetrics = 8,
 		NSStringDrawingUsesFontLeading = 2,
 		NSStringDrawingUsesLineFragmentOrigin = 1
 	}
-	public enum NSTableViewColumnAutoresizingStyle
-	{
+	public enum NSTableViewColumnAutoresizingStyle {
 		NSTableViewFirstColumnOnlyAutoresizingStyle = 5,
 		NSTableViewLastColumnOnlyAutoresizingStyle = 4,
 		NSTableViewNoColumnAutoresizing = 0,
@@ -850,19 +748,16 @@ namespace NObjective.Proxies {
 		NSTableViewSequentialColumnAutoresizingStyle = 2,
 		NSTableViewUniformColumnAutoresizingStyle = 1
 	}
-	public enum NSTableViewDropOperation
-	{
+	public enum NSTableViewDropOperation {
 		NSTableViewDropAbove = 1,
 		NSTableViewDropOn = 0
 	}
-	public enum NSTabState
-	{
+	public enum NSTabState {
 		NSBackgroundTab = 1,
 		NSPressedTab = 2,
 		NSSelectedTab = 0
 	}
-	public enum NSTabViewType
-	{
+	public enum NSTabViewType {
 		NSBottomTabsBezelBorder = 2,
 		NSLeftTabsBezelBorder = 1,
 		NSNoTabsBezelBorder = 4,
@@ -871,8 +766,7 @@ namespace NObjective.Proxies {
 		NSRightTabsBezelBorder = 3,
 		NSTopTabsBezelBorder = 0
 	}
-	public enum NSTestComparisonOperation
-	{
+	public enum NSTestComparisonOperation {
 		NSBeginsWithComparison = 5,
 		NSContainsComparison = 7,
 		NSEndsWithComparison = 6,
@@ -882,16 +776,14 @@ namespace NObjective.Proxies {
 		NSLessThanComparison = 2,
 		NSLessThanOrEqualToComparison = 1
 	}
-	public enum NSTextAlignment
-	{
+	public enum NSTextAlignment {
 		NSCenterTextAlignment = 2,
 		NSJustifiedTextAlignment = 3,
 		NSLeftTextAlignment = 0,
 		NSNaturalTextAlignment = 4,
 		NSRightTextAlignment = 1
 	}
-	public enum NSTextBlockDimension
-	{
+	public enum NSTextBlockDimension {
 		NSTextBlockHeight = 4,
 		NSTextBlockMaximumHeight = 6,
 		NSTextBlockMaximumWidth = 2,
@@ -899,50 +791,42 @@ namespace NObjective.Proxies {
 		NSTextBlockMinimumWidth = 1,
 		NSTextBlockWidth = 0
 	}
-	public enum NSTextBlockLayer
-	{
+	public enum NSTextBlockLayer {
 		NSTextBlockBorder = 0,
 		NSTextBlockMargin = 1,
 		NSTextBlockPadding = -1
 	}
-	public enum NSTextBlockValueType
-	{
+	public enum NSTextBlockValueType {
 		NSTextBlockAbsoluteValueType = 0,
 		NSTextBlockPercentageValueType = 1
 	}
-	public enum NSTextBlockVerticalAlignment
-	{
+	public enum NSTextBlockVerticalAlignment {
 		NSTextBlockBaselineAlignment = 3,
 		NSTextBlockBottomAlignment = 2,
 		NSTextBlockMiddleAlignment = 1,
 		NSTextBlockTopAlignment = 0
 	}
-	public enum NSTextFieldBezelStyle
-	{
+	public enum NSTextFieldBezelStyle {
 		NSTextFieldRoundedBezel = 1,
 		NSTextFieldSquareBezel = 0
 	}
-	public enum NSTextTableLayoutAlgorithm
-	{
+	public enum NSTextTableLayoutAlgorithm {
 		NSTextTableAutomaticLayoutAlgorithm = 0,
 		NSTextTableFixedLayoutAlgorithm = 1
 	}
-	public enum NSTextTabType
-	{
+	public enum NSTextTabType {
 		NSCenterTabStopType = 2,
 		NSDecimalTabStopType = 3,
 		NSLeftTabStopType = 0,
 		NSRightTabStopType = 1
 	}
-	public enum NSTickMarkPosition
-	{
+	public enum NSTickMarkPosition {
 		NSTickMarkAbove = 1,
 		NSTickMarkBelow = 0,
 		NSTickMarkLeft = 1,
 		NSTickMarkRight = 0
 	}
-	public enum NSTIFFCompression
-	{
+	public enum NSTIFFCompression {
 		NSTIFFCompressionCCITTFAX3 = 3,
 		NSTIFFCompressionCCITTFAX4 = 4,
 		NSTIFFCompressionJPEG = 6,
@@ -952,8 +836,7 @@ namespace NObjective.Proxies {
 		NSTIFFCompressionOldJPEG = 32865,
 		NSTIFFCompressionPackBits = 32773
 	}
-	public enum NSTitlePosition
-	{
+	public enum NSTitlePosition {
 		NSAboveBottom = 4,
 		NSAboveTop = 1,
 		NSAtBottom = 5,
@@ -962,27 +845,23 @@ namespace NObjective.Proxies {
 		NSBelowTop = 3,
 		NSNoTitle = 0
 	}
-	public enum NSTokenStyle
-	{
+	public enum NSTokenStyle {
 		NSDefaultTokenStyle = 0,
 		NSPlainTextTokenStyle = 1,
 		NSRoundedTokenStyle = 2
 	}
-	public enum NSToolbarDisplayMode
-	{
+	public enum NSToolbarDisplayMode {
 		NSToolbarDisplayModeDefault = 0,
 		NSToolbarDisplayModeIconAndLabel = 1,
 		NSToolbarDisplayModeIconOnly = 2,
 		NSToolbarDisplayModeLabelOnly = 3
 	}
-	public enum NSToolbarSizeMode
-	{
+	public enum NSToolbarSizeMode {
 		NSToolbarSizeModeDefault = 0,
 		NSToolbarSizeModeRegular = 1,
 		NSToolbarSizeModeSmall = 2
 	}
-	public enum NSTypesetterBehavior
-	{
+	public enum NSTypesetterBehavior {
 		NSTypesetterBehavior_10_2 = 2,
 		NSTypesetterBehavior_10_2_WithCompatibility = 1,
 		NSTypesetterBehavior_10_3 = 3,
@@ -990,8 +869,7 @@ namespace NObjective.Proxies {
 		NSTypesetterLatestBehavior = -1,
 		NSTypesetterOriginalBehavior = 0
 	}
-	public enum NSTypesetterControlCharacterAction
-	{
+	public enum NSTypesetterControlCharacterAction {
 		NSTypesetterContainerBreakAction = 32,
 		NSTypesetterHorizontalTabAction = 4,
 		NSTypesetterLineBreakAction = 8,
@@ -999,80 +877,68 @@ namespace NObjective.Proxies {
 		NSTypesetterWhitespaceAction = 2,
 		NSTypesetterZeroAdvancementAction = 1
 	}
-	public enum NSURLCacheStoragePolicy
-	{
+	public enum NSURLCacheStoragePolicy {
 		NSURLCacheStorageAllowed = 0,
 		NSURLCacheStorageAllowedInMemoryOnly = 1,
 		NSURLCacheStorageNotAllowed = 2
 	}
-	public enum NSURLCredentialPersistence
-	{
+	public enum NSURLCredentialPersistence {
 		NSURLCredentialPersistenceForSession = 1,
 		NSURLCredentialPersistenceNone = 0,
 		NSURLCredentialPersistencePermanent = 2
 	}
-	public enum NSURLHandleStatus
-	{
+	public enum NSURLHandleStatus {
 		NSURLHandleLoadFailed = 3,
 		NSURLHandleLoadInProgress = 2,
 		NSURLHandleLoadSucceeded = 1,
 		NSURLHandleNotLoaded = 0
 	}
-	public enum NSURLRequestCachePolicy
-	{
+	public enum NSURLRequestCachePolicy {
 		NSURLRequestReloadIgnoringCacheData = 1,
 		NSURLRequestReturnCacheDataDontLoad = 3,
 		NSURLRequestReturnCacheDataElseLoad = 2,
 		NSURLRequestUseProtocolCachePolicy = 0
 	}
-	public enum NSUsableScrollerParts
-	{
+	public enum NSUsableScrollerParts {
 		NSAllScrollerParts = 2,
 		NSNoScrollerParts = 0,
 		NSOnlyScrollerArrows = 1
 	}
-	public enum NSWhoseSubelementIdentifier
-	{
+	public enum NSWhoseSubelementIdentifier {
 		NSEverySubelement = 1,
 		NSIndexSubelement = 0,
 		NSMiddleSubelement = 2,
 		NSNoSubelement = 4,
 		NSRandomSubelement = 3
 	}
-	public enum NSWindingRule
-	{
+	public enum NSWindingRule {
 		NSEvenOddWindingRule = 1,
 		NSNonZeroWindingRule = 0
 	}
-	public enum NSWindowButton
-	{
+	public enum NSWindowButton {
 		NSWindowCloseButton = 0,
 		NSWindowDocumentIconButton = 4,
 		NSWindowMiniaturizeButton = 1,
 		NSWindowToolbarButton = 3,
 		NSWindowZoomButton = 2
 	}
-	public enum NSWindowOrderingMode
-	{
+	public enum NSWindowOrderingMode {
 		NSWindowAbove = 1,
 		NSWindowBelow = -1,
 		NSWindowOut = 0
 	}
-	public enum NSWritingDirection
-	{
+	public enum NSWritingDirection {
 		NSWritingDirectionLeftToRight = 0,
 		NSWritingDirectionNatural = -1,
 		NSWritingDirectionRightToLeft = 1
 	}
-	public enum NSXMLDocumentContentKind
-	{
+	public enum NSXMLDocumentContentKind {
 		NSXMLDocumentHTMLKind = 2,
 		NSXMLDocumentTextKind = 3,
 		NSXMLDocumentXHTMLKind = 1,
 		NSXMLDocumentXMLKind = 0
 	}
-	public enum NSXMLDTDNodeKind
-	{
+	public enum NSXMLDTDNodeKind {
 		NSXMLAttributeCDATAKind = 6,
 		NSXMLAttributeEntitiesKind = 11,
 		NSXMLAttributeEntityKind = 10,
@@ -1094,8 +960,7 @@ namespace NObjective.Proxies {
 		NSXMLEntityPredefined = 5,
 		NSXMLEntityUnparsedKind = 3
 	}
-	public enum NSXMLNodeKind
-	{
+	public enum NSXMLNodeKind {
 		NSXMLAttributeDeclarationKind = 10,
 		NSXMLAttributeKind = 3,
 		NSXMLCommentKind = 6,
@@ -1110,16 +975,14 @@ namespace NObjective.Proxies {
 		NSXMLProcessingInstructionKind = 5,
 		NSXMLTextKind = 7
 	}
-	public enum WebDragDestinationAction
-	{
+	public enum WebDragDestinationAction {
 		WebDragDestinationActionAny = -1,
 		WebDragDestinationActionDHTML = 1,
 		WebDragDestinationActionEdit = 2,
 		WebDragDestinationActionLoad = 4,
 		WebDragDestinationActionNone = 0
 	}
-	public enum WebDragSourceAction
-	{
+	public enum WebDragSourceAction {
 		WebDragSourceActionAny = -1,
 		WebDragSourceActionDHTML = 1,
 		WebDragSourceActionImage = 2,
@@ -1127,8 +990,7 @@ namespace NObjective.Proxies {
 		WebDragSourceActionNone = 0,
 		WebDragSourceActionSelection = 8
 	}
-	public enum WebViewInsertAction
-	{
+	public enum WebViewInsertAction {
 		WebViewInsertActionDropped = 2,
 		WebViewInsertActionPasted = 1,
 		WebViewInsertActionTyped = 0

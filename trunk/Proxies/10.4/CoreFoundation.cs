@@ -7,9 +7,11 @@
 namespace NObjective.Proxies {
 	using System;
 	using System.Runtime.InteropServices;
-	[ProxyBaseClass(typeof( _NSCFString ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( _NSCFString ) )]
 	public struct NSCFString : IEquatable<NSCFString> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSCFString;
 		public static implicit operator IntPtr( NSCFString value ) {
 			return value.Handle;
@@ -37,9 +39,11 @@ namespace NObjective.Proxies {
 			return new NSCFString( ClassHandle.InvokeIntPtr( Selectors.alloc ) );
 		}
 	}
-	[ProxyBaseClass(typeof( _NSCFType ))]
+	[StructLayoutAttribute( LayoutKind.Explicit )]
+	[ProxyBaseClass( typeof( _NSCFType ) )]
 	public struct NSCFType : IEquatable<NSCFType> {
-		internal NObjective.RuntimeObject Handle;
+		[FieldOffsetAttribute( 0 )]
+		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSCFType;
 		public static implicit operator IntPtr( NSCFType value ) {
 			return value.Handle;

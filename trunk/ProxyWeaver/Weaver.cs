@@ -4,11 +4,22 @@
 // See license in GPLv3.txt
 //
 
+#define USE_CECIL
+
 using System;
 using System.Linq;
+
+#if USE_CECIL
 using Mono.Cecil;
 using Mono.Cecil.Metadata;
 using Mono.Cecil.Cil;
+#else
+using Microsoft.Cci;
+using Microsoft.Cci.MutableCodeModel;
+#endif
+
+using System.Diagnostics;
+using System.IO;
 
 namespace NObjective.ProxyWeaver
 {
@@ -22,6 +33,10 @@ namespace NObjective.ProxyWeaver
 				return;
 			}
 
+			var timer = new Stopwatch();
+			timer.Start();
+
+#if USE_CECIL
 			var instrumentedAssembly = AssemblyFactory.GetAssembly( args[0] );
 			if( instrumentedAssembly.Name.Name.EndsWith( "Unweaved" ) )
 				instrumentedAssembly.Name.Name = instrumentedAssembly.Name.Name.Remove( instrumentedAssembly.Name.Name.IndexOf( "Unweaved" ) - 1 );
@@ -87,8 +102,80 @@ namespace NObjective.ProxyWeaver
 			}
 
 			AssemblyFactory.SaveAssembly( instrumentedAssembly, args[1] );
+#else
+			var host = new PeReader.DefaultHost();
+
+			var assembly = host.LoadUnitFrom( args[0] ) as IAssembly;
+			if( assembly == null || assembly == Dummy.Module || assembly == Dummy.Assembly )
+			{
+				Console.WriteLine( args[0] + " is not a PE file containing a CLR assembly, or an error occurred when loading it." );
+				return;
+			}
+
+			var weaver = new BaseWeaver( host );
+			assembly = weaver.Visit( assembly );
+
+			PeWriter.WritePeToStream( assembly, host, File.Create( args[1] ), null, null, null );
+#endif
+			timer.Stop();
+			Console.WriteLine( "Elapsed: {0}s", timer.Elapsed.TotalSeconds );
+
 			//Process.Start( @"c:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\ildasm.exe", "/out=nobjective.il " + args[0] );
 			//Process.Start( @"c:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\ildasm.exe", "/out=nobjective2.il " + args[1] );
 		}
 	}
+
+#if !USE_CECIL
+	public class BaseWeaver : MetadataMutator
+	{
+		private INamedTypeDefinition _nsobject, _proxyBaseClassAttribute;
+		private IFieldDefinition _nsobjectHandle;
+
+		public BaseWeaver( IMetadataHost host )
+			: base( host, true )
+		{
+		}
+
+		public override MethodBody Visit( MethodBody methodBody )
+		{
+			return base.Visit( methodBody );
+		}
+
+		//public override FieldReference Visit( FieldReference fieldReference )
+		//{
+		//    if( fieldReference.Name.Value == "Handle" )
+		//    {
+		//        Debugger.Break();
+		//    }
+
+		//    return base.Visit( fieldReference );
+		//}
+
+		public override FieldDefinition Visit( FieldDefinition fieldDefinition )
+		{
+			if( fieldDefinition.Name.Value == "Handle" )
+			{
+				var x = fieldDefinition.ContainingType.Attributes.First().Type;
+				Debugger.Break();
+			}
+
+			return base.Visit( fieldDefinition );
+		}
+
+		public override Module Visit( Module module )
+		{
+			return base.Visit( module );
+		}
+		
+		public override Assembly Visit( Assembly assembly )
+		{
+			_nsobject = UnitHelper.FindType( host.NameTable, assembly, "NObjective.Proxies.NSObject" );
+			//_proxyBaseClassAttribute = UnitHelper.FindType( host.NameTable, assembly, "NObjective.ProxyBaseClassAttribute" );
+
+			_nsobjectHandle = _nsobject.Fields.First( x => x.Name.Value == "Handle" );
+			
+			return base.Visit( assembly );
+		}
+	}
+#endif
 }
