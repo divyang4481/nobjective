@@ -4,6 +4,8 @@
 // See license in GPLv3.txt
 //
 
+//#define USE_VALUE_TYPE_INHERITANCE
+
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;

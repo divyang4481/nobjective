@@ -6,6 +6,9 @@
 
 #define USE_CECIL
 
+// Available in Mono 2.0, 2.2. Broken in Mono 2.4, 2.6
+//#define USE_VALUE_TYPE_INHERITANCE
+
 using System;
 using System.Linq;
 
@@ -20,6 +23,7 @@ using Microsoft.Cci.MutableCodeModel;
 
 using System.Diagnostics;
 using System.IO;
+using System.Collections.Generic;
 
 namespace NObjective.ProxyWeaver
 {
@@ -39,10 +43,16 @@ namespace NObjective.ProxyWeaver
 #if USE_CECIL
 			var instrumentedAssembly = AssemblyFactory.GetAssembly( args[0] );
 			if( instrumentedAssembly.Name.Name.EndsWith( "Unweaved" ) )
+			{
 				instrumentedAssembly.Name.Name = instrumentedAssembly.Name.Name.Remove( instrumentedAssembly.Name.Name.IndexOf( "Unweaved" ) - 1 );
+				instrumentedAssembly.Modules[0].Name = instrumentedAssembly.Name.Name;
+			}
+
+			var excludedMethods = new HashSet<string> { "op_Implicit", "op_Explicit", "op_Inequality", "op_Equality" };
 
 			foreach( ModuleDefinition module in instrumentedAssembly.Modules )
 			{
+#if USE_VALUE_TYPE_INHERITANCE
 				var nsobjectref = module.TypeReferences["NObjective.Proxies.NSObject"];
 				var handleField = module.Types["NObjective.Proxies.NSObject"].Fields[0];
 
@@ -99,6 +109,58 @@ namespace NObjective.ProxyWeaver
 					};
 					module.TypeReferences.Add( type.BaseType );
 				}
+#else
+				var nsobjectref = module.TypeReferences["NObjective.Proxies.NSObject"];
+
+				if( nsobjectref == null )
+				{
+					nsobjectref = new TypeReference( "NSObject", "NObjective.Proxies", module, false )
+					{
+						MetadataToken = new MetadataToken( TokenType.TypeRef, ( uint ) module.TypeReferences.Count + 1 )
+					};
+					module.TypeReferences.Add( nsobjectref );
+				}
+
+				foreach( TypeDefinition type in module.Types.OfType<TypeDefinition>().OrderBy( x => GetHerarchyDepth( module, x ) ) )
+				{
+					if( type.Namespace != "NObjective.Proxies" )
+						continue;
+
+					if( !type.IsPublic || type.IsEnum || !type.IsValueType )
+						continue;
+
+					var thisHandleField = type.Fields.Cast<FieldDefinition>().FirstOrDefault( x => x.Name == "Handle" );
+					if( thisHandleField == null )
+						continue;
+
+					if( type.Name == "NSObject" )
+						continue;
+
+					var baseType = GetBaseType( module, type );
+					if( baseType == null ) continue;
+
+					var baseHandleField = baseType.Fields[0];
+
+					foreach( var method in baseType.Methods.Cast<MethodDefinition>().Where( x => !excludedMethods.Contains( x.Name ) ) )
+					{
+						//if( method.Name == "Equals" && method.Parameters.Count == 1 && method.Parameters[0].ParameterType.FullName == "System.Object" ) continue;
+						//if( method.Name == "ToString" && method.Parameters.Count == 0 ) continue;
+						if( method.Name == "GetHashCode" && method.Parameters.Count == 0 ) continue;
+						if( method.Name == "alloc" && method.Parameters.Count == 0 ) continue;
+
+						var clone = method.Clone();
+
+						//if( method.Body != null )
+						//    foreach( Instruction item in method.Body.Instructions )
+						//    {
+						//        if( item.Operand == baseHandleField )
+						//            item.Operand = thisHandleField;
+						//    }
+
+						type.Methods.Add( clone );
+					}
+				}
+#endif
 			}
 
 			AssemblyFactory.SaveAssembly( instrumentedAssembly, args[1] );
@@ -122,6 +184,29 @@ namespace NObjective.ProxyWeaver
 
 			//Process.Start( @"c:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\ildasm.exe", "/out=nobjective.il " + args[0] );
 			//Process.Start( @"c:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\ildasm.exe", "/out=nobjective2.il " + args[1] );
+		}
+
+		public static TypeDefinition GetBaseType( ModuleDefinition module, TypeDefinition type )
+		{
+			var baseTypeAttribute = type.CustomAttributes.OfType<CustomAttribute>().FirstOrDefault( x => x.Constructor.DeclaringType.FullName == "NObjective.ProxyBaseClassAttribute" );
+			if( baseTypeAttribute == null ) return null;
+			if( baseTypeAttribute.ConstructorParameters.Count == 0 ) return null;
+
+			var baseTypeName = ( string ) baseTypeAttribute.ConstructorParameters[0];
+			if( baseTypeName == null ) return null;
+
+			return module.Types[baseTypeName];
+		}
+
+		public static int GetHerarchyDepth( ModuleDefinition module, TypeDefinition type )
+		{
+			var result = 0;
+
+			var baseType = type;
+			while( ( baseType = GetBaseType( module, baseType ) ) != null )
+				result++;
+
+			return result;
 		}
 	}
 
