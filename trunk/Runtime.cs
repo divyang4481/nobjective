@@ -4,6 +4,8 @@
 // See license in License.txt
 //
 
+//#define DUMP_EXPORTED_CLASSES_ASSEMBLY
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,7 +64,12 @@ namespace NObjective
 			if( Version < MacOSVersion.Tiger )
 				throw new InteropException( "{0} OS is not supported by underlying runtime", Version );
 
+#if DUMP_EXPORTED_CLASSES_ASSEMBLY
+			var interopAssemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly( _interopAssemblyName, AssemblyBuilderAccess.RunAndSave );
+#else
 			var interopAssemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly( _interopAssemblyName, AssemblyBuilderAccess.Run );
+#endif
+
 			_interopModuleBuilder = interopAssemblyBuilder.DefineDynamicModule( _interopAssemblyName.Name );
 
 			if( Version == MacOSVersion.Tiger )
@@ -79,6 +86,10 @@ namespace NObjective
 				ExceptionProxy.Class = ExportStructure( typeof( ExceptionProxy ) );
 
 				ExportAllClasses();
+
+#if DUMP_EXPORTED_CLASSES_ASSEMBLY
+				interopAssemblyBuilder.Save( "NObjective.Exported.dll" );
+#endif
 			}
 			catch( Exception excpt ) { Console.WriteLine( "Exception occured while automatic class exporting: {0}", excpt ); }
 		}
