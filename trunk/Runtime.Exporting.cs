@@ -374,7 +374,7 @@ namespace NObjective
 						variableEncoding = RuntimeMethodEncoding.EncodeType( typeof( IntPtr ) );
 					}
 
-					Tracer.Information( "Adding ivar {0} from type {1} with size = {2}; encoding = {3}", propertyInfo.Name, propertyInfo.PropertyType.Name, variableSize, variableEncoding );
+					Tracer.Information( "Adding ivar '{0}' with type '{1}', size = {2}, encoding = {3}", propertyInfo.Name, propertyInfo.PropertyType.Name, variableSize, variableEncoding );
 					CompatibilityLayer.class_addIvar( result, propertyInfo.Name, variableSize, 0, variableEncoding );
 				}
 
@@ -599,7 +599,8 @@ namespace NObjective
 
 				// [object description]
 				// create new method on each override to provide supercall ability from Objective-C code
-				var overridenToString = type.GetMethods( BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly ).FirstOrDefault( x => x.GetBaseDefinition() == toStringBase );
+				//var overridenToString = type.GetMethods( BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly ).FirstOrDefault( x => x.GetBaseDefinition() == toStringBase );
+				var overridenToString = type.GetMethod( "ToString", BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly, Type.DefaultBinder, new Type[] { }, null );
 				if( overridenToString != null )
 				{
 					var selector = "description";
@@ -920,7 +921,7 @@ namespace NObjective
 					var encoding = RuntimeMethodEncoding.GetEncoding( transitionMethodInfo, RuntimeMethodEncoding.Options.TransitionMethod | ( ExceptionBarrierManager.Type == ExceptionBarrierManager.BarrierType.X86 ? RuntimeMethodEncoding.Options.StripExceptionParameters : 0 ) );
 					var address = ( IntPtr ) transitionProxy.GetMethod( "&method" + counter ).Invoke( null, null );
 
-					Tracer.Information( "Adding method {0} from {1} {2}({3}) to {4} with encoding = {5}, address = {6:X}", selector, transitionMethodInfo.ReturnType.Name, transitionMethodInfo.Name, string.Join( ", ", transitionMethodInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), addTo == metaclass ? "metaclass" : "class", encoding, ( int ) address );
+					Tracer.Information( "Adding method '{0}' from {1} {2}({3}) to {4} with encoding = {5}, address = {6:X}", selector, transitionMethodInfo.ReturnType.Name, transitionMethodInfo.Name, string.Join( ", ", transitionMethodInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), addTo == metaclass ? "metaclass" : "class", encoding, ( int ) address );
 
 					if( ExceptionBarrierManager.Type == ExceptionBarrierManager.BarrierType.X86 || ExceptionBarrierManager.Type == ExceptionBarrierManager.BarrierType.PPC )
 						address = ExceptionBarrierManager.Instance.Allocate( address );
@@ -938,7 +939,7 @@ namespace NObjective
 
 					var nativeMethodAddress = ( IntPtr ) transitionProxy.GetMethod( "&ctor" + counter ).Invoke( null, null );
 
-					Tracer.Information( "Adding constructor {0} from {1}({2}) to class with encoding = {3}, address = {4}", constructorName, constructorInfo.Name, string.Join( ", ", constructorInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), constructorEncodedName, nativeMethodAddress.ToString( "X8" ) );
+					Tracer.Information( "Adding constructor '{0}' from {1}({2}) to class with encoding = {3}, address = {4}", constructorName, constructorInfo.Name, string.Join( ", ", constructorInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), constructorEncodedName, nativeMethodAddress.ToString( "X8" ) );
 
 					if( ExceptionBarrierManager.Type != ExceptionBarrierManager.BarrierType.None )
 						nativeMethodAddress = ExceptionBarrierManager.Instance.Allocate( nativeMethodAddress );
@@ -1088,7 +1089,7 @@ namespace NObjective
 					variableSize = Marshal.SizeOf( propertyInfo.FieldType );
 					variableEncoding = RuntimeMethodEncoding.EncodeType( propertyInfo.FieldType );
 
-					Tracer.Information( "Adding ivar {0} from type {1} with size = {2}; encoding = {3}", propertyInfo.Name, propertyInfo.FieldType.Name, variableSize, variableEncoding );
+					Tracer.Information( "Adding ivar '{0}' with type '{1}', size = {2}, encoding = {3}", propertyInfo.Name, propertyInfo.FieldType.Name, variableSize, variableEncoding );
 					CompatibilityLayer.class_addIvar( result, propertyInfo.Name, variableSize, 0, variableEncoding );
 
 					if( new RuntimeVariable( result, propertyInfo.Name ).Offset != Marshal.OffsetOf( type, propertyInfo.Name ).ToInt32() )
@@ -1307,7 +1308,7 @@ namespace NObjective
 					var encoding = RuntimeMethodEncoding.GetEncoding( transitionMethodInfo, RuntimeMethodEncoding.Options.TransitionMethod | ( ExceptionBarrierManager.Type == ExceptionBarrierManager.BarrierType.X86 ? RuntimeMethodEncoding.Options.StripExceptionParameters : 0 ) );
 					var address = ( IntPtr ) transitionProxy.GetMethod( "&method" + counter ).Invoke( null, null );
 
-					Tracer.Information( "Adding method {0} from {1} {2}({3}) to {4} with encoding = {5}, address = {6:X}", selector, transitionMethodInfo.ReturnType.Name, transitionMethodInfo.Name, string.Join( ", ", transitionMethodInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), addTo == metaclass ? "metaclass" : "class", encoding, ( int ) address );
+					Tracer.Information( "Adding method '{0}' from {1} {2}({3}) to {4} with encoding = {5}, address = {6:X}", selector, transitionMethodInfo.ReturnType.Name, transitionMethodInfo.Name, string.Join( ", ", transitionMethodInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), addTo == metaclass ? "metaclass" : "class", encoding, ( int ) address );
 
 					if( ExceptionBarrierManager.Type == ExceptionBarrierManager.BarrierType.X86 || ExceptionBarrierManager.Type == ExceptionBarrierManager.BarrierType.PPC )
 						address = ExceptionBarrierManager.Instance.Allocate( address );
@@ -1325,7 +1326,7 @@ namespace NObjective
 
 					var nativeMethodAddress = ( IntPtr ) transitionProxy.GetMethod( "&ctor" + counter ).Invoke( null, null );
 
-					Tracer.Information( "Adding constructor {0} from {1}({2}) to class with encoding = {3}, address = {4}", constructorName, constructorInfo.Name, string.Join( ", ", constructorInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), constructorEncodedName, nativeMethodAddress.ToString( "X8" ) );
+					Tracer.Information( "Adding constructor '{0}' from {1}({2}) to class with encoding = {3}, address = {4}", constructorName, constructorInfo.Name, string.Join( ", ", constructorInfo.GetParameters().Select( x => x.Name + " " + x.ParameterType ).ToArray() ), constructorEncodedName, nativeMethodAddress.ToString( "X8" ) );
 
 					if( ExceptionBarrierManager.Type != ExceptionBarrierManager.BarrierType.None )
 						nativeMethodAddress = ExceptionBarrierManager.Instance.Allocate( nativeMethodAddress );
