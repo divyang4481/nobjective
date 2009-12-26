@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoAttributeUtils;
+		public static implicit operator NSObject( DSoAttributeUtils value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoAttributeUtils value ) {
 			return value.Handle;
 		}
@@ -85,6 +88,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoBuffer;
+		public static implicit operator NSObject( DSoBuffer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoBuffer value ) {
 			return value.Handle;
 		}
@@ -181,6 +187,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoDataList;
+		public static implicit operator NSObject( DSoDataList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoDataList value ) {
 			return value.Handle;
 		}
@@ -324,6 +333,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoDataNode;
+		public static implicit operator NSObject( DSoDataNode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoDataNode value ) {
 			return value.Handle;
 		}
@@ -422,6 +434,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoDirectory;
+		public static implicit operator NSObject( DSoDirectory value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoDirectory value ) {
 			return value.Handle;
 		}
@@ -643,6 +658,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoException;
+		public static implicit operator NSException( DSoException value ) {
+			return new NSException( value.Handle );
+		}
+		public static implicit operator NSObject( DSoException value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoException value ) {
 			return value.Handle;
 		}
@@ -723,6 +744,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoGroup;
+		public static implicit operator DSoRecord( DSoGroup value ) {
+			return new DSoRecord( value.Handle );
+		}
+		public static implicit operator NSObject( DSoGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoGroup value ) {
 			return value.Handle;
 		}
@@ -786,6 +813,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoNode;
+		public static implicit operator NSObject( DSoNode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoNode value ) {
 			return value.Handle;
 		}
@@ -1190,6 +1220,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoNodeBrowserItem;
+		public static implicit operator NSObject( DSoNodeBrowserItem value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoNodeBrowserItem value ) {
 			return value.Handle;
 		}
@@ -1325,6 +1358,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoNodeConfig;
+		public static implicit operator DSoNode( DSoNodeConfig value ) {
+			return new DSoNode( value.Handle );
+		}
+		public static implicit operator NSObject( DSoNodeConfig value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoNodeConfig value ) {
 			return value.Handle;
 		}
@@ -1405,6 +1444,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoRecord;
+		public static implicit operator NSObject( DSoRecord value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoRecord value ) {
 			return value.Handle;
 		}
@@ -1682,6 +1724,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoSearchNode;
+		public static implicit operator DSoNode( DSoSearchNode value ) {
+			return new DSoNode( value.Handle );
+		}
+		public static implicit operator NSObject( DSoSearchNode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoSearchNode value ) {
 			return value.Handle;
 		}
@@ -1714,6 +1762,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoStatus;
+		public static implicit operator NSObject( DSoStatus value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoStatus value ) {
 			return value.Handle;
 		}
@@ -1777,6 +1828,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DSObjCWrappersCachedClasses.DSoUser;
+		public static implicit operator DSoRecord( DSoUser value ) {
+			return new DSoRecord( value.Handle );
+		}
+		public static implicit operator NSObject( DSoUser value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DSoUser value ) {
 			return value.Handle;
 		}

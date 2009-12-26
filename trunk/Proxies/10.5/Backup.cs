@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = BackupCachedClasses.CocoaWindowController;
+		public static implicit operator NSObject( CocoaWindowController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CocoaWindowController value ) {
 			return value.Handle;
 		}

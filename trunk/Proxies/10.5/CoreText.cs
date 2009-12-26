@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreTextCachedClasses.CTGlyphStorageInterface;
+		public static implicit operator NSObject( CTGlyphStorageInterface value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CTGlyphStorageInterface value ) {
 			return value.Handle;
 		}

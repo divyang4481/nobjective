@@ -13,6 +13,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMAbstractView;
+		public static implicit operator DOMObject( DOMAbstractView value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMAbstractView value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMAbstractView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMAbstractView value ) {
 			return value.Handle;
 		}
@@ -58,6 +67,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMAttr;
+		public static implicit operator DOMNode( DOMAttr value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMAttr value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMAttr value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMAttr value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMAttr value ) {
 			return value.Handle;
 		}
@@ -149,6 +170,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCDATASection;
+		public static implicit operator DOMText( DOMCDATASection value ) {
+			return new DOMText( value.Handle );
+		}
+		public static implicit operator DOMCharacterData( DOMCDATASection value ) {
+			return new DOMCharacterData( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMCDATASection value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCDATASection value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCDATASection value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCDATASection value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCDATASection value ) {
 			return value.Handle;
 		}
@@ -181,6 +220,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCharacterData;
+		public static implicit operator DOMNode( DOMCharacterData value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCharacterData value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCharacterData value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCharacterData value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCharacterData value ) {
 			return value.Handle;
 		}
@@ -325,6 +376,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMComment;
+		public static implicit operator DOMCharacterData( DOMComment value ) {
+			return new DOMCharacterData( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMComment value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMComment value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMComment value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMComment value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMComment value ) {
 			return value.Handle;
 		}
@@ -357,6 +423,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCounter;
+		public static implicit operator DOMObject( DOMCounter value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCounter value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCounter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCounter value ) {
 			return value.Handle;
 		}
@@ -420,6 +495,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSCharsetRule;
+		public static implicit operator DOMCSSRule( DOMCSSCharsetRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSCharsetRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSCharsetRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSCharsetRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSCharsetRule value ) {
 			return value.Handle;
 		}
@@ -465,6 +552,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSFontFaceRule;
+		public static implicit operator DOMCSSRule( DOMCSSFontFaceRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSFontFaceRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSFontFaceRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSFontFaceRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSFontFaceRule value ) {
 			return value.Handle;
 		}
@@ -510,6 +609,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSImportRule;
+		public static implicit operator DOMCSSRule( DOMCSSImportRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSImportRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSImportRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSImportRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSImportRule value ) {
 			return value.Handle;
 		}
@@ -573,6 +684,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSMediaRule;
+		public static implicit operator DOMCSSRule( DOMCSSMediaRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSMediaRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSMediaRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSMediaRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSMediaRule value ) {
 			return value.Handle;
 		}
@@ -655,6 +778,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSPageRule;
+		public static implicit operator DOMCSSRule( DOMCSSPageRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSPageRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSPageRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSPageRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSPageRule value ) {
 			return value.Handle;
 		}
@@ -719,6 +854,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSPrimitiveValue;
+		public static implicit operator DOMCSSValue( DOMCSSPrimitiveValue value ) {
+			return new DOMCSSValue( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSPrimitiveValue value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSPrimitiveValue value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSPrimitiveValue value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSPrimitiveValue value ) {
 			return value.Handle;
 		}
@@ -843,6 +990,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSRule;
+		public static implicit operator DOMObject( DOMCSSRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSRule value ) {
 			return value.Handle;
 		}
@@ -925,6 +1081,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSRuleList;
+		public static implicit operator DOMObject( DOMCSSRuleList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSRuleList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSRuleList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSRuleList value ) {
 			return value.Handle;
 		}
@@ -979,6 +1144,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSStyleDeclaration;
+		public static implicit operator DOMObject( DOMCSSStyleDeclaration value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSStyleDeclaration value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSStyleDeclaration value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSStyleDeclaration value ) {
 			return value.Handle;
 		}
@@ -3463,6 +3637,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSStyleRule;
+		public static implicit operator DOMCSSRule( DOMCSSStyleRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSStyleRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSStyleRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSStyleRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSStyleRule value ) {
 			return value.Handle;
 		}
@@ -3527,6 +3713,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSStyleSheet;
+		public static implicit operator DOMStyleSheet( DOMCSSStyleSheet value ) {
+			return new DOMStyleSheet( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSStyleSheet value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSStyleSheet value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSStyleSheet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSStyleSheet value ) {
 			return value.Handle;
 		}
@@ -3635,6 +3833,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSUnknownRule;
+		public static implicit operator DOMCSSRule( DOMCSSUnknownRule value ) {
+			return new DOMCSSRule( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSUnknownRule value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSUnknownRule value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSUnknownRule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSUnknownRule value ) {
 			return value.Handle;
 		}
@@ -3667,6 +3877,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSValue;
+		public static implicit operator DOMObject( DOMCSSValue value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSValue value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSValue value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSValue value ) {
 			return value.Handle;
 		}
@@ -3731,6 +3950,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMCSSValueList;
+		public static implicit operator DOMCSSValue( DOMCSSValueList value ) {
+			return new DOMCSSValue( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMCSSValueList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMCSSValueList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMCSSValueList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMCSSValueList value ) {
 			return value.Handle;
 		}
@@ -3785,6 +4016,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMDocument;
+		public static implicit operator DOMNode( DOMDocument value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMDocument value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMDocument value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMDocument value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMDocument value ) {
 			return value.Handle;
 		}
@@ -4634,6 +4877,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMDocumentFragment;
+		public static implicit operator DOMNode( DOMDocumentFragment value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMDocumentFragment value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMDocumentFragment value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMDocumentFragment value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMDocumentFragment value ) {
 			return value.Handle;
 		}
@@ -4666,6 +4921,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMDocumentType;
+		public static implicit operator DOMNode( DOMDocumentType value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMDocumentType value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMDocumentType value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMDocumentType value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMDocumentType value ) {
 			return value.Handle;
 		}
@@ -4756,6 +5023,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMElement;
+		public static implicit operator DOMNode( DOMElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMElement value ) {
 			return value.Handle;
 		}
@@ -5294,6 +5573,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMEntity;
+		public static implicit operator DOMNode( DOMEntity value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMEntity value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMEntity value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMEntity value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMEntity value ) {
 			return value.Handle;
 		}
@@ -5357,6 +5648,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMEntityReference;
+		public static implicit operator DOMNode( DOMEntityReference value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMEntityReference value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMEntityReference value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMEntityReference value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMEntityReference value ) {
 			return value.Handle;
 		}
@@ -5389,6 +5692,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMEvent;
+		public static implicit operator DOMObject( DOMEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMEvent value ) {
 			return value.Handle;
 		}
@@ -5565,6 +5877,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLAnchorElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLAnchorElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLAnchorElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLAnchorElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLAnchorElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLAnchorElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLAnchorElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLAnchorElement value ) {
 			return value.Handle;
 		}
@@ -5908,6 +6238,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLAppletElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLAppletElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLAppletElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLAppletElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLAppletElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLAppletElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLAppletElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLAppletElement value ) {
 			return value.Handle;
 		}
@@ -6149,6 +6497,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLAreaElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLAreaElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLAreaElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLAreaElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLAreaElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLAreaElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLAreaElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLAreaElement value ) {
 			return value.Handle;
 		}
@@ -6405,6 +6771,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLBaseElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLBaseElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLBaseElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLBaseElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLBaseElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLBaseElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLBaseElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLBaseElement value ) {
 			return value.Handle;
 		}
@@ -6479,6 +6863,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLBaseFontElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLBaseFontElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLBaseFontElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLBaseFontElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLBaseFontElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLBaseFontElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLBaseFontElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLBaseFontElement value ) {
 			return value.Handle;
 		}
@@ -6572,6 +6974,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLBodyElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLBodyElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLBodyElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLBodyElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLBodyElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLBodyElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLBodyElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLBodyElement value ) {
 			return value.Handle;
 		}
@@ -6722,6 +7142,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLBRElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLBRElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLBRElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLBRElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLBRElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLBRElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLBRElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLBRElement value ) {
 			return value.Handle;
 		}
@@ -6777,6 +7215,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLButtonElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLButtonElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLButtonElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLButtonElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLButtonElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLButtonElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLButtonElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLButtonElement value ) {
 			return value.Handle;
 		}
@@ -6930,6 +7386,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLCanvasElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLCanvasElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLCanvasElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLCanvasElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLCanvasElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLCanvasElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLCanvasElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLCanvasElement value ) {
 			return value.Handle;
 		}
@@ -7000,6 +7474,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLCollection;
+		public static implicit operator DOMObject( DOMHTMLCollection value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLCollection value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLCollection value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLCollection value ) {
 			return value.Handle;
 		}
@@ -7074,6 +7557,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLDirectoryElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLDirectoryElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLDirectoryElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLDirectoryElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLDirectoryElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLDirectoryElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLDirectoryElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLDirectoryElement value ) {
 			return value.Handle;
 		}
@@ -7127,6 +7628,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLDivElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLDivElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLDivElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLDivElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLDivElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLDivElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLDivElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLDivElement value ) {
 			return value.Handle;
 		}
@@ -7182,6 +7701,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLDListElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLDListElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLDListElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLDListElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLDListElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLDListElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLDListElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLDListElement value ) {
 			return value.Handle;
 		}
@@ -7235,6 +7772,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLDocument;
+		public static implicit operator DOMDocument( DOMHTMLDocument value ) {
+			return new DOMDocument( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLDocument value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLDocument value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLDocument value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLDocument value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLDocument value ) {
 			return value.Handle;
 		}
@@ -7514,6 +8066,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLElement;
+		public static implicit operator DOMElement( DOMHTMLElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLElement value ) {
 			return value.Handle;
 		}
@@ -7740,6 +8307,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLEmbedElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLEmbedElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLEmbedElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLEmbedElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLEmbedElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLEmbedElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLEmbedElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLEmbedElement value ) {
 			return value.Handle;
 		}
@@ -7895,6 +8480,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLFieldSetElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLFieldSetElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLFieldSetElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLFieldSetElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLFieldSetElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLFieldSetElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLFieldSetElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLFieldSetElement value ) {
 			return value.Handle;
 		}
@@ -7940,6 +8543,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLFontElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLFontElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLFontElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLFontElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLFontElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLFontElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLFontElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLFontElement value ) {
 			return value.Handle;
 		}
@@ -8033,6 +8654,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLFormElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLFormElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLFormElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLFormElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLFormElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLFormElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLFormElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLFormElement value ) {
 			return value.Handle;
 		}
@@ -8234,6 +8873,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLFrameElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLFrameElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLFrameElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLFrameElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLFrameElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLFrameElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLFrameElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLFrameElement value ) {
 			return value.Handle;
 		}
@@ -8482,6 +9139,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLFrameSetElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLFrameSetElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLFrameSetElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLFrameSetElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLFrameSetElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLFrameSetElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLFrameSetElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLFrameSetElement value ) {
 			return value.Handle;
 		}
@@ -8556,6 +9231,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLHeadElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLHeadElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLHeadElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLHeadElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLHeadElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLHeadElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLHeadElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLHeadElement value ) {
 			return value.Handle;
 		}
@@ -8611,6 +9304,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLHeadingElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLHeadingElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLHeadingElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLHeadingElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLHeadingElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLHeadingElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLHeadingElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLHeadingElement value ) {
 			return value.Handle;
 		}
@@ -8666,6 +9377,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLHRElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLHRElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLHRElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLHRElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLHRElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLHRElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLHRElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLHRElement value ) {
 			return value.Handle;
 		}
@@ -8776,6 +9505,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLHtmlElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLHtmlElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLHtmlElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLHtmlElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLHtmlElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLHtmlElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLHtmlElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLHtmlElement value ) {
 			return value.Handle;
 		}
@@ -8831,6 +9578,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLIFrameElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLIFrameElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLIFrameElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLIFrameElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLIFrameElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLIFrameElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLIFrameElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLIFrameElement value ) {
 			return value.Handle;
 		}
@@ -9084,6 +9849,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLImageElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLImageElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLImageElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLImageElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLImageElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLImageElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLImageElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLImageElement value ) {
 			return value.Handle;
 		}
@@ -9418,6 +10201,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLInputElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLInputElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLInputElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLInputElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLInputElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLInputElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLInputElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLInputElement value ) {
 			return value.Handle;
 		}
@@ -9867,6 +10668,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLIsIndexElement;
+		public static implicit operator DOMHTMLInputElement( DOMHTMLIsIndexElement value ) {
+			return new DOMHTMLInputElement( value.Handle );
+		}
+		public static implicit operator DOMHTMLElement( DOMHTMLIsIndexElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLIsIndexElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLIsIndexElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLIsIndexElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLIsIndexElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLIsIndexElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLIsIndexElement value ) {
 			return value.Handle;
 		}
@@ -9922,6 +10744,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLLabelElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLLabelElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLLabelElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLLabelElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLLabelElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLLabelElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLLabelElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLLabelElement value ) {
 			return value.Handle;
 		}
@@ -10005,6 +10845,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLLegendElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLLegendElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLLegendElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLLegendElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLLegendElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLLegendElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLLegendElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLLegendElement value ) {
 			return value.Handle;
 		}
@@ -10088,6 +10946,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLLIElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLLIElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLLIElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLLIElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLLIElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLLIElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLLIElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLLIElement value ) {
 			return value.Handle;
 		}
@@ -10160,6 +11036,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLLinkElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLLinkElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLLinkElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLLinkElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLLinkElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLLinkElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLLinkElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLLinkElement value ) {
 			return value.Handle;
 		}
@@ -10374,6 +11268,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLMapElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLMapElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLMapElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLMapElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLMapElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLMapElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLMapElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLMapElement value ) {
 			return value.Handle;
 		}
@@ -10438,6 +11350,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLMarqueeElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLMarqueeElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLMarqueeElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLMarqueeElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLMarqueeElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLMarqueeElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLMarqueeElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLMarqueeElement value ) {
 			return value.Handle;
 		}
@@ -10490,6 +11420,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLMenuElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLMenuElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLMenuElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLMenuElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLMenuElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLMenuElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLMenuElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLMenuElement value ) {
 			return value.Handle;
 		}
@@ -10543,6 +11491,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLMetaElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLMetaElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLMetaElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLMetaElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLMetaElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLMetaElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLMetaElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLMetaElement value ) {
 			return value.Handle;
 		}
@@ -10655,6 +11621,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLModElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLModElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLModElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLModElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLModElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLModElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLModElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLModElement value ) {
 			return value.Handle;
 		}
@@ -10729,6 +11713,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLObjectElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLObjectElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLObjectElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLObjectElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLObjectElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLObjectElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLObjectElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLObjectElement value ) {
 			return value.Handle;
 		}
@@ -11116,6 +12118,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLOListElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLOListElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLOListElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLOListElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLOListElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLOListElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLOListElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLOListElement value ) {
 			return value.Handle;
 		}
@@ -11205,6 +12225,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLOptGroupElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLOptGroupElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLOptGroupElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLOptGroupElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLOptGroupElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLOptGroupElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLOptGroupElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLOptGroupElement value ) {
 			return value.Handle;
 		}
@@ -11277,6 +12315,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLOptionElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLOptionElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLOptionElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLOptionElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLOptionElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLOptionElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLOptionElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLOptionElement value ) {
 			return value.Handle;
 		}
@@ -11429,6 +12485,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLOptionsCollection;
+		public static implicit operator DOMObject( DOMHTMLOptionsCollection value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLOptionsCollection value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLOptionsCollection value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLOptionsCollection value ) {
 			return value.Handle;
 		}
@@ -11535,6 +12600,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLParagraphElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLParagraphElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLParagraphElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLParagraphElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLParagraphElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLParagraphElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLParagraphElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLParagraphElement value ) {
 			return value.Handle;
 		}
@@ -11590,6 +12673,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLParamElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLParamElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLParamElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLParamElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLParamElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLParamElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLParamElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLParamElement value ) {
 			return value.Handle;
 		}
@@ -11702,6 +12803,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLPreElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLPreElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLPreElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLPreElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLPreElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLPreElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLPreElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLPreElement value ) {
 			return value.Handle;
 		}
@@ -11772,6 +12891,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLQuoteElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLQuoteElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLQuoteElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLQuoteElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLQuoteElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLQuoteElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLQuoteElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLQuoteElement value ) {
 			return value.Handle;
 		}
@@ -11827,6 +12964,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLScriptElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLScriptElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLScriptElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLScriptElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLScriptElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLScriptElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLScriptElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLScriptElement value ) {
 			return value.Handle;
 		}
@@ -11994,6 +13149,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLSelectElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLSelectElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLSelectElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLSelectElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLSelectElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLSelectElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLSelectElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLSelectElement value ) {
 			return value.Handle;
 		}
@@ -12231,6 +13404,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLStyleElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLStyleElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLStyleElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLStyleElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLStyleElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLStyleElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLStyleElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLStyleElement value ) {
 			return value.Handle;
 		}
@@ -12322,6 +13513,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTableCaptionElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTableCaptionElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTableCaptionElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTableCaptionElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTableCaptionElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTableCaptionElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTableCaptionElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTableCaptionElement value ) {
 			return value.Handle;
 		}
@@ -12377,6 +13586,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTableCellElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTableCellElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTableCellElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTableCellElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTableCellElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTableCellElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTableCellElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTableCellElement value ) {
 			return value.Handle;
 		}
@@ -12682,6 +13909,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTableColElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTableColElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTableColElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTableColElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTableColElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTableColElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTableColElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTableColElement value ) {
 			return value.Handle;
 		}
@@ -12830,6 +14075,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTableElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTableElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTableElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTableElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTableElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTableElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTableElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTableElement value ) {
 			return value.Handle;
 		}
@@ -13174,6 +14437,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTableRowElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTableRowElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTableRowElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTableRowElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTableRowElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTableRowElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTableRowElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTableRowElement value ) {
 			return value.Handle;
 		}
@@ -13349,6 +14630,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTableSectionElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTableSectionElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTableSectionElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTableSectionElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTableSectionElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTableSectionElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTableSectionElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTableSectionElement value ) {
 			return value.Handle;
 		}
@@ -13487,6 +14786,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTextAreaElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTextAreaElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTextAreaElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTextAreaElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTextAreaElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTextAreaElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTextAreaElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTextAreaElement value ) {
 			return value.Handle;
 		}
@@ -13752,6 +15069,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLTitleElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLTitleElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLTitleElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLTitleElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLTitleElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLTitleElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLTitleElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLTitleElement value ) {
 			return value.Handle;
 		}
@@ -13807,6 +15142,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMHTMLUListElement;
+		public static implicit operator DOMHTMLElement( DOMHTMLUListElement value ) {
+			return new DOMHTMLElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMHTMLUListElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMHTMLUListElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMHTMLUListElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMHTMLUListElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMHTMLUListElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMHTMLUListElement value ) {
 			return value.Handle;
 		}
@@ -13879,6 +15232,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMImplementation;
+		public static implicit operator DOMObject( DOMImplementation value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMImplementation value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMImplementation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMImplementation value ) {
 			return value.Handle;
 		}
@@ -14014,6 +15376,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMKeyboardEvent;
+		public static implicit operator DOMUIEvent( DOMKeyboardEvent value ) {
+			return new DOMUIEvent( value.Handle );
+		}
+		public static implicit operator DOMEvent( DOMKeyboardEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMKeyboardEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMKeyboardEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMKeyboardEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMKeyboardEvent value ) {
 			return value.Handle;
 		}
@@ -14144,6 +15521,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMMediaList;
+		public static implicit operator DOMObject( DOMMediaList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMMediaList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMMediaList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMMediaList value ) {
 			return value.Handle;
 		}
@@ -14237,6 +15623,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMMouseEvent;
+		public static implicit operator DOMUIEvent( DOMMouseEvent value ) {
+			return new DOMUIEvent( value.Handle );
+		}
+		public static implicit operator DOMEvent( DOMMouseEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMMouseEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMMouseEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMMouseEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMMouseEvent value ) {
 			return value.Handle;
 		}
@@ -14441,6 +15842,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMMutationEvent;
+		public static implicit operator DOMEvent( DOMMutationEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMMutationEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMMutationEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMMutationEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMMutationEvent value ) {
 			return value.Handle;
 		}
@@ -14550,6 +15963,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNamedNodeMap;
+		public static implicit operator DOMObject( DOMNamedNodeMap value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNamedNodeMap value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNamedNodeMap value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNamedNodeMap value ) {
 			return value.Handle;
 		}
@@ -14688,6 +16110,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNativeXPathNSResolver;
+		public static implicit operator DOMObject( DOMNativeXPathNSResolver value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNativeXPathNSResolver value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNativeXPathNSResolver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNativeXPathNSResolver value ) {
 			return value.Handle;
 		}
@@ -14733,6 +16164,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNode;
+		public static implicit operator DOMObject( DOMNode value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNode value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNode value ) {
 			return value.Handle;
 		}
@@ -15165,6 +16605,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNodeFilter;
+		public static implicit operator DOMObject( DOMNodeFilter value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNodeFilter value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNodeFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNodeFilter value ) {
 			return value.Handle;
 		}
@@ -15210,6 +16659,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNodeIterator;
+		public static implicit operator DOMObject( DOMNodeIterator value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNodeIterator value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNodeIterator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNodeIterator value ) {
 			return value.Handle;
 		}
@@ -15326,6 +16784,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNodeList;
+		public static implicit operator DOMObject( DOMNodeList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNodeList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNodeList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNodeList value ) {
 			return value.Handle;
 		}
@@ -15380,6 +16847,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMNotation;
+		public static implicit operator DOMNode( DOMNotation value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMNotation value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMNotation value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMNotation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMNotation value ) {
 			return value.Handle;
 		}
@@ -15434,6 +16913,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMObject;
+		public static implicit operator WebScriptObject( DOMObject value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMObject value ) {
 			return value.Handle;
 		}
@@ -15479,6 +16964,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMOverflowEvent;
+		public static implicit operator DOMEvent( DOMOverflowEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMOverflowEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMOverflowEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMOverflowEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMOverflowEvent value ) {
 			return value.Handle;
 		}
@@ -15550,6 +17047,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMProcessingInstruction;
+		public static implicit operator DOMNode( DOMProcessingInstruction value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMProcessingInstruction value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMProcessingInstruction value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMProcessingInstruction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMProcessingInstruction value ) {
 			return value.Handle;
 		}
@@ -15614,6 +17123,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMRange;
+		public static implicit operator DOMObject( DOMRange value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMRange value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMRange value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMRange value ) {
 			return value.Handle;
 		}
@@ -15941,6 +17459,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMRect;
+		public static implicit operator DOMObject( DOMRect value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMRect value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMRect value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMRect value ) {
 			return value.Handle;
 		}
@@ -16013,6 +17540,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMRGBColor;
+		public static implicit operator DOMObject( DOMRGBColor value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMRGBColor value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMRGBColor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMRGBColor value ) {
 			return value.Handle;
 		}
@@ -16094,6 +17630,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMStyleSheet;
+		public static implicit operator DOMObject( DOMStyleSheet value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMStyleSheet value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMStyleSheet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMStyleSheet value ) {
 			return value.Handle;
 		}
@@ -16201,6 +17746,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMStyleSheetList;
+		public static implicit operator DOMObject( DOMStyleSheetList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMStyleSheetList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMStyleSheetList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMStyleSheetList value ) {
 			return value.Handle;
 		}
@@ -16255,6 +17809,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAElement;
+		public static implicit operator DOMSVGElement( DOMSVGAElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGAElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGAElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGAElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAElement value ) {
 			return value.Handle;
 		}
@@ -16460,6 +18032,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAngle;
+		public static implicit operator DOMObject( DOMSVGAngle value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAngle value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAngle value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAngle value ) {
 			return value.Handle;
 		}
@@ -16572,6 +18153,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimateColorElement;
+		public static implicit operator DOMSVGAnimationElement( DOMSVGAnimateColorElement value ) {
+			return new DOMSVGAnimationElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGAnimateColorElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGAnimateColorElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGAnimateColorElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGAnimateColorElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimateColorElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimateColorElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimateColorElement value ) {
 			return value.Handle;
 		}
@@ -16604,6 +18206,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedAngle;
+		public static implicit operator DOMObject( DOMSVGAnimatedAngle value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedAngle value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedAngle value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedAngle value ) {
 			return value.Handle;
 		}
@@ -16658,6 +18269,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedBoolean;
+		public static implicit operator DOMObject( DOMSVGAnimatedBoolean value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedBoolean value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedBoolean value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedBoolean value ) {
 			return value.Handle;
 		}
@@ -16720,6 +18340,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedEnumeration;
+		public static implicit operator DOMObject( DOMSVGAnimatedEnumeration value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedEnumeration value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedEnumeration value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedEnumeration value ) {
 			return value.Handle;
 		}
@@ -16782,6 +18411,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedInteger;
+		public static implicit operator DOMObject( DOMSVGAnimatedInteger value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedInteger value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedInteger value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedInteger value ) {
 			return value.Handle;
 		}
@@ -16844,6 +18482,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedLength;
+		public static implicit operator DOMObject( DOMSVGAnimatedLength value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedLength value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedLength value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedLength value ) {
 			return value.Handle;
 		}
@@ -16898,6 +18545,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedLengthList;
+		public static implicit operator DOMObject( DOMSVGAnimatedLengthList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedLengthList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedLengthList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedLengthList value ) {
 			return value.Handle;
 		}
@@ -16952,6 +18608,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedNumber;
+		public static implicit operator DOMObject( DOMSVGAnimatedNumber value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedNumber value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedNumber value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedNumber value ) {
 			return value.Handle;
 		}
@@ -17014,6 +18679,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedNumberList;
+		public static implicit operator DOMObject( DOMSVGAnimatedNumberList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedNumberList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedNumberList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedNumberList value ) {
 			return value.Handle;
 		}
@@ -17068,6 +18742,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedPreserveAspectRatio;
+		public static implicit operator DOMObject( DOMSVGAnimatedPreserveAspectRatio value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedPreserveAspectRatio value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedPreserveAspectRatio value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedPreserveAspectRatio value ) {
 			return value.Handle;
 		}
@@ -17122,6 +18805,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedRect;
+		public static implicit operator DOMObject( DOMSVGAnimatedRect value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedRect value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedRect value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedRect value ) {
 			return value.Handle;
 		}
@@ -17176,6 +18868,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedString;
+		public static implicit operator DOMObject( DOMSVGAnimatedString value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedString value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedString value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedString value ) {
 			return value.Handle;
 		}
@@ -17238,6 +18939,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimatedTransformList;
+		public static implicit operator DOMObject( DOMSVGAnimatedTransformList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimatedTransformList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimatedTransformList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimatedTransformList value ) {
 			return value.Handle;
 		}
@@ -17292,6 +19002,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGAnimationElement;
+		public static implicit operator DOMSVGElement( DOMSVGAnimationElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGAnimationElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGAnimationElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGAnimationElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGAnimationElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGAnimationElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGAnimationElement value ) {
 			return value.Handle;
 		}
@@ -17409,6 +19137,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGCircleElement;
+		public static implicit operator DOMSVGElement( DOMSVGCircleElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGCircleElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGCircleElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGCircleElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGCircleElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGCircleElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGCircleElement value ) {
 			return value.Handle;
 		}
@@ -17623,6 +19369,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGClipPathElement;
+		public static implicit operator DOMSVGElement( DOMSVGClipPathElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGClipPathElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGClipPathElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGClipPathElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGClipPathElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGClipPathElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGClipPathElement value ) {
 			return value.Handle;
 		}
@@ -17819,6 +19583,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGColor;
+		public static implicit operator DOMCSSValue( DOMSVGColor value ) {
+			return new DOMCSSValue( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGColor value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGColor value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGColor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGColor value ) {
 			return value.Handle;
 		}
@@ -17897,6 +19673,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGCursorElement;
+		public static implicit operator DOMSVGElement( DOMSVGCursorElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGCursorElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGCursorElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGCursorElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGCursorElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGCursorElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGCursorElement value ) {
 			return value.Handle;
 		}
@@ -18005,6 +19799,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGDefinitionSrcElement;
+		public static implicit operator DOMSVGElement( DOMSVGDefinitionSrcElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGDefinitionSrcElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGDefinitionSrcElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGDefinitionSrcElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGDefinitionSrcElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGDefinitionSrcElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGDefinitionSrcElement value ) {
 			return value.Handle;
 		}
@@ -18037,6 +19849,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGDefsElement;
+		public static implicit operator DOMSVGElement( DOMSVGDefsElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGDefsElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGDefsElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGDefsElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGDefsElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGDefsElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGDefsElement value ) {
 			return value.Handle;
 		}
@@ -18224,6 +20054,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGDescElement;
+		public static implicit operator DOMSVGElement( DOMSVGDescElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGDescElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGDescElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGDescElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGDescElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGDescElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGDescElement value ) {
 			return value.Handle;
 		}
@@ -18303,6 +20151,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGDocument;
+		public static implicit operator DOMDocument( DOMSVGDocument value ) {
+			return new DOMDocument( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGDocument value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGDocument value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGDocument value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGDocument value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGDocument value ) {
 			return value.Handle;
 		}
@@ -18348,6 +20211,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGElement;
+		public static implicit operator DOMElement( DOMSVGElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGElement value ) {
 			return value.Handle;
 		}
@@ -18436,6 +20314,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGElementInstance;
+		public static implicit operator DOMObject( DOMSVGElementInstance value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGElementInstance value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGElementInstance value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGElementInstance value ) {
 			return value.Handle;
 		}
@@ -18544,6 +20431,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGElementInstanceList;
+		public static implicit operator DOMObject( DOMSVGElementInstanceList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGElementInstanceList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGElementInstanceList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGElementInstanceList value ) {
 			return value.Handle;
 		}
@@ -18598,6 +20494,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGEllipseElement;
+		public static implicit operator DOMSVGElement( DOMSVGEllipseElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGEllipseElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGEllipseElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGEllipseElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGEllipseElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGEllipseElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGEllipseElement value ) {
 			return value.Handle;
 		}
@@ -18821,6 +20735,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGFontElement;
+		public static implicit operator DOMSVGElement( DOMSVGFontElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGFontElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGFontElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGFontElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGFontElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGFontElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGFontElement value ) {
 			return value.Handle;
 		}
@@ -18853,6 +20785,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGFontFaceElement;
+		public static implicit operator DOMSVGElement( DOMSVGFontFaceElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGFontFaceElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGFontFaceElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGFontFaceElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGFontFaceElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGFontFaceElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGFontFaceElement value ) {
 			return value.Handle;
 		}
@@ -18885,6 +20835,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGFontFaceFormatElement;
+		public static implicit operator DOMSVGElement( DOMSVGFontFaceFormatElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGFontFaceFormatElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGFontFaceFormatElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGFontFaceFormatElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGFontFaceFormatElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGFontFaceFormatElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGFontFaceFormatElement value ) {
 			return value.Handle;
 		}
@@ -18917,6 +20885,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGFontFaceNameElement;
+		public static implicit operator DOMSVGElement( DOMSVGFontFaceNameElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGFontFaceNameElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGFontFaceNameElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGFontFaceNameElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGFontFaceNameElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGFontFaceNameElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGFontFaceNameElement value ) {
 			return value.Handle;
 		}
@@ -18949,6 +20935,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGFontFaceSrcElement;
+		public static implicit operator DOMSVGElement( DOMSVGFontFaceSrcElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGFontFaceSrcElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGFontFaceSrcElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGFontFaceSrcElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGFontFaceSrcElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGFontFaceSrcElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGFontFaceSrcElement value ) {
 			return value.Handle;
 		}
@@ -18981,6 +20985,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGFontFaceUriElement;
+		public static implicit operator DOMSVGElement( DOMSVGFontFaceUriElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGFontFaceUriElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGFontFaceUriElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGFontFaceUriElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGFontFaceUriElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGFontFaceUriElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGFontFaceUriElement value ) {
 			return value.Handle;
 		}
@@ -19013,6 +21035,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGForeignObjectElement;
+		public static implicit operator DOMSVGElement( DOMSVGForeignObjectElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGForeignObjectElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGForeignObjectElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGForeignObjectElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGForeignObjectElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGForeignObjectElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGForeignObjectElement value ) {
 			return value.Handle;
 		}
@@ -19236,6 +21276,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGGElement;
+		public static implicit operator DOMSVGElement( DOMSVGGElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGGElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGGElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGGElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGGElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGGElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGGElement value ) {
 			return value.Handle;
 		}
@@ -19423,6 +21481,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGGlyphElement;
+		public static implicit operator DOMSVGElement( DOMSVGGlyphElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGGlyphElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGGlyphElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGGlyphElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGGlyphElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGGlyphElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGGlyphElement value ) {
 			return value.Handle;
 		}
@@ -19455,6 +21531,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGGradientElement;
+		public static implicit operator DOMSVGElement( DOMSVGGradientElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGGradientElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGGradientElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGGradientElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGGradientElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGGradientElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGGradientElement value ) {
 			return value.Handle;
 		}
@@ -19545,6 +21639,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGImageElement;
+		public static implicit operator DOMSVGElement( DOMSVGImageElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGImageElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGImageElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGImageElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGImageElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGImageElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGImageElement value ) {
 			return value.Handle;
 		}
@@ -19786,6 +21898,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGLength;
+		public static implicit operator DOMObject( DOMSVGLength value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGLength value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGLength value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGLength value ) {
 			return value.Handle;
 		}
@@ -19898,6 +22019,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGLengthList;
+		public static implicit operator DOMObject( DOMSVGLengthList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGLengthList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGLengthList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGLengthList value ) {
 			return value.Handle;
 		}
@@ -20005,6 +22135,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGLinearGradientElement;
+		public static implicit operator DOMSVGGradientElement( DOMSVGLinearGradientElement value ) {
+			return new DOMSVGGradientElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGLinearGradientElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGLinearGradientElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGLinearGradientElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGLinearGradientElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGLinearGradientElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGLinearGradientElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGLinearGradientElement value ) {
 			return value.Handle;
 		}
@@ -20077,6 +22228,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGLineElement;
+		public static implicit operator DOMSVGElement( DOMSVGLineElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGLineElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGLineElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGLineElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGLineElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGLineElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGLineElement value ) {
 			return value.Handle;
 		}
@@ -20300,6 +22469,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGMarkerElement;
+		public static implicit operator DOMSVGElement( DOMSVGMarkerElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGMarkerElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGMarkerElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGMarkerElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGMarkerElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGMarkerElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGMarkerElement value ) {
 			return value.Handle;
 		}
@@ -20485,6 +22672,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGMaskElement;
+		public static implicit operator DOMSVGElement( DOMSVGMaskElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGMaskElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGMaskElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGMaskElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGMaskElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGMaskElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGMaskElement value ) {
 			return value.Handle;
 		}
@@ -20663,6 +22868,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGMatrix;
+		public static implicit operator DOMObject( DOMSVGMatrix value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGMatrix value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGMatrix value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGMatrix value ) {
 			return value.Handle;
 		}
@@ -20900,6 +23114,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGMetadataElement;
+		public static implicit operator DOMSVGElement( DOMSVGMetadataElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGMetadataElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGMetadataElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGMetadataElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGMetadataElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGMetadataElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGMetadataElement value ) {
 			return value.Handle;
 		}
@@ -20932,6 +23164,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGMissingGlyphElement;
+		public static implicit operator DOMSVGElement( DOMSVGMissingGlyphElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGMissingGlyphElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGMissingGlyphElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGMissingGlyphElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGMissingGlyphElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGMissingGlyphElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGMissingGlyphElement value ) {
 			return value.Handle;
 		}
@@ -20964,6 +23214,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGNumber;
+		public static implicit operator DOMObject( DOMSVGNumber value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGNumber value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGNumber value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGNumber value ) {
 			return value.Handle;
 		}
@@ -21017,6 +23276,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGNumberList;
+		public static implicit operator DOMObject( DOMSVGNumberList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGNumberList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGNumberList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGNumberList value ) {
 			return value.Handle;
 		}
@@ -21124,6 +23392,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPaint;
+		public static implicit operator DOMSVGColor( DOMSVGPaint value ) {
+			return new DOMSVGColor( value.Handle );
+		}
+		public static implicit operator DOMCSSValue( DOMSVGPaint value ) {
+			return new DOMCSSValue( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPaint value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPaint value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPaint value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPaint value ) {
 			return value.Handle;
 		}
@@ -21194,6 +23477,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathElement;
+		public static implicit operator DOMSVGElement( DOMSVGPathElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGPathElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGPathElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathElement value ) {
 			return value.Handle;
 		}
@@ -21632,6 +23933,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSeg;
+		public static implicit operator DOMObject( DOMSVGPathSeg value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSeg value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSeg value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSeg value ) {
 			return value.Handle;
 		}
@@ -21686,6 +23996,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegArcAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegArcAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegArcAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegArcAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegArcAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegArcAbs value ) {
 			return value.Handle;
 		}
@@ -21841,6 +24163,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegArcRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegArcRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegArcRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegArcRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegArcRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegArcRel value ) {
 			return value.Handle;
 		}
@@ -21996,6 +24330,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegClosePath;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegClosePath value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegClosePath value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegClosePath value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegClosePath value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegClosePath value ) {
 			return value.Handle;
 		}
@@ -22028,6 +24374,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoCubicAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoCubicAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoCubicAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoCubicAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoCubicAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoCubicAbs value ) {
 			return value.Handle;
 		}
@@ -22166,6 +24524,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoCubicRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoCubicRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoCubicRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoCubicRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoCubicRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoCubicRel value ) {
 			return value.Handle;
 		}
@@ -22304,6 +24674,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoCubicSmoothAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoCubicSmoothAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoCubicSmoothAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoCubicSmoothAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoCubicSmoothAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoCubicSmoothAbs value ) {
 			return value.Handle;
 		}
@@ -22408,6 +24790,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoCubicSmoothRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoCubicSmoothRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoCubicSmoothRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoCubicSmoothRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoCubicSmoothRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoCubicSmoothRel value ) {
 			return value.Handle;
 		}
@@ -22512,6 +24906,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoQuadraticAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoQuadraticAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoQuadraticAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoQuadraticAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoQuadraticAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoQuadraticAbs value ) {
 			return value.Handle;
 		}
@@ -22616,6 +25022,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoQuadraticRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoQuadraticRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoQuadraticRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoQuadraticRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoQuadraticRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoQuadraticRel value ) {
 			return value.Handle;
 		}
@@ -22720,6 +25138,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoQuadraticSmoothAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoQuadraticSmoothAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoQuadraticSmoothAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoQuadraticSmoothAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoQuadraticSmoothAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoQuadraticSmoothAbs value ) {
 			return value.Handle;
 		}
@@ -22790,6 +25220,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegCurvetoQuadraticSmoothRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegCurvetoQuadraticSmoothRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegCurvetoQuadraticSmoothRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegCurvetoQuadraticSmoothRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegCurvetoQuadraticSmoothRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegCurvetoQuadraticSmoothRel value ) {
 			return value.Handle;
 		}
@@ -22860,6 +25302,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegLinetoAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegLinetoAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegLinetoAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegLinetoAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegLinetoAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegLinetoAbs value ) {
 			return value.Handle;
 		}
@@ -22930,6 +25384,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegLinetoHorizontalAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegLinetoHorizontalAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegLinetoHorizontalAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegLinetoHorizontalAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegLinetoHorizontalAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegLinetoHorizontalAbs value ) {
 			return value.Handle;
 		}
@@ -22983,6 +25449,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegLinetoHorizontalRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegLinetoHorizontalRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegLinetoHorizontalRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegLinetoHorizontalRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegLinetoHorizontalRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegLinetoHorizontalRel value ) {
 			return value.Handle;
 		}
@@ -23036,6 +25514,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegLinetoRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegLinetoRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegLinetoRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegLinetoRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegLinetoRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegLinetoRel value ) {
 			return value.Handle;
 		}
@@ -23106,6 +25596,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegLinetoVerticalAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegLinetoVerticalAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegLinetoVerticalAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegLinetoVerticalAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegLinetoVerticalAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegLinetoVerticalAbs value ) {
 			return value.Handle;
 		}
@@ -23159,6 +25661,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegLinetoVerticalRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegLinetoVerticalRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegLinetoVerticalRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegLinetoVerticalRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegLinetoVerticalRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegLinetoVerticalRel value ) {
 			return value.Handle;
 		}
@@ -23212,6 +25726,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegList;
+		public static implicit operator DOMObject( DOMSVGPathSegList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegList value ) {
 			return value.Handle;
 		}
@@ -23319,6 +25842,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegMovetoAbs;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegMovetoAbs value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegMovetoAbs value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegMovetoAbs value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegMovetoAbs value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegMovetoAbs value ) {
 			return value.Handle;
 		}
@@ -23389,6 +25924,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPathSegMovetoRel;
+		public static implicit operator DOMSVGPathSeg( DOMSVGPathSegMovetoRel value ) {
+			return new DOMSVGPathSeg( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPathSegMovetoRel value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPathSegMovetoRel value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPathSegMovetoRel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPathSegMovetoRel value ) {
 			return value.Handle;
 		}
@@ -23459,6 +26006,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPatternElement;
+		public static implicit operator DOMSVGElement( DOMSVGPatternElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGPatternElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGPatternElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPatternElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPatternElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPatternElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPatternElement value ) {
 			return value.Handle;
 		}
@@ -23673,6 +26238,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPoint;
+		public static implicit operator DOMObject( DOMSVGPoint value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPoint value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPoint value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPoint value ) {
 			return value.Handle;
 		}
@@ -23752,6 +26326,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPointList;
+		public static implicit operator DOMObject( DOMSVGPointList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPointList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPointList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPointList value ) {
 			return value.Handle;
 		}
@@ -23859,6 +26442,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPolygonElement;
+		public static implicit operator DOMSVGElement( DOMSVGPolygonElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGPolygonElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGPolygonElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPolygonElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPolygonElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPolygonElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPolygonElement value ) {
 			return value.Handle;
 		}
@@ -24064,6 +26665,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPolylineElement;
+		public static implicit operator DOMSVGElement( DOMSVGPolylineElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGPolylineElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGPolylineElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGPolylineElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPolylineElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPolylineElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPolylineElement value ) {
 			return value.Handle;
 		}
@@ -24269,6 +26888,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGPreserveAspectRatio;
+		public static implicit operator DOMObject( DOMSVGPreserveAspectRatio value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGPreserveAspectRatio value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGPreserveAspectRatio value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGPreserveAspectRatio value ) {
 			return value.Handle;
 		}
@@ -24339,6 +26967,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGRadialGradientElement;
+		public static implicit operator DOMSVGGradientElement( DOMSVGRadialGradientElement value ) {
+			return new DOMSVGGradientElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGRadialGradientElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGRadialGradientElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGRadialGradientElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGRadialGradientElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGRadialGradientElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGRadialGradientElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGRadialGradientElement value ) {
 			return value.Handle;
 		}
@@ -24420,6 +27069,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGRect;
+		public static implicit operator DOMObject( DOMSVGRect value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGRect value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGRect value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGRect value ) {
 			return value.Handle;
 		}
@@ -24524,6 +27182,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGRectElement;
+		public static implicit operator DOMSVGElement( DOMSVGRectElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGRectElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGRectElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGRectElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGRectElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGRectElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGRectElement value ) {
 			return value.Handle;
 		}
@@ -24765,6 +27441,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGRenderingIntent;
+		public static implicit operator DOMObject( DOMSVGRenderingIntent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGRenderingIntent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGRenderingIntent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGRenderingIntent value ) {
 			return value.Handle;
 		}
@@ -24797,6 +27482,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGScriptElement;
+		public static implicit operator DOMSVGElement( DOMSVGScriptElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGScriptElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGScriptElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGScriptElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGScriptElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGScriptElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGScriptElement value ) {
 			return value.Handle;
 		}
@@ -24868,6 +27571,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGSetElement;
+		public static implicit operator DOMSVGAnimationElement( DOMSVGSetElement value ) {
+			return new DOMSVGAnimationElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGSetElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGSetElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGSetElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGSetElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGSetElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGSetElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGSetElement value ) {
 			return value.Handle;
 		}
@@ -24900,6 +27624,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGStopElement;
+		public static implicit operator DOMSVGElement( DOMSVGStopElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGStopElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGStopElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGStopElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGStopElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGStopElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGStopElement value ) {
 			return value.Handle;
 		}
@@ -24954,6 +27696,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGStringList;
+		public static implicit operator DOMObject( DOMSVGStringList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGStringList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGStringList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGStringList value ) {
 			return value.Handle;
 		}
@@ -25061,6 +27812,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGStyleElement;
+		public static implicit operator DOMSVGElement( DOMSVGStyleElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGStyleElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGStyleElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGStyleElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGStyleElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGStyleElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGStyleElement value ) {
 			return value.Handle;
 		}
@@ -25165,6 +27934,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGSVGElement;
+		public static implicit operator DOMSVGElement( DOMSVGSVGElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGSVGElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGSVGElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGSVGElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGSVGElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGSVGElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGSVGElement value ) {
 			return value.Handle;
 		}
@@ -25727,6 +28514,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGSwitchElement;
+		public static implicit operator DOMSVGElement( DOMSVGSwitchElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGSwitchElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGSwitchElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGSwitchElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGSwitchElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGSwitchElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGSwitchElement value ) {
 			return value.Handle;
 		}
@@ -25914,6 +28719,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGSymbolElement;
+		public static implicit operator DOMSVGElement( DOMSVGSymbolElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGSymbolElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGSymbolElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGSymbolElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGSymbolElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGSymbolElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGSymbolElement value ) {
 			return value.Handle;
 		}
@@ -26020,6 +28843,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTextContentElement;
+		public static implicit operator DOMSVGElement( DOMSVGTextContentElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTextContentElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTextContentElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTextContentElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTextContentElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTextContentElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTextContentElement value ) {
 			return value.Handle;
 		}
@@ -26242,6 +29083,30 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTextElement;
+		public static implicit operator DOMSVGTextPositioningElement( DOMSVGTextElement value ) {
+			return new DOMSVGTextPositioningElement( value.Handle );
+		}
+		public static implicit operator DOMSVGTextContentElement( DOMSVGTextElement value ) {
+			return new DOMSVGTextContentElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGTextElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTextElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTextElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTextElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTextElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTextElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTextElement value ) {
 			return value.Handle;
 		}
@@ -26341,6 +29206,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTextPathElement;
+		public static implicit operator DOMSVGTextContentElement( DOMSVGTextPathElement value ) {
+			return new DOMSVGTextContentElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGTextPathElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTextPathElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTextPathElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTextPathElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTextPathElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTextPathElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTextPathElement value ) {
 			return value.Handle;
 		}
@@ -26413,6 +29299,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTextPositioningElement;
+		public static implicit operator DOMSVGTextContentElement( DOMSVGTextPositioningElement value ) {
+			return new DOMSVGTextContentElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGTextPositioningElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTextPositioningElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTextPositioningElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTextPositioningElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTextPositioningElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTextPositioningElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTextPositioningElement value ) {
 			return value.Handle;
 		}
@@ -26494,6 +29401,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTitleElement;
+		public static implicit operator DOMSVGElement( DOMSVGTitleElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTitleElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTitleElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTitleElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTitleElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTitleElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTitleElement value ) {
 			return value.Handle;
 		}
@@ -26573,6 +29498,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTransform;
+		public static implicit operator DOMObject( DOMSVGTransform value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTransform value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTransform value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTransform value ) {
 			return value.Handle;
 		}
@@ -26684,6 +29618,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTransformList;
+		public static implicit operator DOMObject( DOMSVGTransformList value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTransformList value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTransformList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTransformList value ) {
 			return value.Handle;
 		}
@@ -26809,6 +29752,30 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTRefElement;
+		public static implicit operator DOMSVGTextPositioningElement( DOMSVGTRefElement value ) {
+			return new DOMSVGTextPositioningElement( value.Handle );
+		}
+		public static implicit operator DOMSVGTextContentElement( DOMSVGTRefElement value ) {
+			return new DOMSVGTextContentElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGTRefElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTRefElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTRefElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTRefElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTRefElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTRefElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTRefElement value ) {
 			return value.Handle;
 		}
@@ -26854,6 +29821,30 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGTSpanElement;
+		public static implicit operator DOMSVGTextPositioningElement( DOMSVGTSpanElement value ) {
+			return new DOMSVGTextPositioningElement( value.Handle );
+		}
+		public static implicit operator DOMSVGTextContentElement( DOMSVGTSpanElement value ) {
+			return new DOMSVGTextContentElement( value.Handle );
+		}
+		public static implicit operator DOMSVGElement( DOMSVGTSpanElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGTSpanElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGTSpanElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGTSpanElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGTSpanElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGTSpanElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGTSpanElement value ) {
 			return value.Handle;
 		}
@@ -26886,6 +29877,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGUnitTypes;
+		public static implicit operator DOMObject( DOMSVGUnitTypes value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGUnitTypes value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGUnitTypes value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGUnitTypes value ) {
 			return value.Handle;
 		}
@@ -26918,6 +29918,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGUseElement;
+		public static implicit operator DOMSVGElement( DOMSVGUseElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGUseElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGUseElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGUseElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGUseElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGUseElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGUseElement value ) {
 			return value.Handle;
 		}
@@ -27168,6 +30186,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGViewElement;
+		public static implicit operator DOMSVGElement( DOMSVGViewElement value ) {
+			return new DOMSVGElement( value.Handle );
+		}
+		public static implicit operator DOMElement( DOMSVGViewElement value ) {
+			return new DOMElement( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMSVGViewElement value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGViewElement value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGViewElement value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGViewElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGViewElement value ) {
 			return value.Handle;
 		}
@@ -27257,6 +30293,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMSVGZoomEvent;
+		public static implicit operator DOMUIEvent( DOMSVGZoomEvent value ) {
+			return new DOMUIEvent( value.Handle );
+		}
+		public static implicit operator DOMEvent( DOMSVGZoomEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMSVGZoomEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMSVGZoomEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMSVGZoomEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMSVGZoomEvent value ) {
 			return value.Handle;
 		}
@@ -27338,6 +30389,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMText;
+		public static implicit operator DOMCharacterData( DOMText value ) {
+			return new DOMCharacterData( value.Handle );
+		}
+		public static implicit operator DOMNode( DOMText value ) {
+			return new DOMNode( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMText value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMText value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMText value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMText value ) {
 			return value.Handle;
 		}
@@ -27383,6 +30449,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMTextEvent;
+		public static implicit operator DOMUIEvent( DOMTextEvent value ) {
+			return new DOMUIEvent( value.Handle );
+		}
+		public static implicit operator DOMEvent( DOMTextEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMTextEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMTextEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMTextEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMTextEvent value ) {
 			return value.Handle;
 		}
@@ -27436,6 +30517,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMTreeWalker;
+		public static implicit operator DOMObject( DOMTreeWalker value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMTreeWalker value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMTreeWalker value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMTreeWalker value ) {
 			return value.Handle;
 		}
@@ -27588,6 +30678,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMUIEvent;
+		public static implicit operator DOMEvent( DOMUIEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMUIEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMUIEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMUIEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMUIEvent value ) {
 			return value.Handle;
 		}
@@ -27723,6 +30825,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMWheelEvent;
+		public static implicit operator DOMUIEvent( DOMWheelEvent value ) {
+			return new DOMUIEvent( value.Handle );
+		}
+		public static implicit operator DOMEvent( DOMWheelEvent value ) {
+			return new DOMEvent( value.Handle );
+		}
+		public static implicit operator DOMObject( DOMWheelEvent value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMWheelEvent value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMWheelEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMWheelEvent value ) {
 			return value.Handle;
 		}
@@ -27914,6 +31031,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMXPathExpression;
+		public static implicit operator DOMObject( DOMXPathExpression value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMXPathExpression value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMXPathExpression value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMXPathExpression value ) {
 			return value.Handle;
 		}
@@ -27968,6 +31094,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.DOMXPathResult;
+		public static implicit operator DOMObject( DOMXPathResult value ) {
+			return new DOMObject( value.Handle );
+		}
+		public static implicit operator WebScriptObject( DOMXPathResult value ) {
+			return new WebScriptObject( value.Handle );
+		}
+		public static implicit operator NSObject( DOMXPathResult value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DOMXPathResult value ) {
 			return value.Handle;
 		}
@@ -28085,6 +31220,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreAXObject;
+		public static implicit operator NSObject( WebCoreAXObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreAXObject value ) {
 			return value.Handle;
 		}
@@ -28894,6 +32032,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreControlTintObserver;
+		public static implicit operator NSObject( WebCoreControlTintObserver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreControlTintObserver value ) {
 			return value.Handle;
 		}
@@ -28938,6 +32079,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreCursorBundle;
+		public static implicit operator NSObject( WebCoreCursorBundle value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreCursorBundle value ) {
 			return value.Handle;
 		}
@@ -28970,6 +32114,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreFrameBridge;
+		public static implicit operator NSObject( WebCoreFrameBridge value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreFrameBridge value ) {
 			return value.Handle;
 		}
@@ -29601,6 +32748,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreFunctionWrapper;
+		public static implicit operator NSObject( WebCoreFunctionWrapper value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreFunctionWrapper value ) {
 			return value.Handle;
 		}
@@ -29645,6 +32795,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreHistory;
+		public static implicit operator NSObject( WebCoreHistory value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreHistory value ) {
 			return value.Handle;
 		}
@@ -29698,6 +32851,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreKeyGenerator;
+		public static implicit operator NSObject( WebCoreKeyGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreKeyGenerator value ) {
 			return value.Handle;
 		}
@@ -29761,6 +32917,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreMenuTarget;
+		public static implicit operator NSObject( WebCoreMenuTarget value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreMenuTarget value ) {
 			return value.Handle;
 		}
@@ -29823,6 +32982,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreMovieObserver;
+		public static implicit operator NSObject( WebCoreMovieObserver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreMovieObserver value ) {
 			return value.Handle;
 		}
@@ -29923,6 +33085,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreOpenPanelController;
+		public static implicit operator NSObject( WebCoreOpenPanelController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreOpenPanelController value ) {
 			return value.Handle;
 		}
@@ -29983,6 +33148,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCorePowerNotifier;
+		public static implicit operator NSObject( WebCorePowerNotifier value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCorePowerNotifier value ) {
 			return value.Handle;
 		}
@@ -30027,6 +33195,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreRenderThemeNotificationObserver;
+		public static implicit operator NSObject( WebCoreRenderThemeNotificationObserver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreRenderThemeNotificationObserver value ) {
 			return value.Handle;
 		}
@@ -30071,6 +33242,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreResourceHandleAsDelegate;
+		public static implicit operator NSObject( WebCoreResourceHandleAsDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreResourceHandleAsDelegate value ) {
 			return value.Handle;
 		}
@@ -30213,6 +33387,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreScriptCallFrame;
+		public static implicit operator NSObject( WebCoreScriptCallFrame value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreScriptCallFrame value ) {
 			return value.Handle;
 		}
@@ -30303,6 +33480,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreScriptDebugger;
+		public static implicit operator NSObject( WebCoreScriptDebugger value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreScriptDebugger value ) {
 			return value.Handle;
 		}
@@ -30357,6 +33537,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreScrollBar;
+		public static implicit operator NSScroller( WebCoreScrollBar value ) {
+			return new NSScroller( value.Handle );
+		}
+		public static implicit operator NSControl( WebCoreScrollBar value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( WebCoreScrollBar value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebCoreScrollBar value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebCoreScrollBar value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreScrollBar value ) {
 			return value.Handle;
 		}
@@ -30409,6 +33604,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreSharedBufferData;
+		public static implicit operator NSData( WebCoreSharedBufferData value ) {
+			return new NSData( value.Handle );
+		}
+		public static implicit operator NSObject( WebCoreSharedBufferData value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreSharedBufferData value ) {
 			return value.Handle;
 		}
@@ -30441,6 +33642,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebCoreViewFactory;
+		public static implicit operator NSObject( WebCoreViewFactory value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreViewFactory value ) {
 			return value.Handle;
 		}
@@ -30486,6 +33690,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebDashboardRegion;
+		public static implicit operator NSObject( WebDashboardRegion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDashboardRegion value ) {
 			return value.Handle;
 		}
@@ -30531,6 +33738,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebFontCache;
+		public static implicit operator NSObject( WebFontCache value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFontCache value ) {
 			return value.Handle;
 		}
@@ -30585,6 +33795,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebScriptObject;
+		public static implicit operator NSObject( WebScriptObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebScriptObject value ) {
 			return value.Handle;
 		}
@@ -30709,6 +33922,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebScriptObjectPrivate;
+		public static implicit operator NSObject( WebScriptObjectPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebScriptObjectPrivate value ) {
 			return value.Handle;
 		}
@@ -30741,6 +33957,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebCoreCachedClasses.WebUndefined;
+		public static implicit operator NSObject( WebUndefined value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebUndefined value ) {
 			return value.Handle;
 		}

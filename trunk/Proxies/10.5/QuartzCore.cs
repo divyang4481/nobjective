@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAAnimation;
+		public static implicit operator NSObject( CAAnimation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAAnimation value ) {
 			return value.Handle;
 		}
@@ -379,6 +382,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAAnimationGroup;
+		public static implicit operator CAAnimation( CAAnimationGroup value ) {
+			return new CAAnimation( value.Handle );
+		}
+		public static implicit operator NSObject( CAAnimationGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAAnimationGroup value ) {
 			return value.Handle;
 		}
@@ -436,6 +445,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CABasicAnimation;
+		public static implicit operator CAPropertyAnimation( CABasicAnimation value ) {
+			return new CAPropertyAnimation( value.Handle );
+		}
+		public static implicit operator CAAnimation( CABasicAnimation value ) {
+			return new CAAnimation( value.Handle );
+		}
+		public static implicit operator NSObject( CABasicAnimation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CABasicAnimation value ) {
 			return value.Handle;
 		}
@@ -553,6 +571,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CABoxLayoutManager;
+		public static implicit operator NSObject( CABoxLayoutManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CABoxLayoutManager value ) {
 			return value.Handle;
 		}
@@ -615,6 +636,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CACodingProxy;
+		public static implicit operator NSObject( CACodingProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CACodingProxy value ) {
 			return value.Handle;
 		}
@@ -686,6 +710,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAConstraint;
+		public static implicit operator NSObject( CAConstraint value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAConstraint value ) {
 			return value.Handle;
 		}
@@ -783,6 +810,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAConstraintLayoutManager;
+		public static implicit operator NSObject( CAConstraintLayoutManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAConstraintLayoutManager value ) {
 			return value.Handle;
 		}
@@ -845,6 +875,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAContext;
+		public static implicit operator NSObject( CAContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAContext value ) {
 			return value.Handle;
 		}
@@ -1038,6 +1071,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAContextImpl;
+		public static implicit operator CAContext( CAContextImpl value ) {
+			return new CAContext( value.Handle );
+		}
+		public static implicit operator NSObject( CAContextImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAContextImpl value ) {
 			return value.Handle;
 		}
@@ -1117,6 +1156,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAEmitterCell;
+		public static implicit operator NSObject( CAEmitterCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAEmitterCell value ) {
 			return value.Handle;
 		}
@@ -1293,6 +1335,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAEmitterLayer;
+		public static implicit operator CALayer( CAEmitterLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CAEmitterLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAEmitterLayer value ) {
 			return value.Handle;
 		}
@@ -1349,6 +1397,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAFilter;
+		public static implicit operator NSObject( CAFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAFilter value ) {
 			return value.Handle;
 		}
@@ -1587,6 +1638,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CATransform3D;
+		public static implicit operator NSObject( CAJS_CATransform3D value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CATransform3D value ) {
 			return value.Handle;
 		}
@@ -1641,6 +1695,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CGColor;
+		public static implicit operator NSObject( CAJS_CGColor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CGColor value ) {
 			return value.Handle;
 		}
@@ -1767,6 +1824,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CGColorSpace;
+		public static implicit operator NSObject( CAJS_CGColorSpace value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CGColorSpace value ) {
 			return value.Handle;
 		}
@@ -1812,6 +1872,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CGImage;
+		public static implicit operator NSObject( CAJS_CGImage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CGImage value ) {
 			return value.Handle;
 		}
@@ -1844,6 +1907,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CGPoint;
+		public static implicit operator NSObject( CAJS_CGPoint value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CGPoint value ) {
 			return value.Handle;
 		}
@@ -1876,6 +1942,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CGRect;
+		public static implicit operator NSObject( CAJS_CGRect value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CGRect value ) {
 			return value.Handle;
 		}
@@ -1993,6 +2062,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJS_CGSize;
+		public static implicit operator NSObject( CAJS_CGSize value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJS_CGSize value ) {
 			return value.Handle;
 		}
@@ -2025,6 +2097,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJSArray;
+		public static implicit operator NSMutableArray( CAJSArray value ) {
+			return new NSMutableArray( value.Handle );
+		}
+		public static implicit operator NSArray( CAJSArray value ) {
+			return new NSArray( value.Handle );
+		}
+		public static implicit operator NSObject( CAJSArray value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJSArray value ) {
 			return value.Handle;
 		}
@@ -2070,6 +2151,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJSCGContext;
+		public static implicit operator NSObject( CAJSCGContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJSCGContext value ) {
 			return value.Handle;
 		}
@@ -2436,6 +2520,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJSDictionary;
+		public static implicit operator NSMutableDictionary( CAJSDictionary value ) {
+			return new NSMutableDictionary( value.Handle );
+		}
+		public static implicit operator NSDictionary( CAJSDictionary value ) {
+			return new NSDictionary( value.Handle );
+		}
+		public static implicit operator NSObject( CAJSDictionary value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJSDictionary value ) {
 			return value.Handle;
 		}
@@ -2481,6 +2574,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJSDictionaryKeyEnumerator;
+		public static implicit operator NSEnumerator( CAJSDictionaryKeyEnumerator value ) {
+			return new NSEnumerator( value.Handle );
+		}
+		public static implicit operator NSObject( CAJSDictionaryKeyEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJSDictionaryKeyEnumerator value ) {
 			return value.Handle;
 		}
@@ -2513,6 +2612,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJSFunction;
+		public static implicit operator NSObject( CAJSFunction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJSFunction value ) {
 			return value.Handle;
 		}
@@ -2574,6 +2676,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAJSString;
+		public static implicit operator NSString( CAJSString value ) {
+			return new NSString( value.Handle );
+		}
+		public static implicit operator NSObject( CAJSString value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAJSString value ) {
 			return value.Handle;
 		}
@@ -2619,6 +2727,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAKeyframeAnimation;
+		public static implicit operator CAPropertyAnimation( CAKeyframeAnimation value ) {
+			return new CAPropertyAnimation( value.Handle );
+		}
+		public static implicit operator CAAnimation( CAKeyframeAnimation value ) {
+			return new CAAnimation( value.Handle );
+		}
+		public static implicit operator NSObject( CAKeyframeAnimation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAKeyframeAnimation value ) {
 			return value.Handle;
 		}
@@ -2724,6 +2841,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CALayer;
+		public static implicit operator NSObject( CALayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CALayer value ) {
 			return value.Handle;
 		}
@@ -3957,6 +4077,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAMediaTimingFunction;
+		public static implicit operator NSObject( CAMediaTimingFunction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAMediaTimingFunction value ) {
 			return value.Handle;
 		}
@@ -4039,6 +4162,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAMLParser;
+		public static implicit operator NSObject( CAMLParser value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAMLParser value ) {
 			return value.Handle;
 		}
@@ -4207,6 +4333,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAOpenGLLayer;
+		public static implicit operator CALayer( CAOpenGLLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CAOpenGLLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAOpenGLLayer value ) {
 			return value.Handle;
 		}
@@ -4302,6 +4434,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAPDFLayer;
+		public static implicit operator CALayer( CAPDFLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CAPDFLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAPDFLayer value ) {
 			return value.Handle;
 		}
@@ -4346,6 +4484,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAPropertyAnimation;
+		public static implicit operator CAAnimation( CAPropertyAnimation value ) {
+			return new CAAnimation( value.Handle );
+		}
+		public static implicit operator NSObject( CAPropertyAnimation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAPropertyAnimation value ) {
 			return value.Handle;
 		}
@@ -4456,6 +4600,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CARenderer;
+		public static implicit operator NSObject( CARenderer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CARenderer value ) {
 			return value.Handle;
 		}
@@ -4581,6 +4728,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAScriptContext;
+		public static implicit operator NSObject( CAScriptContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAScriptContext value ) {
 			return value.Handle;
 		}
@@ -4722,6 +4872,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAScrollLayer;
+		public static implicit operator CALayer( CAScrollLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CAScrollLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAScrollLayer value ) {
 			return value.Handle;
 		}
@@ -4774,6 +4930,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAScrollLayoutManager;
+		public static implicit operator NSObject( CAScrollLayoutManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAScrollLayoutManager value ) {
 			return value.Handle;
 		}
@@ -4836,6 +4995,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CASlotProxy;
+		public static implicit operator NSObject( CASlotProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CASlotProxy value ) {
 			return value.Handle;
 		}
@@ -4881,6 +5043,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CASublayerEnumerator;
+		public static implicit operator NSEnumerator( CASublayerEnumerator value ) {
+			return new NSEnumerator( value.Handle );
+		}
+		public static implicit operator NSObject( CASublayerEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CASublayerEnumerator value ) {
 			return value.Handle;
 		}
@@ -4926,6 +5094,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CATableLayoutManager;
+		public static implicit operator NSObject( CATableLayoutManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CATableLayoutManager value ) {
 			return value.Handle;
 		}
@@ -4988,6 +5159,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CATextLayer;
+		public static implicit operator CALayer( CATextLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CATextLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CATextLayer value ) {
 			return value.Handle;
 		}
@@ -5041,6 +5218,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CATiledLayer;
+		public static implicit operator CALayer( CATiledLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CATiledLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CATiledLayer value ) {
 			return value.Handle;
 		}
@@ -5103,6 +5286,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CATransaction;
+		public static implicit operator NSObject( CATransaction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CATransaction value ) {
 			return value.Handle;
 		}
@@ -5226,6 +5412,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CATransformLayer;
+		public static implicit operator CALayer( CATransformLayer value ) {
+			return new CALayer( value.Handle );
+		}
+		public static implicit operator NSObject( CATransformLayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CATransformLayer value ) {
 			return value.Handle;
 		}
@@ -5258,6 +5450,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CATransition;
+		public static implicit operator CAAnimation( CATransition value ) {
+			return new CAAnimation( value.Handle );
+		}
+		public static implicit operator NSObject( CATransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CATransition value ) {
 			return value.Handle;
 		}
@@ -5375,6 +5573,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CAWrappedLayoutManager;
+		public static implicit operator NSObject( CAWrappedLayoutManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CAWrappedLayoutManager value ) {
 			return value.Handle;
 		}
@@ -5437,6 +5638,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAddBlendMode;
+		public static implicit operator CIFilter( CIAddBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAddBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAddBlendMode value ) {
 			return value.Handle;
 		}
@@ -5482,6 +5689,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAdditionCompositing;
+		public static implicit operator CIFilter( CIAdditionCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAdditionCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAdditionCompositing value ) {
 			return value.Handle;
 		}
@@ -5527,6 +5740,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAdjustBrightnessContrast;
+		public static implicit operator CIFilter( CIAdjustBrightnessContrast value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAdjustBrightnessContrast value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAdjustBrightnessContrast value ) {
 			return value.Handle;
 		}
@@ -5572,6 +5791,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAdvancedHeightFieldFromMask;
+		public static implicit operator CIFilter( CIAdvancedHeightFieldFromMask value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAdvancedHeightFieldFromMask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAdvancedHeightFieldFromMask value ) {
 			return value.Handle;
 		}
@@ -5617,6 +5842,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAdvancedMaskToAlpha;
+		public static implicit operator CIFilter( CIAdvancedMaskToAlpha value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAdvancedMaskToAlpha value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAdvancedMaskToAlpha value ) {
 			return value.Handle;
 		}
@@ -5662,6 +5893,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAdvancedShadedMaterial;
+		public static implicit operator CIFilter( CIAdvancedShadedMaterial value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAdvancedShadedMaterial value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAdvancedShadedMaterial value ) {
 			return value.Handle;
 		}
@@ -5707,6 +5944,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAffineClamp;
+		public static implicit operator CIFilter( CIAffineClamp value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAffineClamp value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAffineClamp value ) {
 			return value.Handle;
 		}
@@ -5752,6 +5995,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAffineTile;
+		public static implicit operator CIFilter( CIAffineTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAffineTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAffineTile value ) {
 			return value.Handle;
 		}
@@ -5797,6 +6046,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAffineTransform;
+		public static implicit operator CIFilter( CIAffineTransform value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAffineTransform value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAffineTransform value ) {
 			return value.Handle;
 		}
@@ -5842,6 +6097,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAlphaAddBlendMode;
+		public static implicit operator CIFilter( CIAlphaAddBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAlphaAddBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAlphaAddBlendMode value ) {
 			return value.Handle;
 		}
@@ -5887,6 +6148,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaAverage;
+		public static implicit operator CIFilter( CIAreaAverage value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaAverage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaAverage value ) {
 			return value.Handle;
 		}
@@ -5932,6 +6199,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaCummulativeHistogramAlpha;
+		public static implicit operator CIFilter( CIAreaCummulativeHistogramAlpha value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaCummulativeHistogramAlpha value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaCummulativeHistogramAlpha value ) {
 			return value.Handle;
 		}
@@ -5977,6 +6250,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaHistogram;
+		public static implicit operator CIFilter( CIAreaHistogram value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaHistogram value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaHistogram value ) {
 			return value.Handle;
 		}
@@ -6022,6 +6301,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaMaximum;
+		public static implicit operator CIFilter( CIAreaMaximum value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaMaximum value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaMaximum value ) {
 			return value.Handle;
 		}
@@ -6076,6 +6361,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaMaximumAlpha;
+		public static implicit operator CIAreaMaximum( CIAreaMaximumAlpha value ) {
+			return new CIAreaMaximum( value.Handle );
+		}
+		public static implicit operator CIFilter( CIAreaMaximumAlpha value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaMaximumAlpha value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaMaximumAlpha value ) {
 			return value.Handle;
 		}
@@ -6108,6 +6402,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaMinimum;
+		public static implicit operator CIAreaMaximum( CIAreaMinimum value ) {
+			return new CIAreaMaximum( value.Handle );
+		}
+		public static implicit operator CIFilter( CIAreaMinimum value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaMinimum value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaMinimum value ) {
 			return value.Handle;
 		}
@@ -6140,6 +6443,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAreaMinimumAlpha;
+		public static implicit operator CIAreaMaximum( CIAreaMinimumAlpha value ) {
+			return new CIAreaMaximum( value.Handle );
+		}
+		public static implicit operator CIFilter( CIAreaMinimumAlpha value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAreaMinimumAlpha value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAreaMinimumAlpha value ) {
 			return value.Handle;
 		}
@@ -6172,6 +6484,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAutoBlackPointWhitePoint;
+		public static implicit operator CIFilter( CIAutoBlackPointWhitePoint value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAutoBlackPointWhitePoint value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAutoBlackPointWhitePoint value ) {
 			return value.Handle;
 		}
@@ -6226,6 +6544,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAxialBlur;
+		public static implicit operator CIFilter( CIAxialBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAxialBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAxialBlur value ) {
 			return value.Handle;
 		}
@@ -6280,6 +6604,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIAxialMotionBlur;
+		public static implicit operator CIFilter( CIAxialMotionBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIAxialMotionBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIAxialMotionBlur value ) {
 			return value.Handle;
 		}
@@ -6343,6 +6673,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBackground;
+		public static implicit operator CIFilter( CIBackground value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBackground value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBackground value ) {
 			return value.Handle;
 		}
@@ -6388,6 +6724,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBarsSwipeTransition;
+		public static implicit operator CIFilter( CIBarsSwipeTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBarsSwipeTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBarsSwipeTransition value ) {
 			return value.Handle;
 		}
@@ -6433,6 +6775,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBayerReconstruction;
+		public static implicit operator CIFilter( CIBayerReconstruction value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBayerReconstruction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBayerReconstruction value ) {
 			return value.Handle;
 		}
@@ -6624,6 +6972,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBayerReconstructionV0;
+		public static implicit operator CIFilter( CIBayerReconstructionV0 value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBayerReconstructionV0 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBayerReconstructionV0 value ) {
 			return value.Handle;
 		}
@@ -6784,6 +7138,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBehindBlendMode;
+		public static implicit operator CIFilter( CIBehindBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBehindBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBehindBlendMode value ) {
 			return value.Handle;
 		}
@@ -6829,6 +7189,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBilateralConvolution;
+		public static implicit operator CISampleAreaOperation( CIBilateralConvolution value ) {
+			return new CISampleAreaOperation( value.Handle );
+		}
+		public static implicit operator CIFilter( CIBilateralConvolution value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBilateralConvolution value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBilateralConvolution value ) {
 			return value.Handle;
 		}
@@ -6874,6 +7243,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBilateralFilter;
+		public static implicit operator CIFilter( CIBilateralFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBilateralFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBilateralFilter value ) {
 			return value.Handle;
 		}
@@ -6919,6 +7294,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBitmapContext;
+		public static implicit operator CIContext( CIBitmapContext value ) {
+			return new CIContext( value.Handle );
+		}
+		public static implicit operator NSObject( CIBitmapContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBitmapContext value ) {
 			return value.Handle;
 		}
@@ -6964,6 +7345,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBitmapContextImpl;
+		public static implicit operator CIContextImpl( CIBitmapContextImpl value ) {
+			return new CIContextImpl( value.Handle );
+		}
+		public static implicit operator NSObject( CIBitmapContextImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBitmapContextImpl value ) {
 			return value.Handle;
 		}
@@ -6996,6 +7383,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBlendWithMask;
+		public static implicit operator CIFilter( CIBlendWithMask value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBlendWithMask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBlendWithMask value ) {
 			return value.Handle;
 		}
@@ -7041,6 +7434,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBloom;
+		public static implicit operator CIFilter( CIBloom value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBloom value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBloom value ) {
 			return value.Handle;
 		}
@@ -7086,6 +7485,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBoxBlur;
+		public static implicit operator CIFilter( CIBoxBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBoxBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBoxBlur value ) {
 			return value.Handle;
 		}
@@ -7149,6 +7554,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBumpDistortion;
+		public static implicit operator CIFilter( CIBumpDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBumpDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBumpDistortion value ) {
 			return value.Handle;
 		}
@@ -7194,6 +7605,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBumpDistortionLinear;
+		public static implicit operator CIFilter( CIBumpDistortionLinear value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBumpDistortionLinear value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBumpDistortionLinear value ) {
 			return value.Handle;
 		}
@@ -7239,6 +7656,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIBurnBlendMode;
+		public static implicit operator CIFilter( CIBurnBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIBurnBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIBurnBlendMode value ) {
 			return value.Handle;
 		}
@@ -7284,6 +7707,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICGContext;
+		public static implicit operator CIContext( CICGContext value ) {
+			return new CIContext( value.Handle );
+		}
+		public static implicit operator NSObject( CICGContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICGContext value ) {
 			return value.Handle;
 		}
@@ -7329,6 +7758,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICGContextImpl;
+		public static implicit operator CIContextImpl( CICGContextImpl value ) {
+			return new CIContextImpl( value.Handle );
+		}
+		public static implicit operator NSObject( CICGContextImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICGContextImpl value ) {
 			return value.Handle;
 		}
@@ -7361,6 +7796,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICGSFilter;
+		public static implicit operator NSObject( CICGSFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICGSFilter value ) {
 			return value.Handle;
 		}
@@ -7449,6 +7887,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICheapBlur;
+		public static implicit operator CIFilter( CICheapBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICheapBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICheapBlur value ) {
 			return value.Handle;
 		}
@@ -7494,6 +7938,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICheapMorphology;
+		public static implicit operator CIFilter( CICheapMorphology value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICheapMorphology value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICheapMorphology value ) {
 			return value.Handle;
 		}
@@ -7539,6 +7989,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICheatBlur;
+		public static implicit operator CIFilter( CICheatBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICheatBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICheatBlur value ) {
 			return value.Handle;
 		}
@@ -7584,6 +8040,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICheckerboardGenerator;
+		public static implicit operator CIFilter( CICheckerboardGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICheckerboardGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICheckerboardGenerator value ) {
 			return value.Handle;
 		}
@@ -7629,6 +8091,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIChopLines;
+		public static implicit operator CIFilter( CIChopLines value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIChopLines value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIChopLines value ) {
 			return value.Handle;
 		}
@@ -7674,6 +8142,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircleGenerator;
+		public static implicit operator CIFilter( CICircleGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICircleGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICircleGenerator value ) {
 			return value.Handle;
 		}
@@ -7719,6 +8193,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircleSplashDistortion;
+		public static implicit operator CIFilter( CICircleSplashDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICircleSplashDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICircleSplashDistortion value ) {
 			return value.Handle;
 		}
@@ -7764,6 +8244,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircularScreen;
+		public static implicit operator CIFilter( CICircularScreen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICircularScreen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICircularScreen value ) {
 			return value.Handle;
 		}
@@ -7809,6 +8295,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICircularWrap;
+		public static implicit operator CIFilter( CICircularWrap value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICircularWrap value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICircularWrap value ) {
 			return value.Handle;
 		}
@@ -7854,6 +8346,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICMYKHalftone;
+		public static implicit operator CIFilter( CICMYKHalftone value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICMYKHalftone value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICMYKHalftone value ) {
 			return value.Handle;
 		}
@@ -7899,6 +8397,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColor;
+		public static implicit operator NSObject( CIColor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColor value ) {
 			return value.Handle;
 		}
@@ -8088,6 +8589,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorBlendMode;
+		public static implicit operator CIFilter( CIColorBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorBlendMode value ) {
 			return value.Handle;
 		}
@@ -8133,6 +8640,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorBurnBlendMode;
+		public static implicit operator CIFilter( CIColorBurnBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorBurnBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorBurnBlendMode value ) {
 			return value.Handle;
 		}
@@ -8178,6 +8691,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorControls;
+		public static implicit operator CIFilter( CIColorControls value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorControls value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorControls value ) {
 			return value.Handle;
 		}
@@ -8223,6 +8742,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorCube;
+		public static implicit operator CIFilter( CIColorCube value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorCube value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorCube value ) {
 			return value.Handle;
 		}
@@ -8277,6 +8802,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorDodgeBlendMode;
+		public static implicit operator CIFilter( CIColorDodgeBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorDodgeBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorDodgeBlendMode value ) {
 			return value.Handle;
 		}
@@ -8322,6 +8853,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorInvert;
+		public static implicit operator CIFilter( CIColorInvert value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorInvert value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorInvert value ) {
 			return value.Handle;
 		}
@@ -8367,6 +8904,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorMap;
+		public static implicit operator CIFilter( CIColorMap value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorMap value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorMap value ) {
 			return value.Handle;
 		}
@@ -8412,6 +8955,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorMatrix;
+		public static implicit operator CIFilter( CIColorMatrix value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorMatrix value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorMatrix value ) {
 			return value.Handle;
 		}
@@ -8457,6 +9006,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorMonochrome;
+		public static implicit operator CIFilter( CIColorMonochrome value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorMonochrome value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorMonochrome value ) {
 			return value.Handle;
 		}
@@ -8502,6 +9057,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorPosterize;
+		public static implicit operator CIFilter( CIColorPosterize value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorPosterize value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorPosterize value ) {
 			return value.Handle;
 		}
@@ -8547,6 +9108,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColorWheelGenerator;
+		public static implicit operator CIFilter( CIColorWheelGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColorWheelGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColorWheelGenerator value ) {
 			return value.Handle;
 		}
@@ -8592,6 +9159,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIColumnAverage;
+		public static implicit operator CIFilter( CIColumnAverage value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIColumnAverage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIColumnAverage value ) {
 			return value.Handle;
 		}
@@ -8646,6 +9219,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIComicEffect;
+		public static implicit operator CIFilter( CIComicEffect value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIComicEffect value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIComicEffect value ) {
 			return value.Handle;
 		}
@@ -8691,6 +9270,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcreteImage;
+		public static implicit operator CIImage( CIConcreteImage value ) {
+			return new CIImage( value.Handle );
+		}
+		public static implicit operator NSObject( CIConcreteImage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIConcreteImage value ) {
 			return value.Handle;
 		}
@@ -8736,6 +9321,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcreteKernel;
+		public static implicit operator CIKernel( CIConcreteKernel value ) {
+			return new CIKernel( value.Handle );
+		}
+		public static implicit operator NSObject( CIConcreteKernel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIConcreteKernel value ) {
 			return value.Handle;
 		}
@@ -8768,6 +9359,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcretePromise;
+		public static implicit operator CIPromise( CIConcretePromise value ) {
+			return new CIPromise( value.Handle );
+		}
+		public static implicit operator CIImage( CIConcretePromise value ) {
+			return new CIImage( value.Handle );
+		}
+		public static implicit operator NSObject( CIConcretePromise value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIConcretePromise value ) {
 			return value.Handle;
 		}
@@ -8800,6 +9400,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConcreteSampler;
+		public static implicit operator CISampler( CIConcreteSampler value ) {
+			return new CISampler( value.Handle );
+		}
+		public static implicit operator NSObject( CIConcreteSampler value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIConcreteSampler value ) {
 			return value.Handle;
 		}
@@ -8832,6 +9438,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConstantColorGenerator;
+		public static implicit operator CIFilter( CIConstantColorGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIConstantColorGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIConstantColorGenerator value ) {
 			return value.Handle;
 		}
@@ -8877,6 +9489,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIContext;
+		public static implicit operator NSObject( CIContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIContext value ) {
 			return value.Handle;
 		}
@@ -9135,6 +9750,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIContextDebugImpl;
+		public static implicit operator NSObject( CIContextDebugImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIContextDebugImpl value ) {
 			return value.Handle;
 		}
@@ -9227,6 +9845,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIContextImpl;
+		public static implicit operator NSObject( CIContextImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIContextImpl value ) {
 			return value.Handle;
 		}
@@ -9409,6 +10030,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIConvolution;
+		public static implicit operator CISampleAreaOperation( CIConvolution value ) {
+			return new CISampleAreaOperation( value.Handle );
+		}
+		public static implicit operator CIFilter( CIConvolution value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIConvolution value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIConvolution value ) {
 			return value.Handle;
 		}
@@ -9454,6 +10084,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICopyMachineTransition;
+		public static implicit operator CIFilter( CICopyMachineTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICopyMachineTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICopyMachineTransition value ) {
 			return value.Handle;
 		}
@@ -9499,6 +10135,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICorrectHighlights;
+		public static implicit operator CIFilter( CICorrectHighlights value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICorrectHighlights value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICorrectHighlights value ) {
 			return value.Handle;
 		}
@@ -9544,6 +10186,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICrop;
+		public static implicit operator CIFilter( CICrop value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICrop value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICrop value ) {
 			return value.Handle;
 		}
@@ -9589,6 +10237,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICropAlphaFilter;
+		public static implicit operator CIFilter( CICropAlphaFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICropAlphaFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICropAlphaFilter value ) {
 			return value.Handle;
 		}
@@ -9634,6 +10288,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICrystallize;
+		public static implicit operator CIFilter( CICrystallize value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICrystallize value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICrystallize value ) {
 			return value.Handle;
 		}
@@ -9679,6 +10339,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICubicGradientGenerator;
+		public static implicit operator CIFilter( CICubicGradientGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICubicGradientGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICubicGradientGenerator value ) {
 			return value.Handle;
 		}
@@ -9724,6 +10390,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICubicGradientGenerator2;
+		public static implicit operator CIFilter( CICubicGradientGenerator2 value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICubicGradientGenerator2 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICubicGradientGenerator2 value ) {
 			return value.Handle;
 		}
@@ -9769,6 +10441,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICubicGradientGenerator3;
+		public static implicit operator CIFilter( CICubicGradientGenerator3 value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICubicGradientGenerator3 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICubicGradientGenerator3 value ) {
 			return value.Handle;
 		}
@@ -9814,6 +10492,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICubicGradientGenerator4;
+		public static implicit operator CIFilter( CICubicGradientGenerator4 value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICubicGradientGenerator4 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICubicGradientGenerator4 value ) {
 			return value.Handle;
 		}
@@ -9859,6 +10543,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICubicGradientGenerator5;
+		public static implicit operator CIFilter( CICubicGradientGenerator5 value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CICubicGradientGenerator5 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICubicGradientGenerator5 value ) {
 			return value.Handle;
 		}
@@ -9904,6 +10594,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CICVImageProviderDelegate;
+		public static implicit operator NSObject( CICVImageProviderDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CICVImageProviderDelegate value ) {
 			return value.Handle;
 		}
@@ -9950,6 +10643,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDarkenBlendMode;
+		public static implicit operator CIFilter( CIDarkenBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDarkenBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDarkenBlendMode value ) {
 			return value.Handle;
 		}
@@ -9995,6 +10694,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDarkerBlendMode;
+		public static implicit operator CIFilter( CIDarkerBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDarkerBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDarkerBlendMode value ) {
 			return value.Handle;
 		}
@@ -10040,6 +10745,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDeBayer;
+		public static implicit operator CIFilter( CIDeBayer value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDeBayer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDeBayer value ) {
 			return value.Handle;
 		}
@@ -10085,6 +10796,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDesaturateGamutMapping;
+		public static implicit operator CIFilter( CIDesaturateGamutMapping value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDesaturateGamutMapping value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDesaturateGamutMapping value ) {
 			return value.Handle;
 		}
@@ -10130,6 +10847,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDifferenceBlendMode;
+		public static implicit operator CIFilter( CIDifferenceBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDifferenceBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDifferenceBlendMode value ) {
 			return value.Handle;
 		}
@@ -10175,6 +10898,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDiffusion;
+		public static implicit operator CIFilter( CIDiffusion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDiffusion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDiffusion value ) {
 			return value.Handle;
 		}
@@ -10220,6 +10949,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDiscBlur;
+		public static implicit operator CIFilter( CIDiscBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDiscBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDiscBlur value ) {
 			return value.Handle;
 		}
@@ -10265,6 +11000,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDisintegrateWithMaskTransition;
+		public static implicit operator CIFilter( CIDisintegrateWithMaskTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDisintegrateWithMaskTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDisintegrateWithMaskTransition value ) {
 			return value.Handle;
 		}
@@ -10310,6 +11051,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDisplacementDistortion;
+		public static implicit operator CIFilter( CIDisplacementDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDisplacementDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDisplacementDistortion value ) {
 			return value.Handle;
 		}
@@ -10355,6 +11102,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDisplaceWithNoise;
+		public static implicit operator CIFilter( CIDisplaceWithNoise value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDisplaceWithNoise value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDisplaceWithNoise value ) {
 			return value.Handle;
 		}
@@ -10400,6 +11153,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDissolveTransition;
+		public static implicit operator CIFilter( CIDissolveTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDissolveTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDissolveTransition value ) {
 			return value.Handle;
 		}
@@ -10445,6 +11204,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDistanceFieldFromMask;
+		public static implicit operator CIFilter( CIDistanceFieldFromMask value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDistanceFieldFromMask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDistanceFieldFromMask value ) {
 			return value.Handle;
 		}
@@ -10490,6 +11255,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIDotScreen;
+		public static implicit operator CIFilter( CIDotScreen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIDotScreen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIDotScreen value ) {
 			return value.Handle;
 		}
@@ -10535,6 +11306,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEdge;
+		public static implicit operator NSObject( CIEdge value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIEdge value ) {
 			return value.Handle;
 		}
@@ -10642,6 +11416,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEdges;
+		public static implicit operator CIFilter( CIEdges value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIEdges value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIEdges value ) {
 			return value.Handle;
 		}
@@ -10687,6 +11467,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEdgeWork;
+		public static implicit operator CIFilter( CIEdgeWork value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIEdgeWork value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIEdgeWork value ) {
 			return value.Handle;
 		}
@@ -10732,6 +11518,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEightfoldReflectedTile;
+		public static implicit operator CIFilter( CIEightfoldReflectedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIEightfoldReflectedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIEightfoldReflectedTile value ) {
 			return value.Handle;
 		}
@@ -10777,6 +11569,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIEmboss;
+		public static implicit operator CIFilter( CIEmboss value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIEmboss value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIEmboss value ) {
 			return value.Handle;
 		}
@@ -10822,6 +11620,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIExclusionBlendMode;
+		public static implicit operator CIFilter( CIExclusionBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIExclusionBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIExclusionBlendMode value ) {
 			return value.Handle;
 		}
@@ -10867,6 +11671,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIExposureAdjust;
+		public static implicit operator CIFilter( CIExposureAdjust value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIExposureAdjust value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIExposureAdjust value ) {
 			return value.Handle;
 		}
@@ -10912,6 +11722,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFalseColor;
+		public static implicit operator CIFilter( CIFalseColor value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFalseColor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFalseColor value ) {
 			return value.Handle;
 		}
@@ -10957,6 +11773,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilter;
+		public static implicit operator NSObject( CIFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilter value ) {
 			return value.Handle;
 		}
@@ -11377,6 +12196,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterClassDescription;
+		public static implicit operator NSObject( CIFilterClassDescription value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterClassDescription value ) {
 			return value.Handle;
 		}
@@ -11458,6 +12280,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterGenerator;
+		public static implicit operator NSObject( CIFilterGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterGenerator value ) {
 			return value.Handle;
 		}
@@ -11751,6 +12576,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterGeneratorCIFilter;
+		public static implicit operator CIFilter( CIFilterGeneratorCIFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFilterGeneratorCIFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterGeneratorCIFilter value ) {
 			return value.Handle;
 		}
@@ -11813,6 +12644,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterGeneratorConnection;
+		public static implicit operator NSObject( CIFilterGeneratorConnection value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterGeneratorConnection value ) {
 			return value.Handle;
 		}
@@ -11937,6 +12771,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterGraph;
+		public static implicit operator CIFilter( CIFilterGraph value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFilterGraph value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterGraph value ) {
 			return value.Handle;
 		}
@@ -11982,6 +12822,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterPlugIn;
+		public static implicit operator CIPlugIn( CIFilterPlugIn value ) {
+			return new CIPlugIn( value.Handle );
+		}
+		public static implicit operator NSObject( CIFilterPlugIn value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterPlugIn value ) {
 			return value.Handle;
 		}
@@ -12062,6 +12908,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFilterShape;
+		public static implicit operator NSObject( CIFilterShape value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFilterShape value ) {
 			return value.Handle;
 		}
@@ -12197,6 +13046,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFlashTransition;
+		public static implicit operator CIFilter( CIFlashTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFlashTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFlashTransition value ) {
 			return value.Handle;
 		}
@@ -12242,6 +13097,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFlat3X3ChromaBlur;
+		public static implicit operator CIFilter( CIFlat3X3ChromaBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFlat3X3ChromaBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFlat3X3ChromaBlur value ) {
 			return value.Handle;
 		}
@@ -12287,6 +13148,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFlat5X5ChromaBlur;
+		public static implicit operator CIFilter( CIFlat5X5ChromaBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFlat5X5ChromaBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFlat5X5ChromaBlur value ) {
 			return value.Handle;
 		}
@@ -12332,6 +13199,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFourfoldReflectedTile;
+		public static implicit operator CIFilter( CIFourfoldReflectedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFourfoldReflectedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFourfoldReflectedTile value ) {
 			return value.Handle;
 		}
@@ -12377,6 +13250,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFourfoldRotatedTile;
+		public static implicit operator CIFilter( CIFourfoldRotatedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFourfoldRotatedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFourfoldRotatedTile value ) {
 			return value.Handle;
 		}
@@ -12422,6 +13301,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFourfoldTranslatedTile;
+		public static implicit operator CIFilter( CIFourfoldTranslatedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFourfoldTranslatedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFourfoldTranslatedTile value ) {
 			return value.Handle;
 		}
@@ -12467,6 +13352,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIFullButton;
+		public static implicit operator CIFilter( CIFullButton value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIFullButton value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIFullButton value ) {
 			return value.Handle;
 		}
@@ -12575,6 +13466,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGammaAdjust;
+		public static implicit operator CIFilter( CIGammaAdjust value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGammaAdjust value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGammaAdjust value ) {
 			return value.Handle;
 		}
@@ -12620,6 +13517,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGamutAlarm;
+		public static implicit operator CIFilter( CIGamutAlarm value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGamutAlarm value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGamutAlarm value ) {
 			return value.Handle;
 		}
@@ -12665,6 +13568,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGamutClamp;
+		public static implicit operator CIFilter( CIGamutClamp value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGamutClamp value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGamutClamp value ) {
 			return value.Handle;
 		}
@@ -12710,6 +13619,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGamutRollOff;
+		public static implicit operator CIFilter( CIGamutRollOff value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGamutRollOff value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGamutRollOff value ) {
 			return value.Handle;
 		}
@@ -12755,6 +13670,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianBlur;
+		public static implicit operator CIFilter( CIGaussianBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGaussianBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGaussianBlur value ) {
 			return value.Handle;
 		}
@@ -12800,6 +13721,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianChromaBlurMinimum;
+		public static implicit operator CIFilter( CIGaussianChromaBlurMinimum value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGaussianChromaBlurMinimum value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGaussianChromaBlurMinimum value ) {
 			return value.Handle;
 		}
@@ -12845,6 +13772,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianGradient;
+		public static implicit operator CIFilter( CIGaussianGradient value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGaussianGradient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGaussianGradient value ) {
 			return value.Handle;
 		}
@@ -12890,6 +13823,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGaussianPyramid;
+		public static implicit operator CIFilter( CIGaussianPyramid value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGaussianPyramid value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGaussianPyramid value ) {
 			return value.Handle;
 		}
@@ -12935,6 +13874,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGelBlendMode;
+		public static implicit operator CIFilter( CIGelBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGelBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGelBlendMode value ) {
 			return value.Handle;
 		}
@@ -12980,6 +13925,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGlassDistortion;
+		public static implicit operator CIFilter( CIGlassDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGlassDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGlassDistortion value ) {
 			return value.Handle;
 		}
@@ -13025,6 +13976,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGlassLozenge;
+		public static implicit operator CIFilter( CIGlassLozenge value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGlassLozenge value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGlassLozenge value ) {
 			return value.Handle;
 		}
@@ -13070,6 +14027,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGlideReflectedTile;
+		public static implicit operator CIFilter( CIGlideReflectedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGlideReflectedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGlideReflectedTile value ) {
 			return value.Handle;
 		}
@@ -13115,6 +14078,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGloom;
+		public static implicit operator CIFilter( CIGloom value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIGloom value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGloom value ) {
 			return value.Handle;
 		}
@@ -13160,6 +14129,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIGraph;
+		public static implicit operator NSObject( CIGraph value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIGraph value ) {
 			return value.Handle;
 		}
@@ -13344,6 +14316,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHardLightBlendMode;
+		public static implicit operator CIFilter( CIHardLightBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHardLightBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHardLightBlendMode value ) {
 			return value.Handle;
 		}
@@ -13389,6 +14367,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHardMixBlendMode;
+		public static implicit operator CIFilter( CIHardMixBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHardMixBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHardMixBlendMode value ) {
 			return value.Handle;
 		}
@@ -13434,6 +14418,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHatchedScreen;
+		public static implicit operator CIFilter( CIHatchedScreen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHatchedScreen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHatchedScreen value ) {
 			return value.Handle;
 		}
@@ -13479,6 +14469,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHDRToneMapping;
+		public static implicit operator CIFilter( CIHDRToneMapping value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHDRToneMapping value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHDRToneMapping value ) {
 			return value.Handle;
 		}
@@ -13524,6 +14520,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHeightFieldFromConstraints;
+		public static implicit operator CIFilter( CIHeightFieldFromConstraints value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHeightFieldFromConstraints value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHeightFieldFromConstraints value ) {
 			return value.Handle;
 		}
@@ -13569,6 +14571,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHeightFieldFromMask;
+		public static implicit operator CIFilter( CIHeightFieldFromMask value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHeightFieldFromMask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHeightFieldFromMask value ) {
 			return value.Handle;
 		}
@@ -13614,6 +14622,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHexagonalPixellate;
+		public static implicit operator CIFilter( CIHexagonalPixellate value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHexagonalPixellate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHexagonalPixellate value ) {
 			return value.Handle;
 		}
@@ -13659,6 +14673,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHighlightShadow;
+		public static implicit operator CIFilter( CIHighlightShadow value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHighlightShadow value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHighlightShadow value ) {
 			return value.Handle;
 		}
@@ -13704,6 +14724,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHistogram;
+		public static implicit operator CIFilter( CIHistogram value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHistogram value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHistogram value ) {
 			return value.Handle;
 		}
@@ -13758,6 +14784,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHoleDistortion;
+		public static implicit operator CIFilter( CIHoleDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHoleDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHoleDistortion value ) {
 			return value.Handle;
 		}
@@ -13803,6 +14835,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHomomorphicSharpen;
+		public static implicit operator CIFilter( CIHomomorphicSharpen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHomomorphicSharpen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHomomorphicSharpen value ) {
 			return value.Handle;
 		}
@@ -13848,6 +14886,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHueAdjust;
+		public static implicit operator CIFilter( CIHueAdjust value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHueAdjust value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHueAdjust value ) {
 			return value.Handle;
 		}
@@ -13893,6 +14937,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIHueBlendMode;
+		public static implicit operator CIFilter( CIHueBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIHueBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIHueBlendMode value ) {
 			return value.Handle;
 		}
@@ -13938,6 +14988,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIImage;
+		public static implicit operator NSObject( CIImage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIImage value ) {
 			return value.Handle;
 		}
@@ -14495,6 +15548,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIImageAccumulator;
+		public static implicit operator NSObject( CIImageAccumulator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIImageAccumulator value ) {
 			return value.Handle;
 		}
@@ -14609,6 +15665,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIKaleidoscope;
+		public static implicit operator CIFilter( CIKaleidoscope value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIKaleidoscope value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIKaleidoscope value ) {
 			return value.Handle;
 		}
@@ -14671,6 +15733,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIKernel;
+		public static implicit operator NSObject( CIKernel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIKernel value ) {
 			return value.Handle;
 		}
@@ -14815,6 +15880,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIKuwaharaNagaoFilter;
+		public static implicit operator CIFilter( CIKuwaharaNagaoFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIKuwaharaNagaoFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIKuwaharaNagaoFilter value ) {
 			return value.Handle;
 		}
@@ -14860,6 +15931,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILanczosBayerReconstruction;
+		public static implicit operator CIFilter( CILanczosBayerReconstruction value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILanczosBayerReconstruction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILanczosBayerReconstruction value ) {
 			return value.Handle;
 		}
@@ -14905,6 +15982,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILanczosResize;
+		public static implicit operator CIFilter( CILanczosResize value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILanczosResize value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILanczosResize value ) {
 			return value.Handle;
 		}
@@ -14959,6 +16042,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILanczosScaleTransform;
+		public static implicit operator CIFilter( CILanczosScaleTransform value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILanczosScaleTransform value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILanczosScaleTransform value ) {
 			return value.Handle;
 		}
@@ -15013,6 +16102,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILenticularHaloGenerator;
+		public static implicit operator CIFilter( CILenticularHaloGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILenticularHaloGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILenticularHaloGenerator value ) {
 			return value.Handle;
 		}
@@ -15058,6 +16153,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILightenBlendMode;
+		public static implicit operator CIFilter( CILightenBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILightenBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILightenBlendMode value ) {
 			return value.Handle;
 		}
@@ -15103,6 +16204,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearBumpField;
+		public static implicit operator CIFilter( CILinearBumpField value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILinearBumpField value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILinearBumpField value ) {
 			return value.Handle;
 		}
@@ -15148,6 +16255,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearBurnBlendMode;
+		public static implicit operator CIFilter( CILinearBurnBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILinearBurnBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILinearBurnBlendMode value ) {
 			return value.Handle;
 		}
@@ -15193,6 +16306,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearDodgeBlendMode;
+		public static implicit operator CIFilter( CILinearDodgeBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILinearDodgeBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILinearDodgeBlendMode value ) {
 			return value.Handle;
 		}
@@ -15238,6 +16357,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearGradient;
+		public static implicit operator CIFilter( CILinearGradient value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILinearGradient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILinearGradient value ) {
 			return value.Handle;
 		}
@@ -15283,6 +16408,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearGradientWithCubicEndsGenerator;
+		public static implicit operator CIFilter( CILinearGradientWithCubicEndsGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILinearGradientWithCubicEndsGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILinearGradientWithCubicEndsGenerator value ) {
 			return value.Handle;
 		}
@@ -15328,6 +16459,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILinearLightBlendMode;
+		public static implicit operator CIFilter( CILinearLightBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILinearLightBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILinearLightBlendMode value ) {
 			return value.Handle;
 		}
@@ -15373,6 +16510,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILineOverlay;
+		public static implicit operator CIFilter( CILineOverlay value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILineOverlay value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILineOverlay value ) {
 			return value.Handle;
 		}
@@ -15418,6 +16561,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILineScreen;
+		public static implicit operator CIFilter( CILineScreen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILineScreen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILineScreen value ) {
 			return value.Handle;
 		}
@@ -15463,6 +16612,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILocalContrast;
+		public static implicit operator CIFilter( CILocalContrast value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILocalContrast value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILocalContrast value ) {
 			return value.Handle;
 		}
@@ -15508,6 +16663,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILuminanceGamutMapping;
+		public static implicit operator CIFilter( CILuminanceGamutMapping value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILuminanceGamutMapping value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILuminanceGamutMapping value ) {
 			return value.Handle;
 		}
@@ -15553,6 +16714,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILuminescentPremultiplyBlendMode;
+		public static implicit operator CIFilter( CILuminescentPremultiplyBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILuminescentPremultiplyBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILuminescentPremultiplyBlendMode value ) {
 			return value.Handle;
 		}
@@ -15598,6 +16765,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CILuminosityBlendMode;
+		public static implicit operator CIFilter( CILuminosityBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CILuminosityBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CILuminosityBlendMode value ) {
 			return value.Handle;
 		}
@@ -15643,6 +16816,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMakeShadowMask;
+		public static implicit operator CIFilter( CIMakeShadowMask value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMakeShadowMask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMakeShadowMask value ) {
 			return value.Handle;
 		}
@@ -15688,6 +16867,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaskToAlpha;
+		public static implicit operator CIFilter( CIMaskToAlpha value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaskToAlpha value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaskToAlpha value ) {
 			return value.Handle;
 		}
@@ -15733,6 +16918,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaterialMap;
+		public static implicit operator CIFilter( CIMaterialMap value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaterialMap value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaterialMap value ) {
 			return value.Handle;
 		}
@@ -15778,6 +16969,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaterialMapImageLightGenerator;
+		public static implicit operator CIFilter( CIMaterialMapImageLightGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaterialMapImageLightGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaterialMapImageLightGenerator value ) {
 			return value.Handle;
 		}
@@ -15823,6 +17020,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaterialMapLightGenerator;
+		public static implicit operator CIFilter( CIMaterialMapLightGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaterialMapLightGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaterialMapLightGenerator value ) {
 			return value.Handle;
 		}
@@ -15868,6 +17071,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaterialMapReflectionMapLightGenerator;
+		public static implicit operator CIFilter( CIMaterialMapReflectionMapLightGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaterialMapReflectionMapLightGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaterialMapReflectionMapLightGenerator value ) {
 			return value.Handle;
 		}
@@ -15913,6 +17122,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaximumComponent;
+		public static implicit operator CIFilter( CIMaximumComponent value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaximumComponent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaximumComponent value ) {
 			return value.Handle;
 		}
@@ -15958,6 +17173,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMaximumCompositing;
+		public static implicit operator CIFilter( CIMaximumCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMaximumCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMaximumCompositing value ) {
 			return value.Handle;
 		}
@@ -16003,6 +17224,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMedianFilter;
+		public static implicit operator CIFilter( CIMedianFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMedianFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMedianFilter value ) {
 			return value.Handle;
 		}
@@ -16048,6 +17275,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMenuAppleGenerator;
+		public static implicit operator CIFilter( CIMenuAppleGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMenuAppleGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMenuAppleGenerator value ) {
 			return value.Handle;
 		}
@@ -16093,6 +17326,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMenuBarBlendMode;
+		public static implicit operator CIFilter( CIMenuBarBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMenuBarBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMenuBarBlendMode value ) {
 			return value.Handle;
 		}
@@ -16138,6 +17377,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMenuBarGenerator;
+		public static implicit operator CIFilter( CIMenuBarGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMenuBarGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMenuBarGenerator value ) {
 			return value.Handle;
 		}
@@ -16183,6 +17428,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMenuGenerator;
+		public static implicit operator CIFilter( CIMenuGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMenuGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMenuGenerator value ) {
 			return value.Handle;
 		}
@@ -16228,6 +17479,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMinimumComponent;
+		public static implicit operator CIFilter( CIMinimumComponent value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMinimumComponent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMinimumComponent value ) {
 			return value.Handle;
 		}
@@ -16273,6 +17530,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMinimumCompositing;
+		public static implicit operator CIFilter( CIMinimumCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMinimumCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMinimumCompositing value ) {
 			return value.Handle;
 		}
@@ -16318,6 +17581,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMixOver;
+		public static implicit operator CIFilter( CIMixOver value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMixOver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMixOver value ) {
 			return value.Handle;
 		}
@@ -16363,6 +17632,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIModTransition;
+		public static implicit operator CIFilter( CIModTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIModTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIModTransition value ) {
 			return value.Handle;
 		}
@@ -16408,6 +17683,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMorphology;
+		public static implicit operator CIFilter( CIMorphology value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMorphology value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMorphology value ) {
 			return value.Handle;
 		}
@@ -16453,6 +17734,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMorphologyGradient;
+		public static implicit operator CIFilter( CIMorphologyGradient value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMorphologyGradient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMorphologyGradient value ) {
 			return value.Handle;
 		}
@@ -16498,6 +17785,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMorphologyLaplacian;
+		public static implicit operator CIFilter( CIMorphologyLaplacian value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMorphologyLaplacian value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMorphologyLaplacian value ) {
 			return value.Handle;
 		}
@@ -16543,6 +17836,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMorphologyMax;
+		public static implicit operator CISampleAreaOperation( CIMorphologyMax value ) {
+			return new CISampleAreaOperation( value.Handle );
+		}
+		public static implicit operator CIFilter( CIMorphologyMax value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMorphologyMax value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMorphologyMax value ) {
 			return value.Handle;
 		}
@@ -16575,6 +17877,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMorphologyMin;
+		public static implicit operator CISampleAreaOperation( CIMorphologyMin value ) {
+			return new CISampleAreaOperation( value.Handle );
+		}
+		public static implicit operator CIFilter( CIMorphologyMin value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMorphologyMin value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMorphologyMin value ) {
 			return value.Handle;
 		}
@@ -16607,6 +17918,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMotionBlur;
+		public static implicit operator CIFilter( CIMotionBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMotionBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMotionBlur value ) {
 			return value.Handle;
 		}
@@ -16661,6 +17978,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMultiplyBlendMode;
+		public static implicit operator CIFilter( CIMultiplyBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMultiplyBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMultiplyBlendMode value ) {
 			return value.Handle;
 		}
@@ -16706,6 +18029,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMultiplyCompositing;
+		public static implicit operator CIFilter( CIMultiplyCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIMultiplyCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMultiplyCompositing value ) {
 			return value.Handle;
 		}
@@ -16751,6 +18080,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIMutableFilterShape;
+		public static implicit operator CIFilterShape( CIMutableFilterShape value ) {
+			return new CIFilterShape( value.Handle );
+		}
+		public static implicit operator NSObject( CIMutableFilterShape value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIMutableFilterShape value ) {
 			return value.Handle;
 		}
@@ -16819,6 +18154,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CINoiseReduction;
+		public static implicit operator CIFilter( CINoiseReduction value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CINoiseReduction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CINoiseReduction value ) {
 			return value.Handle;
 		}
@@ -16864,6 +18205,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpacity;
+		public static implicit operator CIFilter( CIOpacity value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIOpacity value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIOpacity value ) {
 			return value.Handle;
 		}
@@ -16909,6 +18256,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpenGLContext;
+		public static implicit operator CIContext( CIOpenGLContext value ) {
+			return new CIContext( value.Handle );
+		}
+		public static implicit operator NSObject( CIOpenGLContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIOpenGLContext value ) {
 			return value.Handle;
 		}
@@ -16990,6 +18343,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpenGLContextImpl;
+		public static implicit operator CIContextImpl( CIOpenGLContextImpl value ) {
+			return new CIContextImpl( value.Handle );
+		}
+		public static implicit operator NSObject( CIOpenGLContextImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIOpenGLContextImpl value ) {
 			return value.Handle;
 		}
@@ -17068,6 +18427,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOpTile;
+		public static implicit operator CIFilter( CIOpTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIOpTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIOpTile value ) {
 			return value.Handle;
 		}
@@ -17113,6 +18478,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIOverlayBlendMode;
+		public static implicit operator CIFilter( CIOverlayBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIOverlayBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIOverlayBlendMode value ) {
 			return value.Handle;
 		}
@@ -17158,6 +18529,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPageCurlTransition;
+		public static implicit operator CIFilter( CIPageCurlTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPageCurlTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPageCurlTransition value ) {
 			return value.Handle;
 		}
@@ -17203,6 +18580,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIParallelogramTile;
+		public static implicit operator CIFilter( CIParallelogramTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIParallelogramTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIParallelogramTile value ) {
 			return value.Handle;
 		}
@@ -17248,6 +18631,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPartialAreaHistogram;
+		public static implicit operator CIFilter( CIPartialAreaHistogram value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPartialAreaHistogram value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPartialAreaHistogram value ) {
 			return value.Handle;
 		}
@@ -17302,6 +18691,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPatternFill;
+		public static implicit operator CIFilter( CIPatternFill value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPatternFill value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPatternFill value ) {
 			return value.Handle;
 		}
@@ -17347,6 +18742,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPerspectiveTile;
+		public static implicit operator CIFilter( CIPerspectiveTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPerspectiveTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPerspectiveTile value ) {
 			return value.Handle;
 		}
@@ -17392,6 +18793,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPerspectiveTransform;
+		public static implicit operator CIFilter( CIPerspectiveTransform value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPerspectiveTransform value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPerspectiveTransform value ) {
 			return value.Handle;
 		}
@@ -17437,6 +18844,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPinchDistortion;
+		public static implicit operator CIFilter( CIPinchDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPinchDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPinchDistortion value ) {
 			return value.Handle;
 		}
@@ -17482,6 +18895,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPinLightBlendMode;
+		public static implicit operator CIFilter( CIPinLightBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPinLightBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPinLightBlendMode value ) {
 			return value.Handle;
 		}
@@ -17527,6 +18946,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPixellate;
+		public static implicit operator CIFilter( CIPixellate value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPixellate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPixellate value ) {
 			return value.Handle;
 		}
@@ -17572,6 +18997,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPixelZoom;
+		public static implicit operator CIFilter( CIPixelZoom value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPixelZoom value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPixelZoom value ) {
 			return value.Handle;
 		}
@@ -17617,6 +19048,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPlugIn;
+		public static implicit operator NSObject( CIPlugIn value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPlugIn value ) {
 			return value.Handle;
 		}
@@ -17695,6 +19129,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPlugInStandardFilter;
+		public static implicit operator CIFilter( CIPlugInStandardFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPlugInStandardFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPlugInStandardFilter value ) {
 			return value.Handle;
 		}
@@ -17757,6 +19197,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPointillize;
+		public static implicit operator CIFilter( CIPointillize value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPointillize value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPointillize value ) {
 			return value.Handle;
 		}
@@ -17802,6 +19248,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPromise;
+		public static implicit operator CIImage( CIPromise value ) {
+			return new CIImage( value.Handle );
+		}
+		public static implicit operator NSObject( CIPromise value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPromise value ) {
 			return value.Handle;
 		}
@@ -17864,6 +19316,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPromiseInvocation;
+		public static implicit operator NSObject( CIPromiseInvocation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPromiseInvocation value ) {
 			return value.Handle;
 		}
@@ -17918,6 +19373,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIProSharpen;
+		public static implicit operator CIFilter( CIProSharpen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIProSharpen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIProSharpen value ) {
 			return value.Handle;
 		}
@@ -17963,6 +19424,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIProSharpenEdges;
+		public static implicit operator CIFilter( CIProSharpenEdges value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIProSharpenEdges value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIProSharpenEdges value ) {
 			return value.Handle;
 		}
@@ -18008,6 +19475,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIProSharpeningEdgesDisplay;
+		public static implicit operator CIFilter( CIProSharpeningEdgesDisplay value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIProSharpeningEdgesDisplay value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIProSharpeningEdgesDisplay value ) {
 			return value.Handle;
 		}
@@ -18053,6 +19526,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIPseudoMedian;
+		public static implicit operator CIFilter( CIPseudoMedian value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIPseudoMedian value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIPseudoMedian value ) {
 			return value.Handle;
 		}
@@ -18098,6 +19577,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRadialGradient;
+		public static implicit operator CIFilter( CIRadialGradient value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRadialGradient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRadialGradient value ) {
 			return value.Handle;
 		}
@@ -18143,6 +19628,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRandomGenerator;
+		public static implicit operator CIFilter( CIRandomGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRandomGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRandomGenerator value ) {
 			return value.Handle;
 		}
@@ -18188,6 +19679,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWFilterImpl;
+		public static implicit operator CIFilter( CIRAWFilterImpl value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRAWFilterImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRAWFilterImpl value ) {
 			return value.Handle;
 		}
@@ -18675,6 +20172,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWGamutMapping;
+		public static implicit operator CIFilter( CIRAWGamutMapping value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRAWGamutMapping value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRAWGamutMapping value ) {
 			return value.Handle;
 		}
@@ -18720,6 +20223,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWSharpen;
+		public static implicit operator CIFilter( CIRAWSharpen value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRAWSharpen value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRAWSharpen value ) {
 			return value.Handle;
 		}
@@ -18765,6 +20274,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRAWTemperatureAdjust;
+		public static implicit operator CIFilter( CIRAWTemperatureAdjust value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRAWTemperatureAdjust value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRAWTemperatureAdjust value ) {
 			return value.Handle;
 		}
@@ -18810,6 +20325,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRecordingContext;
+		public static implicit operator CIContext( CIRecordingContext value ) {
+			return new CIContext( value.Handle );
+		}
+		public static implicit operator NSObject( CIRecordingContext value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRecordingContext value ) {
 			return value.Handle;
 		}
@@ -18855,6 +20376,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRecordingContextImpl;
+		public static implicit operator CIContextImpl( CIRecordingContextImpl value ) {
+			return new CIContextImpl( value.Handle );
+		}
+		public static implicit operator NSObject( CIRecordingContextImpl value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRecordingContextImpl value ) {
 			return value.Handle;
 		}
@@ -18887,6 +20414,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRectangleGenerator;
+		public static implicit operator CIFilter( CIRectangleGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRectangleGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRectangleGenerator value ) {
 			return value.Handle;
 		}
@@ -18932,6 +20465,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRectsGenerator;
+		public static implicit operator CIFilter( CIRectsGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRectsGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRectsGenerator value ) {
 			return value.Handle;
 		}
@@ -18977,6 +20516,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRefractedMaterial;
+		public static implicit operator CIFilter( CIRefractedMaterial value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRefractedMaterial value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRefractedMaterial value ) {
 			return value.Handle;
 		}
@@ -19022,6 +20567,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRenderProviderDelegate;
+		public static implicit operator NSObject( CIRenderProviderDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRenderProviderDelegate value ) {
 			return value.Handle;
 		}
@@ -19068,6 +20616,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRippleTransition;
+		public static implicit operator CIFilter( CIRippleTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRippleTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRippleTransition value ) {
 			return value.Handle;
 		}
@@ -19113,6 +20667,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRotatingCubeTransition;
+		public static implicit operator CIFilter( CIRotatingCubeTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRotatingCubeTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRotatingCubeTransition value ) {
 			return value.Handle;
 		}
@@ -19158,6 +20718,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIRowAverage;
+		public static implicit operator CIColumnAverage( CIRowAverage value ) {
+			return new CIColumnAverage( value.Handle );
+		}
+		public static implicit operator CIFilter( CIRowAverage value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIRowAverage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIRowAverage value ) {
 			return value.Handle;
 		}
@@ -19190,6 +20759,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISampleAreaOperation;
+		public static implicit operator CIFilter( CISampleAreaOperation value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISampleAreaOperation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISampleAreaOperation value ) {
 			return value.Handle;
 		}
@@ -19253,6 +20828,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISampler;
+		public static implicit operator NSObject( CISampler value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISampler value ) {
 			return value.Handle;
 		}
@@ -19399,6 +20977,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISaturationBlendMode;
+		public static implicit operator CIFilter( CISaturationBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISaturationBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISaturationBlendMode value ) {
 			return value.Handle;
 		}
@@ -19444,6 +21028,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIScreenBlendMode;
+		public static implicit operator CIFilter( CIScreenBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIScreenBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIScreenBlendMode value ) {
 			return value.Handle;
 		}
@@ -19489,6 +21079,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISepiaTone;
+		public static implicit operator CIFilter( CISepiaTone value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISepiaTone value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISepiaTone value ) {
 			return value.Handle;
 		}
@@ -19534,6 +21130,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIShadedMaterial;
+		public static implicit operator CIFilter( CIShadedMaterial value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIShadedMaterial value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIShadedMaterial value ) {
 			return value.Handle;
 		}
@@ -19579,6 +21181,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIShapedWaterRipple;
+		public static implicit operator CIFilter( CIShapedWaterRipple value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIShapedWaterRipple value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIShapedWaterRipple value ) {
 			return value.Handle;
 		}
@@ -19633,6 +21241,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISharpenLuminance;
+		public static implicit operator CIFilter( CISharpenLuminance value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISharpenLuminance value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISharpenLuminance value ) {
 			return value.Handle;
 		}
@@ -19678,6 +21292,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISilhouetteAlphaBlendMode;
+		public static implicit operator CIFilter( CISilhouetteAlphaBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISilhouetteAlphaBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISilhouetteAlphaBlendMode value ) {
 			return value.Handle;
 		}
@@ -19723,6 +21343,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISilhouetteLumaBlendMode;
+		public static implicit operator CIFilter( CISilhouetteLumaBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISilhouetteLumaBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISilhouetteLumaBlendMode value ) {
 			return value.Handle;
 		}
@@ -19768,6 +21394,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISixfoldReflectedTile;
+		public static implicit operator CIFilter( CISixfoldReflectedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISixfoldReflectedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISixfoldReflectedTile value ) {
 			return value.Handle;
 		}
@@ -19813,6 +21445,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISixfoldRotatedTile;
+		public static implicit operator CIFilter( CISixfoldRotatedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISixfoldRotatedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISixfoldRotatedTile value ) {
 			return value.Handle;
 		}
@@ -19858,6 +21496,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISmallChromaMorphologyMinimum;
+		public static implicit operator CIFilter( CISmallChromaMorphologyMinimum value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISmallChromaMorphologyMinimum value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISmallChromaMorphologyMinimum value ) {
 			return value.Handle;
 		}
@@ -19903,6 +21547,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISmallCircularChromaBlur;
+		public static implicit operator CIFilter( CISmallCircularChromaBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISmallCircularChromaBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISmallCircularChromaBlur value ) {
 			return value.Handle;
 		}
@@ -19948,6 +21598,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISmallHighpassEdges;
+		public static implicit operator CIFilter( CISmallHighpassEdges value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISmallHighpassEdges value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISmallHighpassEdges value ) {
 			return value.Handle;
 		}
@@ -19993,6 +21649,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISmallSharpenEdgesAndChromaBlur;
+		public static implicit operator CIFilter( CISmallSharpenEdgesAndChromaBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISmallSharpenEdgesAndChromaBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISmallSharpenEdgesAndChromaBlur value ) {
 			return value.Handle;
 		}
@@ -20038,6 +21700,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISobelEdges;
+		public static implicit operator CIFilter( CISobelEdges value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISobelEdges value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISobelEdges value ) {
 			return value.Handle;
 		}
@@ -20083,6 +21751,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISoftLightBlendMode;
+		public static implicit operator CIFilter( CISoftLightBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISoftLightBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISoftLightBlendMode value ) {
 			return value.Handle;
 		}
@@ -20128,6 +21802,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceAtopCompositing;
+		public static implicit operator CIFilter( CISourceAtopCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISourceAtopCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISourceAtopCompositing value ) {
 			return value.Handle;
 		}
@@ -20173,6 +21853,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceInCompositing;
+		public static implicit operator CIFilter( CISourceInCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISourceInCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISourceInCompositing value ) {
 			return value.Handle;
 		}
@@ -20218,6 +21904,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceOutCompositing;
+		public static implicit operator CIFilter( CISourceOutCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISourceOutCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISourceOutCompositing value ) {
 			return value.Handle;
 		}
@@ -20263,6 +21955,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISourceOverCompositing;
+		public static implicit operator CIFilter( CISourceOverCompositing value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISourceOverCompositing value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISourceOverCompositing value ) {
 			return value.Handle;
 		}
@@ -20308,6 +22006,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISphereGradient;
+		public static implicit operator CIFilter( CISphereGradient value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISphereGradient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISphereGradient value ) {
 			return value.Handle;
 		}
@@ -20353,6 +22057,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISpotColor;
+		public static implicit operator CIFilter( CISpotColor value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISpotColor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISpotColor value ) {
 			return value.Handle;
 		}
@@ -20398,6 +22108,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISpotLight;
+		public static implicit operator CIFilter( CISpotLight value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISpotLight value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISpotLight value ) {
 			return value.Handle;
 		}
@@ -20443,6 +22159,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStarShineGenerator;
+		public static implicit operator CIFilter( CIStarShineGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIStarShineGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIStarShineGenerator value ) {
 			return value.Handle;
 		}
@@ -20488,6 +22210,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStencilAlphaBlendMode;
+		public static implicit operator CIFilter( CIStencilAlphaBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIStencilAlphaBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIStencilAlphaBlendMode value ) {
 			return value.Handle;
 		}
@@ -20533,6 +22261,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStencilLumaBlendMode;
+		public static implicit operator CIFilter( CIStencilLumaBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIStencilLumaBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIStencilLumaBlendMode value ) {
 			return value.Handle;
 		}
@@ -20578,6 +22312,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStripesGenerator;
+		public static implicit operator CIFilter( CIStripesGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIStripesGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIStripesGenerator value ) {
 			return value.Handle;
 		}
@@ -20623,6 +22363,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIStripGenerator;
+		public static implicit operator CIFilter( CIStripGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIStripGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIStripGenerator value ) {
 			return value.Handle;
 		}
@@ -20668,6 +22414,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISubtractBlendMode;
+		public static implicit operator CIFilter( CISubtractBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISubtractBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISubtractBlendMode value ) {
 			return value.Handle;
 		}
@@ -20713,6 +22465,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISumOf8Conics;
+		public static implicit operator CIFilter( CISumOf8Conics value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISumOf8Conics value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISumOf8Conics value ) {
 			return value.Handle;
 		}
@@ -20758,6 +22516,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISunbeamsGenerator;
+		public static implicit operator CIFilter( CISunbeamsGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISunbeamsGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISunbeamsGenerator value ) {
 			return value.Handle;
 		}
@@ -20803,6 +22567,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISwipeTransition;
+		public static implicit operator CIFilter( CISwipeTransition value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISwipeTransition value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISwipeTransition value ) {
 			return value.Handle;
 		}
@@ -20848,6 +22618,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CISymmetricNearestNeighbor;
+		public static implicit operator CIFilter( CISymmetricNearestNeighbor value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CISymmetricNearestNeighbor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CISymmetricNearestNeighbor value ) {
 			return value.Handle;
 		}
@@ -20893,6 +22669,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITagWithColorSpace;
+		public static implicit operator CIFilter( CITagWithColorSpace value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITagWithColorSpace value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITagWithColorSpace value ) {
 			return value.Handle;
 		}
@@ -20938,6 +22720,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITigerBlur;
+		public static implicit operator CIFilter( CITigerBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITigerBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITigerBlur value ) {
 			return value.Handle;
 		}
@@ -21010,6 +22798,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITorusLensDistortion;
+		public static implicit operator CIFilter( CITorusLensDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITorusLensDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITorusLensDistortion value ) {
 			return value.Handle;
 		}
@@ -21055,6 +22849,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITransferImage;
+		public static implicit operator CIFilter( CITransferImage value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITransferImage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITransferImage value ) {
 			return value.Handle;
 		}
@@ -21100,6 +22900,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITriangleTile;
+		public static implicit operator CIFilter( CITriangleTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITriangleTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITriangleTile value ) {
 			return value.Handle;
 		}
@@ -21145,6 +22951,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITwelvefoldReflectedTile;
+		public static implicit operator CIFilter( CITwelvefoldReflectedTile value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITwelvefoldReflectedTile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITwelvefoldReflectedTile value ) {
 			return value.Handle;
 		}
@@ -21190,6 +23002,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CITwirlDistortion;
+		public static implicit operator CIFilter( CITwirlDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CITwirlDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CITwirlDistortion value ) {
 			return value.Handle;
 		}
@@ -21235,6 +23053,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUIBundle1;
+		public static implicit operator CIUIBundleBase( CIUIBundle1 value ) {
+			return new CIUIBundleBase( value.Handle );
+		}
+		public static implicit operator NSObject( CIUIBundle1 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIUIBundle1 value ) {
 			return value.Handle;
 		}
@@ -21388,6 +23212,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUIBundle2;
+		public static implicit operator CIUIBundleBase( CIUIBundle2 value ) {
+			return new CIUIBundleBase( value.Handle );
+		}
+		public static implicit operator NSObject( CIUIBundle2 value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIUIBundle2 value ) {
 			return value.Handle;
 		}
@@ -22446,6 +24276,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUIBundleBase;
+		public static implicit operator NSObject( CIUIBundleBase value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIUIBundleBase value ) {
 			return value.Handle;
 		}
@@ -23452,6 +25285,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUIStripesGenerator;
+		public static implicit operator CIFilter( CIUIStripesGenerator value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIUIStripesGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIUIStripesGenerator value ) {
 			return value.Handle;
 		}
@@ -23497,6 +25336,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIUnsharpMask;
+		public static implicit operator CIFilter( CIUnsharpMask value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIUnsharpMask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIUnsharpMask value ) {
 			return value.Handle;
 		}
@@ -23542,6 +25387,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVarianceConvolution;
+		public static implicit operator CIFilter( CIVarianceConvolution value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIVarianceConvolution value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIVarianceConvolution value ) {
 			return value.Handle;
 		}
@@ -23607,6 +25458,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVector;
+		public static implicit operator NSObject( CIVector value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIVector value ) {
 			return value.Handle;
 		}
@@ -23835,6 +25689,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVideoNoiseFilter;
+		public static implicit operator CIFilter( CIVideoNoiseFilter value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIVideoNoiseFilter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIVideoNoiseFilter value ) {
 			return value.Handle;
 		}
@@ -23880,6 +25740,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVividLightBlendMode;
+		public static implicit operator CIFilter( CIVividLightBlendMode value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIVividLightBlendMode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIVividLightBlendMode value ) {
 			return value.Handle;
 		}
@@ -23925,6 +25791,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIVortexDistortion;
+		public static implicit operator CIFilter( CIVortexDistortion value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIVortexDistortion value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIVortexDistortion value ) {
 			return value.Handle;
 		}
@@ -23970,6 +25842,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIWhitePoint;
+		public static implicit operator CIFilter( CIWhitePoint value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIWhitePoint value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIWhitePoint value ) {
 			return value.Handle;
 		}
@@ -24015,6 +25893,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIWhitePointAdjust;
+		public static implicit operator CIFilter( CIWhitePointAdjust value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIWhitePointAdjust value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIWhitePointAdjust value ) {
 			return value.Handle;
 		}
@@ -24060,6 +25944,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIWindowedSincConvolution;
+		public static implicit operator CIFilter( CIWindowedSincConvolution value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIWindowedSincConvolution value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIWindowedSincConvolution value ) {
 			return value.Handle;
 		}
@@ -24105,6 +25995,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIYCbCrSubsampledReconstruction;
+		public static implicit operator CIFilter( CIYCbCrSubsampledReconstruction value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIYCbCrSubsampledReconstruction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIYCbCrSubsampledReconstruction value ) {
 			return value.Handle;
 		}
@@ -24150,6 +26046,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.CIZoomBlur;
+		public static implicit operator CIFilter( CIZoomBlur value ) {
+			return new CIFilter( value.Handle );
+		}
+		public static implicit operator NSObject( CIZoomBlur value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CIZoomBlur value ) {
 			return value.Handle;
 		}
@@ -24204,6 +26106,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.LKCGColorCodingProxy;
+		public static implicit operator CACodingProxy( LKCGColorCodingProxy value ) {
+			return new CACodingProxy( value.Handle );
+		}
+		public static implicit operator NSObject( LKCGColorCodingProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( LKCGColorCodingProxy value ) {
 			return value.Handle;
 		}
@@ -24236,6 +26144,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.LKCGImageCodingProxy;
+		public static implicit operator CACodingProxy( LKCGImageCodingProxy value ) {
+			return new CACodingProxy( value.Handle );
+		}
+		public static implicit operator NSObject( LKCGImageCodingProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( LKCGImageCodingProxy value ) {
 			return value.Handle;
 		}
@@ -24268,6 +26182,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.LKNSArrayCodingProxy;
+		public static implicit operator CACodingProxy( LKNSArrayCodingProxy value ) {
+			return new CACodingProxy( value.Handle );
+		}
+		public static implicit operator NSObject( LKNSArrayCodingProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( LKNSArrayCodingProxy value ) {
 			return value.Handle;
 		}
@@ -24300,6 +26220,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.LKNSDictionaryCodingProxy;
+		public static implicit operator CACodingProxy( LKNSDictionaryCodingProxy value ) {
+			return new CACodingProxy( value.Handle );
+		}
+		public static implicit operator NSObject( LKNSDictionaryCodingProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( LKNSDictionaryCodingProxy value ) {
 			return value.Handle;
 		}
@@ -24332,6 +26258,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.LKNSValueCodingProxy;
+		public static implicit operator CACodingProxy( LKNSValueCodingProxy value ) {
+			return new CACodingProxy( value.Handle );
+		}
+		public static implicit operator NSObject( LKNSValueCodingProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( LKNSValueCodingProxy value ) {
 			return value.Handle;
 		}
@@ -24364,6 +26296,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = QuartzCoreCachedClasses.QSILRUQueue;
+		public static implicit operator NSObject( QSILRUQueue value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( QSILRUQueue value ) {
 			return value.Handle;
 		}

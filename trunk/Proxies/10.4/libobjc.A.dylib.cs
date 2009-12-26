@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = libobjc_A_dylibCachedClasses.List;
+		public static implicit operator NObjective.Proxies.Object( List value ) {
+			return new NObjective.Proxies.Object( value.Handle );
+		}
 		public static implicit operator IntPtr( List value ) {
 			return value.Handle;
 		}
@@ -882,6 +885,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = libobjc_A_dylibCachedClasses.Protocol;
+		public static implicit operator NObjective.Proxies.Object( Protocol value ) {
+			return new NObjective.Proxies.Object( value.Handle );
+		}
 		public static implicit operator IntPtr( Protocol value ) {
 			return value.Handle;
 		}

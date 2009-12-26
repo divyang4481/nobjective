@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRAudioGenerator;
+		public static implicit operator NSObject( DRAudioGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRAudioGenerator value ) {
 			return value.Handle;
 		}
@@ -76,6 +79,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRAudioTrack;
+		public static implicit operator DRTrack( DRAudioTrack value ) {
+			return new DRTrack( value.Handle );
+		}
+		public static implicit operator NSObject( DRAudioTrack value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRAudioTrack value ) {
 			return value.Handle;
 		}
@@ -121,6 +130,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRBINFileProducer;
+		public static implicit operator NSObject( DRBINFileProducer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRBINFileProducer value ) {
 			return value.Handle;
 		}
@@ -214,6 +226,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRBurn;
+		public static implicit operator NSObject( DRBurn value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRBurn value ) {
 			return value.Handle;
 		}
@@ -476,6 +491,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRCallbackDevice;
+		public static implicit operator DRDevice( DRCallbackDevice value ) {
+			return new DRDevice( value.Handle );
+		}
+		public static implicit operator NSObject( DRCallbackDevice value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRCallbackDevice value ) {
 			return value.Handle;
 		}
@@ -521,6 +542,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRCDTextBlock;
+		public static implicit operator NSObject( DRCDTextBlock value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRCDTextBlock value ) {
 			return value.Handle;
 		}
@@ -721,6 +745,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRCueFileParser;
+		public static implicit operator NSObject( DRCueFileParser value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRCueFileParser value ) {
 			return value.Handle;
 		}
@@ -871,6 +898,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRDataGenerator;
+		public static implicit operator NSObject( DRDataGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRDataGenerator value ) {
 			return value.Handle;
 		}
@@ -934,6 +964,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRDevice;
+		public static implicit operator NSObject( DRDevice value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRDevice value ) {
 			return value.Handle;
 		}
@@ -1830,6 +1863,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRErase;
+		public static implicit operator NSObject( DRErase value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRErase value ) {
 			return value.Handle;
 		}
@@ -1988,6 +2024,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRFile;
+		public static implicit operator DRFSObject( DRFile value ) {
+			return new DRFSObject( value.Handle );
+		}
+		public static implicit operator NSObject( DRFile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRFile value ) {
 			return value.Handle;
 		}
@@ -2145,6 +2187,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRFilesystemTrack;
+		public static implicit operator DRTrack( DRFilesystemTrack value ) {
+			return new DRTrack( value.Handle );
+		}
+		public static implicit operator NSObject( DRFilesystemTrack value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRFilesystemTrack value ) {
 			return value.Handle;
 		}
@@ -2190,6 +2238,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRFolder;
+		public static implicit operator DRFSObject( DRFolder value ) {
+			return new DRFSObject( value.Handle );
+		}
+		public static implicit operator NSObject( DRFolder value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRFolder value ) {
 			return value.Handle;
 		}
@@ -2328,6 +2382,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRFSObject;
+		public static implicit operator NSObject( DRFSObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRFSObject value ) {
 			return value.Handle;
 		}
@@ -2762,6 +2819,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRMSF;
+		public static implicit operator NSNumber( DRMSF value ) {
+			return new NSNumber( value.Handle );
+		}
+		public static implicit operator NSValue( DRMSF value ) {
+			return new NSValue( value.Handle );
+		}
+		public static implicit operator NSObject( DRMSF value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRMSF value ) {
 			return value.Handle;
 		}
@@ -2938,6 +3004,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRMSFFormatter;
+		public static implicit operator NSFormatter( DRMSFFormatter value ) {
+			return new NSFormatter( value.Handle );
+		}
+		public static implicit operator NSObject( DRMSFFormatter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRMSFFormatter value ) {
 			return value.Handle;
 		}
@@ -3012,6 +3084,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRNotificationCenter;
+		public static implicit operator NSObject( DRNotificationCenter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRNotificationCenter value ) {
 			return value.Handle;
 		}
@@ -3094,6 +3169,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRPartialFileAudioProducer;
+		public static implicit operator NSObject( DRPartialFileAudioProducer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRPartialFileAudioProducer value ) {
 			return value.Handle;
 		}
@@ -3196,6 +3274,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRPrepare;
+		public static implicit operator NSObject( DRPrepare value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRPrepare value ) {
 			return value.Handle;
 		}
@@ -3318,6 +3399,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRSession;
+		public static implicit operator NSObject( DRSession value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRSession value ) {
 			return value.Handle;
 		}
@@ -3448,6 +3532,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRSessionCDTextProducer;
+		public static implicit operator NSObject( DRSessionCDTextProducer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRSessionCDTextProducer value ) {
 			return value.Handle;
 		}
@@ -3527,6 +3614,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRSessionProducerPlaceholder;
+		public static implicit operator NSObject( DRSessionProducerPlaceholder value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRSessionProducerPlaceholder value ) {
 			return value.Handle;
 		}
@@ -3572,6 +3662,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRSilenceGenerator;
+		public static implicit operator NSObject( DRSilenceGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRSilenceGenerator value ) {
 			return value.Handle;
 		}
@@ -3635,6 +3728,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRTask;
+		public static implicit operator NSObject( DRTask value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRTask value ) {
 			return value.Handle;
 		}
@@ -3698,6 +3794,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRTOCFileParser;
+		public static implicit operator NSObject( DRTOCFileParser value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRTOCFileParser value ) {
 			return value.Handle;
 		}
@@ -3840,6 +3939,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRTOCProducer;
+		public static implicit operator NSObject( DRTOCProducer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRTOCProducer value ) {
 			return value.Handle;
 		}
@@ -3924,6 +4026,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = DiscRecordingCachedClasses.DRTrack;
+		public static implicit operator NSObject( DRTrack value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( DRTrack value ) {
 			return value.Handle;
 		}

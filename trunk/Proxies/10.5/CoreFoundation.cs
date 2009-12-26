@@ -13,6 +13,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSArrayReverseEnumerator;
+		public static implicit operator NSEnumerator( __NSArrayReverseEnumerator value ) {
+			return new NSEnumerator( value.Handle );
+		}
+		public static implicit operator NSObject( __NSArrayReverseEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSArrayReverseEnumerator value ) {
 			return value.Handle;
 		}
@@ -58,6 +64,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSCFArray;
+		public static implicit operator NSMutableArray( __NSCFArray value ) {
+			return new NSMutableArray( value.Handle );
+		}
+		public static implicit operator NSArray( __NSCFArray value ) {
+			return new NSArray( value.Handle );
+		}
+		public static implicit operator NSObject( __NSCFArray value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSCFArray value ) {
 			return value.Handle;
 		}
@@ -90,6 +105,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSCFDate;
+		public static implicit operator NSDate( __NSCFDate value ) {
+			return new NSDate( value.Handle );
+		}
+		public static implicit operator NSObject( __NSCFDate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSCFDate value ) {
 			return value.Handle;
 		}
@@ -135,6 +156,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSCFDictionary;
+		public static implicit operator NSMutableDictionary( __NSCFDictionary value ) {
+			return new NSMutableDictionary( value.Handle );
+		}
+		public static implicit operator NSDictionary( __NSCFDictionary value ) {
+			return new NSDictionary( value.Handle );
+		}
+		public static implicit operator NSObject( __NSCFDictionary value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSCFDictionary value ) {
 			return value.Handle;
 		}
@@ -167,6 +197,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSCFOrderedSet;
+		public static implicit operator NSMutableOrderedSet( __NSCFOrderedSet value ) {
+			return new NSMutableOrderedSet( value.Handle );
+		}
+		public static implicit operator NSOrderedSet( __NSCFOrderedSet value ) {
+			return new NSOrderedSet( value.Handle );
+		}
+		public static implicit operator NSObject( __NSCFOrderedSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSCFOrderedSet value ) {
 			return value.Handle;
 		}
@@ -199,6 +238,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSCFSet;
+		public static implicit operator NSMutableSet( __NSCFSet value ) {
+			return new NSMutableSet( value.Handle );
+		}
+		public static implicit operator NSSet( __NSCFSet value ) {
+			return new NSSet( value.Handle );
+		}
+		public static implicit operator NSObject( __NSCFSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSCFSet value ) {
 			return value.Handle;
 		}
@@ -231,6 +279,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSDictionaryObjectEnumerator;
+		public static implicit operator __NSFastEnumerationEnumerator( __NSDictionaryObjectEnumerator value ) {
+			return new __NSFastEnumerationEnumerator( value.Handle );
+		}
+		public static implicit operator NSEnumerator( __NSDictionaryObjectEnumerator value ) {
+			return new NSEnumerator( value.Handle );
+		}
+		public static implicit operator NSObject( __NSDictionaryObjectEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSDictionaryObjectEnumerator value ) {
 			return value.Handle;
 		}
@@ -263,6 +320,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSFastEnumerationEnumerator;
+		public static implicit operator NSEnumerator( __NSFastEnumerationEnumerator value ) {
+			return new NSEnumerator( value.Handle );
+		}
+		public static implicit operator NSObject( __NSFastEnumerationEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSFastEnumerationEnumerator value ) {
 			return value.Handle;
 		}
@@ -308,6 +371,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSOrderedSetReverseEnumerator;
+		public static implicit operator NSEnumerator( __NSOrderedSetReverseEnumerator value ) {
+			return new NSEnumerator( value.Handle );
+		}
+		public static implicit operator NSObject( __NSOrderedSetReverseEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSOrderedSetReverseEnumerator value ) {
 			return value.Handle;
 		}
@@ -353,6 +422,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSPlaceholderArray;
+		public static implicit operator NSMutableArray( __NSPlaceholderArray value ) {
+			return new NSMutableArray( value.Handle );
+		}
+		public static implicit operator NSArray( __NSPlaceholderArray value ) {
+			return new NSArray( value.Handle );
+		}
+		public static implicit operator NSObject( __NSPlaceholderArray value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSPlaceholderArray value ) {
 			return value.Handle;
 		}
@@ -441,6 +519,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSPlaceholderDate;
+		public static implicit operator NSDate( __NSPlaceholderDate value ) {
+			return new NSDate( value.Handle );
+		}
+		public static implicit operator NSObject( __NSPlaceholderDate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSPlaceholderDate value ) {
 			return value.Handle;
 		}
@@ -502,6 +586,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSPlaceholderDictionary;
+		public static implicit operator NSMutableDictionary( __NSPlaceholderDictionary value ) {
+			return new NSMutableDictionary( value.Handle );
+		}
+		public static implicit operator NSDictionary( __NSPlaceholderDictionary value ) {
+			return new NSDictionary( value.Handle );
+		}
+		public static implicit operator NSObject( __NSPlaceholderDictionary value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSPlaceholderDictionary value ) {
 			return value.Handle;
 		}
@@ -590,6 +683,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSPlaceholderOrderedSet;
+		public static implicit operator NSMutableOrderedSet( __NSPlaceholderOrderedSet value ) {
+			return new NSMutableOrderedSet( value.Handle );
+		}
+		public static implicit operator NSOrderedSet( __NSPlaceholderOrderedSet value ) {
+			return new NSOrderedSet( value.Handle );
+		}
+		public static implicit operator NSObject( __NSPlaceholderOrderedSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSPlaceholderOrderedSet value ) {
 			return value.Handle;
 		}
@@ -660,6 +762,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.__NSPlaceholderSet;
+		public static implicit operator NSMutableSet( __NSPlaceholderSet value ) {
+			return new NSMutableSet( value.Handle );
+		}
+		public static implicit operator NSSet( __NSPlaceholderSet value ) {
+			return new NSSet( value.Handle );
+		}
+		public static implicit operator NSObject( __NSPlaceholderSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( __NSPlaceholderSet value ) {
 			return value.Handle;
 		}
@@ -779,6 +890,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.CFXPreferencesCompatibilitySource;
+		public static implicit operator CFXPreferencesSource( CFXPreferencesCompatibilitySource value ) {
+			return new CFXPreferencesSource( value.Handle );
+		}
+		public static implicit operator NSObject( CFXPreferencesCompatibilitySource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CFXPreferencesCompatibilitySource value ) {
 			return value.Handle;
 		}
@@ -811,6 +928,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.CFXPreferencesManagedSource;
+		public static implicit operator CFXPreferencesPropertyListSource( CFXPreferencesManagedSource value ) {
+			return new CFXPreferencesPropertyListSource( value.Handle );
+		}
+		public static implicit operator CFXPreferencesSource( CFXPreferencesManagedSource value ) {
+			return new CFXPreferencesSource( value.Handle );
+		}
+		public static implicit operator NSObject( CFXPreferencesManagedSource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CFXPreferencesManagedSource value ) {
 			return value.Handle;
 		}
@@ -843,6 +969,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.CFXPreferencesPropertyListSource;
+		public static implicit operator CFXPreferencesSource( CFXPreferencesPropertyListSource value ) {
+			return new CFXPreferencesSource( value.Handle );
+		}
+		public static implicit operator NSObject( CFXPreferencesPropertyListSource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CFXPreferencesPropertyListSource value ) {
 			return value.Handle;
 		}
@@ -875,6 +1007,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.CFXPreferencesSearchListSource;
+		public static implicit operator CFXPreferencesSource( CFXPreferencesSearchListSource value ) {
+			return new CFXPreferencesSource( value.Handle );
+		}
+		public static implicit operator NSObject( CFXPreferencesSearchListSource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CFXPreferencesSearchListSource value ) {
 			return value.Handle;
 		}
@@ -927,6 +1065,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.CFXPreferencesSource;
+		public static implicit operator NSObject( CFXPreferencesSource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CFXPreferencesSource value ) {
 			return value.Handle;
 		}
@@ -981,6 +1122,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSArray;
+		public static implicit operator NSObject( NSArray value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSArray value ) {
 			return value.Handle;
 		}
@@ -1377,6 +1521,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSCalendar;
+		public static implicit operator NSObject( NSCalendar value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSCalendar value ) {
 			return value.Handle;
 		}
@@ -1409,6 +1556,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSCFString;
+		public static implicit operator NSMutableString( NSCFString value ) {
+			return new NSMutableString( value.Handle );
+		}
+		public static implicit operator NSString( NSCFString value ) {
+			return new NSString( value.Handle );
+		}
+		public static implicit operator NSObject( NSCFString value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSCFString value ) {
 			return value.Handle;
 		}
@@ -1441,6 +1597,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSData;
+		public static implicit operator NSObject( NSData value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSData value ) {
 			return value.Handle;
 		}
@@ -1473,6 +1632,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSDate;
+		public static implicit operator NSObject( NSDate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSDate value ) {
 			return value.Handle;
 		}
@@ -1734,6 +1896,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSDateComponents;
+		public static implicit operator NSObject( NSDateComponents value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSDateComponents value ) {
 			return value.Handle;
 		}
@@ -1766,6 +1931,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSDictionary;
+		public static implicit operator NSObject( NSDictionary value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSDictionary value ) {
 			return value.Handle;
 		}
@@ -2080,6 +2248,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSEnumerator;
+		public static implicit operator NSObject( NSEnumerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSEnumerator value ) {
 			return value.Handle;
 		}
@@ -2134,6 +2305,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSException;
+		public static implicit operator NSObject( NSException value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSException value ) {
 			return value.Handle;
 		}
@@ -2259,6 +2433,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSInputStream;
+		public static implicit operator NSStream( NSInputStream value ) {
+			return new NSStream( value.Handle );
+		}
+		public static implicit operator NSObject( NSInputStream value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSInputStream value ) {
 			return value.Handle;
 		}
@@ -2291,6 +2471,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSInvocation;
+		public static implicit operator NSObject( NSInvocation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSInvocation value ) {
 			return value.Handle;
 		}
@@ -2444,6 +2627,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSLocale;
+		public static implicit operator NSObject( NSLocale value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSLocale value ) {
 			return value.Handle;
 		}
@@ -2525,6 +2711,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSMethodSignature;
+		public static implicit operator NSObject( NSMethodSignature value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSMethodSignature value ) {
 			return value.Handle;
 		}
@@ -2624,6 +2813,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSMutableArray;
+		public static implicit operator NSArray( NSMutableArray value ) {
+			return new NSArray( value.Handle );
+		}
+		public static implicit operator NSObject( NSMutableArray value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSMutableArray value ) {
 			return value.Handle;
 		}
@@ -2830,6 +3025,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSMutableData;
+		public static implicit operator NSData( NSMutableData value ) {
+			return new NSData( value.Handle );
+		}
+		public static implicit operator NSObject( NSMutableData value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSMutableData value ) {
 			return value.Handle;
 		}
@@ -2862,6 +3063,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSMutableDictionary;
+		public static implicit operator NSDictionary( NSMutableDictionary value ) {
+			return new NSDictionary( value.Handle );
+		}
+		public static implicit operator NSObject( NSMutableDictionary value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSMutableDictionary value ) {
 			return value.Handle;
 		}
@@ -2980,6 +3187,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSMutableOrderedSet;
+		public static implicit operator NSOrderedSet( NSMutableOrderedSet value ) {
+			return new NSOrderedSet( value.Handle );
+		}
+		public static implicit operator NSObject( NSMutableOrderedSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSMutableOrderedSet value ) {
 			return value.Handle;
 		}
@@ -3162,6 +3375,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSMutableSet;
+		public static implicit operator NSSet( NSMutableSet value ) {
+			return new NSSet( value.Handle );
+		}
+		public static implicit operator NSObject( NSMutableSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSMutableSet value ) {
 			return value.Handle;
 		}
@@ -3280,6 +3499,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSNull;
+		public static implicit operator NSObject( NSNull value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSNull value ) {
 			return value.Handle;
 		}
@@ -3908,6 +4130,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSOrderedSet;
+		public static implicit operator NSObject( NSOrderedSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSOrderedSet value ) {
 			return value.Handle;
 		}
@@ -4293,6 +4518,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSOutputStream;
+		public static implicit operator NSStream( NSOutputStream value ) {
+			return new NSStream( value.Handle );
+		}
+		public static implicit operator NSObject( NSOutputStream value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSOutputStream value ) {
 			return value.Handle;
 		}
@@ -4325,6 +4556,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSRunLoop;
+		public static implicit operator NSObject( NSRunLoop value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSRunLoop value ) {
 			return value.Handle;
 		}
@@ -4357,6 +4591,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSSet;
+		public static implicit operator NSObject( NSSet value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSSet value ) {
 			return value.Handle;
 		}
@@ -4653,6 +4890,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSStream;
+		public static implicit operator NSObject( NSStream value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSStream value ) {
 			return value.Handle;
 		}
@@ -4685,6 +4925,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSTimer;
+		public static implicit operator NSObject( NSTimer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSTimer value ) {
 			return value.Handle;
 		}
@@ -4717,6 +4960,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSTimeZone;
+		public static implicit operator NSObject( NSTimeZone value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSTimeZone value ) {
 			return value.Handle;
 		}
@@ -4749,6 +4995,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSUserDefaults;
+		public static implicit operator NSObject( NSUserDefaults value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSUserDefaults value ) {
 			return value.Handle;
 		}
