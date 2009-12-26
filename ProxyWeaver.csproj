@@ -24,6 +24,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,45 +37,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Cci.ILGenerator, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.ILGenerator.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MetadataHelper, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.MetadataHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MetadataModel, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.MetadataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.MutableMetadataModel, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.MutableMetadataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PdbReader, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.PdbReader.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PdbWriter, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.PdbWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PeReader, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.PeReader.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.PeWriter, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.PeWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Cci.SourceModel, Version=2.0.8.17659, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>External\Microsoft.Cci.SourceModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil, Version=0.6.9.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Mono.Cecil, Version=0.6.9.0, Culture=neutral, PublicKeyToken=b9214bcf5a4264bd, processorArchitecture=MSIL">
       <HintPath>External\Mono.Cecil.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

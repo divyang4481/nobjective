@@ -35,6 +35,10 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NObjective.Proxies.Leopard, Version=0.9.6.23531, Culture=neutral, PublicKeyToken=b9214bcf5a4264bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NObjective.Proxies.Leopard.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\NUnit 2.4.8\bin\nunit.framework.dll</HintPath>
@@ -57,10 +61,6 @@
     <ProjectReference Include="NObjective.csproj">
       <Project>{4AB62BFF-BD39-446D-96F5-9E3E0DDF0315}</Project>
       <Name>NObjective</Name>
-    </ProjectReference>
-    <ProjectReference Include="NObjective.Proxies.Leopard.csproj">
-      <Project>{D3A0BDFD-734B-418E-A514-40BE34AF3078}</Project>
-      <Name>NObjective.Proxies.Leopard</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

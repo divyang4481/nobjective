@@ -68,4 +68,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PostBuildEvent>cd $(TargetDir)
+ProxyWeaver.exe $(TargetFileName) $(ProjectName).dll</PostBuildEvent>
+  </PropertyGroup>
 </Project>

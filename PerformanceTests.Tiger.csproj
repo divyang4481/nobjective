@@ -120,4 +120,8 @@
     <None Include="PerformanceTests\run_tiger_tests.sh" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd $(TargetDir)
+NObjective.ProxyWeaver.exe $(TargetFileName) $(ProjectName).dll</PostBuildEvent>
+  </PropertyGroup>
 </Project>
