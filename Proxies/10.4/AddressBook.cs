@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.AB_AFCard;
+		public static implicit operator NSObject( AB_AFCard value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( AB_AFCard value ) {
 			return value.Handle;
 		}
@@ -202,6 +205,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.AB_AFDataFile;
+		public static implicit operator NSObject( AB_AFDataFile value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( AB_AFDataFile value ) {
 			return value.Handle;
 		}
@@ -361,6 +367,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABAccessibilityMockUIElement;
+		public static implicit operator NSObject( ABAccessibilityMockUIElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABAccessibilityMockUIElement value ) {
 			return value.Handle;
 		}
@@ -655,6 +664,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABACE;
+		public static implicit operator NSObject( ABACE value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABACE value ) {
 			return value.Handle;
 		}
@@ -804,6 +816,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABACL;
+		public static implicit operator NSObject( ABACL value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABACL value ) {
 			return value.Handle;
 		}
@@ -899,6 +914,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABAddressAttributedString;
+		public static implicit operator NSObject( ABAddressAttributedString value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABAddressAttributedString value ) {
 			return value.Handle;
 		}
@@ -977,6 +995,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABAddressBook;
+		public static implicit operator NSObject( ABAddressBook value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABAddressBook value ) {
 			return value.Handle;
 		}
@@ -2036,6 +2057,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABAddToGroupCommand;
+		public static implicit operator ABGroupCommand( ABAddToGroupCommand value ) {
+			return new ABGroupCommand( value.Handle );
+		}
+		public static implicit operator ABCommand( ABAddToGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABAddToGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABAddToGroupCommand value ) {
 			return value.Handle;
 		}
@@ -2081,6 +2111,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABAllGroup;
+		public static implicit operator ABGroup( ABAllGroup value ) {
+			return new ABGroup( value.Handle );
+		}
+		public static implicit operator ABRecord( ABAllGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABAllGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABAllGroup value ) {
 			return value.Handle;
 		}
@@ -2170,6 +2209,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABAuthenticationInfo;
+		public static implicit operator NSObject( ABAuthenticationInfo value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABAuthenticationInfo value ) {
 			return value.Handle;
 		}
@@ -2202,6 +2244,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABBackgroundImageButtonCell;
+		public static implicit operator NSButtonCell( ABBackgroundImageButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABBackgroundImageButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABBackgroundImageButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABBackgroundImageButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABBackgroundImageButtonCell value ) {
 			return value.Handle;
 		}
@@ -2256,6 +2310,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABBackupManager;
+		public static implicit operator NSObject( ABBackupManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABBackupManager value ) {
 			return value.Handle;
 		}
@@ -2400,6 +2457,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABBackupScheduler;
+		public static implicit operator NSObject( ABBackupScheduler value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABBackupScheduler value ) {
 			return value.Handle;
 		}
@@ -2572,6 +2632,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABBevellerView;
+		public static implicit operator NSView( ABBevellerView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABBevellerView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABBevellerView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABBevellerView value ) {
 			return value.Handle;
 		}
@@ -2604,6 +2673,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABBuddyStatus;
+		public static implicit operator NSObject( ABBuddyStatus value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABBuddyStatus value ) {
 			return value.Handle;
 		}
@@ -2667,6 +2739,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABButtonCell;
+		public static implicit operator NSButtonCell( ABButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABButtonCell value ) {
 			return value.Handle;
 		}
@@ -2771,6 +2855,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCardBackgroundView;
+		public static implicit operator ABBevellerView( ABCardBackgroundView value ) {
+			return new ABBevellerView( value.Handle );
+		}
+		public static implicit operator NSView( ABCardBackgroundView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABCardBackgroundView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABCardBackgroundView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCardBackgroundView value ) {
 			return value.Handle;
 		}
@@ -2803,6 +2899,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCardItemRuler;
+		public static implicit operator NSRulerView( ABCardItemRuler value ) {
+			return new NSRulerView( value.Handle );
+		}
+		public static implicit operator NSView( ABCardItemRuler value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABCardItemRuler value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABCardItemRuler value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCardItemRuler value ) {
 			return value.Handle;
 		}
@@ -2872,6 +2980,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCardItemRulerAccessibilityElement;
+		public static implicit operator ABAccessibilityMockUIElement( ABCardItemRulerAccessibilityElement value ) {
+			return new ABAccessibilityMockUIElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABCardItemRulerAccessibilityElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCardItemRulerAccessibilityElement value ) {
 			return value.Handle;
 		}
@@ -2926,6 +3040,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCardViewerController;
+		public static implicit operator NSObject( ABCardViewerController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCardViewerController value ) {
 			return value.Handle;
 		}
@@ -3045,6 +3162,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCardWindowController;
+		public static implicit operator NSObject( ABCardWindowController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCardWindowController value ) {
 			return value.Handle;
 		}
@@ -3313,6 +3433,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCertController;
+		public static implicit operator NSObject( ABCertController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCertController value ) {
 			return value.Handle;
 		}
@@ -3416,6 +3539,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCertificateButtonCell;
+		public static implicit operator NSButtonCell( ABCertificateButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABCertificateButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABCertificateButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABCertificateButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCertificateButtonCell value ) {
 			return value.Handle;
 		}
@@ -3504,6 +3639,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABChangePropertiesCommand;
+		public static implicit operator ABCommand( ABChangePropertiesCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABChangePropertiesCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABChangePropertiesCommand value ) {
 			return value.Handle;
 		}
@@ -3549,6 +3690,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABChangePropertyCommand;
+		public static implicit operator ABCommand( ABChangePropertyCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABChangePropertyCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABChangePropertyCommand value ) {
 			return value.Handle;
 		}
@@ -3611,6 +3758,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCommand;
+		public static implicit operator NSObject( ABCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCommand value ) {
 			return value.Handle;
 		}
@@ -3716,6 +3866,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCompanyButtonCell;
+		public static implicit operator NSButtonCell( ABCompanyButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABCompanyButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABCompanyButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABCompanyButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCompanyButtonCell value ) {
 			return value.Handle;
 		}
@@ -3787,6 +3949,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABConverter;
+		public static implicit operator NSObject( ABConverter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABConverter value ) {
 			return value.Handle;
 		}
@@ -3934,6 +4099,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABCustomLabelEditor;
+		public static implicit operator NSObject( ABCustomLabelEditor value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABCustomLabelEditor value ) {
 			return value.Handle;
 		}
@@ -4027,6 +4195,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDataType;
+		public static implicit operator ABRecord( ABDataType value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABDataType value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDataType value ) {
 			return value.Handle;
 		}
@@ -4059,6 +4233,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDAVManager;
+		public static implicit operator ABFileManager( ABDAVManager value ) {
+			return new ABFileManager( value.Handle );
+		}
+		public static implicit operator NSObject( ABDAVManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDAVManager value ) {
 			return value.Handle;
 		}
@@ -4399,6 +4579,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDAVQuery;
+		public static implicit operator NSObject( ABDAVQuery value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDAVQuery value ) {
 			return value.Handle;
 		}
@@ -4697,6 +4880,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDBCache;
+		public static implicit operator NSObject( ABDBCache value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDBCache value ) {
 			return value.Handle;
 		}
@@ -5051,6 +5237,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDeleteGroupsCommand;
+		public static implicit operator ABCommand( ABDeleteGroupsCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABDeleteGroupsCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDeleteGroupsCommand value ) {
 			return value.Handle;
 		}
@@ -5096,6 +5288,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDeleteRecordsCommand;
+		public static implicit operator ABCommand( ABDeleteRecordsCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABDeleteRecordsCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDeleteRecordsCommand value ) {
 			return value.Handle;
 		}
@@ -5159,6 +5357,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDirectoriesController;
+		public static implicit operator ABTableController( ABDirectoriesController value ) {
+			return new ABTableController( value.Handle );
+		}
+		public static implicit operator NSResponder( ABDirectoriesController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABDirectoriesController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDirectoriesController value ) {
 			return value.Handle;
 		}
@@ -5253,6 +5460,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDirectoriesGroup;
+		public static implicit operator ABGroup( ABDirectoriesGroup value ) {
+			return new ABGroup( value.Handle );
+		}
+		public static implicit operator ABRecord( ABDirectoriesGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABDirectoriesGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDirectoriesGroup value ) {
 			return value.Handle;
 		}
@@ -5324,6 +5540,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDirectoryResultsController;
+		public static implicit operator ABPeopleController( ABDirectoryResultsController value ) {
+			return new ABPeopleController( value.Handle );
+		}
+		public static implicit operator ABTableController( ABDirectoryResultsController value ) {
+			return new ABTableController( value.Handle );
+		}
+		public static implicit operator NSResponder( ABDirectoryResultsController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABDirectoryResultsController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDirectoryResultsController value ) {
 			return value.Handle;
 		}
@@ -5451,6 +5679,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDragAnimationView;
+		public static implicit operator NSView( ABDragAnimationView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABDragAnimationView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABDragAnimationView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDragAnimationView value ) {
 			return value.Handle;
 		}
@@ -5503,6 +5740,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABDragAnimationWindow;
+		public static implicit operator NSWindow( ABDragAnimationWindow value ) {
+			return new NSWindow( value.Handle );
+		}
+		public static implicit operator NSResponder( ABDragAnimationWindow value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABDragAnimationWindow value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABDragAnimationWindow value ) {
 			return value.Handle;
 		}
@@ -5565,6 +5811,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABEditSmartGroupCommand;
+		public static implicit operator ABCommand( ABEditSmartGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABEditSmartGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABEditSmartGroupCommand value ) {
 			return value.Handle;
 		}
@@ -5610,6 +5862,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABEditSwitch;
+		public static implicit operator NSControl( ABEditSwitch value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABEditSwitch value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABEditSwitch value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABEditSwitch value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABEditSwitch value ) {
 			return value.Handle;
 		}
@@ -5680,6 +5944,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABEmbossedText;
+		public static implicit operator NSView( ABEmbossedText value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABEmbossedText value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABEmbossedText value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABEmbossedText value ) {
 			return value.Handle;
 		}
@@ -5758,6 +6031,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABExampleTextField;
+		public static implicit operator NSTextField( ABExampleTextField value ) {
+			return new NSTextField( value.Handle );
+		}
+		public static implicit operator NSControl( ABExampleTextField value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABExampleTextField value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABExampleTextField value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABExampleTextField value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABExampleTextField value ) {
 			return value.Handle;
 		}
@@ -5810,6 +6098,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABExchangeSetup;
+		public static implicit operator NSObject( ABExchangeSetup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABExchangeSetup value ) {
 			return value.Handle;
 		}
@@ -6002,6 +6293,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABFancyImagePickerController;
+		public static implicit operator NSObject( ABFancyImagePickerController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABFancyImagePickerController value ) {
 			return value.Handle;
 		}
@@ -6193,6 +6487,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABFancyImagePickerView;
+		public static implicit operator NSView( ABFancyImagePickerView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABFancyImagePickerView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABFancyImagePickerView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABFancyImagePickerView value ) {
 			return value.Handle;
 		}
@@ -6225,6 +6528,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABFileManager;
+		public static implicit operator NSObject( ABFileManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABFileManager value ) {
 			return value.Handle;
 		}
@@ -6395,6 +6701,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABFlareScrollView;
+		public static implicit operator ABScrollView( ABFlareScrollView value ) {
+			return new ABScrollView( value.Handle );
+		}
+		public static implicit operator NSScrollView( ABFlareScrollView value ) {
+			return new NSScrollView( value.Handle );
+		}
+		public static implicit operator NSView( ABFlareScrollView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABFlareScrollView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABFlareScrollView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABFlareScrollView value ) {
 			return value.Handle;
 		}
@@ -6513,6 +6834,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABFZServiceClient;
+		public static implicit operator NSObject( ABFZServiceClient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABFZServiceClient value ) {
 			return value.Handle;
 		}
@@ -6876,6 +7200,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABGroup;
+		public static implicit operator ABRecord( ABGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABGroup value ) {
 			return value.Handle;
 		}
@@ -7301,6 +7631,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABGroupCommand;
+		public static implicit operator ABCommand( ABGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABGroupCommand value ) {
 			return value.Handle;
 		}
@@ -7364,6 +7700,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABGroupContents;
+		public static implicit operator ABRecord( ABGroupContents value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABGroupContents value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABGroupContents value ) {
 			return value.Handle;
 		}
@@ -7471,6 +7813,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABGroupsController;
+		public static implicit operator ABTableController( ABGroupsController value ) {
+			return new ABTableController( value.Handle );
+		}
+		public static implicit operator NSResponder( ABGroupsController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABGroupsController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABGroupsController value ) {
 			return value.Handle;
 		}
@@ -8036,6 +8387,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABImageCell;
+		public static implicit operator NSImageCell( ABImageCell value ) {
+			return new NSImageCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABImageCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABImageCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABImageCell value ) {
 			return value.Handle;
 		}
@@ -8068,6 +8428,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABImportCommand;
+		public static implicit operator ABCommand( ABImportCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABImportCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABImportCommand value ) {
 			return value.Handle;
 		}
@@ -8133,6 +8499,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABImportPanelController;
+		public static implicit operator NSObject( ABImportPanelController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABImportPanelController value ) {
 			return value.Handle;
 		}
@@ -8316,6 +8685,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABIndexer;
+		public static implicit operator NSObject( ABIndexer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABIndexer value ) {
 			return value.Handle;
 		}
@@ -8470,6 +8842,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABInfo;
+		public static implicit operator ABRecord( ABInfo value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABInfo value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABInfo value ) {
 			return value.Handle;
 		}
@@ -8524,6 +8902,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABInputController;
+		public static implicit operator NSObject( ABInputController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABInputController value ) {
 			return value.Handle;
 		}
@@ -9464,6 +9845,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABInputModel;
+		public static implicit operator NSObject( ABInputModel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABInputModel value ) {
 			return value.Handle;
 		}
@@ -9551,6 +9935,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABInstantPopUpButtonCell;
+		public static implicit operator ABPopUpButtonCell( ABInstantPopUpButtonCell value ) {
+			return new ABPopUpButtonCell( value.Handle );
+		}
+		public static implicit operator NSPopUpButtonCell( ABInstantPopUpButtonCell value ) {
+			return new NSPopUpButtonCell( value.Handle );
+		}
+		public static implicit operator NSMenuItemCell( ABInstantPopUpButtonCell value ) {
+			return new NSMenuItemCell( value.Handle );
+		}
+		public static implicit operator NSButtonCell( ABInstantPopUpButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABInstantPopUpButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABInstantPopUpButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABInstantPopUpButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABInstantPopUpButtonCell value ) {
 			return value.Handle;
 		}
@@ -9596,6 +10001,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABKeyValueCell;
+		public static implicit operator NSTextFieldCell( ABKeyValueCell value ) {
+			return new NSTextFieldCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABKeyValueCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABKeyValueCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABKeyValueCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABKeyValueCell value ) {
 			return value.Handle;
 		}
@@ -9640,6 +10057,27 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLabelPopUpButtonCell;
+		public static implicit operator ABPopUpButtonCell( ABLabelPopUpButtonCell value ) {
+			return new ABPopUpButtonCell( value.Handle );
+		}
+		public static implicit operator NSPopUpButtonCell( ABLabelPopUpButtonCell value ) {
+			return new NSPopUpButtonCell( value.Handle );
+		}
+		public static implicit operator NSMenuItemCell( ABLabelPopUpButtonCell value ) {
+			return new NSMenuItemCell( value.Handle );
+		}
+		public static implicit operator NSButtonCell( ABLabelPopUpButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABLabelPopUpButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABLabelPopUpButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABLabelPopUpButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLabelPopUpButtonCell value ) {
 			return value.Handle;
 		}
@@ -9735,6 +10173,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLastImportGroup;
+		public static implicit operator ABGroup( ABLastImportGroup value ) {
+			return new ABGroup( value.Handle );
+		}
+		public static implicit operator ABRecord( ABLastImportGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABLastImportGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLastImportGroup value ) {
 			return value.Handle;
 		}
@@ -9829,6 +10276,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLayoutManager;
+		public static implicit operator NSLayoutManager( ABLayoutManager value ) {
+			return new NSLayoutManager( value.Handle );
+		}
+		public static implicit operator NSObject( ABLayoutManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLayoutManager value ) {
 			return value.Handle;
 		}
@@ -9861,6 +10314,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLDAP_ConfigController;
+		public static implicit operator NSObject( ABLDAP_ConfigController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLDAP_ConfigController value ) {
 			return value.Handle;
 		}
@@ -10053,6 +10509,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLDAP_Manager;
+		public static implicit operator NSObject( ABLDAP_Manager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLDAP_Manager value ) {
 			return value.Handle;
 		}
@@ -10516,6 +10975,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLDAP_Query;
+		public static implicit operator NSObject( ABLDAP_Query value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLDAP_Query value ) {
 			return value.Handle;
 		}
@@ -10630,6 +11092,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLDAP_Query_DS;
+		public static implicit operator NSObject( ABLDAP_Query_DS value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLDAP_Query_DS value ) {
 			return value.Handle;
 		}
@@ -10718,6 +11183,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLDAP_ResultElement;
+		public static implicit operator NSObject( ABLDAP_ResultElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLDAP_ResultElement value ) {
 			return value.Handle;
 		}
@@ -10859,6 +11327,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLDAP_Server;
+		public static implicit operator NSObject( ABLDAP_Server value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLDAP_Server value ) {
 			return value.Handle;
 		}
@@ -11205,6 +11676,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLocalImageDataCache;
+		public static implicit operator NSObject( ABLocalImageDataCache value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLocalImageDataCache value ) {
 			return value.Handle;
 		}
@@ -11250,6 +11724,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABLog;
+		public static implicit operator ABRecord( ABLog value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABLog value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABLog value ) {
 			return value.Handle;
 		}
@@ -11313,6 +11793,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMailRecent;
+		public static implicit operator ABRecord( ABMailRecent value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABMailRecent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMailRecent value ) {
 			return value.Handle;
 		}
@@ -11358,6 +11844,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMatrix;
+		public static implicit operator NSMatrix( ABMatrix value ) {
+			return new NSMatrix( value.Handle );
+		}
+		public static implicit operator NSControl( ABMatrix value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABMatrix value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABMatrix value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABMatrix value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMatrix value ) {
 			return value.Handle;
 		}
@@ -11390,6 +11891,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMeCommand;
+		public static implicit operator ABCommand( ABMeCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABMeCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMeCommand value ) {
 			return value.Handle;
 		}
@@ -11435,6 +11942,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMembersController;
+		public static implicit operator ABPeopleController( ABMembersController value ) {
+			return new ABPeopleController( value.Handle );
+		}
+		public static implicit operator ABTableController( ABMembersController value ) {
+			return new ABTableController( value.Handle );
+		}
+		public static implicit operator NSResponder( ABMembersController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABMembersController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMembersController value ) {
 			return value.Handle;
 		}
@@ -11643,6 +12162,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMergePeopleCommand;
+		public static implicit operator ABCommand( ABMergePeopleCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABMergePeopleCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMergePeopleCommand value ) {
 			return value.Handle;
 		}
@@ -11688,6 +12213,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMerger;
+		public static implicit operator NSObject( ABMerger value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMerger value ) {
 			return value.Handle;
 		}
@@ -11873,6 +12401,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMessage;
+		public static implicit operator NSObject( ABMessage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMessage value ) {
 			return value.Handle;
 		}
@@ -11926,6 +12457,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMessageView;
+		public static implicit operator NSView( ABMessageView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABMessageView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABMessageView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMessageView value ) {
 			return value.Handle;
 		}
@@ -11979,6 +12519,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMetaDataController;
+		public static implicit operator NSObject( ABMetaDataController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMetaDataController value ) {
 			return value.Handle;
 		}
@@ -12283,6 +12826,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABModel;
+		public static implicit operator NSObject( ABModel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABModel value ) {
 			return value.Handle;
 		}
@@ -13073,6 +13619,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMultiValue;
+		public static implicit operator NSObject( ABMultiValue value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMultiValue value ) {
 			return value.Handle;
 		}
@@ -13183,6 +13732,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMutableMultiValue;
+		public static implicit operator ABMultiValue( ABMutableMultiValue value ) {
+			return new ABMultiValue( value.Handle );
+		}
+		public static implicit operator NSObject( ABMutableMultiValue value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMutableMultiValue value ) {
 			return value.Handle;
 		}
@@ -13281,6 +13836,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABMutablePackedImage;
+		public static implicit operator ABPackedImage( ABMutablePackedImage value ) {
+			return new ABPackedImage( value.Handle );
+		}
+		public static implicit operator NSImage( ABMutablePackedImage value ) {
+			return new NSImage( value.Handle );
+		}
+		public static implicit operator NSObject( ABMutablePackedImage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABMutablePackedImage value ) {
 			return value.Handle;
 		}
@@ -13333,6 +13897,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABNetworkController;
+		public static implicit operator NSObject( ABNetworkController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABNetworkController value ) {
 			return value.Handle;
 		}
@@ -13405,6 +13972,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABNewGroupCommand;
+		public static implicit operator ABCommand( ABNewGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABNewGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABNewGroupCommand value ) {
 			return value.Handle;
 		}
@@ -13459,6 +14032,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABNewPersonCommand;
+		public static implicit operator ABCommand( ABNewPersonCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABNewPersonCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABNewPersonCommand value ) {
 			return value.Handle;
 		}
@@ -13504,6 +14083,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABNewSmartGroupCommand;
+		public static implicit operator ABCommand( ABNewSmartGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABNewSmartGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABNewSmartGroupCommand value ) {
 			return value.Handle;
 		}
@@ -13558,6 +14143,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABOnMyMacGroup;
+		public static implicit operator ABGroup( ABOnMyMacGroup value ) {
+			return new ABGroup( value.Handle );
+		}
+		public static implicit operator ABRecord( ABOnMyMacGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABOnMyMacGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABOnMyMacGroup value ) {
 			return value.Handle;
 		}
@@ -13620,6 +14214,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABOutlineView;
+		public static implicit operator NSOutlineView( ABOutlineView value ) {
+			return new NSOutlineView( value.Handle );
+		}
+		public static implicit operator NSTableView( ABOutlineView value ) {
+			return new NSTableView( value.Handle );
+		}
+		public static implicit operator NSControl( ABOutlineView value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABOutlineView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABOutlineView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABOutlineView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABOutlineView value ) {
 			return value.Handle;
 		}
@@ -13715,6 +14327,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPackedImage;
+		public static implicit operator NSImage( ABPackedImage value ) {
+			return new NSImage( value.Handle );
+		}
+		public static implicit operator NSObject( ABPackedImage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPackedImage value ) {
 			return value.Handle;
 		}
@@ -13796,6 +14414,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPasteGroupsCommand;
+		public static implicit operator ABCommand( ABPasteGroupsCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABPasteGroupsCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPasteGroupsCommand value ) {
 			return value.Handle;
 		}
@@ -13841,6 +14465,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPastePeopleCommand;
+		public static implicit operator ABCommand( ABPastePeopleCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABPastePeopleCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPastePeopleCommand value ) {
 			return value.Handle;
 		}
@@ -13886,6 +14516,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPeopleController;
+		public static implicit operator ABTableController( ABPeopleController value ) {
+			return new ABTableController( value.Handle );
+		}
+		public static implicit operator NSResponder( ABPeopleController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABPeopleController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPeopleController value ) {
 			return value.Handle;
 		}
@@ -14205,6 +14844,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPeoplePickerController;
+		public static implicit operator NSObject( ABPeoplePickerController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPeoplePickerController value ) {
 			return value.Handle;
 		}
@@ -14417,6 +15059,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPeoplePickerNibLoader;
+		public static implicit operator NSObject( ABPeoplePickerNibLoader value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPeoplePickerNibLoader value ) {
 			return value.Handle;
 		}
@@ -14515,6 +15160,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPeoplePickerView;
+		public static implicit operator NSView( ABPeoplePickerView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABPeoplePickerView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABPeoplePickerView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPeoplePickerView value ) {
 			return value.Handle;
 		}
@@ -15054,6 +15708,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPeopleTableTextFieldCell;
+		public static implicit operator NSTextFieldCell( ABPeopleTableTextFieldCell value ) {
+			return new NSTextFieldCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABPeopleTableTextFieldCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABPeopleTableTextFieldCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABPeopleTableTextFieldCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPeopleTableTextFieldCell value ) {
 			return value.Handle;
 		}
@@ -15114,6 +15780,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPerson;
+		public static implicit operator ABRecord( ABPerson value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABPerson value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPerson value ) {
 			return value.Handle;
 		}
@@ -15723,6 +16395,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPersonImageView;
+		public static implicit operator NSImageView( ABPersonImageView value ) {
+			return new NSImageView( value.Handle );
+		}
+		public static implicit operator NSControl( ABPersonImageView value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABPersonImageView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABPersonImageView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABPersonImageView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPersonImageView value ) {
 			return value.Handle;
 		}
@@ -15900,6 +16587,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPhoneFormatter;
+		public static implicit operator NSFormatter( ABPhoneFormatter value ) {
+			return new NSFormatter( value.Handle );
+		}
+		public static implicit operator NSObject( ABPhoneFormatter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPhoneFormatter value ) {
 			return value.Handle;
 		}
@@ -16071,6 +16764,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPopUpButtonCell;
+		public static implicit operator NSPopUpButtonCell( ABPopUpButtonCell value ) {
+			return new NSPopUpButtonCell( value.Handle );
+		}
+		public static implicit operator NSMenuItemCell( ABPopUpButtonCell value ) {
+			return new NSMenuItemCell( value.Handle );
+		}
+		public static implicit operator NSButtonCell( ABPopUpButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABPopUpButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABPopUpButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABPopUpButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPopUpButtonCell value ) {
 			return value.Handle;
 		}
@@ -16167,6 +16878,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABProgressWedgeCell;
+		public static implicit operator NSCell( ABProgressWedgeCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABProgressWedgeCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABProgressWedgeCell value ) {
 			return value.Handle;
 		}
@@ -16330,6 +17047,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPropertyHeaderCell;
+		public static implicit operator NSTableHeaderCell( ABPropertyHeaderCell value ) {
+			return new NSTableHeaderCell( value.Handle );
+		}
+		public static implicit operator NSTextFieldCell( ABPropertyHeaderCell value ) {
+			return new NSTextFieldCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABPropertyHeaderCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABPropertyHeaderCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABPropertyHeaderCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPropertyHeaderCell value ) {
 			return value.Handle;
 		}
@@ -16424,6 +17156,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPropertyHeaderView;
+		public static implicit operator NSTableHeaderView( ABPropertyHeaderView value ) {
+			return new NSTableHeaderView( value.Handle );
+		}
+		public static implicit operator NSView( ABPropertyHeaderView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABPropertyHeaderView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABPropertyHeaderView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPropertyHeaderView value ) {
 			return value.Handle;
 		}
@@ -16456,6 +17200,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABPropertyTableColumn;
+		public static implicit operator NSTableColumn( ABPropertyTableColumn value ) {
+			return new NSTableColumn( value.Handle );
+		}
+		public static implicit operator NSObject( ABPropertyTableColumn value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABPropertyTableColumn value ) {
 			return value.Handle;
 		}
@@ -16488,6 +17238,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRadioButtonCell;
+		public static implicit operator NSButtonCell( ABRadioButtonCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABRadioButtonCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABRadioButtonCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABRadioButtonCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRadioButtonCell value ) {
 			return value.Handle;
 		}
@@ -16609,6 +17371,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRecord;
+		public static implicit operator NSObject( ABRecord value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRecord value ) {
 			return value.Handle;
 		}
@@ -17222,6 +17987,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRectObject;
+		public static implicit operator NSObject( ABRectObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRectObject value ) {
 			return value.Handle;
 		}
@@ -17275,6 +18043,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRemoteImageLoader;
+		public static implicit operator NSObject( ABRemoteImageLoader value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRemoteImageLoader value ) {
 			return value.Handle;
 		}
@@ -17433,6 +18204,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRemoveFromGroupCommand;
+		public static implicit operator ABGroupCommand( ABRemoveFromGroupCommand value ) {
+			return new ABGroupCommand( value.Handle );
+		}
+		public static implicit operator ABCommand( ABRemoveFromGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABRemoveFromGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRemoveFromGroupCommand value ) {
 			return value.Handle;
 		}
@@ -17465,6 +18245,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRenameGroupCommand;
+		public static implicit operator ABCommand( ABRenameGroupCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABRenameGroupCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRenameGroupCommand value ) {
 			return value.Handle;
 		}
@@ -17510,6 +18296,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABRollOver;
+		public static implicit operator NSObject( ABRollOver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABRollOver value ) {
 			return value.Handle;
 		}
@@ -17660,6 +18449,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABScrollView;
+		public static implicit operator NSScrollView( ABScrollView value ) {
+			return new NSScrollView( value.Handle );
+		}
+		public static implicit operator NSView( ABScrollView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABScrollView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABScrollView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABScrollView value ) {
 			return value.Handle;
 		}
@@ -17722,6 +18523,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchController;
+		public static implicit operator NSObject( ABSearchController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchController value ) {
 			return value.Handle;
 		}
@@ -17976,6 +18780,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElement;
+		public static implicit operator NSObject( ABSearchElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElement value ) {
 			return value.Handle;
 		}
@@ -18116,6 +18923,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementConjunction;
+		public static implicit operator ABSearchElement( ABSearchElementConjunction value ) {
+			return new ABSearchElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABSearchElementConjunction value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementConjunction value ) {
 			return value.Handle;
 		}
@@ -18213,6 +19026,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementHelper;
+		public static implicit operator NSObject( ABSearchElementHelper value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementHelper value ) {
 			return value.Handle;
 		}
@@ -18327,6 +19143,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementMatch;
+		public static implicit operator ABSearchElement( ABSearchElementMatch value ) {
+			return new ABSearchElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABSearchElementMatch value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementMatch value ) {
 			return value.Handle;
 		}
@@ -18420,6 +19242,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementOrderManager;
+		public static implicit operator NSObject( ABSearchElementOrderManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementOrderManager value ) {
 			return value.Handle;
 		}
@@ -18608,6 +19433,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementSetView;
+		public static implicit operator NSView( ABSearchElementSetView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABSearchElementSetView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABSearchElementSetView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementSetView value ) {
 			return value.Handle;
 		}
@@ -18640,6 +19474,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementUIController;
+		public static implicit operator NSObject( ABSearchElementUIController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementUIController value ) {
 			return value.Handle;
 		}
@@ -18900,6 +19737,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchElementView;
+		public static implicit operator NSView( ABSearchElementView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABSearchElementView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABSearchElementView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchElementView value ) {
 			return value.Handle;
 		}
@@ -19158,6 +20004,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchField;
+		public static implicit operator NSSearchField( ABSearchField value ) {
+			return new NSSearchField( value.Handle );
+		}
+		public static implicit operator NSTextField( ABSearchField value ) {
+			return new NSTextField( value.Handle );
+		}
+		public static implicit operator NSControl( ABSearchField value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABSearchField value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABSearchField value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABSearchField value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchField value ) {
 			return value.Handle;
 		}
@@ -19226,6 +20090,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSearchFieldCell;
+		public static implicit operator NSSearchFieldCell( ABSearchFieldCell value ) {
+			return new NSSearchFieldCell( value.Handle );
+		}
+		public static implicit operator NSTextFieldCell( ABSearchFieldCell value ) {
+			return new NSTextFieldCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABSearchFieldCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABSearchFieldCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABSearchFieldCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSearchFieldCell value ) {
 			return value.Handle;
 		}
@@ -19258,6 +20137,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSeparatedButtons;
+		public static implicit operator NSButton( ABSeparatedButtons value ) {
+			return new NSButton( value.Handle );
+		}
+		public static implicit operator NSControl( ABSeparatedButtons value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABSeparatedButtons value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABSeparatedButtons value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABSeparatedButtons value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSeparatedButtons value ) {
 			return value.Handle;
 		}
@@ -19354,6 +20248,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSeparatedButtonsAccessibilityElement;
+		public static implicit operator ABAccessibilityMockUIElement( ABSeparatedButtonsAccessibilityElement value ) {
+			return new ABAccessibilityMockUIElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABSeparatedButtonsAccessibilityElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSeparatedButtonsAccessibilityElement value ) {
 			return value.Handle;
 		}
@@ -19426,6 +20326,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSeparatedButtonsCell;
+		public static implicit operator NSButtonCell( ABSeparatedButtonsCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABSeparatedButtonsCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABSeparatedButtonsCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABSeparatedButtonsCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSeparatedButtonsCell value ) {
 			return value.Handle;
 		}
@@ -19548,6 +20460,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSeparatorLineCell;
+		public static implicit operator NSTextAttachmentCell( ABSeparatorLineCell value ) {
+			return new NSTextAttachmentCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABSeparatorLineCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABSeparatorLineCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSeparatorLineCell value ) {
 			return value.Handle;
 		}
@@ -19580,6 +20501,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSetImageCommand;
+		public static implicit operator ABCommand( ABSetImageCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABSetImageCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSetImageCommand value ) {
 			return value.Handle;
 		}
@@ -19625,6 +20552,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABShowAsCommand;
+		public static implicit operator ABCommand( ABShowAsCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABShowAsCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABShowAsCommand value ) {
 			return value.Handle;
 		}
@@ -19670,6 +20603,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSimpleImportController;
+		public static implicit operator ABImportPanelController( ABSimpleImportController value ) {
+			return new ABImportPanelController( value.Handle );
+		}
+		public static implicit operator NSObject( ABSimpleImportController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSimpleImportController value ) {
 			return value.Handle;
 		}
@@ -19723,6 +20662,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSingleColorView;
+		public static implicit operator NSView( ABSingleColorView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABSingleColorView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABSingleColorView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSingleColorView value ) {
 			return value.Handle;
 		}
@@ -19755,6 +20703,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSmartGroup;
+		public static implicit operator ABGroup( ABSmartGroup value ) {
+			return new ABGroup( value.Handle );
+		}
+		public static implicit operator ABRecord( ABSmartGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABSmartGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSmartGroup value ) {
 			return value.Handle;
 		}
@@ -19911,6 +20868,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSpaceFormatter;
+		public static implicit operator NSFormatter( ABSpaceFormatter value ) {
+			return new NSFormatter( value.Handle );
+		}
+		public static implicit operator NSObject( ABSpaceFormatter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSpaceFormatter value ) {
 			return value.Handle;
 		}
@@ -19943,6 +20906,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSplitView;
+		public static implicit operator NSSplitView( ABSplitView value ) {
+			return new NSSplitView( value.Handle );
+		}
+		public static implicit operator NSView( ABSplitView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABSplitView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABSplitView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSplitView value ) {
 			return value.Handle;
 		}
@@ -19995,6 +20970,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSubrowGroupElement;
+		public static implicit operator ABAccessibilityMockUIElement( ABSubrowGroupElement value ) {
+			return new ABAccessibilityMockUIElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABSubrowGroupElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSubrowGroupElement value ) {
 			return value.Handle;
 		}
@@ -20084,6 +21065,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSubrowObject;
+		public static implicit operator NSObject( ABSubrowObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSubrowObject value ) {
 			return value.Handle;
 		}
@@ -20304,6 +21288,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSubscribedGroup;
+		public static implicit operator ABGroup( ABSubscribedGroup value ) {
+			return new ABGroup( value.Handle );
+		}
+		public static implicit operator ABRecord( ABSubscribedGroup value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABSubscribedGroup value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSubscribedGroup value ) {
 			return value.Handle;
 		}
@@ -20357,6 +21350,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSubscribedPerson;
+		public static implicit operator ABPerson( ABSubscribedPerson value ) {
+			return new ABPerson( value.Handle );
+		}
+		public static implicit operator ABRecord( ABSubscribedPerson value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABSubscribedPerson value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSubscribedPerson value ) {
 			return value.Handle;
 		}
@@ -20402,6 +21404,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSubscription;
+		public static implicit operator ABRecord( ABSubscription value ) {
+			return new ABRecord( value.Handle );
+		}
+		public static implicit operator NSObject( ABSubscription value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSubscription value ) {
 			return value.Handle;
 		}
@@ -20501,6 +21509,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSwapLastFirstCommand;
+		public static implicit operator ABCommand( ABSwapLastFirstCommand value ) {
+			return new ABCommand( value.Handle );
+		}
+		public static implicit operator NSObject( ABSwapLastFirstCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSwapLastFirstCommand value ) {
 			return value.Handle;
 		}
@@ -20546,6 +21560,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABSyncManager;
+		public static implicit operator NSObject( ABSyncManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABSyncManager value ) {
 			return value.Handle;
 		}
@@ -20651,6 +21668,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTableController;
+		public static implicit operator NSResponder( ABTableController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABTableController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTableController value ) {
 			return value.Handle;
 		}
@@ -21122,6 +22145,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTableRow;
+		public static implicit operator NSTableRow( ABTableRow value ) {
+			return new NSTableRow( value.Handle );
+		}
+		public static implicit operator NSObject( ABTableRow value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTableRow value ) {
 			return value.Handle;
 		}
@@ -21194,6 +22223,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTableView;
+		public static implicit operator NSTableView( ABTableView value ) {
+			return new NSTableView( value.Handle );
+		}
+		public static implicit operator NSControl( ABTableView value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( ABTableView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABTableView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABTableView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTableView value ) {
 			return value.Handle;
 		}
@@ -21431,6 +22475,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTextContainer;
+		public static implicit operator NSTextContainer( ABTextContainer value ) {
+			return new NSTextContainer( value.Handle );
+		}
+		public static implicit operator NSObject( ABTextContainer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTextContainer value ) {
 			return value.Handle;
 		}
@@ -21476,6 +22526,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTextFieldCell;
+		public static implicit operator NSTextFieldCell( ABTextFieldCell value ) {
+			return new NSTextFieldCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( ABTextFieldCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( ABTextFieldCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( ABTextFieldCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTextFieldCell value ) {
 			return value.Handle;
 		}
@@ -21553,6 +22615,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTextLabelAccessibilityElement;
+		public static implicit operator ABAccessibilityMockUIElement( ABTextLabelAccessibilityElement value ) {
+			return new ABAccessibilityMockUIElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABTextLabelAccessibilityElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTextLabelAccessibilityElement value ) {
 			return value.Handle;
 		}
@@ -21634,6 +22702,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTextStorage;
+		public static implicit operator NSTextStorage( ABTextStorage value ) {
+			return new NSTextStorage( value.Handle );
+		}
+		public static implicit operator NSMutableAttributedString( ABTextStorage value ) {
+			return new NSMutableAttributedString( value.Handle );
+		}
+		public static implicit operator NSAttributedString( ABTextStorage value ) {
+			return new NSAttributedString( value.Handle );
+		}
+		public static implicit operator NSObject( ABTextStorage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTextStorage value ) {
 			return value.Handle;
 		}
@@ -21731,6 +22811,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTextValueAccessibilityElement;
+		public static implicit operator ABTextLabelAccessibilityElement( ABTextValueAccessibilityElement value ) {
+			return new ABTextLabelAccessibilityElement( value.Handle );
+		}
+		public static implicit operator ABAccessibilityMockUIElement( ABTextValueAccessibilityElement value ) {
+			return new ABAccessibilityMockUIElement( value.Handle );
+		}
+		public static implicit operator NSObject( ABTextValueAccessibilityElement value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTextValueAccessibilityElement value ) {
 			return value.Handle;
 		}
@@ -21763,6 +22852,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTextView;
+		public static implicit operator NSTextView( ABTextView value ) {
+			return new NSTextView( value.Handle );
+		}
+		public static implicit operator NSText( ABTextView value ) {
+			return new NSText( value.Handle );
+		}
+		public static implicit operator NSView( ABTextView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( ABTextView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABTextView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTextView value ) {
 			return value.Handle;
 		}
@@ -22204,6 +23308,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABTypesetter;
+		public static implicit operator NSATSTypesetter( ABTypesetter value ) {
+			return new NSATSTypesetter( value.Handle );
+		}
+		public static implicit operator NSTypesetter( ABTypesetter value ) {
+			return new NSTypesetter( value.Handle );
+		}
+		public static implicit operator NSObject( ABTypesetter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABTypesetter value ) {
 			return value.Handle;
 		}
@@ -22236,6 +23349,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABUIController;
+		public static implicit operator NSObject( ABUIController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABUIController value ) {
 			return value.Handle;
 		}
@@ -23387,6 +24503,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABUndoer;
+		public static implicit operator NSObject( ABUndoer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABUndoer value ) {
 			return value.Handle;
 		}
@@ -23432,6 +24551,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABUndoManager;
+		public static implicit operator NSUndoManager( ABUndoManager value ) {
+			return new NSUndoManager( value.Handle );
+		}
+		public static implicit operator NSObject( ABUndoManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABUndoManager value ) {
 			return value.Handle;
 		}
@@ -23477,6 +24602,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABvCardController;
+		public static implicit operator ABImportPanelController( ABvCardController value ) {
+			return new ABImportPanelController( value.Handle );
+		}
+		public static implicit operator NSObject( ABvCardController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABvCardController value ) {
 			return value.Handle;
 		}
@@ -23659,6 +24790,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABVCardDictionaryValueSetter;
+		public static implicit operator ABVCardValueSetter( ABVCardDictionaryValueSetter value ) {
+			return new ABVCardValueSetter( value.Handle );
+		}
+		public static implicit operator NSObject( ABVCardDictionaryValueSetter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABVCardDictionaryValueSetter value ) {
 			return value.Handle;
 		}
@@ -23704,6 +24841,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABVCardLexer;
+		public static implicit operator NSObject( ABVCardLexer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABVCardLexer value ) {
 			return value.Handle;
 		}
@@ -24018,6 +25158,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABVCardParameter;
+		public static implicit operator NSObject( ABVCardParameter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABVCardParameter value ) {
 			return value.Handle;
 		}
@@ -24148,6 +25291,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABVCardParser;
+		public static implicit operator NSObject( ABVCardParser value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABVCardParser value ) {
 			return value.Handle;
 		}
@@ -24492,6 +25638,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABVCardPersonValueSetter;
+		public static implicit operator ABVCardValueSetter( ABVCardPersonValueSetter value ) {
+			return new ABVCardValueSetter( value.Handle );
+		}
+		public static implicit operator NSObject( ABVCardPersonValueSetter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABVCardPersonValueSetter value ) {
 			return value.Handle;
 		}
@@ -24537,6 +25689,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABVCardValueSetter;
+		public static implicit operator NSObject( ABVCardValueSetter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABVCardValueSetter value ) {
 			return value.Handle;
 		}
@@ -24617,6 +25772,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABWebDAVLock;
+		public static implicit operator NSObject( ABWebDAVLock value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABWebDAVLock value ) {
 			return value.Handle;
 		}
@@ -24742,6 +25900,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABWindow;
+		public static implicit operator NSWindow( ABWindow value ) {
+			return new NSWindow( value.Handle );
+		}
+		public static implicit operator NSResponder( ABWindow value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( ABWindow value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABWindow value ) {
 			return value.Handle;
 		}
@@ -24794,6 +25961,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.ABXMLParseNode;
+		public static implicit operator NSObject( ABXMLParseNode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ABXMLParseNode value ) {
 			return value.Handle;
 		}
@@ -24936,6 +26106,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.FZDaemonListenerStub;
+		public static implicit operator NSObject( FZDaemonListenerStub value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( FZDaemonListenerStub value ) {
 			return value.Handle;
 		}
@@ -24988,6 +26161,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSImagePickerController;
+		public static implicit operator NSWindowController( NSImagePickerController value ) {
+			return new NSWindowController( value.Handle );
+		}
+		public static implicit operator NSResponder( NSImagePickerController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( NSImagePickerController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSImagePickerController value ) {
 			return value.Handle;
 		}
@@ -25126,6 +26308,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSIPIconPopUp;
+		public static implicit operator NSObject( NSIPIconPopUp value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSIPIconPopUp value ) {
 			return value.Handle;
 		}
@@ -25339,6 +26524,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSIPPopUpItemMatrix;
+		public static implicit operator NSMatrix( NSIPPopUpItemMatrix value ) {
+			return new NSMatrix( value.Handle );
+		}
+		public static implicit operator NSControl( NSIPPopUpItemMatrix value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( NSIPPopUpItemMatrix value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( NSIPPopUpItemMatrix value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( NSIPPopUpItemMatrix value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSIPPopUpItemMatrix value ) {
 			return value.Handle;
 		}
@@ -25371,6 +26571,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSIPPopUpMatrixButton;
+		public static implicit operator NSButton( NSIPPopUpMatrixButton value ) {
+			return new NSButton( value.Handle );
+		}
+		public static implicit operator NSControl( NSIPPopUpMatrixButton value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( NSIPPopUpMatrixButton value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( NSIPPopUpMatrixButton value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( NSIPPopUpMatrixButton value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSIPPopUpMatrixButton value ) {
 			return value.Handle;
 		}
@@ -25516,6 +26731,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSIPPopUpMatrixItemCell;
+		public static implicit operator NSMenuItemCell( NSIPPopUpMatrixItemCell value ) {
+			return new NSMenuItemCell( value.Handle );
+		}
+		public static implicit operator NSButtonCell( NSIPPopUpMatrixItemCell value ) {
+			return new NSButtonCell( value.Handle );
+		}
+		public static implicit operator NSActionCell( NSIPPopUpMatrixItemCell value ) {
+			return new NSActionCell( value.Handle );
+		}
+		public static implicit operator NSCell( NSIPPopUpMatrixItemCell value ) {
+			return new NSCell( value.Handle );
+		}
+		public static implicit operator NSObject( NSIPPopUpMatrixItemCell value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSIPPopUpMatrixItemCell value ) {
 			return value.Handle;
 		}
@@ -25548,6 +26778,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSIPRecentPicture;
+		public static implicit operator NSObject( NSIPRecentPicture value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSIPRecentPicture value ) {
 			return value.Handle;
 		}
@@ -25716,6 +26949,24 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = AddressBookCachedClasses.NSIPRecentPicturesPopUpButton;
+		public static implicit operator NSPopUpButton( NSIPRecentPicturesPopUpButton value ) {
+			return new NSPopUpButton( value.Handle );
+		}
+		public static implicit operator NSButton( NSIPRecentPicturesPopUpButton value ) {
+			return new NSButton( value.Handle );
+		}
+		public static implicit operator NSControl( NSIPRecentPicturesPopUpButton value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( NSIPRecentPicturesPopUpButton value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( NSIPRecentPicturesPopUpButton value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( NSIPRecentPicturesPopUpButton value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSIPRecentPicturesPopUpButton value ) {
 			return value.Handle;
 		}

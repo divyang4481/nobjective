@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses._WebCoreHistoryProvider;
+		public static implicit operator NSObject( _WebCoreHistoryProvider value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( _WebCoreHistoryProvider value ) {
 			return value.Handle;
 		}
@@ -67,6 +70,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses._WebSafeForwarder;
+		public static implicit operator NSObject( _WebSafeForwarder value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( _WebSafeForwarder value ) {
 			return value.Handle;
 		}
@@ -112,6 +118,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.CarbonWindowAdapter;
+		public static implicit operator NSWindow( CarbonWindowAdapter value ) {
+			return new NSWindow( value.Handle );
+		}
+		public static implicit operator NSResponder( CarbonWindowAdapter value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( CarbonWindowAdapter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CarbonWindowAdapter value ) {
 			return value.Handle;
 		}
@@ -190,6 +205,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.CarbonWindowContentView;
+		public static implicit operator NSView( CarbonWindowContentView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( CarbonWindowContentView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( CarbonWindowContentView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CarbonWindowContentView value ) {
 			return value.Handle;
 		}
@@ -222,6 +246,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.CarbonWindowFrame;
+		public static implicit operator NSView( CarbonWindowFrame value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( CarbonWindowFrame value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( CarbonWindowFrame value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( CarbonWindowFrame value ) {
 			return value.Handle;
 		}
@@ -302,6 +335,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.HIViewAdapter;
+		public static implicit operator NSObject( HIViewAdapter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( HIViewAdapter value ) {
 			return value.Handle;
 		}
@@ -346,6 +382,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.MenuItemProxy;
+		public static implicit operator NSObject( MenuItemProxy value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( MenuItemProxy value ) {
 			return value.Handle;
 		}
@@ -409,6 +448,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.NonBlockingPanel;
+		public static implicit operator NSPanel( NonBlockingPanel value ) {
+			return new NSPanel( value.Handle );
+		}
+		public static implicit operator NSWindow( NonBlockingPanel value ) {
+			return new NSWindow( value.Handle );
+		}
+		public static implicit operator NSResponder( NonBlockingPanel value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( NonBlockingPanel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NonBlockingPanel value ) {
 			return value.Handle;
 		}
@@ -441,6 +492,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.PDFPrefUpdatingProxy;
+		public static implicit operator NSProxy( PDFPrefUpdatingProxy value ) {
+			return new NSProxy( value.Handle );
+		}
 		public static implicit operator IntPtr( PDFPrefUpdatingProxy value ) {
 			return value.Handle;
 		}
@@ -486,6 +540,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.ThreadEnabler;
+		public static implicit operator NSObject( ThreadEnabler value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( ThreadEnabler value ) {
 			return value.Handle;
 		}
@@ -538,6 +595,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebArchive;
+		public static implicit operator NSObject( WebArchive value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebArchive value ) {
 			return value.Handle;
 		}
@@ -645,6 +705,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebArchivePrivate;
+		public static implicit operator NSObject( WebArchivePrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebArchivePrivate value ) {
 			return value.Handle;
 		}
@@ -677,6 +740,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebArchiver;
+		public static implicit operator NSObject( WebArchiver value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebArchiver value ) {
 			return value.Handle;
 		}
@@ -758,6 +824,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebAuthenticationPanel;
+		public static implicit operator NSObject( WebAuthenticationPanel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebAuthenticationPanel value ) {
 			return value.Handle;
 		}
@@ -860,6 +929,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebBackForwardList;
+		public static implicit operator NSObject( WebBackForwardList value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebBackForwardList value ) {
 			return value.Handle;
 		}
@@ -1059,6 +1131,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebBaseNetscapePluginStream;
+		public static implicit operator NSObject( WebBaseNetscapePluginStream value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebBaseNetscapePluginStream value ) {
 			return value.Handle;
 		}
@@ -1210,6 +1285,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebBaseNetscapePluginView;
+		public static implicit operator NSView( WebBaseNetscapePluginView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebBaseNetscapePluginView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebBaseNetscapePluginView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebBaseNetscapePluginView value ) {
 			return value.Handle;
 		}
@@ -1888,6 +1972,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebBasePluginPackage;
+		public static implicit operator NSObject( WebBasePluginPackage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebBasePluginPackage value ) {
 			return value.Handle;
 		}
@@ -2186,6 +2273,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebCache;
+		public static implicit operator NSObject( WebCache value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCache value ) {
 			return value.Handle;
 		}
@@ -2256,6 +2346,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebClipView;
+		public static implicit operator NSClipView( WebClipView value ) {
+			return new NSClipView( value.Handle );
+		}
+		public static implicit operator NSView( WebClipView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebClipView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebClipView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebClipView value ) {
 			return value.Handle;
 		}
@@ -2309,6 +2411,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebCoreScrollView;
+		public static implicit operator NSScrollView( WebCoreScrollView value ) {
+			return new NSScrollView( value.Handle );
+		}
+		public static implicit operator NSView( WebCoreScrollView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebCoreScrollView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebCoreScrollView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreScrollView value ) {
 			return value.Handle;
 		}
@@ -2341,6 +2455,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebCoreStatistics;
+		public static implicit operator NSObject( WebCoreStatistics value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebCoreStatistics value ) {
 			return value.Handle;
 		}
@@ -2577,6 +2694,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDatabaseManager;
+		public static implicit operator NSObject( WebDatabaseManager value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDatabaseManager value ) {
 			return value.Handle;
 		}
@@ -2673,6 +2793,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDataSource;
+		public static implicit operator NSObject( WebDataSource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDataSource value ) {
 			return value.Handle;
 		}
@@ -2852,6 +2975,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDataSourcePrivate;
+		public static implicit operator NSObject( WebDataSourcePrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDataSourcePrivate value ) {
 			return value.Handle;
 		}
@@ -2896,6 +3022,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDefaultEditingDelegate;
+		public static implicit operator NSObject( WebDefaultEditingDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDefaultEditingDelegate value ) {
 			return value.Handle;
 		}
@@ -3105,6 +3234,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDefaultPolicyDelegate;
+		public static implicit operator NSObject( WebDefaultPolicyDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDefaultPolicyDelegate value ) {
 			return value.Handle;
 		}
@@ -3191,6 +3323,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDefaultScriptDebugDelegate;
+		public static implicit operator NSObject( WebDefaultScriptDebugDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDefaultScriptDebugDelegate value ) {
 			return value.Handle;
 		}
@@ -3296,6 +3431,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDefaultUIDelegate;
+		public static implicit operator NSObject( WebDefaultUIDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDefaultUIDelegate value ) {
 			return value.Handle;
 		}
@@ -3593,6 +3731,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDownload;
+		public static implicit operator NSURLDownload( WebDownload value ) {
+			return new NSURLDownload( value.Handle );
+		}
+		public static implicit operator NSObject( WebDownload value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDownload value ) {
 			return value.Handle;
 		}
@@ -3637,6 +3781,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDownloadInternal;
+		public static implicit operator NSObject( WebDownloadInternal value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDownloadInternal value ) {
 			return value.Handle;
 		}
@@ -3788,6 +3935,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebDynamicScrollBarsView;
+		public static implicit operator NSScrollView( WebDynamicScrollBarsView value ) {
+			return new NSScrollView( value.Handle );
+		}
+		public static implicit operator NSView( WebDynamicScrollBarsView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebDynamicScrollBarsView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebDynamicScrollBarsView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebDynamicScrollBarsView value ) {
 			return value.Handle;
 		}
@@ -4007,6 +4166,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebEditCommand;
+		public static implicit operator NSObject( WebEditCommand value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebEditCommand value ) {
 			return value.Handle;
 		}
@@ -4051,6 +4213,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebEditorUndoTarget;
+		public static implicit operator NSObject( WebEditorUndoTarget value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebEditorUndoTarget value ) {
 			return value.Handle;
 		}
@@ -4103,6 +4268,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebElementDictionary;
+		public static implicit operator NSDictionary( WebElementDictionary value ) {
+			return new NSDictionary( value.Handle );
+		}
+		public static implicit operator NSObject( WebElementDictionary value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebElementDictionary value ) {
 			return value.Handle;
 		}
@@ -4155,6 +4326,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFormDelegate;
+		public static implicit operator NSObject( WebFormDelegate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFormDelegate value ) {
 			return value.Handle;
 		}
@@ -4249,6 +4423,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFrame;
+		public static implicit operator NSObject( WebFrame value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFrame value ) {
 			return value.Handle;
 		}
@@ -4470,6 +4647,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFrameBridge;
+		public static implicit operator WebCoreFrameBridge( WebFrameBridge value ) {
+			return new WebCoreFrameBridge( value.Handle );
+		}
+		public static implicit operator NSObject( WebFrameBridge value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFrameBridge value ) {
 			return value.Handle;
 		}
@@ -4695,6 +4878,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFramePolicyListener;
+		public static implicit operator NSObject( WebFramePolicyListener value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFramePolicyListener value ) {
 			return value.Handle;
 		}
@@ -4787,6 +4973,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFramePrivate;
+		public static implicit operator NSObject( WebFramePrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFramePrivate value ) {
 			return value.Handle;
 		}
@@ -4831,6 +5020,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFrameView;
+		public static implicit operator NSView( WebFrameView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebFrameView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebFrameView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFrameView value ) {
 			return value.Handle;
 		}
@@ -4994,6 +5192,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebFrameViewPrivate;
+		public static implicit operator NSObject( WebFrameViewPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebFrameViewPrivate value ) {
 			return value.Handle;
 		}
@@ -5026,6 +5227,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHistory;
+		public static implicit operator NSObject( WebHistory value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHistory value ) {
 			return value.Handle;
 		}
@@ -5242,6 +5446,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHistoryItem;
+		public static implicit operator NSObject( WebHistoryItem value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHistoryItem value ) {
 			return value.Handle;
 		}
@@ -5528,6 +5735,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHistoryPrivate;
+		public static implicit operator NSObject( WebHistoryPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHistoryPrivate value ) {
 			return value.Handle;
 		}
@@ -5764,6 +5974,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHTMLRepresentation;
+		public static implicit operator NSObject( WebHTMLRepresentation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHTMLRepresentation value ) {
 			return value.Handle;
 		}
@@ -5994,6 +6207,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHTMLRepresentationPrivate;
+		public static implicit operator NSObject( WebHTMLRepresentationPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHTMLRepresentationPrivate value ) {
 			return value.Handle;
 		}
@@ -6026,6 +6242,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHTMLView;
+		public static implicit operator NSControl( WebHTMLView value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( WebHTMLView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebHTMLView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebHTMLView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHTMLView value ) {
 			return value.Handle;
 		}
@@ -7527,6 +7755,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebHTMLViewPrivate;
+		public static implicit operator NSObject( WebHTMLViewPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebHTMLViewPrivate value ) {
 			return value.Handle;
 		}
@@ -7579,6 +7810,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebIconDatabase;
+		public static implicit operator NSObject( WebIconDatabase value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebIconDatabase value ) {
 			return value.Handle;
 		}
@@ -7690,6 +7924,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebIconDatabasePrivate;
+		public static implicit operator NSObject( WebIconDatabasePrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebIconDatabasePrivate value ) {
 			return value.Handle;
 		}
@@ -7722,6 +7959,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebImageRendererFactory;
+		public static implicit operator NSObject( WebImageRendererFactory value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebImageRendererFactory value ) {
 			return value.Handle;
 		}
@@ -7775,6 +8015,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebInspector;
+		public static implicit operator NSObject( WebInspector value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebInspector value ) {
 			return value.Handle;
 		}
@@ -7919,6 +8162,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebInspectorWindowController;
+		public static implicit operator NSWindowController( WebInspectorWindowController value ) {
+			return new NSWindowController( value.Handle );
+		}
+		public static implicit operator NSResponder( WebInspectorWindowController value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebInspectorWindowController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebInspectorWindowController value ) {
 			return value.Handle;
 		}
@@ -8063,6 +8315,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebJavaScriptTextInputPanel;
+		public static implicit operator NSWindowController( WebJavaScriptTextInputPanel value ) {
+			return new NSWindowController( value.Handle );
+		}
+		public static implicit operator NSResponder( WebJavaScriptTextInputPanel value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebJavaScriptTextInputPanel value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebJavaScriptTextInputPanel value ) {
 			return value.Handle;
 		}
@@ -8133,6 +8394,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebKeyGenerator;
+		public static implicit operator WebCoreKeyGenerator( WebKeyGenerator value ) {
+			return new WebCoreKeyGenerator( value.Handle );
+		}
+		public static implicit operator NSObject( WebKeyGenerator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebKeyGenerator value ) {
 			return value.Handle;
 		}
@@ -8186,6 +8453,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebKitPluginContainerView;
+		public static implicit operator NSView( WebKitPluginContainerView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebKitPluginContainerView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebKitPluginContainerView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebKitPluginContainerView value ) {
 			return value.Handle;
 		}
@@ -8231,6 +8507,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebKitRenderTreeCopier;
+		public static implicit operator NSObject( WebKitRenderTreeCopier value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebKitRenderTreeCopier value ) {
 			return value.Handle;
 		}
@@ -8263,6 +8542,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebKitStatistics;
+		public static implicit operator NSObject( WebKitStatistics value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebKitStatistics value ) {
 			return value.Handle;
 		}
@@ -8353,6 +8635,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNetscapePluginDocumentView;
+		public static implicit operator WebBaseNetscapePluginView( WebNetscapePluginDocumentView value ) {
+			return new WebBaseNetscapePluginView( value.Handle );
+		}
+		public static implicit operator NSView( WebNetscapePluginDocumentView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebNetscapePluginDocumentView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebNetscapePluginDocumentView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNetscapePluginDocumentView value ) {
 			return value.Handle;
 		}
@@ -8385,6 +8679,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNetscapePluginPackage;
+		public static implicit operator WebBasePluginPackage( WebNetscapePluginPackage value ) {
+			return new WebBasePluginPackage( value.Handle );
+		}
+		public static implicit operator NSObject( WebNetscapePluginPackage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNetscapePluginPackage value ) {
 			return value.Handle;
 		}
@@ -8489,6 +8789,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNetscapePluginStream;
+		public static implicit operator WebBaseNetscapePluginStream( WebNetscapePluginStream value ) {
+			return new WebBaseNetscapePluginStream( value.Handle );
+		}
+		public static implicit operator NSObject( WebNetscapePluginStream value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNetscapePluginStream value ) {
 			return value.Handle;
 		}
@@ -8541,6 +8847,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNodeHighlight;
+		public static implicit operator NSObject( WebNodeHighlight value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNodeHighlight value ) {
 			return value.Handle;
 		}
@@ -8695,6 +9004,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNodeHighlightFadeInAnimation;
+		public static implicit operator NSAnimation( WebNodeHighlightFadeInAnimation value ) {
+			return new NSAnimation( value.Handle );
+		}
+		public static implicit operator NSObject( WebNodeHighlightFadeInAnimation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNodeHighlightFadeInAnimation value ) {
 			return value.Handle;
 		}
@@ -8727,6 +9042,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNodeHighlightView;
+		public static implicit operator NSView( WebNodeHighlightView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebNodeHighlightView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebNodeHighlightView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNodeHighlightView value ) {
 			return value.Handle;
 		}
@@ -8806,6 +9130,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebNullPluginView;
+		public static implicit operator NSImageView( WebNullPluginView value ) {
+			return new NSImageView( value.Handle );
+		}
+		public static implicit operator NSControl( WebNullPluginView value ) {
+			return new NSControl( value.Handle );
+		}
+		public static implicit operator NSView( WebNullPluginView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebNullPluginView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebNullPluginView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebNullPluginView value ) {
 			return value.Handle;
 		}
@@ -8850,6 +9189,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPanelAuthenticationHandler;
+		public static implicit operator NSObject( WebPanelAuthenticationHandler value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPanelAuthenticationHandler value ) {
 			return value.Handle;
 		}
@@ -8927,6 +9269,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPDFRepresentation;
+		public static implicit operator NSObject( WebPDFRepresentation value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPDFRepresentation value ) {
 			return value.Handle;
 		}
@@ -9058,6 +9403,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPDFView;
+		public static implicit operator NSView( WebPDFView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebPDFView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebPDFView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPDFView value ) {
 			return value.Handle;
 		}
@@ -9500,6 +9854,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPluginContainerCheck;
+		public static implicit operator NSObject( WebPluginContainerCheck value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPluginContainerCheck value ) {
 			return value.Handle;
 		}
@@ -9570,6 +9927,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPluginController;
+		public static implicit operator NSObject( WebPluginController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPluginController value ) {
 			return value.Handle;
 		}
@@ -9799,6 +10159,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPluginDatabase;
+		public static implicit operator NSObject( WebPluginDatabase value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPluginDatabase value ) {
 			return value.Handle;
 		}
@@ -9929,6 +10292,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPluginPackage;
+		public static implicit operator WebBasePluginPackage( WebPluginPackage value ) {
+			return new WebBasePluginPackage( value.Handle );
+		}
+		public static implicit operator NSObject( WebPluginPackage value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPluginPackage value ) {
 			return value.Handle;
 		}
@@ -9974,6 +10343,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPluginRequest;
+		public static implicit operator NSObject( WebPluginRequest value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPluginRequest value ) {
 			return value.Handle;
 		}
@@ -10064,6 +10436,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPolicyDecisionListener;
+		public static implicit operator NSObject( WebPolicyDecisionListener value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPolicyDecisionListener value ) {
 			return value.Handle;
 		}
@@ -10124,6 +10499,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPolicyDecisionListenerPrivate;
+		public static implicit operator NSObject( WebPolicyDecisionListenerPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPolicyDecisionListenerPrivate value ) {
 			return value.Handle;
 		}
@@ -10169,6 +10547,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPreferences;
+		public static implicit operator NSObject( WebPreferences value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPreferences value ) {
 			return value.Handle;
 		}
@@ -10918,6 +11299,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebPreferencesPrivate;
+		public static implicit operator NSObject( WebPreferencesPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebPreferencesPrivate value ) {
 			return value.Handle;
 		}
@@ -10950,6 +11334,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebProgressItem;
+		public static implicit operator NSObject( WebProgressItem value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebProgressItem value ) {
 			return value.Handle;
 		}
@@ -10982,6 +11369,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebRenderNode;
+		public static implicit operator NSObject( WebRenderNode value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebRenderNode value ) {
 			return value.Handle;
 		}
@@ -11081,6 +11471,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebResource;
+		public static implicit operator NSObject( WebResource value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebResource value ) {
 			return value.Handle;
 		}
@@ -11194,6 +11587,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebResourcePrivate;
+		public static implicit operator NSObject( WebResourcePrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebResourcePrivate value ) {
 			return value.Handle;
 		}
@@ -11226,6 +11622,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebScriptCallFrame;
+		public static implicit operator NSObject( WebScriptCallFrame value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebScriptCallFrame value ) {
 			return value.Handle;
 		}
@@ -11324,6 +11723,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebScriptDebugger;
+		public static implicit operator NSObject( WebScriptDebugger value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebScriptDebugger value ) {
 			return value.Handle;
 		}
@@ -11429,6 +11831,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebScriptDebugServer;
+		public static implicit operator NSObject( WebScriptDebugServer value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebScriptDebugServer value ) {
 			return value.Handle;
 		}
@@ -11640,6 +12045,21 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebSearchableTextView;
+		public static implicit operator NSTextView( WebSearchableTextView value ) {
+			return new NSTextView( value.Handle );
+		}
+		public static implicit operator NSText( WebSearchableTextView value ) {
+			return new NSText( value.Handle );
+		}
+		public static implicit operator NSView( WebSearchableTextView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebSearchableTextView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebSearchableTextView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebSearchableTextView value ) {
 			return value.Handle;
 		}
@@ -11781,6 +12201,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebSecurityOrigin;
+		public static implicit operator NSObject( WebSecurityOrigin value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebSecurityOrigin value ) {
 			return value.Handle;
 		}
@@ -11888,6 +12311,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebStringTruncator;
+		public static implicit operator NSObject( WebStringTruncator value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebStringTruncator value ) {
 			return value.Handle;
 		}
@@ -11968,6 +12394,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebTextCompleteController;
+		public static implicit operator NSObject( WebTextCompleteController value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebTextCompleteController value ) {
 			return value.Handle;
 		}
@@ -12081,6 +12510,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebUnarchivingState;
+		public static implicit operator NSObject( WebUnarchivingState value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebUnarchivingState value ) {
 			return value.Handle;
 		}
@@ -12151,6 +12583,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebURLsWithTitles;
+		public static implicit operator NSObject( WebURLsWithTitles value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebURLsWithTitles value ) {
 			return value.Handle;
 		}
@@ -12222,6 +12657,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebView;
+		public static implicit operator NSView( WebView value ) {
+			return new NSView( value.Handle );
+		}
+		public static implicit operator NSResponder( WebView value ) {
+			return new NSResponder( value.Handle );
+		}
+		public static implicit operator NSObject( WebView value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebView value ) {
 			return value.Handle;
 		}
@@ -14498,6 +14942,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebViewFactory;
+		public static implicit operator WebCoreViewFactory( WebViewFactory value ) {
+			return new WebCoreViewFactory( value.Handle );
+		}
+		public static implicit operator NSObject( WebViewFactory value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebViewFactory value ) {
 			return value.Handle;
 		}
@@ -15205,6 +15655,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebViewPrivate;
+		public static implicit operator NSObject( WebViewPrivate value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebViewPrivate value ) {
 			return value.Handle;
 		}
@@ -15249,6 +15702,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = WebKitCachedClasses.WebWindowWatcher;
+		public static implicit operator NSObject( WebWindowWatcher value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( WebWindowWatcher value ) {
 			return value.Handle;
 		}

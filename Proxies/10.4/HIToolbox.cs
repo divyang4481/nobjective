@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSHIObject;
+		public static implicit operator NSObject( NSHIObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSHIObject value ) {
 			return value.Handle;
 		}
@@ -74,6 +77,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSHIObjectSubclass;
+		public static implicit operator NSHIObject( NSHIObjectSubclass value ) {
+			return new NSHIObject( value.Handle );
+		}
+		public static implicit operator NSObject( NSHIObjectSubclass value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSHIObjectSubclass value ) {
 			return value.Handle;
 		}
@@ -106,6 +115,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSKeyedArchiverWrapper;
+		public static implicit operator NSKeyedArchiver( NSKeyedArchiverWrapper value ) {
+			return new NSKeyedArchiver( value.Handle );
+		}
+		public static implicit operator NSCoder( NSKeyedArchiverWrapper value ) {
+			return new NSCoder( value.Handle );
+		}
+		public static implicit operator NSObject( NSKeyedArchiverWrapper value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSKeyedArchiverWrapper value ) {
 			return value.Handle;
 		}
@@ -138,6 +156,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSKeyedUnarchiverWrapper;
+		public static implicit operator NSKeyedUnarchiver( NSKeyedUnarchiverWrapper value ) {
+			return new NSKeyedUnarchiver( value.Handle );
+		}
+		public static implicit operator NSCoder( NSKeyedUnarchiverWrapper value ) {
+			return new NSCoder( value.Handle );
+		}
+		public static implicit operator NSObject( NSKeyedUnarchiverWrapper value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSKeyedUnarchiverWrapper value ) {
 			return value.Handle;
 		}

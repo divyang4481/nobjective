@@ -13,6 +13,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.IMKClient;
+		public static implicit operator NSObject( IMKClient value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( IMKClient value ) {
 			return value.Handle;
 		}
@@ -120,6 +123,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.IMKEvent;
+		public static implicit operator NSObject( IMKEvent value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( IMKEvent value ) {
 			return value.Handle;
 		}
@@ -285,6 +291,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.IMKInputSession;
+		public static implicit operator NSObject( IMKInputSession value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( IMKInputSession value ) {
 			return value.Handle;
 		}
@@ -500,6 +509,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.IPMDEventParameter;
+		public static implicit operator NSObject( IPMDEventParameter value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( IPMDEventParameter value ) {
 			return value.Handle;
 		}
@@ -659,6 +671,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.IPMDFontRange;
+		public static implicit operator NSObject( IPMDFontRange value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( IPMDFontRange value ) {
 			return value.Handle;
 		}
@@ -691,6 +706,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSHIObject;
+		public static implicit operator NSObject( NSHIObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSHIObject value ) {
 			return value.Handle;
 		}
@@ -752,6 +770,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSHIUndoObject;
+		public static implicit operator NSObject( NSHIUndoObject value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSHIUndoObject value ) {
 			return value.Handle;
 		}
@@ -784,6 +805,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSKeyedArchiverWrapper;
+		public static implicit operator NSKeyedArchiver( NSKeyedArchiverWrapper value ) {
+			return new NSKeyedArchiver( value.Handle );
+		}
+		public static implicit operator NSCoder( NSKeyedArchiverWrapper value ) {
+			return new NSCoder( value.Handle );
+		}
+		public static implicit operator NSObject( NSKeyedArchiverWrapper value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSKeyedArchiverWrapper value ) {
 			return value.Handle;
 		}
@@ -816,6 +846,15 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.NSKeyedUnarchiverWrapper;
+		public static implicit operator NSKeyedUnarchiver( NSKeyedUnarchiverWrapper value ) {
+			return new NSKeyedUnarchiver( value.Handle );
+		}
+		public static implicit operator NSCoder( NSKeyedUnarchiverWrapper value ) {
+			return new NSCoder( value.Handle );
+		}
+		public static implicit operator NSObject( NSKeyedUnarchiverWrapper value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSKeyedUnarchiverWrapper value ) {
 			return value.Handle;
 		}
@@ -848,6 +887,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.PluginParser;
+		public static implicit operator NSObject( PluginParser value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( PluginParser value ) {
 			return value.Handle;
 		}
@@ -989,6 +1031,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.PluginReaderDATFileModule;
+		public static implicit operator PluginReaderGenericModule( PluginReaderDATFileModule value ) {
+			return new PluginReaderGenericModule( value.Handle );
+		}
+		public static implicit operator NSObject( PluginReaderDATFileModule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( PluginReaderDATFileModule value ) {
 			return value.Handle;
 		}
@@ -1051,6 +1099,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.PluginReaderGenericModule;
+		public static implicit operator NSObject( PluginReaderGenericModule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( PluginReaderGenericModule value ) {
 			return value.Handle;
 		}
@@ -1164,6 +1215,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.PluginReaderNativeFileModule;
+		public static implicit operator PluginReaderGenericModule( PluginReaderNativeFileModule value ) {
+			return new PluginReaderGenericModule( value.Handle );
+		}
+		public static implicit operator NSObject( PluginReaderNativeFileModule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( PluginReaderNativeFileModule value ) {
 			return value.Handle;
 		}
@@ -1309,6 +1366,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.PluginReaderOpenVanillaFileModule;
+		public static implicit operator PluginReaderGenericModule( PluginReaderOpenVanillaFileModule value ) {
+			return new PluginReaderGenericModule( value.Handle );
+		}
+		public static implicit operator NSObject( PluginReaderOpenVanillaFileModule value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( PluginReaderOpenVanillaFileModule value ) {
 			return value.Handle;
 		}
@@ -1428,6 +1491,9 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = HIToolboxCachedClasses.TISInputMethodDataFileLoader;
+		public static implicit operator NSObject( TISInputMethodDataFileLoader value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( TISInputMethodDataFileLoader value ) {
 			return value.Handle;
 		}

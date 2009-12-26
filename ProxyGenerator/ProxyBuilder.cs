@@ -319,6 +319,24 @@ namespace NObjective.ProxyGenerator
 					getHashCode.Modifier = Modifiers.Public | Modifiers.Override;
 					getHashCode.Body.AddChild( new ReturnStatement( new InvocationExpression( new MemberReferenceExpression( new IdentifierExpression( "Handle" ), "GetHashCode" ) ) ) );
 				}
+				// need to generate implicit conversions to all base classes.
+#if !USE_VALUE_TYPE_INHERITANCE
+				else
+				{
+					var baseName = runtimeClassInfo.BaseClassName;
+
+					while( baseName != null )
+					{
+						var currentClass = ClassesToExport[baseName];
+
+						var baseConversion = result.AddImplicitConversionOperator( GetUnambiguousNRefactoryName( currentClass.Identifier ) );
+						baseConversion.Parameters[0].TypeReference.Type = GetUnambiguousNRefactoryName( runtimeClassInfo.Identifier );
+						baseConversion.Body.AddChild( new ReturnStatement( new ObjectCreateExpression( new TypeReference( GetUnambiguousNRefactoryName( currentClass.Identifier ) ), new List<Expression> { new MemberReferenceExpression( new IdentifierExpression( "value" ), "Handle" ) } ) ) );
+
+						baseName = currentClass.BaseClassName;
+					}
+#endif
+				}
 
 				// implicit conversion to System.IntPtr
 				var intptr = result.AddImplicitConversionOperator( "IntPtr" );

@@ -13,6 +13,18 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSCFString;
+		public static implicit operator _NSCFString( NSCFString value ) {
+			return new _NSCFString( value.Handle );
+		}
+		public static implicit operator NSMutableString( NSCFString value ) {
+			return new NSMutableString( value.Handle );
+		}
+		public static implicit operator NSString( NSCFString value ) {
+			return new NSString( value.Handle );
+		}
+		public static implicit operator NSObject( NSCFString value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSCFString value ) {
 			return value.Handle;
 		}
@@ -45,6 +57,12 @@ namespace NObjective.Proxies {
 		[FieldOffsetAttribute( 0 )]
 		private NObjective.RuntimeObject Handle;
 		public static readonly RuntimeClass ClassHandle = CoreFoundationCachedClasses.NSCFType;
+		public static implicit operator _NSCFType( NSCFType value ) {
+			return new _NSCFType( value.Handle );
+		}
+		public static implicit operator NSObject( NSCFType value ) {
+			return new NSObject( value.Handle );
+		}
 		public static implicit operator IntPtr( NSCFType value ) {
 			return value.Handle;
 		}
