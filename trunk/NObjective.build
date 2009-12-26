@@ -188,7 +188,7 @@
 			</targetfiles>
 		</uptodate>
 
-		<if test="${ IsProxiesUpToDate == 'False' or not file::exists( OutDir + '/NObjective.Proxies.Tiger.Unweaved.dll' }">
+		<if test="${ IsProxiesUpToDate == 'False' or not file::exists( OutDir + '/NObjective.Proxies.Tiger.Unweaved.dll' ) }">
 			<touch file="Proxies/10.4/libobjc.A.dylib.cs" />
 			
 			<if test="${ RegenProxies == 'true' }">

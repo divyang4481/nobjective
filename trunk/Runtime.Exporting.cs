@@ -349,7 +349,7 @@ namespace NObjective
 				Func<PropertyInfo, bool> setDefinedAndAbstract = x => setDefined( x ) && setAbstract( x );
 
 				// find ivar-accessors. since they abstract they will not be added to metaclass
-				IEnumerable<PropertyInfo> exportedIvars = type.GetProperties( BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly ).Where( x => ( getDefinedAndAbstract( x ) && !setDefined( x ) ) || ( !getDefined( x ) && setDefinedAndAbstract( x ) ) || ( getDefinedAndAbstract( x ) && setDefinedAndAbstract( x ) ) );
+				IEnumerable<PropertyInfo> exportedIvars = type.GetProperties( BindingFlags.Instance | BindingFlags.Public ).Where( x => ( getDefinedAndAbstract( x ) && !setDefined( x ) ) || ( !getDefined( x ) && setDefinedAndAbstract( x ) ) || ( getDefinedAndAbstract( x ) && setDefinedAndAbstract( x ) ) );
 
 				if( exportedIvars.Any( x => x.PropertyType == typeof( string ) ) )
 					throw new RegistrationException( "String ivars not implemented!" );

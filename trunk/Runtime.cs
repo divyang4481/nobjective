@@ -88,7 +88,7 @@ namespace NObjective
 				ExportAllClasses();
 
 #if DUMP_EXPORTED_CLASSES_ASSEMBLY
-				interopAssemblyBuilder.Save( "NObjective.Exported.dll" );
+				interopAssemblyBuilder.Save( _interopAssemblyName.Name );
 #endif
 			}
 			catch( Exception excpt ) { Console.WriteLine( "Exception occured while automatic class exporting: {0}", excpt ); }
