@@ -19,7 +19,7 @@ namespace NObjective
 	///	}
 	/// </code>
 	/// </summary>
-	public sealed class AutoreleaseScope : IDisposable
+	public struct AutoreleaseScope : IDisposable
 	{
 		/// <summary>
 		/// Points to NSAutoreleasePool object.
@@ -29,17 +29,11 @@ namespace NObjective
 		/// <summary>
 		/// Creates new NSAutoreleasePool object.
 		/// </summary>
-		public AutoreleaseScope()
+		public static AutoreleaseScope New()
 		{
-			_handle = new RuntimeObject( Runtime.SendMessage( Runtime.SendMessage( RuntimeClasses.NSAutoreleasePool, Selectors.alloc ), Selectors.init ) );
-		}
-
-		/// <summary>
-		/// Releases internal NSAutoreleasePool object.
-		/// </summary>
-		~AutoreleaseScope()
-		{
-			Dispose();
+			return new AutoreleaseScope { 
+				_handle = new RuntimeObject( Runtime.SendMessage( Runtime.SendMessage( RuntimeClasses.NSAutoreleasePool, Selectors.alloc ), Selectors.init ) )
+			};
 		}
 
 		#region IDisposable Members
@@ -52,7 +46,6 @@ namespace NObjective
 			Runtime.SendMessage( _handle, Selectors.release );
 
 			_handle = RuntimeObject.Null;
-			GC.SuppressFinalize( this );
 		}
 
 		#endregion

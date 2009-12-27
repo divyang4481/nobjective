@@ -29,7 +29,7 @@ namespace NObjective
 		{
 			var test = new NObjectiveTest();
 
-			test.OnBeginTest += () => { _scope = new AutoreleaseScope(); };
+			test.OnBeginTest += () => { _scope = AutoreleaseScope.New(); };
 			test.OnEndTest += () => { _scope.Dispose(); };
 
 			test.TestAll( typeof( AutoreleaseScope ).Assembly );

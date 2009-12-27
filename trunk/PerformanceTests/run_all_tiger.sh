@@ -13,7 +13,7 @@ nant perftests_tiger
 if [ "$?" -ne "0" ]; then exit 1; fi; 
 popd
 
-cp run_tiger_tests.sh bin/run_tiger_tests.sh
+cp run_tiger_tests.sh bin/10.4/run_tiger_tests.sh
 cd bin
 
-./run_tiger_tests.sh
+./10.4/run_tiger_tests.sh
