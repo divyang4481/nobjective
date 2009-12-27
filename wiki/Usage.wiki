@@ -11,7 +11,7 @@ var xxx = new RuntimeClass( "NSNumber" ).InvokeObject( "numberWithBool:", true )
 }}}
  There is no refcount operations, so NSNumber instance will be released in appropriate NSAutoreleasePool. You can create pool in such manner:
 {{{
-using( var scope = new AutoreleaseScope() )
+using( AutoreleaseScope.New() )
 {
     new RuntimeClass( "NSNumber" ).InvokeObject( "numberWithBool:", true ).InvokeBool( "boolValue" );
 }
