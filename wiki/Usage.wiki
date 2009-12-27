@@ -1,7 +1,7 @@
 #labels Featured
 ===Calling Objective-C Methods===
 You can call objective-c methods in different ways:
- * Dynamic way:
+ * Pure-dynamic (bad) way:
 {{{
 var xxx = (bool)(((RuntimeObject)(new RuntimeClass( "NSNumber" ).Invoke( "numberWithBool:", true ))).Invoke( "boolValue" ));
 }}}
