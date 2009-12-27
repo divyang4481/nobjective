@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PerformanceTestResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="cocoa-sharp">
+  <entry name="Invocations per second" score="51501" />
+  <entry name="Allocations per second" score="10041" />
+  <entry name="Vararg invocations per second" score="2451" />
+  <entry name="Managed memory consumption (KiB)" score="29148" />
+  <entry name="Unmanaged memory consumption (KiB)" score="71204" />
+</PerformanceTestResult>
