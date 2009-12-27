@@ -164,7 +164,7 @@ namespace NObjective.Tests
 		public void DeallocationThrowOnGet()
 		{
 			AutoRegisteredClass proxy = null;
-			using( var scope = new AutoreleaseScope() )
+			using( AutoreleaseScope.New() )
 				proxy = Runtime.CreateInstance<AutoRegisteredClass>( "init" );
 
 			Assert.AreEqual( RuntimeObject.Null, proxy.Handle );
@@ -177,7 +177,7 @@ namespace NObjective.Tests
 		public void DeallocationThrowOnSet()
 		{
 			AutoRegisteredClass proxy = null;
-			using( var scope = new AutoreleaseScope() )
+			using( AutoreleaseScope.New() )
 				proxy = Runtime.CreateInstance<AutoRegisteredClass>( "init" );
 
 			Assert.AreEqual( RuntimeObject.Null, proxy.Handle );
@@ -207,7 +207,7 @@ namespace NObjective.Tests
 			HierarchyBase @base;
 			HierarchyDerived derived;
 
-			using( new AutoreleaseScope() )
+			using( AutoreleaseScope.New() )
 			{
 				@base = Runtime.CreateInstance<HierarchyBase>( "init" );
 				derived = Runtime.CreateInstance<HierarchyDerived>( "init" );

@@ -42,12 +42,11 @@ namespace Native
 
 		private static void Test( string name, Action<int> test )
 		{
-			using( var scope = new AutoreleaseScope() )
+			using( AutoreleaseScope.New() )
 				test( 20000 );
 
-			using( var scope = new AutoreleaseScope() )
+			using( AutoreleaseScope.New() )
 			{
-
 				_timer.Start();
 				test( 20000 );
 				_timer.Stop();

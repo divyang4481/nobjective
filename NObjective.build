@@ -252,12 +252,19 @@
 			</fileset>
 		</zip>
 
-		<zip zipfile="${OutDir}/NObjectivePerformanceTest_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.zip" ziplevel="9">
-			<fileset basedir="PerformanceTests/bin">
+		<zip zipfile="${OutDir}/NObjectivePerformanceTest_MacOSXTiger_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.zip" ziplevel="9">
+			<fileset basedir="PerformanceTests/bin/10.4">
 				<include name="*.*" />
-				<include name="../run_leopard_tests.sh" />
-				<include name="../run_tiger_tests.sh" />
-				<include name="../../License.txt" />
+				<include name="../../run_tiger_tests.sh" />
+				<include name="../../../License.txt" />
+			</fileset>
+		</zip>
+		
+		<zip zipfile="${OutDir}/NObjectivePerformanceTest_MacOSXLeopard_v${assemblyname::get-version(assemblyname::get-assembly-name('bin/NObjective.dll'))}.zip" ziplevel="9">
+			<fileset basedir="PerformanceTests/bin/10.5">
+				<include name="*.*" />
+				<include name="../../run_leopard_tests.sh" />
+				<include name="../../../License.txt" />
 			</fileset>
 		</zip>
 	</target>
@@ -299,7 +306,7 @@
 	</target>
 
 	<target name="perftest_nobjective_tiger" depends="proxies_tiger">
-		<copy todir="PerformanceTests/bin">
+		<copy todir="PerformanceTests/bin/10.4">
 			<fileset basedir="bin">
 				<include name="NObjective.dll" />
 				<include name="NObjective.dylib" />
@@ -307,7 +314,7 @@
 			</fileset>
 		</copy>
 
-		<csc target="exe" output="PerformanceTests/bin/NObjective.Performance.Tiger.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+		<csc target="exe" output="PerformanceTests/bin/10.4/NObjective.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
 			<sources>
 				<include name="PerformanceTests/nobjective.cs"/>
 				<include name="PerformanceTests/PeformanceTest.cs"/>
@@ -321,7 +328,7 @@
 	</target>
 
 	<target name="perftest_nobjective_leopard" depends="proxies_leopard">
-		<copy todir="PerformanceTests/bin">
+		<copy todir="PerformanceTests/bin/10.5">
 			<fileset basedir="bin">
 				<include name="NObjective.dll" />
 				<include name="NObjective.dylib" />
@@ -329,7 +336,7 @@
 			</fileset>
 		</copy>
 
-		<csc target="exe" output="PerformanceTests/bin/NObjective.Performance.Leopard.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+		<csc target="exe" output="PerformanceTests/bin/10.5/NObjective.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
 			<sources>
 				<include name="PerformanceTests/nobjective.cs"/>
 				<include name="PerformanceTests/PeformanceTest.cs"/>
@@ -343,13 +350,19 @@
 	</target>
 
 	<target name="perftest_cocoasharp">
-		<copy todir="PerformanceTests/bin">
+		<copy todir="PerformanceTests/bin/10.4">
 			<fileset basedir="PerformanceTests/cocoa-sharp">
 				<include name="*.dll" />
 			</fileset>
 		</copy>
 
-		<csc target="exe" output="PerformanceTests/bin/CocoaSharp.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+		<copy todir="PerformanceTests/bin/10.5">
+			<fileset basedir="PerformanceTests/cocoa-sharp">
+				<include name="*.dll" />
+			</fileset>
+		</copy>
+
+		<csc target="exe" output="PerformanceTests/bin/10.4/CocoaSharp.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
 			<nowarn>
 				<warning number="0414" />
 			</nowarn>
@@ -361,16 +374,22 @@
 				<include name="cocoa-sharp.dll"/>
 			</references>
 		</csc>
+		
+		<copy todir="PerformanceTests/bin/10.5">
+			<fileset basedir="PerformanceTests/bin/10.4">
+				<include name="CocoaSharp.Performance.exe" />
+			</fileset>
+		</copy>
 	</target>
 
 	<target name="perftest_monobjc_tiger">
-		<copy todir="PerformanceTests/bin">
-			<fileset basedir="PerformanceTests/monobjc">
+		<copy todir="PerformanceTests/bin/10.4">
+			<fileset basedir="PerformanceTests/monobjc/tiger">
 				<include name="*.dll" />
 			</fileset>
 		</copy>
 
-		<csc target="exe" output="PerformanceTests/bin/Monobjc.Performance.Tiger.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+		<csc target="exe" output="PerformanceTests/bin/10.4/Monobjc.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
 			<sources basedir="PerformanceTests">
 				<include name="monobjc.cs"/>
 				<include name="PeformanceTest.cs"/>
@@ -383,13 +402,13 @@
 	</target>
 
 	<target name="perftest_monobjc_leopard">
-		<copy todir="PerformanceTests/bin">
+		<copy todir="PerformanceTests/bin/10.5">
 			<fileset basedir="PerformanceTests/monobjc">
 				<include name="*.dll" />
 			</fileset>
 		</copy>
 
-		<csc target="exe" output="PerformanceTests/bin/Monobjc.Performance.Leopard.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+		<csc target="exe" output="PerformanceTests/bin/10.5/Monobjc.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
 			<sources basedir="PerformanceTests">
 				<include name="monobjc.cs"/>
 				<include name="PeformanceTest.cs"/>
@@ -402,14 +421,14 @@
 	</target>
 
 	<target name="perftest_mobjc">
-		<copy todir="PerformanceTests/bin">
+		<copy todir="PerformanceTests/bin/10.5">
 			<fileset basedir="PerformanceTests/mobjc">
 				<include name="*.dll" />
 				<include name="*.dylib" />
 			</fileset>
 		</copy>
 
-		<csc target="exe" output="PerformanceTests/bin/Mobjc.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
+		<csc target="exe" output="PerformanceTests/bin/10.5/Mobjc.Performance.exe" define="${defines}" unsafe="true" optimize="${optimize}">
 			<sources basedir="PerformanceTests">
 				<include name="mobjc.cs"/>
 				<include name="PeformanceTest.cs"/>
