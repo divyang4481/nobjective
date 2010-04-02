@@ -386,6 +386,7 @@
 		<copy todir="PerformanceTests/bin/10.4">
 			<fileset basedir="PerformanceTests/monobjc/tiger">
 				<include name="*.dll" />
+				<include name="*.dylib" />
 			</fileset>
 		</copy>
 
@@ -405,6 +406,7 @@
 		<copy todir="PerformanceTests/bin/10.5">
 			<fileset basedir="PerformanceTests/monobjc">
 				<include name="*.dll" />
+				<include name="*.dylib" />
 			</fileset>
 		</copy>
 
