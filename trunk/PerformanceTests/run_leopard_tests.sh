@@ -11,6 +11,7 @@ echo
 mono --version
 echo
 
+export DYLD_LIBRARY_PATH=`pwd`
 mono NObjective.Performance.exe 
 
 if [ "$SKIP_OTHER_BRIDGES" != "1" ]; then

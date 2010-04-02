@@ -1,4 +1,4 @@
-﻿//
+//
 // Copyright (C) 2009 Eugeny Grishul
 //
 // See license in License.txt
@@ -130,7 +130,31 @@ namespace NObjective
 			}
 			Console.WriteLine();
 
-			testResult.Save( Assembly.GetExecutingAssembly().GetName().Name + ".Results.xml" );
+			var osdir = "";
+			switch( OS.Version ) {
+				case OS.MacOSVersion.Tiger: osdir = "Tiger"; break;
+				case OS.MacOSVersion.Leopard: osdir = "Leopard"; break;
+				case OS.MacOSVersion.SnowLeopard: osdir = "Snow Leopard"; break;
+			}
+				
+			var resultsFile = Assembly.GetExecutingAssembly().GetName().Name + ".Results.xml";
+			var statisticsDirectory = PathCombine( "..", "..", "results", BitConverter.IsLittleEndian ? "Intel" : "PowerPC", osdir );
+			
+			if( Directory.Exists( statisticsDirectory ) ) {
+				testResult.Save( Path.Combine( statisticsDirectory, resultsFile ) );
+			}
+				
+			testResult.Save( resultsFile );
+		}
+		
+		private static string PathCombine( params string[] directories ) {
+			var result = directories[0];
+			
+			for (int i = 1; i < directories.Length; ++i ) {
+				result = Path.Combine( result, directories[i] );
+			}
+			
+			return result;
 		}
 
 		public virtual void TestInvocation( int iterations )
@@ -248,6 +272,52 @@ namespace NObjective
 			return result;
 		}
 
+		public enum MacOSVersion
+		{
+			Invalid,
+			Cheetah,
+			Puma,
+			Jaguar,
+			Panther,
+			Tiger,
+			Leopard,
+			SnowLeopard,
+			Future,
+			IPhone
+		}
+
+		public static MacOSVersion Version
+		{
+			get
+			{
+				if( _version != null )
+					return _version.Value;
+
+				int response;
+				NativeMethods.Gestalt( 0x73797376, out response );
+
+				if( response < 0x1000 )
+					_version = MacOSVersion.Invalid;
+				else if( response < 0x1010 )
+					_version = MacOSVersion.Cheetah;
+				else if( response < 0x1020 )
+					_version = MacOSVersion.Puma;
+				else if( response < 0x1030 )
+					_version = MacOSVersion.Jaguar;
+				else if( response < 0x1040 )
+					_version = MacOSVersion.Panther;
+				else if( response < 0x1050 )
+					_version = MacOSVersion.Tiger;
+				else if( response < 0x1060 )
+					_version = MacOSVersion.Leopard;
+				else if( response < 0x1070 )
+					_version = MacOSVersion.SnowLeopard;
+
+				return _version.Value;
+			}
+		}
+		private static MacOSVersion? _version;
+		
 		private static class NativeMethods
 		{
 			[DllImport( "libc.dylib" )]
@@ -255,6 +325,9 @@ namespace NObjective
 
 			[DllImport( "libc.dylib" )]
 			public static extern int task_info( IntPtr task, task_flavor_t flavor, IntPtr taskInfoStructure, ref int structureLength );
+
+			[DllImport( "/System/Library/Frameworks/CoreServices.framework/CoreServices" )]
+			public static extern short Gestalt( int selector, out int response );
 		}
 	}
 }
