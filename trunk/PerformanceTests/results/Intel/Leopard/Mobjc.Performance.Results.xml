@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PerformanceTestResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="mobjc">
-  <entry name="Invocations per second" score="72499" />
-  <entry name="Allocations per second" score="19729" />
-  <entry name="Protected calls per second" score="17720" />
-  <entry name="Exception rethrows per second" score="797" />
-  <entry name="Managed memory consumption (KiB)" score="1376" />
-  <entry name="Unmanaged memory consumption (KiB)" score="61340" />
+  <entry name="Invocations per second" score="72914" />
+  <entry name="Allocations per second" score="21188" />
+  <entry name="Protected calls per second" score="16732" />
+  <entry name="Exception rethrows per second" score="804" />
+  <entry name="Managed memory consumption (KiB)" score="1364" />
+  <entry name="Unmanaged memory consumption (KiB)" score="61484" />
 </PerformanceTestResult>
