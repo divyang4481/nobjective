@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PerformanceTestResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Monobjc">
-  <entry name="Invocations per second" score="1314060" />
-  <entry name="Allocations per second" score="144330" />
-  <entry name="Vararg invocations per second" score="23727" />
-  <entry name="Managed memory consumption (KiB)" score="9616" />
-  <entry name="Unmanaged memory consumption (KiB)" score="29236" />
+  <entry name="Invocations per second" score="1206709" />
+  <entry name="Allocations per second" score="129954" />
+  <entry name="Vararg invocations per second" score="20877" />
+  <entry name="Managed memory consumption (KiB)" score="14116" />
+  <entry name="Unmanaged memory consumption (KiB)" score="42220" />
 </PerformanceTestResult>
