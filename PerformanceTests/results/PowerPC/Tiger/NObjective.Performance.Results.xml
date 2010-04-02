@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PerformanceTestResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NObjective">
-  <entry name="Invocations per second" score="1008318" />
-  <entry name="Allocations per second" score="524260" />
-  <entry name="Vararg invocations per second" score="7534" />
-  <entry name="Protected calls per second" score="32641" />
-  <entry name="Exception rethrows per second" score="9116" />
-  <entry name="Managed memory consumption (KiB)" score="460" />
-  <entry name="Unmanaged memory consumption (KiB)" score="16412" />
+  <entry name="Invocations per second" score="992999" />
+  <entry name="Allocations per second" score="467836" />
+  <entry name="Vararg invocations per second" score="3660" />
+  <entry name="Protected calls per second" score="28710" />
+  <entry name="Exception rethrows per second" score="4167" />
+  <entry name="Managed memory consumption (KiB)" score="448" />
+  <entry name="Unmanaged memory consumption (KiB)" score="16344" />
 </PerformanceTestResult>
